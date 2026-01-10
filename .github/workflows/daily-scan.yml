@@ -1,0 +1,51 @@
+name: Daily Environmental Scan
+
+on:
+  schedule:
+    # 매일 오전 9시 (KST) = UTC 0시
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  scan:
+    name: Run Environmental Scanning
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+
+      - name: Run daily scan
+        env:
+          SCAN_DATE: ${{ github.event.schedule && 'scheduled' || 'manual' }}
+        run: |
+          echo "Starting environmental scan at $(date '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "Trigger: $SCAN_DATE"
+
+          # 스캔 디렉토리 확인
+          ls -la env-scanning/
+
+          # TODO: 실제 스캔 로직은 Claude Code CLI 또는 별도 스크립트로 실행
+          # 현재는 구조 확인만 수행
+          echo "Scan directories ready"
+          echo "- signals/database.json exists: $(test -f env-scanning/signals/database.json && echo 'yes' || echo 'no')"
+          echo "- config files: $(ls env-scanning/config/)"
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scan-results-${{ github.run_number }}
+          path: |
+            env-scanning/reports/daily/
+            env-scanning/logs/
+          retention-days: 30

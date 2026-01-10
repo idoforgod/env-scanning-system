@@ -123,10 +123,15 @@ pre-commit run --all-files
 
 ## CI/CD
 
-GitHub Actions로 다음 검사가 자동 실행됩니다:
+GitHub Actions로 다음 작업이 자동 실행됩니다:
 
+### CI (Push/PR 시)
 - Ruff 린트/포맷 검사
 - YAML/JSON 문법 검사
+
+### 정기 스캔 (매일 오전 9시 KST)
+- 환경 스캐닝 워크플로우 자동 실행
+- 수동 실행: Actions 탭에서 "Run workflow" 클릭
 
 ## 라이선스
 
