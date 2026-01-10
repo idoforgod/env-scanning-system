@@ -1,0 +1,30 @@
+[2026-01-09 10:35:00] Deduplication Started
+[2026-01-09 10:35:01] Total items to check: 24
+[2026-01-09 10:35:01] Previous signals in database: 0
+
+NOTE: First run - no previous signals to deduplicate against.
+All 24 signals passed as NEW.
+
+REMOVED - exact_url:
+  (none)
+
+REMOVED - similar_title (>=90%):
+  (none)
+
+REMOVED - similar_content (>=85%):
+  (none)
+
+FLAGGED - entity_overlap (review recommended):
+  (none)
+
+[2026-01-09 10:35:02] Deduplication Completed
+  - Removed: 0
+  - New: 24
+  - Updates: 0
+
+CATEGORY DISTRIBUTION:
+  - Technological: 8
+  - Economic: 5
+  - Political: 4
+  - Environmental: 4
+  - Social: 3

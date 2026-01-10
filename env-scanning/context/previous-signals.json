@@ -1,0 +1,22 @@
+{
+  "loaded_date": "2026-01-09",
+  "database_stats": {
+    "total_signals": 0,
+    "by_status": {},
+    "by_category": {}
+  },
+  "archive_stats": {
+    "reports_loaded": 0,
+    "date_range": null
+  },
+  "dedup_index": {
+    "urls": [],
+    "titles": [],
+    "entities": {
+      "actors": [],
+      "technologies": [],
+      "policies": []
+    }
+  },
+  "note": "First run - no previous signals to deduplicate against"
+}

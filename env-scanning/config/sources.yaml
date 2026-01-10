@@ -1,0 +1,64 @@
+# Data Sources Configuration
+# 환경스캐닝 데이터 소스 설정
+
+news:
+  google_news:
+    enabled: true
+    languages: [ko, en]
+    regions: [KR, US, GB]
+
+  naver_news:
+    enabled: true
+    categories:
+      - 정치
+      - 경제
+      - 사회
+      - 생활/문화
+      - IT/과학
+
+academic:
+  arxiv:
+    enabled: true
+    categories:
+      - cs.AI
+      - cs.LG
+      - cs.CL
+      - q-bio
+      - econ
+
+  google_scholar:
+    enabled: true
+
+  ssrn:
+    enabled: false
+
+patents:
+  google_patents:
+    enabled: true
+
+  kipris:
+    enabled: true
+    note: "한국특허정보원"
+
+policy:
+  government:
+    - name: 대한민국 정책브리핑
+      url: https://www.korea.kr
+    - name: 기획재정부
+      url: https://www.moef.go.kr
+
+  international:
+    - name: OECD
+      url: https://www.oecd.org
+    - name: World Economic Forum
+      url: https://www.weforum.org
+    - name: UN
+      url: https://www.un.org
+
+tech_reports:
+  - name: TechCrunch
+    url: https://techcrunch.com
+  - name: MIT Technology Review
+    url: https://www.technologyreview.com
+  - name: Wired
+    url: https://www.wired.com

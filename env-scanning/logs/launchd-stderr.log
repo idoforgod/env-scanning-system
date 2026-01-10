@@ -1,0 +1,2 @@
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
+/bin/bash: /Users/cys/Desktop/ENVscanning-system-main/env-scanning/scripts/run-daily-scan.sh: Operation not permitted

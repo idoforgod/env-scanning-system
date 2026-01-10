@@ -1,0 +1,101 @@
+# STEEPS Domains Configuration
+# Environmental Scanning 도메인 설정 (6개 카테고리)
+
+domains:
+  social:
+    name: Social (사회)
+    keywords:
+      - 인구 변화
+      - 라이프스타일
+      - 가치관 변화
+      - 세대 트렌드
+      - 교육
+      - 건강
+      - 문화
+    sources:
+      - news
+      - social_media
+      - research_reports
+
+  technological:
+    name: Technological (기술)
+    keywords:
+      - AI
+      - 인공지능
+      - 블록체인
+      - 양자컴퓨팅
+      - 바이오테크
+      - 로봇
+      - 자율주행
+      - 메타버스
+    sources:
+      - tech_news
+      - patents
+      - arxiv
+      - github_trending
+
+  economic:
+    name: Economic (경제)
+    keywords:
+      - 시장 동향
+      - 산업 구조
+      - 금융
+      - 투자
+      - 스타트업
+      - 고용
+      - 무역
+    sources:
+      - financial_news
+      - market_reports
+      - economic_indicators
+
+  environmental:
+    name: Environmental (환경)
+    keywords:
+      - 기후변화
+      - 탄소중립
+      - 재생에너지
+      - 지속가능성
+      - ESG
+      - 순환경제
+      - 생물다양성
+    sources:
+      - environmental_reports
+      - policy_documents
+      - research_papers
+
+  political:
+    name: Political (정치)
+    keywords:
+      - 규제
+      - 정책
+      - 지정학
+      - 국제관계
+      - 법률
+      - 거버넌스
+      - 선거
+    sources:
+      - government_releases
+      - policy_think_tanks
+      - international_organizations
+
+  spiritual:
+    name: Spiritual (정신/영성)
+    keywords:
+      - 종교
+      - 영성
+      - 명상
+      - 마음챙김
+      - 웰빙
+      - 의미추구
+      - 가치관
+      - 윤리
+      - 철학
+      - 의식
+      - 초월
+      - 공동체
+    sources:
+      - religious_institutions
+      - wellness_reports
+      - philosophical_journals
+      - cultural_studies

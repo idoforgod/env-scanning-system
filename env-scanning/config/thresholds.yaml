@@ -1,0 +1,48 @@
+# Threshold Configuration
+# 환경스캐닝 임계값 설정
+
+deduplication:
+  # 의미적 유사도 임계값 (이 값 이상이면 중복으로 판정)
+  semantic_similarity: 0.85
+
+  # 제목 유사도 임계값
+  title_similarity: 0.90
+
+  # 엔티티 중복 비율 (이 비율 이상의 엔티티가 겹치면 중복 검토)
+  entity_overlap: 0.70
+
+significance:
+  # 중요도 평가 기준 (1-5 스케일)
+  levels:
+    1: "매우 낮음 - 일반적인 뉴스, 큰 변화 없음"
+    2: "낮음 - 약간의 변화 징후, 추가 모니터링 권장"
+    3: "보통 - 주목할 만한 변화, 분석 필요"
+    4: "높음 - 중요한 변화 신호, 즉각적 관심 필요"
+    5: "매우 높음 - 패러다임 변화 가능성, 긴급 대응 필요"
+
+priority:
+  # 우선순위 가중치
+  weights:
+    impact: 0.40
+    probability: 0.30
+    urgency: 0.20
+    novelty: 0.10
+
+  # 상위 신호 표시 개수
+  top_signals: 10
+
+confidence:
+  # 신뢰도 평가 기준
+  high: 0.80      # 신뢰할 수 있는 출처, 다수 확인
+  medium: 0.50    # 단일 출처, 추가 확인 권장
+  low: 0.30       # 미확인 출처, 주의 필요
+
+archive:
+  # 아카이브 보관 기간 (일)
+  retention_days: 365
+
+  # 컨텍스트 로딩 기간 (일)
+  context_days: 90
+
+  # 최근 신호 판단 기준 (일)
+  recent_days: 7

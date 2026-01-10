@@ -1,0 +1,107 @@
+[project]
+name = "env-scanning-system"
+version = "1.0.0"
+description = "Environmental Scanning System for Futures Research"
+requires-python = ">=3.10"
+
+[tool.ruff]
+# 프로젝트 루트 기준
+src = [".claude/skills"]
+target-version = "py310"
+line-length = 120
+
+# 린트 대상 포함/제외
+include = ["**/*.py"]
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    "venv",
+    "*.egg-info",
+]
+
+[tool.ruff.lint]
+# 활성화할 규칙 세트
+select = [
+    # 필수 규칙
+    "E",      # pycodestyle errors (기본 문법 오류)
+    "W",      # pycodestyle warnings (스타일 경고)
+    "F",      # Pyflakes (논리 오류, 미사용 변수 등)
+
+    # 코드 품질
+    "B",      # flake8-bugbear (버그 유발 패턴 감지)
+    "C4",     # flake8-comprehensions (리스트/딕셔너리 컴프리헨션 개선)
+    "SIM",    # flake8-simplify (코드 단순화 제안)
+
+    # Import 관련
+    "I",      # isort (import 정렬)
+    "UP",     # pyupgrade (최신 Python 문법 사용 권장)
+
+    # 타입 힌트
+    "ANN",    # flake8-annotations (타입 힌트 권장)
+
+    # 보안
+    "S",      # flake8-bandit (보안 취약점 감지)
+
+    # 문서화
+    "D",      # pydocstyle (docstring 스타일)
+
+    # 기타
+    "RUF",    # Ruff 고유 규칙
+    "PTH",    # flake8-use-pathlib (pathlib 사용 권장)
+]
+
+# 무시할 규칙
+ignore = [
+    # 타입 힌트 관련 (점진적 적용을 위해)
+    "ANN401",  # Any 타입 허용
+
+    # Docstring 관련 (유연성을 위해)
+    "D100",    # 모듈 docstring 필수 아님
+    "D104",    # 패키지 __init__.py docstring 필수 아님
+    "D203",    # 클래스 docstring 앞 빈 줄 (D211과 충돌)
+    "D212",    # 멀티라인 docstring 첫 줄 (D213과 충돌)
+
+    # 보안 관련 (스크립트 특성상 허용)
+    "S101",    # assert 사용 허용 (테스트/스크립트)
+    "S311",    # random 모듈 사용 허용 (암호화 목적 아님)
+    "S603",    # subprocess 사용 허용 (CLI 스크립트)
+    "S607",    # subprocess partial path 허용
+
+    # 기타
+    "E501",    # 라인 길이 (별도로 line-length로 관리)
+]
+
+# 자동 수정 가능 규칙
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+# 스크립트 파일은 일부 규칙 완화
+"**/scripts/*.py" = [
+    "ANN",    # 스크립트에서 타입 힌트 강제 안 함
+    "D",      # 스크립트에서 docstring 강제 안 함
+    "PTH",    # 스크립트에서 pathlib 강제 안 함 (기존 os.path 유지)
+    "SIM105", # 변수 할당이 포함된 try-except-pass 허용
+]
+# 테스트 파일
+"test_*.py" = ["S101", "ANN"]
+"*_test.py" = ["S101", "ANN"]
+
+[tool.ruff.lint.isort]
+# Import 정렬 설정
+known-first-party = ["env_scanning"]
+force-single-line = false
+combine-as-imports = true
+split-on-trailing-comma = true
+
+[tool.ruff.lint.pydocstyle]
+# Google 스타일 docstring
+convention = "google"
+
+[tool.ruff.format]
+# 코드 포맷 설정
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+skip-magic-trailing-comma = false
