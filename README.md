@@ -1,5 +1,10 @@
 # Environmental Scanning System
 
+[![CI](https://github.com/idoforgod/env-scanning-system/actions/workflows/ci.yml/badge.svg)](https://github.com/idoforgod/env-scanning-system/actions/workflows/ci.yml)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 미래 연구(Futures Research)를 위한 환경 스캐닝 시스템입니다. 변화의 조기 징후(약한 신호, weak signals)를 체계적으로 탐지하고 분석하여 일일 보고서를 생성합니다.
 
 ## 주요 기능
