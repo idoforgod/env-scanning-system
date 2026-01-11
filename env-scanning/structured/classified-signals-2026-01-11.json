@@ -1,0 +1,824 @@
+{
+  "classification_date": "2026-01-11",
+  "total_classified": 18,
+  "by_category": {
+    "Social": 2,
+    "Technological": 9,
+    "Economic": 3,
+    "Environmental": 2,
+    "Political": 2,
+    "Spiritual": 0
+  },
+  "by_significance": {
+    "5": 2,
+    "4": 7,
+    "3": 7,
+    "2": 2,
+    "1": 0
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0111-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental"]
+      },
+      "title": "중국 '인공태양' EAST 밀도 한계 돌파 - 핵융합 실용화 가속",
+      "description": "중국 EAST 토카막 핵융합로가 플라즈마 밀도 한계를 극복하며 기존 물리 법칙으로 불가능했던 고밀도 안정 상태 달성. 핵융합 에너지 상용화의 주요 기술적 장애물을 제거하는 획기적 성과로 Science Advances에 발표됨.",
+      "source": {
+        "name": "Science Advances / ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260101160855.htm",
+        "type": "academic",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "청정 핵융합 에너지의 상용화 가속화 및 화석연료 대체 시나리오 현실화",
+      "significance": 5,
+      "significance_reason": "핵융합 물리학의 근본적 한계를 돌파한 과학적 breakthrough로 전 세계 에너지 패러다임 전환 가능성을 열음",
+      "potential_impact": {
+        "short_term": "핵융합 연구 투자 급증 및 글로벌 연구 경쟁 가속",
+        "mid_term": "토카막 기반 실험로의 성능 개선 및 실증 프로젝트 확대",
+        "long_term": "상용 핵융합 발전소 구축 및 에너지 체계 근본적 전환"
+      },
+      "actors": [
+        {
+          "name": "중국 과학원 EAST 연구팀",
+          "type": "organization",
+          "role": "기술 개발 및 실험 주도"
+        },
+        {
+          "name": "중국 정부",
+          "type": "government",
+          "role": "대규모 연구 투자 및 지원"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.95,
+      "related_signals": [],
+      "tags": ["핵융합", "플라즈마", "EAST", "중국", "청정에너지", "토카막", "물리학 돌파구"],
+      "analyst_notes": "ITER 및 서구권 핵융합 프로젝트의 대응 전략과 중국의 에너지 기술 리더십 강화 양상 모니터링 필요"
+    },
+    {
+      "id": "SIG-2026-0111-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "스마트링 시장 49% 급성장 - 앰비언트 인텔리전스 인터페이스로 부상",
+      "description": "CES 2026에서 스마트링이 차세대 앰비언트 AI 인터페이스로 자리매김하며 출하량 49% 증가 예상. 미국 가구 12%(1500만) 보급. 웰니스 액세서리에서 대화형 AI 제어 인터페이스로 진화하며 HCI 패러다임 변화 신호.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "비침입적(non-intrusive) 앰비언트 컴퓨팅 인터페이스로의 전환 및 웨어러블 시장 재편",
+      "significance": 4,
+      "significance_reason": "스마트워치/밴드를 넘어선 새로운 HCI 패러다임 제시, 대화형 AI 제어의 일상화",
+      "potential_impact": {
+        "short_term": "웨어러블 시장 다각화 및 Oura 등 선도 기업 급성장",
+        "mid_term": "앰비언트 AI 생태계 확장 및 음성/제스처 기반 인터페이스 표준화",
+        "long_term": "스크린 중심 컴퓨팅에서 보이지 않는 컴퓨팅으로의 전환"
+      },
+      "actors": [
+        {
+          "name": "Oura",
+          "type": "company",
+          "role": "시장 선도 기업"
+        },
+        {
+          "name": "삼성, 애플",
+          "type": "company",
+          "role": "잠재적 시장 진입 후보"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.85,
+      "related_signals": [],
+      "tags": ["스마트링", "웨어러블", "앰비언트AI", "CES 2026", "Oura", "대화형인터페이스", "HCI"],
+      "analyst_notes": "Apple의 스마트링 진입 여부와 AI Assistant 통합 전략 관찰 필요"
+    },
+    {
+      "id": "SIG-2026-0111-003",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "장수 바이오마커 추적 기술 대중화 - Withings Body Scan 2, 60개 지표 측정",
+      "description": "CES 2026에서 Withings Body Scan 2 발표. 90초 만에 60개 이상 바이오마커 측정 및 '건강 궤적 점수'로 예상 건강수명 예측. $600에 Q2 2026 출시. 예방적 건강관리 트렌드를 소비자 레벨로 확산.",
+      "source": {
+        "name": "MacRumors",
+        "url": "https://www.macrumors.com/2026/01/05/withings-body-scan-2-smart-scale/",
+        "type": "news",
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "바이오마커 기반 예방의학의 대중화 및 소비자 주도 건강관리 체계로의 전환",
+      "significance": 3,
+      "significance_reason": "전문 의료기관 전유물이던 다중 바이오마커 측정을 가정으로 확산, 헬스케어 민주화",
+      "potential_impact": {
+        "short_term": "소비자 헬스테크 시장 확대 및 가정 건강모니터링 제품군 다양화",
+        "mid_term": "예방적 건강관리 문화 확산 및 보험/헬스케어 서비스 모델 변화",
+        "long_term": "개인 맞춤형 장수 전략 수립 및 헬스스팬 연장 사회 실현"
+      },
+      "actors": [
+        {
+          "name": "Withings",
+          "type": "company",
+          "role": "제품 개발 및 출시"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.82,
+      "related_signals": [],
+      "tags": ["장수", "바이오마커", "예방의학", "헬스테크", "Withings", "건강수명", "longevity"],
+      "analyst_notes": "데이터 프라이버시 이슈와 의료기기 규제 통과 여부 모니터링 필요"
+    },
+    {
+      "id": "SIG-2026-0111-004",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "한국 CES 2026 혁신상 60% 석권 - AI 및 Physical AI 3개 부문 전석 수상",
+      "description": "한국 기업이 CES 2026 혁신상 168개 수상(전체의 60%), Physical AI 및 AI Agent 부문 Best of Innovation 3개 전석. 1000개 기업 참가, 중소기업 137개 수상. 3년 연속 최다 수상국으로 한국 딥테크 경쟁력 부상.",
+      "source": {
+        "name": "Venture Square",
+        "url": "https://www.venturesquare.net/en/1030724/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "한국의 AI 및 Physical AI 분야 글로벌 경쟁력 확보 및 딥테크 생태계 성숙",
+      "significance": 4,
+      "significance_reason": "Physical AI 등 차세대 기술에서 한국이 선도 위치 확보, 중소기업 혁신 역량 입증",
+      "potential_impact": {
+        "short_term": "한국 AI 스타트업에 대한 글로벌 투자 관심 증가",
+        "mid_term": "Physical AI 분야 글로벌 시장 점유율 확대 및 수출 증가",
+        "long_term": "한국이 AI 시대 주요 기술 공급국으로 자리매김"
+      },
+      "actors": [
+        {
+          "name": "한국 중소기업",
+          "type": "company",
+          "role": "혁신 주체 (137개 수상)"
+        },
+        {
+          "name": "한국 정부",
+          "type": "government",
+          "role": "CES 통합 한국관 지원"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.88,
+      "related_signals": ["SIG-2026-0111-010"],
+      "tags": ["한국", "CES 2026", "혁신", "Physical AI", "중소기업", "AI Agent", "딥테크"],
+      "analyst_notes": "Physical AI 구체적 응용 분야와 상용화 일정 추적 필요"
+    },
+    {
+      "id": "SIG-2026-0111-005",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "title": "캘리포니아 AB 489 - AI 챗봇의 의사/간호사 사칭 금지법 시행",
+      "description": "2026년 1월 1일부터 생성AI가 의사, 간호사 등 면허 의료인 사칭 금지. 청소년 72%가 AI를 동반자로, 12%가 정신건강 지원으로 사용하는 상황에 대응. 각 위반 건별 처벌 가능한 규제 신설.",
+      "source": {
+        "name": "Medscape",
+        "url": "https://www.medscape.com/viewarticle/california-bans-ai-chatbots-posing-licensed-health-providers-2025a1000tpj",
+        "type": "policy",
+        "published_date": "2026-01-03"
+      },
+      "leading_indicator": "AI 헬스케어 응용의 규제 프레임워크 형성 및 윤리적 사용 기준 정립",
+      "significance": 4,
+      "significance_reason": "AI 헬스케어 규제의 선례로서 타 주 및 국가로 확산 가능성, 청소년 정신건강 보호",
+      "potential_impact": {
+        "short_term": "AI 헬스케어 서비스 제공사의 컴플라이언스 대응 및 서비스 재설계",
+        "mid_term": "AI 헬스케어 인증/라이선싱 체계 도입 논의 확산",
+        "long_term": "의료 AI와 인간 의료인의 역할 구분 명확화 및 하이브리드 모델 정착"
+      },
+      "actors": [
+        {
+          "name": "캘리포니아 주의회",
+          "type": "government",
+          "role": "입법 주체"
+        },
+        {
+          "name": "AI 헬스케어 스타트업",
+          "type": "company",
+          "role": "규제 대상"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.86,
+      "related_signals": [],
+      "tags": ["AI규제", "캘리포니아", "의료", "챗봇", "AB 489", "정신건강", "헬스케어"],
+      "analyst_notes": "타 주 유사 법안 발의 및 연방 차원 논의 진행 여부 모니터링"
+    },
+    {
+      "id": "SIG-2026-0111-006",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "title": "미국 3개 주 데이터 프라이버시법 시행 - Indiana, Kentucky, Rhode Island",
+      "description": "2026년 1월 1일부터 Indiana, Kentucky, Rhode Island 포괄적 소비자 데이터 보호법 시행. 캘리포니아는 자동의사결정, 리스크 평가, 사이버보안 감사 규정 추가. 주 단위 프라이버시 규제 모자이크 심화.",
+      "source": {
+        "name": "IAPP",
+        "url": "https://iapp.org/news/a/new-year-new-rules-us-state-privacy-requirements-coming-online-as-2026-begins",
+        "type": "policy",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "미국 연방 프라이버시법 부재 속 주 단위 규제 확산 지속 및 기업 컴플라이언스 부담 증가",
+      "significance": 3,
+      "significance_reason": "미국 프라이버시 규제의 파편화 심화로 기업 대응 비용 증가, GDPR 수준 규제로 수렴 조짐",
+      "potential_impact": {
+        "short_term": "다주 사업 기업의 컴플라이언스 시스템 구축 비용 증가",
+        "mid_term": "주 단위 규제 표준화 압력 및 연방법 제정 논의 가속",
+        "long_term": "미국형 포괄적 데이터 보호 체계 정립 가능성"
+      },
+      "actors": [
+        {
+          "name": "Indiana, Kentucky, Rhode Island 주정부",
+          "type": "government",
+          "role": "신규 입법 주체"
+        },
+        {
+          "name": "캘리포니아 주정부",
+          "type": "government",
+          "role": "CCPA 강화 주도"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.78,
+      "related_signals": [],
+      "tags": ["프라이버시", "데이터보호", "주법", "CCPA", "소비자권리", "규제"],
+      "analyst_notes": "2026년 추가 주법 시행 예정 및 연방 차원 통합 입법 가능성 추적"
+    },
+    {
+      "id": "SIG-2026-0111-007",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "트럼프 관세전쟁 법적 분쟁 격화 - 대법원 1월 9일 판결 예상",
+      "description": "2025년 5월 국제무역법원이 멕시코/캐나다/중국 펜타닐 관세 무효 판결 후 대법원 심리 진행. 평균 관세율 1~4월 27% 정점 후 11월 16.8%로 하락. USMCA 2026년 7월 갱신 예정으로 무역 구조 재편 가능성.",
+      "source": {
+        "name": "Trade Compliance Resource Hub",
+        "url": "https://www.tradecomplianceresourcehub.com/2026/01/10/trump-2-0-tariff-tracker/",
+        "type": "policy",
+        "published_date": "2026-01-10"
+      },
+      "leading_indicator": "미국 중심 글로벌 무역 질서 재편 및 공급망 지역화 가속",
+      "significance": 4,
+      "significance_reason": "USMCA 갱신과 연계된 북미 무역 구조 변화 및 대중 디커플링 심화 신호",
+      "potential_impact": {
+        "short_term": "관세 불확실성으로 기업 투자 결정 지연 및 공급망 재배치 가속",
+        "mid_term": "USMCA 재협상 결과에 따른 북미 제조업 지형 변화",
+        "long_term": "글로벌 무역 블록화 및 리쇼어링/니어쇼어링 구조 고착화"
+      },
+      "actors": [
+        {
+          "name": "트럼프 행정부",
+          "type": "government",
+          "role": "관세 정책 주도"
+        },
+        {
+          "name": "미국 대법원",
+          "type": "government",
+          "role": "관세 합법성 판단"
+        },
+        {
+          "name": "멕시코, 캐나다, 중국 정부",
+          "type": "government",
+          "role": "관세 대응 당사국"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.90,
+      "related_signals": [],
+      "tags": ["관세", "무역전쟁", "트럼프", "USMCA", "멕시코", "캐나다", "중국", "공급망"],
+      "analyst_notes": "대법원 판결 결과와 USMCA 갱신 협상 내용 긴밀 추적 필요"
+    },
+    {
+      "id": "SIG-2026-0111-008",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "title": "AI 스타트업 시드 밸류에이션 42% 프리미엄 - 중앙값 $17.9M",
+      "description": "AI 스타트업 시드단계 밸류에이션이 비AI 대비 42% 높음(중앙값 $17.9M). AI 기업이 전체 VC 펀딩의 33%, 딜의 36% 차지. Unconventional AI $475M 시드(창업 2개월), Thinking Machines Lab $2B 시드 등 메가 라운드 출현.",
+      "source": {
+        "name": "Qubit Capital",
+        "url": "https://qubit.capital/blog/ai-startup-fundraising-trends",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "AI 분야 자본 집중 및 비AI 스타트업의 펀딩 접근성 양극화 심화",
+      "significance": 4,
+      "significance_reason": "시드 단계부터 메가 밸류에이션 형성으로 스타트업 생태계 구조적 변화, 자본 쏠림 현상",
+      "potential_impact": {
+        "short_term": "AI 스타트업 과열 및 비AI 분야 펀딩 위축",
+        "mid_term": "AI 버블 논란 및 선별적 투자 심화, 수익성 검증 요구 증가",
+        "long_term": "AI 주도 산업 재편 및 전통 산업 혁신 자본 고갈 우려"
+      },
+      "actors": [
+        {
+          "name": "Unconventional AI",
+          "type": "company",
+          "role": "메가 시드 라운드 사례"
+        },
+        {
+          "name": "Thinking Machines Lab",
+          "type": "company",
+          "role": "메가 시드 라운드 사례"
+        },
+        {
+          "name": "VC 펀드",
+          "type": "organization",
+          "role": "AI 투자 집중"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.87,
+      "related_signals": ["SIG-2026-0111-024"],
+      "tags": ["벤처캐피탈", "AI스타트업", "시드펀딩", "밸류에이션", "프리미엄", "자본 양극화"],
+      "analyst_notes": "메가 라운드 스타트업의 실제 사업 성과 및 버블 징후 모니터링 필요"
+    },
+    {
+      "id": "SIG-2026-0111-009",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social", "Economic"]
+      },
+      "title": "GLP-1 비만약 알약 형태 출시 - Novo Nordisk Wegovy 알약 $149-299",
+      "description": "Novo Nordisk가 최초 GLP-1 경구약 Wegovy 알약을 1월 미국 출시. 월 $149-299로 기존 주사제 대비 저가. Eli Lilly orforglipron 3월 FDA 승인 예상. 시장 2035년 $150B 전망으로 비만 치료 접근성 혁명.",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/01/05/first-glp-1-pill-for-obesity-from-novo-nordisk-launches-in-the-us.html",
+        "type": "news",
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "비만 치료의 대중화 및 예방적 건강관리 문화 확산, 제약 산업 구조 변화",
+      "significance": 5,
+      "significance_reason": "주사에서 경구로 전환으로 비만약 시장 폭발적 확대 및 전 세계 공중보건 패러다임 전환 가능성",
+      "potential_impact": {
+        "short_term": "GLP-1 시장 급성장 및 Novo Nordisk, Eli Lilly 시장 지배력 강화",
+        "mid_term": "비만 유병률 감소 및 관련 만성질환 치료비 절감 효과 가시화",
+        "long_term": "비만을 질병으로 인식하는 사회적 패러다임 정착 및 예방 중심 헬스케어 체계 전환"
+      },
+      "actors": [
+        {
+          "name": "Novo Nordisk",
+          "type": "company",
+          "role": "Wegovy 알약 출시"
+        },
+        {
+          "name": "Eli Lilly",
+          "type": "company",
+          "role": "orforglipron 경쟁 제품 개발"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.91,
+      "related_signals": [],
+      "tags": ["GLP-1", "비만약", "Wegovy", "Ozempic", "경구약", "접근성", "제약"],
+      "analyst_notes": "보험 적용 범위 확대 여부와 장기 부작용 데이터 축적 과정 관찰 필요"
+    },
+    {
+      "id": "SIG-2026-0111-010",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political", "Technological"]
+      },
+      "title": "한국 딥테크 스타트업 정책 금융 패키지 - ₩22.3B R&D 지원",
+      "description": "한국 정부가 2026년 스타트업/중소기업 대상 규제완화형 R&D 프로그램 223억원 규모 론칭. 기술한계 철폐, 딥테크 성장 인프라 조성. CES 2026 통합 한국관과 연계된 혁신 생태계 강화 정책.",
+      "source": {
+        "name": "Korea Tech Desk",
+        "url": "https://koreatechdesk.com/korea-sme-innovation-development-project",
+        "type": "policy",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "한국 정부의 딥테크 집중 육성 전략 본격화 및 중소기업 기술 경쟁력 강화",
+      "significance": 3,
+      "significance_reason": "CES 성과와 연계된 정책 금융 패키지로 한국 혁신 생태계의 선순환 구조 형성 시도",
+      "potential_impact": {
+        "short_term": "딥테크 스타트업 R&D 투자 확대 및 규제 샌드박스 활용 증가",
+        "mid_term": "한국 딥테크 스타트업의 글로벌 경쟁력 강화 및 수출 증가",
+        "long_term": "한국이 AI, Physical AI 등 차세대 기술의 글로벌 허브로 성장"
+      },
+      "actors": [
+        {
+          "name": "한국 정부",
+          "type": "government",
+          "role": "정책 금융 지원 주체"
+        },
+        {
+          "name": "한국 딥테크 스타트업",
+          "type": "company",
+          "role": "지원 대상"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.80,
+      "related_signals": ["SIG-2026-0111-004"],
+      "tags": ["한국", "딥테크", "스타트업", "정책금융", "R&D", "규제완화", "중소기업"],
+      "analyst_notes": "실제 지원금 집행 속도와 성과 지표 모니터링 필요"
+    },
+    {
+      "id": "SIG-2026-0111-013",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "title": "NASA Artemis II 2026년 2월 발사 - 52년 만에 달 유인 비행 복귀",
+      "description": "Artemis II, 2026년 2월 6일 이후 발사 예정으로 1972년 Apollo 17 이후 최초 유인 달 비행. 4명 우주인 10일간 Orion 우주선 생명유지/추진 시스템 검증. 최초 흑인/여성/非미국인 달 비행으로 우주탐사 새 시대 개막.",
+      "source": {
+        "name": "NASA",
+        "url": "https://www.nasa.gov/mission/artemis-ii/",
+        "type": "policy",
+        "published_date": "2026-01-10"
+      },
+      "leading_indicator": "달 유인 탐사 재개 및 심우주 탐사 기술 실증, 달 경제권 형성 신호",
+      "significance": 4,
+      "significance_reason": "반세기만의 유인 달 비행 복귀로 우주 탐사 패러다임 전환 및 Artemis III 달 착륙 준비",
+      "potential_impact": {
+        "short_term": "Artemis 프로그램 가시적 진전 및 우주 산업 투자 증가",
+        "mid_term": "Artemis III 달 착륙(2027년 예상) 및 달 기지 건설 논의 본격화",
+        "long_term": "달 경제권 형성 및 화성 유인 탐사 기술 확보"
+      },
+      "actors": [
+        {
+          "name": "NASA",
+          "type": "government",
+          "role": "임무 주도"
+        },
+        {
+          "name": "SpaceX, Lockheed Martin",
+          "type": "company",
+          "role": "우주선 개발 협력"
+        },
+        {
+          "name": "캐나다 우주국",
+          "type": "government",
+          "role": "국제 협력 파트너"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.92,
+      "related_signals": [],
+      "tags": ["Artemis", "NASA", "달탐사", "유인우주선", "Orion", "우주탐사", "다양성"],
+      "analyst_notes": "발사 일정 변경 이력 고려 시 실제 발사일 재확인 필요"
+    },
+    {
+      "id": "SIG-2026-0111-014",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "NVIDIA DLSS 4.5 및 G-Sync Pulsar - AI 기반 게임 그래픽 혁신",
+      "description": "CES 2026에서 NVIDIA가 DLSS 4.5(Transformer 기반 Super Resolution) 및 G-Sync Pulsar(백라이트 펄스로 모션 블러 감소) 발표. AI 기반 게임 경험의 질적 도약 및 실시간 렌더링 패러다임 변화.",
+      "source": {
+        "name": "Tom's Guide",
+        "url": "https://www.tomsguide.com/news/live/ces-2026-live-latest-news",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "AI 기반 실시간 그래픽 렌더링의 표준화 및 게임 산업 AI 통합 가속",
+      "significance": 3,
+      "significance_reason": "Transformer를 게임 그래픽에 도입하며 AI의 실시간 응용 확장, 하드웨어 성능 의존도 감소",
+      "potential_impact": {
+        "short_term": "고사양 게임의 접근성 향상 및 저사양 PC 시장 활성화",
+        "mid_term": "AI 기반 렌더링 기술의 타 분야 확산(영상 제작, VR/AR)",
+        "long_term": "실시간 AI 렌더링이 그래픽 산업의 표준으로 정착"
+      },
+      "actors": [
+        {
+          "name": "NVIDIA",
+          "type": "company",
+          "role": "기술 개발 및 발표"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.75,
+      "related_signals": [],
+      "tags": ["NVIDIA", "DLSS", "G-Sync", "게임", "AI", "그래픽", "Transformer"],
+      "analyst_notes": "AMD, Intel의 경쟁 기술 대응 전략 관찰 필요"
+    },
+    {
+      "id": "SIG-2026-0111-015",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "AMD Ryzen AI 및 Intel Panther Lake - AI PC 경쟁 격화",
+      "description": "CES 2026에서 AMD CEO Lisa Su가 새로운 Ryzen AI 프로세서 라인업 발표, Intel은 Panther Lake(Core Ultra Series 3) AI 칩 및 핸드헬드 게임기 플랫폼 공개. AI PC 시장 본격화로 엣지 AI 연산 경쟁 심화.",
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/ces-2026-live-updates-on-the-latest-gadgets-at-the-biggest-tech-event-of-the-year-153146311.html",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "AI 연산의 엣지화 가속 및 클라우드 중심에서 로컬 AI 처리로의 전환",
+      "significance": 3,
+      "significance_reason": "AMD, Intel의 AI PC 칩 경쟁 본격화로 개인 디바이스의 AI 자체 처리 능력 향상",
+      "potential_impact": {
+        "short_term": "AI PC 시장 확대 및 제품 다양화",
+        "mid_term": "로컬 AI 처리 증가로 프라이버시 강화 및 클라우드 의존도 감소",
+        "long_term": "엣지 AI 생태계 성숙 및 하이브리드 AI 아키텍처 표준화"
+      },
+      "actors": [
+        {
+          "name": "AMD",
+          "type": "company",
+          "role": "Ryzen AI 프로세서 발표"
+        },
+        {
+          "name": "Intel",
+          "type": "company",
+          "role": "Panther Lake AI 칩 발표"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.77,
+      "related_signals": [],
+      "tags": ["AMD", "Intel", "AI PC", "프로세서", "Ryzen AI", "Panther Lake", "엣지 AI"],
+      "analyst_notes": "실제 AI 성능 벤치마크 및 소프트웨어 생태계 지원 수준 확인 필요"
+    },
+    {
+      "id": "SIG-2026-0111-017",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "Uber-Lucid-Nuro 자율주행 럭셔리 로보택시 공개",
+      "description": "CES 2026에서 Uber, Lucid Motors, Nuro가 협력한 가장 럭셔리한 자율주행 로보택시 공개. Uber 설계 차내 경험, 고급 승객 편의성 강조. 자율주행 상용화 및 프리미엄 모빌리티 서비스 시장 부상.",
+      "source": {
+        "name": "TechRadar",
+        "url": "https://www.techradar.com/news/live/ces-2026-live-all-the-latest-news-from-the-worlds-biggest-tech-show",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "자율주행 상용화 가시화 및 프리미엄 로보택시 서비스 모델 출현",
+      "significance": 3,
+      "significance_reason": "자율주행 기술의 럭셔리 시장 진출로 틈새 시장 선점 전략, 대중 상용화 전 단계",
+      "potential_impact": {
+        "short_term": "프리미엄 로보택시 시범 서비스 개시 및 고객 반응 검증",
+        "mid_term": "자율주행 차량 서비스 모델 다각화(프리미엄/대중형 분화)",
+        "long_term": "차량 소유 개념 약화 및 서비스형 모빌리티(MaaS) 생태계 확립"
+      },
+      "actors": [
+        {
+          "name": "Uber",
+          "type": "company",
+          "role": "서비스 플랫폼 및 UX 설계"
+        },
+        {
+          "name": "Lucid Motors",
+          "type": "company",
+          "role": "럭셔리 차량 개발"
+        },
+        {
+          "name": "Nuro",
+          "type": "company",
+          "role": "자율주행 기술 제공"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.80,
+      "related_signals": [],
+      "tags": ["자율주행", "로보택시", "Uber", "Lucid", "Nuro", "모빌리티", "프리미엄"],
+      "analyst_notes": "실제 상용화 일정 및 규제 승인 진행 상황 모니터링 필요"
+    },
+    {
+      "id": "SIG-2026-0111-018",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Economic"]
+      },
+      "title": "ESG 및 지속가능성 규제 2026년 본격화 - CBAM, CSRD 시행",
+      "description": "EU CBAM 2026년 정식 시행(2027년 결제 시작), CSRD 간소화 패키지로 일부 기업 면제. 호주/홍콩/말레이시아/싱가포르 ISSB 기준 첫 보고. 재생에너지 40% 돌파로 글로벌 ESG 규제 표준화 가속.",
+      "source": {
+        "name": "ESG Dive",
+        "url": "https://www.esgdive.com/news/esg-trends-outlook-2026/809129/",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "글로벌 ESG 규제의 실질적 집행 단계 진입 및 기업 컴플라이언스 의무화",
+      "significance": 4,
+      "significance_reason": "CBAM, CSRD 등 강제력 있는 규제 시행으로 ESG가 자율에서 의무로 전환되는 전환점",
+      "potential_impact": {
+        "short_term": "EU 수출 기업의 탄소 발자국 측정 및 보고 의무화 대응",
+        "mid_term": "글로벌 공급망의 탈탄소화 가속 및 고탄소 산업 구조조정",
+        "long_term": "ESG 기준이 글로벌 무역 및 투자의 기본 요건으로 정착"
+      },
+      "actors": [
+        {
+          "name": "유럽연합",
+          "type": "government",
+          "role": "CBAM, CSRD 시행 주체"
+        },
+        {
+          "name": "ISSB",
+          "type": "organization",
+          "role": "글로벌 지속가능성 공시 기준 제정"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.85,
+      "related_signals": ["SIG-2026-0111-019"],
+      "tags": ["ESG", "CBAM", "CSRD", "지속가능성", "ISSB", "재생에너지", "규제"],
+      "analyst_notes": "한국 및 아시아 기업의 CBAM 대응 전략 및 비용 영향 분석 필요"
+    },
+    {
+      "id": "SIG-2026-0111-019",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological"]
+      },
+      "title": "AI 전력 수요 급증으로 그리드 한계 및 지속가능성 딜레마",
+      "description": "AI 데이터센터 전력 수요 폭증으로 전력망 한계 도달, 수익모델 및 탄소중립 목표 충돌. 재생에너지 25%(풍력+태양광) 달성했으나 AI 수요 증가로 상쇄 우려. AI와 기후 목표 간 트레이드오프 가시화.",
+      "source": {
+        "name": "ESG Today",
+        "url": "https://www.esgtoday.com/guest-post-2026-the-credibility-test-eight-sustainability-trends-that-will-matter-for-businesses/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "AI 기술 발전과 환경 지속가능성 목표 간 구조적 충돌 심화",
+      "significance": 4,
+      "significance_reason": "AI 혁명의 지속가능성이 에너지 인프라 한계에 직면하며 기술-환경 딜레마 표면화",
+      "potential_impact": {
+        "short_term": "AI 데이터센터 입지 제한 및 전력 요금 인상 압력",
+        "mid_term": "에너지 효율적 AI 칩 및 재생에너지 중심 데이터센터 확산",
+        "long_term": "AI 발전 속도 조절 논의 또는 핵융합 등 차세대 에너지 개발 가속"
+      },
+      "actors": [
+        {
+          "name": "빅테크 기업 (Microsoft, Google, Meta 등)",
+          "type": "company",
+          "role": "대규모 AI 데이터센터 운영"
+        },
+        {
+          "name": "전력 공급사",
+          "type": "company",
+          "role": "그리드 용량 한계 직면"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.88,
+      "related_signals": ["SIG-2026-0111-001", "SIG-2026-0111-018"],
+      "tags": ["AI", "전력수요", "데이터센터", "그리드", "지속가능성", "에너지", "탄소중립"],
+      "analyst_notes": "빅테크의 탄소중립 목표 재조정 여부 및 SMR(소형모듈원자로) 도입 논의 추적 필요"
+    },
+    {
+      "id": "SIG-2026-0111-021",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Gen Z 데이팅 앱 환멸 79% - 오프라인 만남 회귀 트렌드",
+      "description": "Gen Z의 79%가 데이팅 앱에 환멸감 표시하며 오프라인 만남 선호로 회귀. 디지털 피로와 진정성 추구가 원인. 아날로그 관계 형성 방식 재조명 및 디지털 관계 모델 재고 신호.",
+      "source": {
+        "name": "Marketing Interactive",
+        "url": "https://www.marketing-interactive.com/these-are-the-trends-shaping-gen-z-in-2026-pinterest-predicts-report",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "디지털 네이티브 세대의 디지털 피로 및 오프라인 경험 재평가 트렌드",
+      "significance": 3,
+      "significance_reason": "디지털 우선 세대가 오프라인 회귀하는 역설적 현상으로 디지털 도구 한계 인식",
+      "potential_impact": {
+        "short_term": "데이팅 앱 산업 성장 둔화 및 오프라인 소셜 이벤트 비즈니스 성장",
+        "mid_term": "소셜 플랫폼의 오프라인 연결 기능 강화 시도",
+        "long_term": "디지털-아날로그 하이브리드 관계 형성 모델 정착"
+      },
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "individual",
+          "role": "행동 변화 주체"
+        },
+        {
+          "name": "데이팅 앱 기업 (Tinder, Bumble 등)",
+          "type": "company",
+          "role": "사업 모델 재검토 필요"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.75,
+      "related_signals": ["SIG-2026-0111-022"],
+      "tags": ["GenZ", "데이팅앱", "오프라인", "관계", "디지털피로", "진정성"],
+      "analyst_notes": "데이팅 앱 기업의 대응 전략 및 오프라인 이벤트 시장 성장 추적"
+    },
+    {
+      "id": "SIG-2026-0111-022",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Gen Z 디지털 라이프스타일 표준화 - 'Dark Mode'와 'Chronically Online' 이중모드",
+      "description": "Gen Z가 'New Culture Code'로 Dark Mode(오프라인 프라이빗 공간)와 Chronically Online(창의성/표현 도구) 이중모드 생활 정립. 디지털과 아날로그의 선택적 통합으로 디지털 네이티브 행동양식 표준화.",
+      "source": {
+        "name": "Stupid Dope",
+        "url": "https://stupiddope.com/2026/01/gen-zs-digital-lifestyle-trends-are-becoming-the-new-standard/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "디지털-아날로그 이중 정체성의 표준화 및 선택적 디지털 사용 문화 확산",
+      "significance": 3,
+      "significance_reason": "디지털 네이티브가 온오프라인을 전략적으로 분리 사용하는 새로운 행동 패턴 정립",
+      "potential_impact": {
+        "short_term": "프라이버시 중시 제품/서비스 수요 증가",
+        "mid_term": "온오프라인 경계를 존중하는 플랫폼 설계 원칙 확산",
+        "long_term": "디지털 웰빙 및 선택적 연결성이 기본권으로 인식"
+      },
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "individual",
+          "role": "문화 코드 형성 주체"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.76,
+      "related_signals": ["SIG-2026-0111-021"],
+      "tags": ["GenZ", "디지털라이프스타일", "Dark Mode", "이중정체성", "온오프라인통합"],
+      "analyst_notes": "마케팅 및 제품 설계에서 Dark Mode 존중 전략 필요성 증가"
+    },
+    {
+      "id": "SIG-2026-0111-024",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "VC 펀딩 구조 변화 - 시드 및 성장단계 집중, 시리즈 A/B '압박'",
+      "description": "VC 투자가 시드(초대형 라운드)와 후기 성장단계로 양극화. 시리즈 A/B 진입 난이도 증가, 수익성/단위경제성 검증 강화. 비실리콘밸리(폴란드, 터키, 그리스) 위험조정수익률 우수로 지역 다각화 트렌드.",
+      "source": {
+        "name": "Seedscope AI",
+        "url": "https://seedscope.ai/blog/startup-funding-trends-in-2026-venture-capital-s-new-era",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "VC 투자의 양극화 및 스타트업 생존 전략 재편, 지역 다각화 가속",
+      "significance": 3,
+      "significance_reason": "시리즈 A/B 데스밸리 심화로 스타트업 생존율 감소 및 자본 효율 중시 문화 확산",
+      "potential_impact": {
+        "short_term": "시드-시리즈A 생존율 감소 및 런웨이 연장 압박",
+        "mid_term": "수익성 조기 달성 스타트업 중심으로 투자 재편",
+        "long_term": "비실리콘밸리 지역의 혁신 생태계 성장 및 글로벌 다극화"
+      },
+      "actors": [
+        {
+          "name": "VC 펀드",
+          "type": "organization",
+          "role": "투자 전략 재편 주체"
+        },
+        {
+          "name": "시드/시리즈A 스타트업",
+          "type": "company",
+          "role": "펀딩 난이도 증가 직면"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "last_updated": "2026-01-11",
+      "confidence": 0.81,
+      "related_signals": ["SIG-2026-0111-008"],
+      "tags": ["벤처캐피탈", "펀딩트렌드", "시드", "시리즈A", "자본효율", "지역다각화"],
+      "analyst_notes": "한국 스타트업의 시리즈A 펀딩 성공률 및 글로벌 VC 유치 전략 분석 필요"
+    }
+  ]
+}

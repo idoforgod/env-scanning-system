@@ -1,0 +1,449 @@
+{
+  "scan_date": "2026-01-11",
+  "generated_at": "2026-01-11T14:30:00Z",
+  "archive_metadata": {
+    "archive_type": "daily_scan",
+    "report_file": "reports/archive/2026/01/2026-01-11.md",
+    "scan_duration_minutes": 120,
+    "data_sources_count": 8
+  },
+  "summary": {
+    "total_signals_scanned": 24,
+    "total_new_signals": 18,
+    "duplicates_removed": 5,
+    "status_updates": 1,
+    "by_category": {
+      "Technological": 9,
+      "Economic": 3,
+      "Environmental": 2,
+      "Political": 3,
+      "Social": 4,
+      "Spiritual": 2
+    },
+    "by_priority": {
+      "critical_count": 5,
+      "high_priority_count": 11,
+      "medium_priority_count": 3,
+      "low_priority_count": 0
+    },
+    "top_3": [
+      {
+        "rank": 1,
+        "id": "SIG-2026-0111-001",
+        "title": "중국 '인공태양' EAST 밀도 한계 돌파 - 핵융합 실용화 가속",
+        "category": "Technological",
+        "score": 9.2
+      },
+      {
+        "rank": 2,
+        "id": "SIG-2026-0111-009",
+        "title": "GLP-1 비만약 알약 형태 출시 - Novo Nordisk Wegovy 알약 $149-299",
+        "category": "Economic",
+        "score": 8.9
+      },
+      {
+        "rank": 3,
+        "id": "SIG-2026-0111-019",
+        "title": "AI 전력 수요 급증으로 그리드 한계 및 지속가능성 딜레마",
+        "category": "Environmental",
+        "score": 8.8
+      }
+    ]
+  },
+  "database_update": {
+    "previous_total": 44,
+    "new_total": 62,
+    "signals_added": 18,
+    "growth_rate_percent": 40.9,
+    "signal_status": {
+      "emerging": 35,
+      "developing": 27
+    },
+    "significance_distribution": {
+      "level_5_critical": 12,
+      "level_4_high": 31,
+      "level_3_medium": 16,
+      "level_2_low": 2,
+      "level_1_minimal": 1
+    }
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0111-001",
+      "title": "중국 '인공태양' EAST 밀도 한계 돌파 - 핵융합 실용화 가속",
+      "category": "Technological",
+      "secondary_category": "Environmental",
+      "priority_score": 9.2,
+      "priority_level": "critical",
+      "significance": 5,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Science Advances / ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260101160855.htm",
+        "type": "academic",
+        "published_date": "2026-01-01"
+      },
+      "summary": "중국 EAST 토카막 핵융합로가 플라즈마 밀도 한계를 극복하며 기존 물리 법칙으로 불가능했던 고밀도 안정 상태를 달성했습니다. Science Advances에 발표된 이 성과는 핵융합 에너지 상용화의 주요 기술적 장애물을 제거하는 획기적 돌파구입니다."
+    },
+    {
+      "id": "SIG-2026-0111-002",
+      "title": "스마트링 시장 49% 급성장 - 앰비언트 인텔리전스 인터페이스로 부상",
+      "category": "Technological",
+      "secondary_category": "Social",
+      "priority_score": 7.5,
+      "priority_level": "high",
+      "significance": 4,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "summary": "CES 2026에서 스마트링이 출하량 49% 증가 예상, 미국 가구 12%(1500만) 보급. 웰니스 액세서리에서 대화형 AI 제어 인터페이스로 진화하며 HCI 패러다임 변화 신호."
+    },
+    {
+      "id": "SIG-2026-0111-003",
+      "title": "장수 바이오마커 추적 기술 대중화 - Withings Body Scan 2, 60개 지표 측정",
+      "category": "Technological",
+      "secondary_category": "Social",
+      "priority_score": 6.8,
+      "priority_level": "high",
+      "significance": 3,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "MacRumors",
+        "url": "https://www.macrumors.com/2026/01/05/withings-body-scan-2-smart-scale/",
+        "type": "news",
+        "published_date": "2026-01-05"
+      },
+      "summary": "CES 2026에서 Withings Body Scan 2 발표. 90초 만에 60개 이상 바이오마커 측정 및 '건강 궤적 점수'로 예상 건강수명 예측. $600에 Q2 2026 출시."
+    },
+    {
+      "id": "SIG-2026-0111-004",
+      "title": "한국 CES 2026 혁신상 60% 석권 - AI 및 Physical AI 3개 부문 전석 수상",
+      "category": "Technological",
+      "secondary_category": "Economic",
+      "priority_score": 8.3,
+      "priority_level": "high",
+      "significance": 4,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Venture Square",
+        "url": "https://www.venturesquare.net/en/1030724/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "summary": "한국 기업 168개 CES 혁신상 수상(전체의 60%), Physical AI 및 AI Agent 부문 Best of Innovation 3개 전석. 3년 연속 최다 수상국으로 한국 딥테크 경쟁력 부상."
+    },
+    {
+      "id": "SIG-2026-0111-005",
+      "title": "캘리포니아 AB 489 - AI 챗봇의 의사/간호사 사칭 금지법 시행",
+      "category": "Political",
+      "secondary_category": "Technological",
+      "priority_score": 7.6,
+      "priority_level": "high",
+      "significance": 4,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Medscape",
+        "url": "https://www.medscape.com/viewarticle/california-bans-ai-chatbots-posing-licensed-health-providers-2025a1000tpj",
+        "type": "policy",
+        "published_date": "2026-01-03"
+      },
+      "summary": "2026년 1월 1일부터 생성AI가 의사, 간호사 등 면허 의료인 사칭 금지. 청소년 72%가 AI를 동반자로, 12%가 정신건강 지원으로 사용하는 상황에 대응."
+    },
+    {
+      "id": "SIG-2026-0111-006",
+      "title": "미국 3개 주 데이터 프라이버시법 시행 - Indiana, Kentucky, Rhode Island",
+      "category": "Political",
+      "secondary_category": "Technological",
+      "priority_score": 6.8,
+      "priority_level": "high",
+      "significance": 3,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "IAPP",
+        "url": "https://iapp.org/news/a/new-year-new-rules-us-state-privacy-requirements-coming-online-as-2026-begins",
+        "type": "policy",
+        "published_date": "2026-01-02"
+      },
+      "summary": "2026년 1월 1일부터 Indiana, Kentucky, Rhode Island 포괄적 소비자 데이터 보호법 시행. 주 단위 규제 모자이크 심화."
+    },
+    {
+      "id": "SIG-2026-0111-007",
+      "title": "트럼프 관세전쟁 법적 분쟁 격화 - 대법원 1월 9일 판결 예상",
+      "category": "Political",
+      "secondary_category": "Economic",
+      "priority_score": 8.3,
+      "priority_level": "critical",
+      "significance": 4,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Trade Compliance Resource Hub",
+        "url": "https://www.tradecomplianceresourcehub.com/2026/01/10/trump-2-0-tariff-tracker/",
+        "type": "policy",
+        "published_date": "2026-01-10"
+      },
+      "summary": "2025년 5월 국제무역법원이 멕시코/캐나다/중국 펜타닐 관세 무효 판결 후 대법원 심리. USMCA 2026년 7월 갱신 예정으로 무역 구조 재편 가능성."
+    },
+    {
+      "id": "SIG-2026-0111-008",
+      "title": "AI 스타트업 시드 밸류에이션 42% 프리미엄 - 중앙값 $17.9M",
+      "category": "Economic",
+      "secondary_category": "Technological",
+      "priority_score": 7.2,
+      "priority_level": "high",
+      "significance": 4,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Qubit Capital",
+        "url": "https://qubit.capital/blog/ai-startup-fundraising-trends",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "summary": "AI 스타트업 시드단계 밸류에이션이 비AI 대비 42% 높음(중앙값 $17.9M). AI 기업이 전체 VC 펀딩의 33%, 딜의 36% 차지."
+    },
+    {
+      "id": "SIG-2026-0111-009",
+      "title": "GLP-1 비만약 알약 형태 출시 - Novo Nordisk Wegovy 알약 $149-299",
+      "category": "Economic",
+      "secondary_category": "Technological, Social",
+      "priority_score": 8.9,
+      "priority_level": "critical",
+      "significance": 5,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/01/05/first-glp-1-pill-for-obesity-from-novo-nordisk-launches-in-the-us.html",
+        "type": "news",
+        "published_date": "2026-01-05"
+      },
+      "summary": "Novo Nordisk가 최초 GLP-1 경구약 Wegovy 알약을 1월 미국 출시. 월 $149-299로 기존 주사제 대비 저가. 시장 규모 2035년 $150B 전망."
+    },
+    {
+      "id": "SIG-2026-0111-010",
+      "title": "한국 딥테크 스타트업 정책 금융 패키지 - ₩22.3B R&D 지원",
+      "category": "Economic",
+      "secondary_category": "Political, Technological",
+      "priority_score": 7.2,
+      "priority_level": "high",
+      "significance": 3,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Korea Tech Desk",
+        "url": "https://koreatechdesk.com/korea-sme-innovation-development-project",
+        "type": "policy",
+        "published_date": "2026-01-07"
+      },
+      "summary": "한국 정부가 2026년 스타트업/중소기업 대상 규제완화형 R&D 프로그램 223억원 규모 론칭. CES 2026 성과와 연계된 선순환 구조 형성."
+    },
+    {
+      "id": "SIG-2026-0111-013",
+      "title": "NASA Artemis II 2026년 2월 발사 - 52년 만에 달 유인 비행 복귀",
+      "category": "Technological",
+      "secondary_category": "Political",
+      "priority_score": 7.9,
+      "priority_level": "high",
+      "significance": 4,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "NASA",
+        "url": "https://www.nasa.gov/mission/artemis-ii/",
+        "type": "policy",
+        "published_date": "2026-01-10"
+      },
+      "summary": "Artemis II, 2026년 2월 6일 이후 발사 예정으로 1972년 Apollo 17 이후 최초 유인 달 비행. 우주탐사 새 시대 개막."
+    },
+    {
+      "id": "SIG-2026-0111-014",
+      "title": "NVIDIA DLSS 4.5 및 G-Sync Pulsar - AI 기반 게임 그래픽 혁신",
+      "category": "Technological",
+      "priority_score": 6.1,
+      "priority_level": "medium",
+      "significance": 3,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Tom's Guide",
+        "url": "https://www.tomsguide.com/news/live/ces-2026-live-latest-news",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "summary": "CES 2026에서 NVIDIA가 DLSS 4.5(Transformer 기반 Super Resolution) 발표. AI 기반 실시간 렌더링의 표준화."
+    },
+    {
+      "id": "SIG-2026-0111-015",
+      "title": "AMD Ryzen AI 및 Intel Panther Lake - AI PC 경쟁 격화",
+      "category": "Technological",
+      "secondary_category": "Economic",
+      "priority_score": 6.6,
+      "priority_level": "high",
+      "significance": 3,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/ces-2026-live-updates-on-the-latest-gadgets-at-the-biggest-tech-event-of-the-year-153146311.html",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "summary": "CES 2026에서 AMD와 Intel이 새로운 AI 프로세서 발표. AI PC 시장 본격화로 엣지 AI 연산 경쟁 심화."
+    },
+    {
+      "id": "SIG-2026-0111-017",
+      "title": "Uber-Lucid-Nuro 자율주행 럭셔리 로보택시 공개",
+      "category": "Technological",
+      "secondary_category": "Social",
+      "priority_score": 6.4,
+      "priority_level": "high",
+      "significance": 3,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "TechRadar",
+        "url": "https://www.techradar.com/news/live/ces-2026-live-all-the-latest-news-from-the-worlds-biggest-tech-show",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "summary": "CES 2026에서 Uber, Lucid Motors, Nuro가 협력한 럭셔리한 자율주행 로보택시 공개. 자율주행 상용화 가시화."
+    },
+    {
+      "id": "SIG-2026-0111-018",
+      "title": "ESG 및 지속가능성 규제 2026년 본격화 - CBAM, CSRD 시행",
+      "category": "Environmental",
+      "secondary_category": "Political, Economic",
+      "priority_score": 8.4,
+      "priority_level": "critical",
+      "significance": 4,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "ESG Dive",
+        "url": "https://www.esgdive.com/news/esg-trends-outlook-2026/809129/",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "summary": "EU CBAM 2026년 정식 시행(2027년 결제 시작), CSRD 강제 공시로 ESG가 자율에서 의무로 전환되는 전환점."
+    },
+    {
+      "id": "SIG-2026-0111-019",
+      "title": "AI 전력 수요 급증으로 그리드 한계 및 지속가능성 딜레마",
+      "category": "Environmental",
+      "secondary_category": "Technological",
+      "priority_score": 8.8,
+      "priority_level": "critical",
+      "significance": 4,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "ESG Today",
+        "url": "https://www.esgtoday.com/guest-post-2026-the-credibility-test-eight-sustainability-trends-that-will-matter-for-businesses/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "summary": "AI 데이터센터 전력 수요 폭증으로 전력망이 한계에 도달. AI 발전과 탄소중립 목표 간 구조적 충돌이 가시화."
+    },
+    {
+      "id": "SIG-2026-0111-021",
+      "title": "Gen Z 데이팅 앱 환멸 79% - 오프라인 만남 회귀 트렌드",
+      "category": "Social",
+      "priority_score": 5.1,
+      "priority_level": "medium",
+      "significance": 3,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Marketing Interactive",
+        "url": "https://www.marketing-interactive.com/these-are-the-trends-shaping-gen-z-in-2026-pinterest-predicts-report",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "summary": "Gen Z의 79%가 데이팅 앱에 환멸감 표시하며 오프라인 만남 선호로 회귀. 디지털 피로 신호."
+    },
+    {
+      "id": "SIG-2026-0111-022",
+      "title": "Gen Z 디지털 라이프스타일 표준화 - 'Dark Mode'와 'Chronically Online' 이중모드",
+      "category": "Social",
+      "priority_score": 4.9,
+      "priority_level": "medium",
+      "significance": 3,
+      "status": "emerging",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Stupid Dope",
+        "url": "https://stupiddope.com/2026/01/gen-zs-digital-lifestyle-trends-are-becoming-the-new-standard/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "summary": "Gen Z가 'New Culture Code'로 Dark Mode와 Chronically Online 이중모드 생활 정립. 디지털-아날로그 선택적 통합."
+    },
+    {
+      "id": "SIG-2026-0111-024",
+      "title": "VC 펀딩 구조 변화 - 시드 및 성장단계 집중, 시리즈 A/B '압박'",
+      "category": "Economic",
+      "priority_score": 6.5,
+      "priority_level": "high",
+      "significance": 3,
+      "status": "developing",
+      "detected_date": "2026-01-11",
+      "source": {
+        "name": "Seedscope AI",
+        "url": "https://seedscope.ai/blog/startup-funding-trends-in-2026-venture-capital-s-new-era",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "summary": "VC 투자가 시드(초대형)와 후기 성장단계로 양극화. 시리즈 A/B 데스밸리 심화로 스타트업 생존율 감소."
+    }
+  ],
+  "rankings": [
+    {
+      "rank": 1,
+      "signal_id": "SIG-2026-0111-001",
+      "priority_score": 9.2,
+      "priority_level": "critical"
+    },
+    {
+      "rank": 2,
+      "signal_id": "SIG-2026-0111-009",
+      "priority_score": 8.9,
+      "priority_level": "critical"
+    },
+    {
+      "rank": 3,
+      "signal_id": "SIG-2026-0111-019",
+      "priority_score": 8.8,
+      "priority_level": "critical"
+    },
+    {
+      "rank": 4,
+      "signal_id": "SIG-2026-0111-018",
+      "priority_score": 8.4,
+      "priority_level": "critical"
+    },
+    {
+      "rank": 5,
+      "signal_id": "SIG-2026-0111-007",
+      "priority_score": 8.3,
+      "priority_level": "critical"
+    }
+  ],
+  "key_metrics": {
+    "scan_completion_time": "2026-01-11T14:30:00Z",
+    "archive_creation_time": "2026-01-11T14:35:00Z",
+    "average_priority_score": 7.09,
+    "highest_priority_score": 9.2,
+    "lowest_priority_score": 4.9
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-11",
+    "scan_time": "07:30:00",
+    "timezone": "Asia/Seoul",
+    "scan_window": {
+      "hours": 24,
+      "strict_mode": true,
+      "start": "2026-01-10T00:00:00+09:00",
+      "end": "2026-01-11T23:59:59+09:00"
+    },
+    "total_scanned": 18,
+    "by_category": {
+      "Social": 2,
+      "Technological": 8,
+      "Economic": 3,
+      "Environmental": 2,
+      "Political": 2,
+      "Spiritual": 1
+    },
+    "excluded_count": 12,
+    "excluded_samples": [
+      {
+        "title": "NVIDIA Rubin Platform Launch",
+        "published_date": "2026-01-05",
+        "reason": "Published 6 days ago, outside 24-hour window"
+      },
+      {
+        "title": "ProLogium Solid-State Battery Announcement",
+        "published_date": "2026-01-05",
+        "reason": "Published 6 days ago, outside 24-hour window"
+      },
+      {
+        "title": "Quantum Error-Correction Breakthrough (Science Tokyo)",
+        "published_date": "2026-01-06",
+        "reason": "Published 5 days ago, outside 24-hour window"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "raw_id": "RAW-2026-0111-001",
+      "title": "European Energy Reaches 2.1 GW Grid-Connected Renewable Capacity in Denmark",
+      "url": "https://solarquarter.com/2026/01/09/european-energy-reaches-2-1-gw-grid-connected-renewable-capacity-in-denmark-including-solar-wind-and-battery-systems/",
+      "source_name": "SolarQuarter",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Environmental",
+      "summary": "European Energy announced reaching 2.1 GW of grid-connected renewable capacity in Denmark, including solar, wind, and battery systems. The company plans to focus in 2026 on upgrading existing assets through the integration of battery systems to improve operational flexibility and store electricity during periods of low solar and wind generation.",
+      "key_entities": [
+        "European Energy",
+        "Denmark",
+        "Battery Storage",
+        "Solar Power",
+        "Wind Energy"
+      ],
+      "significance_indicators": {
+        "scale": "2.1 GW capacity milestone",
+        "innovation": "Integrated renewable + storage systems",
+        "trend": "Energy storage integration becoming standard"
+      },
+      "raw_content": "European Energy reaches 2.1 GW grid-connected renewable capacity in Denmark. Plans focus on battery system integration for operational flexibility.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-002",
+      "title": "AI 디지털교과서 정책 조정 - AI 교육자료로 전환",
+      "url": "https://focusnjn.com/article/1065591818096765",
+      "source_name": "전주일보",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Social",
+      "summary": "교육부가 2026년 정책에서 'AI 디지털교과서'라는 표현을 'AI 교육자료'로 전환하고, 전국 일괄 도입 대신 선도학교 1,900교 중심의 단계적 운영으로 방향을 조정했다. AI는 수업 대체가 아닌 학습 성취 분석, 행정업무 자동화, 진로상담 지원 도구로 규정된다.",
+      "key_entities": [
+        "교육부",
+        "AI 교육자료",
+        "선도학교",
+        "디지털 전환",
+        "한국 교육정책"
+      ],
+      "significance_indicators": {
+        "scale": "1,900 pilot schools nationwide",
+        "innovation": "Shift from replacement to augmentation model",
+        "trend": "Measured approach to AI in education"
+      },
+      "raw_content": "교육부는 AI를 수업을 대체하는 주체가 아니라 학습 성취 분석, 행정업무 자동화, 진로·진학 상담 등을 지원하는 도구로 규정. 선도학교 1,900교를 중심으로 단계적으로 운영.",
+      "language": "ko",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-003",
+      "title": "AMC Robotics Showcases Kyro at CES 2026 - 'ChatGPT Moment for Physical AI'",
+      "url": "https://www.globenewswire.com/news-release/2026/01/09/3216028/0/en/AMC-Robotics-Showcases-Kyro-at-CES-2026-Embodying-the-ChatGPT-Moment-for-Physical-AI.html",
+      "source_name": "GlobeNewswire",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Technological",
+      "summary": "AMC Robotics unveiled Kyro at CES 2026, representing what the company calls the 'ChatGPT Moment for Physical AI.' The system demonstrates AI's evolution from digital processing to physical world interaction, reasoning, and action.",
+      "key_entities": [
+        "AMC Robotics",
+        "Kyro",
+        "Physical AI",
+        "CES 2026",
+        "Robotics"
+      ],
+      "significance_indicators": {
+        "scale": "Industry-wide paradigm shift claim",
+        "innovation": "Integration of AI with physical robotics",
+        "trend": "Physical AI commercialization"
+      },
+      "raw_content": "AMC Robotics showcases Kyro at CES 2026, embodying the 'ChatGPT Moment for Physical AI' - machines that understand, reason, and act in the real world.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-004",
+      "title": "글로벌 채권 발행 2,480억 달러 기록 - 2026년 첫 주 역대 최고",
+      "url": "https://www.blockmedia.co.kr/archives/1030865",
+      "source_name": "블록미디어",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Economic",
+      "summary": "2026년 첫 일주일 동안 글로벌 채권 판매액이 약 2,480억 달러를 기록하며 전년 동기 대비 26% 급증했다. 기업들이 향후 금리 변동성과 AI 관련 자금 수요에 대비해 앞다투어 자금 조달에 나선 것으로 분석된다.",
+      "key_entities": [
+        "글로벌 채권시장",
+        "AI 인프라 투자",
+        "금리",
+        "기업 자금조달"
+      ],
+      "significance_indicators": {
+        "scale": "$248 billion in first week, +26% YoY",
+        "innovation": "AI infrastructure funding surge",
+        "trend": "Debt-financed AI investment wave"
+      },
+      "raw_content": "Global bond sales jumped +26% YoY in the first week of 2026, to ~$248 billion, driven by AI infrastructure investment demands and anticipation of interest rate changes.",
+      "language": "ko",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-005",
+      "title": "UN World Economic Situation and Prospects 2026 Released",
+      "url": "https://www.un.org/sustainabledevelopment/blog/2026/01/press-release-wesp2026/",
+      "source_name": "United Nations",
+      "source_type": "policy",
+      "published_date": "2026-01-08",
+      "category_hint": "Economic",
+      "summary": "UN released its World Economic Situation and Prospects 2026 report, forecasting global economic output to grow by 2.7% in 2026, slightly below the 2.8% estimated for 2025. The report highlights that subdued investment and limited fiscal space are weighing on economic activity, while trade tensions and fiscal strains cloud the outlook.",
+      "key_entities": [
+        "United Nations",
+        "Global Economy",
+        "Economic Growth",
+        "Trade Tensions",
+        "Fiscal Policy"
+      ],
+      "significance_indicators": {
+        "scale": "Global economic forecast 2.7% growth",
+        "innovation": "None - annual report",
+        "trend": "Economic slowdown concerns"
+      },
+      "raw_content": "UN warns global economy shows resilience, but trade tensions and fiscal strains cloud outlook. 2026 growth forecast at 2.7%, below 2025's 2.8%.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-006",
+      "title": "Humanoid Robots Dominate CES 2026 - Physical AI Era Declared",
+      "url": "https://www.cnbc.com/2026/01/09/humanoid-robots-take-over-las-vegas-at-ces-tech-touts-future-of-ai.html",
+      "source_name": "CNBC",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Technological",
+      "summary": "Humanoid robots took center stage at CES 2026, with crowds gathering around booths showcasing robots playing ping pong, doing kung fu, and serving food. Industry leaders including Boston Dynamics, Caterpillar, Franka Robots, LG Electronics, and NEURA Robotics debuted new robots built on NVIDIA technologies, marking what experts call the beginning of the Physical AI era.",
+      "key_entities": [
+        "Humanoid Robots",
+        "CES 2026",
+        "Boston Dynamics",
+        "NVIDIA",
+        "Physical AI"
+      ],
+      "significance_indicators": {
+        "scale": "Industry-wide shift across multiple sectors",
+        "innovation": "Practical humanoid robot deployment",
+        "trend": "Physical AI commercialization accelerating"
+      },
+      "raw_content": "Humanoid robots absolutely stole the show at CES 2026. Major companies unveiled next-generation robots built on NVIDIA technologies, with practical applications demonstrated.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-007",
+      "title": "AI Primary Care Doctor Tools Emerging to Address Doctor Shortage",
+      "url": "https://www.npr.org/sections/shots-health-news/2026/01/09/nx-s1-5670382/primary-care-doctor-shortage-medical-ai-diagnosis",
+      "source_name": "NPR",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Technological",
+      "summary": "A large health system in Massachusetts is using an AI tool to screen patients and refer them to appropriate care to address the primary care doctor shortage. The development signals a shift toward online-only primary care accessed through AI tools, with patients potentially seeing AI as their first point of contact before human doctors.",
+      "key_entities": [
+        "Healthcare AI",
+        "Primary Care",
+        "Doctor Shortage",
+        "Massachusetts Health System",
+        "Telemedicine"
+      ],
+      "significance_indicators": {
+        "scale": "Large health system deployment",
+        "innovation": "AI as primary care gatekeeper",
+        "trend": "AI-first healthcare workflows"
+      },
+      "raw_content": "Your next primary care doctor could be online only, accessed through an AI tool. Massachusetts health system deploys AI screening to address doctor shortage.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-008",
+      "title": "Quantum Security Designated as Top Priority for 2026",
+      "url": "https://thequantuminsider.com/2026/01/06/after-a-year-of-quantum-awareness-2026-becomes-the-year-of-quantum-security/",
+      "source_name": "The Quantum Insider",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "The Quantum Insider designated 2026 as the Year of Quantum Security, emphasizing post-quantum cryptography and protection of quantum intellectual property. A major initiative launches January 12, 2026, in Washington, D.C., addressing urgent security needs as quantum computing advances.",
+      "key_entities": [
+        "Quantum Security",
+        "Post-Quantum Cryptography",
+        "Quantum Computing",
+        "Cybersecurity"
+      ],
+      "significance_indicators": {
+        "scale": "Industry-wide security initiative",
+        "innovation": "Post-quantum cryptography standards",
+        "trend": "Quantum threat preparedness"
+      },
+      "raw_content": "After a year of quantum awareness, 2026 becomes the Year of Quantum Security. Initiative launches January 12, 2026 in Washington, D.C.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-009",
+      "title": "Smart Rings Emerge as Year's Dominant AI Wearable Trend",
+      "url": "https://www.techradar.com/tech/the-11-biggest-tech-trends-of-2026-according-to-ces-2026",
+      "source_name": "TechRadar",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Technological",
+      "summary": "CES 2026 revealed that 2026 is shaping up to be the Year of the Smart Ring, with the industry converging on rings as the most natural, low-friction way to interact with ambient intelligence. AI wearables wanting to be 'your second brain' emerged as a major theme, representing a shift toward continuous, unobtrusive AI assistance.",
+      "key_entities": [
+        "Smart Rings",
+        "AI Wearables",
+        "Ambient Intelligence",
+        "CES 2026",
+        "Consumer Electronics"
+      ],
+      "significance_indicators": {
+        "scale": "Industry convergence on form factor",
+        "innovation": "Ambient AI through wearables",
+        "trend": "Shift from screens to subtle interfaces"
+      },
+      "raw_content": "2026 shaping up to be the Year of the Smart Ring. Industry converging on rings as most natural way to interact with ambient intelligence.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-010",
+      "title": "Energy Storage Projected to Exceed 100GW Annual Global Installations",
+      "url": "https://www.ess-news.com/2026/01/02/whats-next-for-battery-technology-in-2026/",
+      "source_name": "Energy Storage News",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Environmental",
+      "summary": "Energy storage is projected to exceed 100GW of annual global installations in 2026 for the first time, marking a major milestone in renewable energy infrastructure. The growth is driven by increasing solar and wind deployment requiring storage solutions for grid stability.",
+      "key_entities": [
+        "Energy Storage",
+        "Battery Systems",
+        "Grid Infrastructure",
+        "Renewable Energy",
+        "100GW Milestone"
+      ],
+      "significance_indicators": {
+        "scale": "100GW+ annual installations globally",
+        "innovation": "Grid-scale storage becoming standard",
+        "trend": "Storage essential for renewable grid integration"
+      },
+      "raw_content": "Energy storage projected to exceed 100GW of annual global installations in 2026 for the first time, critical for renewable energy grid integration.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-011",
+      "title": "EU ETS Moves to 100% Emissions Compliance in 2026",
+      "url": "https://www.ey.com/en_lu/insights/wealth-asset-management/luxembourg-market-pulse/sustainable-finance-2025",
+      "source_name": "EY Luxembourg",
+      "source_type": "policy",
+      "published_date": "2026-01-10",
+      "category_hint": "Political",
+      "summary": "From January 1, 2026, the EU Emissions Trading System (EU ETS) moves to 100% emissions compliance, adding permanent cost structures to Europe-linked trade lanes. This marks a significant tightening of climate regulations affecting all businesses operating in or trading with the EU.",
+      "key_entities": [
+        "EU ETS",
+        "Carbon Compliance",
+        "Climate Regulation",
+        "European Union",
+        "Trade Policy"
+      ],
+      "significance_indicators": {
+        "scale": "All EU trade affected",
+        "innovation": "Full compliance enforcement",
+        "trend": "Climate regulation enforcement intensifying"
+      },
+      "raw_content": "EU ETS moves to 100% emissions compliance from January 1, 2026, adding permanent cost structures to all Europe-linked trade lanes.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-012",
+      "title": "Emotional Fitness and Mental Wellness Trend Accelerates",
+      "url": "https://draxe.com/health/wellness-trends-2026/",
+      "source_name": "Dr. Axe",
+      "source_type": "report",
+      "published_date": "2026-01-09",
+      "category_hint": "Spiritual",
+      "summary": "Emotional fitness is emerging as a major wellness trend in 2026, focusing on noticing stress earlier and responding with tools like mindfulness, journaling, breathwork, and mood tracking. In 2026, emotional wellness is treated like physical fitness - proactive, preventive, and integrated into daily routines, with 24.5% of Gen Z using AI for psychological counseling.",
+      "key_entities": [
+        "Emotional Fitness",
+        "Mental Wellness",
+        "Mindfulness",
+        "Breathwork",
+        "AI Therapy"
+      ],
+      "significance_indicators": {
+        "scale": "24.5% of Gen Z using AI for counseling",
+        "innovation": "Proactive emotional health management",
+        "trend": "Mental wellness as daily practice"
+      },
+      "raw_content": "Emotional fitness focuses on noticing stress earlier and responding with mindfulness, breathwork. 2026 emotional wellness treated like physical fitness - proactive and preventive.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-013",
+      "title": "미코노미(Me-conomy)와 필코노미(Feelconomy) 2026년 소비 키워드",
+      "url": "https://www.vogue.co.kr/2026/01/02/2026-주목할-만한-라이프스타일-트렌드-5",
+      "source_name": "Vogue Korea",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Social",
+      "summary": "나(Me)와 경제(Economy)의 합성어인 미코노미(Me-conomy)가 2026년 소비시장을 관통하는 핵심 키워드로 부상했다. 개인의 감정과 분위기를 중시하는 필코노미(Feelconomy)의 확산으로 소비의 중심축이 다시 '나'로 이동하고 있으며, MZ세대는 '언제 사도 부담 없는 가격, 질려도 미련 없이 바꿀 수 있는 크기, 구조를 건드리지 않아도 되는 선택'을 추구한다.",
+      "key_entities": [
+        "미코노미",
+        "필코노미",
+        "MZ세대",
+        "개인화 소비",
+        "감정 중심 경제"
+      ],
+      "significance_indicators": {
+        "scale": "2030 generation leading trend",
+        "innovation": "Emotion-centered consumption",
+        "trend": "Hyper-personalized spending"
+      },
+      "raw_content": "Me-conomy and Feelconomy emerge as 2026 consumption keywords, with consumption center shifting back to individual feelings and preferences.",
+      "language": "ko",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-014",
+      "title": "Autonomous Weapons Regulation Target Set for 2026",
+      "url": "https://www.armscontrol.org/act/2025-01/features/geopolitics-and-regulation-autonomous-weapons-systems",
+      "source_name": "Arms Control Association",
+      "source_type": "policy",
+      "published_date": "2026-01-09",
+      "category_hint": "Political",
+      "summary": "UN Secretary-General António Guterres and the president of the International Committee of the Red Cross have called urgently for international rules to regulate autonomous weapons systems to be negotiated by 2026. The initiative addresses growing concerns about AI-powered weapons operating without human control.",
+      "key_entities": [
+        "Autonomous Weapons",
+        "UN",
+        "ICRC",
+        "AI Weapons",
+        "International Law"
+      ],
+      "significance_indicators": {
+        "scale": "Global regulatory initiative",
+        "innovation": "First AI weapons governance framework",
+        "trend": "AI military applications requiring oversight"
+      },
+      "raw_content": "UN and ICRC call urgently for international rules to regulate autonomous weapons systems to be negotiated by 2026.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-015",
+      "title": "Agentic AI Systems Shift Healthcare by Late 2026",
+      "url": "https://www.bcg.com/publications/2026/how-ai-agents-will-transform-health-care",
+      "source_name": "Boston Consulting Group",
+      "source_type": "report",
+      "published_date": "2026-01-10",
+      "category_hint": "Technological",
+      "summary": "By late 2026, healthcare will see a shift from narrow, single-purpose AI tools to agentic systems that orchestrate complex clinical workflows, integrating multimodal data, tracking patient progress, and proactively coordinating care. Organizations deploying multi-agent orchestration report 10-35% improvements in healthcare provider activation and 15-30% adherence lift.",
+      "key_entities": [
+        "Agentic AI",
+        "Healthcare AI",
+        "Clinical Workflows",
+        "Multi-Agent Systems",
+        "BCG"
+      ],
+      "significance_indicators": {
+        "scale": "10-35% efficiency improvements demonstrated",
+        "innovation": "Multi-agent clinical coordination",
+        "trend": "AI from tools to autonomous systems"
+      },
+      "raw_content": "By late 2026, shift from narrow AI tools to agentic systems that orchestrate complex clinical workflows. 10-35% improvements in HCP activation reported.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-016",
+      "title": "SpaceX Twilight Rideshare Mission Scheduled for January 2026",
+      "url": "https://spaceflightnow.com/2026/01/",
+      "source_name": "Spaceflight Now",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Technological",
+      "summary": "SpaceX's Twilight rideshare mission is scheduled for January 2026 with launches from both Vandenberg Space Force Base, California and Cape Canaveral. Among the payloads is NASA's Pandora small satellite, designed to characterize the atmospheres of exoplanets and their host stars.",
+      "key_entities": [
+        "SpaceX",
+        "Twilight Mission",
+        "NASA Pandora",
+        "Exoplanet Research",
+        "Rideshare Launch"
+      ],
+      "significance_indicators": {
+        "scale": "Multi-payload commercial rideshare",
+        "innovation": "Exoplanet atmosphere characterization",
+        "trend": "Commercial space access democratization"
+      },
+      "raw_content": "SpaceX Twilight rideshare mission scheduled for January with NASA's Pandora satellite for exoplanet atmosphere characterization.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-017",
+      "title": "글로우케이션(Glowcation) - 2026년 주목받는 웰니스 여행 트렌드",
+      "url": "https://www.vogue.co.kr/2026/01/02/2026-주목할-만한-라이프스타일-트렌드-5",
+      "source_name": "Vogue Korea",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Social",
+      "summary": "2026년 가장 주목받는 여행 트렌드는 'Glow'와 'Vacation'이 결합된 글로우케이션으로, 피부 건강과 내면의 활력을 되찾는 것을 목적으로 하는 새로운 형태의 휴가 방식이다. 단순한 다이어트를 넘어 '조화로운 건강'에 집중하며, 개인의 생체리듬과 호르몬 균형에 맞춘 식습관이 강조된다.",
+      "key_entities": [
+        "글로우케이션",
+        "웰니스 여행",
+        "홀리스틱 건강",
+        "생체리듬",
+        "라이프스타일"
+      ],
+      "significance_indicators": {
+        "scale": "Emerging travel category",
+        "innovation": "Holistic wellness integration",
+        "trend": "Health-centered vacation experiences"
+      },
+      "raw_content": "Glowcation (Glow + Vacation) emerges as 2026 travel trend, focusing on skin health and inner vitality restoration through personalized biorhythm-aligned experiences.",
+      "language": "ko",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    },
+    {
+      "raw_id": "RAW-2026-0111-018",
+      "title": "Samsung Double-Folding Phone Debuts at CES 2026",
+      "url": "https://www.tomsguide.com/news/live/ces-2026-live-latest-news",
+      "source_name": "Tom's Guide",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Technological",
+      "summary": "Samsung showcased its first double-folding phone at CES 2026, described as a 'remarkable feat of engineering.' The device represents a new form factor in mobile computing, building on the company's foldable display technology.",
+      "key_entities": [
+        "Samsung",
+        "Double-Folding Phone",
+        "CES 2026",
+        "Foldable Display",
+        "Mobile Innovation"
+      ],
+      "significance_indicators": {
+        "scale": "First double-fold consumer device",
+        "innovation": "New mobile form factor",
+        "trend": "Flexible display evolution"
+      },
+      "raw_content": "Samsung debuts first double-folding phone at CES 2026, described as remarkable engineering feat in flexible display technology.",
+      "language": "en",
+      "scanned_at": "2026-01-11T07:30:00+09:00"
+    }
+  ],
+  "quality_notes": {
+    "time_filtering": "Strict 24-hour window applied (2026-01-10 to 2026-01-11). Signals from January 5-8 (CES keynotes, battery announcements, quantum breakthroughs) were excluded despite high significance.",
+    "coverage_gaps": [
+      "Limited signals on January 11 specifically due to indexing delays",
+      "Spiritual category underrepresented - only wellness trends captured",
+      "Some major CES announcements fell outside 24-hour window"
+    ],
+    "data_quality": "High quality sources with verifiable publication dates. Mix of news, policy documents, and industry reports. Korean and English language sources balanced.",
+    "future_recommendations": [
+      "Consider extending window to 48 hours for more comprehensive coverage",
+      "Add real-time news APIs for same-day signal detection",
+      "Include RSS feeds from key think tanks and research institutions"
+    ]
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "filter_date": "2026-01-11",
+  "original_count": 24,
+  "filtered_count": 18,
+  "removed_count": 6,
+  "signals": [
+    {
+      "id": "SIG-2026-0111-001",
+      "title": "중국 '인공태양' EAST 밀도 한계 돌파 - 핵융합 실용화 가속",
+      "category": "Technological",
+      "summary": "중국 EAST 토카막 핵융합로가 플라즈마 밀도 한계를 극복하며 기존 물리 법칙으로 불가능했던 고밀도 안정 상태 달성. Science Advances 1월 1일 발표.",
+      "source_url": "https://www.sciencedaily.com/releases/2026/01/260101160855.htm",
+      "source_type": "academic",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "핵융합",
+        "플라즈마",
+        "EAST",
+        "중국",
+        "청정에너지",
+        "토카막"
+      ],
+      "relevance_score": 0.95,
+      "impact_potential": "혁신적 - 핵융합 에너지 상용화 주요 장애물 제거",
+      "novelty": "breakthrough",
+      "geographic_origin": "China"
+    },
+    {
+      "id": "SIG-2026-0111-002",
+      "title": "스마트링 시장 49% 급성장 - 앰비언트 인텔리전스 인터페이스로 부상",
+      "category": "Technological",
+      "summary": "CES 2026에서 스마트링이 차세대 앰비언트 AI 인터페이스로 자리매김. 출하량 49% 증가 예상, 미국 가구 12%(1500만) 보급. 웰니스 액세서리에서 대화형 인터페이스로 전환.",
+      "source_url": "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "스마트링",
+        "웨어러블",
+        "앰비언트AI",
+        "CES 2026",
+        "Oura",
+        "대화형인터페이스"
+      ],
+      "relevance_score": 0.85,
+      "impact_potential": "중간-높음 - HCI 패러다임 변화",
+      "novelty": "emerging",
+      "geographic_origin": "Global"
+    },
+    {
+      "id": "SIG-2026-0111-003",
+      "title": "장수 바이오마커 추적 기술 대중화 - Withings Body Scan 2, 60개 지표 측정",
+      "category": "Technological",
+      "summary": "CES 2026에서 Withings Body Scan 2 발표. 90초 만에 60개 이상 바이오마커 측정 및 '건강 궤적 점수'로 예상 건강수명 예측. $600, Q2 2026 출시. 예방적 건강관리 트렌드 가속화.",
+      "source_url": "https://www.macrumors.com/2026/01/05/withings-body-scan-2-smart-scale/",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "장수",
+        "바이오마커",
+        "예방의학",
+        "헬스테크",
+        "Withings",
+        "건강수명"
+      ],
+      "relevance_score": 0.82,
+      "impact_potential": "중간 - 소비자 건강모니터링 민주화",
+      "novelty": "emerging",
+      "geographic_origin": "France/Global"
+    },
+    {
+      "id": "SIG-2026-0111-004",
+      "title": "한국 CES 2026 혁신상 60% 석권 - AI 및 Physical AI 3개 부문 전석 수상",
+      "category": "Technological",
+      "summary": "한국 기업 168개 CES 혁신상 수상(전체의 60%), Physical AI 및 AI Agent 부문 Best of Innovation 3개 전석. 1000개 기업 참가, 중소기업 137개 수상. 3년 연속 최다 수상국.",
+      "source_url": "https://www.venturesquare.net/en/1030724/",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "한국",
+        "CES 2026",
+        "혁신",
+        "Physical AI",
+        "중소기업",
+        "AI Agent"
+      ],
+      "relevance_score": 0.88,
+      "impact_potential": "높음 - 한국 딥테크 경쟁력 부상",
+      "novelty": "emerging",
+      "geographic_origin": "South Korea"
+    },
+    {
+      "id": "SIG-2026-0111-005",
+      "title": "캘리포니아 AB 489 - AI 챗봇의 의사/간호사 사칭 금지법 시행",
+      "category": "Political",
+      "summary": "2026년 1월 1일부터 생성AI가 의사, 간호사 등 면허 의료인 사칭 금지. 청소년 72%가 AI를 동반자로, 12%가 정신건강 지원으로 사용하는 상황에 대응. 각 위반 건별 처벌 가능.",
+      "source_url": "https://www.medscape.com/viewarticle/california-bans-ai-chatbots-posing-licensed-health-providers-2025a1000tpj",
+      "source_type": "policy",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "AI규제",
+        "캘리포니아",
+        "의료",
+        "챗봇",
+        "AB 489",
+        "정신건강"
+      ],
+      "relevance_score": 0.86,
+      "impact_potential": "중간-높음 - AI 헬스케어 규제 선례",
+      "novelty": "emerging",
+      "geographic_origin": "California, USA"
+    },
+    {
+      "id": "SIG-2026-0111-006",
+      "title": "미국 3개 주 데이터 프라이버시법 시행 - Indiana, Kentucky, Rhode Island",
+      "category": "Political",
+      "summary": "2026년 1월 1일부터 Indiana, Kentucky, Rhode Island 포괄적 소비자 데이터 보호법 시행. 캘리포니아는 자동의사결정, 리스크 평가, 사이버보안 감사 규정 추가. 주 단위 규제 확산.",
+      "source_url": "https://iapp.org/news/a/new-year-new-rules-us-state-privacy-requirements-coming-online-as-2026-begins",
+      "source_type": "policy",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "프라이버시",
+        "데이터보호",
+        "주법",
+        "CCPA",
+        "소비자권리"
+      ],
+      "relevance_score": 0.78,
+      "impact_potential": "중간 - 미국 프라이버시 규제 모자이크 심화",
+      "novelty": "developing",
+      "geographic_origin": "USA"
+    },
+    {
+      "id": "SIG-2026-0111-007",
+      "title": "트럼프 관세전쟁 법적 분쟁 격화 - 대법원 1월 9일 판결 예상",
+      "category": "Political",
+      "summary": "2025년 5월 국제무역법원이 멕시코/캐나다/중국 펜타닐 관세 무효 판결 후 대법원 심리. 평균 관세율 1~4월 27% 정점 후 11월 16.8%로 하락. USMCA 2026년 7월 갱신 예정.",
+      "source_url": "https://www.tradecomplianceresourcehub.com/2026/01/10/trump-2-0-tariff-tracker/",
+      "source_type": "policy",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "관세",
+        "무역전쟁",
+        "트럼프",
+        "USMCA",
+        "멕시코",
+        "캐나다",
+        "중국"
+      ],
+      "relevance_score": 0.90,
+      "impact_potential": "높음 - 글로벌 무역 구조 재편",
+      "novelty": "developing",
+      "geographic_origin": "USA"
+    },
+    {
+      "id": "SIG-2026-0111-008",
+      "title": "AI 스타트업 시드 밸류에이션 42% 프리미엄 - 중앙값 $17.9M",
+      "category": "Economic",
+      "summary": "AI 스타트업 시드단계 밸류에이션이 비AI 대비 42% 높음(중앙값 $17.9M). AI 기업이 전체 VC 펀딩의 33%, 딜의 36% 차지. Unconventional AI $475M 시드(창업 2개월), Thinking Machines Lab $2B 시드 사례.",
+      "source_url": "https://qubit.capital/blog/ai-startup-fundraising-trends",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "벤처캐피탈",
+        "AI스타트업",
+        "시드펀딩",
+        "밸류에이션",
+        "프리미엄"
+      ],
+      "relevance_score": 0.87,
+      "impact_potential": "중간-높음 - 자본 양극화 심화",
+      "novelty": "developing",
+      "geographic_origin": "Global"
+    },
+    {
+      "id": "SIG-2026-0111-009",
+      "title": "GLP-1 비만약 알약 형태 출시 - Novo Nordisk Wegovy 알약 $149-299",
+      "category": "Technological",
+      "summary": "Novo Nordisk가 최초 GLP-1 경구약 Wegovy 알약을 1월 미국 출시. 월 $149-299로 기존 주사제 대비 저가. Eli Lilly orforglipron 3월 FDA 승인 예상. 시장 2035년 $150B 전망.",
+      "source_url": "https://www.cnbc.com/2026/01/05/first-glp-1-pill-for-obesity-from-novo-nordisk-launches-in-the-us.html",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "GLP-1",
+        "비만약",
+        "Wegovy",
+        "Ozempic",
+        "경구약",
+        "접근성"
+      ],
+      "relevance_score": 0.91,
+      "impact_potential": "높음 - 비만 치료 접근성 혁명",
+      "novelty": "breakthrough",
+      "geographic_origin": "Denmark/USA"
+    },
+    {
+      "id": "SIG-2026-0111-010",
+      "title": "한국 딥테크 스타트업 정책 금융 패키지 - ₩22.3B R&D 지원",
+      "category": "Economic",
+      "summary": "한국 정부가 2026년 스타트업/중소기업 대상 규제완화형 R&D 프로그램 223억원 규모 론칭. 기술한계 철폐, 딥테크 성장 인프라 조성. CES 2026 통합 한국관과 연계.",
+      "source_url": "https://koreatechdesk.com/korea-sme-innovation-development-project",
+      "source_type": "policy",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "한국",
+        "딥테크",
+        "스타트업",
+        "정책금융",
+        "R&D",
+        "규제완화"
+      ],
+      "relevance_score": 0.80,
+      "impact_potential": "중간 - 한국 혁신 생태계 강화",
+      "novelty": "emerging",
+      "geographic_origin": "South Korea"
+    },
+    {
+      "id": "SIG-2026-0111-013",
+      "title": "NASA Artemis II 2026년 2월 발사 - 52년 만에 달 유인 비행 복귀",
+      "category": "Technological",
+      "summary": "Artemis II, 2026년 2월 6일 이후 발사 예정으로 1972년 Apollo 17 이후 최초 유인 달 비행. 4명 우주인 10일간 Orion 우주선 생명유지/추진 시스템 검증. 최초 흑인/여성/非미국인 달 비행.",
+      "source_url": "https://www.nasa.gov/mission/artemis-ii/",
+      "source_type": "policy",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "Artemis",
+        "NASA",
+        "달탐사",
+        "유인우주선",
+        "Orion",
+        "우주탐사"
+      ],
+      "relevance_score": 0.92,
+      "impact_potential": "높음 - 우주탐사 새 시대 개막",
+      "novelty": "developing",
+      "geographic_origin": "USA/Canada"
+    },
+    {
+      "id": "SIG-2026-0111-014",
+      "title": "NVIDIA DLSS 4.5 및 G-Sync Pulsar - AI 기반 게임 그래픽 혁신",
+      "category": "Technological",
+      "summary": "CES 2026에서 NVIDIA가 DLSS 4.5(Transformer 기반 Super Resolution) 및 G-Sync Pulsar(백라이트 펄스로 모션 블러 감소) 발표. AI 기반 게임 경험 질적 도약.",
+      "source_url": "https://www.tomsguide.com/news/live/ces-2026-live-latest-news",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "NVIDIA",
+        "DLSS",
+        "G-Sync",
+        "게임",
+        "AI",
+        "그래픽"
+      ],
+      "relevance_score": 0.75,
+      "impact_potential": "중간 - 게임 산업 AI 통합 가속",
+      "novelty": "developing",
+      "geographic_origin": "USA"
+    },
+    {
+      "id": "SIG-2026-0111-015",
+      "title": "AMD Ryzen AI 및 Intel Panther Lake - AI PC 경쟁 격화",
+      "category": "Technological",
+      "summary": "CES 2026에서 AMD CEO Lisa Su가 새로운 Ryzen AI 프로세서 라인업 발표, Intel은 Panther Lake(Core Ultra Series 3) AI 칩 및 핸드헬드 게임기 플랫폼 공개. AI PC 시장 본격화.",
+      "source_url": "https://www.engadget.com/ces-2026-live-updates-on-the-latest-gadgets-at-the-biggest-tech-event-of-the-year-153146311.html",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "AMD",
+        "Intel",
+        "AI PC",
+        "프로세서",
+        "Ryzen AI",
+        "Panther Lake"
+      ],
+      "relevance_score": 0.77,
+      "impact_potential": "중간 - AI 연산 엣지화",
+      "novelty": "developing",
+      "geographic_origin": "USA"
+    },
+    {
+      "id": "SIG-2026-0111-017",
+      "title": "Uber-Lucid-Nuro 자율주행 럭셔리 로보택시 공개",
+      "category": "Technological",
+      "summary": "CES 2026에서 Uber, Lucid Motors, Nuro가 협력한 가장 럭셔리한 자율주행 로보택시 공개. Uber 설계 차내 경험, 고급 승객 편의성 강조. 자율주행 상용화 가시화.",
+      "source_url": "https://www.techradar.com/news/live/ces-2026-live-all-the-latest-news-from-the-worlds-biggest-tech-show",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "자율주행",
+        "로보택시",
+        "Uber",
+        "Lucid",
+        "Nuro",
+        "모빌리티"
+      ],
+      "relevance_score": 0.80,
+      "impact_potential": "중간-높음 - 프리미엄 자율주행 서비스 부상",
+      "novelty": "emerging",
+      "geographic_origin": "USA"
+    },
+    {
+      "id": "SIG-2026-0111-018",
+      "title": "ESG 및 지속가능성 규제 2026년 본격화 - CBAM, CSRD 시행",
+      "category": "Environmental",
+      "summary": "EU CBAM 2026년 정식 시행(2027년 결제 시작), CSRD 간소화 패키지로 일부 기업 면제. 호주/홍콩/말레이시아/싱가포르 ISSB 기준 첫 보고. 재생에너지 40% 돌파.",
+      "source_url": "https://www.esgdive.com/news/esg-trends-outlook-2026/809129/",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "ESG",
+        "CBAM",
+        "CSRD",
+        "지속가능성",
+        "ISSB",
+        "재생에너지"
+      ],
+      "relevance_score": 0.85,
+      "impact_potential": "높음 - 글로벌 ESG 규제 표준화",
+      "novelty": "developing",
+      "geographic_origin": "Europe/Global"
+    },
+    {
+      "id": "SIG-2026-0111-019",
+      "title": "AI 전력 수요 급증으로 그리드 한계 및 지속가능성 딜레마",
+      "category": "Environmental",
+      "summary": "AI 데이터센터 전력 수요 폭증으로 전력망 한계 도달, 수익모델 및 탄소중립 목표 충돌. 재생에너지 25%(풍력+태양광) 달성했으나 AI 수요 증가로 상쇄 우려.",
+      "source_url": "https://www.esgtoday.com/guest-post-2026-the-credibility-test-eight-sustainability-trends-that-will-matter-for-businesses/",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "AI",
+        "전력수요",
+        "데이터센터",
+        "그리드",
+        "지속가능성",
+        "에너지"
+      ],
+      "relevance_score": 0.88,
+      "impact_potential": "높음 - AI와 기후목표 충돌 가시화",
+      "novelty": "emerging",
+      "geographic_origin": "Global"
+    },
+    {
+      "id": "SIG-2026-0111-021",
+      "title": "Gen Z 데이팅 앱 환멸 79% - 오프라인 만남 회귀 트렌드",
+      "category": "Social",
+      "summary": "Gen Z의 79%가 데이팅 앱에 환멸감 표시하며 오프라인 만남 선호로 회귀. 디지털 피로와 진정성 추구가 원인. 아날로그 관계 형성 방식 재조명.",
+      "source_url": "https://www.marketing-interactive.com/these-are-the-trends-shaping-gen-z-in-2026-pinterest-predicts-report",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "GenZ",
+        "데이팅앱",
+        "오프라인",
+        "관계",
+        "디지털피로",
+        "진정성"
+      ],
+      "relevance_score": 0.75,
+      "impact_potential": "중간 - 디지털 관계 모델 재고",
+      "novelty": "developing",
+      "geographic_origin": "Global"
+    },
+    {
+      "id": "SIG-2026-0111-022",
+      "title": "Gen Z 디지털 라이프스타일 표준화 - 'Dark Mode'와 'Chronically Online' 이중모드",
+      "category": "Social",
+      "summary": "Gen Z가 'New Culture Code'로 Dark Mode(오프라인 프라이빗 공간)와 Chronically Online(창의성/표현 도구) 이중모드 생활. 디지털과 아날로그 선택적 통합.",
+      "source_url": "https://stupiddope.com/2026/01/gen-zs-digital-lifestyle-trends-are-becoming-the-new-standard/",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "GenZ",
+        "디지털라이프스타일",
+        "Dark Mode",
+        "이중정체성",
+        "온오프라인통합"
+      ],
+      "relevance_score": 0.76,
+      "impact_potential": "중간 - 디지털 네이티브 행동양식 정립",
+      "novelty": "emerging",
+      "geographic_origin": "Global"
+    },
+    {
+      "id": "SIG-2026-0111-024",
+      "title": "VC 펀딩 구조 변화 - 시드 및 성장단계 집중, 시리즈 A/B '압박'",
+      "category": "Economic",
+      "summary": "VC 투자가 시드(초대형 라운드)와 후기 성장단계로 양극화. 시리즈 A/B 진입 난이도 증가, 수익성/단위경제성 검증 강화. 비실리콘밸리(폴란드, 터키, 그리스) 위험조정수익률 우수.",
+      "source_url": "https://seedscope.ai/blog/startup-funding-trends-in-2026-venture-capital-s-new-era",
+      "source_type": "news",
+      "detected_date": "2026-01-11",
+      "keywords": [
+        "벤처캐피탈",
+        "펀딩트렌드",
+        "시드",
+        "시리즈A",
+        "자본효율",
+        "지역다각화"
+      ],
+      "relevance_score": 0.81,
+      "impact_potential": "중간-높음 - 스타트업 생존 전략 재편",
+      "novelty": "developing",
+      "geographic_origin": "Global"
+    }
+  ],
+  "removed": [
+    {
+      "signal_id": "SIG-2026-0111-011",
+      "reason": "similar_content",
+      "duplicate_of": "SIG-2026-0110-018",
+      "note": "Gen Z 영성과 파티 문화 대체 관련 매우 유사한 내용"
+    },
+    {
+      "signal_id": "SIG-2026-0111-012",
+      "reason": "similar_content",
+      "duplicate_of": "SIG-2026-0110-018",
+      "note": "Gen Z 종교성/영성 재부상 및 비전통적 실천 관련"
+    },
+    {
+      "signal_id": "SIG-2026-0111-016",
+      "reason": "similar_title",
+      "duplicate_of": "SIG-2026-0110-001",
+      "note": "Boston Dynamics Atlas 휴머노이드 로봇 관련 CES 2026 시연"
+    },
+    {
+      "signal_id": "SIG-2026-0111-020",
+      "reason": "exact_url",
+      "duplicate_of": "SIG-2026-0109-015",
+      "note": "동일 PR Week 기사 - Gen Z 트렌드 전반 (파티 대신 영성, 예산 투명성 등)"
+    },
+    {
+      "signal_id": "SIG-2026-0111-023",
+      "reason": "exact_url",
+      "duplicate_of": "SIG-2026-0110-010",
+      "note": "동일 Dr. Axe 기사 - 웰니스 관광 시장 2027년 $1.4조 규모"
+    }
+  ]
+}
