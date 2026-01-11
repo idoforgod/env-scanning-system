@@ -2,50 +2,234 @@ name: Daily Environmental Scan
 
 on:
   schedule:
-    # 매일 오전 9시 (KST) = UTC 0시
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # 수동 실행 가능
+    # 일일 스캔: 매일 06:00 KST = 21:00 UTC (전날)
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      scan_type:
+        description: '스캔 유형'
+        required: true
+        default: 'daily'
+        type: choice
+        options:
+          - daily
+          - weekly-deep
+          - alt-sources
+      skip_commit:
+        description: '결과 커밋 건너뛰기'
+        required: false
+        default: false
+        type: boolean
+
+env:
+  SCAN_TIMEZONE: 'Asia/Seoul'
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
 jobs:
-  scan:
-    name: Run Environmental Scanning
+  daily-scan:
+    name: Daily Environmental Scanning
     runs-on: ubuntu-latest
+    timeout-minutes: 60
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude --version
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          pip install pyyaml requests
+          pip install pyyaml requests python-dateutil
 
-      - name: Run daily scan
-        env:
-          SCAN_DATE: ${{ github.event.schedule && 'scheduled' || 'manual' }}
+      - name: Get current date (KST)
+        id: date
         run: |
-          echo "Starting environmental scan at $(date '+%Y-%m-%d %H:%M:%S %Z')"
-          echo "Trigger: $SCAN_DATE"
+          echo "date=$(TZ='Asia/Seoul' date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+          echo "datetime=$(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M:%S KST')" >> $GITHUB_OUTPUT
+          echo "weekday=$(TZ='Asia/Seoul' date '+%u')" >> $GITHUB_OUTPUT
 
-          # 스캔 디렉토리 확인
-          ls -la env-scanning/
+      - name: Determine scan type
+        id: scan-type
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "type=${{ github.event.inputs.scan_type }}" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.date.outputs.weekday }}" == "1" ]; then
+            # 월요일이면 주간 심층 스캔
+            echo "type=weekly-deep" >> $GITHUB_OUTPUT
+          else
+            echo "type=daily" >> $GITHUB_OUTPUT
+          fi
 
-          # TODO: 실제 스캔 로직은 Claude Code CLI 또는 별도 스크립트로 실행
-          # 현재는 구조 확인만 수행
-          echo "Scan directories ready"
-          echo "- signals/database.json exists: $(test -f env-scanning/signals/database.json && echo 'yes' || echo 'no')"
-          echo "- config files: $(ls env-scanning/config/)"
+      - name: Run Environmental Scan
+        id: scan
+        run: |
+          echo "========================================"
+          echo "환경스캐닝 시작: ${{ steps.date.outputs.datetime }}"
+          echo "스캔 유형: ${{ steps.scan-type.outputs.type }}"
+          echo "========================================"
 
-      - name: Upload scan results
+          # 스캔 실행
+          claude -p "env-scanner 워크플로우를 실행합니다.
+          오늘 날짜: ${{ steps.date.outputs.date }}
+          스캔 유형: ${{ steps.scan-type.outputs.type }}
+
+          다음 단계를 순차적으로 수행하세요:
+          1. archive-loader로 기존 DB 로딩
+          2. multi-source-scanner로 STEEPS 스캐닝 (regular-sources.json 참조)
+          3. dedup-filter로 중복 필터링
+          4. signal-classifier로 신호 분류
+          5. impact-analyzer로 영향 분석
+          6. priority-ranker로 우선순위 산정
+          7. db-updater로 DB 업데이트
+          8. report-generator로 보고서 생성
+          9. archive-notifier로 아카이빙
+
+          모든 human review 단계는 자동 통과합니다 (--skip-human 모드).
+          결과 파일들을 저장하고 완료 시 요약을 출력하세요." \
+          --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
+          --max-turns 100 \
+          2>&1 | tee scan-output.log
+
+          # 스캔 결과 확인
+          if [ -f "env-scanning/reports/daily/${{ steps.date.outputs.date }}.md" ]; then
+            echo "scan_success=true" >> $GITHUB_OUTPUT
+            echo "report_path=env-scanning/reports/daily/${{ steps.date.outputs.date }}.md" >> $GITHUB_OUTPUT
+          else
+            echo "scan_success=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate scan summary
+        if: always()
+        run: |
+          echo "## 환경스캐닝 결과 요약" > scan-summary.md
+          echo "" >> scan-summary.md
+          echo "**실행 시간**: ${{ steps.date.outputs.datetime }}" >> scan-summary.md
+          echo "**스캔 유형**: ${{ steps.scan-type.outputs.type }}" >> scan-summary.md
+          echo "**상태**: ${{ steps.scan.outputs.scan_success == 'true' && '성공' || '실패' }}" >> scan-summary.md
+          echo "" >> scan-summary.md
+
+          # 신호 DB 통계
+          if [ -f "env-scanning/signals/database.json" ]; then
+            TOTAL=$(cat env-scanning/signals/database.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d.get('signals', [])))" 2>/dev/null || echo "N/A")
+            echo "**총 신호 수**: $TOTAL" >> scan-summary.md
+          fi
+
+          # 오늘 보고서 존재 여부
+          if [ -f "env-scanning/reports/daily/${{ steps.date.outputs.date }}.md" ]; then
+            echo "**보고서**: 생성됨" >> scan-summary.md
+          fi
+
+          cat scan-summary.md
+
+      - name: Commit scan results
+        if: steps.scan.outputs.scan_success == 'true' && github.event.inputs.skip_commit != 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add env-scanning/
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: 일일 환경스캐닝 결과 (${{ steps.date.outputs.date }})
+
+          스캔 유형: ${{ steps.scan-type.outputs.type }}
+          실행 시간: ${{ steps.date.outputs.datetime }}
+
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+
+            git push
+          fi
+
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: scan-results-${{ github.run_number }}
+          name: scan-results-${{ steps.date.outputs.date }}
           path: |
             env-scanning/reports/daily/
             env-scanning/logs/
-          retention-days: 30
+            scan-output.log
+            scan-summary.md
+          retention-days: 90
+
+      - name: Create issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = '${{ steps.date.outputs.date }}';
+            const scanType = '${{ steps.scan-type.outputs.type }}';
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Alert] 환경스캐닝 실패 - ${date}`,
+              body: `## 환경스캐닝 워크플로우 실패
+
+              **날짜**: ${date}
+              **스캔 유형**: ${scanType}
+              **워크플로우 실행**: [Run #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+              로그를 확인하고 수동으로 재실행하세요.
+
+              \`\`\`
+              gh workflow run daily-scan.yml --ref main
+              \`\`\`
+              `,
+              labels: ['bug', 'env-scanning']
+            });
+
+  weekly-deep-scan:
+    name: Weekly Deep Scan
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 0 * * 1' || github.event.inputs.scan_type == 'weekly-deep'
+    needs: daily-scan
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run weekly deep analysis
+        run: |
+          echo "주간 심층 분석 실행..."
+
+          claude -p "주간 환경스캐닝 심층 분석을 수행합니다.
+
+          1. 지난 7일간 수집된 모든 신호 종합 분석
+          2. 메타 신호 및 패턴 식별
+          3. 시나리오 시사점 도출
+          4. 주간 요약 보고서 생성 (env-scanning/reports/weekly/)
+
+          --skip-human 모드로 진행합니다." \
+          --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
+          --max-turns 50

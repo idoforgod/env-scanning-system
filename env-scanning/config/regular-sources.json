@@ -1,0 +1,939 @@
+{
+  "metadata": {
+    "created_date": "2026-01-11",
+    "last_updated": "2026-01-11",
+    "version": "1.0",
+    "description": "정기 환경스캐닝을 위한 소스 목록 - 신뢰도, 업데이트 빈도, STEEPS 커버리지 기준 선정",
+    "total_sources": 85,
+    "analysis_basis": "2026-01-11 3회 스캔 (7day, rescan, ALT) 총 148개 신호에서 추출"
+  },
+  "tier_definitions": {
+    "tier_1": {
+      "description": "최고 신뢰도 - 1차 출처, 학술/정부/공식 발표",
+      "scan_frequency": "daily",
+      "priority": "critical"
+    },
+    "tier_2": {
+      "description": "고신뢰도 - 주요 언론, 산업 분석 기관",
+      "scan_frequency": "daily",
+      "priority": "high"
+    },
+    "tier_3": {
+      "description": "중신뢰도 - 전문 매체, 지역 언론",
+      "scan_frequency": "weekly",
+      "priority": "medium"
+    },
+    "tier_4": {
+      "description": "참고용 - 블로그, 트렌드 사이트",
+      "scan_frequency": "weekly",
+      "priority": "low"
+    }
+  },
+  "sources_by_category": {
+    "academic_journals": {
+      "tier": 1,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "Nature",
+          "url": "https://www.nature.com",
+          "type": "academic",
+          "coverage": ["Technological", "Environmental", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "최고 수준 학술지, 돌파구 기술 발견에 강점"
+        },
+        {
+          "name": "Science/AAAS",
+          "url": "https://www.science.org",
+          "type": "academic",
+          "coverage": ["Technological", "Environmental", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "종합 과학 저널, 정책 관련 연구도 포함"
+        },
+        {
+          "name": "arXiv",
+          "url": "https://arxiv.org",
+          "type": "preprint",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "AI/양자/물리 최신 연구 선도 지표"
+        },
+        {
+          "name": "Cell Press",
+          "url": "https://www.cell.com",
+          "type": "academic",
+          "coverage": ["Technological", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "생명과학/의료 분야 핵심"
+        },
+        {
+          "name": "The Lancet",
+          "url": "https://www.thelancet.com",
+          "type": "academic",
+          "coverage": ["Social", "Political"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "글로벌 헬스 정책, 공중보건"
+        },
+        {
+          "name": "PNAS",
+          "url": "https://www.pnas.org",
+          "type": "academic",
+          "coverage": ["Technological", "Environmental", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "미국 국립과학원 회보, 다학제적"
+        },
+        {
+          "name": "Phys.org",
+          "url": "https://phys.org",
+          "type": "academic_news",
+          "coverage": ["Technological", "Environmental"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "과학 뉴스 어그리게이터, 접근성 높음"
+        },
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com",
+          "type": "academic_news",
+          "coverage": ["Technological", "Environmental", "Social"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "대학 연구 보도자료 집약"
+        },
+        {
+          "name": "ScienceDirect",
+          "url": "https://www.sciencedirect.com",
+          "type": "academic",
+          "coverage": ["Technological", "Environmental"],
+          "language": "en",
+          "update_frequency": "continuous",
+          "signal_quality": 5,
+          "notes": "Elsevier 학술 DB, 심층 연구"
+        }
+      ]
+    },
+    "think_tanks": {
+      "tier": 1,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "Brookings Institution",
+          "url": "https://www.brookings.edu",
+          "type": "policy",
+          "coverage": ["Political", "Economic", "Social"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "미국 최대 싱크탱크, 정책 분석 심층"
+        },
+        {
+          "name": "Chatham House",
+          "url": "https://www.chathamhouse.org",
+          "type": "policy",
+          "coverage": ["Political", "Economic"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "영국 왕립국제문제연구소, 지정학 강점"
+        },
+        {
+          "name": "McKinsey Global Institute",
+          "url": "https://www.mckinsey.com/mgi",
+          "type": "report",
+          "coverage": ["Economic", "Technological", "Social"],
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 5,
+          "notes": "산업/경제 트렌드 종합 분석"
+        },
+        {
+          "name": "Peterson Institute (PIIE)",
+          "url": "https://www.piie.com",
+          "type": "policy",
+          "coverage": ["Economic", "Political"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "국제경제정책, 무역 분석"
+        },
+        {
+          "name": "RAND Corporation",
+          "url": "https://www.rand.org",
+          "type": "policy",
+          "coverage": ["Political", "Technological", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "국방/안보/기술 정책"
+        },
+        {
+          "name": "Council on Foreign Relations",
+          "url": "https://www.cfr.org",
+          "type": "policy",
+          "coverage": ["Political", "Economic"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "미국 외교정책, 지정학"
+        },
+        {
+          "name": "German Marshall Fund",
+          "url": "https://www.gmfus.org",
+          "type": "policy",
+          "coverage": ["Political"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "대서양 관계, 유럽 정치"
+        },
+        {
+          "name": "CIDOB Barcelona",
+          "url": "https://www.cidob.org",
+          "type": "policy",
+          "coverage": ["Political", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "유럽/지중해 지역 분석"
+        }
+      ]
+    },
+    "international_organizations": {
+      "tier": 1,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "World Bank",
+          "url": "https://www.worldbank.org",
+          "type": "report",
+          "coverage": ["Economic", "Social", "Environmental"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "글로벌 개발, 빈곤, 경제 데이터"
+        },
+        {
+          "name": "IMF",
+          "url": "https://www.imf.org",
+          "type": "report",
+          "coverage": ["Economic", "Political"],
+          "language": "en",
+          "update_frequency": "quarterly",
+          "signal_quality": 5,
+          "notes": "세계경제전망, 금융안정"
+        },
+        {
+          "name": "OECD",
+          "url": "https://www.oecd.org",
+          "type": "policy",
+          "coverage": ["Economic", "Political", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "선진국 정책 표준, AI/디지털 정책"
+        },
+        {
+          "name": "IEA",
+          "url": "https://www.iea.org",
+          "type": "report",
+          "coverage": ["Environmental", "Economic"],
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 5,
+          "notes": "에너지 전환, 재생에너지 데이터"
+        },
+        {
+          "name": "UN News",
+          "url": "https://news.un.org",
+          "type": "news",
+          "coverage": ["Political", "Social", "Environmental"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "글로벌 거버넌스, 인도주의"
+        },
+        {
+          "name": "UNCTAD",
+          "url": "https://unctad.org",
+          "type": "report",
+          "coverage": ["Economic"],
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 4,
+          "notes": "무역개발, 개도국 경제"
+        },
+        {
+          "name": "World Economic Forum",
+          "url": "https://www.weforum.org",
+          "type": "report",
+          "coverage": ["Economic", "Technological", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "다보스, 글로벌 리스크 보고서"
+        }
+      ]
+    },
+    "government_agencies": {
+      "tier": 1,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "NASA",
+          "url": "https://www.nasa.gov",
+          "type": "government",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "우주탐사, 기후과학"
+        },
+        {
+          "name": "NIH",
+          "url": "https://www.nih.gov",
+          "type": "government",
+          "coverage": ["Technological", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "생명과학 연구, 공중보건"
+        },
+        {
+          "name": "NIST",
+          "url": "https://www.nist.gov",
+          "type": "government",
+          "coverage": ["Technological", "Political"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "기술 표준, AI/사이버보안"
+        },
+        {
+          "name": "NSF",
+          "url": "https://www.nsf.gov",
+          "type": "government",
+          "coverage": ["Technological", "Economic"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "기초과학 연구 동향"
+        },
+        {
+          "name": "Korea Policy Briefing",
+          "url": "https://www.korea.kr",
+          "type": "government",
+          "coverage": ["Political", "Economic", "Social"],
+          "language": "ko",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "한국 정부 정책 공식 발표"
+        },
+        {
+          "name": "ESA",
+          "url": "https://www.esa.int",
+          "type": "government",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "유럽 우주 프로그램"
+        }
+      ]
+    },
+    "university_research": {
+      "tier": 1,
+      "scan_frequency": "weekly",
+      "sources": [
+        {
+          "name": "Stanford HAI",
+          "url": "https://hai.stanford.edu",
+          "type": "academic",
+          "coverage": ["Technological", "Social", "Political"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "AI 윤리, 정책, 연구 리더"
+        },
+        {
+          "name": "MIT Media Lab",
+          "url": "https://www.media.mit.edu",
+          "type": "academic",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "혁신 기술, 인터페이스"
+        },
+        {
+          "name": "Berkeley AI Research",
+          "url": "https://bair.berkeley.edu",
+          "type": "academic",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "AI/로보틱스 선도 연구"
+        },
+        {
+          "name": "Oxford Future of Humanity Institute",
+          "url": "https://www.fhi.ox.ac.uk",
+          "type": "academic",
+          "coverage": ["Technological", "Spiritual"],
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 5,
+          "notes": "존재적 위험, AI 안전"
+        }
+      ]
+    },
+    "tech_news_major": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com",
+          "type": "news",
+          "coverage": ["Technological", "Social"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "심층 기술 저널리즘"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com",
+          "type": "news",
+          "coverage": ["Economic", "Technological"],
+          "language": "en",
+          "update_frequency": "continuous",
+          "signal_quality": 4,
+          "notes": "비즈니스/금융 뉴스"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com",
+          "type": "news",
+          "coverage": ["Economic", "Political", "Technological"],
+          "language": "en",
+          "update_frequency": "continuous",
+          "signal_quality": 5,
+          "notes": "금융시장, 경제정책"
+        },
+        {
+          "name": "Fast Company",
+          "url": "https://www.fastcompany.com",
+          "type": "news",
+          "coverage": ["Technological", "Economic", "Social"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "혁신, 비즈니스 트렌드"
+        },
+        {
+          "name": "Engadget",
+          "url": "https://www.engadget.com",
+          "type": "news",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "소비자 기술, 가젯"
+        },
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co",
+          "type": "news",
+          "coverage": ["Technological", "Economic"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "크립토, 블록체인 전문"
+        }
+      ]
+    },
+    "regional_media": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "Nikkei Asia",
+          "url": "https://asia.nikkei.com",
+          "type": "news",
+          "coverage": ["Economic", "Technological", "Political"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "아시아 비즈니스/기술 최고 수준"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com",
+          "type": "news",
+          "coverage": ["Political", "Social"],
+          "language": "en",
+          "update_frequency": "continuous",
+          "signal_quality": 4,
+          "notes": "중동/글로벌 사우스 시각"
+        },
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com",
+          "type": "news",
+          "coverage": ["Political", "Economic", "Environmental"],
+          "language": "en",
+          "update_frequency": "continuous",
+          "signal_quality": 4,
+          "notes": "유럽 정책, EU 동향"
+        },
+        {
+          "name": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com",
+          "type": "news",
+          "coverage": ["Economic", "Political"],
+          "language": "en",
+          "update_frequency": "continuous",
+          "signal_quality": 4,
+          "notes": "동남아시아 시각"
+        }
+      ]
+    },
+    "industry_analysis": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "CB Insights",
+          "url": "https://www.cbinsights.com",
+          "type": "report",
+          "coverage": ["Economic", "Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "VC 트렌드, 스타트업 분석"
+        },
+        {
+          "name": "PitchBook",
+          "url": "https://pitchbook.com",
+          "type": "report",
+          "coverage": ["Economic"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "PE/VC 데이터, M&A"
+        },
+        {
+          "name": "eMarketer",
+          "url": "https://www.emarketer.com",
+          "type": "report",
+          "coverage": ["Economic", "Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "디지털 마케팅, 커머스"
+        },
+        {
+          "name": "Gartner",
+          "url": "https://www.gartner.com",
+          "type": "report",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "notes": "IT 전략, 하이프사이클"
+        }
+      ]
+    },
+    "sector_specific": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "STAT News",
+          "url": "https://www.statnews.com",
+          "type": "news",
+          "coverage": ["Technological", "Social"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "헬스케어/바이오텍 전문"
+        },
+        {
+          "name": "Finextra",
+          "url": "https://www.finextra.com",
+          "type": "news",
+          "coverage": ["Economic", "Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "핀테크, 금융 혁신"
+        },
+        {
+          "name": "SemiWiki",
+          "url": "https://semiwiki.com",
+          "type": "industry",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "반도체 산업 심층"
+        },
+        {
+          "name": "Energy Storage News",
+          "url": "https://www.ess-news.com",
+          "type": "news",
+          "coverage": ["Environmental", "Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "배터리, 그리드 저장"
+        },
+        {
+          "name": "Battery Technology Online",
+          "url": "https://www.batterytechonline.com",
+          "type": "industry",
+          "coverage": ["Technological", "Environmental"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "배터리 기술 트렌드"
+        }
+      ]
+    },
+    "environmental_climate": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "Carbon Brief",
+          "url": "https://www.carbonbrief.org",
+          "type": "news",
+          "coverage": ["Environmental", "Political"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "기후과학/정책 최고 수준"
+        },
+        {
+          "name": "Inside Climate News",
+          "url": "https://insideclimatenews.org",
+          "type": "news",
+          "coverage": ["Environmental", "Political"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "notes": "기후변화 탐사보도"
+        },
+        {
+          "name": "CleanTechnica",
+          "url": "https://cleantechnica.com",
+          "type": "news",
+          "coverage": ["Environmental", "Technological"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "청정기술, EV, 재생에너지"
+        },
+        {
+          "name": "ESG Dive",
+          "url": "https://www.esgdive.com",
+          "type": "news",
+          "coverage": ["Environmental", "Economic"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "ESG 트렌드, 기업 지속가능성"
+        },
+        {
+          "name": "Yale Climate Connections",
+          "url": "https://yaleclimateconnections.org",
+          "type": "news",
+          "coverage": ["Environmental"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "기후과학 커뮤니케이션"
+        }
+      ]
+    },
+    "korea_focused": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "경향신문 (Kyunghyang)",
+          "url": "https://www.khan.co.kr",
+          "type": "news",
+          "coverage": ["Political", "Social", "Economic"],
+          "language": "ko",
+          "update_frequency": "continuous",
+          "signal_quality": 4,
+          "notes": "진보 성향, 사회 이슈"
+        },
+        {
+          "name": "매일경제 (Maeil Business)",
+          "url": "https://www.mk.co.kr",
+          "type": "news",
+          "coverage": ["Economic", "Technological"],
+          "language": "ko",
+          "update_frequency": "continuous",
+          "signal_quality": 4,
+          "notes": "경제/비즈니스 전문"
+        },
+        {
+          "name": "KDI",
+          "url": "https://www.kdi.re.kr",
+          "type": "report",
+          "coverage": ["Economic"],
+          "language": "ko",
+          "update_frequency": "monthly",
+          "signal_quality": 5,
+          "notes": "한국 경제 정책연구"
+        },
+        {
+          "name": "Korea Biz Review",
+          "url": "https://www.koreabizreview.com",
+          "type": "news",
+          "coverage": ["Economic"],
+          "language": "ko",
+          "update_frequency": "daily",
+          "signal_quality": 3,
+          "notes": "한국 비즈니스 영문"
+        },
+        {
+          "name": "Vogue Korea",
+          "url": "https://www.vogue.co.kr",
+          "type": "lifestyle",
+          "coverage": ["Social", "Spiritual"],
+          "language": "ko",
+          "update_frequency": "daily",
+          "signal_quality": 3,
+          "notes": "라이프스타일 트렌드"
+        }
+      ]
+    },
+    "trend_reports": {
+      "tier": 3,
+      "scan_frequency": "weekly",
+      "sources": [
+        {
+          "name": "Randstad",
+          "url": "https://www.randstadusa.com",
+          "type": "report",
+          "coverage": ["Social", "Economic"],
+          "language": "en",
+          "update_frequency": "quarterly",
+          "signal_quality": 4,
+          "notes": "노동시장 트렌드"
+        },
+        {
+          "name": "IMD",
+          "url": "https://www.imd.org",
+          "type": "report",
+          "coverage": ["Economic", "Social"],
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 4,
+          "notes": "경영교육, 리더십"
+        },
+        {
+          "name": "Ad Age",
+          "url": "https://adage.com",
+          "type": "industry",
+          "coverage": ["Economic", "Social"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "마케팅, 광고 트렌드"
+        },
+        {
+          "name": "Retail Dive",
+          "url": "https://www.retaildive.com",
+          "type": "news",
+          "coverage": ["Economic"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "소매업 혁신"
+        }
+      ]
+    },
+    "spiritual_wellness": {
+      "tier": 3,
+      "scan_frequency": "weekly",
+      "sources": [
+        {
+          "name": "Religion Unplugged",
+          "url": "https://religionunplugged.com",
+          "type": "news",
+          "coverage": ["Spiritual"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 4,
+          "notes": "종교 트렌드, 세속화"
+        },
+        {
+          "name": "Mindful Leader",
+          "url": "https://www.mindfulleader.org",
+          "type": "report",
+          "coverage": ["Spiritual", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 3,
+          "notes": "마음챙김, 리더십"
+        },
+        {
+          "name": "Travel Tomorrow",
+          "url": "https://traveltomorrow.com",
+          "type": "news",
+          "coverage": ["Spiritual", "Social"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 3,
+          "notes": "웰니스 여행"
+        },
+        {
+          "name": "Good Housekeeping",
+          "url": "https://www.goodhousekeeping.com",
+          "type": "lifestyle",
+          "coverage": ["Social", "Spiritual"],
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 3,
+          "notes": "라이프스타일, 웰빙"
+        }
+      ]
+    },
+    "company_newsrooms": {
+      "tier": 2,
+      "scan_frequency": "daily",
+      "sources": [
+        {
+          "name": "NVIDIA Newsroom",
+          "url": "https://nvidianews.nvidia.com",
+          "type": "corporate",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "AI 하드웨어 리더"
+        },
+        {
+          "name": "IBM Newsroom",
+          "url": "https://newsroom.ibm.com",
+          "type": "corporate",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "양자컴퓨팅, 엔터프라이즈 AI"
+        },
+        {
+          "name": "Qualcomm",
+          "url": "https://www.qualcomm.com/news",
+          "type": "corporate",
+          "coverage": ["Technological"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "모바일, IoT, 로보틱스"
+        },
+        {
+          "name": "Hyundai Newsroom",
+          "url": "https://www.hyundai.com/worldwide/en/newsroom",
+          "type": "corporate",
+          "coverage": ["Technological", "Economic"],
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "notes": "자동차, 로보틱스, 모빌리티"
+        }
+      ]
+    }
+  },
+  "steeps_coverage_matrix": {
+    "Social": {
+      "primary_sources": ["The Lancet", "Randstad", "IMD", "STAT News", "Vogue Korea"],
+      "secondary_sources": ["Brookings", "McKinsey", "Al Jazeera", "Good Housekeeping"],
+      "coverage_score": 4
+    },
+    "Technological": {
+      "primary_sources": ["Nature", "Science", "arXiv", "MIT Tech Review", "Stanford HAI", "NVIDIA", "IBM"],
+      "secondary_sources": ["Fast Company", "Engadget", "SemiWiki", "Berkeley AI"],
+      "coverage_score": 5
+    },
+    "Economic": {
+      "primary_sources": ["World Bank", "IMF", "OECD", "Bloomberg", "CNBC", "CB Insights", "PitchBook"],
+      "secondary_sources": ["McKinsey", "Peterson Institute", "Nikkei Asia", "Finextra"],
+      "coverage_score": 5
+    },
+    "Environmental": {
+      "primary_sources": ["IEA", "Carbon Brief", "Inside Climate News", "Nature"],
+      "secondary_sources": ["CleanTechnica", "ESG Dive", "Yale Climate", "Energy Storage News"],
+      "coverage_score": 5
+    },
+    "Political": {
+      "primary_sources": ["Brookings", "CFR", "Chatham House", "OECD", "Korea.kr"],
+      "secondary_sources": ["Al Jazeera", "Euronews", "Peterson Institute", "German Marshall Fund"],
+      "coverage_score": 5
+    },
+    "Spiritual": {
+      "primary_sources": ["Religion Unplugged", "Oxford FHI"],
+      "secondary_sources": ["Mindful Leader", "Travel Tomorrow", "Good Housekeeping"],
+      "coverage_score": 3,
+      "improvement_needed": "더 많은 Tier 1 소스 필요 - 종교/윤리 학술지, 명상/웰니스 연구기관 추가 권장"
+    }
+  },
+  "scan_schedule": {
+    "daily_morning": {
+      "time": "06:00 KST",
+      "sources": ["tier_1", "tier_2"],
+      "focus": "breaking news, policy announcements, research publications"
+    },
+    "weekly_deep": {
+      "day": "Monday",
+      "time": "09:00 KST",
+      "sources": ["all_tiers"],
+      "focus": "comprehensive review, trend reports, industry analysis"
+    },
+    "monthly_strategic": {
+      "day": "first_monday",
+      "focus": "long-term trends, meta-signals, scenario implications"
+    }
+  },
+  "quality_metrics": {
+    "signal_quality_criteria": {
+      "5": "학술 peer-review, 정부 공식, 1차 데이터",
+      "4": "주요 언론, 전문 분석 기관",
+      "3": "산업 매체, 지역 언론",
+      "2": "블로그, 트렌드 사이트",
+      "1": "검증되지 않은 소스"
+    },
+    "minimum_quality_for_report": 3,
+    "citation_requirements": {
+      "tier_1": "직접 인용 허용",
+      "tier_2": "출처 명시 필수",
+      "tier_3": "교차 검증 권장",
+      "tier_4": "참고용으로만 사용"
+    }
+  },
+  "excluded_sources": {
+    "reason_unreliable": ["heypop.kr", "stupiddope.com", "newneek.co", "namu.wiki"],
+    "reason_duplicate": ["live feed aggregators like tomsguide.com/news/live/*"],
+    "reason_low_value": ["generic press release aggregators"]
+  }
+}

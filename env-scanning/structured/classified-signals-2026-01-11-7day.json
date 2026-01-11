@@ -1,0 +1,1323 @@
+{
+  "classification_metadata": {
+    "classification_date": "2026-01-11",
+    "source_file": "filtered-signals-2026-01-11-7day.json",
+    "total_classified": 56,
+    "classification_window": {
+      "scan_start": "2026-01-04",
+      "scan_end": "2026-01-11",
+      "scan_days": 7
+    }
+  },
+  "classification_stats": {
+    "by_category": {
+      "Technological": 19,
+      "Economic": 13,
+      "Social": 10,
+      "Political": 8,
+      "Environmental": 4,
+      "Spiritual": 2
+    },
+    "by_significance": {
+      "5": 9,
+      "4": 24,
+      "3": 20,
+      "2": 3
+    },
+    "by_time_horizon": {
+      "short": 15,
+      "medium": 28,
+      "long": 13
+    }
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0111-001",
+      "raw_id": "RAW-2026-0111-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "AI Hardware",
+      "title": "AMD Unveils Ryzen AI 400 Series and MI440X GPU at CES 2026",
+      "significance": 4,
+      "significance_reason": "Major AI chip platform announcement with $150M education investment signals enterprise AI acceleration",
+      "time_horizon": "short",
+      "key_actors": ["AMD", "Lisa Su", "Education sector"],
+      "source": {
+        "name": "CES 2026 Press Release",
+        "url": "https://www.ghacks.net/2026/01/08/best-of-ces-2026-winners-highlight-where-consumer-tech-is-actually-heading/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-002",
+      "raw_id": "RAW-2026-0111-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "subcategory": "Robotics",
+      "title": "Boston Dynamics Atlas Humanoid Robot Becomes Commercial Product (2028 Launch)",
+      "significance": 5,
+      "significance_reason": "First major humanoid robot commercialization milestone - shifts from R&D to production deployment",
+      "time_horizon": "medium",
+      "key_actors": ["Boston Dynamics", "Manufacturing sector"],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/general/everything-announced-at-ces-2026-130124802.html",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-003",
+      "raw_id": "RAW-2026-0111-004",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Quantum Computing",
+      "title": "D-Wave Achieves Scalable On-Chip Cryogenic Control for Gate-Model Qubits",
+      "significance": 5,
+      "significance_reason": "Breakthrough removes major scalability obstacle for commercial quantum computers",
+      "time_horizon": "medium",
+      "key_actors": ["D-Wave", "Quantum computing industry"],
+      "source": {
+        "name": "Fast Company",
+        "url": "https://www.fastcompany.com/91469364/d-wave-quantum-computing-first-major-breakthrough-of-2026-scalable-technology",
+        "type": "news",
+        "published_date": "2026-01-03"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-004",
+      "raw_id": "RAW-2026-0111-005",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Quantum Computing",
+      "title": "Quantum Error Correction Achieves Ultimate Accuracy with Ultra-Fast Efficiency",
+      "significance": 5,
+      "significance_reason": "Critical enabler for practical large-scale quantum computers - removes computational bottleneck",
+      "time_horizon": "medium",
+      "key_actors": ["Academic research teams", "Quantum industry"],
+      "source": {
+        "name": "Phys.org",
+        "url": "https://phys.org/news/2026-01-error-technology-quantum-real-world.html",
+        "type": "academic",
+        "published_date": "2026-01-06"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-005",
+      "raw_id": "RAW-2026-0111-006",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Quantum Information Security",
+      "title": "Quantum No-Cloning Problem Solved - Enables Quantum Cloud Storage",
+      "significance": 5,
+      "significance_reason": "Fundamental breakthrough enabling secure quantum information infrastructure",
+      "time_horizon": "long",
+      "key_actors": ["University of Waterloo", "Cloud providers"],
+      "source": {
+        "name": "Phys.org / University of Waterloo",
+        "url": "https://phys.org/news/2026-01-quantum-longstanding-cloning-problem-encryption.html",
+        "type": "academic",
+        "published_date": "2026-01-07"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-006",
+      "raw_id": "RAW-2026-0111-007",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Quantum Communication",
+      "title": "Quantum Structured Light Transforms Secure Communication and Computing",
+      "significance": 4,
+      "significance_reason": "Advances multiple quantum technology applications simultaneously",
+      "time_horizon": "medium",
+      "key_actors": ["Research institutions", "Quantum tech companies"],
+      "source": {
+        "name": "ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260106001911.htm",
+        "type": "academic",
+        "published_date": "2026-01-06"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.75
+    },
+    {
+      "id": "SIG-2026-0111-007",
+      "raw_id": "RAW-2026-0111-008",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "M&A - Physical AI",
+      "title": "Mobileye Acquires Mentee Robotics for $900M - Physical AI Push",
+      "significance": 4,
+      "significance_reason": "Major strategic acquisition signaling Physical AI industry consolidation and automotive convergence",
+      "time_horizon": "short",
+      "key_actors": ["Mobileye", "Mentee Robotics", "Intel"],
+      "source": {
+        "name": "Mobileye News",
+        "url": "https://www.mobileye.com/news/mobileye-to-acquire-mentee-robotics-to-accelerate-physical-ai-leadership/",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-008",
+      "raw_id": "RAW-2026-0111-009",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Consumer Robotics",
+      "title": "EngineAI T800 Humanoid Robot Launches at $25,000 - Mid-2026 Shipments",
+      "significance": 3,
+      "significance_reason": "Price accessibility milestone for consumer/SMB humanoid robotics market",
+      "time_horizon": "short",
+      "key_actors": ["EngineAI", "Consumer robotics market"],
+      "source": {
+        "name": "Interesting Engineering",
+        "url": "https://interestingengineering.com/ai-robotics/9-humanoid-robots-at-ces-2026",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-009",
+      "raw_id": "RAW-2026-0111-010",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "AI Robotics Strategy",
+      "title": "Hyundai Motor Group Announces AI Robotics Strategy at CES 2026",
+      "significance": 4,
+      "significance_reason": "Major automotive conglomerate strategic pivot to robotics signals industry transformation",
+      "time_horizon": "medium",
+      "key_actors": ["Hyundai Motor Group", "Boston Dynamics"],
+      "source": {
+        "name": "Hyundai Newsroom",
+        "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001100",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-010",
+      "raw_id": "RAW-2026-0111-011",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Robotics Platform",
+      "title": "Qualcomm Introduces Full Suite of Robotics Technologies for Physical AI",
+      "significance": 4,
+      "significance_reason": "Infrastructure provider enabling Physical AI ecosystem - horizontal platform play",
+      "time_horizon": "medium",
+      "key_actors": ["Qualcomm", "Robotics manufacturers"],
+      "source": {
+        "name": "Qualcomm Press Release",
+        "url": "https://www.qualcomm.com/news/releases/2026/01/qualcomm-introduces-a-full-suite-of-robotics-technologies-power",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-011",
+      "raw_id": "RAW-2026-0111-012",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Gene Therapy",
+      "title": "CRISPR Breakthrough: Gene Activation Without DNA Cutting",
+      "significance": 4,
+      "significance_reason": "Safer gene therapy approach with immediate clinical applications for genetic diseases",
+      "time_horizon": "medium",
+      "key_actors": ["UNSW Sydney", "Gene therapy companies"],
+      "source": {
+        "name": "ScienceDaily / UNSW Sydney",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260104202813.htm",
+        "type": "academic",
+        "published_date": "2026-01-04"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-012",
+      "raw_id": "RAW-2026-0111-013",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "subcategory": "CRISPR Regulation",
+      "title": "Aurora Therapeutics Launches with $16M - CRISPR Regulatory Pathway",
+      "significance": 4,
+      "significance_reason": "Regulatory pathway shift enabling personalized gene therapy commercialization",
+      "time_horizon": "medium",
+      "key_actors": ["Aurora Therapeutics", "FDA", "Jennifer Doudna"],
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/09/1130945/crispr-startup-aurora-betting-regulation-pku/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-013",
+      "raw_id": "RAW-2026-0111-014",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual"]
+      },
+      "subcategory": "Lifestyle Shift",
+      "title": "Gen Z Intentional Living and Analog Revival - 2026 Lifestyle Shift",
+      "significance": 4,
+      "significance_reason": "Major generational values shift from digital-first to intentional analog experiences",
+      "time_horizon": "medium",
+      "key_actors": ["Gen Z", "Millennials", "Wellness industry"],
+      "source": {
+        "name": "Futurist Speakers",
+        "url": "https://www.futuristsspeakers.com/gen-z-trends-2026-how-younger-generations-work-live-and-play-is-rapidly-changing/",
+        "type": "report",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-014",
+      "raw_id": "RAW-2026-0111-015",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Dating Culture",
+      "title": "79% of Gen Z Disillusioned with Dating Apps - Offline Connection Resurgence",
+      "significance": 3,
+      "significance_reason": "Dating culture transformation from digital platforms to offline community connections",
+      "time_horizon": "short",
+      "key_actors": ["Gen Z", "Dating platforms", "Community organizers"],
+      "source": {
+        "name": "Marketing Interactive / Pinterest",
+        "url": "https://www.marketing-interactive.com/these-are-the-trends-shaping-gen-z-in-2026-pinterest-predicts-report",
+        "type": "report",
+        "published_date": "2026-01-04"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.75
+    },
+    {
+      "id": "SIG-2026-0111-015",
+      "raw_id": "RAW-2026-0111-016",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Financial Behavior",
+      "title": "Gen Z Loud Budgeting Movement - 93% Mindful Dining Spending",
+      "significance": 3,
+      "significance_reason": "Financial transparency becomes social norm - shift from consumption display to fiscal responsibility",
+      "time_horizon": "short",
+      "key_actors": ["Gen Z", "TikTok", "Restaurant industry"],
+      "source": {
+        "name": "stupidDOPE",
+        "url": "https://stupiddope.com/2026/01/gen-zs-digital-lifestyle-trends-are-becoming-the-new-standard/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.7
+    },
+    {
+      "id": "SIG-2026-0111-016",
+      "raw_id": "RAW-2026-0111-017",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Environmental", "Economic"]
+      },
+      "subcategory": "Climate Trade Policy",
+      "title": "EU Carbon Border Adjustment Mechanism (CBAM) Fully Operational Jan 1, 2026",
+      "significance": 5,
+      "significance_reason": "First major carbon border tax implementation - reshapes global trade and climate policy architecture",
+      "time_horizon": "short",
+      "key_actors": ["European Union", "WTO", "Global exporters"],
+      "source": {
+        "name": "Euronews",
+        "url": "https://www.euronews.com/my-europe/2026/01/01/eus-carbon-border-tax-on-heavy-industry-goods-goes-into-effect-risking-trade-escalation",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "status": "mature",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-017",
+      "raw_id": "RAW-2026-0111-018",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Economic"]
+      },
+      "subcategory": "Maritime Emissions",
+      "title": "EU ETS Maritime Transport Full Compliance - Methane and N2O Included",
+      "significance": 4,
+      "significance_reason": "Expanded maritime emissions regulation beyond CO2 - sets precedent for comprehensive shipping decarbonization",
+      "time_horizon": "short",
+      "key_actors": ["EU", "Shipping industry", "Port authorities"],
+      "source": {
+        "name": "Safety4Sea",
+        "url": "https://safety4sea.com/cm-new-eu-ets-rules-take-effect-from-january-2026-what-you-should-know/",
+        "type": "news",
+        "published_date": "2026-01-05"
+      },
+      "status": "mature",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-018",
+      "raw_id": "RAW-2026-0111-019",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Environmental", "Economic"]
+      },
+      "subcategory": "Climate Disclosure",
+      "title": "California SB 253 Climate Disclosure: Scope 1/2 Reporting Due June 30, 2026",
+      "significance": 4,
+      "significance_reason": "Major state-level mandatory climate disclosure - precedent for corporate carbon accountability",
+      "time_horizon": "short",
+      "key_actors": ["California government", "Fortune 1000 companies", "Auditors"],
+      "source": {
+        "name": "McDermott Will & Emery",
+        "url": "https://www.mwe.com/insights/california-mandatory-climate-risk-disclosure-law-almost-here/",
+        "type": "policy",
+        "published_date": "2026-01-03"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-019",
+      "raw_id": "RAW-2026-0111-020",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological", "Political"]
+      },
+      "subcategory": "Venture Capital",
+      "title": "Andreessen Horowitz Raises $15B - Equals 18% of 2025 U.S. VC Total",
+      "significance": 5,
+      "significance_reason": "Massive VC fund concentration - single firm controls nearly 1/5 of U.S. venture funding flow",
+      "time_horizon": "short",
+      "key_actors": ["Andreessen Horowitz", "Defense tech startups", "American Dynamism sector"],
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/01/09/andreessen-horowitz-raises-15-billion-big-in-infrastructure-defense.html",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-020",
+      "raw_id": "RAW-2026-0111-021",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "AI Funding",
+      "title": "xAI Raises $20B - One of Largest Venture Rounds Ever",
+      "significance": 5,
+      "significance_reason": "Record-breaking AI funding signals continued massive capital deployment in foundation models",
+      "time_horizon": "short",
+      "key_actors": ["xAI", "Elon Musk", "AI infrastructure"],
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/01/09/andreessen-horowitz-raises-15-billion-big-in-infrastructure-defense.html",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-021",
+      "raw_id": "RAW-2026-0111-022",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Environmental", "Technological"]
+      },
+      "subcategory": "Alternative Protein",
+      "title": "Alternative Protein Investment Crashes - Cultivated Meat Only $36M in 9 Months",
+      "significance": 4,
+      "significance_reason": "Major industry shakeout and capital retrenchment - signals reality check after hype cycle",
+      "time_horizon": "medium",
+      "key_actors": ["Cultivated meat startups", "VCs", "Food industry"],
+      "source": {
+        "name": "Protein Production Technology International",
+        "url": "https://www.proteinproductiontechnology.com/post/cultivated-meat-in-2026-fewer-illusions-firmer-footing",
+        "type": "industry",
+        "published_date": "2026-01-08"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-022",
+      "raw_id": "RAW-2026-0111-024",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Space Policy",
+      "title": "ESA Announces €8.26B Budget for 2026 - SMILE Mission Planned",
+      "significance": 3,
+      "significance_reason": "European space program sustained funding - maintains strategic autonomy",
+      "time_horizon": "short",
+      "key_actors": ["ESA", "European governments", "CAS"],
+      "source": {
+        "name": "Payload Space",
+        "url": "https://payloadspace.com/esa-outlines-a-busy-year-ahead/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-023",
+      "raw_id": "RAW-2026-0111-025",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Education Policy",
+      "title": "Korea Education Ministry Shifts from 'AI Digital Textbooks' to 'AI Learning Resources'",
+      "significance": 3,
+      "significance_reason": "Policy terminology shift reflects AI education implementation challenges and scope expansion",
+      "time_horizon": "short",
+      "key_actors": ["Korea Ministry of Education", "Edtech companies", "Schools"],
+      "source": {
+        "name": "Focus NJN",
+        "url": "https://focusnjn.com/article/1065591818096765",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.75
+    },
+    {
+      "id": "SIG-2026-0111-024",
+      "raw_id": "RAW-2026-0111-026",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological", "Social"]
+      },
+      "subcategory": "AI Education Infrastructure",
+      "title": "Korea Establishes 'AI Talent Support Bureau' - Organization Restructuring Jan 1",
+      "significance": 3,
+      "significance_reason": "Government AI education infrastructure signals national AI workforce development priority",
+      "time_horizon": "medium",
+      "key_actors": ["Korea Ministry of Education", "Universities", "AI industry"],
+      "source": {
+        "name": "OhmyNews",
+        "url": "https://m.ohmynews.com/NWS_Web/Mobile/amp.aspx?CNTN_CD=A0003193761",
+        "type": "news",
+        "published_date": "2026-01-05"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-025",
+      "raw_id": "RAW-2026-0111-027",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual"]
+      },
+      "subcategory": "Mental Health",
+      "title": "Proactive Mental Health and Emotional Fitness Movement in 2026",
+      "significance": 4,
+      "significance_reason": "Paradigm shift from reactive therapy to proactive emotional fitness - preventive mental health",
+      "time_horizon": "medium",
+      "key_actors": ["Gen Z", "Millennials", "Mental health providers"],
+      "source": {
+        "name": "Dr. Axe / Wellness Report",
+        "url": "https://draxe.com/health/wellness-trends-2026/",
+        "type": "report",
+        "published_date": "2026-01-04"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-026",
+      "raw_id": "RAW-2026-0111-028",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Wellness",
+      "title": "Vagus Nerve Stimulation Becomes Mainstream Wellness Trend",
+      "significance": 3,
+      "significance_reason": "Neuroscience-based wellness trend - move toward body-based stress management",
+      "time_horizon": "short",
+      "key_actors": ["Wellness industry", "Neuroscience researchers", "Consumers"],
+      "source": {
+        "name": "Good Housekeeping",
+        "url": "https://www.goodhousekeeping.com/uk/health/health-advice/a69806614/2026-health-wellness-trends/",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.7
+    },
+    {
+      "id": "SIG-2026-0111-027",
+      "raw_id": "RAW-2026-0111-029",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Energy Storage",
+      "title": "Illinois Targets 3 GW Grid-Scale Energy Storage by 2030",
+      "significance": 3,
+      "significance_reason": "Significant state-level battery storage commitment for renewable integration",
+      "time_horizon": "medium",
+      "key_actors": ["Illinois government", "Grid operators", "Battery manufacturers"],
+      "source": {
+        "name": "Energy Storage News",
+        "url": "https://www.ess-news.com/2026/01/09/illinois-targets-3-gw-of-grid-scale-energy-storage-by-2030/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-028",
+      "raw_id": "RAW-2026-0111-030",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental", "Economic"]
+      },
+      "subcategory": "Battery Technology",
+      "title": "Silicon Batteries Enter Large-Scale Deployment in EVs and Data Centers",
+      "significance": 4,
+      "significance_reason": "New battery technology commercialization enabling AI infrastructure and EV advancement",
+      "time_horizon": "short",
+      "key_actors": ["Battery manufacturers", "EV makers", "Data center operators"],
+      "source": {
+        "name": "Battery Technology Online",
+        "url": "https://www.batterytechonline.com/trends/silicon-batteries-will-reshape-energy-storage-as-manufacturers-compete-on-performance-in-2026",
+        "type": "industry",
+        "published_date": "2026-01-02"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-029",
+      "raw_id": "RAW-2026-0111-031",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Political"]
+      },
+      "subcategory": "Grid Modernization",
+      "title": "California Battery Capacity Surges 2,100% Since 2019 - Leads World Except China",
+      "significance": 4,
+      "significance_reason": "Major regional energy infrastructure transformation - model for grid decarbonization",
+      "time_horizon": "short",
+      "key_actors": ["California", "Utilities", "Battery industry"],
+      "source": {
+        "name": "Energy Storage News",
+        "url": "https://www.ess-news.com/2026/01/09/illinois-targets-3-gw-of-grid-scale-energy-storage-by-2030/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-030",
+      "raw_id": "RAW-2026-0111-032",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Labor Policy",
+      "title": "Korea 2026 Minimum Wage: 10,320 Won/Hour (2.9% Increase)",
+      "significance": 2,
+      "significance_reason": "Annual labor policy adjustment - modest wage growth amid inflation",
+      "time_horizon": "short",
+      "key_actors": ["Korea government", "Labor unions", "Employers"],
+      "source": {
+        "name": "Korea Policy Briefing",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148956594",
+        "type": "government",
+        "published_date": "2026-01-04"
+      },
+      "status": "mature",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-031",
+      "raw_id": "RAW-2026-0111-033",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Social", "Economic"]
+      },
+      "subcategory": "Labor Law",
+      "title": "Korea 'Yellow Envelope Law' Takes Effect March 2026",
+      "significance": 4,
+      "significance_reason": "Major labor law transformation expanding collective bargaining rights to subcontract workers",
+      "time_horizon": "short",
+      "key_actors": ["Korea government", "Labor unions", "Prime contractors"],
+      "source": {
+        "name": "Korea Policy Briefing",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148956594",
+        "type": "government",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-032",
+      "raw_id": "RAW-2026-0111-034",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Immigration Policy",
+      "title": "U.S. Immigration Fees Increase Jan 1, 2026 - 'More Expensive, Slower, Stricter'",
+      "significance": 4,
+      "significance_reason": "Major immigration policy change affecting accessibility and economic migration patterns",
+      "time_horizon": "short",
+      "key_actors": ["U.S. DHS", "USCIS", "Immigrants"],
+      "source": {
+        "name": "New York Korean",
+        "url": "https://www.nykorean.net/gnu5/bbs/board.php?bo_table=imininfo&wr_id=1654",
+        "type": "news",
+        "published_date": "2026-01-04"
+      },
+      "status": "mature",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-033",
+      "raw_id": "RAW-2026-0111-035",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic", "Technological"]
+      },
+      "subcategory": "Crypto Regulation",
+      "title": "U.S. CLARITY Act for Crypto Expected Passage Jan 15, 2026",
+      "significance": 5,
+      "significance_reason": "Landmark crypto regulatory framework ending 'regulation by enforcement' era",
+      "time_horizon": "short",
+      "key_actors": ["U.S. Congress", "SEC", "Crypto industry"],
+      "source": {
+        "name": "Quartz",
+        "url": "https://qz.com/2026-crypto-predictions-bitcoin-stablecoins-clarity-etfs",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-034",
+      "raw_id": "RAW-2026-0111-036",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Crypto Regulation",
+      "title": "SEC Approves Generic Exchange Listing Standards for Crypto ETPs",
+      "significance": 4,
+      "significance_reason": "Streamlined crypto product approval process - reduces timeline from 240 to 75 days",
+      "time_horizon": "short",
+      "key_actors": ["SEC", "Crypto exchanges", "Asset managers"],
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/383361/crypto-etfs-2026-regulatory-tailwinds-issuers-brace-crowded-year",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-035",
+      "raw_id": "RAW-2026-0111-037",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Crypto Adoption",
+      "title": "Morgan Stanley Files to Launch Bitcoin and Solana ETFs",
+      "significance": 4,
+      "significance_reason": "Traditional banking crypto integration - major institutional legitimization signal",
+      "time_horizon": "short",
+      "key_actors": ["Morgan Stanley", "Bank of America", "Crypto industry"],
+      "source": {
+        "name": "Euronews",
+        "url": "https://www.euronews.com/business/2026/01/06/morgan-stanley-files-to-launch-bitcoin-and-solana-etfs-as-wall-street-embraces-crypto",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-036",
+      "raw_id": "RAW-2026-0111-038",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Institutional Crypto",
+      "title": "Bitcoin ETF Assets Projected to Reach $180-220B by End of 2026",
+      "significance": 4,
+      "significance_reason": "Major institutional capital flow doubling Bitcoin ETF AUM in one year",
+      "time_horizon": "short",
+      "key_actors": ["Asset managers", "Institutional investors", "Bitcoin"],
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/383361/crypto-etfs-2026-regulatory-tailwinds-issuers-brace-crowded-year",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-037",
+      "raw_id": "RAW-2026-0111-039",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological", "Economic"]
+      },
+      "subcategory": "Labor Market",
+      "title": "Skills Gap Becomes Defining Labor Market Challenge - Not Job Displacement",
+      "significance": 5,
+      "significance_reason": "Labor market structural shift - agentic AI begins displacing junior/mid-level white-collar jobs",
+      "time_horizon": "short",
+      "key_actors": ["Employers", "Workers", "Education providers"],
+      "source": {
+        "name": "Randstad USA",
+        "url": "https://www.randstadusa.com/about/press-room/press-releases/labour-market-outlook-2026-four-major-trends-reshaping-work/",
+        "type": "report",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-038",
+      "raw_id": "RAW-2026-0111-040",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Hiring Practices",
+      "title": "Skills-Based Hiring Reaches 65% of Employers for Entry-Level Positions",
+      "significance": 4,
+      "significance_reason": "Hiring paradigm transformation away from degree requirements to competency-based evaluation",
+      "time_horizon": "short",
+      "key_actors": ["Employers", "Job seekers", "HR tech companies"],
+      "source": {
+        "name": "Fast Company",
+        "url": "https://www.fastcompany.com/91466644/key-workforce-trends-to-watch-in-2026",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-039",
+      "raw_id": "RAW-2026-0111-041",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Workforce Development",
+      "title": "55% of CEOs Cite Innovation Inability Due to Skills Lack - Reskilling Priority",
+      "significance": 4,
+      "significance_reason": "Corporate reskilling investment wave driven by innovation bottleneck",
+      "time_horizon": "short",
+      "key_actors": ["CEOs", "Corporate training", "Workers"],
+      "source": {
+        "name": "IMD",
+        "url": "https://www.imd.org/ibyimd/talent/workplace-trends-for-2026/",
+        "type": "report",
+        "published_date": "2026-01-04"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-040",
+      "raw_id": "RAW-2026-0111-042",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Workplace Structure",
+      "title": "Hybrid Work Remains Dominant - 64% of Organizations Use Hybrid Model",
+      "significance": 4,
+      "significance_reason": "Workplace structure evolution with emerging 'hybrid creep' trend increasing office mandates",
+      "time_horizon": "medium",
+      "key_actors": ["Employers", "Workers", "Real estate"],
+      "source": {
+        "name": "HR Service Inc",
+        "url": "https://www.hrserviceinc.com/hybrid-work-best-practises-2026/",
+        "type": "report",
+        "published_date": "2026-01-07"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-041",
+      "raw_id": "RAW-2026-0111-043",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Work Values",
+      "title": "85% of Workers Prioritize Flexibility Over Salary",
+      "significance": 4,
+      "significance_reason": "Compensation paradigm shift - workers willing to accept 25% lower salaries for flexibility",
+      "time_horizon": "medium",
+      "key_actors": ["Workers", "Employers", "Tech industry"],
+      "source": {
+        "name": "Splashtop",
+        "url": "https://www.splashtop.com/blog/remote-work-trends-2026",
+        "type": "report",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-042",
+      "raw_id": "RAW-2026-0111-044",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Social Commerce",
+      "title": "U.S. Social Commerce Market to Reach $114.7B in 2025, $119B in 2027",
+      "significance": 3,
+      "significance_reason": "Social commerce channel maturation with normalized in-app checkout",
+      "time_horizon": "short",
+      "key_actors": ["Instagram", "TikTok", "YouTube", "Retailers"],
+      "source": {
+        "name": "eMarketer",
+        "url": "https://www.emarketer.com/content/us-social-commerce-forecast-2026",
+        "type": "report",
+        "published_date": "2026-01-06"
+      },
+      "status": "mature",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-043",
+      "raw_id": "RAW-2026-0111-045",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological", "Social"]
+      },
+      "subcategory": "Live Commerce",
+      "title": "Global Livestream Sales Projected to Exceed $1 Trillion by 2026",
+      "significance": 5,
+      "significance_reason": "Trillion-dollar commerce channel emergence - massive shift in retail format",
+      "time_horizon": "short",
+      "key_actors": ["China market", "U.S. retailers", "Livestream platforms"],
+      "source": {
+        "name": "GetStream",
+        "url": "https://getstream.io/blog/livestream-shopping-statistics/",
+        "type": "report",
+        "published_date": "2026-01-04"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-044",
+      "raw_id": "RAW-2026-0111-046",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Platform Commerce",
+      "title": "TikTok Shop U.S. Sales Projected to Reach $20-23.4B in 2026",
+      "significance": 4,
+      "significance_reason": "Platform-specific commerce dominance - 50% of U.S. social commerce buyers use TikTok",
+      "time_horizon": "short",
+      "key_actors": ["TikTok", "Merchants", "Social commerce"],
+      "source": {
+        "name": "Retail Dive",
+        "url": "https://www.retaildive.com/news/tiktok-shop-drives-social-commerce-growth/807665/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-045",
+      "raw_id": "RAW-2026-0111-047",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Social", "Technological"]
+      },
+      "subcategory": "Creator Economy",
+      "title": "U.S. Creator Economy Projected to Exceed $40B in 2026 - 4x Faster than Broader Media",
+      "significance": 5,
+      "significance_reason": "New media economy maturation - growing 4x faster than traditional media industry",
+      "time_horizon": "short",
+      "key_actors": ["Content creators", "Brands", "Platforms"],
+      "source": {
+        "name": "Ad Age",
+        "url": "https://adage.com/trends-predictions/business-forecast/aa-influencer-marketing-creator-economy-predictions-2026/",
+        "type": "industry",
+        "published_date": "2026-01-07"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-046",
+      "raw_id": "RAW-2026-0111-048",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "AI Content Creation",
+      "title": "86% of Creators Use Generative AI to Power Content - 79% of Marketers Increase Spend",
+      "significance": 4,
+      "significance_reason": "AI integration becomes mainstream in content production - reshapes creative workflows",
+      "time_horizon": "short",
+      "key_actors": ["Content creators", "Marketers", "AI tools"],
+      "source": {
+        "name": "Influencer Marketing Factory",
+        "url": "https://theinfluencermarketingfactory.com/2026-influencer-marketing-predictions/",
+        "type": "industry",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-047",
+      "raw_id": "RAW-2026-0111-049",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "subcategory": "Autonomous Vehicles",
+      "title": "Lucid-Nuro-Uber Robotaxi to Launch in San Francisco Late 2026",
+      "significance": 5,
+      "significance_reason": "Major commercial robotaxi deployment - 20,000 vehicle rollout over 6 years",
+      "time_horizon": "short",
+      "key_actors": ["Lucid", "Nuro", "Uber"],
+      "source": {
+        "name": "Lucid Motors",
+        "url": "https://media.lucidmotors.com/en/newsitem/1061-lucid-nuro-and-uber-unveil-global-robotaxi-at-ces-announce-autonomous-on-road-testing",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.9
+    },
+    {
+      "id": "SIG-2026-0111-048",
+      "raw_id": "RAW-2026-0111-050",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Brain-Computer Interface",
+      "title": "Neuralink to Begin High-Volume Production of BCI Devices in 2026",
+      "significance": 5,
+      "significance_reason": "BCI commercialization milestone with automated surgical procedures - paradigm shift in human-computer interaction",
+      "time_horizon": "medium",
+      "key_actors": ["Neuralink", "Elon Musk", "Medical regulators"],
+      "source": {
+        "name": "Business Today",
+        "url": "https://www.businesstoday.in/technology/news/story/elon-musks-neuralink-to-begin-high-volume-production-of-brain-computer-interfaces-in-2026-read-details-509097-2026-01-02",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-049",
+      "raw_id": "RAW-2026-0111-051",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Medical Technology Market",
+      "title": "BCI Market Projected to Grow to $10.86B by 2032 at 14.61% CAGR",
+      "significance": 3,
+      "significance_reason": "Emerging medical technology market with strong growth trajectory",
+      "time_horizon": "long",
+      "key_actors": ["BCI manufacturers", "Healthcare providers", "Research institutions"],
+      "source": {
+        "name": "GlobeNewswire / Verified Market Research",
+        "url": "https://www.globenewswire.com/news-release/2026/01/07/3214665/0/en/Brain-Computer-Interface-BCI-Market-is-expected-to-generate-a-revenue-of-USD-10-86-Billion-by-2032-Globally-at-14-61-CAGR-Verified-Market-Research.html",
+        "type": "report",
+        "published_date": "2026-01-07"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.75
+    },
+    {
+      "id": "SIG-2026-0111-050",
+      "raw_id": "RAW-2026-0111-052",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Semiconductor Manufacturing",
+      "title": "TSMC Announces 'A16' Chipmaking Technology for 2H 2026 - Intel Showdown",
+      "significance": 4,
+      "significance_reason": "Leading-edge chip manufacturing race - geopolitical and technological competition",
+      "time_horizon": "short",
+      "key_actors": ["TSMC", "Intel", "Chip designers"],
+      "source": {
+        "name": "SemiWiki",
+        "url": "https://semiwiki.com/forum/threads/tsmc-says-a16-chipmaking-tech-to-arrive-in-2026-setting-up-showdown-with-intel.20109/",
+        "type": "industry",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-051",
+      "raw_id": "RAW-2026-0111-053",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Semiconductor Manufacturing",
+      "title": "Intel Enters High-Volume Production of 18A Process - Core Ultra 3 'Panther Lake'",
+      "significance": 4,
+      "significance_reason": "Intel manufacturing turnaround attempt - critical for U.S. semiconductor independence",
+      "time_horizon": "short",
+      "key_actors": ["Intel", "U.S. government", "PC manufacturers"],
+      "source": {
+        "name": "The Motley Fool",
+        "url": "https://www.fool.com/investing/2026/01/01/is-intel-keeping-a-wonderful-secret-from-the-marke/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.85
+    },
+    {
+      "id": "SIG-2026-0111-052",
+      "raw_id": "RAW-2026-0111-054",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Social"]
+      },
+      "subcategory": "Water Crisis",
+      "title": "Colorado River States Face Feb 14, 2026 Deadline for Water Allocation Plan",
+      "significance": 5,
+      "significance_reason": "Critical water resource crisis deadline - affects 40 million people and agriculture",
+      "time_horizon": "short",
+      "key_actors": ["7 U.S. states", "Federal government", "Agriculture sector"],
+      "source": {
+        "name": "Aspen Public Radio",
+        "url": "https://www.aspenpublicradio.org/environment/2025-12-24/drought-conditions-on-the-colorado-river-are-getting-worse-because-of-climate-change-how-will-leaders-respond-in-2026",
+        "type": "news",
+        "published_date": "2025-12-24"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.95
+    },
+    {
+      "id": "SIG-2026-0111-053",
+      "raw_id": "RAW-2026-0111-055",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Religious Decline",
+      "title": "Christianity Decline May Be Stabilizing in U.S. - 15,000 Churches Close in 2026",
+      "significance": 4,
+      "significance_reason": "Major religious landscape transformation - generational shift in spiritual identity",
+      "time_horizon": "long",
+      "key_actors": ["Christian churches", "Gen Z", "U.S. religious institutions"],
+      "source": {
+        "name": "Religion Unplugged",
+        "url": "https://religionunplugged.com/news/5-religion-trends-to-watch-in-2026",
+        "type": "news",
+        "published_date": "2026-01-04"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    },
+    {
+      "id": "SIG-2026-0111-054",
+      "raw_id": "RAW-2026-0111-056",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Digital Spirituality",
+      "title": "AI Chatbots for Spiritual Guidance Reach 30M+ Downloads - Bible Chat Example",
+      "significance": 3,
+      "significance_reason": "Technology-mediated spirituality emergence - digitization of religious practice",
+      "time_horizon": "medium",
+      "key_actors": ["Bible Chat", "Religious AI apps", "Faith communities"],
+      "source": {
+        "name": "Carey Nieuwhof",
+        "url": "https://careynieuwhof.com/church-trends-2026/",
+        "type": "report",
+        "published_date": "2026-01-06"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.75
+    },
+    {
+      "id": "SIG-2026-0111-055",
+      "raw_id": "RAW-2026-0111-057",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Enterprise Metaverse",
+      "title": "Metaverse Enterprise Adoption: 30% of Organizations Have Products/Services Ready",
+      "significance": 3,
+      "significance_reason": "Enterprise metaverse maturation beyond hype into practical business applications",
+      "time_horizon": "medium",
+      "key_actors": ["Enterprises", "Metaverse platforms", "VR/AR providers"],
+      "source": {
+        "name": "WildNet Edge",
+        "url": "https://www.wildnetedge.com/blogs/future-of-metaverse-and-enterprise-adoption",
+        "type": "industry",
+        "published_date": "2026-01-05"
+      },
+      "status": "developing",
+      "first_detected": "2026-01-11",
+      "confidence": 0.7
+    },
+    {
+      "id": "SIG-2026-0111-056",
+      "raw_id": "RAW-2026-0111-058",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Bioprinting",
+      "title": "3D Bioprinting Achieves Vascularization Breakthrough - Functional Blood Vessel Networks",
+      "significance": 4,
+      "significance_reason": "Critical bioprinting technology advancement enabling functional tissue engineering",
+      "time_horizon": "long",
+      "key_actors": ["Research institutions", "Biotech companies", "Medical sector"],
+      "source": {
+        "name": "ScienceDirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2405886625000806",
+        "type": "academic",
+        "published_date": "2026-01-05"
+      },
+      "status": "emerging",
+      "first_detected": "2026-01-11",
+      "confidence": 0.8
+    }
+  ]
+}

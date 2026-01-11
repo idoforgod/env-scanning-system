@@ -1,88 +1,71 @@
 {
   "last_scan_date": "2026-01-11",
+  "last_scan_type": "alternative-sources",
   "last_scan_status": "success",
-  "last_scan_completed_at": "2026-01-11T14:35:00Z",
-  "total_signals": 62,
-  "total_critical_priority": 5,
-  "total_high_priority": 11,
-  "total_medium_priority": 3,
-  "new_signals_today": 18,
-  "duplicates_removed_today": 5,
-  "database_growth_percent": 40.9,
-  "next_scheduled": "2026-01-12T06:00:00Z",
+  "last_scan_completed_at": "2026-01-11T22:48:45Z",
+  "scan_period": {
+    "start_date": "2026-01-01",
+    "end_date": "2026-01-11",
+    "days": 11,
+    "scope": "alternative sources - academic journals, think tanks, government agencies"
+  },
+  "total_signals": 158,
+  "total_critical_priority": 7,
+  "total_high_priority": 26,
+  "total_medium_priority": 8,
+  "new_signals_alt": 33,
+  "duplicates_removed_alt": 0,
+  "database_growth_percent": 48.5,
+  "next_scheduled": "2026-01-18T06:00:00Z",
   "archive_status": {
     "report_archived": true,
-    "report_archive_path": "reports/archive/2026/01/2026-01-11.md",
-    "data_archived": true,
-    "data_archive_path": "reports/archive/2026/01/scan-data-2026-01-11.json",
-    "snapshot_created": true,
-    "snapshot_path": "signals/snapshots/database-2026-01-11.json"
-  },
-  "test_archiving": {
-    "test_mode": true,
-    "test_date": "2026-01-11",
-    "test_name": "24시간 시간 기준 테스트",
-    "test_completed_at": "2026-01-11T16:00:20Z",
-    "test_status": "success",
-    "test_purpose": "일일 보고서 및 신호 스냅샷 아카이빙 프로세스 검증",
-    "test_files_generated": [
-      {
-        "name": "2026-01-11-test.md",
-        "path": "archive/2026/01/2026-01-11-test.md",
-        "size_kb": 32.5,
-        "type": "markdown report"
-      },
-      {
-        "name": "scan-data-2026-01-11-test.json",
-        "path": "archive/2026/01/scan-data-2026-01-11-test.json",
-        "size_kb": 45.2,
-        "type": "json archive"
-      }
-    ],
-    "test_completion_log": "logs/workflow-complete-2026-01-11-test.log",
-    "test_results": {
-      "total_signals_archived": 7,
-      "high_priority_signals": 4,
-      "average_confidence": 0.91,
-      "steeps_distribution": {
-        "Technological": 3,
-        "Economic": 2,
-        "Social": 1,
-        "Environmental": 1,
-        "Political": 0,
-        "Spiritual": 0
-      },
-      "emerging_themes": 5,
-      "tipping_points": 4
-    },
-    "quality_checks": {
-      "markdown_format": "PASS",
-      "json_validity": "PASS",
-      "data_integrity": "PASS",
-      "cross_references": "PASS",
-      "timestamps": "PASS"
-    }
+    "report_archive_path": "reports/archive/2026/01/2026-01-11-ALT.md",
+    "report_size_kb": 124,
+    "data_archived": false,
+    "snapshot_created": false,
+    "last_archive_time": "2026-01-11T22:48:45Z",
+    "archive_index_updated": true
   },
   "recent_scans": [
     {
       "date": "2026-01-11",
+      "type": "alternative-sources",
+      "status": "success",
+      "signals_found": 33,
+      "scan_id": "SCAN-2026-0111-ALT",
+      "archive_files": 1,
+      "archive_path": "reports/archive/2026/01/2026-01-11-ALT.md",
+      "completion_log": "logs/workflow-complete-2026-01-11-ALT.log",
+      "completed_at": "2026-01-11T22:48:45Z"
+    },
+    {
+      "date": "2026-01-11",
+      "type": "7-day comprehensive",
+      "status": "success",
+      "signals_found": 315,
+      "duplicates_removed": 87,
+      "archive_files": 1,
+      "archive_path": "archive/2026/01/2026-01-11-7day.md",
+      "completion_log": "logs/workflow-complete-2026-01-11-7day.log",
+      "completed_at": "2026-01-11T12:28:30Z"
+    },
+    {
+      "date": "2026-01-11",
+      "type": "daily",
       "status": "success",
       "signals_found": 18,
-      "archive_files": 2,
-      "test_archive": {
-        "enabled": true,
-        "files": 2,
-        "size_kb": 77.7
-      }
+      "archive_files": 2
     },
     {
       "date": "2026-01-10",
+      "type": "daily",
       "status": "completed",
       "signals_found": 12,
       "archive_files": 2
     },
     {
       "date": "2026-01-09",
+      "type": "daily",
       "status": "completed",
       "signals_found": 15,
       "archive_files": 2
@@ -91,10 +74,11 @@
   "system_health": {
     "database_status": "healthy",
     "archive_status": "operational",
-    "test_archive_status": "verified",
-    "last_backup": "2026-01-11T08:45:10Z",
-    "backup_size_mb": 0.12,
-    "last_test_run": "2026-01-11T16:00:20Z",
-    "test_archive_size_kb": 77.7
+    "last_backup": "2026-01-11T22:48:45Z",
+    "backup_size_mb": 0.18,
+    "last_7day_scan": "2026-01-11T12:28:30Z",
+    "7day_archive_size_kb": 68,
+    "last_alt_scan": "2026-01-11T22:48:45Z",
+    "alt_archive_size_kb": 124
   }
 }

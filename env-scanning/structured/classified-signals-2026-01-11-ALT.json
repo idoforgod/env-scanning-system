@@ -1,0 +1,1901 @@
+{
+  "classification_date": "2026-01-11",
+  "classification_version": "2.0",
+  "total_classified": 33,
+  "by_category": {
+    "Social": 3,
+    "Technological": 16,
+    "Economic": 7,
+    "Environmental": 3,
+    "Political": 3,
+    "Spiritual": 1
+  },
+  "by_significance": {
+    "5": 6,
+    "4": 14,
+    "3": 11,
+    "2": 2,
+    "1": 0
+  },
+  "by_status": {
+    "emerging": 19,
+    "developing": 12,
+    "mature": 2
+  },
+  "meta_signals": [
+    {
+      "meta_id": "META-2026-0111-001",
+      "theme": "AI 산업 성숙기 진입",
+      "description": "AI 기술이 실험 단계를 넘어 실용화와 평가 단계로 전환. 규제, 윤리, 실질적 가치 검증이 핵심 의제로 부상",
+      "related_signals": ["SIG-2026-0111-ALT-025", "SIG-2026-0111-ALT-028", "SIG-2026-0111-ALT-035", "SIG-2026-0111-ALT-039"],
+      "significance": 5
+    },
+    {
+      "meta_id": "META-2026-0111-002",
+      "theme": "에너지 전환 가속화",
+      "description": "재생에너지가 석탄을 추월하고 중국의 탄소배출이 정점에 도달하면서 글로벌 에너지 전환이 티핑 포인트 통과",
+      "related_signals": ["SIG-2026-0111-ALT-013", "SIG-2026-0111-ALT-014", "SIG-2026-0111-ALT-038"],
+      "significance": 5
+    },
+    {
+      "meta_id": "META-2026-0111-003",
+      "theme": "양자 컴퓨팅 실용화 진입",
+      "description": "양자 우위 검증과 복잡값 신경망 등 양자 컴퓨팅이 이론에서 실용으로 전환하는 신호들",
+      "related_signals": ["SIG-2026-0111-ALT-001", "SIG-2026-0111-ALT-040"],
+      "significance": 5
+    },
+    {
+      "meta_id": "META-2026-0111-004",
+      "theme": "생명과학 혁신 파동",
+      "description": "뇌 질환 메커니즘, 세포 배양, 유전체 연구 등 생명과학 기초 연구의 획기적 발견들",
+      "related_signals": ["SIG-2026-0111-ALT-002", "SIG-2026-0111-ALT-003", "SIG-2026-0111-ALT-004", "SIG-2026-0111-ALT-006"],
+      "significance": 4
+    },
+    {
+      "meta_id": "META-2026-0111-005",
+      "theme": "지정학적 분열 심화",
+      "description": "글로벌 금융 시스템 분열, 연구 협력 제약, 무역 장벽 등 지정학적 긴장이 다차원적으로 확산",
+      "related_signals": ["SIG-2026-0111-ALT-008", "SIG-2026-0111-ALT-029", "SIG-2026-0111-ALT-034", "SIG-2026-0111-ALT-036"],
+      "significance": 5
+    },
+    {
+      "meta_id": "META-2026-0111-006",
+      "theme": "우주 경제 본격화",
+      "description": "상업 우주정거장, 달 탐사 재개 등 우주가 과학 프로젝트에서 경제 영역으로 전환",
+      "related_signals": ["SIG-2026-0111-ALT-034", "SIG-2026-0111-ALT-044", "SIG-2026-0111-ALT-045"],
+      "significance": 4
+    },
+    {
+      "meta_id": "META-2026-0111-007",
+      "theme": "정신건강 디지털 혁명",
+      "description": "디지털 치료제 보험 급여화, VR 치료 효과 검증 등 정신건강 관리의 디지털 전환",
+      "related_signals": ["SIG-2026-0111-ALT-046", "SIG-2026-0111-ALT-047", "SIG-2026-0111-ALT-048"],
+      "significance": 4
+    }
+  ],
+  "signals": [
+    {
+      "signal_id": "SIG-2026-0111-ALT-001",
+      "title": "복소수 신경망으로 양자역학과 기계학습 통합",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Spiritual"]
+      },
+      "subcategory": "Quantum Computing, AI Convergence",
+      "source": {
+        "url": "https://arxiv.org/abs/2601.03964",
+        "name": "arXiv",
+        "type": "academic",
+        "tier": "Tier 1",
+        "published_date": "2026-01-07"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "복소수 기반 신경망(CVNN)이 양자 소산 동역학을 물리 법칙에 일관되게 학습할 수 있음을 입증. 양자 컴퓨팅과 AI의 수학적 통합 가능성 제시",
+      "full_description": "연구자들이 복소수 값 신경망(Complex-Valued Neural Networks)을 양자역학 인식 기계학습 프레임워크로 제안. 기존 실수 기반 신경망과 달리 양자 시스템의 본질적 특성인 복소수 파동함수를 직접 다룰 수 있어 양자 동역학 예측 정확도 향상. 양자 컴퓨팅과 고전 AI의 융합 연구에 새로운 수학적 기반 제공",
+      "key_entities": [
+        {
+          "name": "arXiv",
+          "type": "organization",
+          "role": "연구 출판"
+        },
+        {
+          "name": "Complex-Valued Neural Networks",
+          "type": "technology",
+          "role": "핵심 기술"
+        }
+      ],
+      "keywords": ["quantum computing", "machine learning", "neural networks", "complex numbers", "quantum dynamics"],
+      "related_signals": ["SIG-2026-0111-ALT-040"],
+      "time_horizon": "long-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "양자 컴퓨팅과 AI의 수학적 기반 통합은 차세대 컴퓨팅 패러다임에 중요한 이론적 돌파구",
+      "potential_impact": {
+        "short_term": "양자 시뮬레이션 정확도 향상",
+        "mid_term": "양자-고전 하이브리드 AI 모델 등장",
+        "long_term": "양자 기계학습의 실용적 응용 확대"
+      },
+      "leading_indicator": "양자 컴퓨팅과 AI의 근본적 통합",
+      "raw_id": "RAW-2026-0111-ALT-001"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-002",
+      "title": "다발성 경화증 뇌 손상 메커니즘 규명",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "subcategory": "Neuroscience, Immunology",
+      "source": {
+        "url": "https://www.nature.com/articles/s41590-025-02378-2",
+        "name": "Nature Immunology",
+        "type": "academic",
+        "tier": "Tier 1",
+        "published_date": "2026-01-02"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "MS 환자의 뇌 경계부에 림프절 유사 구조가 형성되어 회백질 손상 유발. 뇌 면역 반응의 새로운 공간적 메커니즘 발견",
+      "full_description": "다발성 경화증(MS) 환자의 뇌-수막 경계부에서 림프절과 유사한 구조가 형성되어 구획화된 염증을 일으키고 회백질 손상과 직접 연결됨을 발견. 이는 기존에 알려진 뇌 면역 반응 모델을 확장하는 중요한 발견으로, MS 치료 전략의 새로운 표적 제시",
+      "key_entities": [
+        {
+          "name": "Nature Immunology",
+          "type": "organization",
+          "role": "학술 출판"
+        },
+        {
+          "name": "Multiple Sclerosis",
+          "type": "condition",
+          "role": "연구 대상"
+        }
+      ],
+      "keywords": ["multiple sclerosis", "neuroscience", "immunology", "brain inflammation", "gray matter"],
+      "related_signals": [],
+      "time_horizon": "medium-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "난치성 신경퇴행 질환의 근본 메커니즘 규명은 치료법 개발의 결정적 단서",
+      "potential_impact": {
+        "short_term": "MS 치료 연구 방향 전환",
+        "mid_term": "뇌-면역 경계 표적 신약 개발",
+        "long_term": "신경퇴행 질환 치료 패러다임 전환"
+      },
+      "leading_indicator": "뇌 질환의 공간적 면역학 이해 심화",
+      "raw_id": "RAW-2026-0111-ALT-002"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-003",
+      "title": "염색체 외 DNA 유지 메커니즘 발견",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Genomics, Cancer Research",
+      "source": {
+        "url": "https://www.nature.com/nature/volumes/649/issues/8095",
+        "name": "Nature",
+        "type": "academic",
+        "tier": "Tier 1",
+        "published_date": "2026-01-01"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "염색체 외 DNA(ecDNA) 복제 유지를 돕는 새로운 유전체 요소 발견. 암세포 증식 메커니즘 이해의 획기적 진전",
+      "full_description": "전장 유전체 기능 스크리닝을 통해 염색체 외 DNA(extrachromosomal DNA) 복제본을 유지하는 데 도움을 주는 새로운 고빈도 유전체 요소를 식별. ecDNA는 암세포에서 종양유전자 증폭의 주요 메커니즘으로 암 치료 저항성과 관련",
+      "key_entities": [
+        {
+          "name": "Nature",
+          "type": "organization",
+          "role": "학술 출판"
+        },
+        {
+          "name": "ecDNA",
+          "type": "technology",
+          "role": "연구 대상"
+        }
+      ],
+      "keywords": ["genomics", "cancer research", "DNA", "extrachromosomal DNA", "oncogene amplification"],
+      "related_signals": [],
+      "time_horizon": "medium-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "암 치료 저항성의 근본 메커니즘 규명은 차세대 항암제 개발의 새로운 방향 제시",
+      "potential_impact": {
+        "short_term": "암 유전체학 연구 활성화",
+        "mid_term": "ecDNA 표적 치료법 개발",
+        "long_term": "난치성 암의 치료 가능성 향상"
+      },
+      "leading_indicator": "암 생물학의 핵심 메커니즘 이해 진화",
+      "raw_id": "RAW-2026-0111-ALT-003"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-004",
+      "title": "원숭이 배반포 유사체 25일까지 배양 성공",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Stem Cell, Developmental Biology",
+      "source": {
+        "url": "https://www.nature.com/nature/volumes/649/issues/8095",
+        "name": "Nature",
+        "type": "academic",
+        "tier": "Tier 1",
+        "published_date": "2026-01-01"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "최적화된 3D 배양 시스템으로 줄기세포 유래 원숭이 배반포 유사체를 25일까지 성장. 영장류 후기 낭배 단계 주요 사건 재현",
+      "full_description": "줄기세포에서 생성한 원숭이 배반포 유사체(blastoid)를 3차원 배양 시스템으로 25일까지 발달시키는 데 성공. 영장류 후기 낭배기(late gastrula stage)의 핵심 발생 과정을 재현하며, 초기 인간 발달 연구의 윤리적 대안 모델 제공",
+      "key_entities": [
+        {
+          "name": "Nature",
+          "type": "organization",
+          "role": "학술 출판"
+        },
+        {
+          "name": "Blastoid",
+          "type": "technology",
+          "role": "핵심 기술"
+        }
+      ],
+      "keywords": ["stem cells", "developmental biology", "embryology", "blastoid", "primate development"],
+      "related_signals": ["SIG-2026-0111-ALT-032"],
+      "time_horizon": "medium-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "인간 초기 발달 연구의 윤리적 딜레마를 우회하는 혁신적 연구 모델 제시",
+      "potential_impact": {
+        "short_term": "영장류 발생학 연구 가속화",
+        "mid_term": "불임 치료 및 선천성 질환 이해 향상",
+        "long_term": "재생의학 및 장기 생성 기술 발전"
+      },
+      "leading_indicator": "인간 발생 연구의 윤리적 대안 모델 확립",
+      "raw_id": "RAW-2026-0111-ALT-004"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-005",
+      "title": "황열병 바이러스 침입 수용체 발견",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Virology, Infectious Disease",
+      "source": {
+        "url": "https://www.nature.com/nature/volumes/649/issues/8095",
+        "name": "Nature",
+        "type": "academic",
+        "tier": "Tier 1",
+        "published_date": "2026-01-01"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "LDL 수용체 패밀리(LRP1, LRP4, VLDLR)가 황열병 바이러스 침입 수용체로 규명",
+      "full_description": "저밀도 지질단백 수용체 패밀리 구성원인 LRP1, LRP4, VLDLR이 황열병 바이러스의 세포 침입 수용체로 작동함을 발견. 황열병 및 관련 플라비바이러스 감염 메커니즘 이해에 중요한 진전",
+      "key_entities": [
+        {
+          "name": "Nature",
+          "type": "organization",
+          "role": "학술 출판"
+        },
+        {
+          "name": "Yellow Fever Virus",
+          "type": "pathogen",
+          "role": "연구 대상"
+        }
+      ],
+      "keywords": ["yellow fever", "virology", "receptors", "LRP1", "flavivirus"],
+      "related_signals": [],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "emerging",
+      "significance": 3,
+      "significance_reason": "풍토병 바이러스의 침입 메커니즘 규명은 백신 및 치료제 개발의 새로운 표적 제공",
+      "potential_impact": {
+        "short_term": "황열병 치료제 연구 활성화",
+        "mid_term": "수용체 차단 기반 신약 개발",
+        "long_term": "플라비바이러스 계열 감염병 제어"
+      },
+      "leading_indicator": "바이러스 침입 메커니즘 기반 치료법 개발 가속화",
+      "raw_id": "RAW-2026-0111-ALT-005"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-006",
+      "title": "NIH, 인간 뇌 지도 제작에 5억 달러 투자",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Neuroscience, Research Funding",
+      "source": {
+        "url": "https://www.science.org/content/article/nihs-brain-initiative-puts-dollar500-million-creating-detailed-ever-human-brain-atlas",
+        "name": "Science/AAAS",
+        "type": "news",
+        "tier": "Tier 1",
+        "published_date": "2026-01-04"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "NIH가 사상 가장 상세한 인간 뇌 세포 지도 제작을 위해 BRAIN Initiative 최대 과제로 5억 달러 투자 발표",
+      "full_description": "미국 국립보건원(NIH)이 BRAIN Initiative의 가장 야심찬 도전 과제로 세계에서 가장 포괄적인 인간 뇌 세포 지도 제작을 발표하고 BICAN(Brain Cell Atlas Network)에 5억 달러 투자. 단일 세포 수준의 뇌 구조와 기능 해부를 목표로 하며, 신경 질환 이해의 획기적 전환점 기대",
+      "key_entities": [
+        {
+          "name": "NIH",
+          "type": "government",
+          "role": "연구 지원"
+        },
+        {
+          "name": "BRAIN Initiative",
+          "type": "organization",
+          "role": "프로그램 운영"
+        },
+        {
+          "name": "BICAN",
+          "type": "organization",
+          "role": "연구 네트워크"
+        }
+      ],
+      "keywords": ["NIH", "neuroscience", "brain mapping", "research funding", "BRAIN Initiative"],
+      "related_signals": [],
+      "time_horizon": "long-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "인간 뇌의 완전한 세포 지도는 신경과학의 게놈 프로젝트 급 패러다임 전환",
+      "potential_impact": {
+        "short_term": "뇌 연구 분야 글로벌 경쟁 가속화",
+        "mid_term": "뇌 질환 진단 및 치료의 정밀화",
+        "long_term": "의식, 인지, 정신 질환의 근본적 이해"
+      },
+      "leading_indicator": "신경과학의 빅 사이언스 프로젝트 시대 본격화",
+      "raw_id": "RAW-2026-0111-ALT-006"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-007",
+      "title": "Brookings: 2026년을 글로벌 발전의 기회의 해로 진단",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "subcategory": "Global Development, Economic Outlook",
+      "source": {
+        "url": "https://www.brookings.edu/articles/a-look-back-at-2025-and-whats-in-store-for-2026-from-the-global-economy-and-development-program/",
+        "name": "Brookings Institution",
+        "type": "report",
+        "tier": "Tier 2",
+        "published_date": "2026-01-04"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "Brookings 전문가들이 2025년 성과를 돌아보고 2026년을 글로벌 발전의 잠재적 기회의 해로 식별",
+      "full_description": "Brookings Institution의 Global Economy and Development 프로그램이 2025년 주요 성과를 리뷰하고 2026년 전망 발표. 특히 아프리카 발전, 글로벌 경제 안정화, 개발 금융 등 분야에서 긍정적 기회 요인 식별. 다만 지정학적 불확실성과 기후 위기는 주요 리스크로 지적",
+      "key_entities": [
+        {
+          "name": "Brookings Institution",
+          "type": "organization",
+          "role": "연구 및 분석"
+        },
+        {
+          "name": "Global Economy and Development Program",
+          "type": "organization",
+          "role": "프로그램 운영"
+        }
+      ],
+      "keywords": ["global economy", "Africa", "development", "economic outlook", "Brookings"],
+      "related_signals": ["SIG-2026-0111-ALT-009"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 3,
+      "status": "emerging",
+      "significance": 3,
+      "significance_reason": "주요 싱크탱크의 경제 전망은 정책 결정자와 투자자에게 영향력 있는 참조점",
+      "potential_impact": {
+        "short_term": "2026년 개발 금융 및 정책 방향 설정",
+        "mid_term": "글로벌 남반구 경제 성장 가속화",
+        "long_term": "글로벌 경제 불균형 완화"
+      },
+      "leading_indicator": "글로벌 발전 의제의 긍정적 모멘텀",
+      "raw_id": "RAW-2026-0111-ALT-007"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-008",
+      "title": "지정학적 분열이 글로벌 금융 시스템 위협",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Geopolitics, Financial System",
+      "source": {
+        "url": "https://www.brookings.edu/articles/is-the-global-financial-system-fracturing-under-geopolitical-pressure/",
+        "name": "Brookings Institution",
+        "type": "report",
+        "tier": "Tier 2",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "2025 Geneva Report가 상승하는 지정학적 긴장이 국제 금융을 어떻게 재편하는지 분석. 세계가 경쟁 블록으로 분열될 위협",
+      "full_description": "Geneva Report on the World Economy가 미중 갈등 등 지정학적 긴장이 국제 금융 시스템을 경쟁적 블록으로 분열시킬 위험을 경고. 달러 기반 결제 시스템에서 이탈, 자본 흐름 제한, 금융 데이터 주권 주장 등이 가시화되며 브레튼우즈 체제 이후 구축된 글로벌 금융 통합이 역전될 가능성 제기",
+      "key_entities": [
+        {
+          "name": "Brookings Institution",
+          "type": "organization",
+          "role": "분석 발표"
+        },
+        {
+          "name": "Geneva Report",
+          "type": "organization",
+          "role": "연구 보고서"
+        },
+        {
+          "name": "US-China",
+          "type": "government",
+          "role": "지정학적 주체"
+        }
+      ],
+      "keywords": ["geopolitics", "financial system", "US-China", "trade", "fragmentation"],
+      "related_signals": ["SIG-2026-0111-ALT-034", "SIG-2026-0111-ALT-036"],
+      "time_horizon": "medium-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "글로벌 금융 시스템 분열은 전후 국제 질서의 근본적 변화를 의미하는 패러다임 전환",
+      "potential_impact": {
+        "short_term": "국제 결제 비용 증가 및 불확실성 확대",
+        "mid_term": "지역별 금융 블록 형성 가속화",
+        "long_term": "글로벌 경제 통합 역전 및 효율성 감소"
+      },
+      "leading_indicator": "탈세계화와 지정학적 블록화 가속",
+      "raw_id": "RAW-2026-0111-ALT-008"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-009",
+      "title": "세계은행, 2025-2026년 글로벌 성장률 2.7% 전망",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "subcategory": "Economic Growth, Global Development",
+      "source": {
+        "url": "https://www.worldbank.org/en/news/press-release/2025/01/16/gep-january-2025-press-release",
+        "name": "World Bank",
+        "type": "report",
+        "tier": "Tier 1",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "Global Economic Prospects 보고서, 인플레이션과 금리가 점진적으로 하락하면서 세계 경제가 2025년과 2026년 모두 2.7% 성장 전망",
+      "full_description": "세계은행의 최신 Global Economic Prospects 보고서가 글로벌 경제가 2025년과 2026년 모두 2.7% 성장할 것으로 예측. 인플레이션 완화와 금리 인하가 경제 회복을 지원하나, 성장률은 팬데믹 이전 수준에는 미치지 못함. 개발도상국의 빈곤 감소 속도 둔화 우려",
+      "key_entities": [
+        {
+          "name": "World Bank",
+          "type": "organization",
+          "role": "경제 전망"
+        },
+        {
+          "name": "Global Economic Prospects",
+          "type": "report",
+          "role": "보고서"
+        }
+      ],
+      "keywords": ["World Bank", "GDP", "poverty", "economic growth", "inflation"],
+      "related_signals": ["SIG-2026-0111-ALT-007"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "mature",
+      "significance": 4,
+      "significance_reason": "세계은행 전망은 글로벌 경제 정책과 투자 결정의 핵심 참조 지표",
+      "potential_impact": {
+        "short_term": "중앙은행 통화정책 방향 설정",
+        "mid_term": "개발도상국 성장 전략 조정",
+        "long_term": "글로벌 빈곤 감소 목표 달성 지연"
+      },
+      "leading_indicator": "포스트 팬데믹 경제의 안정화 및 정상화",
+      "raw_id": "RAW-2026-0111-ALT-009"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-012",
+      "title": "OECD, 2026년 봄 AI 정책 툴킷 개발 추진",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "AI Policy, Governance",
+      "source": {
+        "url": "https://www.oecd.org/content/dam/oecd/en/events/2025/06/mcm/MCM-2025-Scoping-Note-for-an-AI-Policy-Toolkit-to-Support-Economies-in-Realising-AI-Benefits.pdf",
+        "name": "OECD",
+        "type": "policy",
+        "tier": "Tier 1",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "AI 정책 툴킷과 보고서를 2026년 봄 GPAI 총회와 디지털 정책 위원회에 제출 계획",
+      "full_description": "OECD가 국가 경제들이 AI 혜택을 실현하도록 지원하는 포괄적 AI 정책 툴킷 개발 중. 2026년 봄 GPAI(Global Partnership on AI) 총회와 디지털 정책 위원회에서 발표 예정. AI 거버넌스, 윤리, 경쟁 정책, 노동시장 영향 등 다차원적 정책 프레임워크 제시",
+      "key_entities": [
+        {
+          "name": "OECD",
+          "type": "organization",
+          "role": "정책 개발"
+        },
+        {
+          "name": "GPAI",
+          "type": "organization",
+          "role": "국제 협력체"
+        },
+        {
+          "name": "Digital Policy Committee",
+          "type": "organization",
+          "role": "정책 검토"
+        }
+      ],
+      "keywords": ["OECD", "AI policy", "governance", "GPAI", "toolkit"],
+      "related_signals": ["SIG-2026-0111-ALT-028"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "OECD의 정책 툴킷은 회원국 AI 규제의 표준 프레임워크로 작용할 가능성",
+      "potential_impact": {
+        "short_term": "OECD 회원국 AI 정책 조율",
+        "mid_term": "글로벌 AI 거버넌스 표준화",
+        "long_term": "책임 있는 AI 생태계 구축"
+      },
+      "leading_indicator": "국제기구 중심의 AI 거버넌스 표준화",
+      "raw_id": "RAW-2026-0111-ALT-012"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-013",
+      "title": "재생에너지, 2026년 중반 석탄 추월 예상",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Renewable Energy, Energy Transition",
+      "source": {
+        "url": "https://www.iea.org/reports/renewables-2025/renewable-electricity",
+        "name": "IEA",
+        "type": "report",
+        "tier": "Tier 1",
+        "published_date": "2026-01-07"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "IEA Renewables 2025 보고서, 재생에너지가 2025년 말 또는 2026년 중반 석탄을 추월해 최대 전력원이 될 것으로 예측. 글로벌 재생 용량 4,600GW 증가 전망",
+      "full_description": "국제에너지기구(IEA)의 Renewables 2025 보고서가 재생에너지가 2025년 말 또는 2026년 중반까지 석탄을 제치고 세계 최대 전력원이 될 것으로 예측. 태양광과 풍력이 주도하며 향후 5년간 글로벌 재생에너지 용량이 4,600GW 증가 예상. 에너지 전환의 결정적 티핑 포인트 통과",
+      "key_entities": [
+        {
+          "name": "IEA",
+          "type": "organization",
+          "role": "에너지 분석"
+        },
+        {
+          "name": "Renewables",
+          "type": "sector",
+          "role": "에너지원"
+        },
+        {
+          "name": "Coal",
+          "type": "sector",
+          "role": "대체 대상"
+        }
+      ],
+      "keywords": ["renewable energy", "IEA", "solar", "wind", "coal", "energy transition"],
+      "related_signals": ["SIG-2026-0111-ALT-014", "SIG-2026-0111-ALT-038"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "재생에너지가 화석연료를 추월하는 역사적 전환점은 에너지 및 기후 정책의 패러다임 전환",
+      "potential_impact": {
+        "short_term": "석탄 산업 구조조정 가속화",
+        "mid_term": "전력 시장 구조 근본적 재편",
+        "long_term": "탄소중립 달성 가능성 현실화"
+      },
+      "leading_indicator": "글로벌 에너지 시스템의 탈탄소화 가속",
+      "raw_id": "RAW-2026-0111-ALT-013"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-014",
+      "title": "중국 CO2 배출량 18개월째 정체 또는 감소",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Climate Policy, Carbon Emissions",
+      "source": {
+        "url": "https://www.carbonbrief.org/analysis-chinas-co2-emissions-have-now-been-flat-or-falling-for-18-months/",
+        "name": "Carbon Brief",
+        "type": "report",
+        "tier": "Tier 2",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "분석 결과 중국의 CO2 배출량이 18개월간 정체 또는 감소. 전문가의 71%가 배출 정점이 2026-2030년 발생할 것으로 전망",
+      "full_description": "Carbon Brief의 분석에 따르면 중국의 이산화탄소 배출량이 18개월 동안 정체 또는 감소 추세. 재생에너지 급성장, 전기차 보급 확대, 산업 구조 전환 등이 복합적으로 작용. 전문가 조사에서 71%가 중국의 배출 정점이 2026-2030년 사이 발생할 것으로 예측하며, 일부는 이미 정점을 통과했을 가능성 제기",
+      "key_entities": [
+        {
+          "name": "China",
+          "type": "government",
+          "role": "배출 주체"
+        },
+        {
+          "name": "Carbon Brief",
+          "type": "organization",
+          "role": "분석 기관"
+        }
+      ],
+      "keywords": ["China", "carbon emissions", "climate policy", "energy transition", "peak emissions"],
+      "related_signals": ["SIG-2026-0111-ALT-013"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "세계 최대 배출국 중국의 배출 정점 도달은 글로벌 기후 목표 달성의 결정적 전환점",
+      "potential_impact": {
+        "short_term": "글로벌 탄소 배출 증가세 둔화",
+        "mid_term": "파리협정 1.5도 목표 달성 가능성 향상",
+        "long_term": "글로벌 기후 위기 완화"
+      },
+      "leading_indicator": "글로벌 탄소 배출 정점 도달 임박",
+      "raw_id": "RAW-2026-0111-ALT-014"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-016",
+      "title": "TSMC, 2026년 1.6nm 칩 생산 시작 계획",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Semiconductors, Manufacturing",
+      "source": {
+        "url": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-aims-to-produce-ultra-advanced-1.6-nm-chips-by-2026",
+        "name": "Nikkei Asia",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "TSMC가 2026년까지 초미세 1.6나노미터 칩 생산 계획 발표",
+      "full_description": "세계 최대 파운드리 TSMC가 2026년 1.6nm 공정 칩 생산 시작 목표 발표. 현재 3nm, 2nm 양산 후 차세대 공정으로 무어의 법칙 지속 추진. AI 및 고성능 컴퓨팅 수요에 대응하며 반도체 기술 리더십 공고화",
+      "key_entities": [
+        {
+          "name": "TSMC",
+          "type": "company",
+          "role": "제조사"
+        },
+        {
+          "name": "Taiwan",
+          "type": "government",
+          "role": "소재지"
+        }
+      ],
+      "keywords": ["TSMC", "semiconductors", "Taiwan", "manufacturing", "1.6nm"],
+      "related_signals": ["SIG-2026-0111-ALT-017", "SIG-2026-0111-ALT-018"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "무어의 법칙 한계 극복 시도는 AI 시대 컴퓨팅 성능 발전의 핵심 동력",
+      "potential_impact": {
+        "short_term": "반도체 공정 경쟁 심화",
+        "mid_term": "AI 및 HPC 성능 획기적 향상",
+        "long_term": "컴퓨팅 패러다임 전환 가능"
+      },
+      "leading_indicator": "반도체 미세공정 기술의 지속적 진화",
+      "raw_id": "RAW-2026-0111-ALT-016"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-017",
+      "title": "Infineon, 2026년 태국 반도체 공장 가동 시작",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Semiconductors, Supply Chain",
+      "source": {
+        "url": "https://asia.nikkei.com/Business/Tech/Semiconductors/Infineon-to-start-up-thai-power-module-fab-in-2026",
+        "name": "Nikkei Asia",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-04"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "독일 Infineon Technologies가 태국 반도체 공장 건설 시작, 2026년 가동 계획",
+      "full_description": "독일 반도체 기업 Infineon이 태국에 파워 모듈 반도체 공장 건설 시작. 2026년 가동 목표로 전기차 및 재생에너지 시장 수요 대응. 반도체 공급망 다변화와 아시아 생산 거점 확대 전략의 일환",
+      "key_entities": [
+        {
+          "name": "Infineon",
+          "type": "company",
+          "role": "투자 주체"
+        },
+        {
+          "name": "Thailand",
+          "type": "government",
+          "role": "투자 유치"
+        }
+      ],
+      "keywords": ["Infineon", "Thailand", "semiconductors", "supply chain", "power modules"],
+      "related_signals": ["SIG-2026-0111-ALT-016"],
+      "time_horizon": "short-term",
+      "geographic_scope": "regional",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "반도체 공급망 다변화는 지정학적 리스크 대응과 지역 균형 발전의 중요한 동향",
+      "potential_impact": {
+        "short_term": "태국 반도체 생태계 강화",
+        "mid_term": "동남아 반도체 허브 부상",
+        "long_term": "글로벌 반도체 공급망 재편"
+      },
+      "leading_indicator": "반도체 생산의 지리적 다변화 가속",
+      "raw_id": "RAW-2026-0111-ALT-017"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-018",
+      "title": "일본, 2026 회계연도부터 반도체 공장 사이버보안 의무화",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Cybersecurity, Semiconductor Policy",
+      "source": {
+        "url": "https://asia.nikkei.com/business/tech/semiconductors/japan-chip-plants-to-face-cybersecurity-mandate-as-condition-for-subsidies",
+        "name": "Nikkei Asia",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-07"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "일본 경제산업성(METI), 2026 회계연도부터 반도체 공장이 보조금 받으려면 사이버 공격 방어 조치 의무화",
+      "full_description": "일본 정부가 반도체 공장에 대한 보조금 지급 조건으로 사이버보안 대책 채택을 의무화. 2026 회계연도(2026년 4월)부터 시행. 반도체 공급망의 안보적 중요성을 인식하고 국가 차원의 사이버 방어 체계 구축",
+      "key_entities": [
+        {
+          "name": "Japan METI",
+          "type": "government",
+          "role": "정책 수립"
+        },
+        {
+          "name": "Semiconductor Industry",
+          "type": "sector",
+          "role": "규제 대상"
+        }
+      ],
+      "keywords": ["Japan", "cybersecurity", "semiconductors", "policy", "METI"],
+      "related_signals": ["SIG-2026-0111-ALT-028"],
+      "time_horizon": "immediate",
+      "geographic_scope": "national",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "반도체 산업의 안보화는 경제-안보 융합 시대의 중요한 정책 전환",
+      "potential_impact": {
+        "short_term": "일본 반도체 공장 사이버보안 투자 증가",
+        "mid_term": "반도체 산업 안보 표준 확산",
+        "long_term": "경제 안보 정책의 다른 산업 확대"
+      },
+      "leading_indicator": "경제-안보 융합 정책의 구체화",
+      "raw_id": "RAW-2026-0111-ALT-018"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-019",
+      "title": "베네수엘라 개입이 중동 에너지 시장에 영향",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Energy Markets, Geopolitics",
+      "source": {
+        "url": "https://www.aljazeera.com/news/2026/1/5/venezuela-after-maduro-oil-power-and-the-limits-of-intervention",
+        "name": "Al Jazeera",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "베네수엘라에 대한 미국의 군사 행동이 중동 및 북아프리카 에너지 안보에 파급 효과",
+      "full_description": "베네수엘라 마두로 정권에 대한 미국의 군사적 개입이 글로벌 석유 시장, 특히 중동 및 북아프리카(MENA) 지역 에너지 안보에 영향. 베네수엘라의 석유 생산 불확실성 증가로 MENA 산유국의 시장 영향력 확대 가능성",
+      "key_entities": [
+        {
+          "name": "Venezuela",
+          "type": "government",
+          "role": "개입 대상"
+        },
+        {
+          "name": "US",
+          "type": "government",
+          "role": "개입 주체"
+        },
+        {
+          "name": "Middle East",
+          "type": "region",
+          "role": "영향 받는 지역"
+        }
+      ],
+      "keywords": ["Venezuela", "oil markets", "Middle East", "geopolitics", "energy security"],
+      "related_signals": ["SIG-2026-0111-ALT-038"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 3,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "주요 산유국의 정치적 불안정은 글로벌 에너지 시장과 지정학에 즉각적 영향",
+      "potential_impact": {
+        "short_term": "유가 변동성 증가",
+        "mid_term": "MENA 에너지 영향력 확대",
+        "long_term": "글로벌 에너지 공급망 재편"
+      },
+      "leading_indicator": "지정학적 갈등의 에너지 시장 전이",
+      "raw_id": "RAW-2026-0111-ALT-019"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-021",
+      "title": "바이오텍, 2026년 1분기 26개 주요 이벤트 예정",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Biotech, Capital Markets",
+      "source": {
+        "url": "https://www.statnews.com/2026/01/05/biotech-scorecard-first-quarter/",
+        "name": "STAT News",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "STAT News가 2026년 1분기 주가 영향 바이오텍 이벤트 26개 추적. Atlas Venture는 2026년 바이오텍 IPO 급증 예측",
+      "full_description": "STAT News가 2026년 1분기 바이오테크 산업의 26개 주요 주가 영향 이벤트(FDA 승인, 임상시험 결과, M&A 등)를 추적. Atlas Venture는 2026년 바이오텍 IPO 창문이 열릴 것으로 예측하며 투자 환경 개선 전망",
+      "key_entities": [
+        {
+          "name": "STAT News",
+          "type": "organization",
+          "role": "분석 기관"
+        },
+        {
+          "name": "Atlas Venture",
+          "type": "company",
+          "role": "투자사"
+        },
+        {
+          "name": "FDA",
+          "type": "government",
+          "role": "규제 기관"
+        }
+      ],
+      "keywords": ["biotech", "FDA", "IPO", "clinical trials", "investment"],
+      "related_signals": ["SIG-2026-0111-ALT-022", "SIG-2026-0111-ALT-042"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 3,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "바이오텍 IPO 회복은 생명과학 혁신 투자의 중요한 선행 지표",
+      "potential_impact": {
+        "short_term": "바이오텍 투자 활성화",
+        "mid_term": "혁신 치료제 개발 가속화",
+        "long_term": "생명과학 산업 성장 동력 확보"
+      },
+      "leading_indicator": "바이오텍 투자 사이클 회복",
+      "raw_id": "RAW-2026-0111-ALT-021"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-022",
+      "title": "AI 설계 항체, 임상 시험 진입 임박",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "AI Drug Discovery, Biopharma",
+      "source": {
+        "url": "https://www.statnews.com/2026/01/06/will-artificial-intelligence-designed-drugs-antibodies-revolutionize-biopharma/",
+        "name": "STAT News",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "기업들이 향후 1-2년 내 최초의 AI 설계 항체가 임상에 진입할 것으로 예상",
+      "full_description": "여러 바이오제약 기업들이 AI로 설계한 항체 치료제가 1-2년 내 임상시험에 진입할 것으로 전망. 기존 수년이 걸리던 항체 개발 과정을 AI가 수개월로 단축. AI 기반 신약 개발의 실질적 검증 단계 도래",
+      "key_entities": [
+        {
+          "name": "AI Drug Discovery",
+          "type": "technology",
+          "role": "핵심 기술"
+        },
+        {
+          "name": "Biopharma",
+          "type": "sector",
+          "role": "적용 분야"
+        }
+      ],
+      "keywords": ["AI", "drug development", "antibodies", "biopharma", "clinical trials"],
+      "related_signals": ["SIG-2026-0111-ALT-021"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "AI 신약이 임상에 진입하면 제약 산업의 R&D 패러다임 전환 가속화",
+      "potential_impact": {
+        "short_term": "AI 신약 개발 투자 급증",
+        "mid_term": "신약 개발 기간 및 비용 획기적 감소",
+        "long_term": "제약 산업 구조 근본적 재편"
+      },
+      "leading_indicator": "AI의 생명과학 실용화 진입",
+      "raw_id": "RAW-2026-0111-ALT-022"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-023",
+      "title": "실시간 결제, 2026년 기본 기대치로 부상",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Fintech, Payment Systems",
+      "source": {
+        "url": "https://www.finextra.com/blogposting/30435/real-time-payments-embedded-finance-and-back-end-infrastructure-fintech-priorities-for-2026",
+        "name": "Finextra",
+        "type": "news",
+        "tier": "Tier 3",
+        "published_date": "2026-01-04"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "실시간 결제가 2026년 기본 기대치가 되며, 특히 유럽 SEPA Instant 중심으로 확산",
+      "full_description": "실시간 결제(Real-Time Payments)가 2026년 핀테크 업계의 기본 기대치로 자리잡으며, 특히 유럽의 SEPA Instant 시스템 확대가 주도. 임베디드 금융과 백엔드 인프라가 핀테크의 핵심 우선순위로 부상",
+      "key_entities": [
+        {
+          "name": "SEPA Instant",
+          "type": "system",
+          "role": "결제 인프라"
+        },
+        {
+          "name": "Fintech",
+          "type": "sector",
+          "role": "적용 분야"
+        }
+      ],
+      "keywords": ["fintech", "payments", "SEPA", "embedded finance", "real-time"],
+      "related_signals": [],
+      "time_horizon": "immediate",
+      "geographic_scope": "regional",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "결제 인프라의 실시간 전환은 상거래와 금융 서비스의 근본적 변화",
+      "potential_impact": {
+        "short_term": "결제 속도 향상 및 비용 절감",
+        "mid_term": "임베디드 금융 서비스 확산",
+        "long_term": "금융 서비스 사용자 경험 혁신"
+      },
+      "leading_indicator": "금융 인프라의 실시간화",
+      "raw_id": "RAW-2026-0111-ALT-023"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-025",
+      "title": "Stanford HAI: 2026년은 AI 평가의 해",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Spiritual"]
+      },
+      "subcategory": "AI Ethics, AI Evaluation",
+      "source": {
+        "url": "https://hai.stanford.edu/news/stanford-ai-experts-predict-what-will-happen-in-2026",
+        "name": "Stanford HAI",
+        "type": "news",
+        "tier": "Tier 1",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "수년간 확장 후, 2026년은 AI가 실제 유용성과 대면하는 해가 될 것. Stanford 교수진이 AI 에반젤리즘에서 AI 평가로의 전환 예측",
+      "full_description": "Stanford HAI(Human-Centered AI Institute) 전문가들이 2026년을 AI 에반젤리즘(전도)에서 AI 평가(evaluation)로 전환하는 해로 예측. AI의 과대 광고 주기가 끝나고 실질적 가치와 한계를 엄격히 검증하는 단계 진입. 벤치마크 신뢰성, 실제 업무 성과, 윤리적 영향 등이 핵심 의제",
+      "key_entities": [
+        {
+          "name": "Stanford HAI",
+          "type": "organization",
+          "role": "연구 기관"
+        },
+        {
+          "name": "AI Industry",
+          "type": "sector",
+          "role": "평가 대상"
+        }
+      ],
+      "keywords": ["Stanford", "AI ethics", "AI evaluation", "benchmarking", "hype cycle"],
+      "related_signals": ["SIG-2026-0111-ALT-035", "SIG-2026-0111-ALT-039"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "AI 산업의 성숙기 진입과 현실적 평가는 투자 및 정책 방향의 중대한 전환점",
+      "potential_impact": {
+        "short_term": "AI 과대 광고 수정 및 투자 재조정",
+        "mid_term": "AI 벤치마크 및 평가 표준 확립",
+        "long_term": "책임 있고 신뢰할 수 있는 AI 생태계 구축"
+      },
+      "leading_indicator": "AI 산업의 성숙기 진입",
+      "raw_id": "RAW-2026-0111-ALT-025"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-027",
+      "title": "MIT Media Lab, 2026년 에이전틱 AI 서밋 개최",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Agentic AI, Conference",
+      "source": {
+        "url": "https://rdi.berkeley.edu/events/agentic-ai-summit-2026",
+        "name": "MIT Media Lab",
+        "type": "news",
+        "tier": "Tier 1",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "UC Berkeley 책임 있는 탈중앙화 지능 센터가 2026년 8월 1-2일 에이전틱 AI 서밋 개최",
+      "full_description": "UC Berkeley의 Center for Responsible Decentralized Intelligence가 2026년 8월 1-2일 Agentic AI Summit 2026 개최. 자율적으로 행동하는 AI 에이전트의 기술, 윤리, 거버넌스 논의. 학계, 산업계, 정책 입안자 간 협력 플랫폼",
+      "key_entities": [
+        {
+          "name": "UC Berkeley",
+          "type": "organization",
+          "role": "주최"
+        },
+        {
+          "name": "MIT Media Lab",
+          "type": "organization",
+          "role": "협력"
+        },
+        {
+          "name": "Agentic AI",
+          "type": "technology",
+          "role": "주제"
+        }
+      ],
+      "keywords": ["MIT", "Berkeley", "agentic AI", "conference", "responsible AI"],
+      "related_signals": [],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "주요 연구기관의 에이전틱 AI 집중은 차세대 AI 패러다임의 중요한 신호",
+      "potential_impact": {
+        "short_term": "에이전틱 AI 연구 방향 조율",
+        "mid_term": "AI 에이전트 안전 표준 수립",
+        "long_term": "자율 AI 시스템의 책임 있는 발전"
+      },
+      "leading_indicator": "AI 에이전트 시대 본격 도래",
+      "raw_id": "RAW-2026-0111-ALT-027"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-028",
+      "title": "NIST, 2026년 사이버 AI 프로파일 초안 발표",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Cybersecurity, AI Standards",
+      "source": {
+        "url": "https://csrc.nist.gov/News/2025/nist-releases-prelim-draft-cyber-ai-profile",
+        "name": "NIST",
+        "type": "policy",
+        "tier": "Tier 1",
+        "published_date": "2026-01-08"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "NIST가 사이버보안 프레임워크와 AI 위험 관리 프레임워크를 통합한 Cyber AI Profile(NISTIR 8596) 예비 초안 발표",
+      "full_description": "미국 국립표준기술연구소(NIST)가 NIST 사이버보안 프레임워크를 AI 시스템에 적용하기 위한 가이드라인인 Cyber AI Profile 예비 초안 공개. AI 시스템의 사이버 위험 관리에 대한 포괄적 프레임워크 제시하며, AI 보안 표준화의 중요한 이정표",
+      "key_entities": [
+        {
+          "name": "NIST",
+          "type": "government",
+          "role": "표준 개발"
+        },
+        {
+          "name": "Cybersecurity Framework",
+          "type": "framework",
+          "role": "기반 체계"
+        }
+      ],
+      "keywords": ["NIST", "cybersecurity", "AI", "standards", "risk management"],
+      "related_signals": ["SIG-2026-0111-ALT-012", "SIG-2026-0111-ALT-018"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "NIST 표준은 글로벌 사이버보안 정책과 기업 컴플라이언스의 사실상 표준",
+      "potential_impact": {
+        "short_term": "AI 시스템 사이버보안 투자 증가",
+        "mid_term": "AI 보안 인증 및 감사 체계 확립",
+        "long_term": "신뢰할 수 있는 AI 인프라 구축"
+      },
+      "leading_indicator": "AI 보안 표준화 본격화",
+      "raw_id": "RAW-2026-0111-ALT-028"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-029",
+      "title": "NIH, 2026년 1월부터 해외 협력 연구 제한 강화",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Research Policy, International Collaboration",
+      "source": {
+        "url": "https://grants.nih.gov/news-events/nih-extramural-nexus-news/2026/01",
+        "name": "NIH",
+        "type": "policy",
+        "tier": "Tier 1",
+        "published_date": "2026-01-09"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "NIH 새로운 해외 구성요소(Foreign Component) 지원 프레임워크가 2026년 1월 협의회 라운드부터 시행. 국가 안보 우려 대응",
+      "full_description": "미국 국립보건원(NIH)이 2026년 1월 협의회 라운드부터 해외 연구 협력에 대한 새로운 지원 프레임워크 시행. 국가 안보 우려를 반영하여 특정 국가(주로 중국)와의 연구 협력에 대한 심사 강화. 과학 개방성과 안보 사이의 긴장 심화",
+      "key_entities": [
+        {
+          "name": "NIH",
+          "type": "government",
+          "role": "정책 수립"
+        },
+        {
+          "name": "US Research Community",
+          "type": "organization",
+          "role": "영향 받는 집단"
+        }
+      ],
+      "keywords": ["NIH", "research funding", "international collaboration", "policy", "national security"],
+      "related_signals": ["SIG-2026-0111-ALT-008"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "과학 협력의 안보화는 글로벌 연구 생태계의 근본적 변화",
+      "potential_impact": {
+        "short_term": "미국-중국 간 연구 협력 감소",
+        "mid_term": "과학 연구의 지정학적 분열",
+        "long_term": "글로벌 과학 혁신 속도 둔화 위험"
+      },
+      "leading_indicator": "과학 연구의 탈세계화",
+      "raw_id": "RAW-2026-0111-ALT-029"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-031",
+      "title": "AI 스타트업, 2025년 3분기까지 VC 투자액의 65% 차지",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Venture Capital, AI Investment",
+      "source": {
+        "url": "https://www.cbinsights.com/research/report/venture-trends-q1-2025/",
+        "name": "CB Insights",
+        "type": "report",
+        "tier": "Tier 2",
+        "published_date": "2026-01-07"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "2025년 3분기까지 AI 스타트업이 전체 VC 투자액의 65% 차지. 신규 유니콘의 절반 이상이 AI 기반",
+      "full_description": "CB Insights 보고서에 따르면 2025년 3분기까지 AI 스타트업이 전체 벤처 캐피탈 투자액의 65%를 흡수. 신규 유니콘(기업가치 10억 달러 이상 스타트업)의 절반 이상이 AI 기반 비즈니스 모델. AI가 벤처 투자의 압도적 중심축으로 자리잡음",
+      "key_entities": [
+        {
+          "name": "CB Insights",
+          "type": "organization",
+          "role": "분석 기관"
+        },
+        {
+          "name": "Venture Capital",
+          "type": "sector",
+          "role": "투자 주체"
+        },
+        {
+          "name": "AI Startups",
+          "type": "sector",
+          "role": "투자 대상"
+        }
+      ],
+      "keywords": ["venture capital", "AI", "startups", "unicorns", "investment"],
+      "related_signals": ["SIG-2026-0111-ALT-021"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "mature",
+      "significance": 4,
+      "significance_reason": "VC 투자의 압도적 AI 집중은 기술 혁신과 경제 구조 변화의 강력한 선행 지표",
+      "potential_impact": {
+        "short_term": "AI 스타트업 생태계 급성장",
+        "mid_term": "AI 중심 산업 구조 재편",
+        "long_term": "경제 전반의 AI 의존도 심화"
+      },
+      "leading_indicator": "AI의 경제적 중심성 확립",
+      "raw_id": "RAW-2026-0111-ALT-031"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-032",
+      "title": "ISSCR 2026 줄기세포 학회, 몬트리올 개최",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Stem Cell, Conference",
+      "source": {
+        "url": "https://www.cell.com/cell-stem-cell/home",
+        "name": "Cell Press",
+        "type": "news",
+        "tier": "Tier 1",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "ISSCR 2026이 2026년 7월 8-11일 캐나다 몬트리올에서 개최. 줄기세포 연구의 주요 국제 학회",
+      "full_description": "국제줄기세포학회(ISSCR) 2026 연례 학회가 캐나다 몬트리올에서 7월 8-11일 개최 예정. 줄기세포 연구, 재생의학, 발생생물학 분야의 최신 연구 성과 공유. 배반포 유사체, 오가노이드, 세포치료 등 주요 의제 예상",
+      "key_entities": [
+        {
+          "name": "ISSCR",
+          "type": "organization",
+          "role": "주최"
+        },
+        {
+          "name": "Stem Cell Research",
+          "type": "sector",
+          "role": "주제"
+        }
+      ],
+      "keywords": ["stem cells", "ISSCR", "regenerative medicine", "conference", "Montreal"],
+      "related_signals": ["SIG-2026-0111-ALT-004"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 5,
+      "status": "developing",
+      "significance": 2,
+      "significance_reason": "정기 학술 행사이나 줄기세포 분야 주요 동향 파악의 중요한 창구",
+      "potential_impact": {
+        "short_term": "최신 줄기세포 연구 성과 공유",
+        "mid_term": "연구 협력 네트워크 강화",
+        "long_term": "재생의학 발전 촉진"
+      },
+      "leading_indicator": "줄기세포 연구 활동의 지속적 활성화",
+      "raw_id": "RAW-2026-0111-ALT-032"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-034",
+      "title": "Chatham House: 2026년 결정적 안보 시험 예고",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "subcategory": "Global Security, Space Militarization",
+      "source": {
+        "url": "https://www.chathamhouse.org/2025/12/global-security-continued-unravel-2025-crucial-tests-are-coming-2026",
+        "name": "Chatham House",
+        "type": "report",
+        "tier": "Tier 1",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "Chatham House 전문가들이 2026년 오는 결정적 안보 시험 식별. 우주가 더욱 상업화, 군사화, 혼잡해질 것",
+      "full_description": "영국 싱크탱크 Chatham House가 2026년 글로벌 안보 환경의 결정적 시험을 예측. 특히 우주 공간의 상업화, 군사화, 혼잡도 증가를 핵심 안보 도전으로 지목. 핵 확산, 사이버 공격, 기후 안보 등 다차원 위협 복합화",
+      "key_entities": [
+        {
+          "name": "Chatham House",
+          "type": "organization",
+          "role": "분석 기관"
+        },
+        {
+          "name": "Space",
+          "type": "domain",
+          "role": "안보 영역"
+        }
+      ],
+      "keywords": ["geopolitics", "security", "space", "nuclear", "militarization"],
+      "related_signals": ["SIG-2026-0111-ALT-008", "SIG-2026-0111-ALT-044", "SIG-2026-0111-ALT-045"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "주요 싱크탱크의 안보 경고는 정책 결정자와 기업 리스크 관리의 중요한 참조점",
+      "potential_impact": {
+        "short_term": "우주 안보 정책 강화",
+        "mid_term": "우주 교통 관리 및 규범 수립 압력",
+        "long_term": "우주의 안보-경제 복합 영역 확립"
+      },
+      "leading_indicator": "우주의 지정학적 전장화",
+      "raw_id": "RAW-2026-0111-ALT-034"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-035",
+      "title": "McKinsey: AI 에이전트가 미국 노동시간의 44% 수행 가능",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological", "Social"]
+      },
+      "subcategory": "AI Automation, Labor Market",
+      "source": {
+        "url": "https://www.mckinsey.com/mgi/our-research/agents-robots-and-us-skill-partnerships-in-the-age-of-ai",
+        "name": "McKinsey Global Institute",
+        "type": "report",
+        "tier": "Tier 1",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "AI 기반 에이전트가 오늘날 미국 노동시간의 44%를 차지하는 작업 수행 가능. 2030년까지 2.9조 달러 경제 가치 창출 전망",
+      "full_description": "McKinsey Global Institute 보고서가 AI 에이전트와 로봇이 현재 미국 노동시간의 44%를 차지하는 작업을 수행할 수 있으며, 2030년까지 2.9조 달러의 경제 가치를 창출할 수 있다고 분석. 지식 노동, 고객 서비스, 데이터 분석 등이 주요 자동화 대상. 노동시장 구조조정과 기술-인간 파트너십의 새로운 모델 필요성 제기",
+      "key_entities": [
+        {
+          "name": "McKinsey Global Institute",
+          "type": "organization",
+          "role": "분석 기관"
+        },
+        {
+          "name": "AI Agents",
+          "type": "technology",
+          "role": "자동화 주체"
+        },
+        {
+          "name": "US Labor Market",
+          "type": "sector",
+          "role": "영향 받는 영역"
+        }
+      ],
+      "keywords": ["McKinsey", "AI", "automation", "labor market", "economic value"],
+      "related_signals": ["SIG-2026-0111-ALT-025"],
+      "time_horizon": "medium-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "노동시간의 거의 절반을 AI가 대체 가능하다는 전망은 경제와 사회 구조의 패러다임 전환",
+      "potential_impact": {
+        "short_term": "AI 자동화 투자 급증",
+        "mid_term": "대규모 직업 재편 및 재교육 필요",
+        "long_term": "노동의 의미와 경제 시스템 근본적 재정의"
+      },
+      "leading_indicator": "AI 에이전트 시대의 노동 대체 본격화",
+      "raw_id": "RAW-2026-0111-ALT-035"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-036",
+      "title": "트럼프 관세, 2026년 미국 GDP 성장률 0.62%p 감소 전망",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Trade Policy, Economic Impact",
+      "source": {
+        "url": "https://www.piie.com/sites/default/files/2025-06/wp25-13.pdf",
+        "name": "Peterson Institute",
+        "type": "report",
+        "tier": "Tier 1",
+        "published_date": "2026-01-08"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "Peterson Institute 분석, 관세가 2026년 미국 성장률을 0.62%p 감소시킬 것. 미국 GDP 성장률 1.7%로 둔화 전망",
+      "full_description": "Peterson Institute for International Economics(PIIE) 분석에 따르면 트럼프 행정부의 관세 정책이 2026년 미국 경제 성장률을 0.62%p 감소시켜 GDP 성장률이 1.7%로 둔화될 전망. 무역 전쟁의 경제적 비용이 가시화되며 보호무역주의의 실질적 영향 검증",
+      "key_entities": [
+        {
+          "name": "Peterson Institute",
+          "type": "organization",
+          "role": "분석 기관"
+        },
+        {
+          "name": "Trump Administration",
+          "type": "government",
+          "role": "정책 주체"
+        },
+        {
+          "name": "US Economy",
+          "type": "sector",
+          "role": "영향 받는 영역"
+        }
+      ],
+      "keywords": ["tariffs", "trade policy", "US economy", "Peterson Institute", "GDP"],
+      "related_signals": ["SIG-2026-0111-ALT-008"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "주요 경제 연구기관의 관세 영향 분석은 무역 정책 방향의 중요한 검증",
+      "potential_impact": {
+        "short_term": "미국 경제 성장 둔화",
+        "mid_term": "글로벌 무역 흐름 재편",
+        "long_term": "보호무역주의 정책 재평가"
+      },
+      "leading_indicator": "보호무역주의의 경제적 비용 가시화",
+      "raw_id": "RAW-2026-0111-ALT-036"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-038",
+      "title": "미국 에너지 시장, 2026년 '다중 충돌' 직면",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Energy Markets, Climate Policy",
+      "source": {
+        "url": "https://insideclimatenews.org/news/08012026/inside-clean-energy-what-to-expect-in-2026/",
+        "name": "Inside Climate News",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-08"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "미국 에너지 시장이 2026년 '다중 충돌(multicar pileup)'에 직면. 가격 상승 불만과 AI 데이터센터 투자 버블 우려가 주요 동인",
+      "full_description": "Inside Climate News 분석에 따르면 미국 에너지 시장이 2026년 복합적 위기 직면. 소비자 전기료 상승 불만, AI 데이터센터 전력 수요 급증, 천연가스 가격 변동성, 트럼프 정부의 화석연료 정책 등이 충돌하며 에너지 전환의 복잡성과 딜레마 가시화",
+      "key_entities": [
+        {
+          "name": "US Energy Markets",
+          "type": "sector",
+          "role": "분석 대상"
+        },
+        {
+          "name": "AI Data Centers",
+          "type": "sector",
+          "role": "수요 주체"
+        },
+        {
+          "name": "Trump Administration",
+          "type": "government",
+          "role": "정책 주체"
+        }
+      ],
+      "keywords": ["energy prices", "natural gas", "data centers", "Trump policy", "climate"],
+      "related_signals": ["SIG-2026-0111-ALT-013", "SIG-2026-0111-ALT-019"],
+      "time_horizon": "immediate",
+      "geographic_scope": "national",
+      "confidence_level": 3,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "에너지 전환기의 복합적 긴장은 기후 정책과 경제 성장의 균형 문제를 부각",
+      "potential_impact": {
+        "short_term": "에너지 가격 변동성 증가",
+        "mid_term": "에너지 정책 재조정 압력",
+        "long_term": "에너지 전환 경로의 재설계"
+      },
+      "leading_indicator": "에너지 전환의 정치경제적 복잡성 심화",
+      "raw_id": "RAW-2026-0111-ALT-038"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-039",
+      "title": "Berkeley: AI 학습 데이터, 2026년 고갈 가능성",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Spiritual"]
+      },
+      "subcategory": "AI Data, Training Data Limits",
+      "source": {
+        "url": "https://alumni.berkeley.edu/california-magazine/online/data-is-fueling-the-ai-revolution-what-happens-when-it-runs-out/",
+        "name": "UC Berkeley",
+        "type": "news",
+        "tier": "Tier 1",
+        "published_date": "2026-01-09"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "Epoch 연구, 인간 생성 인터넷 데이터의 총량이 빠르면 2026년 고갈될 수 있다고 주장",
+      "full_description": "UC Berkeley 매거진이 소개한 Epoch 연구에 따르면 AI 모델 학습에 사용 가능한 인간 생성 인터넷 데이터의 총량이 빠르면 2026년 고갈될 수 있음. 이는 AI 발전의 근본적 병목이 될 수 있으며, 합성 데이터, 강화학습, 새로운 학습 패러다임 등 대안 모색 촉발",
+      "key_entities": [
+        {
+          "name": "UC Berkeley",
+          "type": "organization",
+          "role": "분석 발표"
+        },
+        {
+          "name": "Epoch",
+          "type": "organization",
+          "role": "연구 기관"
+        },
+        {
+          "name": "AI Industry",
+          "type": "sector",
+          "role": "영향 받는 영역"
+        }
+      ],
+      "keywords": ["AI", "data", "training data", "Berkeley", "Epoch"],
+      "related_signals": ["SIG-2026-0111-ALT-025"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 3,
+      "status": "emerging",
+      "significance": 4,
+      "significance_reason": "AI 학습 데이터 고갈은 AI 발전 패러다임의 근본적 전환을 강제할 수 있는 중요한 제약",
+      "potential_impact": {
+        "short_term": "합성 데이터 및 데이터 효율적 AI 연구 급증",
+        "mid_term": "AI 발전 속도 둔화 또는 패러다임 전환",
+        "long_term": "데이터 중심에서 알고리즘 중심 AI로 전환"
+      },
+      "leading_indicator": "AI 발전의 구조적 한계 도래",
+      "raw_id": "RAW-2026-0111-ALT-039"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-040",
+      "title": "IBM, 2026년 말까지 양자 우위 검증 목표",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Quantum Computing, Quantum Advantage",
+      "source": {
+        "url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance",
+        "name": "IBM",
+        "type": "news",
+        "tier": "Tier 1",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "IBM이 2026년 말까지 검증된 양자 우위의 첫 사례들이 더 넓은 커뮤니티에 의해 확인될 것으로 예상",
+      "full_description": "IBM이 Kookaburra 양자 프로세서 등 새로운 하드웨어와 소프트웨어 혁신을 공개하며 2026년 말까지 검증된 양자 우위(quantum advantage)의 첫 사례들이 학계와 산업계에서 확인될 것으로 전망. 양자 컴퓨팅이 이론적 가능성을 넘어 실질적 계산 우위를 입증하는 역사적 전환점",
+      "key_entities": [
+        {
+          "name": "IBM",
+          "type": "company",
+          "role": "기술 개발"
+        },
+        {
+          "name": "Kookaburra",
+          "type": "technology",
+          "role": "양자 프로세서"
+        }
+      ],
+      "keywords": ["IBM", "quantum computing", "quantum advantage", "Kookaburra", "verification"],
+      "related_signals": ["SIG-2026-0111-ALT-001"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "양자 우위의 검증은 컴퓨팅 역사의 패러다임 전환을 의미하는 결정적 이정표",
+      "potential_impact": {
+        "short_term": "양자 컴퓨팅 투자 및 연구 급증",
+        "mid_term": "암호학, 신약 개발 등 특정 분야 혁신",
+        "long_term": "고전 컴퓨팅으로 불가능한 문제 해결 가능"
+      },
+      "leading_indicator": "양자 컴퓨팅의 실용화 진입",
+      "raw_id": "RAW-2026-0111-ALT-040"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-042",
+      "title": "FDA, 2026년 1월 10일 Tabelecleucel 유전자 치료제 승인",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "subcategory": "Gene Therapy, FDA Approval",
+      "source": {
+        "url": "https://www.nasdaq.com/articles/biotech-stocks-facing-fda-decision-january-2026",
+        "name": "BioPharma Dive",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-10"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "FDA가 2026년 1월 10일 Atara Biotherapeutics의 tabelecleucel(Ebvallo) 동종 EBV 특이 T세포 치료제 승인 목표일 설정",
+      "full_description": "FDA가 Atara Biotherapeutics의 tabelecleucel(Ebvallo)에 대한 PDUFA(처방약 사용자 수수료법) 목표 조치일을 2026년 1월 10일로 설정. Ebvallo는 Epstein-Barr 바이러스(EBV) 관련 림프종 치료를 위한 동종이계 EBV 특이 T세포 면역치료제. 승인 시 차세대 세포 치료제의 중요한 이정표",
+      "key_entities": [
+        {
+          "name": "FDA",
+          "type": "government",
+          "role": "규제 승인"
+        },
+        {
+          "name": "Atara Biotherapeutics",
+          "type": "company",
+          "role": "개발사"
+        },
+        {
+          "name": "Tabelecleucel",
+          "type": "technology",
+          "role": "치료제"
+        }
+      ],
+      "keywords": ["FDA", "gene therapy", "Atara", "T-cell therapy", "EBV"],
+      "related_signals": ["SIG-2026-0111-ALT-021"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "동종이계 T세포 치료제 승인은 맞춤형 세포치료의 확장 가능성을 높이는 중요한 진전",
+      "potential_impact": {
+        "short_term": "EBV 관련 림프종 치료 옵션 확대",
+        "mid_term": "동종이계 세포치료 시장 성장",
+        "long_term": "세포치료의 대량생산 및 접근성 향상"
+      },
+      "leading_indicator": "세포치료의 상업화 및 확장성 개선",
+      "raw_id": "RAW-2026-0111-ALT-042"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-043",
+      "title": "ASEAN 디지털 경제 프레임워크 협정, 2026년 말 체결 예상",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Digital Economy, Regional Integration",
+      "source": {
+        "url": "https://en.vietnamplus.vn/asean-expects-to-ink-digital-economy-pack-in-2026-post329969.vnp",
+        "name": "Vietnam Plus",
+        "type": "news",
+        "tier": "Tier 3",
+        "published_date": "2026-01-07"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "ASEAN 디지털 경제 프레임워크 협정(DEFA)이 2026년 말까지 체결 및 서명될 것으로 예상",
+      "full_description": "동남아국가연합(ASEAN)이 추진 중인 디지털 경제 프레임워크 협정(Digital Economy Framework Agreement, DEFA)이 2026년 말까지 최종 체결 및 서명될 것으로 예상. 역내 디지털 무역, 데이터 흐름, 전자상거래, 디지털 결제 등을 포괄하는 협정으로 ASEAN 디지털 경제 통합의 중요한 이정표",
+      "key_entities": [
+        {
+          "name": "ASEAN",
+          "type": "organization",
+          "role": "협정 주체"
+        },
+        {
+          "name": "DEFA",
+          "type": "policy",
+          "role": "협정"
+        }
+      ],
+      "keywords": ["ASEAN", "digital economy", "DEFA", "regional integration", "e-commerce"],
+      "related_signals": [],
+      "time_horizon": "short-term",
+      "geographic_scope": "regional",
+      "confidence_level": 3,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "ASEAN 디지털 경제 통합은 6.5억 인구 시장의 디지털 전환을 가속화하는 중요한 제도적 기반",
+      "potential_impact": {
+        "short_term": "ASEAN 역내 디지털 무역 장벽 감소",
+        "mid_term": "동남아 디지털 경제 급성장",
+        "long_term": "글로벌 디지털 경제 지형 재편"
+      },
+      "leading_indicator": "지역 블록의 디지털 경제 통합 가속",
+      "raw_id": "RAW-2026-0111-ALT-043"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-044",
+      "title": "NASA Artemis 2, 2026년 2월 달 플라이바이 계획",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Space Exploration, Moon Mission",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_in_spaceflight",
+        "name": "Space.com",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "NASA가 2026년 2월 초 Space Launch System으로 Artemis 2 발사 계획. 10일간 달 주변 비행 미션",
+      "full_description": "NASA가 Artemis 2 미션을 2026년 2월 초 발사할 계획. Space Launch System(SLS) 로켓으로 우주비행사를 달 주변으로 보내는 10일간의 플라이바이 미션. 1972년 아폴로 17호 이후 처음으로 인간이 달 궤도에 진입하는 역사적 순간. Artemis 3 달 착륙의 전 단계",
+      "key_entities": [
+        {
+          "name": "NASA",
+          "type": "government",
+          "role": "주관 기관"
+        },
+        {
+          "name": "Artemis Program",
+          "type": "program",
+          "role": "우주 프로그램"
+        },
+        {
+          "name": "Space Launch System",
+          "type": "technology",
+          "role": "발사체"
+        }
+      ],
+      "keywords": ["NASA", "Artemis", "Moon", "space exploration", "SLS"],
+      "related_signals": ["SIG-2026-0111-ALT-034", "SIG-2026-0111-ALT-045"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 5,
+      "significance_reason": "반세기 만의 유인 달 탐사 재개는 우주 시대의 새로운 장을 여는 역사적 전환점",
+      "potential_impact": {
+        "short_term": "우주 탐사 관심 급증",
+        "mid_term": "달 경제 및 과학 연구 기반 구축",
+        "long_term": "화성 탐사 및 우주 정착 로드맵 실현"
+      },
+      "leading_indicator": "인류의 우주 프론티어 확장 재개",
+      "raw_id": "RAW-2026-0111-ALT-044"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-045",
+      "title": "Vast Haven-1, 2026년 최초 상업 우주정거장 발사",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "subcategory": "Commercial Space, Space Station",
+      "source": {
+        "url": "https://www.space.com/32286-space-calendar.html",
+        "name": "Space.com",
+        "type": "news",
+        "tier": "Tier 2",
+        "published_date": "2026-01-06"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "미국 기업 Vast가 2026년 최초 상업 우주정거장 Haven-1 발사 계획",
+      "full_description": "미국 우주 스타트업 Vast가 2026년 최초의 상업용 우주정거장 Haven-1을 저궤도(LEO)에 발사할 계획. 국제우주정거장(ISS) 퇴역을 앞두고 상업 우주정거장 경쟁의 신호탄. 우주가 정부 주도에서 민간 경제 영역으로 전환하는 상징적 사건",
+      "key_entities": [
+        {
+          "name": "Vast",
+          "type": "company",
+          "role": "개발사"
+        },
+        {
+          "name": "Haven-1",
+          "type": "technology",
+          "role": "우주정거장"
+        }
+      ],
+      "keywords": ["Vast", "space station", "commercial space", "LEO", "Haven-1"],
+      "related_signals": ["SIG-2026-0111-ALT-034", "SIG-2026-0111-ALT-044"],
+      "time_horizon": "immediate",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "developing",
+      "significance": 4,
+      "significance_reason": "최초 상업 우주정거장은 우주 경제의 본격화를 알리는 중요한 이정표",
+      "potential_impact": {
+        "short_term": "상업 우주정거장 경쟁 가속화",
+        "mid_term": "우주 관광 및 제조업 확대",
+        "long_term": "우주 경제의 독립적 생태계 형성"
+      },
+      "leading_indicator": "우주의 경제화 및 민영화 가속",
+      "raw_id": "RAW-2026-0111-ALT-045"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-046",
+      "title": "미국 디지털 정신건강 시장, 2026년 89.7억 달러 전망",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "subcategory": "Mental Health, Digital Therapeutics",
+      "source": {
+        "url": "https://www.towardshealthcare.com/insights/us-digital-mental-health-market-sizing",
+        "name": "Toward Healthcare",
+        "type": "report",
+        "tier": "Tier 3",
+        "published_date": "2026-01-08"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "미국 디지털 정신건강 시장이 2025년 74.6억 달러에서 2026년 89.7억 달러로 성장 예상",
+      "full_description": "시장 조사에 따르면 미국 디지털 정신건강 시장이 2025년 74.6억 달러에서 2026년 89.7억 달러(약 20% 성장)로 확대될 전망. 정신건강 앱, 원격 치료, 디지털 치료제 등이 주요 성장 동력. 팬데믹 이후 정신건강 의식 제고와 디지털 헬스케어 수용 증가가 배경",
+      "key_entities": [
+        {
+          "name": "US Digital Mental Health Market",
+          "type": "sector",
+          "role": "시장"
+        },
+        {
+          "name": "Digital Therapeutics",
+          "type": "technology",
+          "role": "핵심 기술"
+        }
+      ],
+      "keywords": ["mental health", "digital therapeutics", "healthcare", "market", "telehealth"],
+      "related_signals": ["SIG-2026-0111-ALT-047", "SIG-2026-0111-ALT-048"],
+      "time_horizon": "immediate",
+      "geographic_scope": "national",
+      "confidence_level": 3,
+      "status": "developing",
+      "significance": 3,
+      "significance_reason": "디지털 정신건강 시장 급성장은 정신건강 관리 패러다임의 중요한 전환",
+      "potential_impact": {
+        "short_term": "정신건강 서비스 접근성 향상",
+        "mid_term": "정신건강 관리의 디지털 표준화",
+        "long_term": "사회 전반의 정신건강 수준 개선"
+      },
+      "leading_indicator": "정신건강 관리의 디지털 전환",
+      "raw_id": "RAW-2026-0111-ALT-046"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-047",
+      "title": "CMS, 디지털 정신건강 치료제 급여 시작",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Political"]
+      },
+      "subcategory": "Digital Therapeutics, Healthcare Policy",
+      "source": {
+        "url": "https://www.fda.gov/media/189391/download",
+        "name": "FDA/CMS",
+        "type": "policy",
+        "tier": "Tier 1",
+        "published_date": "2026-01-05"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "2025년 1월 1일부터 CMS가 특정 FDA 승인 디지털 정신건강 치료제(디지털 치료제) 급여 시작",
+      "full_description": "미국 메디케어·메디케이드 서비스센터(CMS)가 2025년 1월 1일부터 FDA가 승인한 특정 디지털 정신건강 치료제(디지털 치료제, Digital Therapeutics)에 대한 급여를 시작. 이는 디지털 치료제가 전통적 의약품과 동등한 치료 옵션으로 인정받는 역사적 전환점이며, 디지털 헬스케어 산업의 본격적 성장 촉발",
+      "key_entities": [
+        {
+          "name": "CMS",
+          "type": "government",
+          "role": "급여 정책"
+        },
+        {
+          "name": "FDA",
+          "type": "government",
+          "role": "승인 기관"
+        },
+        {
+          "name": "Medicare",
+          "type": "program",
+          "role": "보험"
+        }
+      ],
+      "keywords": ["CMS", "Medicare", "digital therapeutics", "reimbursement", "mental health"],
+      "related_signals": ["SIG-2026-0111-ALT-046", "SIG-2026-0111-ALT-048"],
+      "time_horizon": "immediate",
+      "geographic_scope": "national",
+      "confidence_level": 5,
+      "status": "mature",
+      "significance": 4,
+      "significance_reason": "디지털 치료제의 보험 급여화는 디지털 헬스케어 산업의 상업적 viability 확립",
+      "potential_impact": {
+        "short_term": "디지털 치료제 처방 및 사용 급증",
+        "mid_term": "디지털 헬스케어 투자 활성화",
+        "long_term": "헬스케어 전달 체계의 디지털 전환"
+      },
+      "leading_indicator": "디지털 치료제의 주류 의료 진입",
+      "raw_id": "RAW-2026-0111-ALT-047"
+    },
+    {
+      "signal_id": "SIG-2026-0111-ALT-048",
+      "title": "VR, 스트레스 감소 임상 시험서 효과 입증",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological", "Social"]
+      },
+      "subcategory": "Virtual Reality, Mental Wellness",
+      "source": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12079407/",
+        "name": "NIH/PMC",
+        "type": "academic",
+        "tier": "Tier 1",
+        "published_date": "2026-01-04"
+      },
+      "detected_date": "2026-01-11",
+      "summary": "VR 기반 이완 개입이 비VR 접근법과 동등하거나 더 효과적으로 단기 스트레스와 불안 감소",
+      "full_description": "NIH 지원 임상 연구가 가상현실(VR) 기반 이완 개입이 전통적인 비VR 명상 및 마음챙김 접근법과 동등하거나 더 효과적으로 단기 스트레스와 불안을 감소시킴을 입증. VR이 정신건강 및 영성 실천의 효과적 기술 매개체로 검증되며, 웰니스 및 치료 분야 응용 확대 기대",
+      "key_entities": [
+        {
+          "name": "NIH",
+          "type": "government",
+          "role": "연구 지원"
+        },
+        {
+          "name": "Virtual Reality",
+          "type": "technology",
+          "role": "개입 도구"
+        }
+      ],
+      "keywords": ["virtual reality", "mental health", "mindfulness", "therapy", "stress reduction"],
+      "related_signals": ["SIG-2026-0111-ALT-046", "SIG-2026-0111-ALT-047"],
+      "time_horizon": "short-term",
+      "geographic_scope": "global",
+      "confidence_level": 4,
+      "status": "emerging",
+      "significance": 3,
+      "significance_reason": "VR의 정신건강 효과 검증은 기술이 영성 및 내면 실천과 통합되는 새로운 경로 제시",
+      "potential_impact": {
+        "short_term": "VR 명상 및 치료 앱 확산",
+        "mid_term": "정신건강 치료 방법론 다양화",
+        "long_term": "기술 매개 영성 실천의 일반화"
+      },
+      "leading_indicator": "기술과 영성의 융합 가속화",
+      "raw_id": "RAW-2026-0111-ALT-048"
+    }
+  ]
+}
