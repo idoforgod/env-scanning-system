@@ -27,18 +27,21 @@ Scan multiple sources for emerging signals across STEEPS categories (6 categorie
    ```
    Read env-scanning/config/domains.yaml
    Read env-scanning/config/sources.yaml
+   Read env-scanning/config/thresholds.yaml  # scan_window.hours 확인!
    ```
 
 2. **Generate Search Queries** per STEEP category
    - Use current date context
    - Include Korean and English keywords
    - Focus on "emerging", "breakthrough", "first", "new"
+   - **TIME FILTER: 실행 시점 기준 24시간 이내 게시물만**
 
 3. **Scan Sources**
    For each category:
-   - WebSearch for recent news (last 7 days)
+   - WebSearch for recent news (**last 24 hours only**)
    - WebFetch for detailed content
    - Extract key information
+   - **CRITICAL: 24시간 초과 자료는 반드시 제외**
 
 4. **Structure Raw Data**
    For each finding:
@@ -66,9 +69,15 @@ Scan multiple sources for emerging signals across STEEPS categories (6 categorie
 
 ## Search Strategy
 
+### Time-Based Search (24시간 기준)
+검색 시 반드시 시간 필터 적용:
+- Google: `after:YYYY-MM-DD` (어제 날짜)
+- 검색어에 "today", "오늘", "just announced" 등 추가
+
 ### News Sources
-- Google News: `site:news.google.com "{keyword}" after:{yesterday}`
+- Google News: `site:news.google.com "{keyword}" after:{scan_date - 1 day}`
 - Focus on: 로이터, AP, Bloomberg, 연합뉴스, 한경
+- **24시간 이내 기사만 수집**
 
 ### Academic Sources
 - arXiv recent: `site:arxiv.org {topic} [cs.AI, cs.LG, q-bio]`
@@ -85,9 +94,21 @@ Scan multiple sources for emerging signals across STEEPS categories (6 categorie
 ## Quality Filters
 
 - Skip if: paywall, login required, content unavailable
-- Skip if: published > 7 days ago
+- **SKIP if: published > 24 hours ago (엄격 적용)**
 - Skip if: clearly promotional/advertisement
 - Include even if: weak signal, early stage, unconfirmed
+
+## Time Window Policy (매우 중요)
+
+| 설정 | 값 | 설명 |
+|------|-----|------|
+| **scan_window** | 24시간 | 실행 시점 기준 |
+| **strict_mode** | true | 초과 시 무조건 제외 |
+| **timezone** | Asia/Seoul | KST 기준 |
+
+**예시**: 2026-01-11 09:00 KST 실행 시
+- 포함: 2026-01-10 09:00 ~ 2026-01-11 09:00 게시물
+- 제외: 2026-01-10 08:59 이전 게시물
 
 ## Output Format
 
