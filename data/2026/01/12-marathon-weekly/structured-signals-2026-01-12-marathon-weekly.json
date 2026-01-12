@@ -1,0 +1,2197 @@
+{
+  "classification_date": "2026-01-12",
+  "scan_period": "7-day (2026-01-05 to 2026-01-12)",
+  "total_classified": 68,
+  "by_category": {
+    "Social": 13,
+    "Technological": 27,
+    "Economic": 11,
+    "Environmental": 8,
+    "Political": 7,
+    "Spiritual": 2
+  },
+  "by_significance": {
+    "5": 17,
+    "4": 31,
+    "3": 13,
+    "2": 7
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0112-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "NVIDIA Vera Rubin Platform Launch - Next-Gen AI Supercomputer",
+      "description": "NVIDIA unveiled Vera Rubin at CES 2026, its next-generation AI chip platform featuring six new chips for AI supercomputing. First products arriving second half of 2026. Includes Gr00t vision language models for humanoid robots.",
+      "source": {
+        "name": "NVIDIA CES 2026, CNN Business",
+        "url": "https://www.cnn.com/2026/01/05/tech/vera-rubin-nvidia-ai-ces",
+        "type": "corporate_announcement",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "AI hardware acceleration enabling next-generation robotics and AGI systems",
+      "significance": 5,
+      "significance_reason": "Major paradigm shift in AI hardware - named after leading astronomer, represents NVIDIA's most ambitious AI platform yet with immediate robotics applications",
+      "potential_impact": {
+        "short_term": "Second half 2026 product launch enabling new class of AI applications",
+        "mid_term": "Accelerates humanoid robotics development by 2028",
+        "long_term": "Foundation for AGI infrastructure by 2030"
+      },
+      "actors": [
+        {"name": "NVIDIA", "type": "company", "role": "platform developer"},
+        {"name": "humanoid robot manufacturers", "type": "industry", "role": "primary adopters"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-06",
+      "confidence": 0.95,
+      "tags": ["AI chips", "NVIDIA", "humanoid robots", "supercomputing", "CES 2026"],
+      "raw_id": "SIG-MW-2026-0112-001"
+    },
+    {
+      "id": "SIG-2026-0112-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "Boston Dynamics-Google DeepMind Partnership for Gemini-Powered Atlas Robots",
+      "description": "Boston Dynamics partnered with Google DeepMind to integrate Gemini AI into Atlas humanoid robots. Strategic collaboration with Hyundai to accelerate next-generation humanoid development.",
+      "source": {
+        "name": "CES 2026, Morocco World News",
+        "url": "https://www.moroccoworldnews.com/2026/01/274448/ces-2026-hyundai-motor-group-google-deepmind-unveil-ai-robotics-partnership/",
+        "type": "corporate_announcement",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Convergence of leading robotics hardware and AI foundation models enabling practical humanoid deployment",
+      "significance": 5,
+      "significance_reason": "First major integration of frontier LLM (Gemini) into commercial humanoid platform - represents inflection point for AI-powered robotics",
+      "potential_impact": {
+        "short_term": "Gemini-powered Atlas prototypes demonstrated in 2026",
+        "mid_term": "Commercial humanoid deployment in manufacturing by 2028",
+        "long_term": "Mass market humanoid assistants by 2030"
+      },
+      "actors": [
+        {"name": "Boston Dynamics", "type": "company", "role": "robotics platform"},
+        {"name": "Google DeepMind", "type": "company", "role": "AI model provider"},
+        {"name": "Hyundai", "type": "company", "role": "manufacturing partner"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-06",
+      "confidence": 0.95,
+      "tags": ["robotics", "humanoid", "Gemini", "Boston Dynamics", "Google DeepMind"],
+      "raw_id": "SIG-MW-2026-0112-002"
+    },
+    {
+      "id": "SIG-2026-0112-003",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "Lyte Robotics Emerges from Stealth with $107M to Improve Robot Vision",
+      "description": "Former Apple Face ID engineers launched Lyte Robotics with $107M funding from Fidelity, Atreides Management, and others. Developing technology to help robots see better and move more safely.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-01-05/three-former-apple-face-id-engineers-launch-robotics-startup-out-of-stealth",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Apple's Face ID technology transferring to robotics sector, signaling convergence of consumer tech and robotics",
+      "significance": 4,
+      "significance_reason": "Large funding for computer vision startup with proven team - addresses critical robotics bottleneck",
+      "potential_impact": {
+        "short_term": "Prototype robot vision systems by late 2026",
+        "mid_term": "Integration into commercial robots by 2028",
+        "long_term": "Industry standard for robot perception by 2030"
+      },
+      "actors": [
+        {"name": "Lyte Robotics", "type": "company", "role": "vision technology developer"},
+        {"name": "Apple Face ID alumni", "type": "individual", "role": "founders"},
+        {"name": "Fidelity", "type": "investor", "role": "lead investor"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-06",
+      "confidence": 0.90,
+      "tags": ["robotics", "computer vision", "startup funding", "Apple alumni"],
+      "raw_id": "SIG-MW-2026-0112-003"
+    },
+    {
+      "id": "SIG-2026-0112-004",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "title": "xAI Closes $20B Funding Round with NVIDIA Backing",
+      "description": "Elon Musk's xAI completed $20 billion funding round from investors including NVIDIA, Valor Equity Partners, and Qatar Investment Authority. Major AI infrastructure investment.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-01-06/musk-s-xai-closed-20-billion-funding-round-with-nvidia-backing",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Unprecedented capital concentration in AI infrastructure signaling arms race acceleration",
+      "significance": 5,
+      "significance_reason": "Largest AI funding round to date - NVIDIA's strategic investment signals vertical integration strategy",
+      "potential_impact": {
+        "short_term": "Massive compute cluster buildout in 2026",
+        "mid_term": "New frontier models competing with OpenAI/Anthropic by 2027",
+        "long_term": "Reshapes AI market structure by 2030"
+      },
+      "actors": [
+        {"name": "xAI", "type": "company", "role": "AI developer"},
+        {"name": "Elon Musk", "type": "individual", "role": "founder"},
+        {"name": "NVIDIA", "type": "company", "role": "strategic investor"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-06",
+      "confidence": 0.95,
+      "tags": ["AI funding", "xAI", "Elon Musk", "NVIDIA"],
+      "raw_id": "SIG-MW-2026-0112-004"
+    },
+    {
+      "id": "SIG-2026-0112-005",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "IBM Declares 2026 as Year of Quantum Advantage",
+      "description": "IBM publicly stated 2026 will mark first time quantum computers outperform classical computers, achieving quantum advantage. AI and quantum systems beginning to operate as mutually reinforcing stack.",
+      "source": {
+        "name": "IBM Think 2026",
+        "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
+        "type": "corporate_announcement",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Quantum computing transitioning from research to practical advantage - inflection point for quantum industry",
+      "significance": 5,
+      "significance_reason": "IBM's public declaration of quantum advantage in 2026 - major milestone after decades of development",
+      "potential_impact": {
+        "short_term": "First quantum advantage demonstrations in 2026",
+        "mid_term": "Quantum-classical hybrid systems become standard by 2028",
+        "long_term": "Quantum computing reshapes cryptography and drug discovery by 2030"
+      },
+      "actors": [
+        {"name": "IBM", "type": "company", "role": "quantum platform provider"},
+        {"name": "quantum computing industry", "type": "industry", "role": "collective advancement"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-06",
+      "confidence": 0.95,
+      "tags": ["quantum computing", "IBM", "quantum advantage", "AI-quantum convergence"],
+      "raw_id": "SIG-MW-2026-0112-005"
+    },
+    {
+      "id": "SIG-2026-0112-006",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Room-Temperature Quantum Computing Breakthrough - IonQ and Xanadu",
+      "description": "IonQ's trapped ion technology and Xanadu's photonic qubits could make room-temperature quantum computing a reality in 2026, eliminating need for extreme cooling.",
+      "source": {
+        "name": "Bernard Marr, TQI Expert Predictions",
+        "url": "https://bernardmarr.com/7-quantum-computing-trends-that-will-shape-every-industry-in-2026/",
+        "type": "industry_analysis",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Room-temperature quantum computing eliminating major adoption barrier",
+      "significance": 5,
+      "significance_reason": "Eliminates cooling infrastructure requirement - could democratize quantum computing access",
+      "potential_impact": {
+        "short_term": "First room-temperature quantum demonstrations in 2026",
+        "mid_term": "Deployment costs drop 10x by 2028",
+        "long_term": "Ubiquitous quantum computing by 2030"
+      },
+      "actors": [
+        {"name": "IonQ", "type": "company", "role": "trapped ion technology"},
+        {"name": "Xanadu", "type": "company", "role": "photonic qubits"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-07",
+      "confidence": 0.85,
+      "tags": ["quantum computing", "room temperature", "photonic qubits", "trapped ion"],
+      "raw_id": "SIG-MW-2026-0112-006"
+    },
+    {
+      "id": "SIG-2026-0112-007",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Complex-Valued Neural Networks for Quantum Dynamics Prediction",
+      "description": "New arXiv paper (2601.03964) introduces complex-valued neural networks for learning quantum dissipative dynamics, outperforming real-valued networks in convergence speed and physical fidelity.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2601.03964",
+        "type": "academic",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "AI-quantum convergence enabling new approaches to quantum simulation",
+      "significance": 4,
+      "significance_reason": "Novel neural network architecture bridging AI and quantum mechanics - enables faster quantum system modeling",
+      "potential_impact": {
+        "short_term": "Adopted in quantum chemistry simulations by late 2026",
+        "mid_term": "Accelerates drug discovery using quantum simulations by 2028",
+        "long_term": "Foundation for quantum-AI hybrid intelligence by 2030"
+      },
+      "actors": [
+        {"name": "arXiv researchers", "type": "academic", "role": "methodology developers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-07",
+      "confidence": 0.88,
+      "tags": ["quantum ML", "neural networks", "quantum dynamics", "AI-quantum"],
+      "raw_id": "SIG-MW-2026-0112-007"
+    },
+    {
+      "id": "SIG-2026-0112-008",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Molecular Devices with Dynamic Role-Switching Capability",
+      "description": "Scientists developed molecular devices that switch roles between memory, logic, and learning elements within same structure through precise chemical design allowing dynamic electron reorganization.",
+      "source": {
+        "name": "ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260101160857.htm",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Molecular computing enabling neuromorphic hardware at molecular scale",
+      "significance": 4,
+      "significance_reason": "Breakthrough in shape-shifting molecular devices - could enable ultra-dense computing beyond silicon limits",
+      "potential_impact": {
+        "short_term": "Laboratory demonstrations of molecular computing in 2026",
+        "mid_term": "First commercial molecular memory devices by 2028",
+        "long_term": "Post-silicon computing era begins by 2030"
+      },
+      "actors": [
+        {"name": "materials science researchers", "type": "academic", "role": "technology developers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.85,
+      "tags": ["materials science", "molecular computing", "neuromorphic", "shape-shifting molecules"],
+      "raw_id": "SIG-MW-2026-0112-008"
+    },
+    {
+      "id": "SIG-2026-0112-009",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "CRISPR Breakthrough Activates Genes Without Cutting DNA",
+      "description": "New CRISPR technology can turn genes on without cutting DNA, representing major advance in gene editing safety and precision for therapeutic applications.",
+      "source": {
+        "name": "ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260104202813.htm",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Gene therapy safety breakthrough enabling wider medical applications",
+      "significance": 5,
+      "significance_reason": "Eliminates DNA cutting risk - major safety advancement removing primary concern about CRISPR therapies",
+      "potential_impact": {
+        "short_term": "New clinical trials initiated in 2026",
+        "mid_term": "FDA approvals for broader gene therapy applications by 2028",
+        "long_term": "Preventive genetic medicine becomes standard by 2030"
+      },
+      "actors": [
+        {"name": "CRISPR researchers", "type": "academic", "role": "technology developers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["CRISPR", "gene editing", "gene activation", "biotech"],
+      "raw_id": "SIG-MW-2026-0112-009"
+    },
+    {
+      "id": "SIG-2026-0112-010",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "CRISPR-GPT AI Co-Pilot Automates Gene Editing Workflows",
+      "description": "First agentic AI co-pilot for gene editing, CRISPR-GPT automates design, execution, and analysis of experiments, reducing experimental cycles from weeks to hours.",
+      "source": {
+        "name": "ERS Genomics, ACS Synthetic Biology",
+        "url": "https://ersgenomics.com/crispr-gpt-the-future-of-bioengineering/",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "AI agents accelerating biotech R&D by orders of magnitude",
+      "significance": 4,
+      "significance_reason": "First autonomous AI system for gene editing - represents paradigm shift in biotech research speed",
+      "potential_impact": {
+        "short_term": "Adopted by major biotech labs in 2026",
+        "mid_term": "Drug discovery timelines cut in half by 2028",
+        "long_term": "AI-driven bioengineering becomes standard by 2030"
+      },
+      "actors": [
+        {"name": "ERS Genomics", "type": "company", "role": "AI tool developer"},
+        {"name": "biotech researchers", "type": "industry", "role": "users"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.88,
+      "tags": ["CRISPR", "AI automation", "synthetic biology", "bioengineering"],
+      "raw_id": "SIG-MW-2026-0112-010"
+    },
+    {
+      "id": "SIG-2026-0112-011",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "FDA Approves First Therapy for TA-TMA (YARTEMLEA)",
+      "description": "Omeros' YARTEMLEA received FDA approval for hematopoietic stem cell transplant-associated thrombotic microangiopathy, first and only approved therapy for this fatal complication. Launch January 2026.",
+      "source": {
+        "name": "Omeros Corporation, FDA",
+        "url": "https://investor.omeros.com/news-releases/news-release-details/fda-approves-omeros-yartemlear-first-and-only-therapy-indicated",
+        "type": "regulatory",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Breakthrough therapy addressing previously untreatable transplant complication",
+      "significance": 4,
+      "significance_reason": "First-ever FDA approval for TA-TMA - saves lives of transplant patients with no previous treatment options",
+      "potential_impact": {
+        "short_term": "Immediate availability for transplant patients in 2026",
+        "mid_term": "Improved transplant survival rates by 2028",
+        "long_term": "Enables riskier transplants with safety net by 2030"
+      },
+      "actors": [
+        {"name": "Omeros Corporation", "type": "company", "role": "drug developer"},
+        {"name": "FDA", "type": "government", "role": "regulatory authority"}
+      ],
+      "status": "mature",
+      "first_detected": "2026-01-09",
+      "confidence": 0.95,
+      "tags": ["FDA approval", "biotech", "transplant therapy", "rare disease"],
+      "raw_id": "SIG-MW-2026-0112-011"
+    },
+    {
+      "id": "SIG-2026-0112-012",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "Immune Cell Atlas Reveals East-West Differences",
+      "description": "Giant functional atlas of immune cells in Chinese cohort published in Nature reveals crucial differences with European and Japanese datasets, advancing personalized medicine.",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-025-04114-0",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Population-specific genomic medicine requiring regional datasets",
+      "significance": 4,
+      "significance_reason": "First large-scale Asian immune cell atlas - reveals inadequacy of Western-centric medical research",
+      "potential_impact": {
+        "short_term": "Replication in other Asian populations in 2026",
+        "mid_term": "Population-specific drug dosing by 2028",
+        "long_term": "Precision medicine tailored to genetic ancestry by 2030"
+      },
+      "actors": [
+        {"name": "Chinese research consortium", "type": "academic", "role": "data generators"},
+        {"name": "Nature", "type": "publisher", "role": "validation"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["immunology", "genomics", "personalized medicine", "biomedical research"],
+      "raw_id": "SIG-MW-2026-0112-012"
+    },
+    {
+      "id": "SIG-2026-0112-013",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Quantum-Informed ML Framework for Sensing Materials",
+      "description": "arXiv paper introduces MORE-ML, computational framework integrating quantum-mechanical property data with ML to predict sensing-relevant properties in artificial materials.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2601.00503",
+        "type": "academic",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Quantum-ML hybrid approaches accelerating materials discovery",
+      "significance": 3,
+      "significance_reason": "Novel computational framework combining quantum mechanics and ML - enables faster sensor material design",
+      "potential_impact": {
+        "short_term": "Adopted by materials science labs in 2026",
+        "mid_term": "Accelerates new sensor development by 2028",
+        "long_term": "Enables custom-designed sensing materials by 2030"
+      },
+      "actors": [
+        {"name": "materials science researchers", "type": "academic", "role": "framework developers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-07",
+      "confidence": 0.85,
+      "tags": ["quantum ML", "materials science", "sensor technology"],
+      "raw_id": "SIG-MW-2026-0112-013"
+    },
+    {
+      "id": "SIG-2026-0112-014",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "title": "Artemis 2 Moon Mission Rollout January 17",
+      "description": "NASA rolling out rocket for Artemis 2 moon mission on January 17, launching no earlier than February 5. First lunar excursion with crew in over 50 years with 3 NASA + 1 Canadian astronaut.",
+      "source": {
+        "name": "NASA, Space.com",
+        "url": "https://science.nasa.gov/solar-system/skywatching/whats-up-january-2026-skywatching-tips-from-nasa/",
+        "type": "government",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Return to crewed lunar exploration signaling new space race",
+      "significance": 4,
+      "significance_reason": "First crewed lunar mission in 50+ years - begins sustained lunar exploration program",
+      "potential_impact": {
+        "short_term": "Artemis 2 launch in February 2026",
+        "mid_term": "Artemis 3 lunar landing by 2027",
+        "long_term": "Permanent lunar base by 2030"
+      },
+      "actors": [
+        {"name": "NASA", "type": "government", "role": "mission operator"},
+        {"name": "Canadian Space Agency", "type": "government", "role": "international partner"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-09",
+      "confidence": 0.95,
+      "tags": ["space exploration", "moon mission", "NASA", "Artemis"],
+      "raw_id": "SIG-MW-2026-0112-014"
+    },
+    {
+      "id": "SIG-2026-0112-015",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "AI Upskilling Becomes Existential Priority for Organizations",
+      "description": "89% say workforce needs improved AI skills but only 6% began meaningful upskilling. 80% of engineering workforce needs reskilling through 2027. Workers with AI skills command 56% wage premiums.",
+      "source": {
+        "name": "World Economic Forum, McKinsey, IBM",
+        "url": "https://www.weforum.org/stories/2025/01/ai-and-beyond-how-every-career-can-navigate-the-new-tech-landscape/",
+        "type": "industry_report",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Massive skills gap creating two-tier labor market based on AI literacy",
+      "significance": 5,
+      "significance_reason": "89% recognize need but only 6% acting - creates existential crisis for unprepared workers and organizations",
+      "potential_impact": {
+        "short_term": "Wage gap widens to 60%+ by late 2026",
+        "mid_term": "AI literacy becomes baseline requirement by 2028",
+        "long_term": "Complete labor market restructuring by 2030"
+      },
+      "actors": [
+        {"name": "World Economic Forum", "type": "organization", "role": "research"},
+        {"name": "McKinsey", "type": "organization", "role": "analysis"},
+        {"name": "IBM", "type": "company", "role": "data provider"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["AI skills", "workforce development", "reskilling", "future of work"],
+      "raw_id": "SIG-MW-2026-0112-015"
+    },
+    {
+      "id": "SIG-2026-0112-016",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "Gen Z Comprises 27% of Workforce in 2026, Demands Flexibility",
+      "description": "Gen Z now 27% of workforce, will reach 30% by 2030. 72% most likely to leave jobs without flexible work policies. Half refuse jobs misaligned with social/environmental values.",
+      "source": {
+        "name": "Vistage Research, Fast Company",
+        "url": "https://www.vistage.com/research-center/business-financials/economic-trends/20251006-social-and-workforce-trends-for-2026-and-beyond/",
+        "type": "market_research",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Values-driven workforce reshaping employer-employee power dynamics",
+      "significance": 4,
+      "significance_reason": "Gen Z reaching critical mass (27%) to dictate workplace norms - flexibility and values non-negotiable",
+      "potential_impact": {
+        "short_term": "Remote work policies become permanent in 2026",
+        "mid_term": "ESG performance becomes recruiting requirement by 2028",
+        "long_term": "Complete workplace culture transformation by 2030"
+      },
+      "actors": [
+        {"name": "Gen Z workers", "type": "demographic", "role": "workforce segment"},
+        {"name": "employers", "type": "organization", "role": "adapting to demands"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-07",
+      "confidence": 0.88,
+      "tags": ["Gen Z", "workforce trends", "flexibility", "values-driven work"],
+      "raw_id": "SIG-MW-2026-0112-016"
+    },
+    {
+      "id": "SIG-2026-0112-017",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological"]
+      },
+      "title": "Generation Alpha Dominates Social Media with 64% Daily YouTube/TikTok Use",
+      "description": "64% of US children aged 8-12 use YouTube or TikTok daily. Nearly two-thirds ages 8-10 spend up to 4 hours daily on social media. 38% create content rather than just consume.",
+      "source": {
+        "name": "SQ Magazine, Youflu",
+        "url": "https://sqmagazine.co.uk/gen-alpha-social-media-statistics/",
+        "type": "market_research",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "First true digital-native generation reshaping content consumption and creation patterns",
+      "significance": 4,
+      "significance_reason": "Gen Alpha (8-12) showing unprecedented social media engagement - 38% are creators, signaling paradigm shift",
+      "potential_impact": {
+        "short_term": "Youth mental health crisis accelerates in 2026",
+        "mid_term": "Traditional media becomes obsolete for Gen Alpha by 2028",
+        "long_term": "Creator economy becomes primary career path by 2030"
+      },
+      "actors": [
+        {"name": "Generation Alpha", "type": "demographic", "role": "digital natives"},
+        {"name": "YouTube", "type": "company", "role": "platform"},
+        {"name": "TikTok", "type": "company", "role": "platform"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["Generation Alpha", "social media", "youth trends", "content creation"],
+      "raw_id": "SIG-MW-2026-0112-017"
+    },
+    {
+      "id": "SIG-2026-0112-018",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Social"]
+      },
+      "title": "Generation Alpha's Economic Impact to Reach $5.46 Trillion by 2029",
+      "description": "Gen Alpha's direct and indirect economic impact projected at $5.46 trillion globally by 2029, driven by household influence and early brand loyalty.",
+      "source": {
+        "name": "DemandSage",
+        "url": "https://www.demandsage.com/generation-alpha-stats/",
+        "type": "market_research",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Youngest generation wielding massive economic influence despite not yet entering workforce",
+      "significance": 4,
+      "significance_reason": "$5.46T impact by 2029 - Gen Alpha influencing household purchases at unprecedented scale",
+      "potential_impact": {
+        "short_term": "Brands targeting Gen Alpha in 2026",
+        "mid_term": "Products designed for Gen Alpha preferences by 2028",
+        "long_term": "Gen Alpha enters workforce with $5T+ spending power by 2035"
+      },
+      "actors": [
+        {"name": "Generation Alpha", "type": "demographic", "role": "economic influencers"},
+        {"name": "consumer brands", "type": "industry", "role": "targeting strategy"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.85,
+      "tags": ["Generation Alpha", "consumer behavior", "economic impact"],
+      "raw_id": "SIG-MW-2026-0112-018"
+    },
+    {
+      "id": "SIG-2026-0112-019",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "Five Generations Working Side-by-Side for First Time Ever",
+      "description": "For first time in history, five generations working together. Millennials and Gen Z will comprise 74% of global workforce by 2030. Multigenerational workforce management critical.",
+      "source": {
+        "name": "Employer Branding News, Deloitte",
+        "url": "https://employerbranding.news/generations-in-the-workplace/",
+        "type": "industry_analysis",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Unprecedented generational diversity creating management challenges and opportunities",
+      "significance": 3,
+      "significance_reason": "Historic first - five generations working simultaneously requires new management paradigms",
+      "potential_impact": {
+        "short_term": "Increased intergenerational conflict in 2026",
+        "mid_term": "New management practices emerge by 2028",
+        "long_term": "Age-diverse teams become competitive advantage by 2030"
+      },
+      "actors": [
+        {"name": "multigenerational workforce", "type": "demographic", "role": "employees"},
+        {"name": "HR departments", "type": "organization", "role": "managing diversity"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-07",
+      "confidence": 0.85,
+      "tags": ["multigenerational workforce", "demographics", "workplace diversity"],
+      "raw_id": "SIG-MW-2026-0112-019"
+    },
+    {
+      "id": "SIG-2026-0112-020",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "Remote Work Tensions Escalate with 'Empowered Non-Compliers'",
+      "description": "30% of organizations plan to reduce/eliminate remote work in 2026. High-value employees ignore office mandates. 70% prefer hybrid/remote, 85% say remote work is #1 job application factor.",
+      "source": {
+        "name": "FlexJobs, Fortune",
+        "url": "https://fortune.com/2026/01/03/remote-work-return-to-office-empowered-non-complier-hybrid-future/",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Power struggle over workplace location reaching breaking point",
+      "significance": 4,
+      "significance_reason": "High-value employees openly defying return-to-office mandates - signals fundamental power shift",
+      "potential_impact": {
+        "short_term": "Mass resignations from RTO mandates in 2026",
+        "mid_term": "Remote-first companies win talent war by 2028",
+        "long_term": "Office real estate fundamentally restructured by 2030"
+      },
+      "actors": [
+        {"name": "high-value employees", "type": "demographic", "role": "resisting RTO"},
+        {"name": "employers", "type": "organization", "role": "enforcing mandates"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.88,
+      "tags": ["remote work", "hybrid work", "return to office", "workplace flexibility"],
+      "raw_id": "SIG-MW-2026-0112-020"
+    },
+    {
+      "id": "SIG-2026-0112-021",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "U.S. Labor Participation Rate to Dip to 60.4% by 2030",
+      "description": "U.S. labor participation rate projected to decline from 61.7% (2020) to 60.4% by 2030. Reflects aging population and demographic shifts impacting workforce availability.",
+      "source": {
+        "name": "H3 HR Advisors, BLS",
+        "url": "https://www.h3hr.com/labor-market-focus-how-shifting-demographics-are-changing-the-workforce/",
+        "type": "government_data",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Shrinking workforce accelerating automation adoption",
+      "significance": 3,
+      "significance_reason": "1.3 percentage point decline by 2030 - signals structural labor shortage necessitating automation",
+      "potential_impact": {
+        "short_term": "Wage pressure increases in 2026",
+        "mid_term": "Automation adoption accelerates by 2028",
+        "long_term": "Immigration policy becomes economic necessity by 2030"
+      },
+      "actors": [
+        {"name": "U.S. Bureau of Labor Statistics", "type": "government", "role": "data provider"},
+        {"name": "employers", "type": "organization", "role": "facing labor shortage"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-07",
+      "confidence": 0.85,
+      "tags": ["labor market", "demographics", "workforce participation"],
+      "raw_id": "SIG-MW-2026-0112-021"
+    },
+    {
+      "id": "SIG-2026-0112-022",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic", "Political"]
+      },
+      "title": "Japan's Fertility Rate Hits Historic Low of 1.15 in 2024",
+      "description": "Japan's total fertility rate dropped to 1.15 in 2024, lowest ever recorded. Median age 50.8 years. Only 758,631 babies born in 2023, lowest since 1899. Population projected at 87M by 2070.",
+      "source": {
+        "name": "The Diplomat, NCBI",
+        "url": "https://thediplomat.com/2025/12/japans-grim-demographic-reality/",
+        "type": "government_data",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Demographic collapse signaling economic and social system failure",
+      "significance": 5,
+      "significance_reason": "Fertility rate 1.15 - catastrophically below 2.1 replacement rate, population halving by 2070",
+      "potential_impact": {
+        "short_term": "Economic contraction begins in 2026",
+        "mid_term": "Social safety net collapses by 2028",
+        "long_term": "Japan becomes first advanced nation to face population crisis by 2030"
+      },
+      "actors": [
+        {"name": "Japanese government", "type": "government", "role": "policy response"},
+        {"name": "Japanese population", "type": "demographic", "role": "declining"}
+      ],
+      "status": "mature",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["demographics", "fertility crisis", "Japan", "aging society"],
+      "raw_id": "SIG-MW-2026-0112-022"
+    },
+    {
+      "id": "SIG-2026-0112-023",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic", "Political"]
+      },
+      "title": "Europe Projected to Lose 7% Population by 2050",
+      "description": "Europe facing 7% population decrease 2022-2050. Fertility rates at record lows even in family-friendly Nordic countries (Finland: 1.25 in 2024). Two-thirds of global population below 2.1 replacement rate.",
+      "source": {
+        "name": "NCBI, CEPR",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10615022/",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Global demographic transition reaching crisis point in developed nations",
+      "significance": 5,
+      "significance_reason": "7% population decline across Europe by 2050 - unprecedented peacetime demographic collapse",
+      "potential_impact": {
+        "short_term": "Economic growth slows in Europe in 2026",
+        "mid_term": "Welfare state sustainability crisis by 2028",
+        "long_term": "Mass immigration becomes survival strategy by 2030"
+      },
+      "actors": [
+        {"name": "European governments", "type": "government", "role": "policy response"},
+        {"name": "European population", "type": "demographic", "role": "declining"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["demographics", "Europe", "fertility crisis", "population decline"],
+      "raw_id": "SIG-MW-2026-0112-023"
+    },
+    {
+      "id": "SIG-2026-0112-024",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual"]
+      },
+      "title": "Gen Z Intentional Living and Emotional Grounding Movement",
+      "description": "Major Gen Z theme for 2026: intentional living and emotional grounding. Gravitating toward slower, meaningful experiences providing emotional comfort and stability. Reaction to fast-paced digital culture.",
+      "source": {
+        "name": "Futurist Speakers",
+        "url": "https://www.futuristsspeakers.com/gen-z-trends-2026-how-younger-generations-work-live-and-play-is-rapidly-changing/",
+        "type": "trend_analysis",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Gen Z rejecting always-on digital culture in favor of intentional presence",
+      "significance": 3,
+      "significance_reason": "Cultural shift toward intentionality among digital natives - signals backlash against tech acceleration",
+      "potential_impact": {
+        "short_term": "Slow living trend gains momentum in 2026",
+        "mid_term": "Digital detox becomes mainstream by 2028",
+        "long_term": "Work-life integration fundamentally rebalanced by 2030"
+      },
+      "actors": [
+        {"name": "Gen Z", "type": "demographic", "role": "cultural shift leaders"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.80,
+      "tags": ["Gen Z", "intentional living", "lifestyle trends", "wellbeing"],
+      "raw_id": "SIG-MW-2026-0112-024"
+    },
+    {
+      "id": "SIG-2026-0112-025",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "IMF Projects Global Growth at 3.0-3.1% for 2025-2026",
+      "description": "IMF upward revision to 3.0% (2025) and 3.1% (2026) global growth. OECD expects 2.9-3.1%. World Bank more cautious at 2.3% (2025) with tepid 2026-27 recovery due to trade barriers.",
+      "source": {
+        "name": "IMF WEO, OECD, World Bank",
+        "url": "https://www.imf.org/en/publications/weo/issues/2025/07/29/world-economic-outlook-update-july-2025",
+        "type": "international_organization",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Modest global growth amid structural headwinds - no acceleration expected",
+      "significance": 4,
+      "significance_reason": "Consensus around 3% growth - signals new normal of slower growth versus pre-pandemic era",
+      "potential_impact": {
+        "short_term": "Central banks maintain cautious stance in 2026",
+        "mid_term": "Structural reform pressure increases by 2028",
+        "long_term": "Productivity growth becomes critical by 2030"
+      },
+      "actors": [
+        {"name": "IMF", "type": "organization", "role": "forecast provider"},
+        {"name": "OECD", "type": "organization", "role": "forecast provider"},
+        {"name": "World Bank", "type": "organization", "role": "forecast provider"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["global growth", "IMF", "economic forecast", "GDP"],
+      "raw_id": "SIG-MW-2026-0112-025"
+    },
+    {
+      "id": "SIG-2026-0112-026",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "G20 Inflation Expected to Fall from 3.4% to 2.9% in 2026",
+      "description": "OECD reports G20 headline inflation declining from 3.4% (2025) to 2.9% (2026). Core inflation in advanced G20 economies from 2.6% to 2.5%. Most approaching central bank targets.",
+      "source": {
+        "name": "OECD, Deloitte",
+        "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+        "type": "international_organization",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Inflation normalization enabling central bank policy flexibility",
+      "significance": 4,
+      "significance_reason": "Approaching central bank targets - signals end of inflation crisis and potential rate cuts",
+      "potential_impact": {
+        "short_term": "Rate cuts begin in 2026",
+        "mid_term": "Credit conditions ease by 2028",
+        "long_term": "New monetary policy framework by 2030"
+      },
+      "actors": [
+        {"name": "OECD", "type": "organization", "role": "analysis provider"},
+        {"name": "central banks", "type": "government", "role": "policy setters"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["inflation", "monetary policy", "G20", "central banks"],
+      "raw_id": "SIG-MW-2026-0112-026"
+    },
+    {
+      "id": "SIG-2026-0112-027",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Goldman Sachs Forecasts 'Sturdy' 2.8% Global Growth in 2026",
+      "description": "Goldman Sachs Research projects sturdy global growth of 2.8% in 2026, balancing optimism with persistent uncertainties from trade tensions and geopolitical factors.",
+      "source": {
+        "name": "Goldman Sachs",
+        "url": "https://www.goldmansachs.com/insights/articles/the-global-economy-forecast-to-post-sturdy-growth-in-2026",
+        "type": "financial_institution",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Financial sector consensus on moderate growth trajectory",
+      "significance": 3,
+      "significance_reason": "Goldman's 2.8% aligns with multilateral forecasts - confirms moderate growth consensus",
+      "potential_impact": {
+        "short_term": "Markets price in modest growth in 2026",
+        "mid_term": "Corporate investment remains cautious through 2028",
+        "long_term": "Growth acceleration unlikely before 2030"
+      },
+      "actors": [
+        {"name": "Goldman Sachs", "type": "company", "role": "forecaster"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.85,
+      "tags": ["economic forecast", "Goldman Sachs", "global growth"],
+      "raw_id": "SIG-MW-2026-0112-027"
+    },
+    {
+      "id": "SIG-2026-0112-028",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "Stablecoin Regulation Implementation Targeted for 2026",
+      "description": "Full stablecoin regulation implementation targeted 2026. GENIUS Act rollout accelerating bank/enterprise adoption. Regulators must finalize rules by July 18, 2026. Includes issuer licensing and rehypothecation prohibitions.",
+      "source": {
+        "name": "Yahoo Finance, Latham & Watkins",
+        "url": "https://finance.yahoo.com/news/top-us-crypto-bills-watch-100215687.html",
+        "type": "regulatory",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Crypto regulation clarity enabling institutional adoption",
+      "significance": 4,
+      "significance_reason": "Hard deadline July 18, 2026 for stablecoin rules - creates regulatory certainty for crypto",
+      "potential_impact": {
+        "short_term": "Regulatory clarity by July 2026",
+        "mid_term": "Bank-issued stablecoins launch by 2028",
+        "long_term": "Stablecoins become standard payment rail by 2030"
+      },
+      "actors": [
+        {"name": "U.S. regulators", "type": "government", "role": "rule makers"},
+        {"name": "banks", "type": "industry", "role": "stablecoin issuers"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-09",
+      "confidence": 0.88,
+      "tags": ["cryptocurrency", "stablecoin", "regulation", "GENIUS Act"],
+      "raw_id": "SIG-MW-2026-0112-028"
+    },
+    {
+      "id": "SIG-2026-0112-029",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "CFTC 'Crypto Sprint' to Complete by August 2026",
+      "description": "CFTC under Trump administration wrapping up crypto sprint by August 2026. Focus on spot crypto trading, tokenized collateral, blockchain integration. Bitcoin and Ethereum primarily under CFTC as commodities.",
+      "source": {
+        "name": "CCN, Latham & Watkins",
+        "url": "https://www.ccn.com/news/crypto/top-us-crypto-bills-watch-2026-market-structure-stablecoins-more/",
+        "type": "regulatory",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Crypto regulatory framework completion enabling market maturation",
+      "significance": 4,
+      "significance_reason": "August 2026 deadline for CFTC crypto framework - creates legal certainty for crypto markets",
+      "potential_impact": {
+        "short_term": "Spot Bitcoin ETF expansion in 2026",
+        "mid_term": "Crypto derivatives market matures by 2028",
+        "long_term": "Crypto becomes standard asset class by 2030"
+      },
+      "actors": [
+        {"name": "CFTC", "type": "government", "role": "commodities regulator"},
+        {"name": "crypto exchanges", "type": "industry", "role": "regulated entities"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-09",
+      "confidence": 0.85,
+      "tags": ["cryptocurrency", "CFTC", "regulation", "Bitcoin"],
+      "raw_id": "SIG-MW-2026-0112-029"
+    },
+    {
+      "id": "SIG-2026-0112-030",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "States Exploring Bitcoin Reserves and Tax Exemptions",
+      "description": "Texas, Arizona, New Hampshire exploring Bitcoin reserves and tax exemptions. Arizona proposals could reach voter approval November 2026. New Hampshire planning direct BTC treasury purchases.",
+      "source": {
+        "name": "CCN",
+        "url": "https://www.ccn.com/news/crypto/top-us-crypto-bills-watch-2026-market-structure-stablecoins-more/",
+        "type": "government",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "State-level Bitcoin adoption signaling cryptocurrency normalization",
+      "significance": 3,
+      "significance_reason": "States considering Bitcoin reserves - represents institutional acceptance at government level",
+      "potential_impact": {
+        "short_term": "State Bitcoin reserves begin in 2026",
+        "mid_term": "Multiple states adopt crypto-friendly policies by 2028",
+        "long_term": "Federal Bitcoin reserve follows by 2030"
+      },
+      "actors": [
+        {"name": "Texas", "type": "government", "role": "policy innovator"},
+        {"name": "Arizona", "type": "government", "role": "voter referendum"},
+        {"name": "New Hampshire", "type": "government", "role": "treasury purchaser"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-09",
+      "confidence": 0.80,
+      "tags": ["Bitcoin", "state policy", "cryptocurrency", "treasury reserves"],
+      "raw_id": "SIG-MW-2026-0112-030"
+    },
+    {
+      "id": "SIG-2026-0112-031",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Social", "Technological"]
+      },
+      "title": "Job Disruption to Affect 22% of Jobs by 2030, Net Gain of 78M Roles",
+      "description": "By 2030, 22% of jobs disrupted: 170M new roles created, 92M displaced, yielding net gain of 78M positions. Workers with AI skills earn up to 56% more. 59% of global workforce needs training.",
+      "source": {
+        "name": "World Economic Forum",
+        "url": "https://www.weforum.org/stories/2025/01/ai-and-beyond-how-every-career-can-navigate-the-new-tech-landscape/",
+        "type": "international_organization",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Largest workforce transformation since Industrial Revolution",
+      "significance": 5,
+      "significance_reason": "22% job disruption by 2030 - 92M displaced but 170M created, massive transition challenge",
+      "potential_impact": {
+        "short_term": "Reskilling becomes urgent priority in 2026",
+        "mid_term": "Labor market bifurcates by 2028 - AI-skilled vs. unskilled",
+        "long_term": "Complete workforce restructuring by 2030"
+      },
+      "actors": [
+        {"name": "World Economic Forum", "type": "organization", "role": "researcher"},
+        {"name": "global workforce", "type": "demographic", "role": "undergoing transition"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["future of work", "job displacement", "AI impact", "workforce transformation"],
+      "raw_id": "SIG-MW-2026-0112-031"
+    },
+    {
+      "id": "SIG-2026-0112-032",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "U.S. Organizations Project 3.6% Mean Salary Increases for 2026",
+      "description": "U.S. organizations projecting 3.6% mean salary increase budgets for 2026, signaling cautious economic environment while attempting to retain talent amid tight labor market.",
+      "source": {
+        "name": "Vena, Robert Half",
+        "url": "https://www.venasolutions.com/blog/remote-work-statistics",
+        "type": "market_research",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Wage growth moderating to sustainable levels",
+      "significance": 2,
+      "significance_reason": "3.6% increase modest but positive - signals labor market normalization",
+      "potential_impact": {
+        "short_term": "Compensation adjustments in 2026",
+        "mid_term": "Wage pressures ease by 2028",
+        "long_term": "Stable wage growth by 2030"
+      },
+      "actors": [
+        {"name": "U.S. employers", "type": "organization", "role": "compensation setters"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.85,
+      "tags": ["salaries", "compensation", "HR trends"],
+      "raw_id": "SIG-MW-2026-0112-032"
+    },
+    {
+      "id": "SIG-2026-0112-033",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Economic"]
+      },
+      "title": "Science's 2025 Breakthrough: Unstoppable Rise of Renewable Energy",
+      "description": "Science magazine names renewable energy growth as 2025 Breakthrough of Year. Renewables surpassed coal globally. Solar/wind covered entire global electricity use increase Jan-June 2025. Over 800 GW installed.",
+      "source": {
+        "name": "Science Magazine",
+        "url": "https://www.science.org/content/article/breakthrough-2025",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Renewable energy reaching tipping point of irreversibility",
+      "significance": 5,
+      "significance_reason": "Science's Breakthrough of Year - renewables now unstoppable, covering all new electricity demand",
+      "potential_impact": {
+        "short_term": "Renewable installations accelerate in 2026",
+        "mid_term": "Coal phase-out accelerates by 2028",
+        "long_term": "80%+ renewable electricity globally by 2030"
+      },
+      "actors": [
+        {"name": "Science Magazine", "type": "publisher", "role": "recognition authority"},
+        {"name": "renewable energy industry", "type": "industry", "role": "technology deployment"}
+      ],
+      "status": "mature",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["renewable energy", "solar", "wind", "energy transition"],
+      "raw_id": "SIG-MW-2026-0112-033"
+    },
+    {
+      "id": "SIG-2026-0112-034",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Economic"]
+      },
+      "title": "Global Storage Installations to Exceed 100GW in 2026",
+      "description": "Annual global energy storage installations expected to exceed 100GW in 2026 for first time. Equipment prices now $117/kWh, less than one-third of three years ago. Critical for grid stability.",
+      "source": {
+        "name": "BloombergNEF",
+        "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+        "type": "industry_report",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Energy storage breakthrough enabling 24/7 renewable grid",
+      "significance": 4,
+      "significance_reason": "100GW storage milestone with 70% cost decline - removes final barrier to renewable dominance",
+      "potential_impact": {
+        "short_term": "100GW+ storage deployed in 2026",
+        "mid_term": "24/7 renewable grids emerge by 2028",
+        "long_term": "Fossil fuel baseload obsolete by 2030"
+      },
+      "actors": [
+        {"name": "BloombergNEF", "type": "organization", "role": "market analyst"},
+        {"name": "battery manufacturers", "type": "industry", "role": "technology providers"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["energy storage", "batteries", "grid infrastructure", "renewable energy"],
+      "raw_id": "SIG-MW-2026-0112-034"
+    },
+    {
+      "id": "SIG-2026-0112-035",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Economic"]
+      },
+      "title": "EV Sales Over 25% of Global Car Sales, Forecasted 40% by 2030",
+      "description": "Electric vehicle sales now exceed quarter of global car sales, forecasted to rise to 40% by 2030. Driven by falling battery prices and better vehicle options. Battery costs enabling mass adoption.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "EVs crossing critical mass threshold (25%) for market dominance",
+      "significance": 4,
+      "significance_reason": "25% market share passed - signals EV transition approaching irreversibility",
+      "potential_impact": {
+        "short_term": "EV share reaches 30% by late 2026",
+        "mid_term": "Majority of new car sales EV by 2028",
+        "long_term": "ICE vehicles become niche by 2030"
+      },
+      "actors": [
+        {"name": "EV manufacturers", "type": "industry", "role": "vehicle providers"},
+        {"name": "battery industry", "type": "industry", "role": "enabling technology"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["electric vehicles", "transportation", "batteries", "climate"],
+      "raw_id": "SIG-MW-2026-0112-035"
+    },
+    {
+      "id": "SIG-2026-0112-036",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Economic"]
+      },
+      "title": "EU Battery Carbon Footprint Labeling Mandatory by August 2026",
+      "description": "Battery carbon footprint labeling becomes mandatory by August 18, 2026 for applicable batteries in EU. From 2027, Commission will set maximum carbon footprint limits. Major supply chain impact.",
+      "source": {
+        "name": "RESOURCE Platform",
+        "url": "https://re-source.tech/battery-legislation/battery-3/",
+        "type": "regulatory",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Carbon footprint disclosure becoming standard business practice",
+      "significance": 4,
+      "significance_reason": "Mandatory labeling August 2026 - first comprehensive battery carbon regulation globally",
+      "potential_impact": {
+        "short_term": "Supply chain transparency increases in 2026",
+        "mid_term": "Carbon footprint limits reshape battery industry by 2027",
+        "long_term": "Global battery supply chain decarbonized by 2030"
+      },
+      "actors": [
+        {"name": "European Commission", "type": "government", "role": "regulator"},
+        {"name": "battery manufacturers", "type": "industry", "role": "compliance required"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["battery regulation", "carbon footprint", "EU policy", "supply chain"],
+      "raw_id": "SIG-MW-2026-0112-036"
+    },
+    {
+      "id": "SIG-2026-0112-037",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Economic"]
+      },
+      "title": "China Expands Carbon Market, Plans Absolute Emissions Caps",
+      "description": "China expanding scope of carbon market and planning absolute emissions caps. Ramping up hydrogen efforts with new policies. Japan's GX-ETS carbon market launches 2026.",
+      "source": {
+        "name": "Bloomberg, Claims Journal",
+        "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+        "type": "news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Asia's carbon markets maturing into effective policy tools",
+      "significance": 4,
+      "significance_reason": "China moving to absolute caps - signals serious emissions reduction commitment from world's largest emitter",
+      "potential_impact": {
+        "short_term": "China carbon market expansion in 2026",
+        "mid_term": "Absolute emissions caps drive industrial transformation by 2028",
+        "long_term": "China achieves peak emissions by 2030"
+      },
+      "actors": [
+        {"name": "Chinese government", "type": "government", "role": "policy setter"},
+        {"name": "Japan", "type": "government", "role": "carbon market launcher"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.88,
+      "tags": ["carbon market", "China", "emissions trading", "climate policy"],
+      "raw_id": "SIG-MW-2026-0112-037"
+    },
+    {
+      "id": "SIG-2026-0112-038",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Economic"]
+      },
+      "title": "Green Hydrogen Projects Coming Online in 2026",
+      "description": "Multiple green hydrogen projects launching 2026: Uniper Dutch project, Air Products NEOM Saudi Arabia complex, Uruguay Kahirós plant. Singapore 600 MW hydrogen-ready powerplant first half 2026.",
+      "source": {
+        "name": "Fuel Cells Works, IAGE",
+        "url": "https://fuelcellsworks.com/2026/01/09/hydrogen/uniper-set-to-approve-first-phase-of-dutch-hydrogen-project-in-2026-eyes-ammonia-deal-with-india",
+        "type": "industry_news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Green hydrogen transitioning from pilots to commercial scale",
+      "significance": 4,
+      "significance_reason": "Multiple large-scale projects launching 2026 - signals green hydrogen commercialization",
+      "potential_impact": {
+        "short_term": "First commercial green hydrogen plants in 2026",
+        "mid_term": "Green hydrogen cost-competitive by 2028",
+        "long_term": "Hydrogen economy scales globally by 2030"
+      },
+      "actors": [
+        {"name": "Uniper", "type": "company", "role": "project developer"},
+        {"name": "Air Products", "type": "company", "role": "NEOM complex"},
+        {"name": "Uruguay", "type": "government", "role": "Kahirós plant host"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-09",
+      "confidence": 0.88,
+      "tags": ["green hydrogen", "clean energy", "energy transition", "hydrogen economy"],
+      "raw_id": "SIG-MW-2026-0112-038"
+    },
+    {
+      "id": "SIG-2026-0112-039",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Economic"]
+      },
+      "title": "4.5 Terawatts of New Wind/Solar Expected Over Next Five Years",
+      "description": "Globally, 4.5 terawatts of new wind and solar installations expected over next five years, 67% increase over preceding five-year period. Installations to be flat in 2026, then grow modestly to 2030.",
+      "source": {
+        "name": "BloombergNEF",
+        "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+        "type": "industry_report",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Renewable capacity additions accelerating despite policy fragmentation",
+      "significance": 3,
+      "significance_reason": "4.5TW over 5 years - 67% acceleration signals sustained renewable growth momentum",
+      "potential_impact": {
+        "short_term": "Flat installations in 2026",
+        "mid_term": "Acceleration resumes 2027-2030",
+        "long_term": "Renewable capacity doubles by 2030"
+      },
+      "actors": [
+        {"name": "BloombergNEF", "type": "organization", "role": "forecaster"},
+        {"name": "renewable energy developers", "type": "industry", "role": "capacity builders"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.85,
+      "tags": ["renewable energy", "solar", "wind", "capacity additions"],
+      "raw_id": "SIG-MW-2026-0112-039"
+    },
+    {
+      "id": "SIG-2026-0112-040",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "Eurasia Group Names U.S. as Principal Source of Global Risk in 2026",
+      "description": "Eurasia Group identifies United States itself as principal source of global risk in 2026. Trump tariff policies, AI race with China, weakened global leadership cited as major concerns.",
+      "source": {
+        "name": "Eurasia Group Top Risks 2026",
+        "url": "https://www.eurasiagroup.net/issues/top-risks-2026",
+        "type": "think_tank",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "U.S. transitioning from stability provider to instability source",
+      "significance": 5,
+      "significance_reason": "Leading geopolitical risk firm names U.S. as top risk - unprecedented shift in global power dynamics",
+      "potential_impact": {
+        "short_term": "Global uncertainty increases in 2026",
+        "mid_term": "Alternative global governance structures emerge by 2028",
+        "long_term": "Multipolar world order established by 2030"
+      },
+      "actors": [
+        {"name": "Eurasia Group", "type": "organization", "role": "risk assessor"},
+        {"name": "United States", "type": "government", "role": "risk source"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["geopolitical risk", "Trump", "global stability", "U.S. policy"],
+      "raw_id": "SIG-MW-2026-0112-040"
+    },
+    {
+      "id": "SIG-2026-0112-041",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "Europe Facing 'Intensifying Pressure Campaign' from Trump Administration",
+      "description": "European Commission President's tariff deal stability described as 'pipe dream.' Europe likely facing intensifying pressure campaign from Trump in 2026. Baseline 10% tariff, protective and reciprocal tariffs announced.",
+      "source": {
+        "name": "German Marshall Fund, Bruegel",
+        "url": "https://www.gmfus.org/news/watching-china-europe-january-2026",
+        "type": "think_tank",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Transatlantic alliance under unprecedented stress",
+      "significance": 4,
+      "significance_reason": "Trump tariff campaign targeting Europe - threatens 75-year transatlantic partnership",
+      "potential_impact": {
+        "short_term": "Trade tensions escalate in 2026",
+        "mid_term": "Europe pursues strategic autonomy by 2028",
+        "long_term": "NATO weakens, European defense integration by 2030"
+      },
+      "actors": [
+        {"name": "Trump administration", "type": "government", "role": "pressure campaign"},
+        {"name": "European Commission", "type": "government", "role": "defensive response"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-09",
+      "confidence": 0.88,
+      "tags": ["trade war", "tariffs", "US-Europe relations", "Trump"],
+      "raw_id": "SIG-MW-2026-0112-041"
+    },
+    {
+      "id": "SIG-2026-0112-042",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic", "Environmental"]
+      },
+      "title": "China's Critical Minerals Dominance Puts World on Notice",
+      "description": "China's near-total control over critical minerals and rare earth elements, with demonstrated willingness to weaponize dominance. Beijing restricting global access to minerals and processing technology.",
+      "source": {
+        "name": "CFR, Wellington",
+        "url": "https://www.wellington.com/en-us/institutional/insights/geopolitics-in-2026-risks-and-opportunities-were-watching",
+        "type": "think_tank",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Resource nationalism reshaping global supply chains",
+      "significance": 5,
+      "significance_reason": "China controls critical minerals for clean energy transition - creates systemic vulnerability for West",
+      "potential_impact": {
+        "short_term": "Supply chain anxiety increases in 2026",
+        "mid_term": "Western mining investment surge by 2028",
+        "long_term": "Diversified critical mineral supply chains by 2030"
+      },
+      "actors": [
+        {"name": "China", "type": "government", "role": "dominant supplier"},
+        {"name": "Western nations", "type": "government", "role": "dependent consumers"}
+      ],
+      "status": "mature",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["critical minerals", "China", "supply chain", "geopolitics"],
+      "raw_id": "SIG-MW-2026-0112-042"
+    },
+    {
+      "id": "SIG-2026-0112-043",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological", "Political"]
+      },
+      "title": "62% of Investors Worry About AI-Driven Market Concentration Risk",
+      "description": "Institutional investors cite AI-driven disruption as biggest risk for 2026. 62% worry significant AI technological development could bring concentration risk to equity markets. AI race raises geopolitical stakes.",
+      "source": {
+        "name": "401k Specialist Magazine",
+        "url": "https://401kspecialistmag.com/institutional-investors-brace-for-2026-market-pullback-amid-rising-geopolitical-ai-risks/",
+        "type": "financial_news",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "AI driving unprecedented market concentration concerns",
+      "significance": 4,
+      "significance_reason": "62% of institutional investors worried - signals AI creating winner-take-all market dynamics",
+      "potential_impact": {
+        "short_term": "AI stock concentration increases in 2026",
+        "mid_term": "Antitrust concerns rise by 2028",
+        "long_term": "Market structure fundamentally reshaped by 2030"
+      },
+      "actors": [
+        {"name": "institutional investors", "type": "industry", "role": "risk assessors"},
+        {"name": "AI companies", "type": "industry", "role": "concentration drivers"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.85,
+      "tags": ["AI risk", "financial markets", "concentration", "investment"],
+      "raw_id": "SIG-MW-2026-0112-043"
+    },
+    {
+      "id": "SIG-2026-0112-044",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "Trump Administration Deploys Tariffs as Bargaining Leverage Tool",
+      "description": "Trade friction under Trump becoming more targeted and sector-specific. Deploying tariffs to drive bargaining leverage, reshape investment flows, punish or privilege countries. Geopolitical tensions driving tariff use.",
+      "source": {
+        "name": "Rabobank, Paul Hastings",
+        "url": "https://www.rabobank.com/knowledge/q011509552-global-outlook-2026-new-rules-different-economy",
+        "type": "financial_analysis",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Trade policy weaponized as geopolitical tool",
+      "significance": 4,
+      "significance_reason": "Tariffs used strategically rather than economically - marks shift from trade to geopolitical competition",
+      "potential_impact": {
+        "short_term": "Targeted tariff escalations in 2026",
+        "mid_term": "Global supply chains fragment by 2028",
+        "long_term": "Competing economic blocs emerge by 2030"
+      },
+      "actors": [
+        {"name": "Trump administration", "type": "government", "role": "tariff deployer"},
+        {"name": "targeted countries", "type": "government", "role": "responding to pressure"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.88,
+      "tags": ["tariffs", "trade policy", "Trump", "economic statecraft"],
+      "raw_id": "SIG-MW-2026-0112-044"
+    },
+    {
+      "id": "SIG-2026-0112-045",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Environmental"]
+      },
+      "title": "COP31 Climate Summit Scheduled November 9-20 in Türkiye",
+      "description": "COP31 scheduled November 9-20, 2026 in Antalya, Türkiye. Shared leadership model with Australia driving negotiations. Global Implementation Accelerator delivering report at COP31.",
+      "source": {
+        "name": "Sustainable Tech Partner",
+        "url": "https://sustainabletechpartner.com/news/cop31-united-nations-2026-climate-conference-updates/",
+        "type": "international_organization",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Climate diplomacy continuing despite geopolitical headwinds",
+      "significance": 3,
+      "significance_reason": "COP31 scheduled - represents continuity of climate process amid global tensions",
+      "potential_impact": {
+        "short_term": "COP31 negotiations in November 2026",
+        "mid_term": "Implementation focus intensifies by 2028",
+        "long_term": "2030 climate targets assessed"
+      },
+      "actors": [
+        {"name": "Türkiye", "type": "government", "role": "COP31 host"},
+        {"name": "Australia", "type": "government", "role": "co-leadership"},
+        {"name": "UN", "type": "organization", "role": "facilitator"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["COP31", "climate summit", "Türkiye", "climate policy"],
+      "raw_id": "SIG-MW-2026-0112-045"
+    },
+    {
+      "id": "SIG-2026-0112-046",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "WEF Global Cooperation Barometer Shows Multilateralism Weakening",
+      "description": "WEF Global Cooperation Barometer 2026 shows overall cooperation unchanged but composition shifting. Multilateralism metrics weakened most. Smaller, flexible arrangements improving in data flows, services trade.",
+      "source": {
+        "name": "World Economic Forum",
+        "url": "https://reports.weforum.org/docs/WEF_The_Global_Cooperation_Barometer_2026.pdf",
+        "type": "international_organization",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Global governance fragmenting into smaller coalitions",
+      "significance": 4,
+      "significance_reason": "Multilateralism weakening while bilateral/minilateral deals increase - signals governance transformation",
+      "potential_impact": {
+        "short_term": "Multilateral institutions lose influence in 2026",
+        "mid_term": "Regional blocs strengthen by 2028",
+        "long_term": "New global governance architecture by 2030"
+      },
+      "actors": [
+        {"name": "World Economic Forum", "type": "organization", "role": "cooperation tracker"},
+        {"name": "multilateral institutions", "type": "organization", "role": "declining influence"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.90,
+      "tags": ["multilateralism", "global cooperation", "geopolitics", "WEF"],
+      "raw_id": "SIG-MW-2026-0112-046"
+    },
+    {
+      "id": "SIG-2026-0112-047",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "title": "Emotional Fitness Practices Evolve Beyond Journaling Apps",
+      "description": "Mental wellness evolving beyond journaling apps. Emotional fitness with micro-therapy, mood-mapping, cognitive resilience training. Wellness studios offering 'emotional gyms' with somatic sessions, breathwork circuits.",
+      "source": {
+        "name": "Dr. Axe, Vice, Women's Health",
+        "url": "https://draxe.com/health/wellness-trends-2026/",
+        "type": "wellness_industry",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Emotional health becoming structured training discipline like physical fitness",
+      "significance": 3,
+      "significance_reason": "'Emotional gyms' emerging - signals formalization of emotional wellness into structured practice",
+      "potential_impact": {
+        "short_term": "Emotional fitness studios launch in 2026",
+        "mid_term": "Corporate emotional wellness programs by 2028",
+        "long_term": "Emotional intelligence becomes trained skill by 2030"
+      },
+      "actors": [
+        {"name": "wellness industry", "type": "industry", "role": "service providers"},
+        {"name": "consumers", "type": "demographic", "role": "emotional fitness seekers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.80,
+      "tags": ["emotional fitness", "mental health", "wellness", "breathwork"],
+      "raw_id": "SIG-MW-2026-0112-047"
+    },
+    {
+      "id": "SIG-2026-0112-048",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "title": "Vagus Nerve Stimulation Emerges as 2026 Wellness Protagonist",
+      "description": "Vagus nerve is 2026 wellness protagonist - communication highway between brain and body dictating calm vs. edgy states. Focus on stimulating vagus nerve to relieve stress, insomnia, digestion issues, chronic pain.",
+      "source": {
+        "name": "Good Housekeeping, Women's Health",
+        "url": "https://www.goodhousekeeping.com/uk/health/health-advice/a69806614/2026-health-wellness-trends/",
+        "type": "wellness_industry",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Science-backed nervous system regulation becoming mainstream wellness practice",
+      "significance": 3,
+      "significance_reason": "Vagus nerve emerging as wellness focus - bridges scientific understanding with holistic practice",
+      "potential_impact": {
+        "short_term": "Vagus nerve tools/practices proliferate in 2026",
+        "mid_term": "Nervous system regulation becomes standard by 2028",
+        "long_term": "Physiological wellness replaces symptom management by 2030"
+      },
+      "actors": [
+        {"name": "wellness practitioners", "type": "industry", "role": "technique providers"},
+        {"name": "consumers", "type": "demographic", "role": "vagus nerve stimulation adopters"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.75,
+      "tags": ["vagus nerve", "nervous system", "wellness", "stress management"],
+      "raw_id": "SIG-MW-2026-0112-048"
+    },
+    {
+      "id": "SIG-2026-0112-049",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": []
+      },
+      "title": "Return to Ancient Sensory Practices: Sound Baths, Moon Ceremonies",
+      "description": "Resurgence of ancient, sensory-focused practices: sound baths, astrology sessions, moon ceremonies, star bathing. Connection with nature and cosmos while cultivating emotional and spiritual equilibrium.",
+      "source": {
+        "name": "Simply The Best Magazine, Health Travel",
+        "url": "http://simplythebestmagazine.com/the-5-wellness-trends-set-to-define-2026/",
+        "type": "wellness_industry",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Modern society rediscovering pre-scientific wellness practices",
+      "significance": 2,
+      "significance_reason": "Ancient practices resurging - signals desire for meaning beyond scientific materialism",
+      "potential_impact": {
+        "short_term": "Sound bath/ceremony offerings increase in 2026",
+        "mid_term": "Mainstream wellness integrates ancient practices by 2028",
+        "long_term": "Holistic wellness paradigm replaces reductionist medicine by 2030"
+      },
+      "actors": [
+        {"name": "wellness practitioners", "type": "industry", "role": "ceremony facilitators"},
+        {"name": "spiritual seekers", "type": "demographic", "role": "practice adopters"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.70,
+      "tags": ["spirituality", "ancient practices", "sound healing", "nature connection"],
+      "raw_id": "SIG-MW-2026-0112-049"
+    },
+    {
+      "id": "SIG-2026-0112-050",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "title": "Wellness Shift from Hustle Culture to Sustainable Holistic Practices",
+      "description": "2026 wellness theme: shift from hustle culture and biohacking toward sustainable, holistic practices. Balance over optimization. Focus on balance, mindfulness, restoration, connection vs. perfection and extremes.",
+      "source": {
+        "name": "The Good Trade, Healf",
+        "url": "https://www.thegoodtrade.com/features/wellness-trends-2026/",
+        "type": "wellness_industry",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Cultural backlash against optimization mindset favoring wholeness",
+      "significance": 3,
+      "significance_reason": "Shift from optimization to balance - represents philosophical transformation in wellness approach",
+      "potential_impact": {
+        "short_term": "Holistic wellness gains traction in 2026",
+        "mid_term": "Hustle culture declines by 2028",
+        "long_term": "Balanced living becomes cultural norm by 2030"
+      },
+      "actors": [
+        {"name": "wellness influencers", "type": "individual", "role": "cultural shift leaders"},
+        {"name": "consumers", "type": "demographic", "role": "practice adopters"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.80,
+      "tags": ["wellness philosophy", "holistic health", "mindfulness", "balance"],
+      "raw_id": "SIG-MW-2026-0112-050"
+    },
+    {
+      "id": "SIG-2026-0112-051",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": []
+      },
+      "title": "Mindfulness Association January 2026 Calendar: Beginner's Mind Theme",
+      "description": "Mindfulness Association released January 2026 calendar centered on Beginner's Mind theme, inviting approach to familiar experiences with curiosity, openness, freshness. Contemplative practice focus.",
+      "source": {
+        "name": "Mindfulness Association",
+        "url": "https://www.mindfulnessassociation.net/latest-news/january-2026-mindfulness-calendar/",
+        "type": "spiritual_organization",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Mindfulness practices becoming institutionalized through organized calendars",
+      "significance": 2,
+      "significance_reason": "Formal mindfulness calendar - signals systematization of contemplative practice",
+      "potential_impact": {
+        "short_term": "Beginner's mind practice adoption in 2026",
+        "mid_term": "Mindfulness curricula formalized by 2028",
+        "long_term": "Contemplative practice mainstream by 2030"
+      },
+      "actors": [
+        {"name": "Mindfulness Association", "type": "organization", "role": "practice systematizer"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-09",
+      "confidence": 0.75,
+      "tags": ["mindfulness", "contemplative practice", "beginner's mind", "meditation"],
+      "raw_id": "SIG-MW-2026-0112-051"
+    },
+    {
+      "id": "SIG-2026-0112-052",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological"]
+      },
+      "title": "Neuro-Health Therapies and Brain-Training Programs in Wellness Resorts",
+      "description": "Wellness resorts incorporating brain-training programmes, neuro-health therapies, mindfulness workshops designed to enhance cognitive function and emotional resilience. Integration of neuroscience and wellness.",
+      "source": {
+        "name": "Health Travel, Accor Limitless",
+        "url": "https://www.health.travel/read/wellness-trends-for-2026/",
+        "type": "wellness_industry",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Neuroscience-backed wellness replacing pseudoscientific approaches",
+      "significance": 3,
+      "significance_reason": "Neuro-health integration in wellness resorts - bridges neuroscience and holistic practice",
+      "potential_impact": {
+        "short_term": "Neuro-wellness programs launch in 2026",
+        "mid_term": "Brain training becomes standard wellness by 2028",
+        "long_term": "Scientific wellness paradigm established by 2030"
+      },
+      "actors": [
+        {"name": "wellness resorts", "type": "industry", "role": "program providers"},
+        {"name": "neuroscience researchers", "type": "academic", "role": "methodology developers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.75,
+      "tags": ["neuro-health", "brain training", "cognitive wellness", "wellness tourism"],
+      "raw_id": "SIG-MW-2026-0112-052"
+    },
+    {
+      "id": "SIG-2026-0112-053",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Georgia Tech: Breakthrough in Photonics-Based Quantum Computing Using Non-Abelian Holonomy",
+      "description": "Georgia Tech researchers proposed revolutionary method for generating quantum entanglement between photons without requiring quantum measurements, using non-Abelian quantum holonomy geometric structure. Could transform future of quantum computing.",
+      "source": {
+        "name": "Georgia Tech Research Newsroom",
+        "url": "https://research.gatech.edu/researchers-find-fundamental-breakthrough-quantum-computing-light",
+        "type": "academic",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Measurement-free quantum entanglement enabling scalable photonic quantum computers",
+      "significance": 5,
+      "significance_reason": "Eliminates quantum measurement requirement - potentially solves major scalability barrier for quantum computing",
+      "potential_impact": {
+        "short_term": "Experimental validation in 2026",
+        "mid_term": "Photonic quantum computers scale dramatically by 2028",
+        "long_term": "Room-temperature quantum computing enabled by 2030"
+      },
+      "actors": [
+        {"name": "Georgia Tech", "type": "academic", "role": "research institution"},
+        {"name": "quantum computing industry", "type": "industry", "role": "commercialization"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-06",
+      "confidence": 0.90,
+      "tags": ["quantum computing", "photonics", "non-Abelian holonomy", "quantum entanglement"],
+      "raw_id": "SIG-MW-S2-2026-0112-001"
+    },
+    {
+      "id": "SIG-2026-0112-054",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental"]
+      },
+      "title": "CMU Breakthrough: Spray 3D Concrete Printing for Construction Industry",
+      "description": "Carnegie Mellon University researchers developed breakthrough in spray 3D concrete printing that could transform building construction by cutting material waste and enabling stronger, more complex structures for tomorrow's cities.",
+      "source": {
+        "name": "Carnegie Mellon University Engineering News",
+        "url": "https://engineering.cmu.edu/news-events/news/index.html",
+        "type": "academic",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Additive manufacturing revolutionizing construction industry",
+      "significance": 4,
+      "significance_reason": "Spray 3D concrete printing - enables complex geometries with reduced waste, transforming construction",
+      "potential_impact": {
+        "short_term": "Pilot construction projects in 2026",
+        "mid_term": "Widespread adoption in construction by 2028",
+        "long_term": "Traditional construction methods obsolete by 2030"
+      },
+      "actors": [
+        {"name": "Carnegie Mellon University", "type": "academic", "role": "technology developer"},
+        {"name": "construction industry", "type": "industry", "role": "adopters"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-07",
+      "confidence": 0.85,
+      "tags": ["3D printing", "construction", "CMU", "concrete", "material efficiency"],
+      "raw_id": "SIG-MW-S2-2026-0112-002"
+    },
+    {
+      "id": "SIG-2026-0112-055",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "MIT CSAIL-Pegatron Partnership: Five-Year Initiative for Physically Intelligent Robots",
+      "description": "MIT CSAIL and Pegatron announced landmark 5-year partnership (2026-2031) to develop next generation of emotionally and physically intelligent robotic systems, combining advanced mechanical design, tactile sensing, multimodal perception, and AI-driven control.",
+      "source": {
+        "name": "MIT CSAIL",
+        "url": "https://www.csail.mit.edu/news/mit-csail-and-pegatron-launch-five-year-initiative-pioneer-physically-intelligent-robots",
+        "type": "academic",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Physical AI becoming priority focus for next-generation robotics",
+      "significance": 5,
+      "significance_reason": "MIT-Pegatron 5-year partnership for physical intelligence - major industry-academic collaboration",
+      "potential_impact": {
+        "short_term": "Physical AI research accelerates in 2026",
+        "mid_term": "Tactile-sensing robots deployed by 2028",
+        "long_term": "Dexterous humanoid robots mainstream by 2031"
+      },
+      "actors": [
+        {"name": "MIT CSAIL", "type": "academic", "role": "research leader"},
+        {"name": "Pegatron", "type": "company", "role": "industry partner"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-08",
+      "confidence": 0.95,
+      "tags": ["MIT CSAIL", "Pegatron", "physical AI", "robotics", "tactile sensing"],
+      "raw_id": "SIG-MW-S2-2026-0112-003"
+    },
+    {
+      "id": "SIG-2026-0112-056",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental"]
+      },
+      "title": "Princeton: Hydrogel-Based Energy Storage Breakthrough for Sustainable Batteries",
+      "description": "Princeton researchers developed hydrogel-based energy storage system representing breakthrough in sustainable battery technology, with potential applications in renewable energy, transportation and soft robotics industries.",
+      "source": {
+        "name": "Princeton Engineering",
+        "url": "https://engineering.princeton.edu/news/2026/01/06/four-projects-selected-2025-schmidt-transformative-technology-fund-awards",
+        "type": "academic",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Sustainable battery materials replacing toxic lithium-ion chemistry",
+      "significance": 5,
+      "significance_reason": "Hydrogel-based energy storage - sustainable alternative to lithium batteries for multiple applications",
+      "potential_impact": {
+        "short_term": "Lab demonstrations in 2026",
+        "mid_term": "Commercial hydrogel batteries by 2028",
+        "long_term": "Lithium batteries phased out by 2030"
+      },
+      "actors": [
+        {"name": "Princeton University", "type": "academic", "role": "technology developer"},
+        {"name": "Schmidt Transformative Technology Fund", "type": "organization", "role": "funding source"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-06",
+      "confidence": 0.90,
+      "tags": ["Princeton", "hydrogel", "battery technology", "sustainable energy", "soft robotics"],
+      "raw_id": "SIG-MW-S2-2026-0112-004"
+    },
+    {
+      "id": "SIG-2026-0112-057",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "Yale: In Utero Gene Editing Breakthrough for Cystic Fibrosis Cure",
+      "description": "Yale researchers developed method that has potential to cure cystic fibrosis prior to birth using in utero gene editing via nanoparticles to deliver corrective genetic material to fetus of mice with CF.",
+      "source": {
+        "name": "Yale News",
+        "url": "https://news.yale.edu/2025/07/03/cure-cystic-fibrosis-might-start-womb",
+        "type": "academic",
+        "published_date": "2025-07-03"
+      },
+      "leading_indicator": "Prenatal gene therapy enabling disease prevention before birth",
+      "significance": 5,
+      "significance_reason": "In utero gene editing for CF cure - breakthrough in prenatal medicine with profound ethical implications",
+      "potential_impact": {
+        "short_term": "Human trials begin by late 2026",
+        "mid_term": "FDA approval for prenatal gene therapy by 2028",
+        "long_term": "Genetic diseases cured before birth by 2030"
+      },
+      "actors": [
+        {"name": "Yale University", "type": "academic", "role": "technology developer"},
+        {"name": "bioethics community", "type": "organization", "role": "ethical oversight"}
+      ],
+      "status": "emerging",
+      "first_detected": "2025-07-03",
+      "confidence": 0.85,
+      "tags": ["Yale", "gene editing", "cystic fibrosis", "prenatal therapy", "nanoparticles"],
+      "raw_id": "SIG-MW-S2-2026-0112-005"
+    },
+    {
+      "id": "SIG-2026-0112-058",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Oxford: First-Ever Detection of Solar Carbon-Neutrino Interactions",
+      "description": "Oxford physicists led breakthrough study recording first observation of carbon-neutrino interactions, with findings published in Physical Review Letters opening new frontiers in nuclear and particle physics.",
+      "source": {
+        "name": "University of Oxford",
+        "url": "https://www.ox.ac.uk/news/2025-12-12-new-breakthrough-detecting-ghost-particles-sun",
+        "type": "academic",
+        "published_date": "2025-12-12"
+      },
+      "leading_indicator": "Neutrino physics entering new era of direct detection",
+      "significance": 5,
+      "significance_reason": "First carbon-neutrino interaction detection - opens new window into solar physics and particle physics",
+      "potential_impact": {
+        "short_term": "Replication experiments in 2026",
+        "mid_term": "New neutrino detection methods by 2028",
+        "long_term": "Neutrino-based technologies by 2030"
+      },
+      "actors": [
+        {"name": "University of Oxford", "type": "academic", "role": "research leader"},
+        {"name": "Physical Review Letters", "type": "publisher", "role": "validation"}
+      ],
+      "status": "emerging",
+      "first_detected": "2025-12-12",
+      "confidence": 0.95,
+      "tags": ["Oxford", "neutrinos", "carbon isotope", "solar physics", "particle physics"],
+      "raw_id": "SIG-MW-S2-2026-0112-006"
+    },
+    {
+      "id": "SIG-2026-0112-059",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "title": "Oxford: Cell Metabolism 'Handbrake' Discovery Reshapes Cancer Drug Understanding",
+      "description": "Oxford Nuffield Department of Medicine team uncovered previously unknown 'handbrake' mechanism controlling how cells respond to cancer drugs, reshaping global understanding of cell metabolism and drug resistance.",
+      "source": {
+        "name": "University of Oxford - Nuffield Department of Medicine",
+        "url": "https://www.ndm.ox.ac.uk/ndm-news",
+        "type": "academic",
+        "published_date": "2025-12-15"
+      },
+      "leading_indicator": "Fundamental cell metabolism discovery enabling next-generation cancer therapies",
+      "significance": 5,
+      "significance_reason": "Handbrake mechanism discovery - explains drug resistance and opens new therapeutic approaches",
+      "potential_impact": {
+        "short_term": "New drug targets identified in 2026",
+        "mid_term": "Novel cancer therapies in trials by 2028",
+        "long_term": "Cancer drug resistance overcome by 2030"
+      },
+      "actors": [
+        {"name": "University of Oxford", "type": "academic", "role": "discovery institution"},
+        {"name": "pharmaceutical industry", "type": "industry", "role": "drug developers"}
+      ],
+      "status": "emerging",
+      "first_detected": "2025-12-15",
+      "confidence": 0.90,
+      "tags": ["Oxford", "cancer drugs", "cell metabolism", "drug resistance", "molecular biology"],
+      "raw_id": "SIG-MW-S2-2026-0112-007"
+    },
+    {
+      "id": "SIG-2026-0112-060",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "HKU: First Human DNA-Cutting Enzyme That Senses Physical Tension Discovered",
+      "description": "HKU and SZBL scientists discovered first human DNA-cutting enzyme that senses physical tension, described as breakthrough in understanding how cells prevent genetic disorders.",
+      "source": {
+        "name": "University of Hong Kong",
+        "url": "https://www.hku.hk/press/all/",
+        "type": "academic",
+        "published_date": "2025-12-09"
+      },
+      "leading_indicator": "Mechanobiology revealing physical forces shaping genetic processes",
+      "significance": 5,
+      "significance_reason": "First mechanosensitive DNA enzyme - bridges mechanical forces and genetic regulation",
+      "potential_impact": {
+        "short_term": "Mechanobiology field expansion in 2026",
+        "mid_term": "New genetic disorder therapies by 2028",
+        "long_term": "Mechanical control of genetics by 2030"
+      },
+      "actors": [
+        {"name": "University of Hong Kong", "type": "academic", "role": "discovery institution"},
+        {"name": "Shenzhen Bay Laboratory", "type": "academic", "role": "collaboration partner"}
+      ],
+      "status": "emerging",
+      "first_detected": "2025-12-09",
+      "confidence": 0.90,
+      "tags": ["HKU", "DNA enzyme", "mechanobiology", "genetic disorders", "physical tension"],
+      "raw_id": "SIG-MW-S2-2026-0112-008"
+    },
+    {
+      "id": "SIG-2026-0112-061",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Political", "Spiritual"]
+      },
+      "title": "Loneliness Epidemic Intervention: Tobacco-Style Policy Framework Proposed",
+      "description": "Texas A&M School of Public Health research aligns tobacco reduction strategies with U.S. Surgeon General's advisory on loneliness epidemic. Proposes warning labels on devices, age restrictions for apps, social impact assessments for new projects.",
+      "source": {
+        "name": "Texas A&M University School of Public Health",
+        "url": "https://stories.tamu.edu/news/2026/01/05/smoking-reduction-strategies-could-ease-loneliness-and-social-isolation/",
+        "type": "academic",
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "Loneliness recognized as public health crisis requiring regulatory intervention",
+      "significance": 5,
+      "significance_reason": "Tobacco-style regulation for loneliness - unprecedented policy framework treating social isolation as public health threat",
+      "potential_impact": {
+        "short_term": "Policy proposals gain traction in 2026",
+        "mid_term": "Device warning labels implemented by 2028",
+        "long_term": "Social connection becomes regulated public good by 2030"
+      },
+      "actors": [
+        {"name": "Texas A&M", "type": "academic", "role": "policy framework developer"},
+        {"name": "U.S. Surgeon General", "type": "government", "role": "advisory authority"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-05",
+      "confidence": 0.85,
+      "tags": ["loneliness epidemic", "public health policy", "social isolation", "Surgeon General"],
+      "raw_id": "SIG-MW-S2-2026-0112-009"
+    },
+    {
+      "id": "SIG-2026-0112-062",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "Care Economy Crisis: $600 Billion Value of Unpaid Caregiving in U.S.",
+      "description": "Research shows unpaid caregiving was worth $600 billion in 2021, triple 1996 estimate. 4.4 million Americans provide both eldercare and childcare. Eldercare costs employers over $30 billion annually in turnover and productivity losses.",
+      "source": {
+        "name": "KPMG Research / Equal Times",
+        "url": "https://kpmg.com/us/en/articles/2025/february-2024-the-care-crisis-eldercare.html",
+        "type": "market_research",
+        "published_date": "2025-02-01"
+      },
+      "leading_indicator": "Invisible care economy becoming unsustainable under demographic pressure",
+      "significance": 5,
+      "significance_reason": "$600B unpaid caregiving value - massive hidden economic crisis as population ages",
+      "potential_impact": {
+        "short_term": "Care crisis awareness increases in 2026",
+        "mid_term": "Policy interventions by 2028",
+        "long_term": "Formal care economy emerges by 2030"
+      },
+      "actors": [
+        {"name": "KPMG", "type": "organization", "role": "research provider"},
+        {"name": "caregivers", "type": "demographic", "role": "unpaid care providers"}
+      ],
+      "status": "developing",
+      "first_detected": "2025-02-01",
+      "confidence": 0.90,
+      "tags": ["care economy", "eldercare", "childcare", "unpaid labor", "economic impact"],
+      "raw_id": "SIG-MW-S2-2026-0112-010"
+    },
+    {
+      "id": "SIG-2026-0112-063",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "Intergenerational Workplace Tension: Millennials and Gen Z to Reach 74% of Global Workforce by 2030",
+      "description": "Broadest generational diversity in workplace history occurring now. Millennials and Gen Z projected to be 74% of global workforce by 2030. Employees with managers 12+ years older report 1.5x more likely to have low productivity.",
+      "source": {
+        "name": "Employer Branding News / Paychex Research",
+        "url": "https://employerbranding.news/generations-in-the-workplace/",
+        "type": "market_research",
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "Generational gap creating measurable productivity losses",
+      "significance": 4,
+      "significance_reason": "12+ year age gap causing 1.5x productivity loss - quantifies generational conflict impact",
+      "potential_impact": {
+        "short_term": "Management training programs in 2026",
+        "mid_term": "Age-diverse team structures by 2028",
+        "long_term": "Generational fluency becomes leadership skill by 2030"
+      },
+      "actors": [
+        {"name": "multigenerational workforce", "type": "demographic", "role": "experiencing tension"},
+        {"name": "HR departments", "type": "organization", "role": "bridging gaps"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-08",
+      "confidence": 0.80,
+      "tags": ["generational conflict", "Gen Z", "Millennials", "workplace dynamics", "productivity"],
+      "raw_id": "SIG-MW-S2-2026-0112-011"
+    },
+    {
+      "id": "SIG-2026-0112-064",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual"]
+      },
+      "title": "Gen Z Prioritizes Mental and Spiritual Well-Being Over Physical Fitness in 2026",
+      "description": "Gen Z's 2026 priorities shift from gym/fitness to mental clarity, emotional balance and spiritual grounding. Spirituality is fluid and personal, focused on connection to self, nature or energy rather than religion.",
+      "source": {
+        "name": "ETV Bharat / A Lotus in the Mud",
+        "url": "https://www.etvbharat.com/en/lifestyle/no-more-gym-or-fitness-resolutions-gen-zs-goals-in-2026-are-about-mental-and-spiritual-well-being-enn26010104691",
+        "type": "trend_analysis",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Gen Z rejecting physical optimization for inner wellness",
+      "significance": 4,
+      "significance_reason": "Shift from physical to mental/spiritual - signals values transformation in youngest adult generation",
+      "potential_impact": {
+        "short_term": "Fitness industry adapts in 2026",
+        "mid_term": "Spiritual wellness mainstream by 2028",
+        "long_term": "Wellness paradigm transformed by 2030"
+      },
+      "actors": [
+        {"name": "Gen Z", "type": "demographic", "role": "wellness priorities shift"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-01",
+      "confidence": 0.75,
+      "tags": ["Gen Z", "mental health", "spiritual well-being", "lifestyle trends", "wellness"],
+      "raw_id": "SIG-MW-S2-2026-0112-012"
+    },
+    {
+      "id": "SIG-2026-0112-065",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological"]
+      },
+      "title": "Education AI Integration Shifts from Pilots to System-Wide Strategy in 2026",
+      "description": "2026 marks transition from experimental AI adoption to system-wide integration in education. AI shifting from pilot projects to natural part of daily classroom experiences, firmly cemented as essential part of institutional strategy.",
+      "source": {
+        "name": "Inside Higher Ed",
+        "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/01/05/5-predictions-how-ai-will-shape-higher-ed",
+        "type": "education_analysis",
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "AI moving from experimental to institutional infrastructure in education",
+      "significance": 4,
+      "significance_reason": "2026 as inflection year for AI in education - pilots become policy",
+      "potential_impact": {
+        "short_term": "System-wide AI deployment in 2026",
+        "mid_term": "Personalized learning standard by 2028",
+        "long_term": "Traditional classroom obsolete by 2030"
+      },
+      "actors": [
+        {"name": "higher education institutions", "type": "organization", "role": "AI adopters"},
+        {"name": "students", "type": "demographic", "role": "AI-powered learning"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-05",
+      "confidence": 0.85,
+      "tags": ["AI in education", "higher education", "personalized learning", "institutional strategy"],
+      "raw_id": "SIG-MW-S2-2026-0112-013"
+    },
+    {
+      "id": "SIG-2026-0112-066",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic", "Technological"]
+      },
+      "title": "AI Workers Save 2 Hours Daily But Only 25% Receive Formal Training",
+      "description": "Workers report saving average 2 hours per day using AI tools, yet only 25% receive formal AI training from employers. Workers with AI expertise command salaries up to 56% higher than peers, more than double premium from year before.",
+      "source": {
+        "name": "IMD Business School",
+        "url": "https://www.imd.org/ibyimd/talent/workplace-trends-for-2026/",
+        "type": "business_analysis",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "AI productivity gains outpacing organizational training capacity",
+      "significance": 4,
+      "significance_reason": "2 hours saved daily but only 25% trained - massive self-directed adoption creating training gap",
+      "potential_impact": {
+        "short_term": "Training programs scramble to catch up in 2026",
+        "mid_term": "AI literacy becomes baseline requirement by 2028",
+        "long_term": "AI-native workforce emerges by 2030"
+      },
+      "actors": [
+        {"name": "knowledge workers", "type": "demographic", "role": "AI tool adopters"},
+        {"name": "employers", "type": "organization", "role": "lagging training providers"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-07",
+      "confidence": 0.90,
+      "tags": ["AI training", "workforce productivity", "skills gap", "salary premium"],
+      "raw_id": "SIG-MW-S2-2026-0112-014"
+    },
+    {
+      "id": "SIG-2026-0112-067",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic", "Technological"]
+      },
+      "title": "AI-Driven Labor Automation: 11.7% of Jobs Already Automatable with Current Technology",
+      "description": "November MIT study found 11.7% of jobs could already be automated using AI. 2026 predicted as 'year of agents' as software expands from making humans productive to automating work itself. Jobs with AI exposure see slower job growth, especially among younger workers.",
+      "source": {
+        "name": "MIT Study / TechCrunch",
+        "url": "https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/",
+        "type": "academic",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "AI automation crossing threshold from augmentation to replacement",
+      "significance": 5,
+      "significance_reason": "MIT study: 11.7% jobs automatable now - 2026 as 'year of agents' signals shift from assistance to automation",
+      "potential_impact": {
+        "short_term": "AI agent deployment accelerates in 2026",
+        "mid_term": "Youth unemployment rises by 2028",
+        "long_term": "Labor market fundamentally restructured by 2030"
+      },
+      "actors": [
+        {"name": "MIT", "type": "academic", "role": "research institution"},
+        {"name": "AI companies", "type": "industry", "role": "automation providers"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-06",
+      "confidence": 0.90,
+      "tags": ["labor automation", "MIT study", "AI agents", "job displacement", "youth employment"],
+      "raw_id": "SIG-MW-S2-2026-0112-015"
+    },
+    {
+      "id": "SIG-2026-0112-068",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological", "Economic"]
+      },
+      "title": "Death Tech Industry Explodes to $126 Billion Market with 926 Companies Globally",
+      "description": "Death tech industry now $126 billion market with 926 companies globally and 159 funded startups. Includes digital afterlife, AI chatbots of deceased, and memorial technology. Eternos charges $5,000 to create comprehensive AI replicas of people before they die.",
+      "source": {
+        "name": "Compassionate Reprieve / Medium Analysis",
+        "url": "https://compassionatereprieve.org/what-is-deathtech-the-rise-of-technology-at-the-end-of-life/",
+        "type": "industry_analysis",
+        "published_date": "2025-11-15"
+      },
+      "leading_indicator": "Technology mediating death and grief creating new spiritual economy",
+      "significance": 4,
+      "significance_reason": "$126B death tech market - technology transforming most profound human experience",
+      "potential_impact": {
+        "short_term": "Digital afterlife services proliferate in 2026",
+        "mid_term": "AI deceased personas become common by 2028",
+        "long_term": "Death and grief fundamentally mediated by technology by 2030"
+      },
+      "actors": [
+        {"name": "death tech startups", "type": "industry", "role": "service providers"},
+        {"name": "grieving individuals", "type": "demographic", "role": "users"}
+      ],
+      "status": "emerging",
+      "first_detected": "2025-11-15",
+      "confidence": 0.80,
+      "tags": ["death tech", "digital afterlife", "AI chatbots", "grief technology", "memorial services"],
+      "raw_id": "SIG-MW-S2-2026-0112-016"
+    }
+  ]
+}

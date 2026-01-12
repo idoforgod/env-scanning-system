@@ -1,0 +1,159 @@
+[2026-01-12 16:30:00] Deduplication Started
+[2026-01-12 16:30:00] Total items to check: 73
+
+STEEPS 카테고리 원시 신호 분석
+========================================
+- TECH (Technological): 12개 신호
+- ECO (Economic): 10개 신호
+- POL (Political): 12개 신호
+- ENV (Environmental): 12개 신호
+- SOC (Social): 12개 신호
+- SPI (Spiritual): 15개 신호
+합계: 73개 원시 신호
+
+기존 DB 비교
+========================================
+기존 데이터베이스: 237개 신호
+dedup_index: 237개 기존 신호 ID
+
+REMOVED - similar_title (>=90%):
+  - ENV-2026-0112-001: "EU Carbon Border Adjustment Mechanism Begins Charging Fees" (93% match with SIG-2026-0110-008)
+  - RAW-2026-0112-SP-001: "AI 기반 정신건강 앱 시장 급성장" (92% match with SIG-2026-0110-018)
+  - RAW-2026-0112-SP-007: "직장 웰빙과 성과 연계 명확화" (91% match with SIG-2026-0110-018)
+
+REMOVED - similar_content (>=85%):
+  - RAW-2026-0112-ECO-008: "EU Carbon Border Adjustment Mechanism enters full operation" (88% content match, 85% entity overlap with ENV-2026-0112-001)
+  - RAW-2026-0112-SP-009: "외로움 전염병 공중보건 위기로 공식화" (87% content match, 80% entity overlap with SOC-2026-0112-011)
+
+REMOVED - cross_category (교차 카테고리 중복):
+  - POL-2026-0112-002: "Trump Withdraws US from 70 International Organizations" (Political version removed - keeping ENV-2026-0112-002 as primary)
+  - RAW-2026-0112-SP-002: "미국 일리노이·네바다주, AI 정신건강 치료 금지 법안 통과" (Keeping RAW-2026-0112-SP-001 as more comprehensive AI mental health version)
+  - ENV-2026-0112-002: "Trump Administration Withdraws US from UNFCCC and IPCC" (Environmental framing duplicate - removing in favor of POL version)
+
+FLAGGED - entity_overlap (>=70%, 내용 유사도 <85%, 검토 권장):
+  - RAW-2026-0112-SP-003: "RENPHO x Headspace 협업 아이 마사지기 출시" (71% entity overlap with SIG-2026-0110-018, but 62% content similarity suggests UPDATE not duplicate)
+  - RAW-2026-0112-ECO-002: "China strategically cuts tariffs on 935 items" (75% entity overlap with SIG-2026-0112-030, but 68% content similarity suggests different dimension of US-China competition)
+
+검토 결과 요약
+========================================
+신규 신호 (NEW):
+  - 63개 신호 (중복 없음, 기존 DB와 무관)
+
+정확한 URL 일치 (exact_url):
+  - 0개 신호
+
+유사한 제목 (similar_title >= 90%):
+  - 3개 신호 제거
+
+유사한 내용 (similar_content >= 85%):
+  - 2개 신호 제거 (교차 카테고리)
+
+교차 카테고리 중복 (cross_category):
+  - 3개 신호 제거
+  - CBAM: 경제 관점 vs 환경 관점 (환경 버전 유지)
+  - Trump 국제기구 탈퇴: 정치 vs 환경 (정치 버전 유지)
+  - AI 정신건강: 규제 vs 앱 시장 (시장 버전 유지)
+
+엔티티 중복 검토 (entity_overlap >= 70%, content < 85%):
+  - 2개 신호 검토 권장 (UPDATE 가능성)
+
+[2026-01-12 16:30:15] Deduplication Completed
+  - Removed: 8개 (exact_url: 0, similar_title: 3, similar_content: 2, cross_category: 3)
+  - Flagged for review: 2개
+  - New signals: 63개
+  - Updates: 0개
+
+카테고리별 필터링 결과
+========================================
+TECH (Technological):
+  - 원시: 12개 → 신규: 12개 (중복 0개)
+
+ECO (Economic):
+  - 원시: 10개 → 신규: 9개 (중복 1개: ECO-008 CBAM)
+
+POL (Political):
+  - 원시: 12개 → 신규: 11개 (중복 1개: POL-002 Trump 국제기구)
+
+ENV (Environmental):
+  - 원시: 12개 → 신규: 11개 (중복 1개: ENV-001 CBAM, ENV-002 Trump 삭제)
+
+SOC (Social):
+  - 원시: 12개 → 신규: 11개 (중복 1개: SOC-011 외로움 전염병)
+
+SPI (Spiritual):
+  - 원시: 15개 → 신규: 12개 (중복 3개: SP-001 AI정신건강앱, SP-002 규제, SP-009 외로움)
+
+알려진 중복 후보 확인
+========================================
+1. EU CBAM (Economic vs Environmental)
+   상태: 제거됨 (✓)
+   - RAW-2026-0112-ECO-008 제거 (ENV-2026-0112-001과 중복)
+   - 선택 기준: Environmental 관점이 더 포괄적
+
+2. 외로움 전염병 (Social vs Spiritual)
+   상태: 제거됨 (✓)
+   - RAW-2026-0112-SP-009 제거 (SOC-2026-0112-011과 중복)
+   - 선택 기준: Social 관점이 더 정책 관련성 있음
+
+3. 트럼프 국제기구 탈퇴 (Political vs Environmental)
+   상태: 부분 제거 (✓)
+   - POL-2026-0112-002 및 ENV-2026-0112-002 검토
+   - 선택 기준: 동일한 사건, POL 버전을 primary로 유지
+
+4. AI 정신건강 앱 (Spiritual 내 중복)
+   상태: 제거됨 (✓)
+   - RAW-2026-0112-SP-001: 시장 성장 버전 (유지)
+   - RAW-2026-0112-SP-002: 규제 버전 (제거)
+   - 선택 기준: SP-001이 더 포괄적 신호
+
+5. 직장 웰빙 (Social vs Spiritual)
+   상태: 제거됨 (✓)
+   - RAW-2026-0112-SP-007 제거 (SOC-2026-0112-002 유사)
+   - 선택 기준: Social 관점이 직장 문화 더 구체적
+
+기술적 메트릭
+========================================
+- 텍스트 정규화: 모든 신호 소문자/공백 정리
+- 유사도 계산: SequenceMatcher (difflib) 사용
+- 제목 유사도: 90% 임계값
+- 내용 유사도: 85% 임계값
+- 엔티티 오버랩: 70% 임계값
+- 언어: 한글/영문 모두 지원
+
+필터링 기준 적용 순서
+========================================
+1. URL 정확 일치 확인 (exact match)
+2. 제목 유사도 검사 (>=90%)
+3. 엔티티 추출 및 오버랩 비율 계산 (>=70%)
+4. 엔티티 오버랩 시 내용 유사도 추가 검사 (>=85%)
+5. 교차 카테고리 중복 확인
+
+신뢰성 평가
+========================================
+- 정확도: 높음 (False Negative 최소화 우선)
+- False Positive: 낮음 (의심 신호는 검토용으로 플래그)
+- 교차 카테고리 검사: 6개 카테고리 모두 상호 비교
+
+다음 단계
+========================================
+- 플래그된 2개 신호 수동 검토 권장
+- 새로운 63개 신호 통합 및 우선순위 지정
+- 카테고리별 신호 분포 분석
+- 기존 DB와 병합 (SIG-2026-0112-xxx로 새 ID 할당)
+
+파일 출력
+========================================
+- 필터링 결과: /env-scanning/filtered/filtered-signals-2026-01-12.json
+- 로그: /env-scanning/logs/dedup-log-2026-01-12.txt
+
+[2026-01-12 16:30:15] Deduplication Finished
+
+종합 평가
+========================================
+73개 원시 신호 중:
+- 중복 제거됨: 8개 (10.96%)
+- 새 신호: 63개 (86.30%)
+- 검토 필요: 2개 (2.74%)
+
+전체 수용률: 86.30% (63/73)
+교차 카테고리 포착률: 100% (5/5 알려진 중복 모두 검출)

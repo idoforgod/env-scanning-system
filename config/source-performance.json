@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-01-12",
+    "last_updated": "2026-01-12T18:30:00Z",
+    "total_sources_tracked": 177,
+    "total_marathons_completed": 1,
+    "last_marathon_date": "2026-01-12",
+    "last_marathon_signals": 46,
+    "last_marathon_avg_pSRT": 49.6,
+    "description": "소스별 성과 추적 - 자기개선형 Marathon Mode"
+  },
+  "scoring_weights": {
+    "signal_to_scan_ratio": 0.30,
+    "average_significance": 0.25,
+    "recency_bonus": 0.15,
+    "steeps_coverage_value": 0.15,
+    "consistency": 0.15
+  },
+  "tier_thresholds": {
+    "tier_1_minimum": 80,
+    "tier_2_minimum": 60,
+    "tier_3_minimum": 40,
+    "upgrade_threshold": 85,
+    "downgrade_threshold": 30
+  },
+  "sources": {
+    "nature.com": {
+      "name": "Nature",
+      "tier": 1,
+      "category": "academic",
+      "steeps_coverage": ["Technological", "Environmental", "Social"],
+      "language": "en",
+      "performance": {
+        "total_scans": 0,
+        "signals_found": 0,
+        "high_quality_signals": 0,
+        "signal_to_scan_ratio": 0.0,
+        "average_significance": 0.0,
+        "trend": "new",
+        "performance_score": 85
+      },
+      "history": []
+    },
+    "science.org": {
+      "name": "Science/AAAS",
+      "tier": 1,
+      "category": "academic",
+      "steeps_coverage": ["Technological", "Environmental", "Social"],
+      "language": "en",
+      "performance": {
+        "total_scans": 0,
+        "signals_found": 0,
+        "high_quality_signals": 0,
+        "signal_to_scan_ratio": 0.0,
+        "average_significance": 0.0,
+        "trend": "new",
+        "performance_score": 85
+      },
+      "history": []
+    },
+    "arxiv.org": {
+      "name": "arXiv",
+      "tier": 1,
+      "category": "preprint",
+      "steeps_coverage": ["Technological"],
+      "language": "en",
+      "performance": {
+        "total_scans": 0,
+        "signals_found": 0,
+        "high_quality_signals": 0,
+        "signal_to_scan_ratio": 0.0,
+        "average_significance": 0.0,
+        "trend": "new",
+        "performance_score": 80
+      },
+      "history": []
+    },
+    "brookings.edu": {
+      "name": "Brookings Institution",
+      "tier": 1,
+      "category": "think_tank",
+      "steeps_coverage": ["Political", "Economic", "Social"],
+      "language": "en",
+      "performance": {
+        "total_scans": 0,
+        "signals_found": 0,
+        "high_quality_signals": 0,
+        "signal_to_scan_ratio": 0.0,
+        "average_significance": 0.0,
+        "trend": "new",
+        "performance_score": 85
+      },
+      "history": []
+    },
+    "technologyreview.com": {
+      "name": "MIT Technology Review",
+      "tier": 2,
+      "category": "tech_news",
+      "steeps_coverage": ["Technological", "Social"],
+      "language": "en",
+      "performance": {
+        "total_scans": 0,
+        "signals_found": 0,
+        "high_quality_signals": 0,
+        "signal_to_scan_ratio": 0.0,
+        "average_significance": 0.0,
+        "trend": "new",
+        "performance_score": 75
+      },
+      "history": []
+    },
+    "carbonbrief.org": {
+      "name": "Carbon Brief",
+      "tier": 2,
+      "category": "climate",
+      "steeps_coverage": ["Environmental", "Political"],
+      "language": "en",
+      "performance": {
+        "total_scans": 0,
+        "signals_found": 0,
+        "high_quality_signals": 0,
+        "signal_to_scan_ratio": 0.0,
+        "average_significance": 0.0,
+        "trend": "new",
+        "performance_score": 78
+      },
+      "history": []
+    }
+  },
+  "aggregated_stats": {
+    "by_tier": {
+      "tier_1": {"count": 50, "avg_performance": 82},
+      "tier_2": {"count": 65, "avg_performance": 68},
+      "tier_3": {"count": 42, "avg_performance": 52},
+      "tier_4": {"count": 20, "avg_performance": 38}
+    },
+    "by_steeps": {
+      "Social": {"sources": 28, "avg_signal_quality": 45.2, "signals_this_scan": 7},
+      "Technological": {"sources": 52, "avg_signal_quality": 54.8, "signals_this_scan": 16},
+      "Economic": {"sources": 35, "avg_signal_quality": 50.1, "signals_this_scan": 7},
+      "Environmental": {"sources": 22, "avg_signal_quality": 52.7, "signals_this_scan": 6},
+      "Political": {"sources": 28, "avg_signal_quality": 49.8, "signals_this_scan": 6},
+      "Spiritual": {"sources": 12, "avg_signal_quality": 38.1, "signals_this_scan": 5}
+    },
+    "marathon_history": [
+      {
+        "date": "2026-01-12",
+        "signals_found": 46,
+        "avg_pSRT": 49.6,
+        "source_groups_scanned": 42,
+        "top_category": "Technological",
+        "grade_distribution": {"C": 2, "D": 23, "E": 13, "F": 8}
+      }
+    ]
+  },
+  "recommendations": {
+    "upgrade_candidates": [
+      {"source": "Bloomberg", "current_tier": 2, "reason": "pSRT 60.7점 (C등급), TSMC 신호 고품질"},
+      {"source": "Crunchbase", "current_tier": 2, "reason": "pSRT 60.45점 (C등급), VC 투자 신호 고품질"}
+    ],
+    "downgrade_candidates": [
+      {"source": "FOX 13", "current_tier": 4, "reason": "pSRT 34.0점 (F등급), 저품질 신호"},
+      {"source": "Editorial GE", "current_tier": 4, "reason": "pSRT 42.5점 (E등급), LOW_SOURCE_QUALITY 플래그"}
+    ],
+    "deactivate_candidates": [],
+    "steeps_gaps": ["Spiritual"],
+    "improvement_focus": {
+      "primary": "Signal specificity - 평균 signal_score 29.5점으로 개선 필요",
+      "actions": [
+        "구체적 날짜/숫자 포함 신호 수집 강화",
+        "Tier 3-4 소스 품질 검증 강화",
+        "Spiritual 카테고리 소스 확대 필요"
+      ]
+    },
+    "next_marathon_focus": [
+      "Tier 1 학술/정부 소스 비중 유지",
+      "Spiritual 카테고리 전문 소스 발굴",
+      "Signal specificity 향상을 위한 데이터 보강"
+    ]
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "ranking_date": "2026-01-12",
+  "ranking_type": "weekly",
+  "methodology": {
+    "impact": 0.40,
+    "likelihood": 0.30,
+    "urgency": 0.20,
+    "novelty": 0.10
+  },
+  "total_ranked": 27,
+  "rankings": [
+    {
+      "rank": 1,
+      "signal_id": "SIG-W-2026-0112-006",
+      "title": "미국 베네수엘라 군사 작전 실행 - 19세기식 제국주의 회귀 우려",
+      "category": "Political",
+      "scores": {
+        "impact": 9.5,
+        "likelihood": 10.0,
+        "urgency": 10.0,
+        "novelty": 9.0
+      },
+      "final_score": 9.60,
+      "priority_tier": "Critical",
+      "pSRT_grade": "A+"
+    },
+    {
+      "rank": 2,
+      "signal_id": "SIG-W-2026-0112-001",
+      "title": "DeepMind-Boston Dynamics, Gemini 기반 Atlas 로봇 통합 발표",
+      "category": "Technological",
+      "scores": {
+        "impact": 9.2,
+        "likelihood": 9.5,
+        "urgency": 8.5,
+        "novelty": 9.5
+      },
+      "final_score": 9.18,
+      "priority_tier": "Critical",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 3,
+      "signal_id": "SIG-W-2026-0112-004",
+      "title": "양자 오류 수정 기술 획기적 돌파 - 확장성 문제 해결",
+      "category": "Technological",
+      "scores": {
+        "impact": 9.0,
+        "likelihood": 9.0,
+        "urgency": 7.5,
+        "novelty": 9.5
+      },
+      "final_score": 8.85,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 4,
+      "signal_id": "SIG-W-2026-0112-005",
+      "title": "EU CBAM 본격 시행 - 세계 최초 탄소국경세 발효",
+      "category": "Environmental",
+      "scores": {
+        "impact": 8.8,
+        "likelihood": 10.0,
+        "urgency": 10.0,
+        "novelty": 7.0
+      },
+      "final_score": 9.22,
+      "priority_tier": "Critical",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 5,
+      "signal_id": "SIG-W-2026-0112-021",
+      "title": "Eurasia Group 2026년 10대 리스크",
+      "category": "Political",
+      "scores": {
+        "impact": 8.5,
+        "likelihood": 9.0,
+        "urgency": 9.0,
+        "novelty": 7.5
+      },
+      "final_score": 8.65,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 6,
+      "signal_id": "SIG-W-2026-0112-023",
+      "title": "WEF Future of Jobs 2025 - 2030년까지 7800만 순 일자리 창출",
+      "category": "Social",
+      "scores": {
+        "impact": 8.2,
+        "likelihood": 8.5,
+        "urgency": 7.5,
+        "novelty": 8.0
+      },
+      "final_score": 8.13,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 7,
+      "signal_id": "SIG-W-2026-0112-003",
+      "title": "D-Wave, Quantum Circuits Inc. $5.5억 인수 합의",
+      "category": "Technological",
+      "scores": {
+        "impact": 8.0,
+        "likelihood": 9.5,
+        "urgency": 8.0,
+        "novelty": 8.5
+      },
+      "final_score": 8.40,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 8,
+      "signal_id": "SIG-W-2026-0112-007",
+      "title": "글로벌 경제 성장률 2.7% 전망",
+      "category": "Economic",
+      "scores": {
+        "impact": 7.8,
+        "likelihood": 8.5,
+        "urgency": 8.0,
+        "novelty": 6.0
+      },
+      "final_score": 7.87,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 9,
+      "signal_id": "SIG-W-2026-0112-025",
+      "title": "AI 과학 연구 직접 참여 시대 개막",
+      "category": "Technological",
+      "scores": {
+        "impact": 8.0,
+        "likelihood": 8.0,
+        "urgency": 7.0,
+        "novelty": 9.0
+      },
+      "final_score": 7.90,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 10,
+      "signal_id": "SIG-W-2026-0112-022",
+      "title": "유럽, 트럼프 행정부 다방면 압박 캠페인 대상 전망",
+      "category": "Political",
+      "scores": {
+        "impact": 8.0,
+        "likelihood": 8.5,
+        "urgency": 8.5,
+        "novelty": 7.0
+      },
+      "final_score": 8.10,
+      "priority_tier": "High",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 11,
+      "signal_id": "SIG-W-2026-0112-002",
+      "title": "D-Wave, 업계 최초 확장 가능 온칩 극저온 제어 기술 발표",
+      "category": "Technological",
+      "scores": {
+        "impact": 7.5,
+        "likelihood": 9.0,
+        "urgency": 7.0,
+        "novelty": 9.0
+      },
+      "final_score": 7.80,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 12,
+      "signal_id": "SIG-W-2026-0112-011",
+      "title": "미국 인구 증가율 0.5%로 둔화 - 출산율 역대 최저",
+      "category": "Social",
+      "scores": {
+        "impact": 7.8,
+        "likelihood": 9.5,
+        "urgency": 6.5,
+        "novelty": 6.0
+      },
+      "final_score": 7.57,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 13,
+      "signal_id": "SIG-W-2026-0112-013",
+      "title": "트럼프 행정부, 첨단 원자력 스타트업 3곳 임계 목표",
+      "category": "Environmental",
+      "scores": {
+        "impact": 7.5,
+        "likelihood": 8.0,
+        "urgency": 8.0,
+        "novelty": 7.5
+      },
+      "final_score": 7.75,
+      "priority_tier": "Medium",
+      "pSRT_grade": "A"
+    },
+    {
+      "rank": 14,
+      "signal_id": "SIG-W-2026-0112-012",
+      "title": "2026년 미국 신규 발전 용량 100% 재생에너지 전망",
+      "category": "Environmental",
+      "scores": {
+        "impact": 7.5,
+        "likelihood": 8.5,
+        "urgency": 7.5,
+        "novelty": 7.0
+      },
+      "final_score": 7.65,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 15,
+      "signal_id": "SIG-W-2026-0112-019",
+      "title": "AI 의약품 수명주기 FDA 가이드라인",
+      "category": "Technological",
+      "scores": {
+        "impact": 7.5,
+        "likelihood": 8.5,
+        "urgency": 7.0,
+        "novelty": 8.0
+      },
+      "final_score": 7.65,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 16,
+      "signal_id": "SIG-W-2026-0112-009",
+      "title": "노동자 참여도 급감 - 88%에서 64%로",
+      "category": "Social",
+      "scores": {
+        "impact": 7.0,
+        "likelihood": 7.5,
+        "urgency": 8.0,
+        "novelty": 8.0
+      },
+      "final_score": 7.45,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 17,
+      "signal_id": "SIG-W-2026-0112-020",
+      "title": "In-vivo CAR-T 치료 임상 1상 시작",
+      "category": "Technological",
+      "scores": {
+        "impact": 7.5,
+        "likelihood": 8.0,
+        "urgency": 6.5,
+        "novelty": 8.5
+      },
+      "final_score": 7.45,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 18,
+      "signal_id": "SIG-W-2026-0112-016",
+      "title": "Waymo, $150억+ 추가 펀딩 협의",
+      "category": "Technological",
+      "scores": {
+        "impact": 7.0,
+        "likelihood": 8.0,
+        "urgency": 7.0,
+        "novelty": 7.5
+      },
+      "final_score": 7.25,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 19,
+      "signal_id": "SIG-W-2026-0112-018",
+      "title": "IFR, 2026년 5대 로보틱스 트렌드",
+      "category": "Technological",
+      "scores": {
+        "impact": 7.0,
+        "likelihood": 8.5,
+        "urgency": 6.5,
+        "novelty": 7.0
+      },
+      "final_score": 7.25,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 20,
+      "signal_id": "SIG-W-2026-0112-008",
+      "title": "글로벌 인플레이션 3.1%로 둔화 전망",
+      "category": "Economic",
+      "scores": {
+        "impact": 6.5,
+        "likelihood": 8.0,
+        "urgency": 7.0,
+        "novelty": 5.5
+      },
+      "final_score": 6.85,
+      "priority_tier": "Medium",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 21,
+      "signal_id": "SIG-W-2026-0112-014",
+      "title": "GENIUS Act 시행 - 암호화폐 프레임워크",
+      "category": "Economic",
+      "scores": {
+        "impact": 7.0,
+        "likelihood": 9.0,
+        "urgency": 7.5,
+        "novelty": 7.0
+      },
+      "final_score": 7.55,
+      "priority_tier": "Medium",
+      "pSRT_grade": "C"
+    },
+    {
+      "rank": 22,
+      "signal_id": "SIG-W-2026-0112-026",
+      "title": "중국 오픈소스 AI 모델 확산 - DeepSeek",
+      "category": "Technological",
+      "scores": {
+        "impact": 7.5,
+        "likelihood": 8.0,
+        "urgency": 7.0,
+        "novelty": 7.5
+      },
+      "final_score": 7.45,
+      "priority_tier": "Medium",
+      "pSRT_grade": "C"
+    },
+    {
+      "rank": 23,
+      "signal_id": "SIG-W-2026-0112-024",
+      "title": "Gartner, 2026년까지 100만 대 드론 배송 전망",
+      "category": "Technological",
+      "scores": {
+        "impact": 6.0,
+        "likelihood": 7.5,
+        "urgency": 6.0,
+        "novelty": 7.0
+      },
+      "final_score": 6.45,
+      "priority_tier": "Low",
+      "pSRT_grade": "B"
+    },
+    {
+      "rank": 24,
+      "signal_id": "SIG-W-2026-0112-017",
+      "title": "글로벌 로보택시 시장 2034년 $1889억 전망",
+      "category": "Technological",
+      "scores": {
+        "impact": 6.5,
+        "likelihood": 7.0,
+        "urgency": 5.0,
+        "novelty": 6.5
+      },
+      "final_score": 6.25,
+      "priority_tier": "Low",
+      "pSRT_grade": "C"
+    },
+    {
+      "rank": 25,
+      "signal_id": "SIG-W-2026-0112-010",
+      "title": "밀레니얼-Z세대 2030년까지 노동력 74%",
+      "category": "Social",
+      "scores": {
+        "impact": 6.0,
+        "likelihood": 8.5,
+        "urgency": 5.0,
+        "novelty": 5.5
+      },
+      "final_score": 6.20,
+      "priority_tier": "Low",
+      "pSRT_grade": "C"
+    },
+    {
+      "rank": 26,
+      "signal_id": "SIG-W-2026-0112-015",
+      "title": "CLARITY Act 상원 마크업 예정",
+      "category": "Economic",
+      "scores": {
+        "impact": 5.5,
+        "likelihood": 7.0,
+        "urgency": 7.0,
+        "novelty": 6.0
+      },
+      "final_score": 6.10,
+      "priority_tier": "Low",
+      "pSRT_grade": "C"
+    },
+    {
+      "rank": 27,
+      "signal_id": "SIG-W-2026-0112-027",
+      "title": "AI 윤리와 의미 추구",
+      "category": "Spiritual",
+      "scores": {
+        "impact": 5.5,
+        "likelihood": 7.0,
+        "urgency": 5.0,
+        "novelty": 7.0
+      },
+      "final_score": 5.80,
+      "priority_tier": "Low",
+      "pSRT_grade": "C"
+    }
+  ],
+  "summary": {
+    "critical_signals": 3,
+    "high_priority": 7,
+    "medium_priority": 12,
+    "low_priority": 5
+  }
+}

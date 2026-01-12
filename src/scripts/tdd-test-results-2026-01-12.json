@@ -1,0 +1,187 @@
+{
+  "test_date": "2026-01-12T17:51:59.235351",
+  "target_date": "2026-01-12",
+  "categories": {
+    "Agent Definition": [
+      {
+        "test": "Required Agents Exist",
+        "status": "PASS",
+        "details": "All 14 required agents are defined",
+        "data": {
+          "existing": [
+            "archive-loader",
+            "multi-source-scanner",
+            "dedup-filter",
+            "signal-classifier",
+            "confidence-evaluator",
+            "hallucination-detector",
+            "pipeline-validator",
+            "impact-analyzer",
+            "priority-ranker",
+            "db-updater",
+            "report-generator",
+            "archive-notifier",
+            "source-evolver",
+            "file-organizer"
+          ]
+        }
+      },
+      {
+        "test": "Agent Documentation Complete",
+        "status": "PASS",
+        "details": "All agents have required documentation sections"
+      }
+    ],
+    "Schema Validation": [
+      {
+        "test": "Database Schema Valid",
+        "status": "PASS",
+        "details": "Database has all required fields, 21 signals"
+      },
+      {
+        "test": "Filtered Signals Schema Valid",
+        "status": "PASS",
+        "details": "Filtered signals has correct schema, 48 signals"
+      },
+      {
+        "test": "Structured Signals Schema Valid",
+        "status": "PASS",
+        "details": "Structured signals has correct schema, 46 signals"
+      },
+      {
+        "test": "pSRT Scores Schema Valid",
+        "status": "PASS",
+        "details": "pSRT scores has correct schema, 46 signals"
+      },
+      {
+        "test": "Priority Ranking Schema Valid",
+        "status": "PASS",
+        "details": "Priority ranking has correct schema, 46 signals"
+      }
+    ],
+    "Pipeline Data Flow": [
+      {
+        "test": "Filtered → Structured Count Match",
+        "status": "PASS",
+        "details": "Both have 46 signals"
+      },
+      {
+        "test": "Structured → pSRT Count Match",
+        "status": "PASS",
+        "details": "Both have 46 signals"
+      },
+      {
+        "test": "pSRT → Priority Count Match",
+        "status": "PASS",
+        "details": "Both have 46 signals"
+      }
+    ],
+    "Required Fields": [
+      {
+        "test": "Structured Signals Complete",
+        "status": "PASS",
+        "details": "All 46 signals have required fields"
+      },
+      {
+        "test": "pSRT Scores Complete",
+        "status": "PASS",
+        "details": "All 46 pSRT scores have required fields"
+      }
+    ],
+    "Signal ID Consistency": [
+      {
+        "test": "Signal ID Format Valid",
+        "status": "PASS",
+        "details": "All 46 signal IDs follow correct format"
+      },
+      {
+        "test": "Signal ID Date Check",
+        "status": "PASS",
+        "details": "All signal IDs are from 2026-01-12"
+      }
+    ],
+    "Hallucination Detection": [
+      {
+        "test": "Hallucination Report Exists",
+        "status": "PASS",
+        "details": "Hallucination report file found"
+      },
+      {
+        "test": "Hallucination Report Schema",
+        "status": "PASS",
+        "details": "Valid schema with 6 flagged signals"
+      },
+      {
+        "test": "pSRT Flagging Status",
+        "status": "PASS",
+        "details": "Flagged: 6, Low Grade (E/F): 21",
+        "data": {
+          "flagged_count": 6,
+          "low_grade_count": 21
+        }
+      }
+    ],
+    "Database Integrity": [
+      {
+        "test": "Signal Count Metadata Match",
+        "status": "PASS",
+        "details": "Metadata reports 21, actual count 21"
+      },
+      {
+        "test": "Category Statistics Match",
+        "status": "PASS",
+        "details": "All category statistics are accurate"
+      },
+      {
+        "test": "Unique Signal IDs",
+        "status": "PASS",
+        "details": "All signal IDs are unique"
+      }
+    ],
+    "URL Validation": [
+      {
+        "test": "All Signals Have URLs",
+        "status": "PASS",
+        "details": "All 46 signals have source URLs"
+      },
+      {
+        "test": "URL Format Valid",
+        "status": "PASS",
+        "details": "All 46 URLs have valid format"
+      }
+    ],
+    "pSRT Accuracy": [
+      {
+        "test": "Grade-Score Consistency",
+        "status": "PASS",
+        "details": "All 46 grades match their scores"
+      },
+      {
+        "test": "Score Validity",
+        "status": "PASS",
+        "details": "All scores are within valid range with components"
+      },
+      {
+        "test": "Grade Distribution",
+        "status": "PASS",
+        "details": "Grade distribution is reasonable",
+        "data": {
+          "distribution": {
+            "D": 23,
+            "E": 13,
+            "C": 2,
+            "F": 8
+          }
+        }
+      }
+    ]
+  },
+  "summary": {
+    "total_tests": 25,
+    "passed": 25,
+    "failed": 0,
+    "warnings": 0
+  },
+  "overall_status": "PASS",
+  "pass_rate": 100.0
+}

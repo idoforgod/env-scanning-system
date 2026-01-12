@@ -1,0 +1,272 @@
+{
+  "scan_date": "2026-01-12",
+  "scan_region": "Asia-Pacific and Korea",
+  "scan_time": "2026-01-12T09:30:00Z",
+  "total_signals": 8,
+  "currency": "Multiple (KRW, CNY, INR, USD)",
+  "timezone": "Asia/Seoul",
+  "signals": [
+    {
+      "signal_id": "AS-2026-0112-001",
+      "title": "Samsung and SK Hynix Scale HBM4 Memory Production 50% to Meet AI Demand",
+      "source_name": "Samsung Electronics, SK Hynix",
+      "source_url": "https://www.datacenterdynamics.com/en/news/samsung-and-sk-hynix-to-scale-up-memory-production-capacity-in-2026-to-meet-ai-demand/",
+      "publication_date": "2026-01-08",
+      "category": "Technological",
+      "summary": "Samsung plans to increase HBM (High Bandwidth Memory) production capacity by approximately 50% in 2026, targeting 250,000 wafers per month. SK Hynix unveiled HBM4 16-Hi 48GB at CES 2026 and plans infrastructure investment increases of 4x previous projections. Both companies are competing fiercely for NVIDIA AI processor supply contracts.",
+      "weak_signal_rationale": "This signals a fundamental shift in the computing architecture needed for AI systems. The 50% capacity expansion indicates major semiconductor firms are betting heavily on AI's continued exponential growth and expect sustained demand for specialized memory. The race between Samsung and SK Hynix reveals intensifying competition in critical AI infrastructure components.",
+      "significance": 5,
+      "confidence": 0.95,
+      "key_entities": [
+        "Samsung Electronics",
+        "SK Hynix",
+        "HBM4 memory",
+        "AI infrastructure",
+        "NVIDIA",
+        "Semiconductor manufacturing"
+      ],
+      "regional_focus": "Korea",
+      "impact_areas": [
+        "AI computing infrastructure",
+        "Data center expansion",
+        "Semiconductor supply chain",
+        "Global technology competition"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-002",
+      "title": "SK Telecom Launches A.X K1: 500B Parameter Indigenous Korean AI Model",
+      "source_name": "SK Telecom Newsroom",
+      "source_url": "https://news.sktelecom.com/218116",
+      "publication_date": "2026-01-07",
+      "category": "Technological",
+      "summary": "SK Telecom unveiled A.X K1, Korea's first 500-billion parameter AI foundation model, at the government-sponsored Indigenous AI Foundation Model Project. The model positions Korea as a third AI superpower alongside the US and China. SKT emphasizes agentic AI and physical AI applications, particularly for robotics, autonomous vehicles, and real-world deployment.",
+      "weak_signal_rationale": "This represents a critical inflection point in Asia's AI independence. Rather than relying on OpenAI or other Western models, Korea is establishing indigenous AI capability. The focus on agentic and physical AI suggests a shift toward AI that operates autonomously in physical spaces, not just information processing.",
+      "significance": 5,
+      "confidence": 0.92,
+      "key_entities": [
+        "SK Telecom",
+        "A.X K1 model",
+        "Korean AI independence",
+        "500B parameters",
+        "Agentic AI",
+        "Physical AI"
+      ],
+      "regional_focus": "Korea",
+      "impact_areas": [
+        "AI sovereignty",
+        "Technology independence",
+        "Future autonomous systems",
+        "Regional tech competition"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-003",
+      "title": "LG Unveils CLOiD Humanoid Home Robot - 'Zero Labor Home' Vision",
+      "source_name": "LG Electronics",
+      "source_url": "https://www.lg.com/global/newsroom/news/home-appliance-and-air-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/",
+      "publication_date": "2026-01-06",
+      "category": "Technological",
+      "summary": "LG Electronics announced CLOiD, a dual-armed humanoid home robot with 7 degrees of freedom per arm, five-fingered hands, and integrated generative AI home hub capabilities. The robot can fold laundry, organize dishes, and learn household patterns. LG framed this as part of a 'Zero Labor Home' strategy, with future market availability not yet specified.",
+      "weak_signal_rationale": "This represents the convergence of robotics, AI, and household automation moving from concept to prototype. CLOiD's public CES debut suggests household robotics are transitioning from research to pre-commercial phase. The emphasis on 'Zero Labor Home' hints at major shifts in household labor distribution and domestic work valuation.",
+      "significance": 4,
+      "confidence": 0.88,
+      "key_entities": [
+        "LG Electronics",
+        "CLOiD robot",
+        "Humanoid robotics",
+        "Household automation",
+        "Generative AI",
+        "Domestic labor"
+      ],
+      "regional_focus": "Korea",
+      "impact_areas": [
+        "Household robotics adoption",
+        "Labor market transformation",
+        "Domestic work automation",
+        "Consumer technology expectations"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-004",
+      "title": "Vietnam and Malaysia Emerge as ASEAN Semiconductor Manufacturing Hubs",
+      "source_name": "SEMI, Vietnam Ministry of Information and Communications",
+      "source_url": "https://asean-bac.org/news-and-press-releases/how-vietnam-malaysia-and-singapore-are-shaping-asean-s-semiconductor-supply-chain-potential/",
+      "publication_date": "2026-01-10",
+      "category": "Economic",
+      "summary": "Vietnam is positioned to grow semiconductor packaging and testing capacity from 1% to 8-9% of global market by 2030, backed by the National Semiconductor Development Strategy (2024-2050). Malaysia maintains 13% of global capacity and targets $115B in investments by 2030. Together with Singapore's R&D hub, ASEAN is building a complementary semiconductor ecosystem to reduce China-US supply chain concentration.",
+      "weak_signal_rationale": "This indicates a structural shift in global semiconductor supply chains away from concentration risks. Vietnam's rapid rise signals that low-cost assembly expertise is rapidly upgrading to higher-value manufacturing. The coordinated national strategies suggest geopolitical actors are intentionally building alternative supply chains.",
+      "significance": 4,
+      "confidence": 0.90,
+      "key_entities": [
+        "Vietnam",
+        "Malaysia",
+        "Singapore",
+        "ASEAN",
+        "Semiconductor manufacturing",
+        "Supply chain resilience"
+      ],
+      "regional_focus": "Southeast Asia",
+      "impact_areas": [
+        "Global supply chain diversification",
+        "Geopolitical risk mitigation",
+        "Technology manufacturing shifts",
+        "Regional economic development"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-005",
+      "title": "China Launches $10B Multi-Initiative AI and Technology Development Program",
+      "source_name": "Chinese Ministry of Industry and Information Technology, TechRepublic",
+      "source_url": "https://www.techrepublic.com/article/news-china-10b-plan-tech-initiatives-2026/",
+      "publication_date": "2026-01-08",
+      "category": "Political",
+      "summary": "China announced a $10B government-backed plan to accelerate 50+ major AI and technology projects in 2026. Key initiatives include quantum technology, brain-computer interfaces, AI self-sufficiency targets by 2027, and manufacturing digitalization. Alibaba and Baidu have begun training AI models on domestically-developed chips to reduce NVIDIA dependency.",
+      "weak_signal_rationale": "This reveals China's shift from tech restriction to strategic innovation investment. The 2027 deadline for AI self-sufficiency indicates acceleration in technology independence efforts. The coordinated public-private model (government funding + tech company implementation) suggests a new model of state-guided capitalism emerging.",
+      "significance": 5,
+      "confidence": 0.93,
+      "key_entities": [
+        "China Ministry of MIIT",
+        "Alibaba",
+        "Baidu",
+        "AI self-sufficiency",
+        "Quantum technology",
+        "Brain-computer interfaces"
+      ],
+      "regional_focus": "China",
+      "impact_areas": [
+        "Technology independence",
+        "AI global competition",
+        "Semiconductor autonomy",
+        "Government innovation strategy"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-006",
+      "title": "Japan's AI Robotics Renaissance - Industrial Automation at Scale",
+      "source_name": "Japan Robotics Association, RoboDEX 2026",
+      "source_url": "https://robohorizon.com/en-us/events/robodex-2026-tokyos-answer-to-a-worker-shortage/",
+      "publication_date": "2026-01-12",
+      "category": "Technological",
+      "summary": "Japan's four major industrial robot manufacturers (FANUC, Yaskawa, Kawasaki Heavy Industries, Mitsubishi Electric) are aggressively integrating AI into robotics. RoboDEX 2026 (Jan 21-23) showcases humanoid robots for nursing care, security, and disaster relief. Japan's 2024 industrial robot installations grew 11%, the highest since 2020, signaling accelerated automation adoption.",
+      "weak_signal_rationale": "Japan's robot makers represent over 40% of global industrial robot market share. Their simultaneous AI integration indicates a potential major shift toward intelligent autonomous systems across manufacturing. The 11% YoY growth in installations (highest in 5 years) suggests a tipping point in labor automation acceptance.",
+      "significance": 4,
+      "confidence": 0.91,
+      "key_entities": [
+        "FANUC",
+        "Yaskawa Electric",
+        "Kawasaki Heavy Industries",
+        "Mitsubishi Electric",
+        "RoboDEX 2026",
+        "Humanoid robotics",
+        "AI integration"
+      ],
+      "regional_focus": "Japan",
+      "impact_areas": [
+        "Industrial automation",
+        "Labor market disruption",
+        "Manufacturing transformation",
+        "Robot-human interaction"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-007",
+      "title": "Hyundai Mobis Advances Next-Generation Vehicle Autonomy with 30+ CES 2026 Technologies",
+      "source_name": "Hyundai Mobis",
+      "source_url": "https://www.mobis.com/en/aboutus/press.do?category=press&idx=6155",
+      "publication_date": "2026-01-09",
+      "category": "Technological",
+      "summary": "Hyundai Mobis unveiled 30+ mobility technologies at CES 2026, including X-by-Wire (integrated electronic steering and braking), Holographic Windshield Display (HWD) targeting 2029 mass production, and AI-powered cockpit solutions. The company is positioning itself as a critical OEM partner for autonomous vehicle architecture.",
+      "weak_signal_rationale": "Hyundai Mobis' focus on X-by-Wire and HWD indicates automakers are moving beyond self-driving AI to completely reimagine vehicle control interfaces and driver interaction. The 2029 HWD mass production target suggests a 3-year window for validation, signaling confidence in near-term commercialization.",
+      "significance": 4,
+      "confidence": 0.87,
+      "key_entities": [
+        "Hyundai Mobis",
+        "X-by-Wire",
+        "Holographic Windshield Display",
+        "Autonomous vehicles",
+        "Vehicle cockpit AI",
+        "CES 2026"
+      ],
+      "regional_focus": "Korea",
+      "impact_areas": [
+        "Autonomous vehicle development",
+        "Vehicle-driver interfaces",
+        "Automotive supply chain innovation",
+        "Next-generation mobility"
+      ]
+    },
+    {
+      "signal_id": "AS-2026-0112-008",
+      "title": "India Establishes Regional Data Center Leadership and AI Impact Summit 2026",
+      "source_name": "India Department of Science & Technology, BW Disrupt",
+      "source_url": "https://www.bwdisrupt.com/article/india-s-2026-growth-outlook-key-sectors-driving-technology-led-and-policy-backed-growth-585383",
+      "publication_date": "2026-01-11",
+      "category": "Economic",
+      "summary": "India has emerged as Asia-Pacific's leading data center hub (excluding China) with 950 MW installed capacity and 850 MW projected additions by 2026. The government approved 22 ECMS proposals with 41,863 crore (USD $5B) investment potential and 33,791 direct jobs. India will host the AI Impact Summit in February 2026, positioning itself as a global AI knowledge hub.",
+      "weak_signal_rationale": "India's rapid data center expansion indicates a shift in global AI infrastructure geography. The ECMS initiative and government coordination with tech companies suggests India is deliberately positioning itself as an alternative to China for AI infrastructure and development. The AI Impact Summit signals India's intent to establish soft power in AI governance.",
+      "significance": 3,
+      "confidence": 0.85,
+      "key_entities": [
+        "India",
+        "Data centers",
+        "ECMS (Electronic Components Manufacturing Scheme)",
+        "AI Impact Summit 2026",
+        "Tech manufacturing",
+        "Cloud infrastructure"
+      ],
+      "regional_focus": "India",
+      "impact_areas": [
+        "AI infrastructure diversification",
+        "Regional tech hub competition",
+        "Cloud computing growth",
+        "Government industrial policy"
+      ]
+    }
+  ],
+  "analysis_summary": {
+    "dominant_themes": [
+      "AI and Machine Learning (appears in 5 signals)",
+      "Autonomous/Physical AI Integration (appears in 4 signals)",
+      "Technology Self-Sufficiency (Korea, China, India)",
+      "Supply Chain Resilience and Diversification",
+      "Government-Coordinated Innovation"
+    ],
+    "regional_implications": {
+      "korea": "Emerging as regional AI superpower through indigenous models and advanced robotics/automotive integration",
+      "china": "Doubling down on technology independence with coordinated $10B multi-sector initiatives",
+      "japan": "Leveraging established robotics dominance to integrate AI at scale across industries",
+      "southeast_asia": "Building complementary semiconductor manufacturing ecosystem to reduce concentration risk",
+      "india": "Establishing data center and AI governance leadership as alternative to China"
+    },
+    "cross_cutting_signals": [
+      "All major Asian tech powers simultaneously pursuing AI domestication",
+      "Shift from information-processing AI to physical/agentic AI deployment",
+      "Government-coordinated technology strategies replacing market-only dynamics",
+      "Supply chain regionalization in response to geopolitical tensions",
+      "Automation of household and industrial labor accelerating"
+    ],
+    "uncertainty_areas": [
+      "Timeline to practical household robotics adoption (CLOiD commercialization date unclear)",
+      "Geopolitical fragmentation risk in semiconductor supply chains",
+      "Regulatory approaches to AI governance across regions vary significantly",
+      "Consumer adoption rates for autonomous home systems remain unproven"
+    ]
+  },
+  "methodology_notes": {
+    "scan_window_hours": 24,
+    "scan_timezone": "Asia/Seoul",
+    "sources_scanned": [
+      "Korean tech news (Samsung, SK, LG, Hyundai announcements)",
+      "CES 2026 presentations and coverage",
+      "Chinese government policy announcements",
+      "Japanese industrial robotics data",
+      "Southeast Asian manufacturing reports",
+      "Indian government tech initiatives",
+      "Major tech news aggregators (TechRepublic, TechCrunch coverage)"
+    ],
+    "data_quality": "High confidence in signals - most sourced from official company announcements or government releases",
+    "language_coverage": ["Korean", "English", "Mandarin Chinese"],
+    "publication_dates_range": "2026-01-06 to 2026-01-12"
+  }
+}

@@ -22,8 +22,8 @@ All dimensions scored 1-10.
 
 1. **Load Inputs**
    ```
-   Read env-scanning/structured/classified-signals-{date}.json
-   Read env-scanning/analysis/impact-assessment-{date}.json
+   Read data/{date}/structured/classified-signals-{date}.json
+   Read data/{date}/analysis/impact-assessment-{date}.json
    ```
 
 2. **For Each Signal**, score dimensions:
@@ -55,7 +55,7 @@ All dimensions scored 1-10.
 
 4. **Output**
    ```
-   Write to env-scanning/analysis/priority-ranked-{date}.json
+   Write to data/{date}/analysis/priority-ranked-{date}.json
    ```
 
 ## Scoring Guidelines

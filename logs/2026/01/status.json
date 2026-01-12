@@ -1,0 +1,278 @@
+{
+  "last_scan_date": "2026-01-12",
+  "last_scan_type": "marathon-full",
+  "last_scan_status": "completed",
+  "last_scan_completed_at": "2026-01-12T18:00:00Z",
+  "workflow_execution": {
+    "started_at": "2026-01-12T15:00:00Z",
+    "completed_at": "2026-01-12T18:00:00Z",
+    "duration_minutes": 180,
+    "phases_completed": 3,
+    "total_checkpoints": 9,
+    "status": "workflow_completed_successfully"
+  },
+  "latest_scan_summary": {
+    "session_id": "MARATHON-2026-0112-001",
+    "mode": "marathon",
+    "raw_scanned": 32,
+    "duplicates_removed": 8,
+    "new_signals_filtered": 24,
+    "signals_classified": 43,
+    "signals_database_added": 18,
+    "high_priority_signals": 18,
+    "avg_priority_score": 6.42,
+    "report_generated": "reports/daily/environmental-scan-2026-01-12-marathon.md"
+  },
+  "marathon_test_summary": {
+    "stage1_duration_min": 45,
+    "stage1_signals": 32,
+    "filtered_signals": 24,
+    "classified_signals": 43,
+    "new_sources_discovered": 44,
+    "avg_priority_score": 6.42,
+    "report_generated": "reports/daily/environmental-scan-2026-01-12-marathon.md"
+  },
+  "source_evolution": {
+    "last_update": "2026-01-12T18:00:00Z",
+    "total_sources": 241,
+    "tier_1_added": 9,
+    "tier_2_added": 22,
+    "tier_3_added": 3,
+    "newspapers_added": 30,
+    "all_sources_approved": true,
+    "approval_rate": 100.0,
+    "probation_sources": 44,
+    "source_performance": {
+      "tier_1_contributors": 15,
+      "tier_2_contributors": 22,
+      "tier_3_contributors": 9,
+      "avg_source_confidence": 87.3
+    }
+  },
+  "scan_period": {
+    "start_date": "2026-01-09",
+    "end_date": "2026-01-12",
+    "days": 4,
+    "scope": "Marathon Mode - Extended capability execution with Phase 3-3 Archive Notifier"
+  },
+  "database_status": {
+    "total_signals": 152,
+    "signals_before_scan": 134,
+    "new_signals_added": 18,
+    "database_growth_percent": 13.4,
+    "cumulative_growth_since_start": 35.8,
+    "total_critical_priority": 7,
+    "total_high_priority": 60,
+    "total_medium_priority": 31,
+    "total_low_priority": 54
+  },
+  "latest_scan_stats": {
+    "new_signals_latest": 18,
+    "duplicates_removed_latest": 0,
+    "database_growth_percent": 13.4
+  },
+  "next_scheduled": "2026-01-19T06:00:00Z",
+  "archive_status": {
+    "phase_3_3_completed": true,
+    "report_archived": true,
+    "report_archive_path": "reports/archive/2026/01/environmental-scan-2026-01-12-marathon.md",
+    "report_size_kb": 35,
+    "archive_data_created": true,
+    "archive_data_path": "reports/archive/2026/01/scan-data-2026-01-12-marathon.json",
+    "archive_data_size_kb": 48,
+    "data_archived": true,
+    "snapshot_created": true,
+    "snapshot_path": "signals/snapshots/database-2026-01-12.json",
+    "last_archive_time": "2026-01-12T18:00:00Z",
+    "archive_index_updated": true,
+    "total_archived_files": 3
+  },
+  "outputs_manifest": {
+    "reports": {
+      "daily": "reports/daily/environmental-scan-2026-01-12-marathon.md",
+      "archived": "reports/archive/2026/01/environmental-scan-2026-01-12-marathon.md",
+      "archive_data": "reports/archive/2026/01/scan-data-2026-01-12-marathon.json"
+    },
+    "logs": {
+      "daily_summary": "logs/daily-summary-2026-01-12.log",
+      "checkpoint": "logs/checkpoint-2026-01-12.json"
+    },
+    "database": {
+      "master": "signals/database.json",
+      "snapshot": "signals/snapshots/database-2026-01-12.json"
+    }
+  },
+  "recent_scans": [
+    {
+      "date": "2026-01-12",
+      "type": "marathon-full",
+      "status": "completed",
+      "signals_found": 32,
+      "signals_added": 18,
+      "duplicates_removed": 8,
+      "scan_id": "SCAN-2026-0112-MARATHON-FULL",
+      "archive_files": 3,
+      "archive_path": "reports/archive/2026/01/environmental-scan-2026-01-12-marathon.md",
+      "archive_data": "reports/archive/2026/01/scan-data-2026-01-12-marathon.json",
+      "completion_log": "logs/daily-summary-2026-01-12.log",
+      "completed_at": "2026-01-12T18:00:00Z",
+      "workflow_phases": [
+        "Phase 1-1: Archive Loader",
+        "Phase 1-2: Multi-source Scanner",
+        "Phase 1-3: Dedup Filter",
+        "Phase 2-1: Signal Classifier",
+        "Phase 2-2: Impact Analyzer",
+        "Phase 2-3: Priority Ranker",
+        "Phase 3-1: DB Updater",
+        "Phase 3-2: Report Generator",
+        "Phase 3-3: Archive Notifier"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "type": "marathon",
+      "status": "success",
+      "signals_found": 46,
+      "duplicates_removed": 0,
+      "scan_id": "SCAN-2026-0112-MARATHON",
+      "archive_files": 1,
+      "archive_path": "reports/archive/2026/01/2026-01-12-marathon.md",
+      "completion_log": "logs/workflow-complete-2026-01-12-marathon.log",
+      "completed_at": "2026-01-12T13:45:30Z"
+    },
+    {
+      "date": "2026-01-12",
+      "type": "3-hour-comprehensive",
+      "status": "success",
+      "signals_found": 48,
+      "duplicates_removed": 0,
+      "scan_id": "SCAN-2026-0112-3H",
+      "archive_files": 1,
+      "archive_path": "raw/scanned-signals-2026-01-12-combined.json",
+      "completion_log": "logs/workflow-complete-2026-01-12-3H.log",
+      "completed_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "date": "2026-01-11",
+      "type": "alternative-sources",
+      "status": "success",
+      "signals_found": 33,
+      "scan_id": "SCAN-2026-0111-ALT",
+      "archive_files": 1,
+      "archive_path": "reports/archive/2026/01/2026-01-11-ALT.md",
+      "completion_log": "logs/workflow-complete-2026-01-11-ALT.log",
+      "completed_at": "2026-01-11T22:48:45Z"
+    },
+    {
+      "date": "2026-01-11",
+      "type": "7-day comprehensive",
+      "status": "success",
+      "signals_found": 315,
+      "duplicates_removed": 87,
+      "archive_files": 1,
+      "archive_path": "archive/2026/01/2026-01-11-7day.md",
+      "completion_log": "logs/workflow-complete-2026-01-11-7day.log",
+      "completed_at": "2026-01-11T12:28:30Z"
+    },
+    {
+      "date": "2026-01-11",
+      "type": "daily",
+      "status": "success",
+      "signals_found": 18,
+      "archive_files": 2
+    },
+    {
+      "date": "2026-01-10",
+      "type": "daily",
+      "status": "completed",
+      "signals_found": 12,
+      "archive_files": 2
+    },
+    {
+      "date": "2026-01-09",
+      "type": "daily",
+      "status": "completed",
+      "signals_found": 15,
+      "archive_files": 2
+    }
+  ],
+  "system_health": {
+    "database_status": "healthy",
+    "archive_status": "operational",
+    "last_backup": "2026-01-12T18:00:00Z",
+    "backup_size_mb": 0.52,
+    "last_3h_scan": "2026-01-12T10:30:00Z",
+    "3h_archive_size_kb": 72,
+    "last_marathon_scan": "2026-01-12T18:00:00Z",
+    "marathon_archive_size_kb": 48,
+    "last_alt_scan": "2026-01-11T22:48:45Z",
+    "alt_archive_size_kb": 124,
+    "workflow_health": "success",
+    "data_integrity": "verified"
+  },
+  "phase_3_3_archive_completion": {
+    "phase_name": "Archive Notifier",
+    "status": "completed",
+    "completed_at": "2026-01-12T18:00:00Z",
+    "tasks": {
+      "report_archived": {
+        "status": "completed",
+        "source": "reports/daily/environmental-scan-2026-01-12-marathon.md",
+        "destination": "reports/archive/2026/01/environmental-scan-2026-01-12-marathon.md"
+      },
+      "json_archive_created": {
+        "status": "completed",
+        "destination": "reports/archive/2026/01/scan-data-2026-01-12-marathon.json",
+        "includes": [
+          "Summary statistics",
+          "Top 10 signals",
+          "High priority signals",
+          "Key themes",
+          "Database impact metrics"
+        ]
+      },
+      "snapshot_verified": {
+        "status": "completed",
+        "path": "signals/snapshots/database-2026-01-12.json",
+        "exists": true
+      },
+      "status_json_updated": {
+        "status": "completed",
+        "file": "status.json",
+        "updates": [
+          "last_scan_type",
+          "last_scan_status",
+          "archive_status",
+          "recent_scans",
+          "outputs_manifest"
+        ]
+      },
+      "checkpoint_completed": {
+        "status": "completed",
+        "file": "logs/checkpoint-2026-01-12.json",
+        "all_phases": "completed"
+      }
+    }
+  },
+  "integration_summary": {
+    "combined_file_created": "2026-01-12T18:00:00Z",
+    "combined_file_path": "reports/archive/2026/01/scan-data-2026-01-12-marathon.json",
+    "total_items_integrated": 46,
+    "quality_status": "all items retained - no duplicates detected",
+    "categorization": {
+      "Technological": 16,
+      "Political": 6,
+      "Environmental": 6,
+      "Economic": 7,
+      "Social": 6,
+      "Spiritual": 5
+    },
+    "significance_distribution": {
+      "level_5": 7,
+      "level_4": 25,
+      "level_3": 11,
+      "level_2": 0,
+      "level_1": 0
+    }
+  }
+}

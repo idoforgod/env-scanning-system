@@ -1,0 +1,685 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-12",
+    "scan_time": "10:30:00",
+    "scan_type": "legal_regulatory_focus",
+    "time_window_hours": 24,
+    "strict_mode": true,
+    "timezone": "Asia/Seoul",
+    "target_sources": [
+      "Law.com",
+      "Reuters Legal",
+      "Regulation Asia",
+      "MLex",
+      "Lexology",
+      "Government Press Releases",
+      "Legal News Sources"
+    ],
+    "focus_keywords": [
+      "AI regulation",
+      "tech antitrust",
+      "data privacy",
+      "GDPR",
+      "digital rights",
+      "ESG disclosure",
+      "climate litigation"
+    ],
+    "total_scanned": 31,
+    "by_category": {
+      "Political": 31
+    }
+  },
+  "items": [
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-001",
+      "title": "Three US States Enact Comprehensive Privacy Laws Effective January 1, 2026",
+      "url": "https://www.lexology.com/library/detail.aspx?g=4fadb797-bf9f-4824-be1c-682726f31fe7",
+      "source_name": "Lexology",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "Indiana, Kentucky, and Rhode Island implemented comprehensive consumer data protection acts on January 1, 2026. All three laws grant consumers rights to access, correct, delete, and opt-out of data processing for targeted advertising. Indiana and Kentucky provide 30-day cure periods with civil penalties up to $7,500 per violation, while Rhode Island offers no cure period with penalties up to $10,000 per violation. Rhode Island has the lowest applicability threshold at 35,000 consumers or 10,000 consumers with 20% revenue from data sales.",
+      "key_entities": [
+        "Indiana Attorney General",
+        "Kentucky Attorney General",
+        "Rhode Island Attorney General",
+        "ICDPA",
+        "KCDPA",
+        "RIDTPPA"
+      ],
+      "raw_content": "Three states joined the growing list of states with comprehensive consumer data privacy laws on January 1, 2026. Indiana Consumer Data Protection Act requires opt-in consent for sensitive data processing and mandates data protection impact assessments. Kentucky Consumer Data Protection Act includes similar provisions with 30-day cure period. Rhode Island Data Transparency and Privacy Protection Act has stricter applicability thresholds and higher penalties without cure period.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-002",
+      "title": "California Implements Sweeping CCPA Regulations on Automated Decision-Making and Data Brokers",
+      "url": "https://www.lexology.com/library/detail.aspx?g=e39e63f5-4f8c-4f53-87be-9fe134216787",
+      "source_name": "Lexology",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "New CCPA regulations effective January 1, 2026 introduce comprehensive automated decision-making requirements, mandatory cybersecurity audits, risk assessments, and a centralized Delete Request and Opt-out Platform (DROP) for data brokers. Businesses using ADMT must provide pre-use notice, enable consumer access, offer opt-out rights, and implement appeal mechanisms for significant decisions. Annual cybersecurity audits required for businesses presenting significant security risks. Data brokers must register and access DROP platform minimum every 45 days.",
+      "key_entities": [
+        "California Attorney General",
+        "CCPA",
+        "DROP",
+        "ADMT",
+        "data brokers"
+      ],
+      "raw_content": "The 2026 CCPA regulations introduce new risk assessment requirements, new rules related to cookies/pixels, and new data broker requirements. Mandatory confirmation requirement means websites must show users that their opt-out was processed with visible toggles, badges, or messages confirming tracking disabled status. New data brokers pay prorated fees ranging from $6,000 in January to $500 in December.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-003",
+      "title": "California Enacts Multiple AI Laws Addressing Liability, Pricing Algorithms, and Healthcare",
+      "url": "https://aviusai.com/california-ai-laws-january-2026/",
+      "source_name": "Avius AI",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "California implemented comprehensive AI legislation effective January 1, 2026. AB 316 eliminates autonomous-harm defense, holding developers, modifiers, and users accountable for AI-generated damages. AB 325 prohibits anticompetitive use of shared pricing algorithms. AB 489 prevents AI from implying licensed healthcare professional oversight unless accurate. AB 621 expands civil remedies against non-consensual sexually explicit deepfakes with damages up to $250,000. AB 2013 requires developers to publicly post summaries of training datasets including sources, data volume, and IP status.",
+      "key_entities": [
+        "California Legislature",
+        "AB 316",
+        "AB 325",
+        "AB 489",
+        "AB 621",
+        "AB 2013",
+        "SB 53",
+        "SB 243",
+        "SB 524"
+      ],
+      "raw_content": "SB 53 mandates risk-mitigation strategies for large AI model developers. SB 243 requires chatbots to disclaim non-human status to minors and includes self-harm prevention protocols. SB 524 obligates law enforcement to disclose AI usage in official report preparation. Laws affect tech companies, healthcare providers, media producers, platforms, and AI developers serving California residents with potential penalties including fines, injunctions, and damages.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-004",
+      "title": "New York Enacts AI Transparency and Digital Replica Rights Laws",
+      "url": "https://www.lexology.com/library/detail.aspx?g=2a5a39c5-3e86-45b8-b361-9f5938af9ef8",
+      "source_name": "Lexology",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "New York's S8420A requires advertisers to disclose when ads contain AI-generated synthetic performers, effective mid-2026 (180 days after Governor's approval). Penalties are $1,000 for first violations and $5,000 for subsequent violations. S8391 requires prior consent from deceased performers' heirs before using digital replicas in audiovisual works, sound recordings, and live musical performances. Platforms must remove unauthorized content upon notice from rights holders.",
+      "key_entities": [
+        "New York Legislature",
+        "S8420A",
+        "S8391",
+        "synthetic performers",
+        "digital replica rights"
+      ],
+      "raw_content": "New York and California enacted laws regarding AI companion models which came into effect in November 2025 and January 2026 respectively, establishing mandatory safety protocols for companies operating AI companion models. Laws exempt audio-only ads, AI translation, and promotional materials for expressive works.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-005",
+      "title": "EU Digital Markets Act Enforcement Intensifies with Meta Investigation and Commission Review",
+      "url": "https://www.techpolicy.press/reviewing-european-antitrust-activity-in-2025-and-what-it-all-means-for-2026/",
+      "source_name": "TechPolicy.Press",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Political",
+      "summary": "European Commission published summary and responses to Digital Markets Act consultation on January 8, 2026. Meta introduced third advertising model in January 2026 after €200 million fine in April 2025 for violating DMA with consent-or-pay model. French President Macron emphasized importance of Commission standing firm on DMA and DSA. Commission investigating whether to expand DMA to include cloud computing services and launching new investigation into Google's search policy potentially harming publishers.",
+      "key_entities": [
+        "European Commission",
+        "Meta",
+        "Google",
+        "Emmanuel Macron",
+        "DMA",
+        "DSA",
+        "Teresa Ribera"
+      ],
+      "raw_content": "Brussels preparing to ramp up investigations and penalties in 2026 as Trump administration views regulations as economic warfare and prepares retaliation. WhatsApp AI integration probe launched December 4, 2025 examines Meta's policy restricting third-party chatbots while promoting Meta AI. Google AI Overviews investigation examines whether Google unfairly uses publisher content for AI summaries, with research indicating up to 80% fewer clickthroughs for publishers.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-006",
+      "title": "AI Copyright Litigation Calendar Features Major Fair Use Tests in 2026",
+      "url": "https://news.bloomberglaw.com/ip-law/music-piracy-ai-lawsuits-top-2026-copyright-litigation-calendar",
+      "source_name": "Bloomberg Law",
+      "source_type": "news",
+      "published_date": "2026-01-05",
+      "category_hint": "Political",
+      "summary": "2026 features pivotal AI copyright litigation testing fair use doctrine for AI training. Two federal judges validated fair-use defenses in specific circumstances, though one California judge ruled copying from pirate sites isn't fair use. First appellate decision on AI training fair use expected from Third Circuit in 2026 involving Ross Intelligence and Thomson Reuters. Anthropic aims to finalize $1.5 billion settlement with authors over copyright claims. Computer scientist Stephen Thaler petitioned Supreme Court to determine whether AI image generator can be registered as copyright owner.",
+      "key_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Thomson Reuters",
+        "Ross Intelligence",
+        "Stephen Thaler",
+        "Third Circuit",
+        "Supreme Court",
+        "John Carreyrou"
+      ],
+      "raw_content": "January 5, 2026: US District Judge Sidney Stein affirmed magistrate judge's order compelling OpenAI to produce entire 20 million-log sample of ChatGPT conversations in copyright litigation. December 22, 2025: Pulitzer Prize-winning author John Carreyrou with other journalists filed lawsuit against six major AI companies (OpenAI, Google, Meta, xAI, Anthropic, Perplexity) alleging works used without authorization to train models.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-007",
+      "title": "State Attorney Generals Prioritize AI Antitrust and Youth Safety Enforcement for 2026",
+      "url": "https://www.wilmerhale.com/en/insights/client-alerts/20260109-state-ag-enforcement-action-priorities-for-2026",
+      "source_name": "WilmerHale",
+      "source_type": "legal",
+      "published_date": "2026-01-09",
+      "category_hint": "Political",
+      "summary": "State AGs prioritizing youth safety on social media and AI platforms, with New York and California enacting laws establishing mandatory safety protocols for AI companion models. AGs expanding independent antitrust enforcement scrutinizing AI-powered price-setting technology, with recent cases targeting RealPage (real estate pricing algorithms) and Agri Stats (meat industry data). Colorado and Washington implemented state-level premerger notification requirements. Florida Digital Bill of Rights enforcement action against Roku demonstrates aggressive pursuit of unauthorized processing and sale of sensitive data including minors' data.",
+      "key_entities": [
+        "State Attorneys General",
+        "RealPage",
+        "Agri Stats",
+        "Roku",
+        "Florida AG",
+        "Colorado",
+        "Washington",
+        "Kalshi"
+      ],
+      "raw_content": "State AGs claiming trading event contracts constitutes gambling under state law, asserting authority over platforms like Kalshi. Multiple states issued directives declaring prediction markets illegal. Emerging trends include resistance to federal preemption of state AI regulations, food safety scrutiny (artificial dyes, ultra-processed foods), climate and ESG practice investigations, and sweepstakes casino enforcement.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-008",
+      "title": "Climate Litigation Advances with California Appeals Court Jurisdiction Ruling",
+      "url": "https://climate.law.columbia.edu/news/climate-litigation-updates-january-7-2026",
+      "source_name": "Columbia Law School Sabin Center",
+      "source_type": "academic",
+      "published_date": "2026-01-07",
+      "category_hint": "Political",
+      "summary": "California Court of Appeal reversed trial court in California Municipalities v. Citgo Petroleum, finding sufficient connection between defendant's California sales and climate liability claims to establish personal jurisdiction based on duty to warn. Hawaii Circuit Court denied defendants' motions to dismiss in Honolulu v. Sunoco LP, allowing climate tort case to proceed to trial. Montana Supreme Court declined original jurisdiction in youth climate cases following Held v. State, directing plaintiffs to trial court proceedings. European Court of Human Rights rejected Austrian climate rights case under Articles 2, 8 ECHR due to failed standing requirements.",
+      "key_entities": [
+        "California Court of Appeal",
+        "Citgo Petroleum",
+        "Sunoco LP",
+        "Honolulu",
+        "Montana Supreme Court",
+        "ECHR",
+        "BOEM",
+        "California AG"
+      ],
+      "raw_content": "Revolution Wind Project disputes feature multiple developers and state attorneys general challenging federal stop-work orders on offshore wind projects. Cases transferred to D.C. federal court seeking preliminary injunctions against Bureau of Ocean Energy Management suspension orders. California and coalition of states v. DOT/FHWA in Western District of Washington challenges Trump administration freeze on EV charger program funds claiming Impoundment violations and Administrative Procedure Act violations. Brazil Rio Grande do Sul Federal Court partially granted relief ordering coal plant license suspension pending climate impact reassessment, applying third phase climate legal regime.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-009",
+      "title": "Japan Antitrust Watchdog Prioritizes SME Protection and Big Tech Smartphone Regulation",
+      "url": "https://www.mlex.com/mlex/articles/2425542/japan-s-antitrust-watchdog-shapes-2026-agenda-around-sme-protection-digital-rules",
+      "source_name": "MLex",
+      "source_type": "legal",
+      "published_date": "2026-01-09",
+      "category_hint": "Political",
+      "summary": "Japan Fair Trade Commission recalibrating enforcement in 2026, stepping up protection for smaller businesses and policing Big Tech under new smartphone law. JFTC prioritizing intensified action against exploitative trading practices affecting SMEs. New smartphone law central to digital regulation enforcement targeting major tech companies. Emerging tension around maintaining orthodox merger control amid growing economic security pressures.",
+      "key_entities": [
+        "Japan Fair Trade Commission",
+        "JFTC",
+        "Big Tech",
+        "smartphone law"
+      ],
+      "raw_content": "Japan's antitrust watchdog shapes 2026 agenda around SME protection and digital rules. Primary focus areas include SME protection through intensified action against exploitative trading practices and digital regulation via new smartphone law. Strategic challenge involves how JFTC can maintain orthodox merger control amid growing economic security pressures, suggesting debates about aligning competition policy with broader economic security objectives.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-010",
+      "title": "Employment Laws Sweep US States: Minimum Wage Hikes and Worker Protection Expansions",
+      "url": "https://www.littler.com/news-analysis/asap/new-year-new-employment-laws-what-takes-effect-january-1-2026",
+      "source_name": "Littler Mendelson",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "More than 50 new workplace laws effective January 1, 2026 across over half of US states. 19 states see minimum wage increases with statewide rates hitting or exceeding $15 per hour for first time in Arizona, Colorado, Hawaii, Maine, Missouri, and Nebraska. California state minimum wage increases to $16.90 per hour. California AB 692 prohibits stay-or-pay clauses requiring workers to repay employers for debts upon separation unless meeting statutory exceptions. California SB 294 Workplace Know Your Rights Act requires employers to provide standalone written notice to each new hire and current employee of workers' rights by February 1, 2026.",
+      "key_entities": [
+        "California Legislature",
+        "AB 692",
+        "AB 578",
+        "SB 261",
+        "SB 294",
+        "AB 1340",
+        "Minnesota",
+        "Oregon",
+        "Washington"
+      ],
+      "raw_content": "California AB 1340 grants rideshare drivers right to sectoral collective bargaining, allowing drivers to unionize for first time. Minnesota requires paid rest break of at least 15 minutes within every four hours of consecutive work plus 30-minute meal breaks for 6+ hour shifts. Oregon imposes joint liability on property owners and contractors for unpaid construction wages. Delaware, Minnesota, Rhode Island implement new or expanded paid family/medical leave programs. Illinois HB 3773 prohibits employers from using AI with discriminatory effects and requires notification of AI use. California SB 446 requires data breach disclosure within 30 days.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-011",
+      "title": "China Amends Cybersecurity Law Strengthening Data Protection and Cross-Border Transfer Rules",
+      "url": "https://secureprivacy.ai/blog/privacy-laws-2026",
+      "source_name": "SecurePrivacy",
+      "source_type": "news",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "Amendments to China's Cybersecurity Law took effect January 1, 2026, strengthening alignment with Personal Information Protection Law (PIPL) and reinforcing obligations for network operators and critical information infrastructure. Amendments expand regulatory oversight, refine security obligations, and tighten expectations around data handling and cross-border transfers. Changes represent significant expansion of Chinese data sovereignty and cybersecurity regime.",
+      "key_entities": [
+        "China",
+        "Cybersecurity Law",
+        "PIPL",
+        "network operators",
+        "critical information infrastructure"
+      ],
+      "raw_content": "China's amended Cybersecurity Law effective January 1, 2026 expands regulatory oversight and refines security obligations for network operators. Amendments tighten expectations around data handling and cross-border transfers, strengthening alignment with Personal Information Protection Law. Changes reinforce obligations for critical information infrastructure operators and expand scope of regulatory requirements for data sovereignty.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-012",
+      "title": "EU AI Act High-Risk System Requirements Take Effect August 2026",
+      "url": "https://www.lexology.com/library/detail.aspx?g=a8fd7019-d9dd-4605-a51f-747fa7d007e0",
+      "source_name": "Lexology",
+      "source_type": "legal",
+      "published_date": "2026-01-02",
+      "category_hint": "Political",
+      "summary": "EU AI Act requirements relating to most high-risk AI systems enter into force August 2, 2026, representing watershed moment in global tech regulation. While some requirements and prohibitions already apply, comprehensive high-risk system compliance obligations become enforceable mid-2026. Requirements extend to 2027 for AI use in some high-risk products. Implementation marks shift toward comprehensive AI governance framework with specific obligations for developers and deployers.",
+      "key_entities": [
+        "European Commission",
+        "EU AI Act",
+        "high-risk AI systems",
+        "AI developers",
+        "AI deployers"
+      ],
+      "raw_content": "By August 2, 2026, EU AI Act becomes fully applicable except for use of AI for some high-risk products for which timelines extend to 2027. Act establishes comprehensive framework for AI governance with specific requirements for high-risk AI systems including conformity assessments, risk management systems, data governance, technical documentation, transparency obligations, and human oversight requirements.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-013",
+      "title": "Texas Responsible AI Governance Act Takes Effect Requiring AI Use Disclosure",
+      "url": "https://www.lexology.com/library/detail.aspx?g=2a5a39c5-3e86-45b8-b361-9f5938af9ef8",
+      "source_name": "Lexology",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "Texas Responsible Artificial Intelligence Governance Act came into effect January 1, 2026, applying broadly to developers and deployers of AI systems. Law requires certain entities using AI system to disclose such use to recipients of their services. Represents state-level AI governance framework establishing transparency requirements for AI deployment in business operations.",
+      "key_entities": [
+        "Texas Legislature",
+        "Texas Responsible AI Governance Act",
+        "AI developers",
+        "AI deployers"
+      ],
+      "raw_content": "Texas Responsible Artificial Intelligence Governance Act effective January 1, 2026 applies broadly to developers and deployers of AI systems requiring disclosure of AI use to service recipients. Law establishes transparency framework for AI deployment in business operations, representing significant state-level AI governance initiative alongside California's comprehensive AI legislation.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-014",
+      "title": "Federal Reserve Targets Q4 2026 for Skinny Master Accounts for Payment Providers",
+      "url": "https://therecursive.com/compliance-changes-fintech-regulation-2026/",
+      "source_name": "The Recursive",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Political",
+      "summary": "Federal Reserve's goal is to have skinny master accounts available by fourth quarter of 2026, providing payment service providers with more direct access to Federal Reserve system. Development represents significant shift in fintech infrastructure potentially enabling more efficient payment processing for non-bank financial institutions. Change could democratize access to Federal Reserve payment rails for innovative payment companies.",
+      "key_entities": [
+        "Federal Reserve",
+        "payment service providers",
+        "master accounts",
+        "fintech companies"
+      ],
+      "raw_content": "Federal Reserve targeting Q4 2026 for availability of skinny master accounts which would provide payment service providers with more direct access to Federal Reserve system. Initiative represents significant infrastructure development for fintech sector potentially enabling non-bank payment providers to access Federal Reserve payment systems more directly, reducing reliance on traditional banking intermediaries.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-015",
+      "title": "US Crypto Legislation Advances with Senate Hearings Scheduled for January 2026",
+      "url": "https://finance.yahoo.com/news/top-us-crypto-bills-watch-100215687.html",
+      "source_name": "Yahoo Finance",
+      "source_type": "news",
+      "published_date": "2026-01-03",
+      "category_hint": "Political",
+      "summary": "Senate expects to hold hearings and markups in January 2026 on crypto legislation according to White House crypto adviser David Sacks. Market structure bills would place Bitcoin and Ethereum primarily under CFTC regulation as commodities while securities-like assets remain with SEC. GENIUS Act (stablecoins) signed into law July 2025 with full implementation targeted for 2026 and regulators required to finalize rules by July 18, 2026. CFTC plans to wrap up crypto sprint by August 2026 focusing on spot crypto trading and blockchain integration.",
+      "key_entities": [
+        "US Senate",
+        "David Sacks",
+        "CFTC",
+        "SEC",
+        "GENIUS Act",
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "raw_content": "2026 poised to be pivotal year for US crypto policy with bipartisan momentum and shift toward more innovation-friendly regulation. Senate scheduling hearings and markups in January 2026 on crypto legislation. Market structure bills would establish regulatory framework with CFTC overseeing Bitcoin and Ethereum as commodities. CFTC crypto sprint concluding August 2026 focusing on spot crypto trading and blockchain integration. Federal Reserve targeting skinny master accounts by Q4 2026 for payment service providers.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-016",
+      "title": "EU MiCA Regulation Transition Period Extends into Mid-2026 for Crypto Asset Service Providers",
+      "url": "https://therecursive.com/compliance-changes-fintech-regulation-2026/",
+      "source_name": "The Recursive",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Political",
+      "summary": "Markets in Crypto-Assets (MiCA) regulation requires Crypto Asset Service Providers (CASPs) in EU to meet similar expectations as traditional financial institutions with transition period running into mid-2026. Supervision moving toward centralization under ESMA (European Securities and Markets Authority) in 2026. Represents comprehensive crypto regulatory framework establishing licensing requirements, consumer protection standards, and operational requirements for crypto service providers.",
+      "key_entities": [
+        "European Union",
+        "MiCA",
+        "CASPs",
+        "ESMA",
+        "crypto service providers"
+      ],
+      "raw_content": "MiCA regulation transition period extending into mid-2026 requires Crypto Asset Service Providers in EU to meet expectations similar to traditional financial institutions. Supervision centralizing under ESMA in 2026 representing shift toward unified European approach to crypto regulation. Framework establishes comprehensive requirements for licensing, consumer protection, operational resilience, and market abuse prevention for crypto asset service providers.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-017",
+      "title": "SEC Division of Examinations Announces 2026 Priorities Eliminating Crypto Focus",
+      "url": "https://www.omm.com/insights/alerts-publications/sec-fy-2026-exam-priorities-what-investment-advisers-funds-broker-dealers-can-expect/",
+      "source_name": "O'Melveny",
+      "source_type": "legal",
+      "published_date": "2026-01-04",
+      "category_hint": "Political",
+      "summary": "SEC Division of Examinations released 2026 priorities eliminating crypto from examination priorities for first time in eight years, signaling more collaborative tone. For fiscal year 2026, Division conducting examinations in core areas including fiduciary duty, standards of conduct, custody rule, and compliance with 2024 amendments to Regulation S-P. Division prioritizing examinations of newly registered advisers and investment companies. Examinations focusing on automated investment advisory services, AI usage, trading algorithms, and emerging technology risks.",
+      "key_entities": [
+        "SEC",
+        "Division of Examinations",
+        "Paul S. Atkins",
+        "Regulation S-P",
+        "investment advisers",
+        "broker-dealers"
+      ],
+      "raw_content": "SEC Chairman Paul S. Atkins stated examinations are important component to accomplishing agency mission but should not be gotcha exercise. 2026 priorities include Regulation Best Interest, Form CRS, managing conflicts of interest in retail sales practice for broker-dealers. Examiners assessing broker-dealer credit, market, and liquidity risk management controls. Division focused on firms' use of automated investment advisory services and recommendations with spotlight on AI and automated investment tools.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-018",
+      "title": "FDA Announces Sweeping Deregulation of Wearables and AI-Enabled Clinical Decision Support",
+      "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/",
+      "source_name": "STAT News",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Political",
+      "summary": "FDA announced January 6, 2026 it will ease regulation of digital health products following Trump administration promises to deregulate AI. Two guidance documents released: one on low-risk wellness products including wearable devices, another on clinical decision support software. FDA indicates it will not focus oversight authority on products measuring physiological parameters (blood glucose, blood pressure, oxygen saturation) provided products meet certain criteria. FDA removed language indicating software for time-critical clinical decision-making will automatically be subject to regulation as medical device.",
+      "key_entities": [
+        "FDA",
+        "clinical decision support software",
+        "wearables",
+        "wellness products",
+        "AI-enabled devices"
+      ],
+      "raw_content": "FDA softening approach to regulation of clinical decision support software including AI-enabled products helping doctors navigate diagnoses and treatment options. Products can now enter market without FDA review if fulfilling agency's other criteria for escaping regulation. Quality Management System Regulation (QMSR) set to go into effect February 2, 2026 amending device CGMP requirements to align with international consensus standard for Quality Management Systems.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-019",
+      "title": "Sixth Circuit Overturns FCC Net Neutrality Rules Citing Post-Chevron Legal Framework",
+      "url": "https://natlawreview.com/article/telecom-alert-6th-circuit-net-neutrality-decision-updated-application-fees-january",
+      "source_name": "National Law Review",
+      "source_type": "legal",
+      "published_date": "2026-01-02",
+      "category_hint": "Political",
+      "summary": "January 2, 2025: US Court of Appeals for Sixth Circuit rejected FCC arguments to uphold statutory authority to impose net-neutrality policies, declaring commercial broadband providers are not telecommunications services subject to Title II regulations under Communications Act. Court found FCC's interpretation of broadband internet access service as Title II telecommunications service inconsistent with plain language of Communications Act. Decision represents first major telecommunications decision following Supreme Court's 2024 Loper Bright ruling overturning Chevron doctrine.",
+      "key_entities": [
+        "Sixth Circuit",
+        "FCC",
+        "net neutrality",
+        "Title II",
+        "Communications Act",
+        "Loper Bright",
+        "Jessica Rosenworcel"
+      ],
+      "raw_content": "Because FCC's net neutrality rules had been repealed in 2018 and FCC's 2024 order to reinstate net neutrality never became effective, Sixth Circuit decision preserved status quo without changing anything for consumers or businesses. Federal net neutrality rules remain repealed while state laws like California and Washington still apply influencing nationwide provider practices. Court emphasized any future FCC effort to reinstate net neutrality would require clear congressional authorization. Former FCC Chairwoman Jessica Rosenworcel called on Congress to legislate net neutrality.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-020",
+      "title": "EU Carbon Border Adjustment Mechanism Enters Full Operational Phase",
+      "url": "https://www.hklaw.com/en/news/intheheadlines/2026/01/international-trade-developments-to-watch-for-in-2026",
+      "source_name": "Holland & Knight",
+      "source_type": "legal",
+      "published_date": "2026-01-03",
+      "category_hint": "Political",
+      "summary": "EU's Carbon Border Adjustment Mechanism entered full operational phase January 1, 2026, requiring importers to purchase and surrender CBAM certificates corresponding to emissions released during production of covered products. Mechanism covers five major industries including steel, cement, and fertilizers. Represents first major carbon border tax system requiring embedded emissions accounting for imported goods. Implementation creates new compliance obligations for global exporters to EU.",
+      "key_entities": [
+        "European Union",
+        "CBAM",
+        "carbon border adjustment",
+        "steel industry",
+        "cement industry",
+        "fertilizers"
+      ],
+      "raw_content": "2026 described as year of enforcement for customs and tariff-related matters following US Department of Justice formation of cross-agency trade fraud task force and funding increase for Customs and Border Protection. CBAM operational phase requires importers to purchase certificates corresponding to production emissions for covered products. System establishes precedent for carbon border taxation potentially influencing global trade flows and carbon leakage prevention.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-021",
+      "title": "DOJ Clears Compass-Anywhere Merger Over Staff Antitrust Concerns",
+      "url": "https://www.bloomberg.com/news/articles/2026-01-09/doj-allows-compass-anywhere-deal-over-staff-antitrust-concerns",
+      "source_name": "Bloomberg",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Political",
+      "summary": "Hart-Scott-Rodino Act waiting period for Compass-Anywhere merger expired January 3, 2026. Compass closed acquisition of Anywhere Real Estate after Justice Department leadership overruled staff concerns about competition in real estate market. DOJ's antitrust staff recommended in-depth investigation of proposed combination of two largest residential brokerages in US but were blocked by senior Trump administration officials. Development signals Trump Administration return to modern practice of accepting settlements addressing competitive concerns while allowing transactions to close.",
+      "key_entities": [
+        "DOJ",
+        "Compass",
+        "Anywhere Real Estate",
+        "Hart-Scott-Rodino Act",
+        "Trump Administration"
+      ],
+      "raw_content": "Trump Administration returned to modern practice of accepting settlements addressing competitive concerns arising from transactions rather than blocking them outright. Represents notable departure from Biden Administration which often refused to consider proposed divestitures. California adopted law effective January 1, 2026 generally prohibiting shared pricing algorithms that may be used to restrain trade. Industry observers predict unpredictability of White House strategy plus rise of blue state antitrust regulators will combine by end of 2026 to dampen misperception that anything goes for US antitrust review of M&A.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-022",
+      "title": "Medicare Drug Price Negotiations Take Effect with $6 Billion Estimated Savings",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026",
+      "source_name": "CMS",
+      "source_type": "government",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "Negotiated prices (Maximum Fair Prices) for 10 drugs covered under Medicare Part D took effect January 1, 2026, representing first time Medicare has ability to directly negotiate prices of certain high expenditure single source drugs under Inflation Reduction Act of 2022. If negotiated prices had been in effect during 2023, would have saved estimated $6 billion in net covered prescription drug costs representing 22% lower net spending in aggregate. When negotiated prices go into effect in 2026, people enrolled in Medicare prescription drug coverage will save estimated $1.5 billion.",
+      "key_entities": [
+        "CMS",
+        "Medicare",
+        "Inflation Reduction Act",
+        "Maximum Fair Prices",
+        "Part D"
+      ],
+      "raw_content": "CMS clarified units of selected drugs sold at MFP included in calculation of Average Sales Price effective January 1, 2026. Physician Fee Schedule Final Rule effective January 1, 2026 includes several notable changes having substantial impact on pharmaceutical manufacturer government price reporting under Medicare Part B. Represents historic change in Medicare drug pricing with direct negotiation authority over high-cost medications.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-023",
+      "title": "Basel III Cryptoasset Standards Implementation Delayed with January 2026 Deadline",
+      "url": "https://www.skadden.com/insights/publications/2024/08/bank-capital-standards-for-cryptoasset",
+      "source_name": "Skadden",
+      "source_type": "legal",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "Basel Committee on Banking Supervision set January 1, 2026 as implementation date for cryptoasset standards, extended from original 2025 deadline. Standards include capital requirements for cryptoasset exposures and disclosure framework (DIS55). Revisions detail further requirements for banks to benefit from preferential treatment for stablecoin exposures and set out new disclosure templates for cryptoasset holdings and liabilities. Important changes include clarification of requirements regarding reserve assets of stablecoins which can classify as Group 1 receiving relatively mild capital treatment.",
+      "key_entities": [
+        "Basel Committee",
+        "BIS",
+        "stablecoins",
+        "banks",
+        "cryptoassets",
+        "ESMA"
+      ],
+      "raw_content": "Central bank digital currencies (CBDCs) expressly outside scope of Standards but tokenized securities, stablecoins and other cryptocurrencies, utility and governance tokens, and NFTs fall within scope. European Commission mandated in CRR3 to publish legislative proposal by mid-2025 to implement revised standard into European legislation. Singapore remains one of few jurisdictions to have begun implementing Basel Cryptoasset Standards with only 3 out of 20 Basel Committee member jurisdictions having started implementation according to September 2024 dashboard.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-024",
+      "title": "H-1B Visa Program Implements Weighted Selection Process and $100,000 Fee",
+      "url": "https://www.federalregister.gov/documents/2025/12/29/2025-23853/weighted-selection-process-for-registrants-and-petitioners-seeking-to-file-cap-subject-h-1b",
+      "source_name": "Federal Register",
+      "source_type": "government",
+      "published_date": "2025-12-29",
+      "category_hint": "Political",
+      "summary": "DHS announced final rule amending H-1B registration selection process to implement weighted selection favoring allocating H-1B visas to higher-skilled and higher-paid aliens while maintaining opportunity for employers to secure H-1B workers at all wage levels. Final rule effective February 27, 2026 and will be in place for FY 2027 H-1B cap registration season. Presidential Proclamation requires certain H-1B petitions filed at or after 12:01 AM EDT September 21, 2025 to be accompanied by additional $100,000 payment as condition of eligibility. Fee being litigated on expedited schedule with appeals court fast-tracking case and oral argument expected February 2026.",
+      "key_entities": [
+        "DHS",
+        "USCIS",
+        "H-1B",
+        "Presidential Proclamation",
+        "wage levels"
+      ],
+      "raw_content": "USCIS reached FY 2026 H-1B cap receiving enough petitions for congressionally mandated 65,000 regular cap and 20,000 US advanced degree exemption. USCIS now giving deference to previously approved H-1B petitions for extensions unless major changes, rollback of Trump-era policy meaning fewer delays and repetitive paperwork. Updated guidelines require degree directly aligns with job role tied to visa representing stricter job eligibility requirements.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-025",
+      "title": "IRS Cryptocurrency Broker Reporting Requirements Begin Phased Implementation",
+      "url": "https://www.irs.gov/newsroom/final-regulations-and-related-irs-guidance-for-reporting-by-brokers-on-sales-and-exchanges-of-digital-assets",
+      "source_name": "IRS",
+      "source_type": "government",
+      "published_date": "2025-12-30",
+      "category_hint": "Political",
+      "summary": "Brokers must report gross proceeds for transactions effected on or after January 1, 2025 and must report basis on certain transactions effected on or after January 1, 2026. Beginning January 1, 2025, brokers like Coinbase required to report gross proceeds from crypto sales and exchanges on new tax form 1099-DA. For tax year 2025, IRS letting taxpayers rely on own records to calculate cost basis. Beginning in 2026, centralized exchanges required to follow same cost-basis reporting rules as traditional brokerages meaning platforms must report both purchase and sale cost basis details for every US customer's digital asset transaction.",
+      "key_entities": [
+        "IRS",
+        "1099-DA",
+        "brokers",
+        "Coinbase",
+        "Infrastructure Bill",
+        "digital assets"
+      ],
+      "raw_content": "Notice 2024-56 and Notice 2025-33 provide information regarding transition relief for brokers. For transactions occurring in calendar year 2025 (reported in 2026), IRS will not impose penalties for failure to file and furnish Forms 1099-DA if broker makes good faith effort to file correctly and on time. Beginning with 2026 trades, cost basis reporting becomes mandatory under rules created by 2021 Infrastructure Bill aimed at tightening crypto tax compliance. Taxpayers who bought, sold or received digital assets including cryptocurrency, stablecoins or NFT must report those transactions.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-026",
+      "title": "Student Loan Forgiveness Tax Exemption Expires, Becomes Taxable Income in 2026",
+      "url": "https://www.nasfaa.org/news-item/37947/Welcome_to_2026_Some_Student_Loan_Forgiveness_Is_Now_Taxable",
+      "source_name": "NASFAA",
+      "source_type": "news",
+      "published_date": "2026-01-01",
+      "category_hint": "Political",
+      "summary": "American Rescue Plan Act provision excluding student loan debt discharged between December 31, 2020 through January 1, 2026 from taxable income expired. Law that shielded student loan forgiveness from taxation at federal level expired December 31, 2025. Beginning January 1, 2026, student loan forgiveness granted through income-driven repayment plans will again be considered taxable income. However, forgiveness under Public Service Loan Forgiveness (PSLF) program is not considered taxable income. Settlement between American Federation of Teachers and Trump administration clarified borrowers who became eligible for forgiveness in 2025 won't owe federal taxes on relief even if debt not officially discharged until later.",
+      "key_entities": [
+        "Department of Education",
+        "American Rescue Plan Act",
+        "PSLF",
+        "income-driven repayment",
+        "American Federation of Teachers"
+      ],
+      "raw_content": "Effective July 1, 2026, department will deny loan forgiveness to workers whose government or nonprofit employers engage in activities with substantial illegal purpose. Job of defining substantial illegal purpose will fall to education secretary. Education Department confirmed plans to resume wage garnishment for defaulted borrowers in early 2026. Changes represent significant shift in student loan policy with tax bomb returning for IDR forgiveness recipients.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-027",
+      "title": "California Climate Disclosure Laws Face Ninth Circuit Oral Arguments",
+      "url": "https://forwardlawreview.com/2026/01/07/from-greenwashing-to-fraud-the-expanding-esg-litigation-frontier/",
+      "source_name": "Forward Law Review",
+      "source_type": "legal",
+      "published_date": "2026-01-07",
+      "category_hint": "Political",
+      "summary": "Oral argument for California's climate disclosure statutes set for January 9, 2026, addressing challenges to state's climate reporting requirements. November 18, 2025: US Court of Appeals for Ninth Circuit issued order granting motion to enjoin enforcement of Senate Bill 261 (climate-related financial risk disclosure law) while allowing implementation of SB 253 to proceed. Ninth Circuit hearing previously scheduled oral argument in January with January 1, 2026 reporting deadline for SB 261 being enjoined during pendency of appeal. October 2025: Exxon Mobil filed suit against California in Eastern District challenging state's climate disclosure laws arguing they would unlawfully compel speech and require company to use flawed GHG methodology.",
+      "key_entities": [
+        "Ninth Circuit",
+        "California",
+        "SB 261",
+        "SB 253",
+        "Exxon Mobil",
+        "climate disclosure"
+      ],
+      "raw_content": "ESG litigation trends for 2026: regulators sharpen enforcement powers and NGOs deploy increasingly sophisticated strategies, companies face rising exposure across green claims, human rights, fraud and emerging technologies. Climate liability and environmental rights cases set to expand often intersecting with greenwashing disputes. Activist strategies and judicial creativity driving claims based on misleading statements, failure to meet climate commitments and breaches of due diligence obligations. Increasingly litigation from groups on both sides of political aisle.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-028",
+      "title": "Taiwan FSC Announces 2026 Examination Plan Targeting Fraud and VASP Risks",
+      "url": "https://www.regulationasia.com/articles/taiwan-fsc-targets-fraud-vasp-risks-in-2026-examination-plan",
+      "source_name": "Regulation Asia",
+      "source_type": "legal",
+      "published_date": "2025-12-22",
+      "category_hint": "Political",
+      "summary": "Taiwan Financial Supervisory Commission announced 2026 examination plan with heightened focus on financial crime and mis-selling while introducing key new requirements for VASPs and cloud security. Plan signals increased regulatory scrutiny of virtual asset service providers and enhanced consumer protection measures. Initiative falls under three regulatory domains: Fintech/Regtech, Crypto/Digital Assets, and AML/KYC. Represents Taiwan's effort to strengthen oversight of emerging financial technologies and digital asset sector.",
+      "key_entities": [
+        "Taiwan FSC",
+        "VASP",
+        "virtual assets",
+        "AML",
+        "KYC",
+        "cloud security"
+      ],
+      "raw_content": "Published December 22, 2025 covering examination priorities for 2026. Examination plan emphasizes financial crime prevention, mis-selling oversight, VASP compliance requirements, and cloud security standards. Primary keywords include AML, money laundering, cybersecurity, VASP, virtual assets, crypto, and consumer protection indicating comprehensive approach to fintech and digital asset regulation.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-029",
+      "title": "California Climate Corporate Data Accountability Act Begins Scope 1 and 2 Emissions Disclosure",
+      "url": "https://www.mitigasolutions.com/blog/climate-regulatory-outlook-for-asset-managers",
+      "source_name": "Mitiga Solutions",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Political",
+      "summary": "Climate Corporate Data Accountability Act (CCDAA) applies to companies with annual revenue exceeding $1 billion requiring disclosure of Scope 1 and 2 emissions starting January 1, 2026 with limited assurance required. Climate-Related Financial Risk Act (CRFRA) will apply to companies doing business in California with annual revenue exceeding $500 million (excluding insurance companies) taking effect from January 1, 2026. Canadian insurance sector requires initial disclosure in relation to scope 3 absolute gross emissions and certain cross-industry metrics starting in fiscal year 2026 for federally regulated insurers.",
+      "key_entities": [
+        "California",
+        "CCDAA",
+        "CRFRA",
+        "Scope 1 emissions",
+        "Scope 2 emissions",
+        "Scope 3 emissions"
+      ],
+      "raw_content": "January 2026 represents significant milestone for climate-related financial disclosure requirements across multiple jurisdictions though insurance companies notably excluded from some California regulations. Physical climate risk now financial, operational, and regulatory priority with regulators in UK, EU, US, and Australia expecting firms to demonstrate climate risk is understood, monitored, and embedded in investment decisions.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-030",
+      "title": "Trump Administration Threatens 500% Tariffs on Russian Oil Importers",
+      "url": "https://russiaspivottoasia.com/trumps-500-tariffs-against-india-china-and-brazil-and-the-venezuela-oil-issue-analysis/",
+      "source_name": "Russia's Pivot to Asia",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Political",
+      "summary": "US President Donald Trump renewed threat of imposing punitive tariffs of up to 500% on countries such as India, China, and Brazil that continue to import Russian crude oil. Such extreme measure would effectively suspend bilateral trade and conflict with WTO principles and is widely viewed as impractical. New measures signal tectonic shift in US trade policy and departure from rules that have underpinned international trading system since creation of WTO 30 years ago. US departing from WTO's most-favoured-nation principle by introducing new country-specific tariffs.",
+      "key_entities": [
+        "Trump Administration",
+        "WTO",
+        "India",
+        "China",
+        "Brazil",
+        "Russia",
+        "crude oil tariffs"
+      ],
+      "raw_content": "Major issue being watched in 2026 is US Supreme Court decision on legality of tariffs President Trump imposed under International Emergency Economic Powers Act (IEEPA). 2026 described as year of enforcement for customs and tariff-related matters following US Department of Justice formation of cross-agency trade fraud task force and funding increase for Customs and Border Protection. Global tariff adjustments in 2026 exhibit two-way divergence with both proactive measures by countries like China to reduce import costs and trade barriers erected by countries like Mexico and Japan to protect domestic industries.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-LEGAL-031",
+      "title": "CFPB Enforcement Shifts Focus Following Leadership Changes",
+      "url": "https://www.law360.com/articles/2422834/state-ag-enforcement-during-cfpb-gap-predicts-2026-trends",
+      "source_name": "Law360",
+      "source_type": "legal",
+      "published_date": "2026-01-03",
+      "category_hint": "Political",
+      "summary": "CFPB amended January 30, 2025 consent order with international remittance company Wise resolving claims including advertising inaccurate fees and failing to properly disclose exchange rates. CFPB ordered Wise to pay nearly $2.5 million for series of illegal actions. CFPB took action against Equifax for failure to conduct proper investigations of consumer disputes. CFPB took action against Draper & Kramer Mortgage Corporation for discriminatory mortgage lending activities discouraging homebuyers from applying for homes in majority-Black and Hispanic neighborhoods in Chicago and Boston areas. Bureau announced it will not prioritize certain enforcement actions including actions based on Truth in Lending Regulation Z and Use of Digital User Accounts to Access Buy Now Pay Later Loans.",
+      "key_entities": [
+        "CFPB",
+        "Wise",
+        "Equifax",
+        "Draper & Kramer Mortgage",
+        "Regulation Z",
+        "Buy Now Pay Later"
+      ],
+      "raw_content": "CFPB keeping enforcement and supervision resources focused on pressing threats to consumers particularly servicemen and veterans. Bureau will not prioritize enforcement or supervision actions for entities not satisfying future deadlines to submit registration information under certain regulations. State AG enforcement during CFPB leadership gap predicts 2026 trends with state attorneys general filling enforcement void during federal regulatory transitions.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    }
+  ]
+}

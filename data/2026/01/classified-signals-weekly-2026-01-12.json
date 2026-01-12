@@ -1,0 +1,772 @@
+{
+  "classification_date": "2026-01-12",
+  "classification_type": "weekly",
+  "source_file": "filtered/2026/01/weekly/filtered-weekly-2026-01-12.json",
+  "total_classified": 27,
+  "by_category": {
+    "Social": 4,
+    "Technological": 12,
+    "Economic": 4,
+    "Environmental": 3,
+    "Political": 3,
+    "Spiritual": 1
+  },
+  "signals": [
+    {
+      "id": "SIG-W-2026-0112-001",
+      "raw_id": "RAW-W-2026-0112-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "DeepMind-Boston Dynamics, Gemini 기반 Atlas 로봇 통합 발표",
+      "description": "Google DeepMind과 Boston Dynamics가 Gemini급 멀티모달 모델을 전기 Atlas 휴머노이드에 통합한다고 발표. 2020년대 가장 중요한 로보틱스 협력.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["Google DeepMind", "Boston Dynamics", "Alphabet"],
+      "tags": ["robotics", "humanoid", "AI integration", "Gemini"],
+      "pSRT": {
+        "source_score": 90,
+        "signal_score": 88,
+        "analysis_score": 85,
+        "overall": 87.6,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-002",
+      "raw_id": "RAW-W-2026-0112-004",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "D-Wave, 업계 최초 확장 가능 온칩 극저온 제어 기술 발표",
+      "description": "D-Wave가 게이트 모델 큐비트를 위한 확장 가능한 온칩 극저온 제어 기술을 업계 최초로 시연. 양자컴퓨터 확장성의 주요 장벽 해소.",
+      "source": {
+        "name": "Fast Company",
+        "url": "https://www.fastcompany.com/91469364/d-wave-quantum-computing-first-major-breakthrough-of-2026-scalable-technology",
+        "type": "news",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.90,
+      "actors": ["D-Wave"],
+      "tags": ["quantum computing", "cryogenic", "scalability"],
+      "pSRT": {
+        "source_score": 75,
+        "signal_score": 85,
+        "analysis_score": 80,
+        "overall": 80.0,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-003",
+      "raw_id": "RAW-W-2026-0112-005",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "D-Wave, Quantum Circuits Inc. $5.5억 인수 합의",
+      "description": "D-Wave가 Quantum Circuits Inc.를 $5.5억(주식 $3억, 현금 $2.5억)에 인수 합의. 2026년 첫 dual-rail 시스템 출시 예정.",
+      "source": {
+        "name": "D-Wave",
+        "url": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-to-acquire-quantum-circuits/",
+        "type": "press_release",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["D-Wave", "Quantum Circuits Inc."],
+      "tags": ["quantum computing", "M&A", "dual-rail"],
+      "pSRT": {
+        "source_score": 95,
+        "signal_score": 82,
+        "analysis_score": 85,
+        "overall": 86.7,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-004",
+      "raw_id": "RAW-W-2026-0112-006",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "양자 오류 수정 기술 획기적 돌파 - 확장성 문제 해결",
+      "description": "연구진이 '궁극적 정확도'와 '초고속 계산 효율'을 동시에 달성. 구성 요소가 증가해도 오류 수정 계산 시간이 거의 증가하지 않는 새로운 방법 개발.",
+      "source": {
+        "name": "Phys.org",
+        "url": "https://phys.org/news/2026-01-error-technology-quantum-real-world.html",
+        "type": "academic",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "confidence": 0.92,
+      "actors": ["research_team"],
+      "tags": ["quantum error correction", "scalability", "breakthrough"],
+      "pSRT": {
+        "source_score": 88,
+        "signal_score": 90,
+        "analysis_score": 85,
+        "overall": 87.8,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-005",
+      "raw_id": "RAW-W-2026-0112-007",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Economic", "Political"]
+      },
+      "title": "EU CBAM 본격 시행 - 세계 최초 탄소국경세 발효",
+      "description": "2026년 1월 1일부터 EU CBAM이 2년간의 보고 단계를 거쳐 본격 시행. 수입업체들은 제품에 내재된 탄소 배출량에 기반한 인증서를 구매해야 함.",
+      "source": {
+        "name": "European Business Magazine",
+        "url": "https://europeanbusinessmagazine.com/awards/eu-carbon-border-adjustment-mechanism-begins-charging-fees-a-new-era-in-climate-policy/",
+        "type": "news",
+        "tier": 2
+      },
+      "significance": 5,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["EU", "European Commission"],
+      "tags": ["CBAM", "carbon tax", "climate policy", "trade"],
+      "pSRT": {
+        "source_score": 80,
+        "signal_score": 92,
+        "analysis_score": 88,
+        "overall": 87.0,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-006",
+      "raw_id": "RAW-W-2026-0112-009",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "미국 베네수엘라 군사 작전 실행 - 19세기식 제국주의 회귀 우려",
+      "description": "1월 3일 미국의 베네수엘라 군사 작전은 트럼프 2기 외교정책의 핵심을 드러낸 사건. 고립주의가 아닌 기회주의적 19세기식 제국주의가 트럼프 독트린의 본질이라는 분석.",
+      "source": {
+        "name": "Brookings",
+        "url": "https://www.brookings.edu/articles/the-global-implications-of-the-us-military-operation-in-venezuela/",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["USA", "Venezuela", "Trump administration"],
+      "tags": ["military", "geopolitics", "Trump doctrine", "Latin America"],
+      "pSRT": {
+        "source_score": 95,
+        "signal_score": 90,
+        "analysis_score": 88,
+        "overall": 90.8,
+        "grade": "A+"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-007",
+      "raw_id": "RAW-W-2026-0112-010",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "글로벌 경제 성장률 2.7% 전망 - 팬데믹 이전 평균 하회",
+      "description": "UN 세계경제상황전망 2026에 따르면 글로벌 경제 성장률 2.7% 예상. 2025년 2.8%보다 소폭 하락, 팬데믹 이전 평균 3.2%를 크게 밑돌아.",
+      "source": {
+        "name": "UN UNCTAD",
+        "url": "https://unctad.org/publication/world-economic-situation-and-prospects-2026",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["UN", "UNCTAD"],
+      "tags": ["global economy", "GDP", "growth forecast"],
+      "pSRT": {
+        "source_score": 95,
+        "signal_score": 85,
+        "analysis_score": 88,
+        "overall": 89.0,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-008",
+      "raw_id": "RAW-W-2026-0112-012",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "글로벌 인플레이션 3.1%로 둔화 전망 - 핵심 물가 목표 근접",
+      "description": "헤드라인 인플레이션이 2024년 4.0%에서 2025년 3.4%, 2026년 3.1%로 둔화 전망. 선진국 핵심 인플레이션은 정책 목표에 근접할 것으로 예상.",
+      "source": {
+        "name": "Deloitte",
+        "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.90,
+      "actors": ["Deloitte", "central banks"],
+      "tags": ["inflation", "monetary policy", "forecast"],
+      "pSRT": {
+        "source_score": 90,
+        "signal_score": 80,
+        "analysis_score": 82,
+        "overall": 83.6,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-009",
+      "raw_id": "RAW-W-2026-0112-013",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "노동자 참여도 급감 - 2025년 88%에서 2026년 64%로",
+      "description": "직원 참여도가 전년 대비 급격히 감소하여 64%만이 매우 또는 극도로 참여한다고 응답. 아시아 59%, 북미 67%, 유럽 68%로 지역별 차이.",
+      "source": {
+        "name": "DHR Global",
+        "url": "https://www.dhrglobal.com/insights/workforce-trends-report-2026/",
+        "type": "report",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.85,
+      "actors": ["DHR Global"],
+      "tags": ["employee engagement", "workforce", "burnout", "quiet quitting"],
+      "pSRT": {
+        "source_score": 75,
+        "signal_score": 82,
+        "analysis_score": 78,
+        "overall": 78.4,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-010",
+      "raw_id": "RAW-W-2026-0112-014",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "2030년까지 밀레니얼-Z세대 글로벌 노동력의 74% 차지 전망",
+      "description": "밀레니얼과 Z세대가 2030년까지 글로벌 노동력의 약 74%를 차지할 전망. 젊은 노동자들은 다중 수입원과 프로젝트 기반 참여를 선호하며 유연성 요구 증가.",
+      "source": {
+        "name": "Employer Branding News",
+        "url": "https://employerbranding.news/generations-in-the-workplace/",
+        "type": "news",
+        "tier": 3
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.80,
+      "actors": [],
+      "tags": ["Millennials", "Gen Z", "workforce", "flexibility", "gig economy"],
+      "pSRT": {
+        "source_score": 60,
+        "signal_score": 75,
+        "analysis_score": 72,
+        "overall": 69.0,
+        "grade": "C"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-011",
+      "raw_id": "RAW-W-2026-0112-015",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "title": "미국 인구 증가율 0.5%로 둔화 - 출산율 역대 최저 1.6",
+      "description": "미국 인구 증가율이 0.5%로 둔화. 출산율이 2020년 1.6으로 역대 최저 기록 후 회복 기미 없음. 2030년까지 5명 중 1명이 65세 이상 예상.",
+      "source": {
+        "name": "Vistage",
+        "url": "https://www.vistage.com/research-center/business-financials/economic-trends/20251006-social-and-workforce-trends-for-2026-and-beyond/",
+        "type": "report",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "developing",
+      "confidence": 0.90,
+      "actors": [],
+      "tags": ["demographics", "fertility", "aging", "population"],
+      "pSRT": {
+        "source_score": 78,
+        "signal_score": 85,
+        "analysis_score": 82,
+        "overall": 81.8,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-012",
+      "raw_id": "RAW-W-2026-0112-016",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological"]
+      },
+      "title": "2026년 미국 신규 발전 용량 100% 재생에너지 전망",
+      "description": "EIA 데이터에 따르면 2026년 미국의 순 신규 발전 용량이 100% 재생에너지와 배터리로 구성될 전망. 10월까지 재생에너지가 미국 발전 용량의 36% 이상 차지 예상.",
+      "source": {
+        "name": "Electrek",
+        "url": "https://electrek.co/2025/12/29/eia-all-net-new-generating-capacity-in-2026-may-be-renewables/",
+        "type": "news",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.88,
+      "actors": ["EIA", "US energy sector"],
+      "tags": ["renewable energy", "solar", "wind", "energy transition"],
+      "pSRT": {
+        "source_score": 82,
+        "signal_score": 88,
+        "analysis_score": 80,
+        "overall": 83.4,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-013",
+      "raw_id": "RAW-W-2026-0112-018",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political"]
+      },
+      "title": "트럼프 행정부, 2026년 첨단 원자력 스타트업 3곳 임계 목표 행정명령",
+      "description": "트럼프 행정명령이 2026년 3개 첨단 원자력 스타트업의 임계 달성을 목표로 설정. Three Mile Island 재가동을 위해 에너지부가 $10억 융자 지원.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.90,
+      "actors": ["Trump administration", "DOE", "nuclear startups"],
+      "tags": ["nuclear", "SMR", "energy policy", "Three Mile Island"],
+      "pSRT": {
+        "source_score": 92,
+        "signal_score": 85,
+        "analysis_score": 82,
+        "overall": 86.0,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-014",
+      "raw_id": "RAW-W-2026-0112-019",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "GENIUS Act 시행 - 미국 최초 포괄적 암호화폐 프레임워크",
+      "description": "2025년 7월 18일 서명된 GENIUS Act가 미국 역사상 최초의 포괄적 암호화폐 프레임워크 수립. $2600억 스테이블코인 시장에 대한 규제 구조 마련.",
+      "source": {
+        "name": "Coinpedia",
+        "url": "https://coinpedia.org/news/us-crypto-regulation-in-2026-key-laws-sec-changes-and-what-comes-next/",
+        "type": "news",
+        "tier": 3
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.85,
+      "actors": ["US Congress", "SEC", "crypto industry"],
+      "tags": ["cryptocurrency", "stablecoin", "regulation", "GENIUS Act"],
+      "pSRT": {
+        "source_score": 65,
+        "signal_score": 82,
+        "analysis_score": 75,
+        "overall": 74.0,
+        "grade": "C"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-015",
+      "raw_id": "RAW-W-2026-0112-020",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "CLARITY Act, 1월 상원 위원회 마크업 예정 - 디지털 상품 규제",
+      "description": "David Sacks가 1월 CLARITY Act 마크업 확인. CFTC가 디지털 상품(증권이 아닌 블록체인 자산) 현물 시장 규제 권한 획득 예정.",
+      "source": {
+        "name": "DL News",
+        "url": "https://www.dlnews.com/articles/regulation/key-dates-for-us-crypto-regulation-in-2026/",
+        "type": "news",
+        "tier": 3
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.80,
+      "actors": ["David Sacks", "CFTC", "US Senate"],
+      "tags": ["cryptocurrency", "CLARITY Act", "CFTC", "digital commodities"],
+      "pSRT": {
+        "source_score": 60,
+        "signal_score": 75,
+        "analysis_score": 70,
+        "overall": 68.3,
+        "grade": "C"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-016",
+      "raw_id": "RAW-W-2026-0112-021",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "Waymo, $150억+ 추가 펀딩 협의 중 - $1100억 밸류에이션",
+      "description": "Waymo가 $1100억 밸류에이션으로 $150억 이상 추가 펀딩 협의 중. 2026년 12개 이상 도시로 확장 계획.",
+      "source": {
+        "name": "InsideEVs",
+        "url": "https://insideevs.com/news/783368/ces-2026-preview-cm/",
+        "type": "news",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.85,
+      "actors": ["Waymo", "Alphabet"],
+      "tags": ["autonomous vehicles", "funding", "robotaxi"],
+      "pSRT": {
+        "source_score": 75,
+        "signal_score": 82,
+        "analysis_score": 78,
+        "overall": 78.4,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-017",
+      "raw_id": "RAW-W-2026-0112-022",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "글로벌 로보택시 시장 2034년 $1889억 규모 전망",
+      "description": "글로벌 로보택시 시장이 2024년 $19.5억에서 2034년 $1889.1억으로 성장 전망. 2035년까지 40-80개 도시에서 Level 4 서비스 운영 예상.",
+      "source": {
+        "name": "StartUs Insights",
+        "url": "https://www.startus-insights.com/innovators-guide/future-of-autonomous-vehicles/",
+        "type": "report",
+        "tier": 2
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.80,
+      "actors": [],
+      "tags": ["robotaxi", "autonomous vehicles", "market forecast"],
+      "pSRT": {
+        "source_score": 70,
+        "signal_score": 75,
+        "analysis_score": 72,
+        "overall": 72.4,
+        "grade": "C"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-018",
+      "raw_id": "RAW-W-2026-0112-023",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "IFR, 2026년 5대 로보틱스 트렌드 발표 - AI 자율성, 휴머노이드",
+      "description": "IFR이 2026년 5대 로보틱스 트렌드 발표: AI 지원 자율성, IT/OT 융합, 휴머노이드 로봇, 안전/사이버 리스크, 숙련 노동자 부족 대응용 로보틱스.",
+      "source": {
+        "name": "International Federation of Robotics",
+        "url": "https://ifr.org/ifr-press-releases/news/top-5-global-robotics-trends-2026",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.90,
+      "actors": ["IFR"],
+      "tags": ["robotics", "humanoid", "AI autonomy", "trends"],
+      "pSRT": {
+        "source_score": 90,
+        "signal_score": 78,
+        "analysis_score": 80,
+        "overall": 82.4,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-019",
+      "raw_id": "RAW-W-2026-0112-025",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "title": "AI 의약품 수명주기 FDA 가이드라인 - 신뢰성 평가 프레임워크 요구",
+      "description": "2025년 초안 가이던스에 이어 FDA가 규제 패키지 내 AI 생성 데이터에 대해 특정 '신뢰성 평가 프레임워크'를 요구. AI가 블랙박스에서 검증된 구성요소로 전환.",
+      "source": {
+        "name": "Atlantis Bioscience",
+        "url": "https://www.atlantisbioscience.com/blog/2026-biotech-outlook-10-breakthrough-trends-scientists-need-to-watch/",
+        "type": "report",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.88,
+      "actors": ["FDA"],
+      "tags": ["FDA", "AI regulation", "drug development", "biotech"],
+      "pSRT": {
+        "source_score": 75,
+        "signal_score": 85,
+        "analysis_score": 80,
+        "overall": 80.0,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-020",
+      "raw_id": "RAW-W-2026-0112-026",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "In-vivo CAR-T 치료 임상 1상 시작 - 환자 내 제조 접근법",
+      "description": "Kelonia Therapeutics가 호주에서 다발성 골수종 대상 anti-BCMA in vivo CAR-T 임상 1상 시작. 확장성 개선, 비용 절감, 치료 시간 단축 기대.",
+      "source": {
+        "name": "Labiotech",
+        "url": "https://www.labiotech.eu/best-biotech/biotech-companies-to-watch-2026/",
+        "type": "news",
+        "tier": 2
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.85,
+      "actors": ["Kelonia Therapeutics"],
+      "tags": ["CAR-T", "in-vivo", "gene therapy", "oncology"],
+      "pSRT": {
+        "source_score": 80,
+        "signal_score": 85,
+        "analysis_score": 78,
+        "overall": 81.2,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-021",
+      "raw_id": "RAW-W-2026-0112-028",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "title": "Eurasia Group 2026년 10대 리스크 - 트럼프, Z세대 반란, 푸틴",
+      "description": "Eurasia Group이 2026년 10대 글로벌 리스크 발표. 미국이 자체 글로벌 질서를 해체하며 2026년 주요 리스크 원천으로 부상.",
+      "source": {
+        "name": "Eurasia Group",
+        "url": "https://www.eurasiagroup.net/issues/top-risks-2026",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["Eurasia Group"],
+      "tags": ["global risks", "geopolitics", "Trump", "world order"],
+      "pSRT": {
+        "source_score": 95,
+        "signal_score": 88,
+        "analysis_score": 85,
+        "overall": 89.2,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-022",
+      "raw_id": "RAW-W-2026-0112-029",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "유럽, 트럼프 행정부 다방면 압박 캠페인 대상 전망",
+      "description": "2026년 유럽이 트럼프 행정부의 집중적 다방면 압박 캠페인 대상이 될 전망. EU 기관 약화, 극우 정당 지원, 디지털 규제 철폐 강요 목적.",
+      "source": {
+        "name": "German Marshall Fund",
+        "url": "https://www.gmfus.org/news/watching-china-europe-january-2026",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.90,
+      "actors": ["Trump administration", "EU"],
+      "tags": ["transatlantic", "EU", "Trump", "digital regulation"],
+      "pSRT": {
+        "source_score": 90,
+        "signal_score": 85,
+        "analysis_score": 82,
+        "overall": 85.6,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-023",
+      "raw_id": "RAW-W-2026-0112-030",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic", "Technological"]
+      },
+      "title": "WEF Future of Jobs 2025 - 2030년까지 7800만 순 일자리 창출",
+      "description": "WEF 미래 일자리 보고서에 따르면 2025-2030년 구조적 노동시장 변화로 현재 일자리의 22%가 창출/소멸. 1.7억 일자리 창출, 9200만 소멸, 순 7800만 증가.",
+      "source": {
+        "name": "World Economic Forum",
+        "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.95,
+      "actors": ["WEF"],
+      "tags": ["future of work", "automation", "reskilling", "jobs"],
+      "pSRT": {
+        "source_score": 95,
+        "signal_score": 88,
+        "analysis_score": 85,
+        "overall": 89.2,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-024",
+      "raw_id": "RAW-W-2026-0112-032",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "Gartner, 2026년까지 100만 대 이상 드론 소매 배송 전망",
+      "description": "Gartner가 2026년까지 소매 상품 배송 드론이 현재 2만 대에서 100만 대 이상으로 증가할 것으로 전망.",
+      "source": {
+        "name": "IFR",
+        "url": "https://ifr.org/ifr-press-releases/news/top-5-global-robotics-trends-2026",
+        "type": "report",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.85,
+      "actors": ["Gartner"],
+      "tags": ["drone delivery", "retail", "logistics"],
+      "pSRT": {
+        "source_score": 88,
+        "signal_score": 75,
+        "analysis_score": 72,
+        "overall": 78.2,
+        "grade": "B"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-025",
+      "raw_id": "RAW-W-2026-0112-033",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "AI 과학 연구 직접 참여 시대 개막 - 가설 생성, 실험 제어",
+      "description": "Microsoft Research 사장 Peter Lee에 따르면 2026년 AI가 논문 요약이나 질문 답변을 넘어 물리학, 화학, 생물학 발견 과정에 직접 참여할 것.",
+      "source": {
+        "name": "Microsoft",
+        "url": "https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026/",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.90,
+      "actors": ["Microsoft Research", "Peter Lee"],
+      "tags": ["AI", "scientific discovery", "research automation"],
+      "pSRT": {
+        "source_score": 92,
+        "signal_score": 85,
+        "analysis_score": 82,
+        "overall": 86.0,
+        "grade": "A"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-026",
+      "raw_id": "RAW-W-2026-0112-034",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political"]
+      },
+      "title": "중국 오픈소스 AI 모델 확산 - 실리콘밸리 앱 DeepSeek 기반 출시",
+      "description": "2025년 1월 DeepSeek R1 공개 이후 'DeepSeek 모멘트'가 업계 벤치마크로 자리잡음. 2026년 더 많은 실리콘밸리 앱이 중국 오픈소스 모델 기반으로 출시될 전망.",
+      "source": {
+        "name": "VT Netzwelt",
+        "url": "https://www.vtnetzwelt.com/ai-development/latest-tech-ai-updates-what-january-2026-is-really-telling-us/",
+        "type": "news",
+        "tier": 3
+      },
+      "significance": 4,
+      "status": "emerging",
+      "confidence": 0.85,
+      "actors": ["DeepSeek", "China"],
+      "tags": ["open source AI", "DeepSeek", "China", "AI geopolitics"],
+      "pSRT": {
+        "source_score": 60,
+        "signal_score": 85,
+        "analysis_score": 78,
+        "overall": 74.4,
+        "grade": "C"
+      }
+    },
+    {
+      "id": "SIG-W-2026-0112-027",
+      "raw_id": "RAW-W-2026-0112-035",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological"]
+      },
+      "title": "AI 윤리와 의미 추구 - 기술 발전과 영적 가치의 교차점",
+      "description": "2026년 AI 윤리가 기술 발전의 핵심 의제로 부상. 자율 AI 시스템의 도덕적 책임, 인간 정체성, 삶의 의미에 대한 철학적 논의 확대.",
+      "source": {
+        "name": "UNC News",
+        "url": "https://uncnews.unc.edu/2026/01/07/unc-experts-share-2026-trend-predictions/",
+        "type": "academic",
+        "tier": 2
+      },
+      "significance": 3,
+      "status": "emerging",
+      "confidence": 0.80,
+      "actors": ["UNC"],
+      "tags": ["AI ethics", "meaning", "spirituality", "philosophy"],
+      "pSRT": {
+        "source_score": 80,
+        "signal_score": 72,
+        "analysis_score": 70,
+        "overall": 73.8,
+        "grade": "C"
+      }
+    }
+  ]
+}

@@ -11,10 +11,10 @@ description: 중복 필터링 결과 검토 및 예외 처리
 다음 파일들을 읽어 결과를 표시하세요:
 
 1. **필터링 결과**
-   - @env-scanning/filtered/new-signals-{today}.json
+   - @data/{date}/filtered/new-signals-{today}.json
 
 2. **제거 로그**
-   - @env-scanning/logs/duplicates-removed-{today}.log
+   - @logs/duplicates-removed-{today}.log
 
 ## 표시 형식
 

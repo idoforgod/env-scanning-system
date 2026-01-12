@@ -14,35 +14,35 @@ Archive the daily report and signal snapshot, then log completion.
 
 1. **Archive Report**
    ```
-   Copy env-scanning/reports/daily/environmental-scan-{date}.md
-   To   env-scanning/reports/archive/{year}/{month}/environmental-scan-{date}.md
+   Copy data/{date}/reports/environmental-scan-{date}.md
+   To   data/{date}/reports/archive/{year}/{month}/environmental-scan-{date}.md
    ```
 
 2. **Create JSON Archive** (for programmatic access)
    ```
-   Read env-scanning/structured/classified-signals-{date}.json
-   Read env-scanning/analysis/priority-ranked-{date}.json
-   Combine into env-scanning/reports/archive/{year}/{month}/scan-data-{date}.json
+   Read data/{date}/structured/classified-signals-{date}.json
+   Read data/{date}/analysis/priority-ranked-{date}.json
+   Combine into data/{date}/reports/archive/{year}/{month}/scan-data-{date}.json
    ```
 
 3. **Signal Snapshot**
-   - Verify snapshot exists at `env-scanning/signals/snapshots/database-{date}.json`
+   - Verify snapshot exists at `signals/snapshots/database-{date}.json`
    - If not, create from current database
 
 4. **Generate Summary Log**
    ```
-   Write to env-scanning/logs/daily-summary-{date}.log
+   Write to logs/daily-summary-{date}.log
    ```
 
 5. **Completion Status**
    ```
-   Write to env-scanning/logs/workflow-status.json
+   Write to logs/workflow-status.json
    ```
 
 ## Archive Structure
 
 ```
-env-scanning/reports/archive/
+data/{date}/reports/archive/
 └── 2026/
     └── 01/
         ├── environmental-scan-2026-01-09.md
@@ -173,3 +173,12 @@ Database: signals/database.json (updated)
 - If archive directory doesn't exist: Create it
 - If copy fails: Log error, retry once
 - If any step fails: Update status to "partial", list completed steps
+
+## Output
+
+| 파일 | 경로 | 설명 |
+|------|------|------|
+| Archive Report | `reports/archive/{year}/{month}/environmental-scan-{date}.md` | 아카이브된 보고서 |
+| Archive Data | `reports/archive/{year}/{month}/scan-data-{date}.json` | 아카이브 JSON |
+| Summary Log | `logs/daily-summary-{date}.log` | 일일 요약 로그 |
+| Status | `logs/workflow-status.json` | 워크플로우 상태 |

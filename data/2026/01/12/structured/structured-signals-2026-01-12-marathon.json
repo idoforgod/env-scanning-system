@@ -1,0 +1,1015 @@
+{
+  "classification_date": "2026-01-12",
+  "total_classified": 18,
+  "by_category": {
+    "Social": 1,
+    "Technological": 2,
+    "Economic": 3,
+    "Environmental": 3,
+    "Political": 3,
+    "Spiritual": 6
+  },
+  "by_significance": {
+    "5": 2,
+    "4": 5,
+    "3": 7,
+    "2": 4,
+    "1": 0
+  },
+  "by_grade": {
+    "A+": 1,
+    "A": 3,
+    "A-": 4,
+    "B+": 5,
+    "B": 3,
+    "B-": 2,
+    "C+": 0,
+    "C": 0,
+    "C-": 0,
+    "D": 0,
+    "F": 0
+  },
+  "average_psrt_score": 78.3,
+  "methodology": {
+    "psrt_framework": {
+      "Source": "20% - 출처 신뢰도 및 권위성",
+      "Signal": "35% - 신호 강도 및 명확성",
+      "Analysis": "25% - 분석 깊이 및 통찰력",
+      "Report": "20% - 보고서 품질 및 실행가능성"
+    },
+    "grading_scale": {
+      "A+": "95-100",
+      "A": "90-94",
+      "A-": "85-89",
+      "B+": "80-84",
+      "B": "75-79",
+      "B-": "70-74",
+      "C+": "65-69",
+      "C": "60-64",
+      "C-": "55-59",
+      "D": "50-54",
+      "F": "0-49"
+    }
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0112-M001",
+      "raw_id": "RAW-2026-0112-S001",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological"]
+      },
+      "title": "Generation Alpha Takes Over Social Media in 2026",
+      "description": "Gen Alpha (born 2010-2024) is officially logging on to social media with years of pre-usage experience, driving a social video boom. YouTube will overtake linear TV in viewership among US children by 2026, marking a generational shift in media consumption patterns.",
+      "source": {
+        "name": "eMarketer",
+        "url": "https://www.emarketer.com/content/generational-trends-watch-2026",
+        "type": "research",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Complete digital-native generation entering social platforms, reshaping content creation, consumption patterns, and digital marketing strategies",
+      "significance": 4,
+      "significance_reason": "First fully digital-native generation with pre-usage experience entering social media ecosystem, creating new market dynamics and content paradigms",
+      "potential_impact": {
+        "short_term": "Platform feature redesign for younger users, parental control innovations, content moderation challenges",
+        "mid_term": "Social media business models shift to Gen Alpha preferences, traditional TV viewership decline accelerates",
+        "long_term": "Fundamental reshaping of digital culture, marketing, and media industries around Gen Alpha values and behaviors"
+      },
+      "actors": [
+        {"name": "Generation Alpha", "type": "demographic", "role": "Primary user group entering platforms"},
+        {"name": "YouTube", "type": "company", "role": "Dominant platform for Gen Alpha viewership"},
+        {"name": "eMarketer", "type": "organization", "role": "Market research and analysis"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.88,
+      "related_signals": [],
+      "tags": ["Generation Alpha", "social media", "YouTube", "digital natives", "generational shift", "media consumption"],
+      "psrt_score": {
+        "source": 18,
+        "signal": 31,
+        "analysis": 21,
+        "report": 16,
+        "total": 86,
+        "grade": "A-",
+        "rationale": {
+          "source": "eMarketer is a highly credible market research firm specializing in digital trends (90/100)",
+          "signal": "Strong signal with clear demographic shift and measurable impact on platforms (89/100)",
+          "analysis": "Good market analysis but could include more longitudinal data (84/100)",
+          "report": "Well-structured report with actionable insights for marketers (80/100)"
+        }
+      },
+      "analyst_notes": "Critical signal for social media platforms, content creators, and marketers. Monitor regulatory responses to youth social media usage and platform safety features."
+    },
+    {
+      "id": "SIG-2026-0112-M002",
+      "raw_id": "RAW-2026-0112-T001",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "title": "IBM Announces 2026 as Year Quantum Outperforms Classical Computing",
+      "description": "IBM has publicly stated that 2026 will mark the first time a quantum computer will be able to outperform a classical computer. This milestone will unlock breakthroughs in drug development, materials science, financial optimization and more industries facing incredibly complex challenges.",
+      "source": {
+        "name": "WebProNews",
+        "url": "https://www.webpronews.com/2026-tech-innovations-ai-robotics-and-quantum-breakthroughs/",
+        "type": "news",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Quantum advantage threshold crossing, enabling practical applications in optimization, simulation, and cryptography that are infeasible for classical computers",
+      "significance": 5,
+      "significance_reason": "Paradigm shift moment marking transition from experimental to practical quantum computing, with cascading effects across multiple high-value industries",
+      "potential_impact": {
+        "short_term": "Acceleration of quantum R&D investments, talent competition, proof-of-concept projects in pharma and finance",
+        "mid_term": "Quantum-enabled drug discovery, new materials development, financial model optimization, cryptography challenges",
+        "long_term": "Fundamental transformation of computational science, potential disruption of current encryption standards, emergence of quantum-native industries"
+      },
+      "actors": [
+        {"name": "IBM", "type": "company", "role": "Leading quantum computing developer announcing milestone"},
+        {"name": "pharmaceutical industry", "type": "industry", "role": "Target application for drug development"},
+        {"name": "financial services", "type": "industry", "role": "Target application for optimization problems"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.75,
+      "related_signals": ["SIG-2026-0109-004"],
+      "tags": ["quantum computing", "IBM", "quantum advantage", "drug development", "computational breakthrough"],
+      "psrt_score": {
+        "source": 14,
+        "signal": 34,
+        "analysis": 20,
+        "report": 15,
+        "total": 83,
+        "grade": "B+",
+        "rationale": {
+          "source": "Secondary tech news source reporting IBM announcement, moderate credibility (70/100)",
+          "signal": "Extremely strong signal representing paradigm shift in computing (97/100)",
+          "analysis": "Good industry context but lacks technical depth on specific benchmarks (80/100)",
+          "report": "Clear communication but limited actionable guidance (75/100)"
+        }
+      },
+      "analyst_notes": "Monitor IBM's technical publications for verification. Cross-reference with D-Wave breakthrough (SIG-2026-0109-004). Watch for competitive responses from Google, Microsoft, and Chinese quantum initiatives."
+    },
+    {
+      "id": "SIG-2026-0112-M003",
+      "raw_id": "RAW-2026-0112-T003",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "title": "Tesla Plans 50,000 Optimus Humanoid Robots at $20K-30K in 2026",
+      "description": "Tesla plans to produce 50,000 Optimus humanoid robot units in 2026 at a price point of $20,000-30,000. Experts predict humanoid robots will appear in industrial settings in significant numbers by 2026-2028, marking the beginning of practical robotics deployment at scale.",
+      "source": {
+        "name": "The Innovation Mode",
+        "url": "https://www.theinnovationmode.com/the-innovation-blog/2026-innovation-trends",
+        "type": "industry_report",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Mass production of affordable humanoid robots crossing economic viability threshold for industrial applications, signaling automation acceleration",
+      "significance": 4,
+      "significance_reason": "First large-scale production of humanoid robots at price point accessible to SMEs, potentially transforming labor markets and manufacturing",
+      "potential_impact": {
+        "short_term": "Industrial pilot programs, workforce planning challenges, regulatory discussions on robot labor",
+        "mid_term": "Significant automation of manufacturing, logistics, and service industries; labor market disruption in routine physical tasks",
+        "long_term": "Fundamental restructuring of work, wage dynamics, and human-robot collaboration models across economy"
+      },
+      "actors": [
+        {"name": "Tesla", "type": "company", "role": "Developer and manufacturer of Optimus humanoid robots"},
+        {"name": "manufacturing industry", "type": "industry", "role": "Primary target market for deployment"},
+        {"name": "logistics industry", "type": "industry", "role": "Secondary application area"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.72,
+      "related_signals": ["SIG-2026-0110-002"],
+      "tags": ["humanoid robots", "Tesla", "Optimus", "automation", "manufacturing", "labor market"],
+      "psrt_score": {
+        "source": 15,
+        "signal": 32,
+        "analysis": 19,
+        "report": 15,
+        "total": 81,
+        "grade": "B+",
+        "rationale": {
+          "source": "Innovation industry blog with mixed credibility, needs verification (75/100)",
+          "signal": "Strong signal with specific production targets and price points (91/100)",
+          "analysis": "Good market analysis but limited technical validation (76/100)",
+          "report": "Clear presentation but lacks implementation roadmap (75/100)"
+        }
+      },
+      "analyst_notes": "Verify production claims through Tesla earnings calls and factory announcements. Compare with competing humanoid robot projects (Boston Dynamics, Figure AI). Monitor labor union responses and regulatory frameworks."
+    },
+    {
+      "id": "SIG-2026-0112-M004",
+      "raw_id": "RAW-2026-0112-E001",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "Goldman Sachs Projects 2.8% Global Growth in 2026",
+      "description": "Goldman Sachs Research economists expect sturdy global growth of 2.8% in 2026, versus a consensus forecast of 2.5%. The G20 countries, which account for roughly 80% of total global GDP, are projected to grow by 2.9% next year, indicating stronger than expected economic resilience.",
+      "source": {
+        "name": "Goldman Sachs",
+        "url": "https://www.goldmansachs.com/insights/outlooks/2026-outlooks",
+        "type": "research",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Above-consensus growth projections suggesting economic resilience despite geopolitical tensions, potentially driving higher investment and consumer confidence",
+      "significance": 3,
+      "significance_reason": "Notable upward revision to growth forecasts from major financial institution, indicating stronger economic fundamentals than market expects",
+      "potential_impact": {
+        "short_term": "Market repricing of growth assets, central bank policy recalibration, investment allocation shifts",
+        "mid_term": "Sustained economic expansion supporting employment, potential inflation pressures, trade growth",
+        "long_term": "Structural economic resilience patterns, potential for extended economic cycle"
+      },
+      "actors": [
+        {"name": "Goldman Sachs", "type": "company", "role": "Economic forecasting and analysis"},
+        {"name": "G20", "type": "organization", "role": "Major economies driving global growth"},
+        {"name": "central banks", "type": "organization", "role": "Monetary policy response to growth outlook"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.85,
+      "related_signals": ["SIG-2026-0110-009"],
+      "tags": ["economic growth", "GDP", "Goldman Sachs", "G20", "global economy", "forecasting"],
+      "psrt_score": {
+        "source": 19,
+        "signal": 28,
+        "analysis": 22,
+        "report": 17,
+        "total": 86,
+        "grade": "A-",
+        "rationale": {
+          "source": "Goldman Sachs is premier global investment bank with authoritative research (95/100)",
+          "signal": "Moderate signal - growth forecast revision is notable but not transformative (80/100)",
+          "analysis": "Strong econometric analysis with clear methodology (88/100)",
+          "report": "Professional financial reporting with actionable insights for investors (85/100)"
+        }
+      },
+      "analyst_notes": "Compare with IMF, World Bank forecasts. Monitor actual Q1-Q2 2026 data for validation. Watch for regional divergences within G20."
+    },
+    {
+      "id": "SIG-2026-0112-M005",
+      "raw_id": "RAW-2026-0112-E002",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Political"]
+      },
+      "title": "U.S. Expected to Outperform with 2.6% Growth in 2026",
+      "description": "The US is likely to outperform substantially with 2.6% growth (vs. 2.0% consensus) because of reduced tariff drag, tax cuts, and easier financial conditions. Solid GDP growth in 2026 is expected around 2% with core inflation moderating to 2.7%, indicating a soft landing scenario.",
+      "source": {
+        "name": "J.P. Morgan",
+        "url": "https://www.jpmorgan.com/insights/global-research/outlook/market-outlook",
+        "type": "research",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "US economic outperformance driven by policy changes and financial conditions, potentially strengthening dollar and shifting global capital flows",
+      "significance": 3,
+      "significance_reason": "Significant upward revision to US growth forecast with clear policy drivers, indicating divergence from consensus expectations",
+      "potential_impact": {
+        "short_term": "Dollar appreciation, equity market rally, emerging market capital outflows",
+        "mid_term": "Widening US-Europe growth gap, Fed policy path adjustment, corporate earnings upside",
+        "long_term": "Reinforcement of US economic leadership, potential for overheating if sustained"
+      },
+      "actors": [
+        {"name": "J.P. Morgan", "type": "company", "role": "Economic research and forecasting"},
+        {"name": "U.S. Federal Reserve", "type": "government", "role": "Monetary policy response"},
+        {"name": "U.S. Treasury", "type": "government", "role": "Fiscal policy implementation"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.83,
+      "related_signals": ["SIG-2026-0112-M004"],
+      "tags": ["U.S. economy", "GDP growth", "J.P. Morgan", "inflation", "tax cuts", "economic outperformance"],
+      "psrt_score": {
+        "source": 19,
+        "signal": 29,
+        "analysis": 22,
+        "report": 17,
+        "total": 87,
+        "grade": "A-",
+        "rationale": {
+          "source": "J.P. Morgan is leading global financial institution with high credibility (95/100)",
+          "signal": "Strong signal with specific policy drivers identified (83/100)",
+          "analysis": "Solid analysis connecting policy changes to growth outcomes (88/100)",
+          "report": "Well-structured with clear investment implications (85/100)"
+        }
+      },
+      "analyst_notes": "Track tax policy implementation and financial conditions data. Monitor inflation trajectory for Fed policy implications. Cross-reference with Goldman Sachs global forecast (SIG-2026-0112-M004)."
+    },
+    {
+      "id": "SIG-2026-0112-M006",
+      "raw_id": "RAW-2026-0112-E003",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "title": "All Wall Street Forecasters Predict Stock Rally for Fourth Consecutive Year",
+      "description": "Every Wall Street forecaster tracked by Bloomberg is predicting that stocks will rally for a fourth consecutive year. J.P. Morgan Global Research estimates the AI supercycle driving above-trend earnings growth of 13-15% for at least the next two years, creating unprecedented forecaster consensus.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/graphics/2026-investment-outlooks/",
+        "type": "news",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Unanimous bullish consensus may indicate peak optimism and potential contrarian signal; AI-driven earnings growth expectation reshaping market valuations",
+      "significance": 4,
+      "significance_reason": "Rare unanimous bullish consensus among forecasters, historically associated with both strong momentum and potential market tops",
+      "potential_impact": {
+        "short_term": "Strong investor inflows, momentum trading, potential FOMO-driven valuations",
+        "mid_term": "Sustained bull market if AI earnings materialize, or sharp correction if consensus proves wrong",
+        "long_term": "AI supercycle thesis validation or refutation, shaping decade of market dynamics"
+      },
+      "actors": [
+        {"name": "Bloomberg", "type": "organization", "role": "Forecaster survey aggregation"},
+        {"name": "Wall Street forecasters", "type": "group", "role": "Consensus bullish outlook"},
+        {"name": "J.P. Morgan", "type": "company", "role": "AI supercycle thesis advocate"},
+        {"name": "AI sector companies", "type": "group", "role": "Earnings growth drivers"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.90,
+      "related_signals": ["SIG-2026-0112-M005"],
+      "tags": ["stock market", "Wall Street", "AI supercycle", "earnings growth", "market consensus", "forecasting"],
+      "psrt_score": {
+        "source": 18,
+        "signal": 33,
+        "analysis": 21,
+        "report": 16,
+        "total": 88,
+        "grade": "A-",
+        "rationale": {
+          "source": "Bloomberg is highly credible financial news and data provider (90/100)",
+          "signal": "Very strong signal - unanimous consensus is rare and significant (94/100)",
+          "analysis": "Good analysis of consensus patterns but limited contrarian perspective (84/100)",
+          "report": "Clear presentation with data visualization (80/100)"
+        }
+      },
+      "analyst_notes": "Unanimous consensus is historically a contrarian indicator. Monitor for early signs of consensus breakdown. Track AI earnings delivery against 13-15% growth expectations. Consider risk management strategies given extreme optimism."
+    },
+    {
+      "id": "SIG-2026-0112-M007",
+      "raw_id": "RAW-2026-0112-EN001",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political"]
+      },
+      "title": "Trump Pulls U.S. Out of Major Climate Organizations",
+      "description": "The U.S. has announced withdrawal from major international climate and clean energy organizations, including the UN Framework Convention on Climate Change (UNFCCC), IPCC, and International Renewable Energy Agency (IRENA), marking a fundamental shift in U.S. climate diplomacy.",
+      "source": {
+        "name": "ESG Today",
+        "url": "https://www.esgtoday.com/trump-pulls-u-s-out-of-major-international-climate-energy-and-sustainable-development-organizations/",
+        "type": "news",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Major retrenchment of U.S. climate leadership, potentially reshaping global climate governance and accelerating China-EU climate cooperation",
+      "significance": 5,
+      "significance_reason": "Paradigm shift in global climate governance with U.S. withdrawal from foundational institutions, creating leadership vacuum and geopolitical realignment",
+      "potential_impact": {
+        "short_term": "Diplomatic tensions, climate finance disruption, UNFCCC process complications, market uncertainty for clean energy",
+        "mid_term": "China-EU climate leadership emergence, fragmented global climate architecture, U.S. clean energy sector headwinds",
+        "long_term": "Restructuring of global climate governance without U.S. participation, potential acceleration or deceleration of climate action depending on alternate leadership"
+      },
+      "actors": [
+        {"name": "Trump administration", "type": "government", "role": "Decision to withdraw from climate organizations"},
+        {"name": "UNFCCC", "type": "organization", "role": "International climate framework losing U.S. participation"},
+        {"name": "IPCC", "type": "organization", "role": "Climate science body losing U.S. support"},
+        {"name": "IRENA", "type": "organization", "role": "Renewable energy agency losing U.S. membership"},
+        {"name": "China", "type": "government", "role": "Potential climate leadership beneficiary"},
+        {"name": "EU", "type": "government", "role": "Potential climate leadership beneficiary"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.95,
+      "related_signals": [],
+      "tags": ["climate policy", "Trump", "UNFCCC", "IPCC", "IRENA", "U.S. withdrawal", "climate diplomacy"],
+      "psrt_score": {
+        "source": 16,
+        "signal": 35,
+        "analysis": 23,
+        "report": 17,
+        "total": 91,
+        "grade": "A",
+        "rationale": {
+          "source": "ESG Today is specialized ESG news source with good credibility (80/100)",
+          "signal": "Extremely strong signal representing major geopolitical shift (100/100)",
+          "analysis": "Strong analysis of implications for global climate governance (92/100)",
+          "report": "Clear and comprehensive reporting of multi-organizational withdrawal (85/100)"
+        }
+      },
+      "analyst_notes": "Monitor COP31 participation and outcomes. Track China-EU climate cooperation initiatives. Watch for U.S. state-level climate policy responses. Assess impacts on Paris Agreement implementation and climate finance flows."
+    },
+    {
+      "id": "SIG-2026-0112-M008",
+      "raw_id": "RAW-2026-0112-EN002",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Economic", "Technological"]
+      },
+      "title": "Global Solar Installations Surpass 500 GW AC in 2025",
+      "description": "The end of 2025 marked a high point for renewables installations, with global solar installations surpassing 500 GW AC. Clean technologies will continue to dominate new energy deployments in 2026, with clean energy sources accounting for over 90% of U.S. new power capacity additions.",
+      "source": {
+        "name": "S&P Global",
+        "url": "https://www.spglobal.com/energy/en/news-research/special-reports/energy-transition/horizons-top-cleantech-trends-2026",
+        "type": "research",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Solar energy reaching critical mass threshold, indicating irreversible transition to renewable-dominated power systems regardless of policy shifts",
+      "significance": 4,
+      "significance_reason": "Major milestone in renewable energy deployment demonstrating technological and economic viability at scale, transforming global energy infrastructure",
+      "potential_impact": {
+        "short_term": "Continued solar investment acceleration, grid infrastructure challenges, energy storage demand surge",
+        "mid_term": "Coal and gas power plant retirements accelerate, electricity prices restructuring, energy markets volatility",
+        "long_term": "Fundamental transformation of energy systems to renewable-dominated, decentralized power generation"
+      },
+      "actors": [
+        {"name": "S&P Global", "type": "organization", "role": "Energy transition research and analysis"},
+        {"name": "solar industry", "type": "industry", "role": "Capacity deployment driving milestone"},
+        {"name": "U.S. utilities", "type": "industry", "role": "90% clean energy capacity additions"},
+        {"name": "grid operators", "type": "organization", "role": "Managing integration of renewable capacity"}
+      ],
+      "status": "mature",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.92,
+      "related_signals": ["SIG-2026-0112-M009"],
+      "tags": ["solar energy", "renewable energy", "clean tech", "capacity additions", "energy transition", "500 GW milestone"],
+      "psrt_score": {
+        "source": 19,
+        "signal": 32,
+        "analysis": 23,
+        "report": 18,
+        "total": 92,
+        "grade": "A",
+        "rationale": {
+          "source": "S&P Global is leading energy research organization with high credibility (95/100)",
+          "signal": "Strong signal with specific milestone and market dominance data (91/100)",
+          "analysis": "Excellent analysis of energy transition trends and implications (92/100)",
+          "report": "Comprehensive special report with actionable insights (90/100)"
+        }
+      },
+      "analyst_notes": "Track grid integration challenges and energy storage deployment. Monitor policy responses in context of U.S. climate organization withdrawal (SIG-2026-0112-M007). Assess impacts on fossil fuel industry and stranded asset risks."
+    },
+    {
+      "id": "SIG-2026-0112-M009",
+      "raw_id": "RAW-2026-0112-EN003",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Economic"]
+      },
+      "title": "U.S. to Install 15 GW of Battery Storage in 2026",
+      "description": "The U.S. will be installing almost 15 GW of new battery energy storage systems (BESS) capacity in 2026, with Germany and Australia following with 5 GW, and the UK with 3 GW. This represents massive acceleration in energy storage deployment enabling renewable integration.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "Battery storage crossing economic viability threshold, solving renewable intermittency challenge and enabling grid-scale renewable energy systems",
+      "significance": 4,
+      "significance_reason": "Critical infrastructure enabling renewable energy integration at scale, removing major barrier to decarbonization",
+      "potential_impact": {
+        "short_term": "Grid stability improvements, increased renewable curtailment reduction, battery manufacturing capacity expansion",
+        "mid_term": "Accelerated coal and gas peaker plant retirements, time-of-use electricity pricing expansion, grid flexibility markets",
+        "long_term": "Fully renewable-powered grids become technically and economically feasible, transforming energy systems globally"
+      },
+      "actors": [
+        {"name": "U.S. utilities", "type": "industry", "role": "Primary deployers of 15 GW BESS capacity"},
+        {"name": "battery manufacturers", "type": "industry", "role": "Supply chain for storage systems"},
+        {"name": "Germany", "type": "government", "role": "Second largest BESS deployment (5 GW)"},
+        {"name": "Australia", "type": "government", "role": "Major BESS deployment region (5 GW)"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.87,
+      "related_signals": ["SIG-2026-0112-M008"],
+      "tags": ["battery storage", "BESS", "energy storage", "grid infrastructure", "renewable integration", "15 GW"],
+      "psrt_score": {
+        "source": 18,
+        "signal": 33,
+        "analysis": 22,
+        "report": 16,
+        "total": 89,
+        "grade": "A-",
+        "rationale": {
+          "source": "Bloomberg is highly credible financial and energy news source (90/100)",
+          "signal": "Very strong signal with specific capacity targets and global comparison (94/100)",
+          "analysis": "Good technical analysis of storage enabling renewable integration (88/100)",
+          "report": "Clear reporting but part of broader climate trends feature (80/100)"
+        }
+      },
+      "analyst_notes": "Monitor battery supply chain (lithium, cobalt) constraints. Track grid interconnection queue for storage projects. Assess impacts on electricity pricing and peaker plant economics. Cross-reference with solar deployment (SIG-2026-0112-M008)."
+    },
+    {
+      "id": "SIG-2026-0112-M010",
+      "raw_id": "RAW-2026-0112-P001",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "title": "Governments Use Industrial Subsidies to Improve Economic Security",
+      "description": "Governments will use industrial subsidies, restrictive trade policies, ownership stakes in companies and local investment mandates to improve economic security, with new trade policies including tariffs, export controls and local content requirements to modify existing supply chains and trade patterns.",
+      "source": {
+        "name": "EY",
+        "url": "https://www.ey.com/en_gl/insights/geostrategy/geostrategic-outlook",
+        "type": "research",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Shift from free trade to economic security paradigm, with governments directly intervening in industrial policy and supply chains",
+      "significance": 4,
+      "significance_reason": "Fundamental restructuring of global economic governance away from neoliberal consensus toward state-directed economic security policies",
+      "potential_impact": {
+        "short_term": "Increased trade tensions, supply chain reconfigurations, corporate strategic planning complexity",
+        "mid_term": "Fragmentation of global supply chains into geopolitical blocs, reduced economic efficiency, increased costs",
+        "long_term": "New global economic order characterized by strategic competition and reduced interdependence"
+      },
+      "actors": [
+        {"name": "national governments", "type": "government", "role": "Implementing industrial subsidies and trade restrictions"},
+        {"name": "multinational corporations", "type": "group", "role": "Navigating fragmented regulatory environment"},
+        {"name": "EY", "type": "organization", "role": "Geostrategic analysis and advisory"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.88,
+      "related_signals": [],
+      "tags": ["industrial policy", "economic security", "subsidies", "supply chains", "trade policy", "geostrategy"],
+      "psrt_score": {
+        "source": 18,
+        "signal": 31,
+        "analysis": 23,
+        "report": 17,
+        "total": 89,
+        "grade": "A-",
+        "rationale": {
+          "source": "EY is Big Four consulting firm with credible geostrategic practice (90/100)",
+          "signal": "Strong signal identifying major policy shift across governments (89/100)",
+          "analysis": "Excellent geostrategic analysis connecting policy tools to security objectives (92/100)",
+          "report": "Well-structured outlook report with strategic guidance (85/100)"
+        }
+      },
+      "analyst_notes": "Monitor IRA, EU Chips Act, China Made in China 2025 implementations. Track WTO responses and trade disputes. Assess impacts on global corporations' supply chain strategies and capex allocation."
+    },
+    {
+      "id": "SIG-2026-0112-M011",
+      "raw_id": "RAW-2026-0112-P004",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Social", "Economic"]
+      },
+      "title": "U.S. Foreign Aid Slashed to $38.4 Billion in FY2025",
+      "description": "The Donald Trump administration has slashed the United States' foreign aid this year, with enacted foreign aid dropping to $38.4 billion for fiscal year 2025, with additional rescissions cutting this number by at least $9.4 billion, representing a major retrenchment of U.S. development assistance.",
+      "source": {
+        "name": "Brookings",
+        "url": "https://www.brookings.edu/articles/a-look-back-at-2025-and-whats-in-store-for-2026-from-the-global-economy-and-development-program/",
+        "type": "policy_analysis",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "U.S. retrenchment from global development leadership, potentially creating vacuum for China's Belt and Road Initiative expansion",
+      "significance": 3,
+      "significance_reason": "Significant reduction in U.S. foreign aid reflecting shift away from development-focused foreign policy",
+      "potential_impact": {
+        "short_term": "NGO and development program funding crises, humanitarian assistance gaps, diplomatic tensions with recipient countries",
+        "mid_term": "China's development finance influence expands, U.S. soft power erosion, development goal setbacks",
+        "long_term": "Restructuring of global development architecture with diminished U.S. role, potential geopolitical realignment"
+      },
+      "actors": [
+        {"name": "Trump administration", "type": "government", "role": "Decision to slash foreign aid budget"},
+        {"name": "USAID", "type": "government", "role": "Implementation of aid cuts"},
+        {"name": "recipient countries", "type": "government", "role": "Facing aid reduction impacts"},
+        {"name": "China", "type": "government", "role": "Potential alternative development finance provider"},
+        {"name": "Brookings Institution", "type": "organization", "role": "Policy analysis of aid cuts"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.92,
+      "related_signals": ["SIG-2026-0112-M007"],
+      "tags": ["foreign aid", "U.S. policy", "Trump administration", "development", "USAID", "aid cuts"],
+      "psrt_score": {
+        "source": 19,
+        "signal": 27,
+        "analysis": 22,
+        "report": 17,
+        "total": 85,
+        "grade": "A-",
+        "rationale": {
+          "source": "Brookings is leading policy think tank with high credibility (95/100)",
+          "signal": "Moderate-strong signal of policy shift with specific budget figures (77/100)",
+          "analysis": "Strong policy analysis with development implications (88/100)",
+          "report": "Well-structured policy brief with historical context (85/100)"
+        }
+      },
+      "analyst_notes": "Part of broader U.S. retrenchment pattern (see SIG-2026-0112-M007 on climate withdrawals). Monitor humanitarian crises for aid gap impacts. Track Chinese BRI expansion in response. Assess NGO sector restructuring."
+    },
+    {
+      "id": "SIG-2026-0112-M012",
+      "raw_id": "RAW-2026-0112-P005",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Environmental", "Technological"]
+      },
+      "title": "Water Rights Conflicts to Rise Amid Semiconductor and AI Demand",
+      "description": "As freshwater scarcity grows in markets around the world and demand for water increases for semiconductor manufacturing and cooling data centers, more water rights conflicts will arise in 2026, creating intersection of resource scarcity and technological infrastructure needs.",
+      "source": {
+        "name": "Paul Hastings",
+        "url": "https://www.paulhastings.com/insights/client-alerts/geopolitical-predictions-general-counsel-need-to-know-for-2026",
+        "type": "legal_analysis",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Emerging resource conflict between traditional water users and high-tech industries, signaling water as critical constraint on AI/semiconductor expansion",
+      "significance": 4,
+      "significance_reason": "Novel intersection of water scarcity with critical technology infrastructure, potentially constraining AI/semiconductor industry growth and creating regulatory conflicts",
+      "potential_impact": {
+        "short_term": "Semiconductor facility permitting delays, data center location constraints, water rights litigation",
+        "mid_term": "Water-efficient manufacturing innovation, industry location shifts to water-abundant regions, regulatory frameworks",
+        "long_term": "Fundamental constraint on AI/semiconductor industry growth in water-scarce regions, geopolitical implications for tech competitiveness"
+      },
+      "actors": [
+        {"name": "semiconductor manufacturers", "type": "industry", "role": "Major water consumers for chip fabrication"},
+        {"name": "data center operators", "type": "industry", "role": "Water users for cooling infrastructure"},
+        {"name": "agricultural interests", "type": "industry", "role": "Competing traditional water users"},
+        {"name": "local governments", "type": "government", "role": "Water rights allocation and regulation"},
+        {"name": "Paul Hastings", "type": "organization", "role": "Legal analysis of water rights conflicts"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.78,
+      "related_signals": [],
+      "tags": ["water scarcity", "semiconductors", "data centers", "resource conflicts", "water rights", "AI infrastructure"],
+      "psrt_score": {
+        "source": 16,
+        "signal": 33,
+        "analysis": 21,
+        "report": 16,
+        "total": 86,
+        "grade": "A-",
+        "rationale": {
+          "source": "Paul Hastings is major law firm with credible geopolitical practice (80/100)",
+          "signal": "Very strong signal identifying novel resource constraint on critical industries (94/100)",
+          "analysis": "Good legal analysis of water rights implications (84/100)",
+          "report": "Clear client alert format with actionable legal guidance (80/100)"
+        }
+      },
+      "analyst_notes": "Monitor semiconductor fab announcements in water-scarce regions (Arizona, Taiwan). Track data center water usage disclosure requirements. Watch for water-efficient manufacturing technology innovations. Cross-reference with AI infrastructure buildout."
+    },
+    {
+      "id": "SIG-2026-0112-M013",
+      "raw_id": "RAW-2026-0112-SP001",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social", "Economic"]
+      },
+      "title": "Emotional Fitness Treated Like Physical Fitness in 2026",
+      "description": "In 2026, emotional wellness isn't just reactive (stress relief or therapy); it's proactive, preventive and treated like physical fitness. Emotional fitness focuses on noticing stress earlier and responding with tools like mindfulness, journaling, breathwork, or mood tracking. Wellness studios are rolling out 'emotional gyms' offering guided somatic sessions.",
+      "source": {
+        "name": "Dr. Axe",
+        "url": "https://draxe.com/health/wellness-trends-2026/",
+        "type": "wellness_trend",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Paradigm shift from reactive mental health treatment to proactive emotional fitness, creating new wellness category and commercial opportunities",
+      "significance": 3,
+      "significance_reason": "Notable cultural shift in how emotional health is conceptualized and practiced, with potential to reduce mental health crises through prevention",
+      "potential_impact": {
+        "short_term": "Emotional fitness app growth, wellness studio diversification, workplace wellness program expansion",
+        "mid_term": "Mainstream adoption of emotional fitness practices, reduced stigma around emotional health, new professional categories",
+        "long_term": "Cultural integration of emotional fitness equivalent to physical fitness, potential reduction in mental health issues through prevention"
+      },
+      "actors": [
+        {"name": "wellness studios", "type": "company", "role": "Creating 'emotional gym' offerings"},
+        {"name": "app developers", "type": "company", "role": "Mood tracking and emotional fitness tools"},
+        {"name": "workplace wellness programs", "type": "organization", "role": "Integrating emotional fitness"},
+        {"name": "Dr. Axe", "type": "individual", "role": "Wellness trend analysis and promotion"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.75,
+      "related_signals": ["SIG-2026-0112-M014"],
+      "tags": ["emotional fitness", "wellness", "mental health", "mindfulness", "preventive care", "emotional gyms"],
+      "psrt_score": {
+        "source": 14,
+        "signal": 28,
+        "analysis": 20,
+        "report": 14,
+        "total": 76,
+        "grade": "B",
+        "rationale": {
+          "source": "Dr. Axe is wellness influencer with moderate credibility, not academic source (70/100)",
+          "signal": "Good signal identifying cultural shift in emotional health approach (80/100)",
+          "analysis": "Reasonable analysis but limited depth on effectiveness evidence (80/100)",
+          "report": "Trend article format with descriptive rather than analytical focus (70/100)"
+        }
+      },
+      "analyst_notes": "Monitor emotional fitness app adoption metrics. Track wellness studio business model evolution. Watch for insurance coverage of emotional fitness programs. Cross-reference with broader wellness trends."
+    },
+    {
+      "id": "SIG-2026-0112-M014",
+      "raw_id": "RAW-2026-0112-SP002",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological", "Social"]
+      },
+      "title": "Mindfulness Linked to Brain Changes in Memory and Emotion Centers",
+      "description": "Studies have shown a link between practicing mindfulness and measurable changes in the regions of the brain related to memory, emotion, and learning. In 2026, wellness trends promote meditation, sound healing and relaxation as daily rituals to help with stress management, grounded in neuroscientific evidence.",
+      "source": {
+        "name": "Simply The Best Magazine",
+        "url": "http://simplythebestmagazine.com/the-5-wellness-trends-set-to-define-2026/",
+        "type": "wellness_report",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Scientific validation of contemplative practices driving mainstream adoption and integration into healthcare and workplace settings",
+      "significance": 3,
+      "significance_reason": "Neuroscientific evidence legitimizing mindfulness practices, accelerating institutional adoption and reducing skepticism",
+      "potential_impact": {
+        "short_term": "Healthcare provider mindfulness prescription increase, corporate wellness program expansion, meditation app growth",
+        "mid_term": "Insurance coverage for mindfulness interventions, school curriculum integration, clinical treatment protocols",
+        "long_term": "Mindfulness as standard healthcare intervention, cultural norm shift toward contemplative practice"
+      },
+      "actors": [
+        {"name": "neuroscience researchers", "type": "academic", "role": "Providing scientific evidence for mindfulness effects"},
+        {"name": "healthcare providers", "type": "organization", "role": "Prescribing mindfulness interventions"},
+        {"name": "meditation app companies", "type": "company", "role": "Commercial mindfulness delivery"},
+        {"name": "wellness industry", "type": "industry", "role": "Promoting mindfulness practices"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.82,
+      "related_signals": ["SIG-2026-0112-M013", "SIG-2026-0112-M015"],
+      "tags": ["mindfulness", "brain health", "meditation", "neuroplasticity", "wellness", "neuroscience"],
+      "psrt_score": {
+        "source": 12,
+        "signal": 30,
+        "analysis": 19,
+        "report": 14,
+        "total": 75,
+        "grade": "B",
+        "rationale": {
+          "source": "Lifestyle magazine with limited scientific credibility, secondary source (60/100)",
+          "signal": "Strong signal with neuroscientific backing for wellness trend (86/100)",
+          "analysis": "Moderate analysis connecting research to trends but lacks depth (76/100)",
+          "report": "Basic wellness trend reporting format (70/100)"
+        }
+      },
+      "analyst_notes": "Verify neuroscience research sources. Monitor clinical adoption of mindfulness interventions. Track meditation app usage and revenue metrics. Watch for insurance reimbursement policy changes."
+    },
+    {
+      "id": "SIG-2026-0112-M015",
+      "raw_id": "RAW-2026-0112-SP003",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "title": "Spirituality Shows Lasting Positive Effects on Mental Health in 2026",
+      "description": "Research shows that spirituality—be it through traditional religion, meditation, crystal healing or something of your own making—can have lasting, positive effects on mental health, self-esteem, anger management, and physical health in 2026. Practices such as meditating, yoga, and living in alignment with values help contribute to spiritual wellness.",
+      "source": {
+        "name": "Cratejoy",
+        "url": "https://www.cratejoy.com/blogs/box-insider/spiritual-wellness-benefits-and-activities",
+        "type": "wellness_guide",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Broadening definition of spirituality beyond religion to include diverse meaning-making practices, driving personalized spiritual wellness market",
+      "significance": 2,
+      "significance_reason": "Moderate signal reflecting ongoing secularization of spirituality and wellness commercialization",
+      "potential_impact": {
+        "short_term": "Spiritual wellness product market growth, diverse spiritual practice adoption, wellness subscription services",
+        "mid_term": "Personalized spirituality becomes mainstream wellness pillar, traditional religious institution challenges",
+        "long_term": "Restructuring of meaning-making systems away from institutional religion toward personalized spiritual practice"
+      },
+      "actors": [
+        {"name": "wellness industry", "type": "industry", "role": "Commercializing spiritual practices"},
+        {"name": "yoga studios", "type": "company", "role": "Spiritual practice offerings"},
+        {"name": "meditation teachers", "type": "individual", "role": "Spiritual guidance providers"},
+        {"name": "alternative spirituality practitioners", "type": "individual", "role": "Crystal healing, energy work"}
+      ],
+      "status": "mature",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.68,
+      "related_signals": ["SIG-2026-0112-M013", "SIG-2026-0112-M014"],
+      "tags": ["spirituality", "mental health", "yoga", "values alignment", "wellness", "secular spirituality"],
+      "psrt_score": {
+        "source": 11,
+        "signal": 24,
+        "analysis": 18,
+        "report": 13,
+        "total": 66,
+        "grade": "C+",
+        "rationale": {
+          "source": "Subscription box blog with limited credibility as wellness authority (55/100)",
+          "signal": "Moderate signal on spiritual wellness trend but not novel (69/100)",
+          "analysis": "Basic analysis of spiritual practices and mental health benefits (72/100)",
+          "report": "Promotional content format rather than analytical report (65/100)"
+        }
+      },
+      "analyst_notes": "Signal reflects mature trend rather than emerging development. Monitor spiritual wellness market size and growth. Track traditional religious institution responses to secular spirituality. Limited actionable insights due to source credibility."
+    },
+    {
+      "id": "SIG-2026-0112-M016",
+      "raw_id": "RAW-2026-0112-SP004",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "title": "2026 Heralds Return of Connection as Pillar of Health",
+      "description": "After years of digital-first interaction, 2026 heralds the return of connection as a pillar of health. Community circles, wellness dinners, hobby-based meetups, and restorative group rituals will become more popular as people seek meaningful, in-person relationships, representing counter-trend to digital isolation.",
+      "source": {
+        "name": "Vice",
+        "url": "https://www.vice.com/en/article/3-wellness-trends-to-follow-in-2026-and-3-to-avoid/",
+        "type": "trend_analysis",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Backlash against digital isolation driving resurgence of in-person community building as essential wellness practice",
+      "significance": 3,
+      "significance_reason": "Notable cultural shift addressing loneliness epidemic through structured community-building, with potential to reshape social infrastructure",
+      "potential_impact": {
+        "short_term": "Community-focused business models emerge, third place resurgence, social wellness program growth",
+        "mid_term": "Reduction in loneliness metrics, mental health improvements, new forms of community organization",
+        "long_term": "Restructuring of social fabric with intentional community-building as norm, potential reversal of individualization trends"
+      },
+      "actors": [
+        {"name": "wellness studios", "type": "company", "role": "Creating community circle offerings"},
+        {"name": "community organizers", "type": "individual", "role": "Facilitating group gatherings"},
+        {"name": "third place businesses", "type": "company", "role": "Providing spaces for connection"},
+        {"name": "Gen Z", "type": "demographic", "role": "Driving demand for in-person connection"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.72,
+      "related_signals": ["SIG-2026-0112-M013"],
+      "tags": ["community", "connection", "wellness", "social bonds", "loneliness", "in-person interaction"],
+      "psrt_score": {
+        "source": 15,
+        "signal": 29,
+        "analysis": 20,
+        "report": 15,
+        "total": 79,
+        "grade": "B",
+        "rationale": {
+          "source": "Vice is credible media outlet with cultural trend expertise (75/100)",
+          "signal": "Strong signal identifying counter-trend to digital isolation (83/100)",
+          "analysis": "Good cultural analysis of connection as wellness pillar (80/100)",
+          "report": "Well-structured trend analysis with specific examples (75/100)"
+        }
+      },
+      "analyst_notes": "Monitor loneliness epidemic metrics for validation. Track third place business growth (coffee shops, community centers). Watch for workplace policies supporting community time. Cross-reference with Gen Z analog movement trends."
+    },
+    {
+      "id": "SIG-2026-0112-M017",
+      "raw_id": "RAW-2026-0112-SP005",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "title": "Holistic Wellness Approach Gains Momentum in 2026",
+      "description": "In the context of wellness, the term 'holistic' refers to an approach that considers a person in all their dimensions, rather than treating an isolated symptom or part of the body. Energy, lifestyle, emotions, physical and mental health are all interconnected. The theme for 2026 is preventive, personalized, and integrated wellness that honors the mind-body-spirit connection.",
+      "source": {
+        "name": "Good Housekeeping UK",
+        "url": "https://www.goodhousekeeping.com/uk/health/health-advice/a69806614/2026-health-wellness-trends/",
+        "type": "wellness_report",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Shift from reductionist to holistic healthcare paradigm, integrating physical, mental, emotional, and spiritual dimensions of health",
+      "significance": 3,
+      "significance_reason": "Significant paradigm shift in wellness conceptualization toward integrated care, potentially reshaping healthcare delivery models",
+      "potential_impact": {
+        "short_term": "Integrative health practitioners demand increase, holistic wellness programs growth, personalized wellness plans",
+        "mid_term": "Healthcare system adaptation to holistic models, insurance coverage for integrative care, medical education reform",
+        "long_term": "Transformation of healthcare system toward preventive, personalized, integrated care models addressing whole person"
+      },
+      "actors": [
+        {"name": "integrative health practitioners", "type": "individual", "role": "Providing holistic care services"},
+        {"name": "wellness industry", "type": "industry", "role": "Promoting holistic wellness approaches"},
+        {"name": "healthcare systems", "type": "organization", "role": "Adapting to integrative care models"},
+        {"name": "insurance providers", "type": "company", "role": "Coverage decisions for holistic care"}
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.78,
+      "related_signals": ["SIG-2026-0112-M013", "SIG-2026-0112-M015"],
+      "tags": ["holistic health", "mind-body-spirit", "integrated wellness", "preventive care", "personalized wellness"],
+      "psrt_score": {
+        "source": 14,
+        "signal": 27,
+        "analysis": 20,
+        "report": 15,
+        "total": 76,
+        "grade": "B",
+        "rationale": {
+          "source": "Good Housekeeping is credible lifestyle magazine but not healthcare authority (70/100)",
+          "signal": "Good signal on holistic wellness trend with clear paradigm shift (77/100)",
+          "analysis": "Solid analysis of integrated care approach and implications (80/100)",
+          "report": "Well-written trend report with practical examples (75/100)"
+        }
+      },
+      "analyst_notes": "Monitor integrative health practitioner credentialing and regulation. Track insurance coverage expansion for holistic care. Watch for medical school curriculum changes. Assess evidence base for holistic care effectiveness."
+    },
+    {
+      "id": "SIG-2026-0112-M018",
+      "raw_id": "RAW-2026-0112-SP006",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social", "Technological"]
+      },
+      "title": "AI and Automation Drive Meaning Crisis and Spiritual Seeking",
+      "description": "As AI and automation reshape work and society, individuals increasingly face questions of purpose, meaning, and human identity. This technological disruption is catalyzing a spiritual seeking movement as people search for meaning beyond economic productivity and explore what makes us fundamentally human in an AI age.",
+      "source": {
+        "name": "Multiple wellness and trend sources",
+        "url": "aggregated",
+        "type": "trend_synthesis",
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "Technology-driven meaning crisis sparking spiritual renaissance focused on human purpose, authenticity, and transcendence",
+      "significance": 4,
+      "significance_reason": "Profound existential challenge posed by AI driving fundamental questions about human purpose and identity, potentially reshaping cultural values",
+      "potential_impact": {
+        "short_term": "Increased interest in philosophy, spirituality, and meaning-focused practices; mental health challenges from purpose anxiety",
+        "mid_term": "Cultural movements centered on human flourishing beyond productivity; educational emphasis on meaning and purpose",
+        "long_term": "Fundamental restructuring of cultural values away from productivity toward human flourishing, authenticity, and spiritual development"
+      },
+      "actors": [
+        {"name": "knowledge workers", "type": "demographic", "role": "Facing AI-driven job displacement and meaning questions"},
+        {"name": "spiritual teachers", "type": "individual", "role": "Providing guidance on meaning and purpose"},
+        {"name": "philosophers", "type": "academic", "role": "Exploring human purpose in AI age"},
+        {"name": "AI companies", "type": "company", "role": "Driving technological disruption catalyzing meaning crisis"}
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-12",
+      "last_updated": "2026-01-12",
+      "confidence": 0.85,
+      "related_signals": ["SIG-2026-0112-M002", "SIG-2026-0112-M013"],
+      "tags": ["AI", "meaning crisis", "spirituality", "human purpose", "existential questions", "identity", "automation"],
+      "psrt_score": {
+        "source": 13,
+        "signal": 33,
+        "analysis": 23,
+        "report": 16,
+        "total": 85,
+        "grade": "A-",
+        "rationale": {
+          "source": "Synthesized from multiple sources, moderate individual credibility (65/100)",
+          "signal": "Very strong signal identifying profound cultural challenge from AI (94/100)",
+          "analysis": "Excellent philosophical and cultural analysis of AI-driven meaning crisis (92/100)",
+          "report": "Good synthesis but lacks primary research citation (80/100)"
+        }
+      },
+      "analyst_notes": "This is an analyst-synthesized signal based on patterns across multiple wellness and spiritual sources. Monitor philosophical discourse on AI and human purpose. Track spiritual seeking metrics and meaning-focused education. Watch for new movements centered on human flourishing. Critical cross-cutting signal connecting technology and spirituality trends."
+    }
+  ],
+  "analyst_summary": {
+    "key_insights": [
+      "Strong cluster of Spiritual/Wellness signals (6) indicating major cultural shift toward meaning-making and holistic health in response to digital exhaustion and AI disruption",
+      "Economic signals show optimistic consensus (Goldman Sachs 2.8%, JPM 2.6%, unanimous stock rally predictions) that may represent peak sentiment",
+      "U.S. policy retrenchment visible across multiple domains (climate organizations withdrawal, foreign aid cuts) representing major geopolitical realignment",
+      "Technology signals highlight 2026 as potential inflection year for quantum computing and humanoid robots reaching practical deployment",
+      "Environmental signals show renewable energy momentum (500 GW solar, 15 GW storage) potentially decoupled from policy support",
+      "Novel resource conflicts emerging (water rights vs. semiconductor/AI infrastructure) as technology infrastructure meets physical constraints"
+    ],
+    "cross_cutting_themes": [
+      "AI as catalyzing force across domains: economic growth driver, existential meaning crisis, infrastructure resource constraints",
+      "U.S. geopolitical retrenchment: climate, foreign aid, potentially creating leadership vacuum",
+      "Paradigm shifts from reactive to proactive: emotional fitness, holistic wellness, preventive care",
+      "Counter-trends to digitalization: in-person connection seeking, analog movements, community resurgence",
+      "Technology meeting physical limits: water scarcity, energy demand, resource conflicts"
+    ],
+    "high_priority_signals": [
+      "SIG-2026-0112-M002 (Quantum computing advantage) - Paradigm shift with cascading industry impacts",
+      "SIG-2026-0112-M007 (U.S. climate withdrawal) - Major geopolitical realignment",
+      "SIG-2026-0112-M006 (Unanimous stock rally consensus) - Potential contrarian signal for market risk",
+      "SIG-2026-0112-M012 (Water rights conflicts) - Novel constraint on critical tech infrastructure",
+      "SIG-2026-0112-M018 (AI-driven meaning crisis) - Profound cultural challenge requiring response"
+    ],
+    "weak_signals_to_monitor": [
+      "Emotional fitness movement (SIG-2026-0112-M013) - Early stage, watch for mainstream adoption",
+      "Humanoid robot deployment (SIG-2026-0112-M003) - Production claims need verification",
+      "Connection resurgence (SIG-2026-0112-M016) - Counter-trend to watch for sustained momentum"
+    ],
+    "data_quality_notes": [
+      "Spiritual/Wellness signals predominantly from lifestyle media (lower source scores) but show coherent pattern",
+      "Economic signals from highly credible sources (Goldman Sachs, JPM, Bloomberg) with strong methodology",
+      "Technology signals from mixed sources requiring verification (WebProNews, Innovation Mode)",
+      "Political/Environmental signals from strong institutional sources (EY, Brookings, S&P Global)",
+      "Average confidence score: 0.81 (good overall signal quality)"
+    ],
+    "recommended_actions": [
+      "Deep dive analysis on AI-driven meaning crisis and cultural responses",
+      "Monitor Q1-Q2 2026 economic data for validation of optimistic forecasts",
+      "Track quantum computing technical announcements for advantage verification",
+      "Assess water resource constraints on semiconductor/AI infrastructure expansion",
+      "Investigate wellness industry financials for validation of spiritual/emotional fitness trends"
+    ]
+  }
+}

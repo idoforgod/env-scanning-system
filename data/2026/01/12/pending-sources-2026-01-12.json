@@ -1,0 +1,754 @@
+{
+  "metadata": {
+    "exploration_date": "2026-01-12",
+    "phase": "Marathon Stage 2: Exploration Scanner",
+    "duration_minutes": 60,
+    "total_sources_discovered": 28,
+    "strategies_used": ["keyword_expansion", "domain_exploration", "regional_expansion", "citation_tracking"],
+    "steeps_distribution": {
+      "Spiritual": 8,
+      "Social": 6,
+      "Technological": 5,
+      "Economic": 4,
+      "Political": 3,
+      "Environmental": 2
+    }
+  },
+  "discovery_summary": {
+    "keyword_expansion": {
+      "queries_executed": 6,
+      "sources_found": 8,
+      "focus_areas": ["mindfulness research", "wellness science", "Gen Z values", "digital detox", "spiritual technology"]
+    },
+    "domain_exploration": {
+      "queries_executed": 6,
+      "sources_found": 6,
+      "focus_areas": ["university research institutes", "policy think tanks", "AI research centers"]
+    },
+    "regional_expansion": {
+      "queries_executed": 6,
+      "sources_found": 6,
+      "focus_areas": ["Singapore", "Australia", "Mexico", "UAE", "Kenya", "South Africa"]
+    },
+    "citation_tracking": {
+      "queries_executed": 8,
+      "sources_found": 8,
+      "focus_areas": ["futures research journals", "wellbeing journals", "innovation journals", "AI ethics journals"]
+    }
+  },
+  "discovered_sources": [
+    {
+      "id": "DS-2026-001",
+      "name": "Global Wellness Institute",
+      "url": "https://globalwellnessinstitute.org/",
+      "discovered_via": "keyword_expansion",
+      "discovery_query": "wellness research institute 2026",
+      "steeps_category": ["Spiritual", "Social", "Economic"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "research_report",
+        "update_frequency_estimate": "annual",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["leading research org", "$6.3T industry data", "20+ years history", "free research access"]
+      },
+      "sample_content": {
+        "title": "2025 Global Wellness Economy Monitor",
+        "date": "2025-11",
+        "key_finding": "Wellness economy reached $6.8 trillion in 2024, up 7.9% from 2023. Projected to reach $9.8 trillion by 2029. All 11 sectors recovered from pandemic.",
+        "url": "https://globalwellnessinstitute.org/industry-research/2025-global-wellness-economy-monitor/"
+      },
+      "evaluation_score": 85,
+      "notes": "Premier authority on wellness economy. Fills Spiritual/Social gap. High-quality free research reports."
+    },
+    {
+      "id": "DS-2026-002",
+      "name": "Journal of Contemplative Studies",
+      "url": "https://contemplativejournal.org/",
+      "discovered_via": "keyword_expansion",
+      "discovery_query": "contemplative studies neuroscience journal",
+      "steeps_category": ["Spiritual", "Social"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["peer-reviewed", "University of Virginia", "open access", "contemplative science focus"]
+      },
+      "sample_content": {
+        "title": "Contemplative practices and neuroscience research",
+        "date": "2025",
+        "key_finding": "Studies mindfulness, meditation, and contemplative traditions from scientific perspective",
+        "url": "https://contemplativejournal.org/"
+      },
+      "evaluation_score": 78,
+      "notes": "Strong academic journal for Spiritual category. Interdisciplinary approach combining neuroscience and contemplative traditions."
+    },
+    {
+      "id": "DS-2026-003",
+      "name": "Center for Mind and Culture - Spirit Tech",
+      "url": "https://mindandculture.org/projects/past-projects/spirit-tech/",
+      "discovered_via": "keyword_expansion",
+      "discovery_query": "spiritual technology breakthrough emerging",
+      "steeps_category": ["Spiritual", "Technological"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "research_project",
+        "update_frequency_estimate": "project-based",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["academic research", "brain-based tech", "AI-spirituality convergence", "emerging field"]
+      },
+      "sample_content": {
+        "title": "Brain-based technologies for spiritual enhancement",
+        "date": "2025",
+        "key_finding": "Exploring neurostimulation, VR, and AI for inducing spiritual experiences. Market projected to reach $4.84B by 2030, $10B by 2040.",
+        "url": "https://mindandculture.org/technologies-for-spiritual-enhancement/"
+      },
+      "evaluation_score": 82,
+      "notes": "Cutting-edge intersection of technology and spirituality. Unique perspective on 'cyborg spirituality'."
+    },
+    {
+      "id": "DS-2026-004",
+      "name": "University of Michigan Institute for Social Research (ISR)",
+      "url": "https://isr.umich.edu/",
+      "discovered_via": "domain_exploration",
+      "discovery_query": "University of Michigan Institute for Social Research",
+      "steeps_category": ["Social", "Political", "Economic"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "research_institute",
+        "update_frequency_estimate": "continuous",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["world's largest social science survey org", "300+ scientists", "ICPSR data archive", "established 1949"]
+      },
+      "sample_content": {
+        "title": "World's largest academic social science research org",
+        "date": "ongoing",
+        "key_finding": "Houses 5 major centers including ICPSR (7000+ data collections), Center for Political Studies, Population Studies Center",
+        "url": "https://isr.umich.edu/"
+      },
+      "evaluation_score": 92,
+      "notes": "Tier 1 quality. Massive data repository. Fills Social/Political research gap."
+    },
+    {
+      "id": "DS-2026-005",
+      "name": "Cornell Brooks Tech Policy Institute",
+      "url": "https://publicpolicy.cornell.edu/btpi/",
+      "discovered_via": "domain_exploration",
+      "discovery_query": "Cornell Tech Policy Institute",
+      "steeps_category": ["Technological", "Political"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "policy_institute",
+        "update_frequency_estimate": "weekly",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["Cornell University", "national security focus", "AI regulation expertise", "Pentagon/White House connections"]
+      },
+      "sample_content": {
+        "title": "SETO Loop Framework for AI Regulation",
+        "date": "2024-11",
+        "key_finding": "New regulatory framework for AI governance addressing scope, existing regulations, policy tools, and organizational actors",
+        "url": "https://news.cornell.edu/stories/2024/11/btpi-releases-new-report-ai-regulation"
+      },
+      "evaluation_score": 88,
+      "notes": "Excellent for AI policy signals. Direct policy impact. Strong government connections."
+    },
+    {
+      "id": "DS-2026-006",
+      "name": "Columbia Climate School (formerly Earth Institute)",
+      "url": "https://www.climate.columbia.edu/",
+      "discovered_via": "domain_exploration",
+      "discovery_query": "Columbia Earth Institute climate research",
+      "steeps_category": ["Environmental", "Political"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "research_school",
+        "update_frequency_estimate": "daily",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["world leader climate science", "established 1995", "Lamont-Doherty Observatory", "interdisciplinary"]
+      },
+      "sample_content": {
+        "title": "Climate systems research and policy",
+        "date": "ongoing",
+        "key_finding": "Comprehensive climate research from paleoclimatology to adaptation strategies. Earth system models and vulnerability assessments.",
+        "url": "https://www.climate.columbia.edu/"
+      },
+      "evaluation_score": 90,
+      "notes": "Premier climate research institution. Strong policy connections. Comprehensive coverage."
+    },
+    {
+      "id": "DS-2026-007",
+      "name": "Yale Jackson School of Global Affairs",
+      "url": "https://jackson.yale.edu/",
+      "discovered_via": "domain_exploration",
+      "discovery_query": "Yale Jackson School of Global Affairs",
+      "steeps_category": ["Political", "Social", "Economic"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "professional_school",
+        "update_frequency_estimate": "weekly",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["Yale's newest school (2022)", "global policy focus", "world-class faculty", "MPP program"]
+      },
+      "sample_content": {
+        "title": "Global affairs policy research and education",
+        "date": "ongoing",
+        "key_finding": "First new Yale professional school since 1976. Focus on global policy challenges and leadership development.",
+        "url": "https://jackson.yale.edu/"
+      },
+      "evaluation_score": 87,
+      "notes": "New but high-quality source. Strong Yale reputation. Global policy focus."
+    },
+    {
+      "id": "DS-2026-008",
+      "name": "Duke Global Health Innovation Center",
+      "url": "https://dukeghic.org/",
+      "discovered_via": "domain_exploration",
+      "discovery_query": "Duke Global Health Innovation Center",
+      "steeps_category": ["Social", "Technological"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "research_center",
+        "update_frequency_estimate": "weekly",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["Duke University", "COVID-19 tracking leader", "innovation scaling", "global health equity"]
+      },
+      "sample_content": {
+        "title": "COVID-19 vaccine equity tracking",
+        "date": "ongoing",
+        "key_finding": "Tracks global vaccine/therapeutic purchases and donations. Leading voice on health innovation scaling and equity.",
+        "url": "https://dukeghic.org/"
+      },
+      "evaluation_score": 83,
+      "notes": "Strong Social/health focus. Data-driven research. Global health innovation."
+    },
+    {
+      "id": "DS-2026-009",
+      "name": "University of Tokyo Next AI Research Center",
+      "url": "https://www.ai.u-tokyo.ac.jp/en/",
+      "discovered_via": "domain_exploration",
+      "discovery_query": "University of Tokyo AI Research Center",
+      "steeps_category": ["Technological", "Social"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "research_center",
+        "update_frequency_estimate": "weekly",
+        "language": "en/ja",
+        "region": "Japan",
+        "quality_indicators": ["University of Tokyo", "interdisciplinary", "established 2016", "humanities + tech integration"]
+      },
+      "sample_content": {
+        "title": "Next generation AI research across disciplines",
+        "date": "ongoing",
+        "key_finding": "Transcends current AI limitations. Integrates humanities and sciences. Director: Prof. Yasuo Kuniyoshi since 2016.",
+        "url": "https://www.ai.u-tokyo.ac.jp/en/"
+      },
+      "evaluation_score": 84,
+      "notes": "Important Asian AI research perspective. Interdisciplinary approach unique."
+    },
+    {
+      "id": "DS-2026-010",
+      "name": "ISEAS-Yusof Ishak Institute",
+      "url": "https://www.iseas.edu.sg/",
+      "discovered_via": "regional_expansion",
+      "discovery_query": "Singapore think tank policy research 2026",
+      "steeps_category": ["Political", "Economic", "Social"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "think_tank",
+        "update_frequency_estimate": "daily",
+        "language": "en",
+        "region": "Southeast Asia",
+        "quality_indicators": ["leading Southeast Asia research", "Regional Outlook Forum 2026", "policy analysis", "geopolitics"]
+      },
+      "sample_content": {
+        "title": "Southeast Asia socio-political and economic trends",
+        "date": "2026-01",
+        "key_finding": "Regional Outlook Forum 2026 discussing Southeast Asia policy and geopolitical developments",
+        "url": "https://www.iseas.edu.sg/"
+      },
+      "evaluation_score": 86,
+      "notes": "Critical for Southeast Asia coverage. Regular policy analysis. Regional expert."
+    },
+    {
+      "id": "DS-2026-011",
+      "name": "Australian Strategic Policy Institute (ASPI)",
+      "url": "https://www.aspi.org.au/",
+      "discovered_via": "regional_expansion",
+      "discovery_query": "Australian Strategic Policy Institute ASPI",
+      "steeps_category": ["Political", "Technological"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "think_tank",
+        "update_frequency_estimate": "daily",
+        "language": "en",
+        "region": "Australia/Indo-Pacific",
+        "quality_indicators": ["independent think tank", "defence/strategic policy", "International Cyber Policy Centre", "Indo-Pacific focus"]
+      },
+      "sample_content": {
+        "title": "Indo-Pacific strategic policy and cyber security",
+        "date": "ongoing",
+        "key_finding": "Leading voice on Indo-Pacific geopolitics, cyber policy, and defence strategy. The Strategist blog provides daily analysis.",
+        "url": "https://www.aspistrategist.org.au/"
+      },
+      "evaluation_score": 89,
+      "notes": "Essential for Indo-Pacific political/security coverage. Strong cyber focus."
+    },
+    {
+      "id": "DS-2026-012",
+      "name": "CIDE (Centro de Investigación y Docencia Económicas)",
+      "url": "https://www.cide.edu/",
+      "discovered_via": "regional_expansion",
+      "discovery_query": "Mexico CIDE research center economics",
+      "steeps_category": ["Economic", "Political", "Social"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "research_center",
+        "update_frequency_estimate": "weekly",
+        "language": "es/en",
+        "region": "Latin America",
+        "quality_indicators": ["Mexico's top think tank", "established 1974", "7 academic divisions", "Global Go To Think Tank"]
+      },
+      "sample_content": {
+        "title": "Social sciences and economics research for Latin America",
+        "date": "ongoing",
+        "key_finding": "Interdisciplinary center with focus on economics, public admin, international/political studies, legal studies",
+        "url": "https://www.cide.edu/"
+      },
+      "evaluation_score": 81,
+      "notes": "Key Latin America source. Fills regional gap. Strong economics focus."
+    },
+    {
+      "id": "DS-2026-013",
+      "name": "MBZUAI (Mohamed bin Zayed University of AI)",
+      "url": "https://mbzuai.ac.ae/",
+      "discovered_via": "regional_expansion",
+      "discovery_query": "UAE Mohamed bin Zayed University AI",
+      "steeps_category": ["Technological"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "university",
+        "update_frequency_estimate": "weekly",
+        "language": "en",
+        "region": "Middle East",
+        "quality_indicators": ["world's first AI-focused grad university", "84 faculty", "MIT partnership", "Jais LLM", "established 2019"]
+      },
+      "sample_content": {
+        "title": "MIT-MBZUAI Collaborative Research Program",
+        "date": "2025",
+        "key_finding": "First Ph.D. in Human-Computer Interaction starting Fall 2026. MIT partnership on AI for health, robotics, energy-efficient systems.",
+        "url": "https://mbzuai.ac.ae/"
+      },
+      "evaluation_score": 85,
+      "notes": "Unique AI-only university. Middle East tech hub. Strong research output."
+    },
+    {
+      "id": "DS-2026-014",
+      "name": "Strathmore University @iLabAfrica",
+      "url": "https://ilabafrica.strathmore.edu/",
+      "discovered_via": "regional_expansion",
+      "discovery_query": "Kenya Strathmore University innovation research",
+      "steeps_category": ["Technological", "Social", "Environmental"],
+      "tier_recommendation": 3,
+      "initial_impression": {
+        "content_type": "innovation_center",
+        "update_frequency_estimate": "monthly",
+        "language": "en",
+        "region": "Africa",
+        "quality_indicators": ["ICT innovation hub", "AI for forest protection", "green hydrogen", "CIPIT law/tech center"]
+      },
+      "sample_content": {
+        "title": "AI to combat illegal logging in Kenyan forests",
+        "date": "2024",
+        "key_finding": "AI project for forest protection. Launched Africa Green Hydrogen Hub. Agri-Food Innovation Centre with data analytics focus.",
+        "url": "https://ilabafrica.strathmore.edu/"
+      },
+      "evaluation_score": 76,
+      "notes": "Important African innovation source. Environmental + tech focus. Emerging market perspective."
+    },
+    {
+      "id": "DS-2026-015",
+      "name": "South African Institute of International Affairs (SAIIA)",
+      "url": "https://saiia.org.za/",
+      "discovered_via": "regional_expansion",
+      "discovery_query": "South African Institute of International Affairs SAIIA",
+      "steeps_category": ["Political", "Economic"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "think_tank",
+        "update_frequency_estimate": "daily",
+        "language": "en",
+        "region": "Africa",
+        "quality_indicators": ["established 1934", "Chatham House partner", "South Africa G20 2025 research lead", "top global think tank"]
+      },
+      "sample_content": {
+        "title": "South Africa's G20 presidency research coordination",
+        "date": "2024-11",
+        "key_finding": "Selected to coordinate research for South Africa's 2025 G20 presidency. Focus on climate, development, governance, natural resources.",
+        "url": "https://saiia.org.za/"
+      },
+      "evaluation_score": 87,
+      "notes": "Premier African think tank. G20 research role shows influence. Climate/resource focus."
+    },
+    {
+      "id": "DS-2026-016",
+      "name": "Futures & Foresight Science (Wiley)",
+      "url": "https://onlinelibrary.wiley.com/journal/25735152",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Foresight journal futures research methodology",
+      "steeps_category": ["Social", "Technological"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Wiley publisher", "methods journal", "scenario planning", "futures studies"]
+      },
+      "sample_content": {
+        "title": "Advances in futures research methodology",
+        "date": "ongoing",
+        "key_finding": "Publishes methods for scenario planning, Delphi, horizon scanning, backcasting, trend monitoring",
+        "url": "https://onlinelibrary.wiley.com/journal/25735152"
+      },
+      "evaluation_score": 82,
+      "notes": "Directly relevant to environmental scanning methodology. Futures research focus."
+    },
+    {
+      "id": "DS-2026-017",
+      "name": "World Futures Review (SAGE)",
+      "url": "https://journals.sagepub.com/home/WFR",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "World Future Review sage journal",
+      "steeps_category": ["Social", "Economic", "Political"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["SAGE publisher", "peer-reviewed", "futures studies focus", "no APC fees"]
+      },
+      "sample_content": {
+        "title": "Strategic foresight and futures studies",
+        "date": "ongoing",
+        "key_finding": "Forum for futures research theory, methodology, practice. First journal focused specifically on futures studies.",
+        "url": "https://journals.sagepub.com/home/WFR"
+      },
+      "evaluation_score": 80,
+      "notes": "Core futures research journal. Methodological depth. Strategic foresight."
+    },
+    {
+      "id": "DS-2026-018",
+      "name": "Technological Forecasting and Social Change (Elsevier)",
+      "url": "https://www.sciencedirect.com/journal/technological-forecasting-and-social-change",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Technological Forecasting and Social Change journal",
+      "steeps_category": ["Technological", "Social"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "monthly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Impact Factor 13.3", "Elsevier", "established 1969", "664 articles/year", "Q1 ranking"]
+      },
+      "sample_content": {
+        "title": "Technology forecasting and future studies",
+        "date": "ongoing",
+        "key_finding": "Major forum for technology assessment methodology and practice. Focus on tech-social-environmental interactions.",
+        "url": "https://www.sciencedirect.com/journal/technological-forecasting-and-social-change"
+      },
+      "evaluation_score": 91,
+      "notes": "Top-tier journal. High impact factor. Essential for tech futures."
+    },
+    {
+      "id": "DS-2026-019",
+      "name": "Journal of Happiness Studies (Springer)",
+      "url": "https://link.springer.com/journal/10902",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Journal of Happiness Studies wellbeing research",
+      "steeps_category": ["Spiritual", "Social"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "monthly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Springer", "established 2000", "hedonic & eudaimonic wellbeing", "international scope"]
+      },
+      "sample_content": {
+        "title": "Well-being and happiness research",
+        "date": "ongoing",
+        "key_finding": "Covers life satisfaction, positive affect, meaning/purpose, character strengths, resilience, optimal functioning",
+        "url": "https://link.springer.com/journal/10902"
+      },
+      "evaluation_score": 84,
+      "notes": "Strong Spiritual/Social coverage. Wellbeing science. Academic rigor."
+    },
+    {
+      "id": "DS-2026-020",
+      "name": "Nature Human Behaviour",
+      "url": "https://www.nature.com/nathumbehav/",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Nature Human Behaviour social science",
+      "steeps_category": ["Social", "Technological"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "monthly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Nature Portfolio", "Impact Factor 15.5", "established 2017", "multidisciplinary", "top institutions"]
+      },
+      "sample_content": {
+        "title": "Multidisciplinary human behaviour research",
+        "date": "ongoing",
+        "key_finding": "Covers perception, cognition, decision-making, social behavior, AI impact, prosociality, collective behavior",
+        "url": "https://www.nature.com/nathumbehav/"
+      },
+      "evaluation_score": 93,
+      "notes": "Top-tier journal. High impact. Multidisciplinary social science."
+    },
+    {
+      "id": "DS-2026-021",
+      "name": "Science Advances",
+      "url": "https://www.science.org/journal/sciadv",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Science Advances interdisciplinary research",
+      "steeps_category": ["Technological", "Social", "Environmental"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "continuous",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["AAAS", "open access", "interdisciplinary", "social sciences commitment"]
+      },
+      "sample_content": {
+        "title": "Interdisciplinary science including social sciences",
+        "date": "ongoing",
+        "key_finding": "AAAS open access journal. Strong commitment to social sciences, computational social science, public health research.",
+        "url": "https://www.science.org/journal/sciadv"
+      },
+      "evaluation_score": 92,
+      "notes": "Top-tier interdisciplinary. Social science inclusive. Open access."
+    },
+    {
+      "id": "DS-2026-022",
+      "name": "Religious Studies Review (Rice University)",
+      "url": "https://reli.rice.edu/rsr",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Religious Studies Review journal contemporary spirituality",
+      "steeps_category": ["Spiritual"],
+      "tier_recommendation": 3,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["Rice University", "Wiley publisher", "contemporary spirituality", "review journal"]
+      },
+      "sample_content": {
+        "title": "Reviews across religious studies and spirituality",
+        "date": "ongoing",
+        "key_finding": "Premier review journal covering contemporary yoga spirituality, belief networks, spirituality and wellbeing research",
+        "url": "https://reli.rice.edu/rsr"
+      },
+      "evaluation_score": 75,
+      "notes": "Fills Spiritual category gap. Contemporary spirituality focus."
+    },
+    {
+      "id": "DS-2026-023",
+      "name": "Journal of Consumer Culture (SAGE)",
+      "url": "https://journals.sagepub.com/home/joc",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Journal of Consumer Culture lifestyle trends",
+      "steeps_category": ["Social", "Economic"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["SAGE publisher", "interdisciplinary", "lifestyle/identity focus", "consumer behavior"]
+      },
+      "sample_content": {
+        "title": "Consumer culture and lifestyle research",
+        "date": "ongoing",
+        "key_finding": "Covers globalization, identity, taste, fashion, sustainability paradoxes, lifestyle construction, body/identity transformation",
+        "url": "https://journals.sagepub.com/home/joc"
+      },
+      "evaluation_score": 79,
+      "notes": "Social trends and lifestyle signals. Consumer culture theory."
+    },
+    {
+      "id": "DS-2026-024",
+      "name": "Economics of Innovation and New Technology (Taylor & Francis)",
+      "url": "https://www.tandfonline.com/journals/gein20",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Innovation Studies journal economics",
+      "steeps_category": ["Economic", "Technological"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "bi-monthly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Taylor & Francis", "innovation economics", "tech policy", "hybrid open access"]
+      },
+      "sample_content": {
+        "title": "Innovation economics and technology analysis",
+        "date": "ongoing",
+        "key_finding": "Covers innovation strategy, patenting, diffusion, tech policy, competitiveness, standardization, innovation-growth dynamics",
+        "url": "https://www.tandfonline.com/journals/gein20"
+      },
+      "evaluation_score": 81,
+      "notes": "Strong Economic-Technological intersection. Innovation policy focus."
+    },
+    {
+      "id": "DS-2026-025",
+      "name": "Environmental Innovation and Societal Transitions (Elsevier)",
+      "url": "https://www.sciencedirect.com/journal/environmental-innovation-and-societal-transitions",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Environmental Innovation and Societal Transitions journal",
+      "steeps_category": ["Environmental", "Social", "Technological"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Impact Factor 6.82", "Elsevier", "Q1 ranking", "111 articles/year", "h-index 86"]
+      },
+      "sample_content": {
+        "title": "Environmental transitions and sustainability",
+        "date": "ongoing",
+        "key_finding": "Covers innovations and socio-economic transitions for environmental sustainability. Focus on energy, transport, agriculture, water.",
+        "url": "https://www.sciencedirect.com/journal/environmental-innovation-and-societal-transitions"
+      },
+      "evaluation_score": 88,
+      "notes": "Top Environmental journal. Societal transition focus. High impact."
+    },
+    {
+      "id": "DS-2026-026",
+      "name": "AI and Ethics (Springer)",
+      "url": "https://link.springer.com/journal/43681",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "AI Ethics journal policy",
+      "steeps_category": ["Technological", "Political", "Spiritual"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "academic_journal",
+        "update_frequency_estimate": "quarterly",
+        "language": "en",
+        "region": "Global",
+        "quality_indicators": ["Springer", "ethical/regulatory focus", "policy implications", "established focus"]
+      },
+      "sample_content": {
+        "title": "AI ethics, regulation, and policy",
+        "date": "ongoing",
+        "key_finding": "Promotes informed debate on ethical, regulatory, policy implications of AI development. Addresses intentional/unintentional misuse.",
+        "url": "https://link.springer.com/journal/43681"
+      },
+      "evaluation_score": 86,
+      "notes": "Critical for AI ethics/policy signals. Bridges Tech-Political-Spiritual."
+    },
+    {
+      "id": "DS-2026-027",
+      "name": "Centre for the Study of Existential Risk (CSER)",
+      "url": "https://www.cser.ac.uk/",
+      "discovered_via": "citation_tracking",
+      "discovery_query": "Centre for the Study of Existential Risk Cambridge",
+      "steeps_category": ["Technological", "Political", "Spiritual"],
+      "tier_recommendation": 1,
+      "initial_impression": {
+        "content_type": "research_center",
+        "update_frequency_estimate": "weekly",
+        "language": "en",
+        "region": "UK",
+        "quality_indicators": ["Cambridge University", "founded 2012", "Huw Price, Martin Rees, Jaan Tallinn", "MPhil program"]
+      },
+      "sample_content": {
+        "title": "After Sendai: Governing catastrophic risks workshop",
+        "date": "2026-05",
+        "key_finding": "May 2026 workshop on global catastrophic risk governance: climate, AI, pandemics, biodiversity, biosecurity. MPhil program accepting 2026 applicants.",
+        "url": "https://www.cser.ac.uk/work/call-for-papers-after-sendai-governing-catastrophic-risks-in-the-emerging-global-order/"
+      },
+      "evaluation_score": 91,
+      "notes": "Premier existential risk research. Long-term thinking. High-profile founders."
+    },
+    {
+      "id": "DS-2026-028",
+      "name": "Fred Hutch Cancer Center",
+      "url": "https://www.fredhutch.org/",
+      "discovered_via": "keyword_expansion",
+      "discovery_query": "wellness research institute 2026",
+      "steeps_category": ["Social", "Technological"],
+      "tier_recommendation": 2,
+      "initial_impression": {
+        "content_type": "research_center",
+        "update_frequency_estimate": "weekly",
+        "language": "en",
+        "region": "USA",
+        "quality_indicators": ["cancer prevention leader", "Cancer Screening Research Network", "multi-cancer detection tests", "wellness research"]
+      },
+      "sample_content": {
+        "title": "Wellness in 2026: nutrition guidelines and early cancer detection",
+        "date": "2026-01",
+        "key_finding": "2026 wellness guidance on new nutrition guidelines, women's health, early cancer detection. Leads Cancer Screening Research Network.",
+        "url": "https://www.fredhutch.org/en/news/releases/2026/01/wellness-in-2026--fred-hutch-experts-available-to-discuss-new-nu.html"
+      },
+      "evaluation_score": 80,
+      "notes": "Health/wellness research. Cancer prevention focus. 2026 active publications."
+    }
+  ],
+  "quality_assessment": {
+    "tier_1_recommendations": 9,
+    "tier_2_recommendations": 16,
+    "tier_3_recommendations": 3,
+    "avg_evaluation_score": 84.1,
+    "high_quality_sources": 22,
+    "sources_needing_review": 6
+  },
+  "steeps_gap_analysis": {
+    "before_discovery": {
+      "Spiritual": 12,
+      "Social": 28,
+      "Technological": 52,
+      "Economic": 35,
+      "Environmental": 22,
+      "Political": 28
+    },
+    "potential_after_promotion": {
+      "Spiritual": 20,
+      "Social": 34,
+      "Technological": 57,
+      "Economic": 39,
+      "Environmental": 24,
+      "Political": 31
+    },
+    "gap_reduction": {
+      "Spiritual": "+67%",
+      "Social": "+21%",
+      "Technological": "+10%",
+      "Economic": "+11%",
+      "Environmental": "+9%",
+      "Political": "+11%"
+    }
+  },
+  "next_steps": [
+    "Evaluate each source over 3 scans before promotion to regular-sources.json",
+    "Monitor signal quality and update frequency",
+    "Cross-validate content with existing Tier 1 sources",
+    "Add successful sources to regular scan rotation",
+    "Track discovery strategy effectiveness for future marathons"
+  ]
+}

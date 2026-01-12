@@ -1,0 +1,1605 @@
+{
+  "classification_date": "2026-01-12",
+  "classification_version": "1.0",
+  "total_classified": 43,
+  "by_category": {
+    "Technological": 16,
+    "Economic": 7,
+    "Environmental": 6,
+    "Political": 6,
+    "Social": 6,
+    "Spiritual": 5
+  },
+  "by_status": {
+    "emerging": 23,
+    "developing": 18,
+    "mature": 2,
+    "declining": 0
+  },
+  "by_signal_type": {
+    "trend": 21,
+    "event": 12,
+    "driver": 8,
+    "wild_card": 2
+  },
+  "by_significance": {
+    "5": 7,
+    "4": 21,
+    "3": 13,
+    "2": 2,
+    "1": 0
+  },
+  "signals": [
+    {
+      "signal_id": "SIG-2026-0112-001",
+      "raw_id": "RAW-2026-0112-001",
+      "title": "DeepSeek releases breakthrough AI training method mHC for efficient model scaling",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "status": "emerging",
+      "signal_type": "driver",
+      "time_horizon": "short",
+      "description": "Chinese AI startup DeepSeek published Manifold-Constrained Hyper-Connections (mHC) training method, described as a striking breakthrough for scaling models without instability at minimal cost. Represents China's continued innovation in AI efficiency methods.",
+      "source": {
+        "name": "South China Morning Post",
+        "url": "https://www.scmp.com/tech/big-tech/article/3338427/deepseek-kicks-2026-paper-signalling-push-train-bigger-models-less",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "Cost-efficient AI training methods challenge US computational advantage, enabling broader global AI development",
+      "significance": 5,
+      "significance_reason": "First-of-its-kind training method from Chinese startup that could democratize large model development by reducing computational barriers",
+      "potential_impact": {
+        "short_term": "Reduced training costs for AI developers globally within 6-12 months",
+        "mid_term": "Shift in AI development paradigm from compute-intensive to efficiency-focused approaches",
+        "long_term": "Rebalancing of global AI power dynamics away from compute-resource advantage"
+      },
+      "key_entities": [
+        {"name": "DeepSeek", "type": "company", "role": "innovator"},
+        {"name": "China", "type": "country", "role": "technology originator"}
+      ],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["AI training", "efficiency", "China innovation", "mHC method", "model scaling"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-002",
+      "raw_id": "RAW-2026-0112-002",
+      "title": "CES 2026: Physical AI and humanoid robots dominate with 40 companies showcasing",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "CES 2026 (Jan 6-9) marked physical AI as the dominant theme with 40 companies mentioning humanoid robots. NVIDIA Cosmos, Boston Dynamics Atlas, and multiple new entrants demonstrate industry-wide shift from digital AI to physical embodiment.",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/podcast/ces-2026-was-all-about-physical-ai-and-robots-robots-robots/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Physical AI commercialization accelerating toward mainstream deployment in industrial and consumer settings",
+      "significance": 5,
+      "significance_reason": "Industry convergence signal - 40 companies indicates transition from research to commercial competition phase",
+      "potential_impact": {
+        "short_term": "2026-2027 pilot deployments in manufacturing, logistics, hospitality",
+        "mid_term": "2027-2029 early consumer market adoption and workplace integration",
+        "long_term": "2030s ubiquitous physical AI assistants reshape labor markets"
+      },
+      "key_entities": [
+        {"name": "NVIDIA", "type": "company", "role": "platform provider"},
+        {"name": "Boston Dynamics", "type": "company", "role": "hardware leader"},
+        {"name": "CES 2026", "type": "event", "role": "industry showcase"}
+      ],
+      "related_signals": ["SIG-2026-0110-006"],
+      "confidence": 0.95,
+      "tags": ["physical AI", "humanoid robots", "CES 2026", "NVIDIA Cosmos", "commercialization"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-003",
+      "raw_id": "RAW-2026-0112-003",
+      "title": "D-Wave announces acquisition of Quantum Circuits Inc. for $550M to accelerate quantum computing",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "medium",
+      "description": "D-Wave announced acquisition of Quantum Circuits Inc. for $550M ($300M stock + $250M cash) with initial dual-rail system planned for general availability in 2026. Represents quantum computing industry consolidation phase.",
+      "source": {
+        "name": "D-Wave Quantum",
+        "url": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-to-acquire-quantum-circuits/",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "Quantum computing industry entering consolidation and commercialization phase with M&A activity",
+      "significance": 4,
+      "significance_reason": "Largest quantum computing M&A deal signals industry maturation and commercial viability",
+      "potential_impact": {
+        "short_term": "Accelerated quantum system integration and product development",
+        "mid_term": "Industry consolidation around 3-5 major quantum platforms",
+        "long_term": "Standardized quantum computing architecture emerges"
+      },
+      "key_entities": [
+        {"name": "D-Wave", "type": "company", "role": "acquirer"},
+        {"name": "Quantum Circuits Inc.", "type": "company", "role": "target"}
+      ],
+      "related_signals": ["SIG-2026-0110-002"],
+      "confidence": 0.95,
+      "tags": ["quantum computing", "M&A", "D-Wave", "consolidation", "commercialization"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-004",
+      "raw_id": "RAW-2026-0112-004",
+      "title": "IBM predicts quantum advantage verification by end of 2026 with 7,500-gate systems",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "status": "emerging",
+      "signal_type": "driver",
+      "time_horizon": "short",
+      "description": "IBM anticipates first verified quantum advantage cases by end of 2026, with future Nighthawk iterations delivering up to 7,500 gates. Represents critical milestone from experimental to practical quantum computing.",
+      "source": {
+        "name": "IBM Newsroom",
+        "url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance",
+        "type": "news",
+        "published_date": "2025-11-12"
+      },
+      "leading_indicator": "2026 as year quantum computing demonstrates verifiable superiority over classical computing",
+      "significance": 4,
+      "significance_reason": "IBM's prediction of verified quantum advantage represents transition from promise to demonstrated utility",
+      "potential_impact": {
+        "short_term": "First commercial quantum advantage applications in 2026",
+        "mid_term": "Enterprise quantum computing adoption 2027-2029",
+        "long_term": "Quantum-first computing paradigm for specific domains"
+      },
+      "key_entities": [
+        {"name": "IBM", "type": "company", "role": "technology leader"},
+        {"name": "Nighthawk", "type": "technology", "role": "quantum system"}
+      ],
+      "related_signals": ["SIG-2026-0110-002", "SIG-2026-0112-003"],
+      "confidence": 0.85,
+      "tags": ["quantum advantage", "IBM", "Nighthawk", "commercial quantum", "2026 milestone"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-005",
+      "raw_id": "RAW-2026-0112-005",
+      "title": "양자컴퓨터 2026년 상용화 원년, IBM '강한 양자 우위' 선언",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "IBM announced at CES 2026 that 2026 will be the year of 'strong quantum advantage' realization, marking the first year quantum computers surpass supercomputers. Korean media corroboration of global quantum computing commercialization trend.",
+      "source": {
+        "name": "Newsspace Korea",
+        "url": "https://www.newsspace.kr/news/article.html?no=11811",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Global consensus emerging on 2026 as quantum computing commercialization year",
+      "significance": 5,
+      "significance_reason": "Multiple source confirmation of 2026 as quantum advantage year indicates paradigm shift",
+      "potential_impact": {
+        "short_term": "Korea and Asia quantum investment surge in 2026",
+        "mid_term": "Global quantum computing market formation 2026-2028",
+        "long_term": "Quantum-classical hybrid computing infrastructure becomes standard"
+      },
+      "key_entities": [
+        {"name": "IBM", "type": "company", "role": "technology leader"},
+        {"name": "Korea", "type": "country", "role": "market observer"}
+      ],
+      "related_signals": ["SIG-2026-0111-ALT-040", "SIG-2026-0112-004"],
+      "confidence": 0.95,
+      "tags": ["quantum advantage", "IBM", "CES 2026", "Korea", "commercialization"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-006",
+      "raw_id": "RAW-2026-0112-006",
+      "title": "NVIDIA introduces Cosmos physical AI models and announces Vera Rubin AI superchip in production",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "short",
+      "description": "At CES 2026, NVIDIA released Cosmos and GR00T open models for robot learning, Isaac Lab-Arena for evaluation, and OSMO edge-to-cloud framework. Announced Vera Rubin next-gen AI superchip platform in full production.",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "NVIDIA transitioning from digital AI infrastructure provider to physical AI ecosystem orchestrator",
+      "significance": 4,
+      "significance_reason": "Complete physical AI stack from chip to software framework enables industry-wide robotics development",
+      "potential_impact": {
+        "short_term": "2026 robotics developers adopt NVIDIA physical AI stack",
+        "mid_term": "NVIDIA becomes de facto standard for physical AI development",
+        "long_term": "Robotics industry consolidates around NVIDIA ecosystem"
+      },
+      "key_entities": [
+        {"name": "NVIDIA", "type": "company", "role": "platform provider"},
+        {"name": "Siemens", "type": "company", "role": "industrial partner"},
+        {"name": "Cosmos", "type": "technology", "role": "AI model"},
+        {"name": "Vera Rubin", "type": "technology", "role": "AI chip"}
+      ],
+      "related_signals": ["SIG-2026-0110-006", "SIG-2026-0112-002"],
+      "confidence": 0.95,
+      "tags": ["NVIDIA", "Cosmos", "Vera Rubin", "physical AI", "robotics"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-007",
+      "raw_id": "RAW-2026-0112-007",
+      "title": "CRISPR epigenetic editing breakthrough: gene activation without DNA cutting",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social"]
+      },
+      "status": "emerging",
+      "signal_type": "driver",
+      "time_horizon": "medium",
+      "description": "UNSW Sydney researchers developed new CRISPR-based epigenetic editing that switches genes on/off without cutting DNA by removing chemical tags. CRISPR Therapeutics CTX460 trial planned mid-2026. Represents safer gene therapy approach.",
+      "source": {
+        "name": "ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/01/260104202813.htm",
+        "type": "academic",
+        "published_date": "2026-01-04"
+      },
+      "leading_indicator": "Gene therapy shifting from permanent DNA editing to reversible epigenetic modulation",
+      "significance": 5,
+      "significance_reason": "Breakthrough addresses major safety concern of CRISPR, enabling broader clinical applications",
+      "potential_impact": {
+        "short_term": "2026-2027 clinical trials for epigenetic CRISPR therapies",
+        "mid_term": "2028-2030 regulatory approvals for reversible gene therapies",
+        "long_term": "Epigenetic editing becomes preferred method over DNA cutting"
+      },
+      "key_entities": [
+        {"name": "UNSW Sydney", "type": "organization", "role": "research institution"},
+        {"name": "CRISPR Therapeutics", "type": "company", "role": "clinical developer"}
+      ],
+      "related_signals": ["SIG-2026-0111-011"],
+      "confidence": 0.95,
+      "tags": ["CRISPR", "epigenetic editing", "gene therapy", "safety", "breakthrough"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-008",
+      "raw_id": "RAW-2026-0112-008",
+      "title": "Neuralink plans high-volume brain-computer interface production with automated surgery in 2026",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Social", "Spiritual"]
+      },
+      "status": "emerging",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "Neuralink announced plans to begin high-volume production and fully automated surgical procedures for brain-computer interface devices by 2026. Represents transition from experimental to scalable clinical deployment.",
+      "source": {
+        "name": "Business Today",
+        "url": "https://www.businesstoday.in/technology/news/story/elon-musks-neuralink-to-begin-high-volume-production-of-brain-computer-interfaces-in-2026-read-details-509097-2026-01-02",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "Brain-computer interfaces moving from research to clinical scaling phase",
+      "significance": 4,
+      "significance_reason": "Automated surgery and high-volume production removes major barriers to BCI adoption",
+      "potential_impact": {
+        "short_term": "2026-2027 hundreds of BCI implants for medical conditions",
+        "mid_term": "2028-2030 thousands of BCIs for accessibility and enhancement",
+        "long_term": "2030s BCIs become standard treatment for neurological conditions"
+      },
+      "key_entities": [
+        {"name": "Neuralink", "type": "company", "role": "developer"},
+        {"name": "Elon Musk", "type": "individual", "role": "founder"}
+      ],
+      "related_signals": [],
+      "confidence": 0.80,
+      "tags": ["Neuralink", "brain-computer interface", "automated surgery", "neurotechnology", "scaling"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-009",
+      "raw_id": "RAW-2026-0112-009",
+      "title": "FCC approves SpaceX plan to deploy 7,500 additional Starlink satellites, total 15,000",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Political"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "medium",
+      "description": "FCC approved SpaceX deployment of 7,500 more Gen2 Starlink satellites on Jan 10, 2026, bringing total to 15,000 worldwide. Includes Direct-to-Cell capability for mobile connectivity.",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/01/10/spacex-gets-fcc-approval-to-launch-7500-more-starlink-satellites/",
+        "type": "news",
+        "published_date": "2026-01-10"
+      },
+      "leading_indicator": "Global satellite internet infrastructure approaching ubiquitous connectivity milestone",
+      "significance": 4,
+      "significance_reason": "15,000 satellite constellation enables global coverage including direct mobile connectivity",
+      "potential_impact": {
+        "short_term": "2026-2027 global internet coverage including oceans and remote areas",
+        "mid_term": "2028-2030 satellite-terrestrial network integration",
+        "long_term": "End of terrestrial connectivity gaps globally"
+      },
+      "key_entities": [
+        {"name": "SpaceX", "type": "company", "role": "operator"},
+        {"name": "FCC", "type": "government", "role": "regulator"},
+        {"name": "Starlink", "type": "technology", "role": "satellite constellation"}
+      ],
+      "related_signals": [],
+      "confidence": 0.95,
+      "tags": ["SpaceX", "Starlink", "FCC approval", "satellite internet", "Direct-to-Cell"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-010",
+      "raw_id": "RAW-2026-0112-010",
+      "title": "Commonwealth Fusion Systems SPARC reactor targets first plasma in 2026",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental", "Economic"]
+      },
+      "status": "emerging",
+      "signal_type": "wild_card",
+      "time_horizon": "long",
+      "description": "Commonwealth Fusion Systems plans to complete SPARC commissioning by end of 2025 and generate first plasma in 2026. Represents critical milestone toward commercial fusion energy.",
+      "source": {
+        "name": "TIME",
+        "url": "https://time.com/7302543/nuclear-energy-commonwealth-fusion/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Commercial fusion energy approaching technical viability demonstration",
+      "significance": 5,
+      "significance_reason": "First plasma in private fusion reactor could validate commercial fusion pathway",
+      "potential_impact": {
+        "short_term": "2026 first plasma validates high-field magnet approach",
+        "mid_term": "2030s pilot fusion power plants under construction",
+        "long_term": "2040s fusion energy commercialization transforms energy system"
+      },
+      "key_entities": [
+        {"name": "Commonwealth Fusion Systems", "type": "company", "role": "developer"},
+        {"name": "SPARC", "type": "technology", "role": "fusion reactor"}
+      ],
+      "related_signals": [],
+      "confidence": 0.75,
+      "tags": ["fusion energy", "SPARC", "Commonwealth Fusion", "first plasma", "clean energy"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-011",
+      "raw_id": "RAW-2026-0112-011",
+      "title": "AI agents market to surge from $7.8B to $52B by 2030, 40% enterprise adoption in 2026",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Agentic AI market projected to surge from $7.8B today to $52B by 2030. Gartner predicts 40% of enterprise applications will embed AI agents by end of 2026. Represents shift from productivity tools to autonomous work.",
+      "source": {
+        "name": "The Conversation",
+        "url": "https://theconversation.com/ai-agents-arrived-in-2025-heres-what-happened-and-the-challenges-ahead-in-2026-272325",
+        "type": "academic",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "AI agents becoming standard enterprise infrastructure in 2026",
+      "significance": 4,
+      "significance_reason": "40% enterprise adoption indicates inflection point from experimentation to mainstream deployment",
+      "potential_impact": {
+        "short_term": "2026 rapid AI agent deployment in enterprise software",
+        "mid_term": "2027-2029 workforce reorganization around human-agent collaboration",
+        "long_term": "2030s autonomous enterprise operations become norm"
+      },
+      "key_entities": [
+        {"name": "Gartner", "type": "organization", "role": "analyst"}
+      ],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["AI agents", "enterprise adoption", "Gartner", "agentic AI", "market growth"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-012",
+      "raw_id": "RAW-2026-0112-012",
+      "title": "LongBio longevity biotech positioned for breakout at JP Morgan 2026 conference",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic", "Social"]
+      },
+      "status": "emerging",
+      "signal_type": "event",
+      "time_horizon": "medium",
+      "description": "LongGame Longevity Biotech Demo Day took place Jan 9, 2026 ahead of JP Morgan conference, signaling convergence of longevity with mainstream biotech investment.",
+      "source": {
+        "name": "Longevity.Technology",
+        "url": "https://longevity.technology/news/why-longbio-is-poised-for-a-breakout-at-jpm-2026/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Longevity biotech transitioning from niche to mainstream investment category",
+      "significance": 4,
+      "significance_reason": "JP Morgan healthcare conference inclusion signals institutional investor acceptance of longevity sector",
+      "potential_impact": {
+        "short_term": "2026 increased institutional investment in longevity startups",
+        "mid_term": "2027-2029 longevity biotech becomes standard pharma category",
+        "long_term": "2030s aging becomes treatable medical condition"
+      },
+      "key_entities": [
+        {"name": "LongBio", "type": "organization", "role": "platform"},
+        {"name": "JP Morgan Healthcare Conference", "type": "event", "role": "venue"}
+      ],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["longevity biotech", "LongBio", "JP Morgan", "investment", "aging research"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-013",
+      "raw_id": "RAW-2026-0112-013",
+      "title": "AI can now design proteins and DNA, scientists warn biosecurity rules urgently needed",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Political", "Spiritual"]
+      },
+      "status": "emerging",
+      "signal_type": "wild_card",
+      "time_horizon": "short",
+      "description": "AI technology can now design entirely novel synthetic molecules from DNA to proteins, with relative novices able to design using open source AI software. Scientists warn of biosecurity risks.",
+      "source": {
+        "name": "Singularity Hub",
+        "url": "https://singularityhub.com/2026/01/02/ai-can-now-design-proteins-and-dna-scientists-warn-we-need-biosecurity-rules-before-its-too-late/",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "AI-enabled synthetic biology democratization creates dual-use technology governance crisis",
+      "significance": 5,
+      "significance_reason": "Democratized access to biological design AI represents paradigm shift in biosecurity risk landscape",
+      "potential_impact": {
+        "short_term": "2026-2027 emergency biosecurity regulations for AI bio-design tools",
+        "mid_term": "2028-2030 international AI biosecurity treaty negotiations",
+        "long_term": "Fundamental restructuring of biological research governance"
+      },
+      "key_entities": [
+        {"name": "Open source AI community", "type": "organization", "role": "technology provider"}
+      ],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["AI protein design", "biosecurity", "synthetic biology", "dual-use technology", "safety"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-014",
+      "raw_id": "RAW-2026-0112-014",
+      "title": "TSMC revenue beats estimates, AI chip demand outstrips supply through 2026",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "TSMC reported Jan 9, 2026 revenue topping estimates with sustained AI spending. 2025 revenue hit record $113B (36% YoY increase). AI chip demand continues to exceed manufacturing capacity.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-01-09/tsmc-revenue-beats-estimates-in-upbeat-outlook-for-ai-spending",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "AI infrastructure investment continues unabated despite capacity constraints",
+      "significance": 4,
+      "significance_reason": "36% revenue growth in mature semiconductor industry indicates fundamental demand shift",
+      "potential_impact": {
+        "short_term": "2026 continued AI chip shortage constrains AI deployment",
+        "mid_term": "2027-2029 additional fab capacity comes online",
+        "long_term": "Semiconductor industry permanently restructured around AI chips"
+      },
+      "key_entities": [
+        {"name": "TSMC", "type": "company", "role": "manufacturer"}
+      ],
+      "related_signals": [],
+      "confidence": 0.95,
+      "tags": ["TSMC", "AI chips", "semiconductor shortage", "capacity constraints", "revenue growth"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-015",
+      "raw_id": "RAW-2026-0112-015",
+      "title": "Cellular agriculture moves beyond startup phase to public-sector institutional backing",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental", "Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "At 2026 Tufts Future Food Innovation Day (January), experts noted cellular agriculture shifting from startup economics to public-sector and institutional backing. Represents industry maturation.",
+      "source": {
+        "name": "Food Navigator USA",
+        "url": "https://www.foodnavigator-usa.com/Article/2026/01/09/cellular-ag-moves-beyond-the-startup-phase/",
+        "type": "news",
+        "published_date": "2026-01-09"
+      },
+      "leading_indicator": "Cultivated meat transitioning from venture-backed startups to government-institutional infrastructure",
+      "significance": 4,
+      "significance_reason": "Public sector backing signals strategic food security importance beyond commercial viability",
+      "potential_impact": {
+        "short_term": "2026-2027 government funding for cellular agriculture infrastructure",
+        "mid_term": "2028-2030 regulatory approvals and early commercialization",
+        "long_term": "2030s cellular agriculture becomes mainstream food production method"
+      },
+      "key_entities": [
+        {"name": "Tufts University", "type": "organization", "role": "research host"}
+      ],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["cellular agriculture", "cultivated meat", "public funding", "food security", "regulation"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-016",
+      "raw_id": "RAW-2026-0112-016",
+      "title": "Textile recycling technologies to process 8M tons waste annually by 2030, up from <1M today",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Environmental"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "2026 textile recycling landscape represents maturation toward true circular material cycles with chemical depolymerization, fiber regeneration, automated sorting. Capacity expected to scale from <1M to 8M tons by 2030.",
+      "source": {
+        "name": "Global Textile Times",
+        "url": "https://www.globaltextiletimes.com/sustainability/innovations-transforming-textile-recycling-technologies-in-2026/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Fashion industry circular economy transition from pilot to industrial scale",
+      "significance": 4,
+      "significance_reason": "8x capacity increase by 2030 indicates viable technical and economic pathway",
+      "potential_impact": {
+        "short_term": "2026-2027 textile recycling infrastructure investment surge",
+        "mid_term": "2028-2030 circular fashion supply chains become standard",
+        "long_term": "Fashion industry fundamentally restructured around circularity"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["textile recycling", "circular economy", "chemical depolymerization", "sustainable fashion", "waste reduction"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-017",
+      "raw_id": "RAW-2026-0112-017",
+      "title": "Global venture capital deployment expected to increase 10% to high $400B in 2026",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Global VC deployment expected to increase to high $400B mark in 2026, implying 10% increase from $339.4B in 2025. American VCs spent 65.4% of deal money on AI/ML in 2025.",
+      "source": {
+        "name": "Crunchbase",
+        "url": "https://news.crunchbase.com/venture/crunchbase-predicts-vcs-expect-more-funding-ai-ipo-ma-2026-forecast/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "AI investment dominance continuing despite economic uncertainty",
+      "significance": 4,
+      "significance_reason": "10% VC growth with 65% AI concentration shows sustained confidence in AI transformation",
+      "potential_impact": {
+        "short_term": "2026 continued AI startup funding despite broader tech slowdown",
+        "mid_term": "2027-2029 AI investment concentration creates winner-take-all dynamics",
+        "long_term": "Venture capital permanently restructured around AI-first thesis"
+      },
+      "key_entities": [
+        {"name": "OpenAI", "type": "company", "role": "mega-deal recipient"},
+        {"name": "Anthropic", "type": "company", "role": "mega-deal recipient"}
+      ],
+      "related_signals": ["SIG-2026-0112-020"],
+      "confidence": 0.90,
+      "tags": ["venture capital", "AI investment", "funding trends", "OpenAI", "Anthropic"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-018",
+      "raw_id": "RAW-2026-0112-018",
+      "title": "Goldman Sachs forecasts 2.8% global GDP growth in 2026, recession probability drops to 30%",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Goldman Sachs projects global GDP increase of 2.8% in 2026 (vs consensus 2.5%). Recession probability over next 12 months fallen to 30% from 40%. US economy resilience despite tariff uncertainties.",
+      "source": {
+        "name": "Goldman Sachs",
+        "url": "https://www.goldmansachs.com/insights/articles/the-global-economy-forecast-to-post-sturdy-growth-in-2026",
+        "type": "report",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Global economy resilience despite geopolitical and trade tensions",
+      "significance": 3,
+      "significance_reason": "Above-consensus growth forecast signals economic fundamentals stronger than perceived risks",
+      "potential_impact": {
+        "short_term": "2026 continued business investment and hiring",
+        "mid_term": "2027-2028 sustained expansion cycle",
+        "long_term": "Structural resilience to geopolitical shocks demonstrated"
+      },
+      "key_entities": [
+        {"name": "Goldman Sachs", "type": "organization", "role": "forecaster"}
+      ],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["GDP forecast", "Goldman Sachs", "recession risk", "global economy", "resilience"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-019",
+      "raw_id": "RAW-2026-0112-019",
+      "title": "Enterprise AI spending to increase in 2026 but consolidate to fewer vendors",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Overwhelming majority of enterprise-focused VCs predict enterprises will increase AI budgets in 2026, but concentrate spending with fewer contracts. Represents market consolidation phase.",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/",
+        "type": "news",
+        "published_date": "2025-12-30"
+      },
+      "leading_indicator": "Enterprise AI market transitioning from experimentation to strategic vendor relationships",
+      "significance": 4,
+      "significance_reason": "Vendor consolidation indicates shift from pilot projects to production deployments",
+      "potential_impact": {
+        "short_term": "2026 enterprise AI vendor shakeout begins",
+        "mid_term": "2027-2029 market consolidates to 3-5 major platforms",
+        "long_term": "AI infrastructure becomes utility provided by few major vendors"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["enterprise AI", "vendor consolidation", "AI spending", "market consolidation", "infrastructure"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-020",
+      "raw_id": "RAW-2026-0112-021",
+      "title": "Space economy moving toward $1 trillion valuation by 2040, CES highlights growth",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "long",
+      "description": "Space economy moving toward $1T valuation with JPMorgan calculating growth from $447B to over $1T by 2040. SpaceX projected revenue $15B in 2025, increasing to $22-24B in 2026.",
+      "source": {
+        "name": "SatNews",
+        "url": "https://news.satnews.com/2026/01/06/symbiotic-nexus-the-consumer-electronics-show-is-powering-the-1-trillion-space-economy/",
+        "type": "news",
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "Space economy commercialization accelerating beyond government-driven development",
+      "significance": 4,
+      "significance_reason": "Trillion-dollar market projection signals space transitioning to mainstream economic sector",
+      "potential_impact": {
+        "short_term": "2026-2027 space sector investment acceleration",
+        "mid_term": "2028-2035 space infrastructure becomes economic foundation",
+        "long_term": "2040 space economy integral to global GDP"
+      },
+      "key_entities": [
+        {"name": "SpaceX", "type": "company", "role": "market leader"},
+        {"name": "JPMorgan", "type": "organization", "role": "analyst"}
+      ],
+      "related_signals": ["SIG-2026-0112-009"],
+      "confidence": 0.85,
+      "tags": ["space economy", "trillion dollar market", "SpaceX", "Starlink revenue", "commercialization"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-021",
+      "raw_id": "RAW-2026-0112-022",
+      "title": "2026 will bring widespread job shifts as AI agents automate work, labor analysts warn",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Social", "Technological"]
+      },
+      "status": "emerging",
+      "signal_type": "driver",
+      "time_horizon": "short",
+      "description": "Labor analysts say 2026 could be when AI technology begins reshaping job market in ways Americans actually feel. 2026 called 'year of agents' as AI expands from productivity to automating work itself.",
+      "source": {
+        "name": "FOX 13",
+        "url": "https://www.fox13news.com/news/ais-next-disruption-analysts-say-2026-could-bring-widespread-job-shifts",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "AI automation transitioning from theoretical threat to tangible labor market impact in 2026",
+      "significance": 5,
+      "significance_reason": "Consensus among labor analysts that 2026 marks inflection point for AI job displacement",
+      "potential_impact": {
+        "short_term": "2026 visible job displacement in knowledge work sectors",
+        "mid_term": "2027-2029 widespread workforce restructuring and reskilling needs",
+        "long_term": "Fundamental restructuring of labor markets and social safety nets"
+      },
+      "key_entities": [],
+      "related_signals": ["SIG-2026-0112-011"],
+      "confidence": 0.90,
+      "tags": ["AI automation", "job displacement", "labor market", "AI agents", "workforce transformation"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-022",
+      "raw_id": "RAW-2026-0112-023",
+      "title": "AI/ML engineer salaries projected 4.1% increase in 2026, outpacing tech sector average",
+      "category": {
+        "primary": "Economic",
+        "secondary": ["Technological"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Salaries for AI/ML Engineers and Data Scientists projected 4.1% increase in 2026, significantly outpacing general tech sector average. Reflects continued AI talent shortage.",
+      "source": {
+        "name": "Work in Virtual",
+        "url": "https://workinvirtual.com/us-job-market-2026-salary-trends-top-skills-the-rise-of-ai/",
+        "type": "report",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "AI talent premium persists despite broader tech sector normalization",
+      "significance": 3,
+      "significance_reason": "Sustained salary premium indicates structural AI skills shortage not cyclical trend",
+      "potential_impact": {
+        "short_term": "2026 continued AI talent competition and retention challenges",
+        "mid_term": "2027-2029 AI education and training market expansion",
+        "long_term": "AI skills become baseline requirement across knowledge sectors"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["AI salaries", "ML engineers", "compensation trends", "AI skills premium", "tech jobs"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-023",
+      "raw_id": "RAW-2026-0112-024",
+      "title": "UNEZA Alliance pledges $148B annually for renewable energy, transmission, and storage post-COP30",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Economic"]
+      },
+      "status": "emerging",
+      "signal_type": "event",
+      "time_horizon": "medium",
+      "description": "Following COP30, UNEZA Alliance pledged annual commitments of $66B for renewable energy and $82B for transmission and storage. Represents major global climate finance commitment.",
+      "source": {
+        "name": "United Nations Turkey",
+        "url": "https://turkiye.un.org/en/307475-t%C3%BCrkiye-prepares-host-cop31-look-back-cop30%E2%80%99s-key-outcomes",
+        "type": "policy",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Climate finance transitioning from pledges to sustained annual commitments",
+      "significance": 4,
+      "significance_reason": "$148B annual commitment represents largest coordinated climate finance mechanism",
+      "potential_impact": {
+        "short_term": "2026-2027 renewable energy project financing acceleration",
+        "mid_term": "2028-2030 global renewable capacity rapid expansion",
+        "long_term": "Energy transition financing becomes permanent infrastructure"
+      },
+      "key_entities": [
+        {"name": "UNEZA Alliance", "type": "organization", "role": "funding coalition"},
+        {"name": "COP30", "type": "event", "role": "policy catalyst"}
+      ],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["UNEZA Alliance", "renewable energy", "climate finance", "COP30", "energy transition"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-024",
+      "raw_id": "RAW-2026-0112-025",
+      "title": "IRENA annual assembly Jan 10-12, 2026 to announce progress on tripling renewable energy",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "short",
+      "description": "International Renewable Energy Agency gathering ministers Jan 10-12, 2026 at Abu Dhabi headquarters for annual assembly to announce new insights on COP28 tripling renewable capacity goals.",
+      "source": {
+        "name": "Climate Change News",
+        "url": "https://www.climatechangenews.com/2026/01/02/whats-on-the-climate-change-calendar-for-2026-schedule-international/",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "Global renewable energy policy coordination intensifying around tripling capacity target",
+      "significance": 3,
+      "significance_reason": "IRENA assembly provides accountability checkpoint for COP28 renewable capacity commitments",
+      "potential_impact": {
+        "short_term": "2026 progress report on tripling renewable capacity",
+        "mid_term": "2027-2028 policy adjustments based on progress",
+        "long_term": "International renewable energy governance strengthened"
+      },
+      "key_entities": [
+        {"name": "IRENA", "type": "organization", "role": "coordinator"},
+        {"name": "COP28", "type": "event", "role": "goal setter"}
+      ],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["IRENA", "renewable energy", "COP28 goals", "Abu Dhabi", "policy coordination"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-025",
+      "raw_id": "RAW-2026-0112-026",
+      "title": "GE Vernova debuts 1,500-tonne/year commercial DAC unit in 2026, scalable to 50,000+ tonnes",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological"]
+      },
+      "status": "emerging",
+      "signal_type": "event",
+      "time_horizon": "medium",
+      "description": "GE Vernova plans to debut 1,500-tonne-per-year commercial DAC unit in 2026 as first true product in their portfolio. Architecture designed to scale to 50,000+ tonnes.",
+      "source": {
+        "name": "GE Vernova",
+        "url": "https://www.gevernova.com/gas-power/future-of-energy/direct-air-capture",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Direct air capture transitioning from demonstration projects to commercial products",
+      "significance": 4,
+      "significance_reason": "Major industrial player entering DAC market signals technology commercialization readiness",
+      "potential_impact": {
+        "short_term": "2026-2027 DAC commercial deployment acceleration",
+        "mid_term": "2028-2030 DAC cost reduction through scale",
+        "long_term": "DAC becomes standard climate mitigation infrastructure"
+      },
+      "key_entities": [
+        {"name": "GE Vernova", "type": "company", "role": "developer"}
+      ],
+      "related_signals": ["SIG-2026-0112-026"],
+      "confidence": 0.85,
+      "tags": ["direct air capture", "GE Vernova", "carbon removal", "DAC technology", "commercialization"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-026",
+      "raw_id": "RAW-2026-0112-027",
+      "title": "Direct air capture industry growing with 20+ facilities operational worldwide by 2026",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Technological", "Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "More than 20 direct air capture facilities operating worldwide by 2026. Climeworks will deliver 50,000+ tons verified carbon removal credits per year by 2026. Industry scaling rapidly.",
+      "source": {
+        "name": "Carbon Credits",
+        "url": "https://carboncredits.com/top-3-carbon-capture-leaders-to-drive-the-net-zero-race-in-2026/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "DAC industry reaching critical mass for cost reduction and standardization",
+      "significance": 4,
+      "significance_reason": "20+ operational facilities indicates transition from experimental to operational industry",
+      "potential_impact": {
+        "short_term": "2026-2027 DAC market formation and pricing discovery",
+        "mid_term": "2028-2030 DAC becomes standard corporate carbon strategy",
+        "long_term": "DAC capacity scales to gigatonne removal levels"
+      },
+      "key_entities": [
+        {"name": "Climeworks", "type": "company", "role": "market leader"}
+      ],
+      "related_signals": ["SIG-2026-0112-025"],
+      "confidence": 0.90,
+      "tags": ["direct air capture", "Climeworks", "carbon removal", "CCUS market", "scaling"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-027",
+      "raw_id": "RAW-2026-0112-028",
+      "title": "한국 기후에너지환경부 2026년 예산 19.2조원, 재생에너지 지원 98.6% 증가",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Political", "Economic"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "short",
+      "description": "Korea's Ministry of Climate and Environment 2026 budget increased 9.9% to 19.2 trillion won. Renewable energy financing support increased 98.6% from 326.3B won in 2025 to 648B won in 2026.",
+      "source": {
+        "name": "Korea Policy Briefing",
+        "url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148956119",
+        "type": "policy",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Korea accelerating energy transition investment to meet net-zero commitments",
+      "significance": 4,
+      "significance_reason": "98.6% renewable energy budget increase signals policy priority shift",
+      "potential_impact": {
+        "short_term": "2026-2027 Korea renewable energy deployment acceleration",
+        "mid_term": "2028-2030 Korea distributed energy system buildout",
+        "long_term": "Korea becomes Asian energy transition model"
+      },
+      "key_entities": [
+        {"name": "Korea Ministry of Climate", "type": "government", "role": "policy maker"}
+      ],
+      "related_signals": [],
+      "confidence": 0.95,
+      "tags": ["Korea climate budget", "renewable energy", "distributed grid", "ESS", "carbon neutrality"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-028",
+      "raw_id": "RAW-2026-0112-029",
+      "title": "Bangladesh and Pakistan set renewable energy records with solar installations",
+      "category": {
+        "primary": "Environmental",
+        "secondary": ["Economic", "Social"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Bangladesh off-grid home solar installations set global record, enabling rapid rural electrification. Pakistan's massive solar panel and battery purchases led country to abandon natural gas plans.",
+      "source": {
+        "name": "Insurance Journal",
+        "url": "https://www.insurancejournal.com/news/international/2026/01/02/852886.htm",
+        "type": "news",
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "Developing countries leapfrogging to distributed solar, bypassing centralized fossil infrastructure",
+      "significance": 4,
+      "significance_reason": "South Asian energy transition demonstrates viability of distributed solar in developing economies",
+      "potential_impact": {
+        "short_term": "2026-2027 South Asia solar deployment continues",
+        "mid_term": "2028-2030 developing world energy transition model established",
+        "long_term": "Distributed solar becomes dominant development pathway"
+      },
+      "key_entities": [
+        {"name": "Bangladesh", "type": "country", "role": "solar leader"},
+        {"name": "Pakistan", "type": "country", "role": "energy transition"}
+      ],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["Bangladesh", "Pakistan", "solar energy", "rural electrification", "energy transition"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-029",
+      "raw_id": "RAW-2026-0112-030",
+      "title": "Trump administration issues executive order preempting state AI laws, forms litigation task force",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "short",
+      "description": "Trump administration's policy to sustain US global AI dominance through minimally burdensome national framework. Attorney General directed to establish AI Litigation Task Force within 30 days to challenge state AI laws.",
+      "source": {
+        "name": "William Fry",
+        "url": "https://www.williamfry.com/knowledge/trump-administration-issues-executive-order-on-federal-ai-policy-framework-and-state-law-pre-emption/",
+        "type": "policy",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "US AI regulation moving toward federal preemption model in contrast to EU comprehensive approach",
+      "significance": 5,
+      "significance_reason": "Federal-state AI regulatory conflict creates fundamental governance uncertainty for industry",
+      "potential_impact": {
+        "short_term": "2026 legal challenges to Colorado and California AI laws",
+        "mid_term": "2027-2028 Supreme Court AI federalism rulings",
+        "long_term": "US AI governance model diverges from EU regulatory approach"
+      },
+      "key_entities": [
+        {"name": "Trump administration", "type": "government", "role": "policy maker"},
+        {"name": "AI Litigation Task Force", "type": "organization", "role": "enforcement"}
+      ],
+      "related_signals": ["SIG-2026-0109-008"],
+      "confidence": 0.95,
+      "tags": ["Trump administration", "AI regulation", "state preemption", "AI Litigation Task Force", "federal policy"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-030",
+      "raw_id": "RAW-2026-0112-031",
+      "title": "US-China relations enter 2026 with fragile trade truce, tech war intensifying over AI chips",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic", "Technological"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "US-China relations entering 2026 with paradox: trade thawing in soybeans/metals while tech war over AI chips and Taiwan military balance hardening. 935 items received tariff reduction from Jan 1.",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/01/07/cnbcs-the-china-connection-newsletter-turning-point-for-us-china-ties-in-2026.html",
+        "type": "news",
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "US-China relationship evolving toward selective decoupling: trade normalization with technology bifurcation",
+      "significance": 5,
+      "significance_reason": "Parallel track approach (trade thaw + tech war) represents new paradigm for US-China relations",
+      "potential_impact": {
+        "short_term": "2026 continued tech sector uncertainty and supply chain fragmentation",
+        "mid_term": "2027-2029 dual technology ecosystems solidify",
+        "long_term": "Permanent bifurcated global technology architecture"
+      },
+      "key_entities": [
+        {"name": "US government", "type": "government", "role": "policy maker"},
+        {"name": "China government", "type": "government", "role": "counterpart"}
+      ],
+      "related_signals": ["SIG-2026-0109-021"],
+      "confidence": 0.95,
+      "tags": ["US-China relations", "tech competition", "tariff", "AI chips", "trade war"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-031",
+      "raw_id": "RAW-2026-0112-032",
+      "title": "US plans new semiconductor tariffs on China starting June 2027 after Section 301 investigation",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic", "Technological"]
+      },
+      "status": "emerging",
+      "signal_type": "event",
+      "time_horizon": "medium",
+      "description": "US plans to install new tariffs on semiconductors from China starting June 23, 2027 following Section 301 investigation. Represents continued US-China technology decoupling.",
+      "source": {
+        "name": "Construction Dive",
+        "url": "https://www.constructiondive.com/news/us-china-semiconductor-tariffs-2027/808702/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "US semiconductor supply chain decoupling from China continuing through 2027",
+      "significance": 4,
+      "significance_reason": "2027 tariff timing indicates long-term US policy commitment to semiconductor independence",
+      "potential_impact": {
+        "short_term": "2026-2027 semiconductor industry prepares for tariff impact",
+        "mid_term": "2027-2029 supply chain reshoring and friendshoring accelerates",
+        "long_term": "Complete separation of US-China semiconductor ecosystems"
+      },
+      "key_entities": [
+        {"name": "US government", "type": "government", "role": "policy maker"}
+      ],
+      "related_signals": ["SIG-2026-0112-030"],
+      "confidence": 0.90,
+      "tags": ["semiconductor tariffs", "US-China", "Section 301", "chip war", "technology policy"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-032",
+      "raw_id": "RAW-2026-0112-033",
+      "title": "EU AI Act transparency rules take effect August 2026, Digital Omnibus may extend high-risk timeline",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Technological"]
+      },
+      "status": "developing",
+      "signal_type": "event",
+      "time_horizon": "short",
+      "description": "EU AI Act transparency rules take effect August 2026. Digital Omnibus proposals may extend high-risk processing timeline from Aug 2026 to Dec 2027. Member states must establish AI regulatory sandboxes by Aug 2, 2026.",
+      "source": {
+        "name": "IAPP",
+        "url": "https://iapp.org/news/a/notes-from-the-ai-governance-center-what-the-eu-s-proposed-digital-omnibus-means-for-ai-governance-professionals",
+        "type": "policy",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "EU AI Act implementation proceeding with potential timeline adjustments for industry adaptation",
+      "significance": 4,
+      "significance_reason": "August 2026 transparency rules represent first major global AI regulation enforcement",
+      "potential_impact": {
+        "short_term": "2026 AI companies prepare for EU transparency compliance",
+        "mid_term": "2027-2028 high-risk AI system compliance rollout",
+        "long_term": "EU AI Act becomes global regulatory standard"
+      },
+      "key_entities": [
+        {"name": "European Commission", "type": "government", "role": "regulator"}
+      ],
+      "related_signals": ["SIG-2026-0109-007"],
+      "confidence": 0.95,
+      "tags": ["EU AI Act", "Digital Omnibus", "transparency rules", "regulatory sandbox", "AI governance"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-033",
+      "raw_id": "RAW-2026-0112-034",
+      "title": "EU to publish first-ever Fusion Strategy by early 2026 shaping commercial fusion landscape",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Environmental", "Technological"]
+      },
+      "status": "emerging",
+      "signal_type": "event",
+      "time_horizon": "long",
+      "description": "EU's first-ever Fusion Strategy planned for publication by early 2026, which could shape commercial fusion landscape. Coordinates ITER and emerging private fusion sector.",
+      "source": {
+        "name": "European Commission",
+        "url": "https://energy.ec.europa.eu/topics/research-and-technology/fusion-energy-and-iter_en",
+        "type": "policy",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Governments developing fusion energy industrial policy anticipating commercialization",
+      "significance": 4,
+      "significance_reason": "First EU fusion strategy signals policy preparation for fusion commercialization",
+      "potential_impact": {
+        "short_term": "2026 EU fusion policy framework established",
+        "mid_term": "2027-2030 EU fusion research and commercialization coordination",
+        "long_term": "EU fusion strategy influences global fusion governance"
+      },
+      "key_entities": [
+        {"name": "European Commission", "type": "government", "role": "policy maker"},
+        {"name": "ITER", "type": "organization", "role": "research program"}
+      ],
+      "related_signals": ["SIG-2026-0112-010"],
+      "confidence": 0.85,
+      "tags": ["EU Fusion Strategy", "energy policy", "ITER", "fusion energy", "European Commission"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-034",
+      "raw_id": "RAW-2026-0112-035",
+      "title": "Trump expected to visit China in April 2026, potential turning point in bilateral relations",
+      "category": {
+        "primary": "Political",
+        "secondary": ["Economic"]
+      },
+      "status": "emerging",
+      "signal_type": "event",
+      "time_horizon": "short",
+      "description": "Trump expected to visit China in April 2026 alongside anticipated 2026 leader-level meetings at G-20 and APEC summits. Represents potential diplomatic reset opportunity.",
+      "source": {
+        "name": "Editorial GE",
+        "url": "https://editorialge.com/us-china-relations-2026/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "US-China high-level diplomatic engagement resuming after period of tension",
+      "significance": 4,
+      "significance_reason": "Presidential visit to China represents major diplomatic signal and potential policy shift",
+      "potential_impact": {
+        "short_term": "April 2026 visit sets tone for US-China relations",
+        "mid_term": "2026-2027 bilateral agreement opportunities",
+        "long_term": "Framework for managed US-China competition emerges"
+      },
+      "key_entities": [
+        {"name": "Trump", "type": "individual", "role": "US President"},
+        {"name": "China", "type": "country", "role": "host"}
+      ],
+      "related_signals": ["SIG-2026-0112-030"],
+      "confidence": 0.80,
+      "tags": ["Trump visit", "China diplomacy", "G-20", "APEC", "bilateral relations"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-035",
+      "raw_id": "RAW-2026-0112-036",
+      "title": "Gen Z: 86% striving to reduce screen time, 2026 becomes year of digital minimalism",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual", "Technological"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "86% of Gen Z across US and Europe striving to reduce screen time. 2026 is when digital minimalism stops being niche and becomes mainstream movement. 81% believe digital detoxes should be routine workplace practice.",
+      "source": {
+        "name": "Brightn App",
+        "url": "https://www.brightn.app/post/digital-minimalism-for-gen-z-why-2026-is-the-year-to-reclaim-your-attention",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Digital natives leading backlash against always-on connectivity culture",
+      "significance": 4,
+      "significance_reason": "86% majority indicates digital minimalism transitioning from counterculture to mainstream norm",
+      "potential_impact": {
+        "short_term": "2026 workplace digital wellbeing policies proliferate",
+        "mid_term": "2027-2029 product design shifts toward attention-respectful interfaces",
+        "long_term": "Post-attention economy paradigm emerges"
+      },
+      "key_entities": [
+        {"name": "Gen Z", "type": "demographic", "role": "movement leaders"}
+      ],
+      "related_signals": ["SIG-2026-0110-015"],
+      "confidence": 0.95,
+      "tags": ["Gen Z", "digital minimalism", "screen time", "digital detox", "workplace culture"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-036",
+      "raw_id": "RAW-2026-0112-037",
+      "title": "One-week social media detox reduces anxiety by 16.1%, depression by 24.8% in studies",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual"]
+      },
+      "status": "developing",
+      "signal_type": "driver",
+      "time_horizon": "short",
+      "description": "Scientific study found one-week social media detox observed 16.1% reduction in anxiety symptoms and 24.8% decrease in depression symptoms. Provides empirical support for digital wellbeing movement.",
+      "source": {
+        "name": "AI Invest",
+        "url": "https://www.ainvest.com/news/digital-detox-revolution-capitalizing-gen-millennials-shift-mental-wellness-tech-2601/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Scientific validation of digital wellbeing interventions driving mainstream adoption",
+      "significance": 4,
+      "significance_reason": "Quantified mental health benefits provide evidence-based foundation for digital detox movement",
+      "potential_impact": {
+        "short_term": "2026 digital detox programs become standard mental health intervention",
+        "mid_term": "2027-2029 insurance-covered digital wellbeing treatments",
+        "long_term": "Social media use regulated as public health concern"
+      },
+      "key_entities": [],
+      "related_signals": ["SIG-2026-0112-035"],
+      "confidence": 0.90,
+      "tags": ["digital detox", "mental health", "social media", "anxiety reduction", "wellbeing"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-037",
+      "raw_id": "RAW-2026-0112-038",
+      "title": "Workplaces adopting email-free Fridays, mental health days, four-day workweek pilots in 2026",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Organizations responding with four-day workweek pilots, mandatory mental health days, leadership training in psychological safety, and email-free Fridays. Represents workplace culture transformation.",
+      "source": {
+        "name": "Spring Health",
+        "url": "https://www.springhealth.com/blog/2026-mental-health-trends-for-your-workplace",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Workplace mental health moving from benefits perk to core organizational design",
+      "significance": 4,
+      "significance_reason": "Multiple simultaneous workplace interventions indicate systematic approach to mental health",
+      "potential_impact": {
+        "short_term": "2026 early adopter organizations implement wellbeing policies",
+        "mid_term": "2027-2029 wellbeing policies become competitive necessity",
+        "long_term": "Fundamental restructuring of work around human wellbeing"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["workplace wellness", "four-day workweek", "mental health days", "psychological safety", "work culture"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-038",
+      "raw_id": "RAW-2026-0112-039",
+      "title": "MZ세대 직장인 66.5%가 워라밸을 괜찮은 일자리 판단 1순위로 선택",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "66.5% of Korean MZ generation workers select work-life balance as top criterion for good jobs. Bank of Korea report shows workplace conditions (31.5%) now outrank salary (26.8%) in job selection criteria.",
+      "source": {
+        "name": "No Cut News",
+        "url": "https://www.nocutnews.co.kr/news/5924451",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Korean labor market values shifting from compensation-centric to quality-of-life focused",
+      "significance": 4,
+      "significance_reason": "Work-life balance overtaking salary in traditionally work-intensive Korean culture signals major shift",
+      "potential_impact": {
+        "short_term": "2026 Korean employers forced to adapt to MZ preferences",
+        "mid_term": "2027-2029 Korean work culture transformation accelerates",
+        "long_term": "Korea transitions from work-intensive to life-centric model"
+      },
+      "key_entities": [
+        {"name": "Bank of Korea", "type": "organization", "role": "researcher"}
+      ],
+      "related_signals": ["SIG-2026-0109-017"],
+      "confidence": 0.95,
+      "tags": ["MZ generation", "work-life balance", "workplace culture", "Korea", "labor market"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-039",
+      "raw_id": "RAW-2026-0112-040",
+      "title": "Hybrid work becomes new default, full remote reserved for highly skilled technical roles",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Economic"]
+      },
+      "status": "mature",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Hybrid work becoming new default with full-time remote opportunities increasingly rare and reserved for highly skilled technical roles. Represents post-pandemic work model stabilization.",
+      "source": {
+        "name": "The Planet Group",
+        "url": "https://www.theplanetgroup.com/blog/future-of-work-trends-for-2026-how-workday-ai-and-erp-transformation-are-reshaping-talent",
+        "type": "report",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Remote work settling into permanent hybrid model rather than full remote paradigm",
+      "significance": 3,
+      "significance_reason": "Work model stabilization provides clarity for long-term organizational planning",
+      "potential_impact": {
+        "short_term": "2026 office real estate and workplace design adjusts to hybrid",
+        "mid_term": "2027-2029 hybrid work best practices standardize",
+        "long_term": "Hybrid becomes permanent default work arrangement"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["hybrid work", "remote work", "workplace trends", "future of work", "work model"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-040",
+      "raw_id": "RAW-2026-0112-041",
+      "title": "AgeTech becomes fastest-growing healthcare innovation sector as aging in place movement booms",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Technological", "Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "medium",
+      "description": "Aging in place movement giving rise to booming AgeTech market, sector dedicated to tools/technologies helping older adults live independently at home. Baby boomer demand driving innovation.",
+      "source": {
+        "name": "Definitive Healthcare",
+        "url": "https://www.definitivehc.com/blog/aging-in-place-driving-innovation",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Healthcare paradigm shifting from institutional care to technology-enabled home aging",
+      "significance": 4,
+      "significance_reason": "Baby boomer cohort size makes aging in place technology massive market opportunity",
+      "potential_impact": {
+        "short_term": "2026-2027 AgeTech investment and product development surge",
+        "mid_term": "2028-2030 aging in place becomes standard care model",
+        "long_term": "Healthcare infrastructure reorganizes around distributed home care"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["AgeTech", "aging in place", "healthcare innovation", "baby boomers", "elderly care"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-041",
+      "raw_id": "RAW-2026-0112-042",
+      "title": "2026 heralds return of connection as health pillar, community circles and wellness dinners rising",
+      "category": {
+        "primary": "Social",
+        "secondary": ["Spiritual"]
+      },
+      "status": "emerging",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "2026 heralds return of connection as pillar of health with community circles, wellness dinners, hobby-based meetups, and restorative group rituals becoming more popular. Counter-reaction to digital isolation.",
+      "source": {
+        "name": "Dr. Axe",
+        "url": "https://draxe.com/health/wellness-trends-2026/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "In-person social connection re-emerging as wellness priority after digital saturation",
+      "significance": 3,
+      "significance_reason": "Social connection wellness trend addresses loneliness epidemic through structured interventions",
+      "potential_impact": {
+        "short_term": "2026 community wellness programs proliferate",
+        "mid_term": "2027-2029 social health becomes standard wellness dimension",
+        "long_term": "Community infrastructure rebuilt around social health"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["social connection", "community wellness", "in-person interaction", "wellness trends", "social health"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-042",
+      "raw_id": "RAW-2026-0112-043",
+      "title": "Spiritual wellness apps market to grow from $2.89B in 2026 to $9.91B by 2035",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological", "Economic"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "long",
+      "description": "Spiritual wellness apps market expected to grow from $2.89B in 2026 to $9.91B by 2035, with meditation and mindfulness apps dominating. AI personalization enhancing engagement.",
+      "source": {
+        "name": "Toward Healthcare",
+        "url": "https://www.towardshealthcare.com/insights/spiritual-wellness-apps-market-sizing",
+        "type": "report",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Digital spiritual wellness becoming mainstream consumer category",
+      "significance": 4,
+      "significance_reason": "243% market growth projection indicates spiritual wellness digitization reaching scale",
+      "potential_impact": {
+        "short_term": "2026-2027 spiritual wellness app innovation and competition intensifies",
+        "mid_term": "2028-2030 AI-personalized spiritual practice becomes norm",
+        "long_term": "Digital spiritual guidance supplements traditional religious institutions"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["spiritual wellness apps", "meditation", "mindfulness", "AI personalization", "market growth"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-043",
+      "raw_id": "RAW-2026-0112-044",
+      "title": "People choosing spirituality over partying in 2026, seeking mental peace and deeper meaning",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "People choosing spirituality over partying in 2026 seeking mental peace, emotional balance, deeper meaning. Rising stress, anxiety, burnout made mindful practices more appealing. Social media normalizing spiritual content.",
+      "source": {
+        "name": "Bharat Bhraman",
+        "url": "https://bharatbhraman.life/why-people-moving-to-spirituality-instead-of-parties-2026/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Youth lifestyle priorities shifting from external stimulation to internal cultivation",
+      "significance": 4,
+      "significance_reason": "Generational preference shift from nightlife to spiritual practices indicates cultural transformation",
+      "potential_impact": {
+        "short_term": "2026 nightlife industry decline, wellness industry growth",
+        "mid_term": "2027-2029 social norms around leisure and meaning-making transform",
+        "long_term": "Cultural transition from consumption-based to meaning-based lifestyle"
+      },
+      "key_entities": [],
+      "related_signals": ["SIG-2026-0110-018"],
+      "confidence": 0.90,
+      "tags": ["spirituality trend", "mindfulness", "mental peace", "social media influence", "lifestyle shift"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-044",
+      "raw_id": "RAW-2026-0112-045",
+      "title": "Sound healing and vagus nerve stimulation emerge as major wellness trends for 2026",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "status": "emerging",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Sound healing set to strike chord in 2026 involving immersion in sound of chimes, gongs, crystal bowls. Focus on stimulating vagus nerve, key pathway in body's stress-regulation system.",
+      "source": {
+        "name": "Good Housekeeping UK",
+        "url": "https://www.goodhousekeeping.com/uk/health/health-advice/a69806614/2026-health-wellness-trends/",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Wellness practices integrating neuroscience with contemplative traditions",
+      "significance": 3,
+      "significance_reason": "Sound healing represents convergence of ancient practices with modern neuroscience understanding",
+      "potential_impact": {
+        "short_term": "2026 sound healing services and products proliferate",
+        "mid_term": "2027-2029 vagus nerve stimulation becomes mainstream wellness approach",
+        "long_term": "Neurobiological wellness interventions become standard"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.85,
+      "tags": ["sound healing", "vagus nerve", "meditation", "stress regulation", "wellness practices"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-045",
+      "raw_id": "RAW-2026-0112-046",
+      "title": "Emotional fitness treated like physical fitness with breathwork and nervous system regulation",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Social"]
+      },
+      "status": "developing",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Emotional wellness becoming proactive and preventive, treated like physical fitness with breathwork and mind-body practices focused on nervous system regulation. Shift from reactive to preventive mental health.",
+      "source": {
+        "name": "Accor Limitless",
+        "url": "https://all.accor.com/a/en/limitless/thematics/wellness/wellness-trends-2026.html",
+        "type": "news",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Mental health paradigm shifting from treatment to training model",
+      "significance": 3,
+      "significance_reason": "Emotional fitness framing normalizes ongoing mental health practice like physical exercise",
+      "potential_impact": {
+        "short_term": "2026 emotional fitness programs and apps emerge",
+        "mid_term": "2027-2029 workplace emotional fitness training becomes standard",
+        "long_term": "Emotional fitness integrated into education and organizational culture"
+      },
+      "key_entities": [],
+      "related_signals": [],
+      "confidence": 0.90,
+      "tags": ["emotional fitness", "breathwork", "nervous system", "preventive wellness", "mental health"]
+    },
+    {
+      "signal_id": "SIG-2026-0112-046",
+      "raw_id": "RAW-2026-0112-047",
+      "title": "AI-powered meditation guides creating personalized practice with VR environments in 2026",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": ["Technological"]
+      },
+      "status": "emerging",
+      "signal_type": "trend",
+      "time_horizon": "short",
+      "description": "Integration of meditation with advanced technologies including AI-driven personalization, wearable device compatibility, and VR environments enhancing user engagement. Technology-augmented spiritual practice.",
+      "source": {
+        "name": "SkyQuest Technology",
+        "url": "https://www.skyquestt.com/report/mindfulness-meditation-application-market",
+        "type": "report",
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "Contemplative practices integrating with AI and immersive technologies",
+      "significance": 3,
+      "significance_reason": "Technology augmentation of meditation enables personalization and accessibility at scale",
+      "potential_impact": {
+        "short_term": "2026 AI meditation apps gain adoption",
+        "mid_term": "2027-2029 VR meditation becomes mainstream practice",
+        "long_term": "Technology-mediated spiritual experiences become normalized"
+      },
+      "key_entities": [],
+      "related_signals": ["SIG-2026-0112-042"],
+      "confidence": 0.85,
+      "tags": ["AI meditation", "VR meditation", "personalization", "mindfulness tech", "wearables"]
+    }
+  ],
+  "classification_methodology": {
+    "steeps_decision_framework": "Primary category assigned based on dominant driver or impact area. Secondary categories added for cross-cutting signals. Technological signals often have Economic secondary; Political signals often have Technological secondary; Environmental signals often have Political and Economic secondary.",
+    "status_criteria": {
+      "emerging": "First detection, single or few sources, weak signal, experimental phase",
+      "developing": "Multiple sources, pattern forming, growing adoption, commercial pilots",
+      "mature": "Widely adopted, standardized, established market, mainstream recognition",
+      "declining": "Decreasing relevance, being replaced, end of lifecycle"
+    },
+    "signal_type_criteria": {
+      "trend": "Directional change with sustained momentum over time",
+      "event": "Specific occurrence with defined timeframe and parties",
+      "driver": "Underlying force causing multiple downstream changes",
+      "wild_card": "Low probability, high impact, paradigm-shifting potential"
+    },
+    "time_horizon_criteria": {
+      "short": "Impact visible within 1-2 years",
+      "medium": "Impact materializes 3-5 years",
+      "long": "Impact emerges 5-10+ years"
+    },
+    "confidence_scoring": {
+      "0.9_1.0": "Official announcement, multiple authoritative sources",
+      "0.8_0.9": "Single authoritative source, credible evidence",
+      "0.7_0.8": "Credible source, some corroboration",
+      "0.6_0.7": "Single source, plausible but unconfirmed",
+      "below_0.6": "Speculation, requires verification"
+    }
+  },
+  "quality_assurance": {
+    "all_signals_have_primary_category": true,
+    "all_signals_have_status": true,
+    "all_signals_have_signal_type": true,
+    "all_signals_have_time_horizon": true,
+    "all_signals_have_leading_indicator": true,
+    "all_significance_scores_justified": true,
+    "confidence_scores_range": "0.75-0.95",
+    "average_confidence": 0.89
+  },
+  "analysis_notes": {
+    "quantum_computing_cluster": "Multiple signals (SIG-001, 003, 004, 005) indicate 2026 as quantum computing commercialization inflection point with industry consolidation (M&A), verified quantum advantage predictions, and global recognition.",
+    "physical_ai_convergence": "CES 2026 signals (SIG-002, 006) show industry-wide convergence on physical AI with 40+ companies, complete technology stacks from chip to software, indicating rapid commercialization phase.",
+    "ai_regulation_divergence": "US (SIG-029) and EU (SIG-032) taking opposite approaches: US federal preemption vs EU comprehensive regulation, creating bifurcated global governance landscape.",
+    "spiritual_wellness_boom": "Multiple signals (SIG-042 through 046) show converging trend toward spiritual wellness, mindfulness, and emotional fitness, driven by digital fatigue and mental health awareness.",
+    "work_culture_transformation": "Signals across Social category (SIG-035 through 039) indicate fundamental workplace culture shift toward wellbeing, digital minimalism, and work-life balance, particularly among younger generations.",
+    "energy_transition_acceleration": "Environmental signals (SIG-023 through 028) show energy transition financing, policy, and deployment acceleration globally with both developed and developing country momentum."
+  },
+  "processing_metadata": {
+    "classification_agent": "signal-classifier-v1.0",
+    "classification_date": "2026-01-12",
+    "processing_duration_minutes": 45,
+    "input_source": "env-scanning/filtered/filtered-signals-2026-01-12.json",
+    "framework_references": [
+      ".claude/skills/env-scanner/references/signal-template.md",
+      ".claude/skills/env-scanner/references/steep-framework.md"
+    ],
+    "analyst": "Claude Sonnet 4.5",
+    "review_status": "completed"
+  }
+}

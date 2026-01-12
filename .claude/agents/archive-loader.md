@@ -14,12 +14,12 @@ Load existing scanning reports and signal database to build context for deduplic
 
 1. **Load Signal Database**
    ```
-   Read env-scanning/signals/database.json
+   Read signals/database.json
    ```
 
 2. **Load Recent Archives** (최근 90일 우선)
    ```
-   Glob env-scanning/reports/archive/**/*.json
+   Glob data/{date}/reports/archive/**/*.json
    ```
 
 3. **Build Deduplication Index**
@@ -29,7 +29,7 @@ Load existing scanning reports and signal database to build context for deduplic
 
 4. **Output Context File**
    ```
-   Write to env-scanning/context/previous-signals.json
+   Write to context/previous-signals.json
    ```
 
 ## Output Format
@@ -79,7 +79,7 @@ Load existing scanning reports and signal database to build context for deduplic
 
 ## Log Output
 
-Write summary to `env-scanning/logs/archive-load-{date}.log`:
+Write summary to `logs/archive-load-{date}.log`:
 ```
 [2026-01-09 06:00:01] Archive Loader Started
 [2026-01-09 06:00:02] Loaded database: 1234 signals

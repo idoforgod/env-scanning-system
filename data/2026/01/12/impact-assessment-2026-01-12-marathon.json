@@ -1,0 +1,1063 @@
+{
+  "analysis_date": "2026-01-12",
+  "analysis_method": "Futures Wheel",
+  "total_signals_reviewed": 43,
+  "total_analyzed": 28,
+  "significance_threshold": 4,
+  "impact_assessments": [
+    {
+      "signal_id": "SIG-2026-0112-001",
+      "title": "DeepSeek releases breakthrough AI training method mHC for efficient model scaling",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-001-1",
+          "description": "Democratization of large-scale AI development - smaller organizations can now train frontier models",
+          "affected_domains": ["Technological", "Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-001-1-1",
+              "description": "Explosion of competing AI models from non-US entities challenges current OpenAI/Anthropic duopoly",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-001-1-2",
+              "description": "AI safety concerns amplify as more actors gain capability to train powerful models",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            },
+            {
+              "id": "SI-001-1-3",
+              "description": "GPU/chip demand shifts from raw compute power to efficiency-optimized architectures",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            }
+          ]
+        },
+        {
+          "id": "PI-001-2",
+          "description": "US computational advantage in AI development neutralized",
+          "affected_domains": ["Political", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.80,
+          "secondary_impacts": [
+            {
+              "id": "SI-001-2-1",
+              "description": "US export controls on AI chips become less effective strategic tool",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-001-2-2",
+              "description": "AI geopolitics shift from hardware control to algorithm/data governance",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            }
+          ]
+        },
+        {
+          "id": "PI-001-3",
+          "description": "Training cost reduction accelerates AI application development across all sectors",
+          "affected_domains": ["Economic", "Technological"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "secondary_impacts": [
+            {
+              "id": "SI-001-3-1",
+              "description": "AI-native startups proliferate in specialized vertical markets",
+              "timeframe": "short_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-001-3-2",
+              "description": "Enterprise AI adoption accelerates as deployment costs fall",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-014",
+          "interaction_type": "dampening",
+          "description": "Reduced training costs may ease current AI chip shortage by lowering computational requirements"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-029",
+          "interaction_type": "amplifying",
+          "description": "Efficiency breakthrough strengthens China's position in US-China tech competition despite chip restrictions"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-013",
+          "interaction_type": "amplifying",
+          "description": "Combined with AI protein design, democratizes access to powerful dual-use AI technologies"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: Open-source implementation attempts, VC interest in efficiency-focused AI startups",
+        "medium": "6-18 months: Multiple organizations deploy mHC-based models, shift in AI infrastructure investment",
+        "long": "18+ months: Efficiency becomes primary AI development paradigm, reshaping semiconductor industry"
+      },
+      "uncertainty_level": "medium",
+      "systemic_notes": "This signal represents a fundamental shift in AI development economics. The transition from compute-intensive to efficiency-focused approaches could redistribute global AI power away from nations/companies with massive capital resources toward those with algorithmic innovation capability. This challenges the current assumption that AI leadership requires enormous financial and energy resources."
+    },
+    {
+      "signal_id": "SIG-2026-0112-002",
+      "title": "CES 2026: Physical AI and humanoid robots dominate with 40 companies showcasing",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-002-1",
+          "description": "Physical AI transitions from research to commercial competition phase",
+          "affected_domains": ["Technological", "Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "secondary_impacts": [
+            {
+              "id": "SI-002-1-1",
+              "description": "Manufacturing and logistics sectors begin pilot deployments at scale",
+              "timeframe": "mid_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-002-1-2",
+              "description": "Labor unions intensify organizing around automation threats",
+              "timeframe": "short_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-002-1-3",
+              "description": "Insurance industry develops new product categories for robot liability",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            }
+          ]
+        },
+        {
+          "id": "PI-002-2",
+          "description": "Consumer expectations shift toward physical AI assistants as normal household technology",
+          "affected_domains": ["Social", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.70,
+          "secondary_impacts": [
+            {
+              "id": "SI-002-2-1",
+              "description": "Housing design begins incorporating robot-friendly infrastructure",
+              "timeframe": "long_term",
+              "likelihood": 0.60
+            },
+            {
+              "id": "SI-002-2-2",
+              "description": "Elder care models shift from human caregivers to robot-assisted aging in place",
+              "timeframe": "long_term",
+              "likelihood": 0.75
+            }
+          ]
+        },
+        {
+          "id": "PI-002-3",
+          "description": "Capital investment flows massively toward robotics ecosystem (hardware, software, infrastructure)",
+          "affected_domains": ["Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-002-3-1",
+              "description": "Robotics unicorns emerge, IPO market opens for physical AI companies",
+              "timeframe": "mid_term",
+              "likelihood": 0.70
+            },
+            {
+              "id": "SI-002-3-2",
+              "description": "Traditional manufacturing companies acquire robotics startups for capabilities",
+              "timeframe": "short_term",
+              "likelihood": 0.80
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-006",
+          "interaction_type": "amplifying",
+          "description": "NVIDIA's physical AI platform provides the infrastructure enabling the 40-company ecosystem to flourish"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-021",
+          "interaction_type": "amplifying",
+          "description": "Physical AI commercialization accelerates the AI-driven job displacement predicted for 2026"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-040",
+          "interaction_type": "transforming",
+          "description": "Robots for aging in place combine with AgeTech to create new elderly care model"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: Pilot orders from early adopter companies, media coverage normalizes robots",
+        "medium": "6-18 months: First wave of commercial deployments in controlled environments (warehouses, hospitals)",
+        "long": "18+ months: Consumer market entry, regulatory frameworks developed, labor market impacts visible"
+      },
+      "uncertainty_level": "low",
+      "systemic_notes": "40 companies represents a critical mass indicating industry consensus that physical AI is commercially viable now. This concentrated emergence suggests coordinated technology readiness across multiple domains (sensors, actuators, AI, power systems). The labor market implications are substantial but uncertain - whether this displaces or augments human workers depends heavily on regulatory and business model choices made in 2026-2027."
+    },
+    {
+      "signal_id": "SIG-2026-0112-005",
+      "title": "양자컴퓨터 2026년 상용화 원년, IBM '강한 양자 우위' 선언",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-005-1",
+          "description": "Quantum computing transitions from experimental to production-ready status",
+          "affected_domains": ["Technological", "Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-005-1-1",
+              "description": "Pharmaceutical and materials science companies begin quantum computing integration",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            },
+            {
+              "id": "SI-005-1-2",
+              "description": "Quantum-resistant cryptography deployment accelerates in financial sector",
+              "timeframe": "short_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-005-1-3",
+              "description": "University curricula rapidly expand quantum computing programs",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            }
+          ]
+        },
+        {
+          "id": "PI-005-2",
+          "description": "Global quantum computing investment surge from both public and private sectors",
+          "affected_domains": ["Economic", "Political"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "secondary_impacts": [
+            {
+              "id": "SI-005-2-1",
+              "description": "National quantum strategies announced by governments worldwide",
+              "timeframe": "short_term",
+              "likelihood": 0.80
+            },
+            {
+              "id": "SI-005-2-2",
+              "description": "Quantum computing becomes strategic national security technology like semiconductors",
+              "timeframe": "mid_term",
+              "likelihood": 0.85
+            }
+          ]
+        },
+        {
+          "id": "PI-005-3",
+          "description": "Asia-Pacific recognition validates quantum commercialization globally, not just US/EU",
+          "affected_domains": ["Political", "Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-005-3-1",
+              "description": "China, Japan, Korea accelerate domestic quantum programs to maintain competitiveness",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-003",
+          "interaction_type": "amplifying",
+          "description": "D-Wave M&A activity validates investment thesis, encourages more quantum consolidation"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-004",
+          "interaction_type": "reinforcing",
+          "description": "IBM's verification timeline aligns with commercialization narrative, building market confidence"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: Korean and Asian quantum investment announcements, cloud quantum service adoption",
+        "medium": "6-18 months: First commercial quantum advantage applications deployed, market formation",
+        "long": "18+ months: Quantum-classical hybrid infrastructure becomes standard for specific problem domains"
+      },
+      "uncertainty_level": "medium",
+      "systemic_notes": "The convergence of IBM's technical announcement with global media recognition (especially in Asia) suggests 2026 is indeed an inflection point. However, 'quantum advantage' will likely be demonstrated in narrow use cases first, not general computing. The key systemic impact is psychological - establishing quantum as viable creates investment momentum that becomes self-fulfilling."
+    },
+    {
+      "signal_id": "SIG-2026-0112-007",
+      "title": "CRISPR epigenetic editing breakthrough: gene activation without DNA cutting",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-007-1",
+          "description": "Gene therapy safety profile dramatically improved through reversible edits",
+          "affected_domains": ["Technological", "Social"],
+          "timeframe": "mid_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-007-1-1",
+              "description": "Regulatory approval timelines accelerate for epigenetic therapies vs. DNA-cutting approaches",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            },
+            {
+              "id": "SI-007-1-2",
+              "description": "Patient acceptance of gene therapies increases due to reversibility",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-007-1-3",
+              "description": "Insurance coverage for gene therapies expands as safety improves",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            }
+          ]
+        },
+        {
+          "id": "PI-007-2",
+          "description": "Expansion of treatable conditions beyond current CRISPR applications",
+          "affected_domains": ["Technological", "Social"],
+          "timeframe": "long_term",
+          "likelihood": 0.80,
+          "secondary_impacts": [
+            {
+              "id": "SI-007-2-1",
+              "description": "Non-hereditary diseases become addressable through temporary gene modulation",
+              "timeframe": "long_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-007-2-2",
+              "description": "Enhancement applications (non-therapeutic) become ethically debatable with reversible tech",
+              "timeframe": "long_term",
+              "likelihood": 0.65
+            }
+          ]
+        },
+        {
+          "id": "PI-007-3",
+          "description": "Research pivots from DNA editing to epigenetic modulation as primary approach",
+          "affected_domains": ["Technological"],
+          "timeframe": "mid_term",
+          "likelihood": 0.75,
+          "secondary_impacts": [
+            {
+              "id": "SI-007-3-1",
+              "description": "Epigenetics becomes central to biological research and therapeutics development",
+              "timeframe": "long_term",
+              "likelihood": 0.80
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-013",
+          "interaction_type": "amplifying",
+          "description": "AI protein design combined with epigenetic CRISPR creates powerful but concerning dual-use capability"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-012",
+          "interaction_type": "reinforcing",
+          "description": "Longevity biotech sector gains powerful new tool for aging intervention"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: CTX460 trial launch, academic research pivot to epigenetic applications",
+        "medium": "6-18 months: Additional clinical trials initiated, biotech investment in epigenetic platforms",
+        "long": "18+ months: First regulatory approvals, epigenetic editing becomes standard therapeutic modality"
+      },
+      "uncertainty_level": "medium",
+      "systemic_notes": "Reversibility fundamentally changes the risk-benefit calculation for gene therapy. This could be as significant as the original CRISPR breakthrough because it addresses the primary safety concern that has limited broader application. The ethical implications are complex - reversible modifications may be more acceptable but also enable temporary enhancement uses that permanent editing cannot."
+    },
+    {
+      "signal_id": "SIG-2026-0112-010",
+      "title": "Commonwealth Fusion Systems SPARC reactor targets first plasma in 2026",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-010-1",
+          "description": "Validation of private-sector fusion pathway distinct from government mega-projects",
+          "affected_domains": ["Technological", "Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.75,
+          "secondary_impacts": [
+            {
+              "id": "SI-010-1-1",
+              "description": "Private fusion investment surge following successful first plasma",
+              "timeframe": "mid_term",
+              "likelihood": 0.70
+            },
+            {
+              "id": "SI-010-1-2",
+              "description": "Fusion energy enters utility planning scenarios as credible 2030s option",
+              "timeframe": "mid_term",
+              "likelihood": 0.65
+            },
+            {
+              "id": "SI-010-1-3",
+              "description": "High-temperature superconductor technology commercialization accelerates",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            }
+          ]
+        },
+        {
+          "id": "PI-010-2",
+          "description": "Energy transition narrative expands to include fusion as medium-term option",
+          "affected_domains": ["Environmental", "Political"],
+          "timeframe": "mid_term",
+          "likelihood": 0.70,
+          "secondary_impacts": [
+            {
+              "id": "SI-010-2-1",
+              "description": "Nuclear energy political debates shift from fission safety to fusion opportunity",
+              "timeframe": "long_term",
+              "likelihood": 0.65
+            },
+            {
+              "id": "SI-010-2-2",
+              "description": "Long-term climate models incorporate fusion as potential solution component",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-033",
+          "interaction_type": "reinforcing",
+          "description": "EU Fusion Strategy development synchronized with SPARC first plasma creates policy-technology alignment"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-023",
+          "interaction_type": "conditional",
+          "description": "If successful, could redirect some renewable energy investment to fusion R&D"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: SPARC commissioning completion, first plasma attempt, technical validation",
+        "medium": "6-18 months: Results analysis, next-phase funding decisions, competitor acceleration",
+        "long": "18+ months: Pilot plant design decisions, regulatory framework development, utility partnerships"
+      },
+      "uncertainty_level": "high",
+      "systemic_notes": "This is classified as wild_card for good reason - first plasma is a milestone but not proof of commercial viability. However, psychological impact on energy sector could be substantial even if commercial deployment remains decades away. Success validates the high-field magnet approach and could trigger rapid progress after 70+ years of slow fusion research. Failure would significantly dampen private fusion investment."
+    },
+    {
+      "signal_id": "SIG-2026-0112-013",
+      "title": "AI can now design proteins and DNA, scientists warn biosecurity rules urgently needed",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-013-1",
+          "description": "Biosecurity threat landscape fundamentally transformed by democratized access",
+          "affected_domains": ["Political", "Technological"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "secondary_impacts": [
+            {
+              "id": "SI-013-1-1",
+              "description": "Emergency international biosecurity conferences and treaty negotiations",
+              "timeframe": "short_term",
+              "likelihood": 0.80
+            },
+            {
+              "id": "SI-013-1-2",
+              "description": "DNA synthesis screening systems become mandatory globally",
+              "timeframe": "mid_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-013-1-3",
+              "description": "AI model access restrictions implemented for biological design capabilities",
+              "timeframe": "short_term",
+              "likelihood": 0.75
+            }
+          ]
+        },
+        {
+          "id": "PI-013-2",
+          "description": "Tension between open science and security intensifies in biotech sector",
+          "affected_domains": ["Technological", "Spiritual"],
+          "timeframe": "mid_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-013-2-1",
+              "description": "Biological research publishing faces new censorship and pre-publication review",
+              "timeframe": "mid_term",
+              "likelihood": 0.70
+            },
+            {
+              "id": "SI-013-2-2",
+              "description": "Academic freedom debates intensify around dual-use research ethics",
+              "timeframe": "short_term",
+              "likelihood": 0.75
+            }
+          ]
+        },
+        {
+          "id": "PI-013-3",
+          "description": "Therapeutic protein design accelerates alongside biosecurity concerns",
+          "affected_domains": ["Technological", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.80,
+          "secondary_impacts": [
+            {
+              "id": "SI-013-3-1",
+              "description": "Protein therapeutic development timelines compressed from years to months",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-013-3-2",
+              "description": "Personalized protein therapeutics become economically viable",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-001",
+          "interaction_type": "amplifying",
+          "description": "Efficient AI training democratizes access to biological design AI capabilities"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-007",
+          "interaction_type": "amplifying",
+          "description": "AI-designed epigenetic editors create unprecedented biological intervention capabilities"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-029",
+          "interaction_type": "amplifying",
+          "description": "US-China AI governance tensions extend to biological design AI controls"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: Scientific community biosecurity statements, government inquiries begin",
+        "medium": "6-18 months: Legislative proposals, industry self-regulation attempts, international coordination",
+        "long": "18+ months: Regulatory frameworks implemented, monitoring systems deployed, first enforcement actions"
+      },
+      "uncertainty_level": "medium",
+      "systemic_notes": "This represents one of the most challenging governance problems of the decade - how to allow beneficial research while preventing catastrophic misuse when the technology is inherently dual-use and accessible. Unlike nuclear weapons, the barrier to entry is extremely low. The tension between open-source AI development culture and biosecurity needs may force fundamental rethinking of AI governance models."
+    },
+    {
+      "signal_id": "SIG-2026-0112-021",
+      "title": "2026 will bring widespread job shifts as AI agents automate work, labor analysts warn",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-021-1",
+          "description": "Visible job displacement in knowledge work sectors becomes tangible reality",
+          "affected_domains": ["Economic", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-021-1-1",
+              "description": "Political pressure for AI regulation and worker protection legislation intensifies",
+              "timeframe": "short_term",
+              "likelihood": 0.80
+            },
+            {
+              "id": "SI-021-1-2",
+              "description": "Corporate layoffs explicitly attributed to AI create backlash and reputation risks",
+              "timeframe": "short_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-021-1-3",
+              "description": "Mass upskilling and reskilling programs launched by governments and employers",
+              "timeframe": "mid_term",
+              "likelihood": 0.70
+            }
+          ]
+        },
+        {
+          "id": "PI-021-2",
+          "description": "Wage pressure in automatable knowledge work roles as AI substitutes for human labor",
+          "affected_domains": ["Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.80,
+          "secondary_impacts": [
+            {
+              "id": "SI-021-2-1",
+              "description": "Labor market bifurcates between AI-augmented high-skill and non-automatable service work",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-021-2-2",
+              "description": "Universal Basic Income proposals gain mainstream political traction",
+              "timeframe": "mid_term",
+              "likelihood": 0.65
+            }
+          ]
+        },
+        {
+          "id": "PI-021-3",
+          "description": "Worker anxiety and mental health impacts from automation uncertainty",
+          "affected_domains": ["Social", "Spiritual"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-021-3-1",
+              "description": "Identity crisis around meaning of work and professional identity",
+              "timeframe": "mid_term",
+              "likelihood": 0.70
+            },
+            {
+              "id": "SI-021-3-2",
+              "description": "Mental health services demand surges in white-collar sectors",
+              "timeframe": "short_term",
+              "likelihood": 0.65
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-011",
+          "interaction_type": "reinforcing",
+          "description": "40% enterprise AI agent adoption directly drives the job displacement analysts predict"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-002",
+          "interaction_type": "amplifying",
+          "description": "Physical AI commercialization extends automation from digital to physical work"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-035",
+          "interaction_type": "transforming",
+          "description": "Work displacement may accelerate Gen Z's shift toward meaning-seeking over career focus"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: First wave of AI-driven layoff announcements, media coverage intensifies",
+        "medium": "6-18 months: Labor market data shows measurable impact, political responses emerge",
+        "long": "18+ months: New social contract around work and AI begins to form, regulatory frameworks implemented"
+      },
+      "uncertainty_level": "medium",
+      "systemic_notes": "The consensus among labor analysts that 2026 is the inflection point is significant - this moves AI job displacement from theoretical future to present reality. The psychological and political impacts may exceed the actual employment numbers as uncertainty affects everyone in automatable roles. This could trigger the most significant labor market transformation since industrialization, but the outcome depends heavily on how societies choose to manage the transition."
+    },
+    {
+      "signal_id": "SIG-2026-0112-029",
+      "title": "Trump administration issues executive order preempting state AI laws, forms litigation task force",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-029-1",
+          "description": "Federal-state constitutional conflict over AI regulation creates legal uncertainty",
+          "affected_domains": ["Political", "Technological"],
+          "timeframe": "short_term",
+          "likelihood": 0.95,
+          "secondary_impacts": [
+            {
+              "id": "SI-029-1-1",
+              "description": "Multi-year Supreme Court litigation determines federalism boundaries for AI governance",
+              "timeframe": "mid_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-029-1-2",
+              "description": "AI companies face compliance uncertainty, freezing some development decisions",
+              "timeframe": "short_term",
+              "likelihood": 0.70
+            },
+            {
+              "id": "SI-029-1-3",
+              "description": "California and other states resist federal preemption, creating regulatory patchwork",
+              "timeframe": "short_term",
+              "likelihood": 0.90
+            }
+          ]
+        },
+        {
+          "id": "PI-029-2",
+          "description": "US AI governance diverges sharply from EU comprehensive regulatory model",
+          "affected_domains": ["Political", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.90,
+          "secondary_impacts": [
+            {
+              "id": "SI-029-2-1",
+              "description": "Global AI companies face two incompatible regulatory regimes (US minimal, EU comprehensive)",
+              "timeframe": "mid_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-029-2-2",
+              "description": "International AI governance coordination becomes nearly impossible",
+              "timeframe": "long_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-029-2-3",
+              "description": "Developing nations choose between US or EU AI governance models",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            }
+          ]
+        },
+        {
+          "id": "PI-029-3",
+          "description": "AI safety and ethics community opposes federal preemption, increasing polarization",
+          "affected_domains": ["Political", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-029-3-1",
+              "description": "AI policy becomes partisan political issue rather than technocratic question",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-032",
+          "interaction_type": "conflicting",
+          "description": "US federal preemption contrasts sharply with EU AI Act implementation, creating regulatory fragmentation"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-030",
+          "interaction_type": "reinforcing",
+          "description": "Federal AI deregulation aligns with competitive stance against China"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-013",
+          "interaction_type": "dampening",
+          "description": "Light-touch AI regulation may slow biosecurity governance for AI bio-design tools"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: Lawsuits filed, preliminary injunctions sought, industry lobbying intensifies",
+        "medium": "6-18 months: Federal court rulings, potential emergency legislation, international responses",
+        "long": "18+ months: Supreme Court decision, stable regulatory framework emerges (or doesn't)"
+      },
+      "uncertainty_level": "high",
+      "systemic_notes": "This represents a fundamental fork in AI governance philosophy - innovation-first versus precautionary principle. The federal preemption approach could accelerate US AI development but at the cost of safety, ethics, and international coordination. If successful, it establishes AI as inherently federal rather than shared jurisdiction, which has enormous implications for future technology governance. The timing is critical - this happens just as AI capabilities reach societally transformative levels."
+    },
+    {
+      "signal_id": "SIG-2026-0112-030",
+      "title": "US-China relations enter 2026 with fragile trade truce, tech war intensifying over AI chips",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-030-1",
+          "description": "Technology sector undergoes permanent bifurcation into US and China ecosystems",
+          "affected_domains": ["Political", "Technological", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.90,
+          "secondary_impacts": [
+            {
+              "id": "SI-030-1-1",
+              "description": "Global companies forced to maintain parallel tech stacks for different markets",
+              "timeframe": "mid_term",
+              "likelihood": 0.85
+            },
+            {
+              "id": "SI-030-1-2",
+              "description": "Innovation slows due to lack of global collaboration in frontier technologies",
+              "timeframe": "long_term",
+              "likelihood": 0.70
+            },
+            {
+              "id": "SI-030-1-3",
+              "description": "Developing nations pressured to choose technology alignment (US or China)",
+              "timeframe": "mid_term",
+              "likelihood": 0.80
+            }
+          ]
+        },
+        {
+          "id": "PI-030-2",
+          "description": "Supply chain fragmentation increases costs and reduces efficiency globally",
+          "affected_domains": ["Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "secondary_impacts": [
+            {
+              "id": "SI-030-2-1",
+              "description": "Consumer technology prices increase due to duplicated R&D and manufacturing",
+              "timeframe": "mid_term",
+              "likelihood": 0.75
+            },
+            {
+              "id": "SI-030-2-2",
+              "description": "Reshoring and friend-shoring investments accelerate in critical technologies",
+              "timeframe": "short_term",
+              "likelihood": 0.85
+            }
+          ]
+        },
+        {
+          "id": "PI-030-3",
+          "description": "Paradoxical relationship manages conflict in some domains while cooperating in others",
+          "affected_domains": ["Political"],
+          "timeframe": "short_term",
+          "likelihood": 0.80,
+          "secondary_impacts": [
+            {
+              "id": "SI-030-3-1",
+              "description": "New model of great power competition emerges: selective decoupling rather than Cold War",
+              "timeframe": "long_term",
+              "likelihood": 0.75
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-031",
+          "interaction_type": "reinforcing",
+          "description": "Semiconductor tariffs planned for 2027 demonstrate long-term commitment to tech decoupling"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-001",
+          "interaction_type": "conditional",
+          "description": "Chinese AI efficiency breakthroughs may reduce impact of US chip restrictions"
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-029",
+          "interaction_type": "reinforcing",
+          "description": "US AI deregulation stance partly motivated by competition with China"
+        }
+      ],
+      "time_horizon": {
+        "immediate": "0-6 months: Taiwan tensions, trade negotiations, chip export control updates",
+        "medium": "6-18 months: Technology ecosystem separation solidifies, allied nation alignment clarifies",
+        "long": "18+ months: Dual global technology standards emerge, geopolitical technology blocs formalize"
+      },
+      "uncertainty_level": "medium",
+      "systemic_notes": "The parallel track approach (trade normalization + technology competition) represents a new paradigm in great power relations. Unlike Cold War total separation, this allows economic interdependence in non-strategic sectors while competing intensely in frontier technologies. Success depends on maintaining the boundary between these tracks, which may prove difficult as technology becomes increasingly central to all economic activity. The 935 items receiving tariff reduction suggests economic gravitational forces toward cooperation remain strong."
+    }
+  ],
+  "cluster_analysis": {
+    "quantum_commercialization_cluster": {
+      "signals": ["SIG-2026-0112-003", "SIG-2026-0112-004", "SIG-2026-0112-005"],
+      "cluster_theme": "2026 as quantum computing commercialization inflection point",
+      "combined_impact": "Multiple converging signals (IBM technical milestone, D-Wave M&A, global recognition) create self-reinforcing momentum toward quantum computing legitimacy. Industry consolidation through M&A indicates capital confidence. Asian recognition extends beyond Western markets. Combined effect: quantum computing transitions from speculative to strategic investment category.",
+      "systemic_significance": "Quantum advantage verification in 2026 would represent one of the most significant computational breakthroughs since the invention of digital computers. Unlike gradual improvements, this is a phase transition in computational capability.",
+      "uncertainty_factors": [
+        "Technical verification of quantum advantage may prove more difficult than projected",
+        "Practical applications may remain limited to narrow domains",
+        "Cost-benefit analysis may not favor quantum over improving classical systems"
+      ]
+    },
+    "physical_ai_convergence_cluster": {
+      "signals": ["SIG-2026-0112-002", "SIG-2026-0112-006"],
+      "cluster_theme": "Physical AI ecosystem rapidly commercializing with full-stack platforms",
+      "combined_impact": "CES 2026 showing 40 companies combined with NVIDIA's complete platform (chips + software + frameworks) indicates coordinated technology readiness. Not just research demos but production systems. Combined effect: physical AI goes from concept to commercial reality in 12-18 months.",
+      "systemic_significance": "If successful, this represents the extension of AI from digital information processing to physical world interaction - arguably more transformative than chatbots and image generators.",
+      "uncertainty_factors": [
+        "Real-world robustness may prove more difficult than controlled demos",
+        "Regulatory barriers for physical AI safety unclear",
+        "Consumer acceptance of robots in intimate settings uncertain"
+      ]
+    },
+    "ai_governance_divergence_cluster": {
+      "signals": ["SIG-2026-0112-029", "SIG-2026-0112-032"],
+      "cluster_theme": "US-EU AI governance philosophies diverging fundamentally",
+      "combined_impact": "US federal preemption (minimal regulation) versus EU AI Act (comprehensive regulation) creates incompatible global frameworks. Combined effect: AI development, deployment, and trade face permanent regulatory fragmentation between major markets.",
+      "systemic_significance": "This could be as significant as GDPR was for privacy, but with deeper implications as AI affects all sectors. Establishes competing models other nations will choose between.",
+      "uncertainty_factors": [
+        "US approach may shift if AI harms become visible",
+        "EU may adjust timeline if competitiveness concerns grow",
+        "International coordination attempts could bridge approaches"
+      ]
+    },
+    "geopolitical_tech_bifurcation_cluster": {
+      "signals": ["SIG-2026-0112-030", "SIG-2026-0112-031", "SIG-2026-0112-001"],
+      "cluster_theme": "Technology sector permanently splitting into US and China spheres",
+      "combined_impact": "Trade war in traditional goods easing while tech competition intensifies. Chinese AI efficiency breakthroughs reduce US chip leverage. Semiconductor tariffs planned through 2027. Combined effect: irreversible separation of global technology ecosystem into competing standards.",
+      "systemic_significance": "End of globalized technology development and deployment. Return to competing technology blocs not seen since Cold War, but with much deeper economic integration making separation more complex and costly.",
+      "uncertainty_factors": [
+        "Economic costs may force reconsideration of full decoupling",
+        "Third countries may refuse to choose sides, forcing compromise",
+        "Leadership changes could alter strategic direction"
+      ]
+    },
+    "biotechnology_revolution_cluster": {
+      "signals": ["SIG-2026-0112-007", "SIG-2026-0112-013"],
+      "cluster_theme": "AI-enabled biological design creating capabilities and risks simultaneously",
+      "combined_impact": "Epigenetic CRISPR (reversible) combined with AI protein/DNA design creates unprecedented biological intervention capabilities. Combined effect: therapeutic potential immense but biosecurity governance crisis as capabilities democratize.",
+      "systemic_significance": "Potentially the most transformative technology cluster - ability to design and modify biology with AI assistance. Could address disease and aging but also create catastrophic risks.",
+      "uncertainty_factors": [
+        "Governance frameworks may successfully contain risks",
+        "Technical capabilities may prove more limited than feared",
+        "International cooperation may achieve biosecurity standards"
+      ]
+    },
+    "work_transformation_cluster": {
+      "signals": ["SIG-2026-0112-011", "SIG-2026-0112-021", "SIG-2026-0112-019"],
+      "cluster_theme": "AI automation reaching inflection point for visible labor market impact",
+      "combined_impact": "40% enterprise AI agent adoption combined with labor analyst consensus that 2026 brings tangible job shifts. Vendor consolidation indicates production-ready systems. Combined effect: AI automation transitions from future threat to present reality in knowledge work.",
+      "systemic_significance": "Could be the beginning of the most significant labor market transformation since industrialization. Unlike previous automation waves, this affects highly-educated knowledge workers who have political and cultural influence.",
+      "uncertainty_factors": [
+        "Job displacement may be slower than feared as implementation challenges emerge",
+        "New job categories may emerge faster than old ones disappear",
+        "Political backlash may slow AI deployment in employment contexts"
+      ]
+    },
+    "wellbeing_paradigm_shift_cluster": {
+      "signals": ["SIG-2026-0112-035", "SIG-2026-0112-036", "SIG-2026-0112-037", "SIG-2026-0112-043"],
+      "cluster_theme": "Cultural shift from digital engagement to wellbeing and meaning-seeking",
+      "combined_impact": "86% Gen Z reducing screen time, scientific validation of digital detox, workplace wellbeing policies, spirituality over partying. Combined effect: fundamental cultural shift away from always-on digital culture toward intentional living and meaning-making.",
+      "systemic_significance": "Represents potential inflection point in humanity's relationship with digital technology - from unquestioning adoption to conscious regulation. Could reshape technology design, business models, and social norms.",
+      "uncertainty_factors": [
+        "Behavior change may not persist beyond initial enthusiasm",
+        "Technology companies may successfully resist design changes",
+        "Generational differences may prevent mainstream adoption"
+      ]
+    },
+    "energy_transition_acceleration_cluster": {
+      "signals": ["SIG-2026-0112-023", "SIG-2026-0112-027", "SIG-2026-0112-028"],
+      "cluster_theme": "Climate finance and renewable deployment reaching critical mass globally",
+      "combined_impact": "$148B annual UNEZA commitment, Korea budget doubling for renewables, South Asian solar records. Combined effect: energy transition moving from developed-nation experiment to global mainstream across economic development levels.",
+      "systemic_significance": "Demonstrates energy transition is economically viable and politically achievable across diverse contexts. Developing world leapfrogging to distributed solar may be as significant as mobile phone leapfrogging landlines.",
+      "uncertainty_factors": [
+        "Financing commitments may not translate to actual deployments",
+        "Grid integration challenges may slow transition",
+        "Fossil fuel interests may mount effective resistance"
+      ]
+    }
+  },
+  "cross_impact_matrix": {
+    "SIG-2026-0112-001": {
+      "SIG-2026-0112-014": "dampening - efficiency reduces chip demand",
+      "SIG-2026-0112-030": "amplifying - strengthens China position",
+      "SIG-2026-0112-013": "amplifying - democratizes bio-design AI"
+    },
+    "SIG-2026-0112-002": {
+      "SIG-2026-0112-006": "reinforcing - platform enables ecosystem",
+      "SIG-2026-0112-021": "amplifying - accelerates job displacement",
+      "SIG-2026-0112-040": "transforming - enables new care models"
+    },
+    "SIG-2026-0112-005": {
+      "SIG-2026-0112-003": "reinforcing - M&A validates investment",
+      "SIG-2026-0112-004": "reinforcing - aligned timelines"
+    },
+    "SIG-2026-0112-007": {
+      "SIG-2026-0112-013": "amplifying - dual-use concern",
+      "SIG-2026-0112-012": "reinforcing - longevity tool"
+    },
+    "SIG-2026-0112-010": {
+      "SIG-2026-0112-033": "reinforcing - policy-tech alignment",
+      "SIG-2026-0112-023": "conditional - may redirect investment"
+    },
+    "SIG-2026-0112-013": {
+      "SIG-2026-0112-001": "amplifying - democratization risk",
+      "SIG-2026-0112-007": "amplifying - capability enhancement",
+      "SIG-2026-0112-029": "amplifying - governance tension"
+    },
+    "SIG-2026-0112-021": {
+      "SIG-2026-0112-011": "reinforcing - adoption drives displacement",
+      "SIG-2026-0112-002": "amplifying - physical + digital automation",
+      "SIG-2026-0112-035": "transforming - accelerates meaning-seeking"
+    },
+    "SIG-2026-0112-029": {
+      "SIG-2026-0112-032": "conflicting - opposite approaches",
+      "SIG-2026-0112-030": "reinforcing - competitive alignment",
+      "SIG-2026-0112-013": "dampening - slows biosecurity response"
+    },
+    "SIG-2026-0112-030": {
+      "SIG-2026-0112-031": "reinforcing - long-term commitment",
+      "SIG-2026-0112-001": "conditional - efficiency vs. chips",
+      "SIG-2026-0112-029": "reinforcing - regulatory divergence"
+    }
+  },
+  "emerging_patterns": [
+    {
+      "pattern_id": "PAT-001",
+      "name": "Dual-Use Technology Governance Crisis",
+      "description": "Multiple signals show powerful technologies (AI bio-design, epigenetic editing, efficient AI training) becoming accessible to broad populations, creating unprecedented governance challenges as beneficial and harmful uses are inseparable",
+      "related_signals": ["SIG-2026-0112-001", "SIG-2026-0112-007", "SIG-2026-0112-013"],
+      "significance": "high",
+      "time_horizon": "immediate",
+      "implications": "Traditional approaches to controlling dangerous technologies (export controls, licensing, physical barriers) become ineffective when capabilities are software-based and democratized. May require entirely new governance paradigms."
+    },
+    {
+      "pattern_id": "PAT-002",
+      "name": "2026 as Technology Commercialization Inflection Point",
+      "description": "Unusual concentration of technologies (quantum computing, physical AI, fusion energy, cellular agriculture, DAC) all reaching commercialization readiness in 2026, suggesting coordinated technology maturation cycle",
+      "related_signals": ["SIG-2026-0112-002", "SIG-2026-0112-005", "SIG-2026-0112-010", "SIG-2026-0112-015", "SIG-2026-0112-026"],
+      "significance": "high",
+      "time_horizon": "immediate",
+      "implications": "Multiple technologies reaching market simultaneously could create compounding effects and adaptation challenges. Investment capital may face allocation decisions between competing transformative technologies."
+    },
+    {
+      "pattern_id": "PAT-003",
+      "name": "Regulatory Fragmentation Replacing Global Coordination",
+      "description": "US federal preemption vs. EU comprehensive regulation, US-China tech bifurcation, national AI strategies all point toward fragmented rather than coordinated technology governance",
+      "related_signals": ["SIG-2026-0112-029", "SIG-2026-0112-030", "SIG-2026-0112-032"],
+      "significance": "high",
+      "time_horizon": "medium",
+      "implications": "End of post-Cold War assumption that technology development and governance would be globally coordinated. Return to competing regulatory and technology spheres with significant economic and innovation costs."
+    },
+    {
+      "pattern_id": "PAT-004",
+      "name": "Wellbeing Counter-Movement to Technology Acceleration",
+      "description": "As technology capabilities accelerate, parallel movement emerges toward digital minimalism, spiritual seeking, mental health prioritization, and work-life balance - particularly among digital natives",
+      "related_signals": ["SIG-2026-0112-035", "SIG-2026-0112-036", "SIG-2026-0112-037", "SIG-2026-0112-038", "SIG-2026-0112-043"],
+      "significance": "medium",
+      "time_horizon": "immediate",
+      "implications": "Technology adoption may face cultural headwinds from the very demographics (younger generations) expected to be most enthusiastic. Could reshape technology design toward more human-centered approaches."
+    },
+    {
+      "pattern_id": "PAT-005",
+      "name": "Automation Transitioning from Physical to Cognitive Labor",
+      "description": "While previous automation waves displaced manual labor, current wave targets knowledge work and cognitive tasks, affecting different social strata and requiring different policy responses",
+      "related_signals": ["SIG-2026-0112-011", "SIG-2026-0112-021", "SIG-2026-0112-002"],
+      "significance": "high",
+      "time_horizon": "immediate",
+      "implications": "Higher education and professional credentials may lose value as cognitive automation advances. Social safety nets designed for industrial economy may be inadequate for knowledge work displacement."
+    },
+    {
+      "pattern_id": "PAT-006",
+      "name": "Energy Transition Becoming Economically Inevitable",
+      "description": "Renewable energy deployment accelerating across all economic contexts (developed, emerging, developing) suggests cost curves and technology maturity have reached tipping point",
+      "related_signals": ["SIG-2026-0112-023", "SIG-2026-0112-027", "SIG-2026-0112-028", "SIG-2026-0112-025", "SIG-2026-0112-026"],
+      "significance": "high",
+      "time_horizon": "medium",
+      "implications": "Energy transition may proceed faster than most scenarios anticipate as economic logic overtakes policy drivers. Stranded fossil fuel asset risk increases significantly."
+    }
+  ],
+  "methodology_notes": {
+    "futures_wheel_approach": "For each high-significance signal, identified 3-4 primary impacts (direct consequences) and 2-3 secondary impacts per primary (cascading effects). Timeframes assigned based on likelihood of materialization. Cross-impacts identified where signals amplify, dampen, or transform each other's effects.",
+    "likelihood_scoring": "Based on signal confidence, affected domain characteristics, and presence of enabling/inhibiting factors. 0.85+ indicates high certainty, 0.70-0.84 moderate, below 0.70 speculative.",
+    "cluster_analysis": "Grouped related signals that form coherent narratives or mutually reinforcing trends. Analyzed combined systemic impact beyond individual signals.",
+    "uncertainty_assessment": "Low = clear trajectory and mechanisms; Medium = plausible but contingent on choices; High = multiple divergent pathways possible"
+  },
+  "analyst_recommendations": {
+    "priority_monitoring": [
+      "Quantum advantage verification timeline (Q3-Q4 2026)",
+      "AI agent job displacement visibility (Q1-Q2 2026)",
+      "Federal-state AI regulation litigation (Q1-Q3 2026)",
+      "SPARC first plasma results (Q2-Q3 2026)",
+      "Physical AI commercial deployments (Q2-Q4 2026)"
+    ],
+    "strategic_implications": "2026 appears to be an unusual concentration of inflection points across multiple technology domains. Organizations should prepare for simultaneous disruptions rather than sequential ones. The divergence in US-EU-China governance approaches requires regional strategy differentiation.",
+    "emerging_risks": "Dual-use technology democratization (AI bio-design), labor market disruption visibility triggering political backlash, regulatory fragmentation creating compliance impossibility, technology adoption outpacing governance capacity",
+    "opportunities": "Quantum computing early adoption advantage, physical AI platform positioning, wellbeing-focused technology design, energy transition acceleration, efficiency-focused AI development"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "scan_date": "2026-01-12",
+  "scan_time": "06:05:00Z",
+  "timezone": "Asia/Seoul",
+  "time_window_hours": 24,
+  "strict_mode": true,
+  "total_signals_found": 8,
+  "source_tier": "TIER 1 - International Organizations & Government",
+  "signals": [
+    {
+      "signal_id": "T1-2026-0112-001",
+      "title": "United Nations Announces Global Economic Report with Projections of Slower Growth",
+      "source_name": "United Nations Sustainable Development",
+      "source_type": "international_organization",
+      "url": "https://www.un.org/sustainabledevelopment/blog/2026/01/media-advisory-wesp2026/",
+      "published_date": "2026-01-10",
+      "category": "Economic",
+      "summary": "UN released World Economic Situation and Prospects 2026 report projecting the world economy faces risk of prolonged period of slower growth compared to pre-pandemic era. Global growth expected at 3.3% in 2025-2026, below historical average of 3.7%.",
+      "why_weak_signal": "Signals potential structural shift in global growth trajectory - indicates move from post-pandemic recovery to new normal of permanently lower growth rates. Could trigger policy shifts across nations and international institutions.",
+      "significance": 4,
+      "confidence": 0.85,
+      "key_entities": [
+        "United Nations",
+        "Global Economy",
+        "Growth Forecasts",
+        "Pre-pandemic Baseline"
+      ],
+      "steeps_category": "Economic",
+      "impact_area": "Global macroeconomic stability, fiscal policy recalibration",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-002",
+      "title": "OECD Announces Historic Agreement on Global Minimum Tax Package - Pillar Two Side-by-Side Arrangement",
+      "source_name": "OECD",
+      "source_type": "international_organization",
+      "url": "https://www.oecd.org/en/about/news/press-releases/2026/01/improving-public-spending-efficiency-skills-and-housing-policies-would-boost-portugal-s-economy-and-living-standards.html",
+      "published_date": "2026-01-08",
+      "category": "Political/Economic",
+      "summary": "147 countries and jurisdictions within OECD/G20 BEPS framework agreed on 'side-by-side' arrangement for coordinated global minimum tax operations in digitalized economy. Represents comprehensive political and technical agreement after months of negotiation.",
+      "why_weak_signal": "Signals fundamental reshaping of international corporate taxation - move toward harmonized global tax rules challenges traditional national tax sovereignty. Early indicator of convergence on taxing digital economy, with implications for capital flows and FDI patterns.",
+      "significance": 5,
+      "confidence": 0.90,
+      "key_entities": [
+        "OECD",
+        "Global Minimum Tax",
+        "Base Erosion and Profit Shifting",
+        "G20",
+        "Corporate Taxation"
+      ],
+      "steeps_category": "Political",
+      "impact_area": "International governance, corporate finance, sovereign fiscal policy",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-003",
+      "title": "EU Carbon Border Adjustment Mechanism (CBAM) Enters Definitive Phase - First Global Carbon Border Tax",
+      "source_name": "European Commission",
+      "source_type": "government",
+      "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en",
+      "published_date": "2026-01-01",
+      "category": "Environmental/Economic",
+      "summary": "EU CBAM moves from transitional to definitive phase on January 1, 2026. Importers must purchase CBAM certificates for emissions embedded in goods (€70-€100 per tonne CO2). Covers cement, steel, aluminum, fertilizers, electricity, hydrogen.",
+      "why_weak_signal": "Represents first fully operational border carbon adjustment policy globally - signals shift from voluntary climate action to mandatory trade-linked climate enforcement. Could trigger protectionist trade responses and accelerate fragmentation of global trade system.",
+      "significance": 5,
+      "confidence": 0.95,
+      "key_entities": [
+        "European Union",
+        "Carbon Border Adjustment",
+        "Climate Policy",
+        "Trade Regulation",
+        "Industrial Goods"
+      ],
+      "steeps_category": "Environmental",
+      "impact_area": "Global trade system, climate policy implementation, industrial competitiveness",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-004",
+      "title": "WHO Releases Updated HIV Clinical Management Recommendations - Shift to Simplified Treatment Protocols",
+      "source_name": "World Health Organization",
+      "source_type": "international_organization",
+      "url": "https://www.who.int/news/item/07-01-2026-who-releases-updated-recommendations-on-hiv-clinical-management",
+      "published_date": "2026-01-07",
+      "category": "Social/Technological",
+      "summary": "WHO updated HIV clinical guidelines shifting to dolutegravir-based regimens, long-acting injectable therapy for adherence, and simplified TB prevention (3HP). Emphasizes treatment simplification and improved adherence for country programs.",
+      "why_weak_signal": "Signals evolution in global health protocols toward simplified, scalable treatment models - weak indicator of shift from complex to accessible healthcare. Could influence how health systems in developing countries structure medication supply chains and treatment programs.",
+      "significance": 3,
+      "confidence": 0.85,
+      "key_entities": [
+        "WHO",
+        "HIV Treatment",
+        "Antiretroviral Therapy",
+        "Global Health",
+        "Treatment Simplification"
+      ],
+      "steeps_category": "Social",
+      "impact_area": "Global health access, medication supply chains, treatment outcomes",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-005",
+      "title": "ILO Announces Global Labour Market Trends Update - Seafarer Minimum Wage Increased",
+      "source_name": "International Labour Organization",
+      "source_type": "international_organization",
+      "url": "https://www.ilo.org/resource/news/ilo-release-2026-update-global-labour-market-trends",
+      "published_date": "2026-01-14",
+      "category": "Economic/Social",
+      "summary": "ILO releasing 2026 update on global labour market trends and agreed landmark increase in seafarer minimum wage from US$673 to US$690 (Jan 2026), US$704 (Jan 2027), US$715 (Jan 2028). Represents coordinated global labor standard increase.",
+      "why_weak_signal": "Signals coordinated push for wage standardization in maritime sector - weak signal of broader movement toward global labor floor standards amid inflationary pressures. May precede similar efforts in other industries facing global supply chain restructuring.",
+      "significance": 3,
+      "confidence": 0.80,
+      "key_entities": [
+        "ILO",
+        "Labour Market",
+        "Seafarer Wages",
+        "Global Standards",
+        "Maritime Industry"
+      ],
+      "steeps_category": "Economic",
+      "impact_area": "Global labor standards, maritime wages, cost structures for international shipping",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-006",
+      "title": "IMF Reports Elevated Financial Stability Risks - Emerging Market Debt Vulnerabilities and Repricing Concerns",
+      "source_name": "International Monetary Fund",
+      "source_type": "international_organization",
+      "url": "https://www.imf.org/en/publications/gfsr",
+      "published_date": "2025-10-14",
+      "category": "Economic/Political",
+      "summary": "IMF Global Financial Stability Report warns of elevated financial stability risks amid stretched asset valuations, sovereign bond market pressures, and rising nonbank financial institution roles. Disorderly global market repricing identified as most acute risk to global economy in 2026.",
+      "why_weak_signal": "Signals potential inflection point in financial markets - indicates conditions resembling pre-crisis environments (high leverage, stretched valuations, nonbank intermediation). Early warning of possible market correction with cascade effects on emerging markets and developing economies.",
+      "significance": 4,
+      "confidence": 0.88,
+      "key_entities": [
+        "IMF",
+        "Financial Stability",
+        "Emerging Markets",
+        "Debt Vulnerabilities",
+        "Asset Valuations"
+      ],
+      "steeps_category": "Economic",
+      "impact_area": "Global financial system stability, emerging market capital flows, asset pricing",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-007",
+      "title": "Bank of Japan Signals Continued Interest Rate Increases - Exit from Ultra-Loose Monetary Policy Accelerating",
+      "source_name": "Bank of Japan",
+      "source_type": "central_bank",
+      "url": "https://www.japantimes.co.jp/business/2026/01/09/economy/bank-of-japan-regional-report-more-rate-hikes/",
+      "published_date": "2026-01-09",
+      "category": "Economic/Political",
+      "summary": "BOJ Governor Ueda publicly reaffirmed intention to continue raising benchmark rates if economic and price trends align with forecasts. BOJ raised rates to 0.75% in December (highest since 1995), with markets expecting 1.0% by July 2026 and up to 1.25% by year-end.",
+      "why_weak_signal": "Signals acceleration of global monetary policy tightening cycle beyond Western central banks - weak indicator of coordinated exit from ultra-loose policies. Could trigger currency volatility, emerging market capital outflows, and yen appreciation impacts on global trade.",
+      "significance": 4,
+      "confidence": 0.90,
+      "key_entities": [
+        "Bank of Japan",
+        "Monetary Policy",
+        "Interest Rates",
+        "Yen",
+        "Inflation"
+      ],
+      "steeps_category": "Economic",
+      "impact_area": "Global monetary conditions, exchange rates, emerging market financing",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    },
+    {
+      "signal_id": "T1-2026-0112-008",
+      "title": "US Withdrawal from 66 International Organizations - Unprecedented Pullback from Multilateral System",
+      "source_name": "Trump Administration / Union of Concerned Scientists",
+      "source_type": "government",
+      "url": "https://www.ucs.org/about/news/trump-sinks-new-low-announcing-us-withdrawal-66-international-organizations-including",
+      "published_date": "2026-01-07",
+      "category": "Political",
+      "summary": "Trump Administration announced US withdrawal from 66 international organizations including UNFCCC, IPCC, and multiple UN agencies. Presidential memorandum directs US departments to immediately withdraw from dozens of conventions and treaties affecting 31 UN entities.",
+      "why_weak_signal": "Signals fundamental restructuring of multilateral global governance - represents unprecedented scale of unilateral withdrawal from international institutions. Weak indicator of potential bifurcation of global system into competing blocs with separate institutional frameworks for climate, trade, health, and development.",
+      "significance": 5,
+      "confidence": 0.95,
+      "key_entities": [
+        "United States",
+        "Multilateral Institutions",
+        "UNFCCC",
+        "IPCC",
+        "UN System"
+      ],
+      "steeps_category": "Political",
+      "impact_area": "Global governance, climate cooperation, international treaties, development aid",
+      "scanned_at": "2026-01-12T06:05:00Z"
+    }
+  ],
+  "summary": {
+    "highest_significance_signals": [
+      "T1-2026-0112-002 (OECD Global Minimum Tax)",
+      "T1-2026-0112-003 (EU CBAM Implementation)",
+      "T1-2026-0112-008 (US Withdrawal from International Organizations)"
+    ],
+    "category_distribution": {
+      "Economic": 4,
+      "Political": 3,
+      "Environmental": 1,
+      "Social": 1
+    },
+    "key_themes": [
+      "Fragmentation of global governance systems",
+      "Acceleration of climate-related trade regulation",
+      "Monetary policy normalization across major economies",
+      "Emergence of new international tax frameworks",
+      "Elevated financial system vulnerabilities"
+    ]
+  }
+}

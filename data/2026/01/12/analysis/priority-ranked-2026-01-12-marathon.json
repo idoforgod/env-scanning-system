@@ -1,0 +1,450 @@
+{
+  "ranking_date": "2026-01-12",
+  "total_ranked": 18,
+  "top_10_summary": {
+    "signals": [
+      "RAW-2026-0112-T001",
+      "RAW-2026-0112-T003",
+      "RAW-2026-0112-P005",
+      "RAW-2026-0112-P001",
+      "RAW-2026-0112-EN001",
+      "RAW-2026-0112-E003",
+      "RAW-2026-0112-EN002",
+      "RAW-2026-0112-S001",
+      "RAW-2026-0112-EN003",
+      "RAW-2026-0112-E001"
+    ],
+    "categories": {
+      "Technological": 3,
+      "Political": 3,
+      "Environmental": 3,
+      "Economic": 1
+    },
+    "avg_priority_score": 7.84
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "signal_id": "RAW-2026-0112-T001",
+      "title": "IBM Announces 2026 as Year Quantum Outperforms Classical Computing",
+      "category": "Technological",
+      "scores": {
+        "impact": 9,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 9
+      },
+      "weighted_score": 8.5,
+      "score_rationale": {
+        "impact": "양자컴퓨팅이 고전 컴퓨팅을 초월하는 것은 약학개발, 재료과학, 금융최적화 등 다중 산업에 혁신적 영향. 글로벌 수준의 게임체인져.",
+        "probability": "IBM의 공식 공표로 신뢰도 높음. 이미 기술적 진전이 가시화됨. 2026년 중 현실화 예상.",
+        "urgency": "2026년이 기준연도. 관련 산업 및 기업의 즉각적 대응 필요(3-6개월 내).",
+        "novelty": "양자우월성(Quantum Supremacy)의 실무 응용 첫 사례. 역사적 기술 전환점."
+      }
+    },
+    {
+      "rank": 2,
+      "signal_id": "RAW-2026-0112-T003",
+      "title": "Tesla Plans 50,000 Optimus Humanoid Robots at $20K-30K in 2026",
+      "category": "Technological",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 8
+      },
+      "weighted_score": 7.9,
+      "score_rationale": {
+        "impact": "제조업, 물류, 서비스 산업의 구조적 변화 예상. 대규모 노동력 대체 영향. 다중 산업 파급.",
+        "probability": "Tesla의 구체적 생산계획 발표. 업계 전문가 의견으로 2026-2028년 산업화 예측.",
+        "urgency": "2026년 대량 생산 계획으로 긴급성 높음. 공급망, 노동 정책 대응 필요.",
+        "novelty": "대량 가격대 인간형 로봇의 상용화. 고가 기술에서 대중화 전환점."
+      }
+    },
+    {
+      "rank": 3,
+      "signal_id": "RAW-2026-0112-P005",
+      "title": "Water Rights Conflicts to Rise Amid Semiconductor and AI Demand",
+      "category": "Political",
+      "scores": {
+        "impact": 8,
+        "probability": 9,
+        "urgency": 8,
+        "novelty": 7
+      },
+      "weighted_score": 8.1,
+      "score_rationale": {
+        "impact": "반도체/AI 산업의 핵심 제약 요소로 등장. 지역 분쟁, 국제 관계에 영향. 자원 안보와 기술력 연결.",
+        "probability": "이미 진행 중인 현상. 반도체/데이터센터 수요 증가 확실. 물 부족 가속화 추세.",
+        "urgency": "2026년 중 심화 예상. 기업, 정부의 즉시 전략 수립 필요.",
+        "novelty": "기술 산업의 물 부족 연결은 새로운 리스크 범주. 신흥 갈등 요인."
+      }
+    },
+    {
+      "rank": 4,
+      "signal_id": "RAW-2026-0112-P001",
+      "title": "Governments Use Industrial Subsidies to Improve Economic Security",
+      "category": "Political",
+      "scores": {
+        "impact": 9,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 6
+      },
+      "weighted_score": 8.0,
+      "score_rationale": {
+        "impact": "글로벌 무역 질서 재편. 모든 산업 공급망에 영향. 지정학적 경제전 심화.",
+        "probability": "이미 진행 중(US, EU, China 정책). 2026년 가속화 확실.",
+        "urgency": "글로벌 기업 전략의 즉각적 재구성 필요. 공급망 재조정 긴급.",
+        "novelty": "산업정책 강화는 주지된 추세지만, 2026년의 구체적 전개와 규모는 신규."
+      }
+    },
+    {
+      "rank": 5,
+      "signal_id": "RAW-2026-0112-EN001",
+      "title": "Trump Pulls U.S. Out of Major Climate Organizations",
+      "category": "Environmental",
+      "scores": {
+        "impact": 8,
+        "probability": 9,
+        "urgency": 9,
+        "novelty": 8
+      },
+      "weighted_score": 8.2,
+      "score_rationale": {
+        "impact": "글로벌 기후 거버넌스 약화. 국제 협력 체제 균열. 모든 산업의 환경 규제 완화 신호.",
+        "probability": "이미 실행 중인 정책. 확정도 매우 높음.",
+        "urgency": "즉각적 정책 변화 야기. 기업의 ESG/규제 전략 재검토 급박.",
+        "novelty": "미국의 국제 기후 기구 탈퇴는 역사적 선례. 새로운 정책 방향성."
+      }
+    },
+    {
+      "rank": 6,
+      "signal_id": "RAW-2026-0112-E003",
+      "title": "All Wall Street Forecasters Predict Stock Rally for Fourth Consecutive Year",
+      "category": "Economic",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 6,
+        "novelty": 6
+      },
+      "weighted_score": 7.2,
+      "score_rationale": {
+        "impact": "AI 슈퍼사이클 기반 시장 낙관론. 자본 흐름 증가. 기술 산업 호황 신호.",
+        "probability": "월스트릿 만장일치. 시장 컨센서스 매우 높음. AI 수익성 증대 실증.",
+        "urgency": "투자 결정 시기. 중기 사업 계획 수립 필요(3-6개월).",
+        "novelty": "AI 슈퍼사이클 개념은 기존이지만, 4년 연속 랠리 예측은 주목할 만함."
+      }
+    },
+    {
+      "rank": 7,
+      "signal_id": "RAW-2026-0112-EN002",
+      "title": "Global Solar Installations Surpass 500 GW AC in 2025",
+      "category": "Environmental",
+      "scores": {
+        "impact": 7,
+        "probability": 9,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 7.4,
+      "score_rationale": {
+        "impact": "재생에너지 주도 에너지 전환 가속화. 다중 산업 공급망 변화(제조, 건설).",
+        "probability": "이미 발생한 현실(2025년 말). 2026년 추세 지속 확실.",
+        "urgency": "에너지 인프라 투자 결정 필요(6-12개월). 정책 수립 시점.",
+        "novelty": "500GW 넘어가는 마일스톤은 새로운 단계 진입 신호. 신흥 기술 활용 가속화."
+      }
+    },
+    {
+      "rank": 8,
+      "signal_id": "RAW-2026-0112-S001",
+      "title": "Generation Alpha Takes Over Social Media in 2026",
+      "category": "Social",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 6,
+        "novelty": 8
+      },
+      "weighted_score": 7.4,
+      "score_rationale": {
+        "impact": "소셜미디어 생태계 재편. 광고, 콘텐츠 산업 변화. 플랫폼 비즈니스 모델 조정.",
+        "probability": "세대 진입은 시간 문제. YouTube 추월 예측은 강한 근거 기반.",
+        "urgency": "미디어 회사의 콘텐츠 전략 조정 필요(6-12개월).",
+        "novelty": "Generation Alpha의 미디어 주도권 전환은 새로운 시대 진입 신호."
+      }
+    },
+    {
+      "rank": 9,
+      "signal_id": "RAW-2026-0112-EN003",
+      "title": "U.S. to Install 15 GW of Battery Storage in 2026",
+      "category": "Environmental",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 6.9,
+      "score_rationale": {
+        "impact": "재생에너지 저장 인프라 구축. 그리드 안정성 강화. 에너지 산업 투자 가속화.",
+        "probability": "구체적 계획 수치 제시. 미국 정책 지원 기반 높음.",
+        "urgency": "에너지 인프라 프로젝트 진행 중(12개월).",
+        "novelty": "15GW 규모는 새로운 배터리 저장 시대 도래 신호. 기술 상용화 단계."
+      }
+    },
+    {
+      "rank": 10,
+      "signal_id": "RAW-2026-0112-E001",
+      "title": "Goldman Sachs Projects 2.8% Global Growth in 2026",
+      "category": "Economic",
+      "scores": {
+        "impact": 6,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 5
+      },
+      "weighted_score": 6.2,
+      "score_rationale": {
+        "impact": "글로벌 경제 기초 시나리오. G20 국가(세계 GDP 80%) 성장 예측. 광범위한 산업 영향.",
+        "probability": "골드만삭스 리서치 근거. 컨센서스보다 낙관적이나 타당성 있음.",
+        "urgency": "연간 경영 계획 수립(3-6개월). 중기 전략 반영.",
+        "novelty": "2026년 특화 예측이나, 경제 성장률 전망은 주기적 발표. 신규성 낮음."
+      }
+    },
+    {
+      "rank": 11,
+      "signal_id": "RAW-2026-0112-E002",
+      "title": "U.S. Expected to Outperform with 2.6% Growth in 2026",
+      "category": "Economic",
+      "scores": {
+        "impact": 6,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 5
+      },
+      "weighted_score": 6.2,
+      "score_rationale": {
+        "impact": "미국 경제 강세. 글로벌 시장에 연쇄 영향. 기업 투자 심화 신호.",
+        "probability": "JP Morgan 리서치. 정책 변수(감세, 관세 완화) 반영.",
+        "urgency": "연간 사업 계획 수립(3-6개월).",
+        "novelty": "미국 성장률 전망은 규칙적 분석. 특별히 새로운 통찰 없음."
+      }
+    },
+    {
+      "rank": 12,
+      "signal_id": "RAW-2026-0112-P004",
+      "title": "U.S. Foreign Aid Slashed to $38.4 Billion in FY2025",
+      "category": "Political",
+      "scores": {
+        "impact": 6,
+        "probability": 9,
+        "urgency": 7,
+        "novelty": 7
+      },
+      "weighted_score": 7.1,
+      "score_rationale": {
+        "impact": "개발도상국 영향 중심. 글로벌 개발 협력 약화. NGO, 다자기구 타격.",
+        "probability": "이미 집행된 정책. 실현도 최고 수준.",
+        "urgency": "2026년 예산 전망 변화. 개발 프로젝트 재검토 필수(3-6개월).",
+        "novelty": "미국의 대외원조 급감은 정책 방향 전환 신호. 국제 협력 체계 재편."
+      }
+    },
+    {
+      "rank": 13,
+      "signal_id": "RAW-2026-0112-SP001",
+      "title": "Emotional Fitness Treated Like Physical Fitness in 2026",
+      "category": "Spiritual",
+      "scores": {
+        "impact": 5,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 7
+      },
+      "weighted_score": 6.0,
+      "score_rationale": {
+        "impact": "웰니스 산업 세분화. HR 정책 변화. 중소 기업 웰니스 프로그램 확대.",
+        "probability": "웰니스 트렌드 강화 추세. 기업 채용/유지 경쟁에서 증가 중.",
+        "urgency": "HR 정책 수립(6-12개월). 중기 범위.",
+        "novelty": "감정 피트니스의 구조화된 프로그램화는 새로운 접근. 신흥 카테고리."
+      }
+    },
+    {
+      "rank": 14,
+      "signal_id": "RAW-2026-0112-SP002",
+      "title": "Mindfulness Linked to Brain Changes in Memory and Emotion Centers",
+      "category": "Spiritual",
+      "scores": {
+        "impact": 4,
+        "probability": 8,
+        "urgency": 4,
+        "novelty": 6
+      },
+      "weighted_score": 5.8,
+      "score_rationale": {
+        "impact": "개인 웰니스 수준. 광범위 산업 영향 제한적. HR/교육 섹터 일부 영향.",
+        "probability": "과학적 근거 확립. 신경과학 연구 강화. 신뢰도 높음.",
+        "urgency": "웰니스 프로그램 개선(12-24개월). 장기 계획.",
+        "novelty": "명상의 뇌 변화 연결은 알려진 사실. 과학적 증거 강화는 신규."
+      }
+    },
+    {
+      "rank": 15,
+      "signal_id": "RAW-2026-0112-SP003",
+      "title": "Spirituality Shows Lasting Positive Effects on Mental Health in 2026",
+      "category": "Spiritual",
+      "scores": {
+        "impact": 4,
+        "probability": 7,
+        "urgency": 4,
+        "novelty": 5
+      },
+      "weighted_score": 5.4,
+      "score_rationale": {
+        "impact": "개인 건강 차원. 조직 문화 일부 영향. 대규모 산업 파급 제한적.",
+        "probability": "웰니스 연구 강화. 트렌드 확인. 모멘텀 있음.",
+        "urgency": "문화/HR 정책(12-24개월). 중기 이상.",
+        "novelty": "영성과 정신건강 연결은 기존 인식. 과학적 재확인 수준."
+      }
+    },
+    {
+      "rank": 16,
+      "signal_id": "RAW-2026-0112-SP004",
+      "title": "2026 Heralds Return of Connection as Pillar of Health",
+      "category": "Spiritual",
+      "scores": {
+        "impact": 5,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 6
+      },
+      "weighted_score": 5.9,
+      "score_rationale": {
+        "impact": "커뮤니티 비즈니스 성장. 이벤트/호스피탈리티 산업 영향. 광범위성 중간.",
+        "probability": "팬데믹 후 디지털 피로 현상 확인. 사회 심리 추세 명확.",
+        "urgency": "이벤트/커뮤니티 전략(6-12개월).",
+        "novelty": "연결의 회귀는 팬데믹 후 트렌드. 2026년 강화는 신규."
+      }
+    },
+    {
+      "rank": 17,
+      "signal_id": "RAW-2026-0112-SP005",
+      "title": "Holistic Wellness Approach Gains Momentum in 2026",
+      "category": "Spiritual",
+      "scores": {
+        "impact": 4,
+        "probability": 6,
+        "urgency": 4,
+        "novelty": 4
+      },
+      "weighted_score": 5.0,
+      "score_rationale": {
+        "impact": "웰니스 산업 개별 부문. 광범위 경제 영향 제한.",
+        "probability": "웰니스 업계 내 진전. 주류화 진행 중.",
+        "urgency": "웰니스 프로그램 개선(12개월 이상).",
+        "novelty": "홀리스틱 웰니스는 오래된 개념. 2026년의 추진 강화는 주기적 변동."
+      }
+    },
+    {
+      "rank": 18,
+      "signal_id": "RAW-2026-0112-EN004",
+      "title": "Global AI Data Centers Expected Major Power and Water Expansion",
+      "category": "Environmental",
+      "scores": {
+        "impact": 5,
+        "probability": 7,
+        "urgency": 6,
+        "novelty": 5
+      },
+      "weighted_score": 5.9,
+      "score_rationale": {
+        "impact": "에너지/물 인프라 투자 증가. 전력 산업, 공공 정책 영향. 지역적 차별화.",
+        "probability": "AI 데이터센터 증가 확실. 전력/물 수요 투명함.",
+        "urgency": "인프라 계획(12-18개월). 중기.",
+        "novelty": "AI 데이터센터의 환경 영향은 알려진 이슈. 구체적 2026년 수치는 신규."
+      }
+    }
+  ],
+  "distribution": {
+    "high_priority": {
+      "count": 5,
+      "threshold": 7.0,
+      "signals": [
+        "RAW-2026-0112-T001",
+        "RAW-2026-0112-T003",
+        "RAW-2026-0112-P005",
+        "RAW-2026-0112-P001",
+        "RAW-2026-0112-EN001"
+      ]
+    },
+    "medium_priority": {
+      "count": 10,
+      "threshold": 5.0,
+      "signals": [
+        "RAW-2026-0112-E003",
+        "RAW-2026-0112-EN002",
+        "RAW-2026-0112-S001",
+        "RAW-2026-0112-EN003",
+        "RAW-2026-0112-E001",
+        "RAW-2026-0112-E002",
+        "RAW-2026-0112-P004",
+        "RAW-2026-0112-SP001",
+        "RAW-2026-0112-SP002",
+        "RAW-2026-0112-SP004"
+      ]
+    },
+    "low_priority": {
+      "count": 3,
+      "threshold": 0,
+      "signals": [
+        "RAW-2026-0112-SP003",
+        "RAW-2026-0112-SP005",
+        "RAW-2026-0112-EN004"
+      ]
+    }
+  },
+  "scoring_summary": {
+    "methodology": "가중 우선순위 점수 = (영향도 × 0.40) + (발생가능성 × 0.30) + (긴급도 × 0.20) + (신규성 × 0.10)",
+    "scoring_dates": "2026-01-12",
+    "average_scores": {
+      "impact_avg": 6.4,
+      "probability_avg": 7.7,
+      "urgency_avg": 6.3,
+      "novelty_avg": 6.4,
+      "weighted_avg": 6.8
+    },
+    "category_distribution": {
+      "Technological": {
+        "count": 2,
+        "avg_score": 8.2
+      },
+      "Political": {
+        "count": 3,
+        "avg_score": 7.5
+      },
+      "Environmental": {
+        "count": 5,
+        "avg_score": 6.8
+      },
+      "Economic": {
+        "count": 3,
+        "avg_score": 6.5
+      },
+      "Social": {
+        "count": 1,
+        "avg_score": 7.4
+      },
+      "Spiritual": {
+        "count": 4,
+        "avg_score": 5.5
+      }
+    }
+  },
+  "quality_notes": {
+    "scoring_confidence": "높음 - 모든 신호가 구체적 근거와 수치 기반 데이터 포함",
+    "top_5_highlights": "기술(양자컴퓨팅, 휴머노이드로봇), 정치(물 갈등, 산업정책, 기후 정책), 환경(정책 변화) 섹터에 집중",
+    "distribution_pattern": "고우선순위 5개(28%), 중우선순위 10개(56%), 저우선순위 3개(16%) - 균형잡힌 분포",
+    "sector_insights": "기술/정책 섹터 점수 높음(7.5-8.2), 영성/웰니스 섹터 낮음(5.5), 환경/경제 중간 수준(6.5-6.8)"
+  }
+}

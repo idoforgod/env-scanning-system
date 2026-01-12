@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "created": "2026-01-12",
+    "description": "환경스캐닝 파일 구조 설정 (재구성 버전)"
+  },
+  "structure": {
+    "base_path": ".",
+    "date_format": "YYYY-MM-DD",
+    "hierarchy": {
+      "data": "data/{year}/{month}/{day}/{type}/",
+      "weekly": "data/weekly/{year}/W{week}/",
+      "signals": "signals/",
+      "config": "config/",
+      "src": "src/scripts/",
+      "logs": "logs/{year}/{month}/",
+      "context": "context/",
+      "docs": "docs/"
+    }
+  },
+  "directories": {
+    "data": {
+      "description": "모든 스캔 결과 데이터 (날짜별)",
+      "structure": "data/{year}/{month}/{day}/",
+      "subdirs": ["raw", "filtered", "structured", "analysis", "reports"],
+      "example": "data/2026/01/12/raw/scanned-signals.json"
+    },
+    "signals": {
+      "description": "마스터 신호 데이터베이스",
+      "structure": "signals/",
+      "subdirs": ["snapshots", "backups"],
+      "example": "signals/database.json"
+    },
+    "config": {
+      "description": "설정 파일",
+      "structure": "config/",
+      "subdirs": ["evolution"],
+      "example": "config/sources.yaml"
+    },
+    "src": {
+      "description": "소스 코드",
+      "structure": "src/scripts/",
+      "subdirs": ["crawlers", "processors", "utils", "runners"],
+      "example": "src/scripts/crawlers/naver_news_crawler.py"
+    },
+    "logs": {
+      "description": "실행 로그",
+      "structure": "logs/{year}/{month}/",
+      "example": "logs/2026/01/checkpoint-12.json"
+    },
+    "context": {
+      "description": "컨텍스트 및 재개 파일",
+      "structure": "context/",
+      "example": "context/previous-signals.json"
+    },
+    "docs": {
+      "description": "문서",
+      "subdirs": ["design", "archive"],
+      "example": "docs/design/MARATHON-MODE-DESIGN.md"
+    }
+  },
+  "naming_conventions": {
+    "daily_report": "environmental-scan.md",
+    "weekly_summary": "weekly-summary.md",
+    "raw_scan": "scanned-signals.json",
+    "filtered": "filtered-signals.json",
+    "structured": "structured-signals.json",
+    "analysis": "{type}.json"
+  },
+  "date_extraction_patterns": [
+    {
+      "pattern": "data/(\\d{4})/(\\d{2})/(\\d{2})/",
+      "description": "날짜 경로에서 추출",
+      "groups": ["year", "month", "day"]
+    }
+  ],
+  "auto_organize": {
+    "enabled": true,
+    "triggers": {
+      "after_marathon_complete": true,
+      "after_daily_scan_complete": true
+    },
+    "log_changes": true
+  }
+}

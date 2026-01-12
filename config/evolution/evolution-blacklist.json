@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-01-12",
+    "description": "자동 등록 차단 도메인/소스 목록",
+    "last_updated": "2026-01-12"
+  },
+  "blocked_domains": {
+    "misinformation_risk": {
+      "description": "허위정보/음모론 위험 사이트",
+      "domains": [
+        "infowars.com",
+        "naturalnews.com",
+        "beforeitsnews.com",
+        "thegatewaypundit.com",
+        "zerohedge.com"
+      ],
+      "reason": "신뢰도 심각 문제"
+    },
+    "content_farms": {
+      "description": "콘텐츠 팜/저품질 집합",
+      "domains": [
+        "buzzfeed.com",
+        "huffpost.com",
+        "dailymail.co.uk",
+        "thesun.co.uk",
+        "nypost.com"
+      ],
+      "reason": "저품질 신호 생성"
+    },
+    "aggregators_only": {
+      "description": "집합체/재가공 사이트",
+      "domains": [
+        "news.google.com",
+        "news.yahoo.com",
+        "msn.com",
+        "flipboard.com",
+        "feedly.com"
+      ],
+      "reason": "원본 소스 아님"
+    },
+    "social_platforms": {
+      "description": "소셜 미디어 플랫폼",
+      "domains": [
+        "twitter.com",
+        "x.com",
+        "facebook.com",
+        "instagram.com",
+        "tiktok.com",
+        "reddit.com",
+        "linkedin.com"
+      ],
+      "reason": "개인 의견/검증 불가"
+    },
+    "ai_generated": {
+      "description": "AI 생성 콘텐츠 사이트",
+      "domains": [
+        "medium.com",
+        "substack.com"
+      ],
+      "reason": "품질 불균일, 개별 저자 검증 필요",
+      "exception": "verified_authors 목록의 특정 저자는 예외"
+    }
+  },
+  "blocked_patterns": {
+    "description": "도메인 패턴 기반 차단",
+    "patterns": [
+      "*.blogspot.com",
+      "*.wordpress.com",
+      "*.wixsite.com",
+      "*.squarespace.com",
+      "*.weebly.com"
+    ],
+    "reason": "개인 블로그/검증 불가"
+  },
+  "blocked_characteristics": {
+    "description": "특성 기반 자동 차단",
+    "rules": [
+      {
+        "characteristic": "no_https",
+        "action": "block",
+        "reason": "보안 미흡"
+      },
+      {
+        "characteristic": "domain_age_under_1_year",
+        "action": "require_manual_review",
+        "reason": "신규 사이트 검증 필요"
+      },
+      {
+        "characteristic": "no_author_attribution",
+        "action": "downgrade_tier",
+        "reason": "저자 불명"
+      },
+      {
+        "characteristic": "excessive_ads",
+        "action": "block",
+        "reason": "콘텐츠 팜 의심"
+      }
+    ]
+  },
+  "verified_exceptions": {
+    "description": "차단 목록 예외 - 수동 검증 완료",
+    "exceptions": [
+      {
+        "url": "https://stratechery.com",
+        "platform": "substack",
+        "author": "Ben Thompson",
+        "reason": "검증된 기술 분석가",
+        "verified_date": "2026-01-12"
+      },
+      {
+        "url": "https://www.axios.com",
+        "reason": "검증된 뉴스 소스",
+        "verified_date": "2026-01-12"
+      }
+    ]
+  },
+  "temporary_blocks": {
+    "description": "일시적 차단 (pSRT 급락 등)",
+    "sources": []
+  }
+}

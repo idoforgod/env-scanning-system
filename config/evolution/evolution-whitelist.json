@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-01-12",
+    "description": "자동 강등/퇴출 불가 보호 소스 목록",
+    "last_updated": "2026-01-12"
+  },
+  "protection_levels": {
+    "absolute": {
+      "description": "절대 보호 - 강등/퇴출 완전 불가",
+      "sources": [
+        {
+          "domain": "nature.com",
+          "name": "Nature",
+          "reason": "최고 권위 학술지",
+          "min_tier": 1
+        },
+        {
+          "domain": "science.org",
+          "name": "Science/AAAS",
+          "reason": "최고 권위 학술지",
+          "min_tier": 1
+        },
+        {
+          "domain": "who.int",
+          "name": "WHO",
+          "reason": "국제기구 공식 소스",
+          "min_tier": 1
+        },
+        {
+          "domain": "un.org",
+          "name": "United Nations",
+          "reason": "국제기구 공식 소스",
+          "min_tier": 1
+        },
+        {
+          "domain": "worldbank.org",
+          "name": "World Bank",
+          "reason": "국제기구 공식 소스",
+          "min_tier": 1
+        },
+        {
+          "domain": "imf.org",
+          "name": "IMF",
+          "reason": "국제기구 공식 소스",
+          "min_tier": 1
+        },
+        {
+          "domain": "oecd.org",
+          "name": "OECD",
+          "reason": "국제기구 공식 소스",
+          "min_tier": 1
+        },
+        {
+          "domain": "arxiv.org",
+          "name": "arXiv",
+          "reason": "핵심 프리프린트 서버",
+          "min_tier": 1
+        }
+      ]
+    },
+    "conditional": {
+      "description": "조건부 보호 - 강등 가능하나 퇴출 불가",
+      "sources": [
+        {
+          "domain": "brookings.edu",
+          "name": "Brookings Institution",
+          "reason": "핵심 싱크탱크",
+          "min_tier": 2
+        },
+        {
+          "domain": "cfr.org",
+          "name": "Council on Foreign Relations",
+          "reason": "핵심 싱크탱크",
+          "min_tier": 2
+        },
+        {
+          "domain": "rand.org",
+          "name": "RAND Corporation",
+          "reason": "핵심 싱크탱크",
+          "min_tier": 2
+        },
+        {
+          "domain": "weforum.org",
+          "name": "World Economic Forum",
+          "reason": "글로벌 트렌드 소스",
+          "min_tier": 2
+        },
+        {
+          "domain": "technologyreview.com",
+          "name": "MIT Technology Review",
+          "reason": "기술 트렌드 핵심",
+          "min_tier": 2
+        },
+        {
+          "domain": "reuters.com",
+          "name": "Reuters",
+          "reason": "핵심 통신사",
+          "min_tier": 2
+        },
+        {
+          "domain": "bloomberg.com",
+          "name": "Bloomberg",
+          "reason": "핵심 경제/금융 소스",
+          "min_tier": 2
+        },
+        {
+          "domain": "ft.com",
+          "name": "Financial Times",
+          "reason": "핵심 경제 언론",
+          "min_tier": 2
+        }
+      ]
+    },
+    "regional_core": {
+      "description": "지역 핵심 - 해당 지역 커버리지 유지용",
+      "sources": [
+        {
+          "domain": "yonhapnews.co.kr",
+          "name": "연합뉴스",
+          "reason": "한국 핵심 통신사",
+          "min_tier": 2,
+          "region": "korea"
+        },
+        {
+          "domain": "scmp.com",
+          "name": "South China Morning Post",
+          "reason": "중화권 핵심 소스",
+          "min_tier": 2,
+          "region": "china"
+        },
+        {
+          "domain": "nikkei.com",
+          "name": "Nikkei",
+          "reason": "일본 핵심 경제지",
+          "min_tier": 2,
+          "region": "japan"
+        }
+      ]
+    }
+  },
+  "steeps_protection": {
+    "description": "STEEPS 균형 유지를 위한 카테고리별 최소 소스 수",
+    "minimums": {
+      "Social": 10,
+      "Technological": 15,
+      "Economic": 12,
+      "Environmental": 8,
+      "Political": 10,
+      "Spiritual": 5
+    },
+    "action_on_violation": "block_deactivation"
+  }
+}

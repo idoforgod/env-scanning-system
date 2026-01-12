@@ -1,0 +1,527 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-12",
+    "scan_time": "10:30:00",
+    "scan_focus": "Manufacturing & Industrial Trends",
+    "target_sources": [
+      "IndustryWeek",
+      "Manufacturing.net",
+      "Plant Engineering",
+      "Assembly Magazine",
+      "Smart Manufacturing",
+      "CES 2026 Announcements",
+      "Industry Reports"
+    ],
+    "keywords": [
+      "Industry 4.0",
+      "smart factory",
+      "reshoring",
+      "supply chain resilience",
+      "industrial AI",
+      "digital twin",
+      "automation",
+      "robotics"
+    ],
+    "total_scanned": 25,
+    "scan_window_hours": 24,
+    "timezone": "Asia/Seoul"
+  },
+  "by_category": {
+    "Technological": 15,
+    "Economic": 6,
+    "Environmental": 2,
+    "Political": 1,
+    "Social": 1
+  },
+  "items": [
+    {
+      "raw_id": "RAW-2026-0112-MFG-001",
+      "title": "Siemens Unveils Digital Twin Composer at CES 2026",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-unveils-technologies-accelerate-industrial-ai-revolution-ces-2026",
+      "source_name": "Siemens Press",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "Siemens announced Digital Twin Composer at CES 2026, enabling organizations to create 3D virtual models of products, processes, or plants with real-time data integration. Available mid-2026 on Siemens Xcelerator Marketplace, combining comprehensive digital twins with NVIDIA Omniverse libraries and real-world engineering data.",
+      "key_entities": [
+        "Siemens",
+        "NVIDIA",
+        "Digital Twin Composer",
+        "Omniverse",
+        "CES 2026"
+      ],
+      "raw_content": "Digital Twin Composer brings together Siemens' comprehensive digital twin, simulations built using NVIDIA Omniverse libraries, and real-time, real-world engineering data. Organizations can create virtual 3D models and simulate effects from weather to engineering changes. Available on Siemens Xcelerator Marketplace mid-2026.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-002",
+      "title": "PepsiCo Announces Industry-First AI and Digital Twin Collaboration with Siemens and NVIDIA",
+      "url": "https://www.pepsico.com/newsroom/press-releases/2025/pepsico-announces-industry-first-ai-and-digital-twin-collaboration-with-siemens-and-nvidia",
+      "source_name": "PepsiCo Newsroom",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "PepsiCo partners with Siemens and NVIDIA to digitize U.S. manufacturing facilities using Digital Twin Composer. Achieving 90% issue detection before physical modifications, 20% throughput increase, and 10-15% capital expenditure reduction. First CPG company applying digital twins at this scale.",
+      "key_entities": [
+        "PepsiCo",
+        "Siemens",
+        "NVIDIA",
+        "Digital Twin",
+        "AI"
+      ],
+      "raw_content": "PepsiCo recreates every machine, conveyor, pallet route and operator path with physics-level accuracy. AI agents simulate and test system changes, identifying up to 90% of potential issues before physical modifications. Initial deployment delivered 20% throughput increase, faster design cycles, nearly 100% design validation, and 10-15% reductions in capital expenditure.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-003",
+      "title": "Global Industrial Robot Market Reaches All-Time High of $16.7 Billion",
+      "url": "https://ifr.org/ifr-press-releases/news/top-5-global-robotics-trends-2026",
+      "source_name": "International Federation of Robotics",
+      "source_type": "report",
+      "published_date": "2026-01-08",
+      "category_hint": "Economic",
+      "summary": "IFR announces global industrial robot installation market reached record $16.7 billion. Five key trends identified: AI autonomy, IT-OT convergence, humanoid reliability testing, safety/security challenges, and robots addressing labor gaps.",
+      "key_entities": [
+        "IFR",
+        "Industrial Robots",
+        "AI",
+        "Humanoids",
+        "Labor Gap"
+      ],
+      "raw_content": "Top 5 Global Robotics Trends 2026: 1) AI & Autonomy combining analytical AI for decision-making with generative AI for adaptability. 2) IT-OT convergence creating seamless data flow. 3) Humanoids expanding into warehousing and manufacturing. 4) Rising safety and security concerns with AI-driven autonomy. 5) Robots as allies in tackling labor shortages.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-004",
+      "title": "Embodied AI Ushers in New Robotics Era for Manufacturing",
+      "url": "https://www.assemblymag.com/articles/99744-embodied-ai-ushers-in-a-new-robotics-era",
+      "source_name": "Assembly Magazine",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Technological",
+      "summary": "ABI Research report reveals AI-augmented machines have achieved technological maturity for widespread adoption. Factory robots will soon tackle complex, dynamic, and dexterous tasks previously unattainable with traditional automation.",
+      "key_entities": [
+        "ABI Research",
+        "Embodied AI",
+        "Factory Robots",
+        "Automation"
+      ],
+      "raw_content": "Integration of artificial intelligence into robotics poised for significant expansion. AI-augmented machines reached technological maturity required for widespread adoption. Factory robots tackling complex, dynamic and dexterous tasks previously unattainable with traditional automation.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-005",
+      "title": "Boston Dynamics Atlas Humanoid Enters Production in 2026",
+      "url": "https://www.automate.org/robotics/industry-insights/boston-dynamics-to-begin-production-on-redesigned-atlas-humanoid-in-2026",
+      "source_name": "Automate.org",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Technological",
+      "summary": "Boston Dynamics debuts production version of electric Atlas humanoid at CES 2026. First deployments at Hyundai's Robotics Metaplant Application Center and Google DeepMind. Hyundai targeting 30,000 units/year production capacity from single factory.",
+      "key_entities": [
+        "Boston Dynamics",
+        "Atlas",
+        "Hyundai",
+        "Google DeepMind",
+        "Humanoid Robots"
+      ],
+      "raw_content": "Boston Dynamics' production Atlas humanoid announced at CES 2026 with embodied AI partnership with Google's DeepMind. First models deploying in Hyundai's Robotics Metaplant Application Center (RMAC) and Google's DeepMind offices. Hyundai's $26 billion U.S. manufacturing investment puts robotics division on track for ~30,000 systems/year from single factory.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-006",
+      "title": "Qualcomm Unveils Dragonwing IQ10 Robotics Platform at CES 2026",
+      "url": "https://www.automate.org/news/ces-2026-qualcomm-targets-nvidia-jetson-with-new-robotics-developer-platform",
+      "source_name": "Automate.org",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "Qualcomm announces Dragonwing IQ10 with 18-core CPU for energy-efficient robotics from industrial AMRs to humanoids. Launch partners include Figure, KUKA Robotics, VinMotion. Qualcomm targets $1 trillion physical AI market by 2040.",
+      "key_entities": [
+        "Qualcomm",
+        "Dragonwing IQ10",
+        "KUKA",
+        "Figure",
+        "AMR"
+      ],
+      "raw_content": "Dragonwing IQ10 processor delivers high-performance, energy-efficient 'Brain of the Robot' capabilities. Supports advanced perception, motion planning with VLAs and VLMs for generalized manipulation and human-robot interaction. Launch partners: Advantech, APLUX, AutoCore, Booster, Figure, KUKA Robotics, Robotec.ai. Physical AI market projected at $1 trillion by 2040.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-007",
+      "title": "Caterpillar and NVIDIA Expand Collaboration on Physical AI for Heavy Industry",
+      "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/cat-nvidia-collab.html",
+      "source_name": "Caterpillar",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Technological",
+      "summary": "Caterpillar announces expanded NVIDIA collaboration at CES 2026. Debuts Cat AI Assistant using NVIDIA Riva speech models. Using NVIDIA AI Factory to transform manufacturing with digital twins on Omniverse. $100M commitment over five years for workforce training.",
+      "key_entities": [
+        "Caterpillar",
+        "NVIDIA",
+        "Cat AI Assistant",
+        "Digital Twin",
+        "Workforce Training"
+      ],
+      "raw_content": "Cat AI Assistant built using NVIDIA Riva open speech models delivering leading accuracy and lifelike voices. Caterpillar building physically accurate digital twins of factories on NVIDIA Omniverse/OpenUSD to design, simulate, optimize layouts before real-world building. Manufacturing data platform uses accelerated AI for forecasting and scheduling. $100M over 5 years for workforce training, including $25M Global Workforce Innovation challenge.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-008",
+      "title": "BASF and D-Wave Reduce Manufacturing Scheduling from 10 Hours to 5 Seconds with Quantum Computing",
+      "url": "https://quantumcomputingreport.com/d-wave-hybrid-quantum-application-reduces-basf-manufacturing-scheduling-time-to-five-seconds/",
+      "source_name": "Quantum Computing Report",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Technological",
+      "summary": "D-Wave and BASF demonstrate quantum computing breakthrough in liquid-filling facility production scheduling. Hybrid-quantum application achieves 10-hour to 5-second reduction. Delivers 14% lateness reduction, 9% setup time decrease, 18% shorter tank unloading. Moving to production integration.",
+      "key_entities": [
+        "BASF",
+        "D-Wave",
+        "Quantum Computing",
+        "Production Scheduling"
+      ],
+      "raw_content": "Proof-of-concept project using hybrid-quantum application optimizes manufacturing workflows at BASF liquid-filling facility. Reduction from 10 hours (classical solver) to 5 seconds. Operational benefits: 14% lateness reduction, 9% setup time decrease, up to 18% shorter tank unloading durations. Plans call for production integration of hybrid-quantum scheduling solution.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-009",
+      "title": "Deloitte 2026 Manufacturing Outlook: 80% Investing 20%+ Budgets in Smart Manufacturing",
+      "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+      "source_name": "Deloitte Insights",
+      "source_type": "report",
+      "published_date": "2026-01-09",
+      "category_hint": "Economic",
+      "summary": "Deloitte survey of 600 manufacturing executives shows 80% investing 20%+ of improvement budgets in smart manufacturing. Five critical trends: AI investment, supply chain resilience, workforce transformation, strategic capital deployment, aftermarket services. 78% cite trade uncertainty as primary concern.",
+      "key_entities": [
+        "Deloitte",
+        "Smart Manufacturing",
+        "AI",
+        "Supply Chain",
+        "Workforce"
+      ],
+      "raw_content": "80% plan to invest 20%+ of improvement budgets in smart manufacturing initiatives focused on automation hardware, data analytics, sensors, cloud computing. Agentic AI adoption accelerating. 78% cite trade uncertainty as primary concern. Input costs expected to increase 5.4% over next year. Physical AI adoption projected to rise from 9% to 22% within two years. Over one-third identify workforce skills as top concern.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-010",
+      "title": "Manufacturing Reshoring Accelerates with 68% of Companies Diversifying Suppliers",
+      "url": "https://www.sdcexec.com/sourcing-procurement/manufacturing/news/22955448/deloitte-llp-5-trends-to-reshape-manufacturing-industry-in-2026-deloitte",
+      "source_name": "Supply & Demand Chain Executive",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Economic",
+      "summary": "68% of U.S. and European companies decided to reshore or diversify suppliers. Domestic reshoring and regional supply chains rising significantly in 2026 driven by tax policy, supply chain security, national interest. Accelerated demand in defense, electrical transmission, solar, rail, data centers, building materials.",
+      "key_entities": [
+        "Reshoring",
+        "Supply Chain",
+        "Diversification",
+        "National Security"
+      ],
+      "raw_content": "Resilience moved from cost center to core strategy after years of disruption. 68% reshore or diversify suppliers. Drivers: skilled U.S. workers, weaker dollar, lower corporate taxes, regulatory reform, potential 15% tariffs. Workforce gaps slowing reshoring with 500,000 unfilled jobs requiring digital, robotics, AI skills. Hybrid 'both/and' approach emerging for selective offshore sourcing.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-011",
+      "title": "Micron Breaks Ground on $100B New York Semiconductor Megafab",
+      "url": "https://www.globenewswire.com/news-release/2026/01/07/3214576/14450/en/Micron-Announces-Groundbreaking-for-Historic-New-York-Megafab.html",
+      "source_name": "GlobeNewswire",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Economic",
+      "summary": "Micron officially breaks ground January 16, 2026 on $100 billion megafab in Onondaga County, NY. Largest private investment in New York state history. Up to four fabs making it largest semiconductor facility in U.S. Most advanced memory manufacturing globally to meet AI boom demands.",
+      "key_entities": [
+        "Micron",
+        "Semiconductor",
+        "New York",
+        "AI",
+        "Memory Manufacturing"
+      ],
+      "raw_content": "Official groundbreaking January 16, 2026. $100 billion investment is largest private investment in New York state history. Up to four fabs making it largest semiconductor facility in United States. Home to most advanced memory manufacturing in world. Helps meet growing demands of artificial intelligence boom.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-012",
+      "title": "Intel Enters High-Volume Manufacturing of 18A (1.8nm) Process Node",
+      "url": "https://markets.financialcontent.com/wral/article/tokenring-2026-1-1-intels-angstrom-era-arrives-how-the-18a-node-is-redefining-the-ai-silicon-landscape",
+      "source_name": "TokenRing",
+      "source_type": "news",
+      "published_date": "2026-01-01",
+      "category_hint": "Technological",
+      "summary": "Intel officially enters high-volume manufacturing for 18A (1.8nm) process node as of January 1, 2026, marking dawn of 'Angstrom Era'. Fab 52 in Arizona becomes most advanced logic manufacturing facility in Western Hemisphere.",
+      "key_entities": [
+        "Intel",
+        "18A Node",
+        "Angstrom Era",
+        "Arizona Fab",
+        "Semiconductor"
+      ],
+      "raw_content": "January 1, 2026 marks Intel's official entry into high-volume manufacturing (HVM) for 18A (1.8nm) process node. Dawn of 'Angstrom Era'. Intel's Fab 52 in Arizona now most advanced logic manufacturing facility in Western Hemisphere. Redefining AI silicon landscape.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-013",
+      "title": "Solid-State EV Batteries Enter Production with Multiple Manufacturers in 2026",
+      "url": "https://evmagazine.com/news/solid-state-battery-cars-coming-soon-to-ev-production",
+      "source_name": "EV Magazine",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Technological",
+      "summary": "Several manufacturers launching solid-state battery production in 2026. Verge Motorcycles first production vehicle with all-solid-state batteries, deliveries Q1 2026. Dongfeng fleet September 2026 with 350Wh/kg density, 621-mile range. CATL begins commercial sodium-ion battery production at scale.",
+      "key_entities": [
+        "Solid-State Batteries",
+        "Verge Motorcycles",
+        "Dongfeng",
+        "CATL",
+        "EV Manufacturing"
+      ],
+      "raw_content": "Multiple solid-state battery commercialization in 2026. Verge Motorcycles: world's first production vehicle with all-solid-state batteries, Q1 2026 deliveries. Dongfeng: September 2026 fleet with 350Wh/kg energy density, 621-mile range. CATL: commercial production at scale of sodium-ion batteries in 2026. Solid Power expanding electrolyte production capacity by 150% to 75 metric tons by 2026.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-014",
+      "title": "Mastrex Unveils Affordable Industrial-Grade Metal 3D Printing at CES 2026",
+      "url": "https://www.techtimes.com/articles/313922/20260109/breaking-barrier-mastrex-unveils-affordable-industrial-grade-metal-3d-printing-ces-2026.htm",
+      "source_name": "Tech Times",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Technological",
+      "summary": "Mastrex announces mission to bring professional-grade metal additive manufacturing to masses at CES 2026. Printer achieves resolution as low as 20 microns. Aims to dismantle financial barriers to metal 3D printing for industrial applications.",
+      "key_entities": [
+        "Mastrex",
+        "Metal 3D Printing",
+        "Additive Manufacturing",
+        "CES 2026"
+      ],
+      "raw_content": "CES 2026 announcement from Mastrex targeting affordable professional-grade metal additive manufacturing. Clear mission to dismantle financial barriers. Printer resolution as low as 20 microns. Making industrial-grade metal 3D printing accessible beyond large enterprises.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-015",
+      "title": "Meshy Launches AI Creative Lab Turning 3D Models into Physical Products with One Click",
+      "url": "https://www.manufacturingtomorrow.com/news/2026/01/06/meshy-unveils-ai-creative-lab-at-ces-2026-turning-ai-generated-3d-creations-into-physical-products-with-one-click/26797/",
+      "source_name": "Manufacturing Tomorrow",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "Meshy debuts AI Creative Lab at CES 2026 - first AI-native platform transforming generative 3D models into ready-to-3D-print files with single click. Features rolling out globally January 2026. Bridges digital design to physical manufacturing.",
+      "key_entities": [
+        "Meshy",
+        "AI Creative Lab",
+        "3D Printing",
+        "Generative AI"
+      ],
+      "raw_content": "Meshy AI Creative Lab: industry's first AI-native platform transforming generative 3D models into premium, full-color ready-to-3D-print files with single click. Global debut at CES 2026. Features begin rolling out to users globally in January 2026. Bridges gap between AI-generated designs and physical product manufacturing.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-016",
+      "title": "Industrial OT Cybersecurity Investment Reaches 96% of Manufacturers",
+      "url": "https://www.rockwellautomation.com/en-us/company/news/blogs/ot-cyber-trends-2026.html",
+      "source_name": "Rockwell Automation",
+      "source_type": "report",
+      "published_date": "2026-01-08",
+      "category_hint": "Technological",
+      "summary": "96% of manufacturers have or plan to invest in cybersecurity platforms within five years. Over 50% already adopting at scale. Top priorities: 50% asset visibility, 45% secure remote access, 32% network segmentation. Only 14% feel fully prepared for current OT threats.",
+      "key_entities": [
+        "OT Cybersecurity",
+        "Industrial Security",
+        "Rockwell Automation",
+        "Manufacturing"
+      ],
+      "raw_content": "96% of manufacturers investing in cybersecurity platforms within 5 years. Over 50% adopting at scale. Investment priorities: 50% asset visibility, 45% secure remote access, 32% network segmentation. Only 14% feel fully prepared for OT threats. Remote access accounts for 50% of incidents but only 13% deploy advanced controls. 25% cite employee resistance to change, 25% flag limited cybersecurity awareness among senior leaders.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-017",
+      "title": "IoT Predictive Maintenance Market to Reach $28 Billion by 2026",
+      "url": "https://www.getmaintainx.com/blog/maintenance-stats-trends-and-insights",
+      "source_name": "MaintainX",
+      "source_type": "report",
+      "published_date": "2026-01-10",
+      "category_hint": "Economic",
+      "summary": "IoT predictive maintenance market growing from $6.5B to $28B by 2026. Physical AI and IIoT market projected at $1.6-1.8T by 2030. 65% of maintenance teams planning AI use by end of 2026. Fortune 500 could save 2.1M hours downtime, $233B maintenance costs annually with full adoption.",
+      "key_entities": [
+        "IoT",
+        "Predictive Maintenance",
+        "IIoT",
+        "AI",
+        "Market Growth"
+      ],
+      "raw_content": "IoT predictive maintenance market: $1.5B (2016) to $6.5B to $28B (2026). Physical AI and IIoT market: $1.6-1.8 trillion by 2030. 65% maintenance teams plan AI use by end of 2026. IIoT predictive analytics increases asset life 20-25%, reduces costs. Fortune 500 potential savings: 2.1M hours downtime, $233B maintenance costs annually. 35% using sensors/IIoT extensively, 41% testing/considering.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-018",
+      "title": "Collaborative Robot Market Reaches 10.5% Share with Sub-12 Month Payback",
+      "url": "https://theintellify.com/collaborative-robots-trends/",
+      "source_name": "The Intellify",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Economic",
+      "summary": "Cobots reach 10.5% industrial robot market share. Prices range $25K-$60K for standard models, $90K+ for specialized. Early adopters report sub-12-month payback periods for machine tending and quality inspection. 53% of new cobots include AI vision, 45% support adaptive real-time programming.",
+      "key_entities": [
+        "Collaborative Robots",
+        "Cobots",
+        "AI Vision",
+        "ROI"
+      ],
+      "raw_content": "Cobots: 10.5% market share of industrial robots (2023). 2026 prices: $25K-$60K standard, $90K+ high-end. Payback periods under 12 months for common use cases. Productivity uplifts 20-200% depending on baseline. Top applications: assembly, pick-and-place, packaging, machine tending, welding. 53% new cobots include AI vision. 45% support adaptive real-time programming.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-019",
+      "title": "AMR and AGV Market Projected at $13.2B by 2026 as Orchestration Becomes Key Differentiator",
+      "url": "https://logisticsviewpoints.com/2026/01/05/the-future-of-warehouse-automation-what-2025-taught-us/",
+      "source_name": "Logistics Viewpoints",
+      "source_type": "news",
+      "published_date": "2026-01-05",
+      "category_hint": "Economic",
+      "summary": "Mobile robot market (AGVs and AMRs) expected to reach $13.2 billion by 2026 with 32.7% CAGR. In 2026, differentiation shifts from robot hardware to orchestration software. Focus on reliability, uptime, and total cost of ownership. Energy-aware orchestration becoming planning variable.",
+      "key_entities": [
+        "AMR",
+        "AGV",
+        "Warehouse Automation",
+        "Orchestration",
+        "Market Growth"
+      ],
+      "raw_content": "AGV/AMR market: $13.2B by 2026, CAGR 32.7%. 2026 trend: orchestration as differentiator, not robot itself. Vendors delivering reliability, uptime, support gaining market share. Energy-aware orchestration becoming planning variable influencing automation strategy and real-time execution. AI becoming standard decision layer within WMS and WES systems. Focus: refinement over disruption.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-020",
+      "title": "Private 5G and Edge Computing Market to Reach $28.5B in 2026, Growing to $263.8B by 2035",
+      "url": "https://www.gminsights.com/industry-analysis/edge-computing-market",
+      "source_name": "GM Insights",
+      "source_type": "report",
+      "published_date": "2026-01-07",
+      "category_hint": "Technological",
+      "summary": "Global edge computing market: $21.4B (2025) to $28.5B (2026) to $263.8B (2035), 28% CAGR. Private 5G with edge compute delivers ~10ms response times, 40x faster than cloud. 80%+ organizations adopting enabling technologies including private 5G for manufacturing.",
+      "key_entities": [
+        "Edge Computing",
+        "Private 5G",
+        "Industrial IoT",
+        "Manufacturing"
+      ],
+      "raw_content": "Edge computing market: $21.4B (2025), $28.5B (2026), $263.8B (2035) at 28% CAGR. Private 5G + edge compute: ~10ms response times, 40x faster than cloud. 80%+ organizations adopting private 5G. Applications: autonomous transport, networked robots, AI quality inspections in real-time. U.S. Industrial IoT spending exceeding $100B by 2027. BMW launched private 5G/AI-powered EV plant in Hungary - first fully AI-controlled automotive factory.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-021",
+      "title": "Manufacturing Workforce Gap Could Leave 1.9 Million Jobs Unfilled by 2033",
+      "url": "https://industrytoday.com/implementing-manufacturing-training-programs-in-2026/",
+      "source_name": "Industry Today",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Social",
+      "summary": "77% of manufacturers report difficulty finding qualified workers. Skilled trades positions unfilled for average 89 days. By 2033, U.S. manufacturers may need 3.8M new workers but 1.9M jobs could remain unfilled. Skills Gap Summit 2026 scheduled for January 29. Critical need for PLC, CNC, robotics training.",
+      "key_entities": [
+        "Workforce Gap",
+        "Skills Training",
+        "Manufacturing",
+        "Automation Training"
+      ],
+      "raw_content": "77% manufacturers: difficulty finding qualified workers. Skilled trades: 89 days average to fill. By 2033: need 3.8M workers, 1.9M jobs potentially unfilled. 80%+ candidates lack basic competencies: enthusiasm, dedication, math, measurement, language, dexterity, tool knowledge. Critical training: PLCs, CNC controllers, robotics. Partnerships with vocational schools require 6-9 months. Skills Gap Summit 2026: January 29.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-022",
+      "title": "EU Circular Economy Act Launches in 2026 to Transform Manufacturing Sustainability",
+      "url": "https://www.startus-insights.com/innovators-guide/circular-economy-trends/",
+      "source_name": "StartUs Insights",
+      "source_type": "report",
+      "published_date": "2026-01-10",
+      "category_hint": "Environmental",
+      "summary": "EU Circular Economy Act coming into force in 2026, one of Europe's most ambitious sustainability policies. Creates unified market for recycled materials, strengthens secondary raw materials supply/demand. Aluminum recycling requires 95% less energy than primary production. AI-enabled connectivity from manufacturer to recycler becoming paramount.",
+      "key_entities": [
+        "Circular Economy",
+        "EU Policy",
+        "Sustainability",
+        "Recycling",
+        "Manufacturing"
+      ],
+      "raw_content": "EU Circular Economy Act 2026: unified market for recycled materials, strengthen secondary raw materials, position Europe as global circular economy leader. European Commission pursuing circular economy for plastics: enforcement of end-of-life criteria, new customs codes. Aluminum recycling: 95% less energy vs. primary production. AI-enabled connectivity manufacturer-to-recycler paramount. Recycled critical minerals (nickel, cobalt, lithium): 80% less GHG emissions vs. mining.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-023",
+      "title": "REMADE Institute Hosts 2026 Circular Economy Technology Summit in March",
+      "url": "https://remadeinstitute.org/2026-conference/",
+      "source_name": "REMADE Institute",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Environmental",
+      "summary": "2026 REMADE Circular Economy Technology Summit & Conference scheduled March 11-12 at National Academy of Sciences, Washington D.C. Focus on advancing circular approach and sustainable manufacturing for energy, environmental, economic, manufacturing competitiveness, supply chain resilience goals.",
+      "key_entities": [
+        "REMADE Institute",
+        "Circular Economy",
+        "Sustainable Manufacturing",
+        "Supply Chain"
+      ],
+      "raw_content": "REMADE 2026 Summit: March 11-12, National Academy of Sciences Building, Washington D.C. Objective: advance national conversation on circular approach and sustainable manufacturing supporting energy, environmental, economic, manufacturing competitiveness, supply chain resilience goals. Focus on technology innovations in circular economy for industrial manufacturing.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-024",
+      "title": "Siemens and NVIDIA Partner to Build First Fully AI-Driven Adaptive Manufacturing Site in Germany",
+      "url": "https://nvidianews.nvidia.com/news/siemens-and-nvidia-expand-partnership-industrial-ai-operating-system",
+      "source_name": "NVIDIA Newsroom",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "Siemens and NVIDIA expanding partnership to build Industrial AI Operating System. First fully AI-driven, adaptive manufacturing site starting 2026 at Siemens Electronics Factory in Erlangen, Germany. Integrating NVIDIA NIM and Nemotron models into EDA software for semiconductor and PCB design. Generative AI moving from prototyping to production use.",
+      "key_entities": [
+        "Siemens",
+        "NVIDIA",
+        "AI-Driven Manufacturing",
+        "Erlangen Factory",
+        "Industrial AI"
+      ],
+      "raw_content": "Siemens-NVIDIA: building Industrial AI Operating System, reinventing end-to-end industrial value chain. First fully AI-driven, adaptive manufacturing sites starting 2026 in Erlangen, Germany (Siemens Electronics Factory as blueprint). Integrating NVIDIA NIM and Nemotron open AI models into EDA software for semiconductor/PCB design. By 2028: 65% of G1000 manufacturers using AI agents with design/simulation tools (IDC).",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-MFG-025",
+      "title": "U.S. Announces Over $500 Billion in Semiconductor Manufacturing Commitments by 2032",
+      "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+      "source_name": "Deloitte Insights",
+      "source_type": "report",
+      "published_date": "2026-01-09",
+      "category_hint": "Political",
+      "summary": "Companies announced more than $500 billion in private sector commitments to revitalize U.S. chipmaking by 2032. Data center boom and semiconductor expansion create substantial manufacturing opportunities. 18 new fabs started construction in 2025, majority beginning operations 2026-2027.",
+      "key_entities": [
+        "Semiconductor",
+        "U.S. Manufacturing",
+        "CHIPS Act",
+        "Data Centers"
+      ],
+      "raw_content": "More than $500B private sector commitments to revitalize U.S. chipmaking by 2032. Data center boom and ongoing semiconductor investment spurring multi-year component production agreements, expanding U.S. production for growing demand. 18 new semiconductor fabs started construction 2025 (3 at 200mm, 15 at 300mm), majority beginning operations 2026-2027. Driving manufacturing investment growth.",
+      "language": "en",
+      "scanned_at": "2026-01-12T10:30:00Z"
+    }
+  ]
+}

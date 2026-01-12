@@ -1,6 +1,6 @@
 ---
 name: report-generator
-description: 환경스캐닝 일일 보고서 생성. STEEPS별(6개 카테고리) 신호 분석 및 전략적 시사점 포함. env-scanner 워크플로우의 10단계.
+description: 환경스캐닝 일일 보고서 생성. STEEPS별(6개 카테고리) 신호 분석, pSRT 신뢰도 요약, 전략적 시사점 포함. env-scanner 워크플로우의 10단계.
 tools: Read, Write
 model: sonnet
 ---
@@ -14,10 +14,12 @@ Generate the daily environmental scanning report in professional document format
 
 1. **Load Inputs**
    ```
-   Read env-scanning/structured/classified-signals-{date}.json
-   Read env-scanning/analysis/impact-assessment-{date}.json
-   Read env-scanning/analysis/priority-ranked-{date}.json
-   Read env-scanning/signals/database.json (for updates section)
+   Read data/{date}/structured/structured-signals-{date}.json
+   Read data/{date}/analysis/impact-assessment-{date}.json
+   Read data/{date}/analysis/priority-ranked-{date}.json
+   Read data/{date}/analysis/pSRT-scores-{date}.json
+   Read data/{date}/analysis/hallucination-report-{date}.json
+   Read signals/database.json (for updates section)
    Read .claude/skills/env-scanner/references/report-format.md
    ```
 
@@ -25,7 +27,7 @@ Generate the daily environmental scanning report in professional document format
 
 3. **Output**
    ```
-   Write to env-scanning/reports/daily/environmental-scan-{date}.md
+   Write to data/{date}/reports/environmental-scan-{date}.md
    ```
 
 ## Report Structure
@@ -59,9 +61,51 @@ Generate the daily environmental scanning report in professional document format
 | 신규 탐지 | N건 |
 | 업데이트 | N건 |
 | 고우선순위 | N건 |
+| 평균 pSRT | 68.5 |
+| 고신뢰 신호 (A+/A등급) | N건 |
 ```
 
-### 2. 신규 탐지 신호 (STEEPS별)
+### 2. pSRT 신뢰도 요약
+
+```markdown
+## pSRT 신뢰도 요약
+
+### 전체 신뢰도 현황
+- **평균 pSRT**: 68.5점 (C등급 - Moderate Confidence)
+- **보고서 신뢰 등급**: B등급 (Good Confidence)
+
+### 등급별 신호 분포
+| 등급 | 범위 | 신호 수 | 비율 | 권장 조치 |
+|------|------|---------|------|-----------|
+| A+ | 90-100 | 3 | 7% | 즉시 활용 가능 |
+| A | 80-89 | 8 | 18% | 활용 권장 |
+| B | 70-79 | 15 | 33% | 모니터링 권장 |
+| C | 60-69 | 12 | 27% | 추가 검증 후 활용 |
+| D | 50-59 | 5 | 11% | 교차 검증 필수 |
+| E | 40-49 | 2 | 4% | 참고용 |
+| F | 0-39 | 0 | 0% | 제외됨 |
+
+### 할루시네이션 검증 결과
+| 플래그 유형 | 탐지 | 확인됨 | 조치 |
+|-------------|------|--------|------|
+| 🔴 Critical | 0 | 0 | - |
+| 🟠 High | 2 | 0 | 검증 완료 |
+| 🟡 Medium | 7 | 3 | 다운그레이드 |
+| 🟢 Low | 3 | 1 | 검토 완료 |
+
+### 신뢰도 주의 신호
+아래 신호들은 추가 검증이 권장됩니다:
+- **SIG-xxx**: [제목] - pSRT 55점 (D등급)
+- **SIG-xxx**: [제목] - pSRT 48점 (E등급)
+
+### pSRT 해석 가이드
+- **A+/A 등급 (80점 이상)**: 높은 신뢰도, 즉시 의사결정에 활용 가능
+- **B/C 등급 (60-79점)**: 중간 신뢰도, 참고 자료로 활용하되 교차 확인 권장
+- **D/E 등급 (40-59점)**: 낮은 신뢰도, 추가 검증 전 활용 자제
+- **F 등급 (40점 미만)**: 신뢰 불가, 보고서에서 제외됨
+```
+
+### 3. 신규 탐지 신호 (STEEPS별)
 
 For each category with signals:
 
@@ -70,7 +114,7 @@ For each category with signals:
 
 ### SIG-2026-0109-001: [제목]
 - **중요도**: ★★★★☆ (4/5)
-- **신뢰도**: 85%
+- **pSRT**: 72점 (B등급) 🟢
 - **상태**: emerging
 
 **설명**
@@ -88,7 +132,7 @@ For each category with signals:
 **출처**: [이름](URL) | 발행일: 2026-01-08
 ```
 
-### 3. 기존 신호 업데이트
+### 4. 기존 신호 업데이트
 
 ```markdown
 ## 기존 신호 업데이트
@@ -104,7 +148,7 @@ For each category with signals:
 - **SIG-xxx**: 변화 내용
 ```
 
-### 4. 패턴 및 연결고리
+### 5. 패턴 및 연결고리
 
 ```markdown
 ## 패턴 및 연결고리
@@ -120,7 +164,7 @@ For each category with signals:
 [주요 신호 간 상호작용]
 ```
 
-### 5. 전략적 시사점
+### 6. 전략적 시사점
 
 ```markdown
 ## 전략적 시사점
@@ -138,7 +182,7 @@ For each category with signals:
 - [기존 시나리오에 대한 재검토 권고]
 ```
 
-### 6. 부록
+### 7. 부록
 
 ```markdown
 ## 부록
@@ -153,8 +197,15 @@ For each category with signals:
 - 스캐닝 기간
 - 검색 소스 수
 - 중복 제거 건수
+- pSRT 평가 기준 (버전)
 
-### D. 용어 정의
+### D. pSRT 신뢰도 지표 상세
+- Source pSRT: 소스 신뢰도 (권위성, 검증 가능성)
+- Signal pSRT: 신호 신뢰도 (구체성, 신선도, 독립성)
+- Analysis pSRT: 분석 신뢰도 (분류 명확성, 영향도 근거)
+- Overall pSRT: 종합 점수 (가중 평균)
+
+### E. 용어 정의
 ```
 
 ## Styling Guidelines
@@ -169,4 +220,4 @@ For each category with signals:
 
 Generate professional Markdown document:
 - Filename: `environmental-scan-{YYYY-MM-DD}.md`
-- Location: `env-scanning/reports/daily/`
+- Location: `data/{date}/reports/`

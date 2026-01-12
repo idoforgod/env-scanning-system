@@ -1,0 +1,368 @@
+{
+  "metadata": {
+    "created_date": "2026-01-12",
+    "purpose": "Stage 2 전략 4: 지역 확장 (Regional Expansion)",
+    "target_regions": ["Latin America", "Africa", "Southeast Asia", "Middle East", "Eastern Europe"],
+    "total_new_sources": 12,
+    "recommended_integration": "Add to regular-sources.json under new regional categories"
+  },
+  "regional_sources": {
+    "latin_america": {
+      "region_description": "라틴아메리카 - 경제개발, 사회정책, 지역통합",
+      "coverage_gap": "미개척 지역, 글로벌 사우스 시각 필요",
+      "sources": [
+        {
+          "name": "ECLAC (Economic Commission for Latin America and the Caribbean)",
+          "url": "https://www.cepal.org/en",
+          "type": "international_organization",
+          "coverage": ["Economic", "Social", "Environmental"],
+          "region": "Latin America & Caribbean",
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "UN 지역위원회, 라틴아메리카 개발 연구 권위. Economic Survey, Social Panorama 등 주요 보고서 발간",
+          "key_publications": [
+            "Economic Survey of Latin America and the Caribbean",
+            "Social Panorama of Latin America",
+            "Statistical Yearbook"
+          ]
+        },
+        {
+          "name": "Fundação Getulio Vargas (FGV)",
+          "url": "https://portal.fgv.br/en",
+          "type": "think_tank",
+          "coverage": ["Economic", "Political", "Social"],
+          "region": "Brazil",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "라틴아메리카 1위 싱크탱크, 세계 5위 평가. 90개 이상 연구센터 보유. 브라질 경제/사회정책 선도",
+          "ranking": "Latin America #1, World #5 (Think Tank Index)"
+        },
+        {
+          "name": "CIPPEC (Centro de Implementación de Políticas Públicas para la Equidad y el Crecimiento)",
+          "url": "https://www.cippec.org",
+          "type": "think_tank",
+          "coverage": ["Economic", "Social", "Political"],
+          "region": "Argentina",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "라틴아메리카 3위 싱크탱크. 교육, 환경, 성평등, 거버넌스, 사회정책, 인프라 전문. 비당파적 독립 연구기관",
+          "ranking": "Latin America #3",
+          "established": "2000"
+        }
+      ]
+    },
+    "africa": {
+      "region_description": "아프리카 - 개발금융, 산업화, 지역통합",
+      "coverage_gap": "아프리카 대륙 정책연구 부족",
+      "sources": [
+        {
+          "name": "African Development Bank (AfDB)",
+          "url": "https://www.afdb.org/en",
+          "type": "development_bank",
+          "coverage": ["Economic", "Social", "Environmental"],
+          "region": "Pan-African",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "아프리카 개발은행 공식 연구. Policy Briefs, Working Paper Series, Economic Briefs 발간. 아프리카 경제전환 전문",
+          "key_publications": [
+            "Policy Briefs Series",
+            "Working Paper Series",
+            "How They Did It (성공 사례 분석)"
+          ]
+        },
+        {
+          "name": "AUDA-NEPAD (African Union Development Agency)",
+          "url": "https://au.int/en/auda",
+          "type": "regional_organization",
+          "coverage": ["Economic", "Political", "Social"],
+          "region": "Pan-African",
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "AU 개발기구 (구 NEPAD). 지역/대륙 우선 개발 프로그램 조정. 최근 Africa Think Tank Platform 런칭 (US$50M World Bank 지원)",
+          "recent_initiative": "Africa Think Tank Platform (ATTP) - 범아프리카 정책연구 네트워크"
+        },
+        {
+          "name": "IMANI Centre for Policy and Education",
+          "url": "https://imaniafrica.org",
+          "type": "think_tank",
+          "coverage": ["Economic", "Political", "Social"],
+          "region": "Ghana / West Africa",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "가나 1위, 사하라 이남 아프리카 3위 싱크탱크. 자유시장 기반 정책 분석. 법치, 시장성장, 개인권리, 제도개발 전문",
+          "ranking": "Ghana #1 (8년 연속), Sub-Saharan Africa #3",
+          "established": "2004"
+        }
+      ]
+    },
+    "southeast_asia": {
+      "region_description": "동남아시아 - ASEAN 지역통합, 디지털경제, 지정학",
+      "coverage_gap": "ASEAN 정책연구 부족, 베트남/태국/인도네시아 시각 필요",
+      "sources": [
+        {
+          "name": "ISEAS - Yusof Ishak Institute",
+          "url": "https://www.iseas.edu.sg",
+          "type": "research_institute",
+          "coverage": ["Political", "Economic", "Social"],
+          "region": "Singapore / Southeast Asia",
+          "language": "en",
+          "update_frequency": "daily",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "동남아 연구 선도기관. 싱가포르 국회 설립 (1968). 정치안보, 경제, 지정학 트렌드 전문. ASEAN Studies Centre 운영",
+          "centers": [
+            "ASEAN Studies Centre",
+            "Singapore APEC Study Centre",
+            "Temasek History Research Centre"
+          ]
+        },
+        {
+          "name": "Thailand Development Research Institute (TDRI)",
+          "url": "https://tdri.or.th/en",
+          "type": "think_tank",
+          "coverage": ["Economic", "Social", "Political"],
+          "region": "Thailand",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "태국 최고 정책연구소 (1984). 경제분석, 장기 사회경제 개발 정책 지원. 7개 연구 프로그램 운영",
+          "research_programs": [
+            "Human resources and social development",
+            "International economic relations",
+            "Macroeconomic policy",
+            "Natural resources and environment",
+            "Science and technology development",
+            "Sectoral economics",
+            "Law for development"
+          ]
+        },
+        {
+          "name": "ERIA (Economic Research Institute for ASEAN and East Asia)",
+          "url": "https://www.eria.org",
+          "type": "international_organization",
+          "coverage": ["Economic", "Political"],
+          "region": "Indonesia / ASEAN+6",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "자카르타 소재 국제기구 (2008). 16개국 정상 합의로 설립. 동아시아 경제통합 연구 선도. 세계 9위 국제경제 싱크탱크",
+          "ranking": "World #9 (International Economics Think Tanks)",
+          "focus": [
+            "Deepening Economic Integration",
+            "Narrowing Development Gaps",
+            "Sustainable Development"
+          ]
+        },
+        {
+          "name": "VEPR (Vietnam Institute for Economic and Policy Research)",
+          "url": "http://vepr.org.vn",
+          "type": "research_institute",
+          "coverage": ["Economic", "Political"],
+          "region": "Vietnam",
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "베트남 국립대 경제경영대학 소속 (2014). 베트남 경제/정책 연구 핵심기관. 정책입안 지원, 연례 경제보고서 발간",
+          "status": "Vietnam National University Hanoi 핵심 연구센터 (2018)"
+        }
+      ]
+    },
+    "middle_east": {
+      "region_description": "중동/북아프리카 - 에너지전환, 지정학, 경제다각화",
+      "coverage_gap": "MENA 지역 정책연구 부족, 걸프 국가 시각 필요",
+      "sources": [
+        {
+          "name": "KAPSARC (King Abdullah Petroleum Studies and Research Center)",
+          "url": "https://www.kapsarc.org",
+          "type": "research_center",
+          "coverage": ["Environmental", "Economic", "Technological"],
+          "region": "Saudi Arabia",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "사우디 에너지 정책 핵심기관. 에너지경제, 기후, 지속가능성 전문. 24개국 연구기관과 협력. 글로벌 에너지 정책 자문",
+          "expertise": [
+            "Oil and gas markets analysis",
+            "Climate-energy-economic modeling",
+            "Net-zero strategy guidance",
+            "Investment strategies"
+          ]
+        },
+        {
+          "name": "Gulf Research Center (GRC)",
+          "url": "https://www.grc.net",
+          "type": "think_tank",
+          "coverage": ["Political", "Economic", "Social"],
+          "region": "Dubai / GCC",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "두바이 소재 독립 비영리 연구기관 (2000). GCC, 이란, 이라크, 예멘 등 전략적 걸프 지역 전문. 고품질 학술연구",
+          "focus": "Strategic Gulf region (GCC + Iran, Iraq, Yemen)"
+        },
+        {
+          "name": "Lebanese Center for Policy Studies (LCPS)",
+          "url": "https://www.lcps-lebanon.org",
+          "type": "think_tank",
+          "coverage": ["Political", "Economic", "Social"],
+          "region": "Lebanon / MENA",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "베이루트 소재 독립 싱크탱크 (1989). 레바논/아랍 지역 거버넌스 개선 정책 연구. 70권 이상 저서, 450개 이상 정책보고서",
+          "publications": "70+ books, 450+ policy reports (Arabic & English)",
+          "advocacy": "3개 NGO 설립 (갈등해결, 민주선거, 투명성)"
+        }
+      ]
+    },
+    "eastern_europe": {
+      "region_description": "중동부유럽 - EU 통합, 에너지안보, 디지털전환",
+      "coverage_gap": "중동부유럽 정책연구 부족, V4/발트 시각 필요",
+      "sources": [
+        {
+          "name": "CASE (Center for Social and Economic Research)",
+          "url": "https://case-research.eu",
+          "type": "think_tank",
+          "coverage": ["Economic", "Social", "Political"],
+          "region": "Poland",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 5,
+          "recommended_tier": 1,
+          "notes": "바르샤바 소재 독립 비영리 연구소 (1991). 중동부유럽/글로벌 최고 싱크탱크. 세계 61위. 1,000명 전문가 네트워크",
+          "ranking": "World #61",
+          "expertise": [
+            "Sustainable development",
+            "Labour, migration, social policies",
+            "Fiscal policies and growth",
+            "Trade and macroeconomics"
+          ]
+        },
+        {
+          "name": "Think Visegrad - V4 Think Tank Platform",
+          "url": "https://think.visegradfund.org",
+          "type": "think_tank_network",
+          "coverage": ["Political", "Economic", "Social"],
+          "region": "Visegrad Group (Poland, Hungary, Czech, Slovakia)",
+          "language": "en",
+          "update_frequency": "weekly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "V4 8개 연구기관 네트워크 (2012). 세계 33위 싱크탱크 네트워크. 에너지안보, EU 정치, 서발칸, 동부파트너십 전문",
+          "ranking": "World #33 (Think Tank Networks)",
+          "key_institutions": [
+            "CASE (Poland)",
+            "OSW Centre for Eastern Studies (Poland)",
+            "Hungarian Institute of International Affairs",
+            "Research Center of Slovak Foreign Policy Association"
+          ]
+        },
+        {
+          "name": "Baltic Research Programme",
+          "url": "https://www.izm.gov.lv/en/baltic-research-programme",
+          "type": "research_network",
+          "coverage": ["Political", "Economic", "Technological"],
+          "region": "Baltic States (Estonia, Latvia, Lithuania)",
+          "language": "en",
+          "update_frequency": "monthly",
+          "signal_quality": 4,
+          "recommended_tier": 2,
+          "notes": "발트 3국 + 노르웨이/아이슬란드/리히텐슈타인 연구협력. NATO CoE 운영 (사이버방어, 에너지안보, 전략소통). R&D 투자 선도",
+          "nato_centers": [
+            "Cyber Defense (Estonia, 2008)",
+            "Energy Security (Lithuania, 2012)",
+            "Strategic Communications (Latvia, 2014)"
+          ],
+          "rd_expenditure": "Estonia 1.79%, Lithuania 1.16%, Latvia 0.70% (2020)"
+        }
+      ]
+    }
+  },
+  "integration_recommendations": {
+    "immediate_priority": [
+      "ECLAC (Latin America economic data)",
+      "KAPSARC (Middle East energy policy)",
+      "ISEAS (Southeast Asia geopolitics)",
+      "CASE (Eastern Europe economic policy)"
+    ],
+    "tier_1_additions": [
+      "ECLAC",
+      "FGV",
+      "CIPPEC",
+      "AfDB",
+      "AUDA-NEPAD",
+      "ISEAS",
+      "ERIA",
+      "KAPSARC",
+      "CASE"
+    ],
+    "tier_2_additions": [
+      "IMANI Ghana",
+      "TDRI",
+      "VEPR",
+      "GRC",
+      "LCPS",
+      "Think Visegrad",
+      "Baltic Research Programme"
+    ],
+    "steeps_impact": {
+      "Social": "+3 sources (FGV, CIPPEC, IMANI)",
+      "Technological": "+2 sources (VEPR, Baltic Research)",
+      "Economic": "+8 sources (ECLAC, FGV, CIPPEC, AfDB, TDRI, ERIA, VEPR, CASE)",
+      "Environmental": "+2 sources (AfDB, KAPSARC)",
+      "Political": "+7 sources (AUDA-NEPAD, ISEAS, GRC, LCPS, CASE, Think Visegrad, Baltic Research)",
+      "Spiritual": "+0 sources (추가 탐색 필요)"
+    },
+    "geographic_coverage": {
+      "before": "주로 북미/서유럽/동아시아 중심",
+      "after": "라틴아메리카, 아프리카, 동남아, 중동, 중동부유럽 커버리지 확보",
+      "remaining_gaps": [
+        "중앙아시아",
+        "남아시아 (인도/파키스탄/방글라데시)",
+        "오세아니아 (호주/뉴질랜드 제외)"
+      ]
+    }
+  },
+  "scan_implementation": {
+    "phase_1_test": {
+      "duration": "2 weeks",
+      "sources": ["ECLAC", "KAPSARC", "ISEAS", "CASE"],
+      "goal": "웹스크래핑 호환성, 신호 품질 검증"
+    },
+    "phase_2_integration": {
+      "duration": "1 month",
+      "sources": "all tier_1_additions",
+      "goal": "정기 스캔 통합, 중복 제거 테스트"
+    },
+    "phase_3_expansion": {
+      "duration": "ongoing",
+      "sources": "all tier_2_additions",
+      "goal": "주간 스캔에 통합, 지역별 신호 밸런스 모니터링"
+    }
+  },
+  "quality_notes": {
+    "verification_status": "2026-01-12 웹서치 기반 검증 완료",
+    "url_status": "모든 URL 실제 접근 가능 확인",
+    "language_accessibility": "모든 소스 영어 콘텐츠 제공",
+    "update_frequency": "대부분 주간 이상 업데이트, 실시간 스캔 가능",
+    "signal_quality": "Tier 1 소스는 모두 학술/정부/국제기구 수준 신뢰도"
+  }
+}

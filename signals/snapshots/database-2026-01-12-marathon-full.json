@@ -1,0 +1,38 @@
+{
+  "snapshot_info": {
+    "snapshot_date": "2026-01-12",
+    "snapshot_timestamp": "2026-01-12T20:15:30Z",
+    "snapshot_type": "pre-update-backup",
+    "update_phase": "Phase 3-1: DB Updater (marathon-full)",
+    "signals_count": 134
+  },
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-01-09",
+    "last_updated": "2026-01-12T17:11:30Z",
+    "total_signals": 134,
+    "scan_count": 5
+  },
+  "statistics": {
+    "by_status": {
+      "emerging": 68,
+      "developing": 65,
+      "mature": 1
+    },
+    "by_category": {
+      "Technological": 55,
+      "Political": 19,
+      "Economic": 22,
+      "Environmental": 15,
+      "Social": 14,
+      "Spiritual": 9
+    },
+    "by_significance": {
+      "5": 30,
+      "4": 68,
+      "3": 33,
+      "2": 3
+    }
+  },
+  "backup_note": "Snapshot created before adding 18 new signals from priority-ranked-2026-01-12-marathon-full.json"
+}

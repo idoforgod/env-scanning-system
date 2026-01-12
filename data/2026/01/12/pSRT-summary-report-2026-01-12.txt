@@ -1,0 +1,261 @@
+
+================================================================================
+                    pSRT (Predicted Signal Reliability Test) ANALYSIS REPORT
+                              2026-01-12
+================================================================================
+
+EXECUTIVE SUMMARY
+-----------------
+Total Signals Analyzed: 46
+Average pSRT Score: 49.6 / 100
+Score Range: 34.0 - 60.7
+Median Score: 50.0
+
+GRADE DISTRIBUTION
+------------------
+A+:  0 signals (  0.0%) ░░░░░░░░░░░
+A:  0 signals (  0.0%) ░░░░░░░░░░░
+B:  0 signals (  0.0%) ░░░░░░░░░░░
+C:  2 signals (  4.3%) █░░░░░░░░░░
+D: 23 signals ( 50.0%) ███████████
+E: 13 signals ( 28.3%) ██████░░░░░
+F:  8 signals ( 17.4%) ████░░░░░░░
+
+SCORE STATISTICS
+----------------
+Highest Score: 60.7
+Lowest Score:  34.0
+Median Score:  51.3
+
+KEY FINDINGS
+============
+
+1. OVERALL RELIABILITY ASSESSMENT
+   - The average pSRT score of 49.6 indicates MODERATE RELIABILITY with significant
+     variability in signal quality.
+   - NO signals achieved A+ grade, indicating that most signals lack optimal
+     specificity and/or source quality.
+   - 23 signals (50%) scored in D range (50-59), indicating borderline reliability.
+   - Only 2 signals (4.3%) achieved C grade (60-69).
+
+2. SCORE COMPONENT ANALYSIS
+   - Source Scores: Predominantly strong (many Tier 1/2 sources = 75-100)
+   - Signal Scores: WEAK component (average ~35-40), indicating signals lack
+     specific dates, numbers, and actors
+   - Analysis Scores: STRONG component (most >90), showing good classification
+     and evidence quality
+
+3. QUALITY FLAGS
+   - VAGUE_SIGNAL: 4 signals lack specific dates/numbers/actors
+   - LOW_SOURCE_QUALITY: 2 signals (Tier 4 sources with high significance)
+
+   Flagged signals require verification and additional sourcing.
+
+4. CRITICAL INSIGHT: Low Signal Specificity
+
+   The primary limitation is insufficient specificity (numbers, dates, actors).
+   While sources are credible and classification is solid, signals need:
+   - More precise dates and timelines
+   - Quantified metrics (percentages, values, volumes)
+   - Named entities and responsible actors
+
+   This explains the D-grade ceiling despite strong source and analysis scores.
+
+================================================================================
+                         TOP PERFORMERS (C Grade & Above)
+================================================================================
+
+Signal ID: SIG-2026-0112-014
+Title: TSMC revenue beats estimates, AI chip demand outstrips supply through 2026
+pSRT Score: 60.7/100 (C)
+Source: Bloomberg (Tier 1)
+Category: Technological
+Significance: 4/5
+Confidence: 0.95
+
+Component Breakdown:
+  - Source Score: 100/100 (20% weight)
+  - Signal Score: 47/100 (35% weight)
+  - Analysis Score: 97/100 (25% weight)
+
+Signal ID: SIG-2026-0112-017
+Title: Global venture capital deployment expected to increase 10% to high $400B in 2026
+pSRT Score: 60.45/100 (C)
+Source: Crunchbase (Tier 1)
+Category: Economic
+Significance: 4/5
+Confidence: 0.9
+
+Component Breakdown:
+  - Source Score: 100/100 (20% weight)
+  - Signal Score: 47/100 (35% weight)
+  - Analysis Score: 96/100 (25% weight)
+
+================================================================================
+                         SIGNALS WITH FLAGS
+================================================================================
+
+Signal ID: SIG-2026-0112-040
+Title: AgeTech becomes fastest-growing healthcare innovation sector as aging in place movement booms
+pSRT Score: 48.15/100 (E)
+Flags: VAGUE_SIGNAL
+Source: Definitive Healthcare (Tier 1)
+Recommendation: REQUIRES VERIFICATION - Review source quality and signal specificity
+
+Signal ID: SIG-2026-0112-034
+Title: Trump expected to visit China in April 2026, potential turning point in bilateral relations
+pSRT Score: 42.5/100 (E)
+Flags: LOW_SOURCE_QUALITY
+Source: Editorial GE (Tier 4)
+Recommendation: REQUIRES VERIFICATION - Review source quality and signal specificity
+
+Signal ID: SIG-2026-0112-013
+Title: AI can now design proteins and DNA, scientists warn biosecurity rules urgently needed
+pSRT Score: 41.5/100 (E)
+Flags: VAGUE_SIGNAL
+Source: Singularity Hub (Tier 3)
+Recommendation: REQUIRES VERIFICATION - Review source quality and signal specificity
+
+Signal ID: SIG-2026-0112-039
+Title: Hybrid work becomes new default, full remote reserved for highly skilled technical roles
+pSRT Score: 36.25/100 (F)
+Flags: VAGUE_SIGNAL
+Source: The Planet Group (Tier 3)
+Recommendation: REQUIRES VERIFICATION - Review source quality and signal specificity
+
+Signal ID: SIG-2026-0112-045
+Title: Emotional fitness treated like physical fitness with breathwork and nervous system regulation
+pSRT Score: 36.25/100 (F)
+Flags: VAGUE_SIGNAL
+Source: Accor Limitless (Tier 3)
+Recommendation: REQUIRES VERIFICATION - Review source quality and signal specificity
+
+Signal ID: SIG-2026-0112-021
+Title: 2026 will bring widespread job shifts as AI agents automate work, labor analysts warn
+pSRT Score: 34.0/100 (F)
+Flags: LOW_SOURCE_QUALITY
+Source: FOX 13 (Tier 4)
+Recommendation: REQUIRES VERIFICATION - Review source quality and signal specificity
+
+================================================================================
+                         IMPROVEMENT RECOMMENDATIONS
+================================================================================
+
+1. ENHANCE SIGNAL SPECIFICITY
+   Current weakness: Many signals lack quantified metrics and specific dates
+
+   Action Items:
+   - Require minimum 2-3 specific dates/timelines per signal
+   - Mandate quantified metrics (dollar amounts, percentages, numbers)
+   - Include minimum 3-5 named entities per signal
+
+   Expected Impact: Could improve average pSRT by 15-20 points
+
+2. SOURCE DIVERSIFICATION
+   Current strength: 78% of signals from Tier 1 sources (credible)
+
+   Action Items:
+   - Maintain Tier 1/2 source priority
+   - For flagged LOW_SOURCE_QUALITY signals, seek corroboration from Tier 1 sources
+   - Create minimum source tier thresholds by significance level
+
+   Current Status: Excellent (no changes needed)
+
+3. STRENGTHEN ANALYSIS FRAMEWORK
+   Current strength: Analysis scores excellent (avg ~89)
+
+   Action Items:
+   - Continue strong classification and evidence evaluation
+   - Expand leading indicator clarity requirement
+   - Enhance multi-scenario impact analysis
+
+   Current Status: Excellent (no changes needed)
+
+4. CRITICAL REVIEW PROTOCOL
+   For signals scoring < 45 (F grade):
+   - Re-source or deprioritize
+   - Consider deleting unless strategic value high
+   - Require substantial additional evidence
+
+5. SIGNAL MATURATION TRACKING
+   Implement tracking for:
+   - How signals move through D→C→B→A grades as they mature
+   - Source tier improvements as signals gain corroboration
+   - Specificity improvements with added details
+
+================================================================================
+                    SIGNALS BY CATEGORY & PERFORMANCE
+================================================================================
+
+ECONOMIC: 6 signals (avg pSRT: 49.8)
+  Grades: F:1, E:1, D:3, C:1
+
+ENVIRONMENTAL: 6 signals (avg pSRT: 53.2)
+  Grades: E:2, D:4
+
+POLITICAL: 6 signals (avg pSRT: 49.8)
+  Grades: E:3, D:3
+
+SOCIAL: 7 signals (avg pSRT: 44.4)
+  Grades: F:2, E:5
+
+SPIRITUAL: 5 signals (avg pSRT: 38.0)
+  Grades: F:5
+
+TECHNOLOGICAL: 16 signals (avg pSRT: 54.0)
+  Grades: E:2, D:13, C:1
+
+================================================================================
+                            METHODOLOGY NOTES
+================================================================================
+
+pSRT Calculation Formula:
+Overall pSRT = (Source Score × 0.20) + (Signal Score × 0.35) + (Analysis Score × 0.25)
+
+Component Scoring:
+
+1. SOURCE SCORE (0-100, 20% weight):
+   Tier 1 (Official/Authoritative): 100
+   Tier 2 (Credible): 75
+   Tier 3 (News/Secondary): 50
+   Tier 4 (Other): 25
+
+2. SIGNAL SCORE (0-100, 35% weight) - Specificity & Freshness:
+   - Dates/timelines: 0-30 points
+   - Numbers/metrics: 0-30 points
+   - Named entities: 0-20 points
+   - Freshness (≤5 days old): 20 points
+
+3. ANALYSIS SCORE (0-100, 25% weight) - Classification & Evidence:
+   - Clear primary/secondary classification: 0-15 points
+   - Evidence quality (indicators, impacts): 0-40 points
+   - Confidence & significance: 0-40 points
+
+Grade Scale:
+   A+ (90-100): Excellent reliability, highly specific, authoritative sources
+   A (80-89):   Very good reliability, specific, strong sources
+   B (70-79):   Good reliability, mostly specific, credible sources
+   C (60-69):   Adequate reliability, some specificity, mixed sources
+   D (50-59):   Marginal reliability, limited specificity, needs verification
+   E (40-49):   Poor reliability, vague signals, weak specificity
+   F (0-39):    Very poor reliability, unsubstantiated
+
+Flags:
+   VAGUE_SIGNAL: No specific dates/numbers/actors (≥2 required)
+   LOW_SOURCE_QUALITY: Tier 4 source with significance ≥4
+
+================================================================================
+                          NEXT STEPS
+================================================================================
+
+1. Review all 8 F-grade signals for potential removal or re-sourcing
+2. Implement enhanced signal template with specificity requirements
+3. Establish minimum pSRT thresholds for action (suggest: ≥55 for consideration)
+4. Track signal maturation as they gain specificity and confirmation
+5. Quarterly re-calculation of pSRT scores as signals develop
+6. Consider creating separate scoring for emerging vs. developing vs. mature signals
+
+================================================================================
+File: /Users/cys/Desktop/ENVscanning-system-main/env-scanning/analysis/pSRT-scores-2026-01-12.json
+Report Generated: 2026-01-12
+================================================================================

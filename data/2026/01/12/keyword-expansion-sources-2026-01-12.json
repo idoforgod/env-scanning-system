@@ -1,0 +1,479 @@
+{
+  "metadata": {
+    "created_date": "2026-01-12",
+    "strategy": "Stage 2 - Strategy 3: Keyword Expansion",
+    "focus": "Discovering new sources for underrepresented STEEPS categories",
+    "target_categories": ["Spiritual", "Environmental"],
+    "current_steeps_distribution": {
+      "Technological": 52,
+      "Economic": 35,
+      "Social": 28,
+      "Political": 28,
+      "Environmental": 22,
+      "Spiritual": 12
+    },
+    "improvement_goal": {
+      "Spiritual": "20+ sources (currently 12)",
+      "Environmental": "30+ sources (currently 22)"
+    },
+    "total_new_sources": 12,
+    "discovery_method": "Targeted web search with specialized keywords"
+  },
+  "new_sources_spiritual": [
+    {
+      "source_name": "Global Wellness Institute",
+      "url": "https://globalwellnessinstitute.org",
+      "source_type": "research_institute",
+      "steeps_category": ["Spiritual", "Social", "Economic"],
+      "recommended_tier": 1,
+      "specialization": "Wellness economy, mental wellness policy, spirituality research",
+      "publication_types": [
+        "Policy toolkits",
+        "Economy monitors",
+        "Sector-specific reports",
+        "Evidence databases"
+      ],
+      "update_frequency": "monthly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "Leading authority on wellness economics. Released 2024 Mental Wellness Policy Toolkit addressing stress, loneliness, and social prescribing. Tracks $6.8T global wellness economy across 11 sectors.",
+      "key_focus_areas": [
+        "Mental wellness policy",
+        "Wellness real estate",
+        "Workplace wellness",
+        "Traditional medicine integration",
+        "Wellness tourism trends"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Tier 1 source for Spiritual category - combines policy, research, and economic analysis with strong institutional credibility"
+    },
+    {
+      "source_name": "Journal of Contemplative Studies",
+      "url": "https://contemplativejournal.org",
+      "source_type": "academic_journal",
+      "steeps_category": ["Spiritual", "Social"],
+      "recommended_tier": 1,
+      "specialization": "Contemplative practices, meditation research, Buddhist studies, phenomenology",
+      "publication_types": [
+        "Peer-reviewed articles",
+        "Special thematic issues",
+        "Research reviews",
+        "Contemplative computing studies"
+      ],
+      "update_frequency": "semi-annual",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "Official journal of University of Virginia Contemplative Sciences Center. Publishes humanities-based and transdisciplinary scholarship on contemplation. ISSN: 3066-9030.",
+      "key_focus_areas": [
+        "Buddhist meditation practices",
+        "Contemplative education",
+        "Phenomenology of practice",
+        "Applied mindfulness research",
+        "Contemplative computing"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "High-quality academic source for Spiritual/contemplative studies - peer-reviewed and institutionally backed"
+    },
+    {
+      "source_name": "Contemplative Sciences Center (UVA)",
+      "url": "https://csc.virginia.edu",
+      "source_type": "research_center",
+      "steeps_category": ["Spiritual", "Social", "Technological"],
+      "recommended_tier": 1,
+      "specialization": "Contemplative research, mindfulness interventions, well-being science",
+      "publication_types": [
+        "Research publications",
+        "CIRCL Lab reports",
+        "SALON dialogues",
+        "Fellowship programs"
+      ],
+      "update_frequency": "weekly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "University of Virginia's leading center for contemplative sciences. Operates CIRCL Lab for transdisciplinary research. Mission: fuse contemplation, connection, research to enhance flourishing.",
+      "key_focus_areas": [
+        "Contemplative neuroscience",
+        "Social-emotional learning",
+        "Climate distress resilience",
+        "Digital wellbeing",
+        "Educational flourishing"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Top-tier academic research center combining rigorous science with contemplative practices"
+    },
+    {
+      "source_name": "Center for Healthy Minds",
+      "url": "https://centerhealthyminds.org",
+      "source_type": "research_center",
+      "steeps_category": ["Spiritual", "Social", "Technological"],
+      "recommended_tier": 1,
+      "specialization": "Well-being science, meditation neuroscience, mental health research",
+      "publication_types": [
+        "Peer-reviewed publications",
+        "Healthy Minds Framework",
+        "Research tools",
+        "Well-being interventions"
+      ],
+      "update_frequency": "weekly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "Founded by Richard Davidson (pioneer of contemplative neuroscience) at UW-Madison. First to discover meditation increases gamma oscillations. Collaborates with Dalai Lama's Mind & Life Institute.",
+      "key_focus_areas": [
+        "Neuroplasticity of well-being",
+        "Meditation and brain function",
+        "Workplace mental health",
+        "Prison re-entry programs",
+        "Climate change distress"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "World-leading research on meditation neuroscience - Richard Davidson is a foundational figure in the field"
+    },
+    {
+      "source_name": "International Network on Personal Meaning",
+      "url": "https://www.meaning.ca",
+      "source_type": "academic_network",
+      "steeps_category": ["Spiritual", "Social"],
+      "recommended_tier": 2,
+      "specialization": "Meaning research, existential psychology, positive psychology integration",
+      "publication_types": [
+        "International Journal of Existential Positive Psychology",
+        "Conference proceedings",
+        "Research articles",
+        "Book reviews"
+      ],
+      "update_frequency": "semi-annual",
+      "signal_quality": 4,
+      "language": "en",
+      "notes": "Official publication of Int'l Society for Existential Psychology. Currently on hiatus after Dr. Paul Wong's passing, but archives remain valuable. Publishes research on meaning dimensions: coherence, purpose, significance.",
+      "key_focus_areas": [
+        "Search for meaning assessment",
+        "Existential therapy research",
+        "Purpose intervention studies",
+        "Meaning-centered psychology",
+        "Cross-cultural meaning studies"
+      ],
+      "relevance_score": 4,
+      "discovery_rationale": "Important academic source for meaning/purpose research, though currently inactive"
+    },
+    {
+      "source_name": "UCLA Mindful",
+      "url": "https://www.uclahealth.org/uclamindful",
+      "source_type": "education_center",
+      "steeps_category": ["Spiritual", "Social"],
+      "recommended_tier": 2,
+      "specialization": "Evidence-based mindfulness education, workplace wellness, accessibility",
+      "publication_types": [
+        "Free guided meditations",
+        "Weekly podcasts",
+        "Research collaborations",
+        "Workplace consultation reports"
+      ],
+      "update_frequency": "weekly",
+      "signal_quality": 4,
+      "language": "en",
+      "notes": "UCLA Health's mindfulness education center. Emphasizes 'radical accessibility' with free resources. Strong focus on institutional implementation (medical, educational, business settings).",
+      "key_focus_areas": [
+        "Stress management programs",
+        "Workplace mindfulness",
+        "Community resilience",
+        "Accessible meditation resources",
+        "Institutional wellness integration"
+      ],
+      "relevance_score": 4,
+      "discovery_rationale": "Practical implementation focus complements academic research sources"
+    }
+  ],
+  "new_sources_environmental": [
+    {
+      "source_name": "Grantham Research Institute",
+      "url": "https://www.lse.ac.uk/granthaminstitute",
+      "source_type": "research_institute",
+      "steeps_category": ["Environmental", "Political", "Economic"],
+      "recommended_tier": 1,
+      "specialization": "Climate policy, environmental economics, biodiversity finance, just transition",
+      "publication_types": [
+        "Working papers",
+        "Policy publications",
+        "Climate laws database",
+        "Explainers on climate topics"
+      ],
+      "update_frequency": "weekly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "LSE's flagship climate institute. Five research clusters: climate impacts & resilience, cutting emissions, financing, global action, protecting environment. Climate Research Showcase 2026 submissions open until Feb 4.",
+      "key_focus_areas": [
+        "Climate adaptation policy",
+        "Renewable energy finance",
+        "Congo Basin protection",
+        "AI for biodiversity conservation",
+        "Just transition frameworks"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Top-tier Environmental source with strong political/economic integration - addresses policy gaps"
+    },
+    {
+      "source_name": "Stockholm Resilience Centre",
+      "url": "https://www.stockholmresilience.org",
+      "source_type": "research_center",
+      "steeps_category": ["Environmental", "Social", "Political"],
+      "recommended_tier": 1,
+      "specialization": "Social-ecological resilience, planetary boundaries, biodiversity, food systems",
+      "publication_types": [
+        "Research publications",
+        "SwedBio program reports",
+        "Planetary boundaries updates",
+        "Ocean sustainability research"
+      ],
+      "update_frequency": "weekly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "Stockholm University + Beijer Institute collaboration. Developed planetary boundaries framework (2009). Research themes: Anthropocene dynamics, ocean futures, food systems, transformative pathways.",
+      "key_focus_areas": [
+        "Planetary boundaries monitoring",
+        "Biodiversity and ecosystem services",
+        "Ocean threats and opportunities",
+        "Sustainable food pathways",
+        "Climate tipping points"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Leading authority on planetary boundaries and social-ecological systems - foundational Environmental source"
+    },
+    {
+      "source_name": "Global Ocean Biodiversity Initiative (GOBI)",
+      "url": "https://gobi.org",
+      "source_type": "international_initiative",
+      "steeps_category": ["Environmental", "Political"],
+      "recommended_tier": 1,
+      "specialization": "Marine biodiversity, ocean conservation, EBSA identification, deep-sea ecosystems",
+      "publication_types": [
+        "Policy briefs",
+        "Scientific papers",
+        "Workshop reports",
+        "Newsletters on conservation"
+      ],
+      "update_frequency": "monthly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "International partnership supporting Convention on Biological Diversity. Active since 2008. Expertise in ecologically/biologically significant marine areas (EBSAs), migratory connectivity (MiCO system), high seas protection.",
+      "key_focus_areas": [
+        "Marine protected areas",
+        "Ocean megafauna migration",
+        "Deep-ocean vents and seeps",
+        "EBSA methodology",
+        "Pacific/Indian Ocean biogeography"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Critical source for ocean/marine biodiversity - underrepresented in current Environmental coverage"
+    },
+    {
+      "source_name": "Marine Conservation Institute",
+      "url": "https://marine-conservation.org",
+      "source_type": "research_institute",
+      "steeps_category": ["Environmental", "Political"],
+      "recommended_tier": 1,
+      "specialization": "Marine protection effectiveness, ocean data, high seas governance, MPAs",
+      "publication_types": [
+        "Marine Protection Atlas (MPAtlas)",
+        "Scientific reports",
+        "Policy briefs",
+        "On the Tide blog"
+      ],
+      "update_frequency": "weekly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "Science-based marine protection organization. Flagship tool: MPAtlas tracks global ocean protection quality. Addresses deep-seabed mining, twilight zone ecosystems, destructive fishing.",
+      "key_focus_areas": [
+        "MPA effectiveness measurement",
+        "Deep-sea coral protection",
+        "High seas governance",
+        "Ocean twilight zone research",
+        "Climate resilience of oceans"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Data-driven ocean protection - provides measurable metrics for Environmental signals"
+    },
+    {
+      "source_name": "Ellen MacArthur Foundation",
+      "url": "https://www.ellenmacarthurfoundation.org",
+      "source_type": "policy_organization",
+      "steeps_category": ["Environmental", "Economic", "Technological"],
+      "recommended_tier": 1,
+      "specialization": "Circular economy, regenerative design, plastics reduction, critical minerals",
+      "publication_types": [
+        "Circular economy reports",
+        "Business guidance",
+        "Policy toolkits",
+        "Sector studies (fashion, food, plastics)"
+      ],
+      "update_frequency": "monthly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "Global leader in circular economy transition. Three principles: eliminate waste/pollution, circulate materials, regenerate nature. Major reports: 'Towards Circular Economy' series, 2030 Plastics Agenda.",
+      "key_focus_areas": [
+        "Circular economy business models",
+        "Critical minerals rethinking",
+        "Plastics elimination",
+        "Retail system redesign",
+        "Built environment transformation"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Essential for Environmental-Economic intersection - circular economy is critical future trend"
+    },
+    {
+      "source_name": "Sustainability Research Institute (Leeds)",
+      "url": "https://environment.leeds.ac.uk/sustainability-research-institute",
+      "source_type": "research_institute",
+      "steeps_category": ["Environmental", "Economic", "Political"],
+      "recommended_tier": 1,
+      "specialization": "Ecological economics, post-growth transformation, climate governance, monetary systems",
+      "publication_types": [
+        "Working papers",
+        "Ecological Economics MSc research",
+        "Policy analysis",
+        "Complex systems modeling"
+      ],
+      "update_frequency": "monthly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "University of Leeds. Heterodox economics approach: ecological economics, political economy, institutional economics. Six core areas from post-growth to sustainable cities.",
+      "key_focus_areas": [
+        "Post-growth economics",
+        "Ecological macroeconomics",
+        "Green finance systems",
+        "Biodiversity conservation governance",
+        "Human-nature relationship values"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Fills gap in ecological economics perspective - connects Environmental to Economic policy"
+    }
+  ],
+  "cross_category_bonus_sources": [
+    {
+      "source_name": "Climate Adaptation Science Centers (USGS)",
+      "url": "https://www.usgs.gov/programs/climate-adaptation-science-centers",
+      "source_type": "government_network",
+      "steeps_category": ["Environmental", "Political", "Social"],
+      "recommended_tier": 1,
+      "specialization": "Climate adaptation, natural resource management, biodiversity resilience",
+      "publication_types": [
+        "Regional adaptation studies",
+        "Wildlife climate impact reports",
+        "Collaborative research",
+        "Management guidance"
+      ],
+      "update_frequency": "monthly",
+      "signal_quality": 5,
+      "language": "en",
+      "notes": "USGS partnership program. National CASC + 9 regional centers covering continental US, Alaska, Hawaii, Pacific Islands, Caribbean. Teams scientists with resource managers.",
+      "key_focus_areas": [
+        "Fish and wildlife adaptation",
+        "Water resource resilience",
+        "Land management strategies",
+        "Community climate adaptation",
+        "Indigenous knowledge integration"
+      ],
+      "relevance_score": 5,
+      "discovery_rationale": "Government-backed climate adaptation - strong Political and Environmental integration"
+    }
+  ],
+  "integration_recommendations": {
+    "immediate_additions": [
+      "Global Wellness Institute (Spiritual - Tier 1)",
+      "Grantham Research Institute (Environmental - Tier 1)",
+      "Stockholm Resilience Centre (Environmental - Tier 1)",
+      "Center for Healthy Minds (Spiritual - Tier 1)",
+      "Ellen MacArthur Foundation (Environmental - Tier 1)"
+    ],
+    "secondary_additions": [
+      "Journal of Contemplative Studies (Spiritual - Tier 1)",
+      "Contemplative Sciences Center (Spiritual - Tier 1)",
+      "GOBI (Environmental - Tier 1)",
+      "Marine Conservation Institute (Environmental - Tier 1)",
+      "Sustainability Research Institute Leeds (Environmental - Tier 1)"
+    ],
+    "supporting_additions": [
+      "UCLA Mindful (Spiritual - Tier 2)",
+      "USGS Climate Adaptation Centers (Environmental - Tier 1)",
+      "International Network on Personal Meaning (Spiritual - Tier 2)"
+    ]
+  },
+  "expected_impact": {
+    "spiritual_category": {
+      "current_sources": 12,
+      "new_sources": 6,
+      "projected_total": 18,
+      "coverage_improvement": "+50%",
+      "key_gaps_filled": [
+        "Academic contemplative research",
+        "Neuroscience of meditation",
+        "Wellness economics",
+        "Meaning and purpose research",
+        "Institutional mindfulness programs"
+      ]
+    },
+    "environmental_category": {
+      "current_sources": 22,
+      "new_sources": 6,
+      "projected_total": 28,
+      "coverage_improvement": "+27%",
+      "key_gaps_filled": [
+        "Ocean and marine biodiversity",
+        "Circular economy frameworks",
+        "Ecological economics",
+        "Climate adaptation strategies",
+        "Planetary boundaries science",
+        "Social-ecological resilience"
+      ]
+    }
+  },
+  "scan_strategy_notes": {
+    "spiritual_sources": {
+      "search_frequency": "weekly",
+      "keywords": [
+        "meditation research",
+        "contemplative neuroscience",
+        "wellness policy",
+        "meaning and purpose",
+        "mindfulness interventions",
+        "well-being science"
+      ],
+      "signal_types": [
+        "New research publications",
+        "Policy recommendations",
+        "Neuroscience breakthroughs",
+        "Wellness economy reports",
+        "Institutional program launches"
+      ]
+    },
+    "environmental_sources": {
+      "search_frequency": "daily",
+      "keywords": [
+        "climate adaptation",
+        "ocean biodiversity",
+        "circular economy",
+        "planetary boundaries",
+        "ecological economics",
+        "marine conservation"
+      ],
+      "signal_types": [
+        "Policy frameworks",
+        "Scientific assessments",
+        "Protection effectiveness data",
+        "Economic transition models",
+        "Biodiversity loss indicators"
+      ]
+    }
+  },
+  "quality_assurance": {
+    "tier_1_criteria_met": [
+      "Academic/institutional credibility",
+      "Peer-reviewed or expert-verified content",
+      "Regular publication schedule",
+      "Original research or primary data",
+      "Policy influence or citation impact"
+    ],
+    "all_sources_verified": true,
+    "urls_tested": true,
+    "publication_activity_confirmed": true
+  }
+}

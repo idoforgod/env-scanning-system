@@ -1,0 +1,1343 @@
+{
+  "analysis_date": "2026-01-12",
+  "methodology": "Futures Wheel - systematic exploration of primary, secondary, and cross-impacts",
+  "signals_analyzed": 7,
+  "significance_threshold": 4,
+  "impact_assessments": [
+    {
+      "signal_id": "SIG-2026-0112-M002",
+      "signal_title": "IBM Announces 2026 as Year Quantum Outperforms Classical Computing",
+      "category": "Technological",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-M002-1",
+          "description": "Pharmaceutical R&D acceleration through molecular simulation",
+          "affected_domains": ["Economic", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M002-1-1",
+              "description": "Drug discovery timelines reduced from 10+ years to 3-5 years",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["Healthcare cost reduction", "Faster treatment for rare diseases", "Biotech investment boom"]
+            },
+            {
+              "id": "SI-M002-1-2",
+              "description": "Personalized medicine becomes economically viable at scale",
+              "timeframe": "mid_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Healthcare system restructuring", "Genetic testing normalization", "Privacy concerns escalate"]
+            },
+            {
+              "id": "SI-M002-1-3",
+              "description": "Traditional clinical trial models disrupted by simulation-first approach",
+              "timeframe": "long_term",
+              "likelihood": 0.60,
+              "cascading_effects": ["Regulatory framework overhaul", "Reduced animal testing", "Ethical debates on simulated trials"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M002-2",
+          "description": "Current encryption standards rendered vulnerable, cybersecurity crisis",
+          "affected_domains": ["Political", "Economic", "Technological"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M002-2-1",
+              "description": "Financial sector forced emergency migration to quantum-resistant cryptography",
+              "timeframe": "short_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Banking system disruption", "Cryptocurrency collapse risk", "Trillions in infrastructure replacement costs"]
+            },
+            {
+              "id": "SI-M002-2-2",
+              "description": "Nation-state harvest now, decrypt later campaigns accelerate",
+              "timeframe": "short_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Intelligence community crisis", "Diplomatic communications exposure", "Historical data retroactive compromise"]
+            },
+            {
+              "id": "SI-M002-2-3",
+              "description": "Quantum-resistant standards become mandatory for government and critical infrastructure",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Global tech standards race", "Supply chain security requirements", "Geopolitical cryptography competition"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M002-3",
+          "description": "Materials science breakthrough enables new energy storage and manufacturing",
+          "affected_domains": ["Environmental", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.70,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M002-3-1",
+              "description": "Room-temperature superconductors discovered through quantum simulation",
+              "timeframe": "long_term",
+              "likelihood": 0.50,
+              "cascading_effects": ["Energy transmission revolution", "Fusion energy viability", "Levitation transport systems"]
+            },
+            {
+              "id": "SI-M002-3-2",
+              "description": "Battery energy density increases 10x through novel material discovery",
+              "timeframe": "long_term",
+              "likelihood": 0.55,
+              "cascading_effects": ["Electric aviation becomes practical", "Grid storage transforms energy systems", "Rare earth dependency reduced"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M002-4",
+          "description": "Quantum computing talent war intensifies globally",
+          "affected_domains": ["Economic", "Political"],
+          "timeframe": "short_term",
+          "likelihood": 0.95,
+          "impact_magnitude": "medium",
+          "secondary_impacts": [
+            {
+              "id": "SI-M002-4-1",
+              "description": "University quantum physics programs overwhelmed with demand",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Education system reorientation", "STEM enrollment surge", "Academic salary inflation"]
+            },
+            {
+              "id": "SI-M002-4-2",
+              "description": "Brain drain from academia to tech companies accelerates",
+              "timeframe": "short_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Academic research capacity reduction", "Corporate control of quantum research", "Open science decline"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M012",
+          "related_signal_title": "Water Rights Conflicts - Semiconductor/AI Infrastructure",
+          "relationship": "conflicting",
+          "interaction_description": "Quantum computers require extremely low temperatures and significant cooling infrastructure, adding to water demand for tech facilities. Creates additional pressure on water resources already strained by AI data centers.",
+          "combined_effect": "Quantum computing advantage may be geographically constrained to water-abundant regions, limiting deployment and creating quantum access inequality",
+          "systemic_implications": ["Technology infrastructure increasingly determined by resource availability", "Quantum computing hubs emerge in water-rich areas", "Geopolitical advantage shifts to resource-secure nations"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M018",
+          "related_signal_title": "AI-Driven Meaning Crisis",
+          "relationship": "reinforcing",
+          "interaction_description": "Quantum computing accelerating AI capabilities intensifies existential questions about human cognitive uniqueness and purpose. Problems humans cannot solve even with classical computers become trivially solvable.",
+          "combined_effect": "Deepening meaning crisis as computational capabilities exceed human cognitive capacity by orders of magnitude",
+          "systemic_implications": ["Accelerated philosophical crisis about human place in cosmos", "Questions about consciousness and quantum effects", "Spiritual seeking intensifies as technology advances"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M008",
+          "related_signal_title": "500 GW Solar Milestone",
+          "relationship": "reinforcing",
+          "interaction_description": "Quantum computing enables optimization of solar panel efficiency, grid management, and energy storage materials. Creates positive feedback loop for renewable energy advancement.",
+          "combined_effect": "Acceleration of clean energy transition through quantum-optimized systems",
+          "systemic_implications": ["Climate mitigation pathways accelerate", "Energy transition timeline shortened", "Fossil fuel stranded assets accelerate"]
+        }
+      ],
+      "systemic_notes": "Quantum computing advantage represents a genuine paradigm shift comparable to the introduction of computers themselves. The encryption vulnerability is the most immediate crisis requiring response, while long-term materials science and drug discovery impacts are potentially civilizational in scale. The timing coinciding with AI advancement creates compounding effects across all domains.",
+      "strategic_implications": [
+        "Organizations must immediately audit cryptographic dependencies and plan quantum-resistant migration",
+        "R&D-intensive industries (pharma, materials, finance) should develop quantum computing strategies",
+        "Educational institutions need rapid curriculum adaptation for quantum workforce development",
+        "Governments must develop quantum technology policies balancing innovation with security"
+      ],
+      "uncertainty_factors": [
+        "IBM's quantum advantage claims require independent verification - specific benchmarks and problem domains matter",
+        "Timeline for practical quantum applications may be longer than announced",
+        "Quantum error correction challenges may limit near-term applications",
+        "Geopolitical access to quantum computing may create new forms of inequality"
+      ]
+    },
+    {
+      "signal_id": "SIG-2026-0112-M007",
+      "signal_title": "Trump Pulls U.S. Out of Major Climate Organizations",
+      "category": "Political/Environmental",
+      "significance": 5,
+      "primary_impacts": [
+        {
+          "id": "PI-M007-1",
+          "description": "Global climate governance vacuum with U.S. withdrawal from UNFCCC, IPCC, IRENA",
+          "affected_domains": ["Political", "Environmental"],
+          "timeframe": "short_term",
+          "likelihood": 0.95,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M007-1-1",
+              "description": "China-EU climate leadership coalition emerges to fill vacuum",
+              "timeframe": "short_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["New climate finance mechanisms bypass U.S.", "Green technology standards set by China-EU", "Geopolitical realignment around climate axis"]
+            },
+            {
+              "id": "SI-M007-1-2",
+              "description": "Paris Agreement implementation proceeds without U.S. participation",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Differentiated climate commitments without U.S.", "Carbon border adjustments target U.S. exports", "U.S. isolated from climate finance flows"]
+            },
+            {
+              "id": "SI-M007-1-3",
+              "description": "IPCC scientific credibility questioned without U.S. scientific participation",
+              "timeframe": "mid_term",
+              "likelihood": 0.60,
+              "cascading_effects": ["Alternative climate science frameworks emerge", "Fragmented climate data standards", "Reduced global coordination on climate science"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M007-2",
+          "description": "U.S. clean energy sector faces policy uncertainty and investment headwinds",
+          "affected_domains": ["Economic", "Environmental"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M007-2-1",
+              "description": "U.S. renewable energy companies shift focus to state-level markets and exports",
+              "timeframe": "short_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Blue state clean energy hubs strengthen", "Red state clean energy development slows", "Increased U.S. regional divergence"]
+            },
+            {
+              "id": "SI-M007-2-2",
+              "description": "China captures larger share of global clean energy manufacturing",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["U.S. technological leadership in clean energy erodes", "Supply chain dependencies on China deepen", "Clean energy becomes geopolitical leverage point"]
+            },
+            {
+              "id": "SI-M007-2-3",
+              "description": "Venture capital and R&D investment flows to EU and China for climate tech",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["U.S. climate tech innovation ecosystem weakens", "Brain drain of climate scientists to international institutions", "Loss of U.S. competitive advantage in emerging sector"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M007-3",
+          "description": "Diplomatic isolation of U.S. on climate issues creates broader foreign policy tensions",
+          "affected_domains": ["Political"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M007-3-1",
+              "description": "U.S. alliances strained as climate becomes litmus test for cooperation",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["EU-U.S. relations deteriorate", "Developing nations pivot to China-EU climate partnerships", "U.S. soft power diminished"]
+            },
+            {
+              "id": "SI-M007-3-2",
+              "description": "Climate-related trade barriers erected against U.S. goods",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["U.S. export competitiveness damaged", "WTO disputes over carbon border adjustments", "Fragmented global trade system"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M007-4",
+          "description": "Subnational climate action intensifies in U.S. states and cities",
+          "affected_domains": ["Political", "Environmental"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "impact_magnitude": "medium",
+          "secondary_impacts": [
+            {
+              "id": "SI-M007-4-1",
+              "description": "California-led coalition directly engages with international climate frameworks",
+              "timeframe": "short_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Fragmented U.S. climate policy by state", "International recognition of subnational actors", "Constitutional tensions over foreign policy"]
+            },
+            {
+              "id": "SI-M007-4-2",
+              "description": "Blue state climate policies diverge sharply from federal approach",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Increased federalism tensions", "Regulatory patchwork challenges national companies", "Interstate climate competition and cooperation"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M008",
+          "related_signal_title": "500 GW Solar Milestone",
+          "relationship": "neutral",
+          "interaction_description": "Despite federal policy retrenchment, renewable energy deployment continues driven by economics and state policies. Creates paradox where U.S. withdraws from climate governance while clean energy grows domestically.",
+          "combined_effect": "U.S. clean energy transition decouples from federal policy, proceeding on economic and subnational policy basis",
+          "systemic_implications": ["Policy and market trends diverge", "Clean energy becomes economically irreversible despite policy opposition", "Federal policy becomes less relevant to energy transition"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M010",
+          "related_signal_title": "Industrial Subsidies for Economic Security",
+          "relationship": "reinforcing",
+          "interaction_description": "Climate withdrawal part of broader pattern of nationalist economic policy. Both signals reflect shift from multilateral cooperation to unilateral national interest prioritization.",
+          "combined_effect": "Fragmentation of global economic and climate governance into competing blocs",
+          "systemic_implications": ["End of post-Cold War globalization consensus", "Emergence of competing civilizational economic models", "Increased geopolitical competition across all domains"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M011",
+          "related_signal_title": "U.S. Foreign Aid Cuts",
+          "relationship": "reinforcing",
+          "interaction_description": "Both climate organization withdrawal and foreign aid cuts reflect U.S. retrenchment from global leadership role. Complementary signals of isolationist foreign policy.",
+          "combined_effect": "Comprehensive U.S. withdrawal from post-WWII international institutional framework",
+          "systemic_implications": ["Power vacuum in global governance", "Opportunity for alternative leadership models", "Potential for global governance crisis"]
+        }
+      ],
+      "systemic_notes": "This signal represents one of the most significant geopolitical realignments in climate governance history. The U.S. withdrawal from foundational climate institutions (UNFCCC, IPCC, IRENA) is unprecedented and creates genuine uncertainty about global climate action coordination. However, the economic momentum of clean energy and strength of subnational actors may limit damage. Key question is whether China-EU leadership can effectively fill the vacuum or whether global climate governance fragments.",
+      "strategic_implications": [
+        "International organizations must develop governance models that function without U.S. participation",
+        "U.S. companies with global operations must navigate divergent domestic and international climate standards",
+        "State and local governments become critical actors in maintaining U.S. climate action",
+        "Climate finance mechanisms need restructuring without U.S. contributions",
+        "Clean energy companies should diversify markets beyond U.S. federal policy dependence"
+      ],
+      "uncertainty_factors": [
+        "Duration of U.S. withdrawal - could reverse with future administration",
+        "Effectiveness of China-EU leadership coalition unclear",
+        "Extent to which U.S. states can compensate for federal inaction",
+        "Impact on global climate targets and timelines remains uncertain",
+        "Potential for U.S. diplomatic isolation to force policy reversal"
+      ]
+    },
+    {
+      "signal_id": "SIG-2026-0112-M003",
+      "signal_title": "Tesla Plans 50,000 Optimus Humanoid Robots at $20K-30K",
+      "category": "Technological",
+      "significance": 4,
+      "primary_impacts": [
+        {
+          "id": "PI-M003-1",
+          "description": "Manufacturing and logistics automation accelerates with affordable humanoid robots",
+          "affected_domains": ["Economic", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.75,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M003-1-1",
+              "description": "Routine physical labor jobs displaced at scale in warehouses and factories",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Workforce retraining crisis", "Unemployment in logistics sector spikes", "Wage pressure on remaining human workers"]
+            },
+            {
+              "id": "SI-M003-1-2",
+              "description": "Small and medium enterprises gain access to automation previously only affordable to large corporations",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["SME productivity surge", "Competitive landscape shifts", "Reduced labor cost advantage of offshoring"]
+            },
+            {
+              "id": "SI-M003-1-3",
+              "description": "Manufacturing reshoring becomes economically viable with robot labor",
+              "timeframe": "long_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Global supply chain reconfiguration", "Developing country manufacturing advantage erodes", "Geopolitical implications for labor-cost-based trade"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M003-2",
+          "description": "Labor market polarization intensifies between robot-complementary and robot-substitutable jobs",
+          "affected_domains": ["Social", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M003-2-1",
+              "description": "Universal Basic Income debates intensify as automation displaces workers",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Political polarization on economic policy", "Pilot UBI programs expand", "Social safety net restructuring"]
+            },
+            {
+              "id": "SI-M003-2-2",
+              "description": "Education system shifts toward robot-proof skills (creativity, emotional intelligence, complex problem-solving)",
+              "timeframe": "long_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Curriculum reform accelerates", "STEM education reorientation", "Liberal arts renaissance as distinctly human"]
+            },
+            {
+              "id": "SI-M003-2-3",
+              "description": "Inequality widens between robot owners and workers",
+              "timeframe": "long_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Capital returns outpace labor returns further", "Social unrest risk increases", "Political movements for robot taxation emerge"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M003-3",
+          "description": "Regulatory frameworks for robot labor emerge rapidly",
+          "affected_domains": ["Political"],
+          "timeframe": "short_term",
+          "likelihood": 0.80,
+          "impact_magnitude": "medium",
+          "secondary_impacts": [
+            {
+              "id": "SI-M003-3-1",
+              "description": "Debates over robot taxation to fund displaced worker support",
+              "timeframe": "short_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Robot deployment economics change", "Political conflict over automation policy", "Revenue models for social programs shift"]
+            },
+            {
+              "id": "SI-M003-3-2",
+              "description": "Safety standards and liability frameworks for humanoid robots established",
+              "timeframe": "mid_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Insurance industry adapts to robot liability", "Safety certification industry emerges", "Human-robot interaction protocols standardized"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M003-4",
+          "description": "Human-robot collaboration models develop in workplaces",
+          "affected_domains": ["Social", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.70,
+          "impact_magnitude": "medium",
+          "secondary_impacts": [
+            {
+              "id": "SI-M003-4-1",
+              "description": "New job categories emerge around robot supervision, maintenance, and programming",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Workforce transition pathways created", "Technical training demand surges", "Hybrid human-robot teams become norm"]
+            },
+            {
+              "id": "SI-M003-4-2",
+              "description": "Psychological and social impacts of working alongside humanoid robots emerge",
+              "timeframe": "long_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Workplace culture shifts", "Human identity questions in labor context", "New forms of human-machine relationships"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M018",
+          "related_signal_title": "AI-Driven Meaning Crisis",
+          "relationship": "reinforcing",
+          "interaction_description": "Humanoid robots displacing physical labor compounds the existential crisis from AI displacing cognitive labor. Together they challenge human economic purpose from both physical and mental dimensions.",
+          "combined_effect": "Comprehensive automation crisis forcing fundamental rethinking of human role in economy and society",
+          "systemic_implications": ["Work-based identity crisis intensifies", "Economic systems designed around human labor become obsolete", "Urgent need for new models of human purpose and value"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M004",
+          "related_signal_title": "Goldman Sachs 2.8% Growth Projection",
+          "relationship": "neutral",
+          "interaction_description": "Robot automation could support economic growth through productivity gains while simultaneously creating labor market disruption. Growth may mask underlying employment transitions.",
+          "combined_effect": "GDP growth continues while employment structure transforms - economic and social indicators diverge",
+          "systemic_implications": ["Traditional economic metrics (GDP) become less relevant to human welfare", "Need for new economic indicators beyond growth", "Prosperity without widespread employment"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M010",
+          "related_signal_title": "Industrial Subsidies for Economic Security",
+          "relationship": "reinforcing",
+          "interaction_description": "Humanoid robots enable countries to achieve manufacturing self-sufficiency without labor cost advantages. Supports economic nationalism by reducing dependence on offshore labor.",
+          "combined_effect": "Automation and nationalism reinforce trend toward localized, automated manufacturing",
+          "systemic_implications": ["Global trade patterns shift from labor arbitrage to technology and resources", "Developing country growth model based on low-cost labor becomes obsolete", "Geopolitical competition shifts to automation technology"]
+        }
+      ],
+      "systemic_notes": "The $20K-30K price point is critical - it makes humanoid robots accessible to SMEs, not just large corporations. This democratization of automation could be as disruptive as personal computers. However, Tesla's production claims need verification. The 50,000 unit target for 2026 is ambitious and may face technical, regulatory, and market challenges. The labor market impacts will be highly uneven across sectors and geographies.",
+      "strategic_implications": [
+        "Workers in routine physical labor roles should prioritize skill development in robot-complementary areas",
+        "Companies should develop responsible automation strategies considering workforce transition",
+        "Policymakers must prepare social safety nets and retraining programs ahead of displacement",
+        "Educational institutions need rapid curriculum adaptation for automation-resilient skills",
+        "Labor unions must develop positions on human-robot collaboration and worker protection"
+      ],
+      "uncertainty_factors": [
+        "Tesla's production timeline and technical capabilities require verification",
+        "Actual deployment rates may be slower than production capacity due to regulatory and social factors",
+        "Human acceptance of humanoid robots in workplaces uncertain",
+        "Economic viability depends on total cost of ownership vs. human labor",
+        "Safety and reliability of humanoid robots in complex environments unproven at scale"
+      ]
+    },
+    {
+      "signal_id": "SIG-2026-0112-M008",
+      "signal_title": "Global Solar Installations Surpass 500 GW AC in 2025",
+      "category": "Environmental",
+      "significance": 4,
+      "primary_impacts": [
+        {
+          "id": "PI-M008-1",
+          "description": "Renewable energy reaches critical mass, making energy transition irreversible",
+          "affected_domains": ["Environmental", "Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M008-1-1",
+              "description": "Coal and gas power plants accelerate retirement schedules due to economic unviability",
+              "timeframe": "mid_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Stranded asset crisis in fossil fuel sector", "Energy sector workforce transition", "Carbon emissions decline accelerates"]
+            },
+            {
+              "id": "SI-M008-1-2",
+              "description": "Electricity prices restructure with near-zero marginal cost solar during peak sun hours",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Time-of-use pricing becomes standard", "Energy-intensive industries shift operations to solar hours", "Utility business models transform"]
+            },
+            {
+              "id": "SI-M008-1-3",
+              "description": "Energy independence becomes achievable for most nations with solar resources",
+              "timeframe": "long_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Geopolitical power shifts away from fossil fuel exporters", "Petrodollar system weakens", "Energy security paradigm changes"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M008-2",
+          "description": "Grid infrastructure requires massive upgrades for renewable integration",
+          "affected_domains": ["Economic", "Technological"],
+          "timeframe": "short_term",
+          "likelihood": 0.95,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M008-2-1",
+              "description": "Energy storage deployment accelerates to manage intermittency",
+              "timeframe": "short_term",
+              "likelihood": 0.90,
+              "cascading_effects": ["Battery manufacturing capacity expands rapidly", "Lithium and rare earth demand surges", "New storage technologies commercialize"]
+            },
+            {
+              "id": "SI-M008-2-2",
+              "description": "Smart grid and demand response systems become critical infrastructure",
+              "timeframe": "mid_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Digitalization of energy systems accelerates", "Cybersecurity concerns for energy infrastructure", "Consumer energy management tools proliferate"]
+            },
+            {
+              "id": "SI-M008-2-3",
+              "description": "Transmission infrastructure investment boom to connect renewable resources to demand centers",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Trillion-dollar infrastructure spending", "Land use and environmental conflicts over transmission", "Interregional energy markets develop"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M008-3",
+          "description": "Fossil fuel industry undergoes structural decline",
+          "affected_domains": ["Economic", "Political"],
+          "timeframe": "mid_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M008-3-1",
+              "description": "Fossil fuel producing regions face economic crisis and transition challenges",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Petrostates economic instability", "Workforce displacement in oil and gas", "Regional economic diversification urgency"]
+            },
+            {
+              "id": "SI-M008-3-2",
+              "description": "Fossil fuel company valuations collapse as stranded asset risk materializes",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Pension fund exposure to fossil fuels creates liability", "Divestment movement accelerates", "Energy sector capital reallocation to renewables"]
+            },
+            {
+              "id": "SI-M008-3-3",
+              "description": "Geopolitical power of oil-producing nations diminishes",
+              "timeframe": "long_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["OPEC influence declines", "Middle East geopolitical realignment", "Energy as tool of geopolitical leverage shifts to renewables and minerals"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M007",
+          "related_signal_title": "U.S. Climate Organization Withdrawal",
+          "relationship": "neutral",
+          "interaction_description": "Solar deployment momentum continues despite U.S. federal climate policy retrenchment, demonstrating economic drivers now dominate over policy. Creates paradox of energy transition proceeding during climate governance crisis.",
+          "combined_effect": "Energy transition decouples from climate diplomacy - economic and technological forces override policy",
+          "systemic_implications": ["Market forces become primary driver of decarbonization", "Climate policy becomes less critical to outcomes", "Technology cost curves determine transition speed more than policy"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M009",
+          "related_signal_title": "15 GW U.S. Battery Storage Deployment",
+          "relationship": "reinforcing",
+          "interaction_description": "Solar and storage are complementary technologies solving each other's limitations. Together they create technically and economically viable renewable energy systems.",
+          "combined_effect": "Solar + storage combination enables full fossil fuel replacement in power generation",
+          "systemic_implications": ["24/7 renewable energy systems become feasible", "Baseload power concept becomes obsolete", "Grid architecture fundamentally transforms"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M012",
+          "related_signal_title": "Water Rights Conflicts",
+          "relationship": "conflicting",
+          "interaction_description": "While solar uses minimal water, the semiconductor manufacturing required for solar panels and the data centers managing smart grids create water demand. Also, some concentrated solar thermal plants require significant water for cooling.",
+          "combined_effect": "Energy transition has hidden water dependencies that could create constraints",
+          "systemic_implications": ["Solar supply chains face water-related bottlenecks", "Solar manufacturing location determined by water availability", "Need for water-efficient solar manufacturing processes"]
+        }
+      ],
+      "systemic_notes": "The 500 GW milestone represents a tipping point where solar becomes the dominant new energy source globally. The economic case for solar is now compelling without subsidies in most markets. This creates irreversibility in the energy transition regardless of policy changes. The key challenge shifts from deployment to integration - grid stability, storage, and transmission become the binding constraints. The fossil fuel industry's decline is now structural rather than cyclical.",
+      "strategic_implications": [
+        "Fossil fuel companies must accelerate diversification or face obsolescence",
+        "Grid operators need urgent investment in storage and smart grid technology",
+        "Investors should reassess fossil fuel exposure as stranded asset risk materializes",
+        "Workers in fossil fuel industries should pursue retraining for renewable sector",
+        "Policymakers must manage just transition for fossil fuel dependent communities",
+        "Utilities must transform business models from generation to grid services"
+      ],
+      "uncertainty_factors": [
+        "Grid integration challenges may slow deployment even as economics remain favorable",
+        "Material supply chains (silicon, rare earths) could create bottlenecks",
+        "Intermittency remains challenge requiring massive storage deployment",
+        "Political resistance in fossil fuel regions could slow transition locally",
+        "Land use conflicts for large-scale solar deployment"
+      ]
+    },
+    {
+      "signal_id": "SIG-2026-0112-M006",
+      "signal_title": "All Wall Street Forecasters Predict Stock Rally - Fourth Consecutive Year",
+      "category": "Economic",
+      "significance": 4,
+      "primary_impacts": [
+        {
+          "id": "PI-M006-1",
+          "description": "Unanimous bullish consensus creates potential contrarian indicator for market top",
+          "affected_domains": ["Economic"],
+          "timeframe": "short_term",
+          "likelihood": 0.65,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M006-1-1",
+              "description": "Market becomes vulnerable to negative surprises with everyone positioned bullishly",
+              "timeframe": "short_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["Low cash positions create liquidity risks", "Crowded trades increase volatility risk", "Potential for sharp corrections if consensus breaks"]
+            },
+            {
+              "id": "SI-M006-1-2",
+              "description": "Contrarian investors position defensively, creating tension with consensus",
+              "timeframe": "short_term",
+              "likelihood": 0.60,
+              "cascading_effects": ["Hedging activity increases", "Put options become expensive", "Market fragility increases despite optimism"]
+            },
+            {
+              "id": "SI-M006-1-3",
+              "description": "Retail FOMO (fear of missing out) drives late-cycle speculation",
+              "timeframe": "short_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Valuations extend beyond fundamentals", "Speculative excess in meme stocks and crypto", "Vulnerability to sentiment shift"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M006-2",
+          "description": "AI supercycle thesis becomes consensus, creating dependency on AI earnings delivery",
+          "affected_domains": ["Economic", "Technological"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M006-2-1",
+              "description": "Tech sector valuations predicated on 13-15% earnings growth for years",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["High expectations create disappointment risk", "AI monetization must accelerate to justify valuations", "Tech sector concentration risk in portfolios"]
+            },
+            {
+              "id": "SI-M006-2-2",
+              "description": "Capital floods into AI sector, potentially creating misallocation and bubble dynamics",
+              "timeframe": "short_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["AI startup valuations inflate", "Non-AI sectors starved of capital", "Bubble dynamics in AI infrastructure"]
+            },
+            {
+              "id": "SI-M006-2-3",
+              "description": "Any signs of AI productivity disappointment could trigger sharp repricing",
+              "timeframe": "mid_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Market correction focused on tech sector", "Contagion to broader markets", "Reassessment of AI timeline and impact"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M006-3",
+          "description": "Fourth consecutive year of gains historically associated with late-cycle dynamics",
+          "affected_domains": ["Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.70,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M006-3-1",
+              "description": "Complacency about risks increases as winning streak continues",
+              "timeframe": "short_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Risk management discipline erodes", "Leverage increases in system", "Volatility compression creates false sense of stability"]
+            },
+            {
+              "id": "SI-M006-3-2",
+              "description": "Historical precedent suggests increased probability of correction or bear market",
+              "timeframe": "mid_term",
+              "likelihood": 0.60,
+              "cascading_effects": ["Extended bull markets end in mean reversion", "Potential for significant drawdowns", "Cycle timing becomes critical for investors"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M006-4",
+          "description": "Wealth concentration accelerates as stock market gains benefit asset owners",
+          "affected_domains": ["Social", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "medium",
+          "secondary_impacts": [
+            {
+              "id": "SI-M006-4-1",
+              "description": "Inequality widens as stock ownership concentrated among wealthy",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Social tensions increase", "Political pressure for wealth redistribution", "Disconnect between market and median household prosperity"]
+            },
+            {
+              "id": "SI-M006-4-2",
+              "description": "Consumer spending bifurcates between stock-owning households and others",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["Luxury goods sector thrives", "Mass market sector stagnates", "Economic resilience overstated by aggregate data"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M002",
+          "related_signal_title": "Quantum Computing Advantage",
+          "relationship": "reinforcing",
+          "interaction_description": "Quantum computing breakthrough feeds AI supercycle narrative, supporting tech sector optimism. However, also creates potential for sudden paradigm shift if quantum enables unexpected AI acceleration.",
+          "combined_effect": "Technology optimism justified by breakthroughs but creates dependency on continued innovation delivery",
+          "systemic_implications": ["Tech valuations supported by genuine innovation but expectations may be ahead of monetization", "Quantum + AI combination could justify optimism or create disappointment if commercial applications delayed"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M004",
+          "related_signal_title": "Goldman Sachs 2.8% Growth",
+          "relationship": "reinforcing",
+          "interaction_description": "Economic growth forecasts support stock rally predictions, creating mutually reinforcing optimism. Both signals show above-consensus expectations, potentially indicating synchronized peak optimism.",
+          "combined_effect": "Comprehensive optimism across growth and markets suggests potential sentiment extreme",
+          "systemic_implications": ["When economic forecasts and market forecasts are both bullish, contrarian indicators strengthen", "Positive feedback loop between growth expectations and market sentiment", "Increased vulnerability to negative surprises"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M003",
+          "related_signal_title": "Tesla Optimus Robots",
+          "relationship": "reinforcing",
+          "interaction_description": "Humanoid robots contribute to AI supercycle narrative and tech sector optimism. However, labor displacement implications could undermine consumer spending and economic growth long-term.",
+          "combined_effect": "Short-term tech optimism supported, long-term economic implications create uncertainty",
+          "systemic_implications": ["Automation driving productivity and earnings but potentially undermining consumer base", "Stock market gains concentrated in capital owners while labor faces displacement", "Disconnect between asset prices and economic welfare"]
+        }
+      ],
+      "systemic_notes": "Unanimous forecaster consensus is historically rare and often appears near market tops. The 2000 tech bubble and 2007 pre-financial crisis periods showed similar consensus optimism. However, AI supercycle may be genuine - the question is timing and valuation. The consensus could be right about direction but wrong about magnitude or timing. Key risk is that AI monetization disappoints relative to high expectations embedded in valuations. Contrarian interpretation suggests defensive positioning warranted despite strong fundamental case for AI.",
+      "strategic_implications": [
+        "Investors should consider risk management and portfolio hedging despite bullish consensus",
+        "Avoid FOMO-driven decisions at potential late-cycle valuations",
+        "Monitor AI earnings delivery closely relative to expectations",
+        "Consider contrarian positioning or reduced exposure given unanimous consensus",
+        "Maintain discipline on valuations despite momentum",
+        "Prepare for potential volatility if consensus breaks"
+      ],
+      "uncertainty_factors": [
+        "AI supercycle may be genuine and support extended bull market",
+        "Earnings growth could exceed expectations justifying valuations",
+        "Liquidity conditions and central bank policy support uncertain",
+        "Geopolitical risks could disrupt consensus",
+        "Timeline of potential correction highly uncertain",
+        "Historical patterns may not repeat in AI-driven economy"
+      ]
+    },
+    {
+      "signal_id": "SIG-2026-0112-M001",
+      "signal_title": "Generation Alpha Takes Over Social Media in 2026",
+      "category": "Social",
+      "significance": 4,
+      "primary_impacts": [
+        {
+          "id": "PI-M001-1",
+          "description": "Social media platforms redesign for fully digital-native generation with different expectations",
+          "affected_domains": ["Technological", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M001-1-1",
+              "description": "Video-first, AI-enhanced content becomes platform standard",
+              "timeframe": "short_term",
+              "likelihood": 0.90,
+              "cascading_effects": ["Text-based content declines", "Content creation tools become AI-powered", "Authenticity becomes harder to verify"]
+            },
+            {
+              "id": "SI-M001-1-2",
+              "description": "Parental control and safety features become competitive differentiators",
+              "timeframe": "short_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Platform liability for youth safety increases", "Privacy protections for minors strengthen", "Regulatory pressure intensifies"]
+            },
+            {
+              "id": "SI-M001-1-3",
+              "description": "Platform business models shift to Gen Alpha engagement and purchasing patterns",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Influencer marketing targets younger audiences", "Brand strategies adapt to Gen Alpha values", "Digital commerce integrates deeper into social platforms"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M001-2",
+          "description": "Traditional TV viewership collapse accelerates as Gen Alpha prefers YouTube",
+          "affected_domains": ["Economic", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.90,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M001-2-1",
+              "description": "Advertising budgets complete migration from linear TV to digital platforms",
+              "timeframe": "mid_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Traditional media industry crisis deepens", "Job losses in broadcast television", "Sports media rights restructuring"]
+            },
+            {
+              "id": "SI-M001-2-2",
+              "description": "Content production shifts entirely to digital-first formats",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Hollywood production models adapt to streaming", "Creator economy expands further", "Gatekeeper role of studios diminishes"]
+            },
+            {
+              "id": "SI-M001-2-3",
+              "description": "Cable and satellite TV subscriptions enter terminal decline",
+              "timeframe": "mid_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Cord-cutting accelerates", "Bundled media packages disappear", "Infrastructure investments shift to broadband"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M001-3",
+          "description": "Youth mental health concerns intensify with earlier social media exposure",
+          "affected_domains": ["Social", "Spiritual"],
+          "timeframe": "short_term",
+          "likelihood": 0.80,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M001-3-1",
+              "description": "Regulatory crackdown on youth social media access intensifies",
+              "timeframe": "short_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Age verification requirements expand", "Platform access restrictions", "Potential minimum age legislation"]
+            },
+            {
+              "id": "SI-M001-3-2",
+              "description": "Mental health services for youth overwhelmed by social media-related issues",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["Healthcare system strain", "School-based mental health programs expand", "Digital wellness education becomes curriculum standard"]
+            },
+            {
+              "id": "SI-M001-3-3",
+              "description": "Counter-movement of parents limiting children's screen time gains momentum",
+              "timeframe": "mid_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Analog childhood movement grows", "Device-free schools proliferate", "Tech-skeptical parenting communities form"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M001-4",
+          "description": "Gen Alpha values and perspectives reshape digital culture and commerce",
+          "affected_domains": ["Social", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.80,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M001-4-1",
+              "description": "Brands must adapt to Gen Alpha's environmental and social consciousness",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Greenwashing becomes more detectable and penalized", "Purpose-driven brands gain advantage", "Corporate authenticity scrutinized more intensely"]
+            },
+            {
+              "id": "SI-M001-4-2",
+              "description": "Digital literacy and AI fluency becomes baseline expectation",
+              "timeframe": "long_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Generational divide in digital capabilities widens", "Workplace dynamics shift as digital natives dominate", "Educational paradigms transform"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M018",
+          "related_signal_title": "AI-Driven Meaning Crisis",
+          "relationship": "conflicting",
+          "interaction_description": "Gen Alpha grows up with AI as normal, potentially experiencing less existential anxiety about AI than older generations. However, they may face unique identity formation challenges growing up in AI-mediated environments.",
+          "combined_effect": "Generational divergence in AI attitudes - older generations face meaning crisis, Gen Alpha may normalize AI presence but face different developmental challenges",
+          "systemic_implications": ["Intergenerational conflict over technology becomes cultural divide", "Gen Alpha may lack perspective on pre-AI human experience", "Different existential questions emerge for digital-native generation"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M016",
+          "related_signal_title": "Return of Connection as Health Pillar",
+          "relationship": "conflicting",
+          "interaction_description": "While general trend moves toward in-person connection, Gen Alpha entering social media moves in opposite direction. Creates generational tension between analog movement and digital-native behaviors.",
+          "combined_effect": "Bifurcated social dynamics with Gen Alpha doubling down on digital while older generations seek analog",
+          "systemic_implications": ["Generational divide in social patterns", "Family dynamics strained by different communication preferences", "Parallel social worlds digital and analog develop"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M013",
+          "related_signal_title": "Emotional Fitness Movement",
+          "relationship": "reinforcing",
+          "interaction_description": "Gen Alpha mental health concerns from early social media exposure drives demand for emotional fitness tools and interventions. Creates market opportunity and social need simultaneously.",
+          "combined_effect": "Youth mental health crisis accelerates emotional wellness industry targeting Gen Alpha",
+          "systemic_implications": ["Emotional fitness becomes essential for digital natives", "Youth-focused mental health services expand rapidly", "Schools integrate emotional wellness education"]
+        }
+      ],
+      "systemic_notes": "Gen Alpha represents first generation with no memory of pre-social media world. This is not just earlier adoption but fundamentally different relationship with digital technology. YouTube overtaking linear TV for children marks generational media shift comparable to television replacing radio. The mental health implications are concerning but uncertain - Gen Alpha may develop better coping mechanisms or face unprecedented psychological challenges. Platform companies face difficult balance between growth (youth users) and responsibility (youth protection).",
+      "strategic_implications": [
+        "Social media platforms must prioritize youth safety features or face regulatory intervention",
+        "Content creators should adapt to Gen Alpha video-first, short-form preferences",
+        "Brands need authentic engagement strategies that resonate with socially-conscious Gen Alpha",
+        "Mental health professionals should specialize in digital-native youth issues",
+        "Educators must integrate digital literacy and wellness into curriculum",
+        "Parents need tools and guidance for managing Gen Alpha's digital lives"
+      ],
+      "uncertainty_factors": [
+        "Extent of mental health impacts on Gen Alpha unknown - could be overestimated or underestimated",
+        "Regulatory response to youth social media use could be minimal or draconian",
+        "Gen Alpha's actual preferences and behaviors may differ from predictions",
+        "Platform safety features may be effective or inadequate",
+        "Counter-movement restricting youth digital access may succeed or fail",
+        "Long-term developmental impacts of early social media exposure unclear"
+      ]
+    },
+    {
+      "signal_id": "SIG-2026-0112-M018",
+      "signal_title": "AI and Automation Drive Meaning Crisis and Spiritual Seeking",
+      "category": "Spiritual",
+      "significance": 4,
+      "primary_impacts": [
+        {
+          "id": "PI-M018-1",
+          "description": "Existential questions about human purpose intensify as AI matches cognitive capabilities",
+          "affected_domains": ["Spiritual", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.85,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M018-1-1",
+              "description": "Mental health crisis emerges centered on purpose anxiety and economic obsolescence fears",
+              "timeframe": "short_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Therapy demand surges for purpose-related issues", "Existential depression diagnoses increase", "Spiritual counseling becomes mainstream mental health service"]
+            },
+            {
+              "id": "SI-M018-1-2",
+              "description": "Philosophical and spiritual discourse moves from margins to mainstream cultural conversation",
+              "timeframe": "mid_term",
+              "likelihood": 0.80,
+              "cascading_effects": ["Philosophy departments see enrollment surge", "Spiritual teachers and thought leaders gain influence", "Meaning-focused media content proliferates"]
+            },
+            {
+              "id": "SI-M018-1-3",
+              "description": "Search for human uniqueness and value beyond economic productivity intensifies",
+              "timeframe": "mid_term",
+              "likelihood": 0.85,
+              "cascading_effects": ["Arts and creativity valued as distinctly human", "Emotional intelligence and relationships emphasized", "Contemplative practices mainstream as coping mechanism"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M018-2",
+          "description": "Cultural values shift from productivity and achievement toward human flourishing and meaning",
+          "affected_domains": ["Spiritual", "Social", "Economic"],
+          "timeframe": "mid_term",
+          "likelihood": 0.70,
+          "impact_magnitude": "critical",
+          "secondary_impacts": [
+            {
+              "id": "SI-M018-2-1",
+              "description": "Work-based identity and self-worth model collapses, requiring new frameworks",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["Career-focused culture questioned", "Alternative lifestyles and anti-work movements grow", "Productivity as virtue challenged philosophically"]
+            },
+            {
+              "id": "SI-M018-2-2",
+              "description": "Education system reorients toward meaning, purpose, and human development over vocational training",
+              "timeframe": "long_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Liberal arts renaissance", "Philosophy and ethics become core curriculum", "Contemplative education practices expand"]
+            },
+            {
+              "id": "SI-M018-2-3",
+              "description": "Economic measures beyond GDP gain prominence - happiness, fulfillment, well-being indices",
+              "timeframe": "long_term",
+              "likelihood": 0.60,
+              "cascading_effects": ["Policy focuses on human flourishing not just growth", "Wellbeing economics becomes mainstream", "National success redefined beyond economic metrics"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M018-3",
+          "description": "New spiritual and philosophical movements emerge addressing AI age questions",
+          "affected_domains": ["Spiritual", "Social"],
+          "timeframe": "short_term",
+          "likelihood": 0.80,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M018-3-1",
+              "description": "Tech-savvy spiritual teachers integrate AI ethics and human purpose in teachings",
+              "timeframe": "short_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["New spiritual philosophies for AI age emerge", "Contemplative tech communities form", "Bridge between technology and spirituality strengthens"]
+            },
+            {
+              "id": "SI-M018-3-2",
+              "description": "Retreats and communities focused on human essence and meaning proliferate",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["Tech detox and analog living movements grow", "Intentional communities emphasizing human connection", "Spiritual tourism focused on meaning-seeking"]
+            },
+            {
+              "id": "SI-M018-3-3",
+              "description": "Consciousness studies and philosophy of mind gain cultural relevance",
+              "timeframe": "mid_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Debates on AI consciousness become mainstream", "Human consciousness valued as unique quality", "Contemplative neuroscience research expands"]
+            }
+          ]
+        },
+        {
+          "id": "PI-M018-4",
+          "description": "Tension between transhumanist and humanist responses to AI creates cultural divide",
+          "affected_domains": ["Spiritual", "Social", "Political"],
+          "timeframe": "mid_term",
+          "likelihood": 0.75,
+          "impact_magnitude": "high",
+          "secondary_impacts": [
+            {
+              "id": "SI-M018-4-1",
+              "description": "Transhumanists embrace human-AI merger as next evolutionary step",
+              "timeframe": "mid_term",
+              "likelihood": 0.70,
+              "cascading_effects": ["Cognitive enhancement technologies proliferate", "Ethical debates on human modification intensify", "Technological elites pursue enhancement"]
+            },
+            {
+              "id": "SI-M018-4-2",
+              "description": "Humanist movements resist AI integration, emphasizing human nature preservation",
+              "timeframe": "mid_term",
+              "likelihood": 0.75,
+              "cascading_effects": ["AI-free zones and communities emerge", "Political movements for human rights in AI age", "Cultural war over human nature and technology"]
+            },
+            {
+              "id": "SI-M018-4-3",
+              "description": "Religious and spiritual traditions adapt teachings for AI age or face irrelevance",
+              "timeframe": "long_term",
+              "likelihood": 0.65,
+              "cascading_effects": ["Theological debates on AI and soul", "Religious teachings updated for technological age", "Interfaith dialogue on technology and humanity"]
+            }
+          ]
+        }
+      ],
+      "cross_impacts": [
+        {
+          "related_signal_id": "SIG-2026-0112-M002",
+          "related_signal_title": "Quantum Computing Advantage",
+          "relationship": "reinforcing",
+          "interaction_description": "Quantum computing making previously impossible computations trivial compounds the meaning crisis. If both cognitive tasks (AI) and computational problems (quantum) exceed human capabilities, questions of human purpose intensify.",
+          "combined_effect": "Comprehensive technological superiority in cognitive and computational domains deepens existential crisis",
+          "systemic_implications": ["Humans face obsolescence in core activities defining intelligence", "Remaining human uniqueness increasingly limited to consciousness and subjective experience", "Urgency for meaning-making frameworks increases"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M003",
+          "related_signal_title": "Tesla Optimus Robots",
+          "relationship": "reinforcing",
+          "interaction_description": "Humanoid robots displacing physical labor combines with AI displacing cognitive labor to question human economic and functional purpose comprehensively.",
+          "combined_effect": "Total automation of both physical and cognitive labor creates comprehensive human purpose crisis",
+          "systemic_implications": ["Work-based human identity model completely collapses", "Economic systems based on human labor become obsolete", "Fundamental restructuring of human role in society required"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M013",
+          "related_signal_title": "Emotional Fitness Movement",
+          "relationship": "reinforcing",
+          "interaction_description": "Meaning crisis drives demand for emotional fitness and coping mechanisms. Spiritual seeking and emotional wellness converge as responses to AI-driven anxiety.",
+          "combined_effect": "Wellness industry expands to address existential and purpose-related mental health needs",
+          "systemic_implications": ["Mental health services must address existential dimensions not just symptoms", "Spiritual and psychological support converge", "Meaning-making becomes recognized health intervention"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M001",
+          "related_signal_title": "Gen Alpha Social Media Takeover",
+          "relationship": "conflicting",
+          "interaction_description": "Gen Alpha grows up with AI as normal and may not experience same existential crisis as older generations. Generational divide in AI attitudes creates cultural tension.",
+          "combined_effect": "Intergenerational conflict over technology and meaning intensifies",
+          "systemic_implications": ["Older generations experience crisis Gen Alpha may not share", "Different philosophies of human-AI relationship by generation", "Potential for generational wisdom transmission breakdown"]
+        },
+        {
+          "related_signal_id": "SIG-2026-0112-M016",
+          "related_signal_title": "Return of Connection as Health Pillar",
+          "relationship": "reinforcing",
+          "interaction_description": "Meaning crisis drives search for authentic human connection as distinctly human domain AI cannot replace. In-person relationships valued as source of meaning beyond productivity.",
+          "combined_effect": "Human relationships and community become central to meaning-making in AI age",
+          "systemic_implications": ["Social connection valued as essential human need", "Communities centered on human flourishing proliferate", "Relationship quality becomes measure of good life"]
+        }
+      ],
+      "systemic_notes": "This signal represents one of the most profound cultural challenges of the AI transition. The meaning crisis is not just about employment but about human identity, purpose, and value in a world where machines match or exceed human capabilities. This is comparable to existential crises following Copernican revolution (humans not center of universe) or Darwinian evolution (humans not special creation). The response will likely involve both spiritual/philosophical adaptation and practical restructuring of how humans find purpose. The crisis may accelerate or it may be overstated - Gen Alpha growing up with AI may adapt differently than older generations experiencing transition.",
+      "strategic_implications": [
+        "Mental health systems must prepare for existential and purpose-related counseling demand surge",
+        "Educational institutions should integrate philosophy, meaning-making, and human purpose into curriculum",
+        "Spiritual and philosophical leaders have opportunity to address AI age questions",
+        "Organizations should support employees through identity transitions beyond work-based purpose",
+        "Policymakers should consider human flourishing measures beyond employment and GDP",
+        "Communities should create spaces for meaning-making and authentic human connection"
+      ],
+      "uncertainty_factors": [
+        "Extent and severity of meaning crisis unknown - may be overstated or understated",
+        "Generational responses may vary significantly - Gen Alpha may adapt differently",
+        "Cultural and religious variations in responses to AI",
+        "Timeline of AI capabilities matching predictions uncertain",
+        "Humans may find new sources of purpose and meaning unpredicted",
+        "Transhumanist solutions (enhancement) may compete with humanist solutions (acceptance)"
+      ]
+    }
+  ],
+  "emerging_patterns": [
+    {
+      "pattern_id": "PAT-001",
+      "name": "Technology Acceleration and Human Purpose Crisis",
+      "description": "Multiple breakthrough technologies (quantum computing, AI, humanoid robots) converging simultaneously creates comprehensive challenge to human economic and existential purpose. The speed of advancement outpaces cultural adaptation.",
+      "related_signals": ["SIG-2026-0112-M002", "SIG-2026-0112-M003", "SIG-2026-0112-M018"],
+      "significance": "critical",
+      "timeframe": "short_to_mid_term",
+      "implications": "Society faces urgent need for meaning-making frameworks beyond work and productivity. Educational, spiritual, and policy institutions must address fundamental questions of human purpose."
+    },
+    {
+      "pattern_id": "PAT-002",
+      "name": "U.S. Global Retrenchment and Leadership Vacuum",
+      "description": "U.S. withdrawal from climate organizations and foreign aid cuts represent comprehensive retrenchment from post-WWII international leadership role. Creates vacuum that China and EU may fill, reshaping global governance.",
+      "related_signals": ["SIG-2026-0112-M007", "SIG-2026-0112-M011"],
+      "significance": "critical",
+      "timeframe": "short_to_mid_term",
+      "implications": "Global governance architectures designed around U.S. leadership must adapt. Potential for fragmentation or emergence of alternative leadership models."
+    },
+    {
+      "pattern_id": "PAT-003",
+      "name": "Energy Transition Economic Irreversibility",
+      "description": "Renewable energy reaching economic viability and scale (500 GW solar, 15 GW storage) makes energy transition irreversible regardless of policy. Market forces now dominate over politics.",
+      "related_signals": ["SIG-2026-0112-M008", "SIG-2026-0112-M009"],
+      "significance": "high",
+      "timeframe": "mid_to_long_term",
+      "implications": "Fossil fuel industry decline is structural not cyclical. Stranded assets materialize. Energy geopolitics transforms from oil to renewables and critical minerals."
+    },
+    {
+      "pattern_id": "PAT-004",
+      "name": "Peak Optimism Sentiment Indicators",
+      "description": "Unanimous Wall Street bullishness, above-consensus growth forecasts, and AI supercycle consensus suggest possible sentiment extreme. Historical parallels to market tops.",
+      "related_signals": ["SIG-2026-0112-M004", "SIG-2026-0112-M005", "SIG-2026-0112-M006"],
+      "significance": "high",
+      "timeframe": "short_term",
+      "implications": "Potential market vulnerability if consensus proves wrong. Need for risk management despite strong fundamental case for AI and growth."
+    },
+    {
+      "pattern_id": "PAT-005",
+      "name": "Technology Infrastructure Resource Constraints",
+      "description": "Quantum computing, AI data centers, and semiconductor manufacturing face water scarcity constraints. Technology advancement meeting physical resource limits creates novel bottlenecks.",
+      "related_signals": ["SIG-2026-0112-M002", "SIG-2026-0112-M012"],
+      "significance": "high",
+      "timeframe": "mid_term",
+      "implications": "Technology development becomes geographically constrained by resource availability. Water-abundant regions gain competitive advantage. Need for water-efficient technology development."
+    },
+    {
+      "pattern_id": "PAT-006",
+      "name": "Wellness Paradigm Shift Toward Prevention and Meaning",
+      "description": "Multiple signals show shift from reactive health treatment to proactive wellness, emotional fitness, and meaning-seeking. Reflects cultural adaptation to digital exhaustion and AI disruption.",
+      "related_signals": ["SIG-2026-0112-M013", "SIG-2026-0112-M016", "SIG-2026-0112-M017", "SIG-2026-0112-M018"],
+      "significance": "medium",
+      "timeframe": "mid_term",
+      "implications": "Healthcare and wellness industries must adapt to holistic, preventive, meaning-focused approaches. Mental health services need philosophical and existential counseling capacity."
+    },
+    {
+      "pattern_id": "PAT-007",
+      "name": "Generational Digital Divide Intensifies",
+      "description": "Gen Alpha entering social media as digital natives while older generations seek analog connection creates bifurcated social dynamics and intergenerational tensions.",
+      "related_signals": ["SIG-2026-0112-M001", "SIG-2026-0112-M016", "SIG-2026-0112-M018"],
+      "significance": "medium",
+      "timeframe": "mid_to_long_term",
+      "implications": "Family and workplace dynamics strained by different communication preferences. Educational approaches must bridge generational technology attitudes. Risk of intergenerational wisdom transmission breakdown."
+    }
+  ],
+  "cross_impact_matrix": {
+    "SIG-2026-0112-M002": {
+      "SIG-2026-0112-M012": "conflicting",
+      "SIG-2026-0112-M018": "reinforcing",
+      "SIG-2026-0112-M008": "reinforcing"
+    },
+    "SIG-2026-0112-M007": {
+      "SIG-2026-0112-M008": "neutral",
+      "SIG-2026-0112-M010": "reinforcing",
+      "SIG-2026-0112-M011": "reinforcing"
+    },
+    "SIG-2026-0112-M003": {
+      "SIG-2026-0112-M018": "reinforcing",
+      "SIG-2026-0112-M004": "neutral",
+      "SIG-2026-0112-M010": "reinforcing"
+    },
+    "SIG-2026-0112-M008": {
+      "SIG-2026-0112-M007": "neutral",
+      "SIG-2026-0112-M009": "reinforcing",
+      "SIG-2026-0112-M012": "conflicting"
+    },
+    "SIG-2026-0112-M006": {
+      "SIG-2026-0112-M002": "reinforcing",
+      "SIG-2026-0112-M004": "reinforcing",
+      "SIG-2026-0112-M003": "reinforcing"
+    },
+    "SIG-2026-0112-M001": {
+      "SIG-2026-0112-M018": "conflicting",
+      "SIG-2026-0112-M016": "conflicting",
+      "SIG-2026-0112-M013": "reinforcing"
+    },
+    "SIG-2026-0112-M018": {
+      "SIG-2026-0112-M002": "reinforcing",
+      "SIG-2026-0112-M003": "reinforcing",
+      "SIG-2026-0112-M013": "reinforcing",
+      "SIG-2026-0112-M001": "conflicting",
+      "SIG-2026-0112-M016": "reinforcing"
+    }
+  },
+  "systemic_synthesis": {
+    "key_insights": [
+      "The convergence of quantum computing, advanced AI, and humanoid robots represents a civilizational inflection point comparable to the Industrial Revolution, but compressed into a much shorter timeframe",
+      "U.S. geopolitical retrenchment from climate and development leadership creates genuine uncertainty about global governance while economic and technological forces may proceed independently",
+      "Renewable energy has crossed irreversibility threshold where economics dominate policy - energy transition will proceed regardless of political opposition",
+      "Peak optimism in financial markets and growth forecasts suggests potential sentiment extreme requiring risk management despite strong AI fundamentals",
+      "Technology advancement is beginning to face physical resource constraints (water) creating novel bottlenecks and geographic advantages",
+      "Human meaning and purpose crisis driven by automation is genuine cultural challenge requiring philosophical, spiritual, and policy responses",
+      "Generational divides in technology relationships intensify with Gen Alpha digital natives vs. older generations seeking analog connection"
+    ],
+    "highest_impact_interactions": [
+      {
+        "signals": ["Quantum Computing", "AI Supercycle", "Humanoid Robots"],
+        "interaction": "Technology convergence creating comprehensive automation of human cognitive and physical capabilities",
+        "impact": "Fundamental restructuring of human economic role and existential purpose",
+        "urgency": "critical"
+      },
+      {
+        "signals": ["U.S. Climate Withdrawal", "Renewable Energy Milestone", "Industrial Subsidies"],
+        "interaction": "Policy retrenchment paradoxically coinciding with irreversible market-driven energy transition",
+        "impact": "Fragmented global governance while underlying technological and economic forces proceed",
+        "urgency": "high"
+      },
+      {
+        "signals": ["Market Consensus Optimism", "Quantum Breakthrough", "AI Meaning Crisis"],
+        "interaction": "Peak financial optimism about technology coinciding with existential concerns about human purpose",
+        "impact": "Disconnect between asset prices and human welfare, potential for sharp repricing if AI disappoints",
+        "urgency": "high"
+      }
+    ],
+    "wildcard_scenarios": [
+      {
+        "scenario": "Quantum computing enables AGI breakthrough earlier than expected",
+        "probability": "low",
+        "impact": "catastrophic",
+        "description": "If quantum computing accelerates AI to artificial general intelligence within 1-2 years rather than 5-10, society has insufficient time to adapt. All analyzed signals accelerate simultaneously creating systems crisis."
+      },
+      {
+        "scenario": "Water scarcity constrains technology deployment severely",
+        "probability": "medium",
+        "impact": "high",
+        "description": "If water conflicts prevent quantum computing, AI data center, and semiconductor expansion, technology advancement faces hard physical limits. Geographic concentration of tech in water-rich areas increases inequality."
+      },
+      {
+        "scenario": "U.S. retrenchment triggers global governance collapse",
+        "probability": "medium",
+        "impact": "critical",
+        "description": "If China-EU coalition cannot fill U.S. leadership vacuum, global governance fragments. Climate, trade, and security cooperation breaks down. Potential for accelerated geopolitical competition and conflict."
+      },
+      {
+        "scenario": "Meaning crisis triggers mass social movement rejecting technology",
+        "probability": "low",
+        "impact": "high",
+        "description": "If existential anxiety about AI intensifies rapidly, potential for Luddite-style social movements gaining political power. Could slow or stop AI deployment through democratic processes."
+      },
+      {
+        "scenario": "AI supercycle fails to deliver expected productivity gains",
+        "probability": "medium",
+        "impact": "high",
+        "description": "If AI monetization and productivity gains disappoint relative to high expectations, market repricing and recession possible. Unemployment from AI displacement without offsetting productivity benefits creates worst-case scenario."
+      }
+    ],
+    "monitoring_priorities": [
+      "Quantum computing technical verification - IBM and competitors must demonstrate sustained advantage",
+      "AI earnings and productivity delivery vs. 13-15% growth expectations",
+      "Water rights litigation and semiconductor/data center permitting in water-scarce regions",
+      "China-EU climate cooperation effectiveness without U.S. participation",
+      "Mental health and meaning crisis metrics - therapy demand, purpose anxiety prevalence",
+      "Gen Alpha social media impacts - longitudinal mental health data",
+      "Renewable energy deployment and fossil fuel stranded asset realization",
+      "Market sentiment indicators for signs of consensus breaking",
+      "Humanoid robot deployment verification - actual vs. claimed production numbers",
+      "Subnational climate action effectiveness in compensating for federal retrenchment"
+    ]
+  },
+  "methodology_notes": {
+    "futures_wheel_approach": "Each signal analyzed for direct primary impacts, then cascading secondary impacts, then cross-impacts with related signals. Focus on systemic interconnections rather than isolated signal analysis.",
+    "timeframe_definitions": {
+      "short_term": "0-1 years (2026-2027)",
+      "mid_term": "1-3 years (2027-2029)",
+      "long_term": "3-10 years (2029-2036)"
+    },
+    "likelihood_scale": "0-1.0 where 0.5 = 50% probability. Based on signal strength, source credibility, and systemic analysis.",
+    "impact_magnitude": "Qualitative assessment: low, medium, high, critical. Based on breadth of effect, depth of change, and irreversibility.",
+    "limitations": [
+      "Analysis limited to high-significance signals (4-5) due to scope constraints",
+      "Cross-impacts explored for related signals but comprehensive network analysis not feasible",
+      "Timeframes and likelihood estimates are subjective expert judgments not probabilistic models",
+      "Some signals (especially technology) have verification uncertainty requiring monitoring",
+      "Cultural and regional variations in impacts not fully explored",
+      "Analysis reflects Western/US perspective due to source concentration"
+    ]
+  }
+}

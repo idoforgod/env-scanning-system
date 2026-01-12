@@ -1,0 +1,845 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-12",
+    "scan_time": "15:30:00",
+    "timezone": "Asia/Seoul",
+    "scan_window_hours": 24,
+    "strict_mode": true,
+    "focus_area": "Telecommunications/5G/6G",
+    "total_signals": 25,
+    "target_sources": [
+      "Light Reading",
+      "Fierce Wireless",
+      "RCR Wireless",
+      "Telecom TV",
+      "Total Telecom"
+    ]
+  },
+  "category_distribution": {
+    "Technological": 22,
+    "Economic": 2,
+    "Political": 1
+  },
+  "signals": [
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-001",
+      "title": "FCC Votes to Unlock High-Power 6 GHz for Wi-Fi and IoT Devices",
+      "url": "https://www.rcrwireless.com/20260108/wi-fi-2/fcc-votes-6ghz-wifi-iot",
+      "source_name": "RCR Wireless",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Technological",
+      "summary": "The FCC is creating a new 'geofenced variable power' (GVP) device category in the 6 GHz band to enable higher-power outdoor operations while protecting licensed users. This contrasts with Europe's approach of reserving 6 GHz for mobile services, with the U.S. 'doubling down on unlicensed access' to accelerate AR/VR, IoT, and indoor navigation innovations.",
+      "key_entities": [
+        "FCC",
+        "6 GHz spectrum",
+        "Wi-Fi Alliance",
+        "geofenced variable power",
+        "AR/VR",
+        "IoT"
+      ],
+      "key_facts": [
+        "New GVP device category uses geographic restrictions to prevent interference",
+        "Enables outdoor, longer-range wireless beyond current low-power indoor devices",
+        "U.S. strategy diverges from European mobile-focused 6 GHz allocation",
+        "Targets next-generation AR/VR and IoT use cases"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-002",
+      "title": "NVIDIA and US Telecom Leaders Unveil All-American AI-RAN Stack for 6G",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-us-telecom-ai-ran-6g",
+      "source_name": "NVIDIA Newsroom",
+      "source_type": "news",
+      "published_date": "2025-10-28",
+      "category_hint": "Technological",
+      "summary": "NVIDIA and partners (Booz Allen, Cisco, MITRE, ODC, T-Mobile) have developed America's first AI-native wireless stack for 6G networks. The system achieved breakthrough performance: 7x greater cell capacity and 3.5x higher power efficiency compared to legacy RAN. Features include multimodal ISAC (camera vision + RF sensing), AI-powered spectrum agility, and real-time spectrum sensing for interference detection.",
+      "key_entities": [
+        "NVIDIA",
+        "T-Mobile",
+        "Booz Allen",
+        "Cisco",
+        "MITRE",
+        "Cerberus ODC",
+        "AI Aerial",
+        "6G",
+        "ISAC"
+      ],
+      "key_facts": [
+        "First AI-native wireless stack for 6G in the U.S.",
+        "7x cell capacity improvement over legacy systems",
+        "3.5x power efficiency gains",
+        "Completed functional stack in 6 months",
+        "Multimodal ISAC fuses camera and RF sensing",
+        "AI-powered real-time spectrum management"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-003",
+      "title": "Starlink Secures FCC Approval to Launch 7,500 Additional LEO Satellites",
+      "url": "https://www.ispreview.co.uk/index.php/2026/01/starlink-secure-approval-to-launch-7500-faster-leo-broadband-satellites.html",
+      "source_name": "ISPreview UK",
+      "source_type": "news",
+      "published_date": "2026-01-10",
+      "category_hint": "Technological",
+      "summary": "SpaceX received FCC clearance to deploy 7,500 Gen2 Starlink satellites (bringing total to 15,000), operating in multiple frequency bands (Ku-, Ka-, V-, E-, W-band) at altitudes 340km-485km. The FCC stated this enables 'gigabit speed service, including symmetrical download and upload speeds.' Gen3 satellites with 1+ Tbps capacity await Starship rocket availability (expected H1 2026).",
+      "key_entities": [
+        "SpaceX",
+        "Starlink",
+        "FCC",
+        "Gen2 satellites",
+        "Gen3 satellites",
+        "Starship rocket",
+        "LEO constellation"
+      ],
+      "key_facts": [
+        "7,500 additional satellites approved (15,000 total)",
+        "Operates Ku-, Ka-, V-, E-, W-band frequencies",
+        "Orbital altitudes: 340-485km",
+        "Gigabit symmetrical speeds enabled",
+        "9,400 satellites currently in orbit",
+        "6 million global customers (July 2025)",
+        "Gen3 satellites: 1+ Tbps capacity, launching H1 2026"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-004",
+      "title": "BT Group Partners with Starlink for Rural Satellite Broadband (2026 Launch)",
+      "url": "https://www.telecomtv.com/content/access-evolution/bt-to-broaden-its-broadband-reach-with-starlink-54236/",
+      "source_name": "Telecom TV",
+      "source_type": "news",
+      "published_date": "2025-11-06",
+      "category_hint": "Technological",
+      "summary": "BT Group signed partnership with SpaceX's Starlink to offer satellite broadband via EE consumer brand, launching in select rural UK areas in H2 2026. Starlink's 8,800-satellite constellation provides UK-wide coverage with advertised speeds up to 280 Mbps (median ~86 Mbps). BT aims to reach underserved populations where fiber isn't economically viable, complementing its 20.3M FTTP premises.",
+      "key_entities": [
+        "BT Group",
+        "Starlink",
+        "SpaceX",
+        "EE",
+        "Allison Kirkby",
+        "FTTP",
+        "rural broadband"
+      ],
+      "key_facts": [
+        "Launch: H2 2026 in select rural UK areas",
+        "Starlink constellation: ~8,800 satellites",
+        "Max advertised speed: 280 Mbps",
+        "Median UK speed (2024): ~86 Mbps",
+        "BT's FTTP coverage: 20.3M premises (5.5M rural)",
+        "No direct-to-device services planned initially",
+        "Potential convergence bundling with mobile"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-005",
+      "title": "AT&T's $14B Open RAN Deployment Targets 70% Traffic by 2026",
+      "url": "https://www.rcrwireless.com/20241001/open_ran/att-sees-open-ran-enabling-continuous-innovation",
+      "source_name": "RCR Wireless",
+      "source_type": "news",
+      "published_date": "2024-10-01",
+      "category_hint": "Technological",
+      "summary": "AT&T committed $14 billion over 5 years with Ericsson to achieve 70% of network traffic on open platforms by 2026. Cloud RAN deployment inflection point expected in 2026. Strategy enables 'continuous innovation' decoupled from generational cycles. Trials in Red Oak (TX), Atlanta, and Memphis focus on scaling challenges. Annual RAN power costs: ~$1 billion, targeting efficiency improvements.",
+      "key_entities": [
+        "AT&T",
+        "Ericsson",
+        "Fujitsu",
+        "Cloud RAN",
+        "Open RAN",
+        "Robert Soni",
+        "5G Standalone"
+      ],
+      "key_facts": [
+        "$14B investment over 5 years with Ericsson",
+        "Target: 70% traffic on open platforms by 2026",
+        "Cloud RAN inflection point: 2026",
+        "Primary vendors: Ericsson (basebands/radios), Fujitsu (radios)",
+        "Trials: Red Oak TX, Atlanta, Memphis",
+        "AT&T RAN power costs: ~$1B annually",
+        "Focus: 5G SA expansion, network APIs, energy efficiency"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-006",
+      "title": "Verizon Launches 5G Network Slice for Enterprise FWA",
+      "url": "https://www.fierce-network.com/wireless/verizon-business-intros-fwa-5g-network-slice",
+      "source_name": "Fierce Network",
+      "source_type": "news",
+      "published_date": "2026-01-03",
+      "category_hint": "Technological",
+      "summary": "Verizon introduced '5G Network Slice - Enhanced Internet' for enterprises (500+ employees), providing dedicated C-band capacity with SLAs and enhanced uplink for cloud/AI workloads. Service targets business-critical operations requiring solid uplink performance for AI inference, computer vision, and machine learning applications. Marks commercialization acceleration for network slicing in 2026.",
+      "key_entities": [
+        "Verizon",
+        "network slicing",
+        "C-band",
+        "5G Standalone",
+        "enterprise FWA",
+        "AI inference",
+        "SLA"
+      ],
+      "key_facts": [
+        "Target: Large corporations (500+ employees)",
+        "Dedicated C-band spectrum slice with SLAs",
+        "Enhanced uplink capacity for cloud/AI workloads",
+        "Use cases: AI inference, computer vision, ML",
+        "Performance consistency with service guarantees",
+        "Part of 2026 network slicing commercialization wave"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-007",
+      "title": "T-Mobile Plans Dynamic Network Slicing Launch Early 2026",
+      "url": "https://www.fierce-network.com/wireless/t-mobiles-network-chief-talks-about-2026-5g-advanced-plans",
+      "source_name": "Fierce Network",
+      "source_type": "news",
+      "published_date": "2025-12-18",
+      "category_hint": "Technological",
+      "summary": "T-Mobile announced plans to launch dynamic network slicing in early 2026, enabling customers to 'create end-to-end slices on the T-Mobile network with just a credit card.' All three major U.S. operators expected to offer nationwide network slices in 2026. Market projections: 5G slicing to exceed $20 billion by 2026, with industrial manufacturing, C-V2X, and logistics generating ~$12 billion.",
+      "key_entities": [
+        "T-Mobile",
+        "network slicing",
+        "5G Advanced",
+        "5G SA",
+        "dynamic slicing",
+        "C-V2X"
+      ],
+      "key_facts": [
+        "Launch: Early 2026",
+        "Self-service creation 'with just a credit card'",
+        "End-to-end slice capability",
+        "All 3 major U.S. carriers launching slices in 2026",
+        "Market size: $20B+ by 2026",
+        "Manufacturing/C-V2X/logistics: ~$12B revenue potential",
+        "85+ operators with commercial 5G SA by end 2025"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-008",
+      "title": "Samsung's Private 5G Networks Support Digital Transformation with RedCap",
+      "url": "https://blog.privatenetworks.technology/2026/01/samsungs-private-5g-networks-supporting.html",
+      "source_name": "Private Networks Technology Blog",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Technological",
+      "summary": "Samsung's virtualized private 5G platform consolidates DU, CU, UPF, and virtual switch in 'Network in a Server' architecture. Supports RedCap devices with simplified 5G modems for smaller form factors, reduced cost, and extended battery life. Demonstrated with Hyundai Motor integrating RedCap into vehicle inspection automation. Applications include AGVs, remote cranes, autonomous transport, inspection robots, and 5G CCTV.",
+      "key_entities": [
+        "Samsung",
+        "RedCap",
+        "Hyundai Motor",
+        "Network in a Server",
+        "private 5G",
+        "virtualized DU/CU/UPF",
+        "AGV"
+      ],
+      "key_facts": [
+        "Consolidated architecture: DU+CU+UPF in single server",
+        "RedCap: Simplified 5G modems, smaller form factors",
+        "Hyundai integration: Vehicle inspection automation",
+        "Use cases: AGVs, remote cranes, inspection robots",
+        "Government/defense solutions (Korea, Japan deployments)",
+        "3GPP-compliant mission-critical communications",
+        "Cloud deployment models for reduced CapEx"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-009",
+      "title": "CIMPOR Completes Ericsson Private 5G Rollout at Portugal Cement Plants",
+      "url": "https://www.ericsson.com/en/news/2026/1/cimpor-set-for-global-ericsson-private-5g-rollout",
+      "source_name": "Ericsson",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Technological",
+      "summary": "CIMPOR, multinational cement producer, activated Ericsson Private 5G Mobile Private Network (MPN) across three Portugal cement production units in partnership with Vodafone Portugal. Represents industrial enterprise adoption trend, with annual private 5G investments projected to grow at 41% CAGR 2025-2028, reaching $5B+ by 2028. Production-grade deployments by Airbus, Ford, Toyota, Walmart, and others.",
+      "key_entities": [
+        "CIMPOR",
+        "Ericsson",
+        "Vodafone Portugal",
+        "Mobile Private Network",
+        "Industry 4.0",
+        "cement production",
+        "private 5G"
+      ],
+      "key_facts": [
+        "Deployment: 3 cement production units in Portugal",
+        "Partnership: CIMPOR + Vodafone + Ericsson",
+        "January 2026 activation",
+        "Private 5G market: 41% CAGR (2025-2028)",
+        "Market size: $5B+ by 2028",
+        "Industrial adopters: Airbus, Ford, Toyota, Walmart, Tesla",
+        "Sectors: Manufacturing, logistics, mining, energy"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-010",
+      "title": "Direct-to-Device Satellite: AT&T Beta Launch with AST SpaceMobile in H1 2026",
+      "url": "https://www.lightreading.com/satellite/at-t-preps-beta-d2d-satellite-service-with-ast-spacemobile",
+      "source_name": "Light Reading",
+      "source_type": "news",
+      "published_date": "2025-12-20",
+      "category_hint": "Technological",
+      "summary": "AT&T plans beta D2D satellite service in H1 2026 with AST SpaceMobile for select consumer and FirstNet public safety users, following AST's BlueBird 6 satellite launch (December 2025). AST expects 'intermittent nationwide' service early 2026, 'continuous' service later in year. Five BlueBird launches planned by Q1 2026. 3GPP Release 19 (expected 2027) will standardize D2D for voice/real-time comms (commercial 2028).",
+      "key_entities": [
+        "AT&T",
+        "AST SpaceMobile",
+        "FirstNet",
+        "BlueBird satellites",
+        "Direct-to-Device",
+        "3GPP Release 19",
+        "LEO"
+      ],
+      "key_facts": [
+        "Beta launch: H1 2026",
+        "Partners: AT&T + AST SpaceMobile",
+        "Target: Select consumers + FirstNet public safety",
+        "BlueBird 6 satellite launched December 2025",
+        "5 launches planned by Q1 2026",
+        "Early 2026: Intermittent nationwide coverage",
+        "3GPP R19 standardization: ~2027 (voice/real-time)",
+        "Commercial D2D voice: ~2028"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-011",
+      "title": "Starlink Direct-to-Cell Exits Beta, Achieves 15-20 Mbps on Unmodified 5G Phones",
+      "url": "https://www.dishytech.com/starlink-just-had-a-massive-2025-and-2026-could-be-even-bigger/",
+      "source_name": "DISHYtech",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Technological",
+      "summary": "SpaceX announced at CES 2026 that Starlink Direct-to-Cell officially exited beta and is now live for unmodified 5G phones across partner carriers (T-Mobile USA, KDDI Japan, Optus Australia). CES demos showed 15-20 Mbps downlink speeds, sufficient for HD video streaming and full web browsing in total dead zones. Samsung Galaxy S26 series features Exynos 6000 chipset with native NTN modem for 2-way SMS and photo sharing (Skylo/Telesat Lightspeed).",
+      "key_entities": [
+        "SpaceX",
+        "Starlink Direct-to-Cell",
+        "T-Mobile",
+        "KDDI",
+        "Optus",
+        "Samsung Galaxy S26",
+        "Exynos 6000",
+        "NTN modem",
+        "Skylo",
+        "Telesat Lightspeed"
+      ],
+      "key_facts": [
+        "CES 2026 announcement: Beta exit",
+        "Live on T-Mobile (US), KDDI (Japan), Optus (Australia)",
+        "Speed: 15-20 Mbps downlink demonstrated",
+        "Works on unmodified 5G phones",
+        "HD video streaming capable in dead zones",
+        "Galaxy S26: Native NTN modem (Exynos 6000)",
+        "Skylo + Telesat Lightspeed partnership",
+        "Supports 2-way SMS, low-res photo sharing"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-012",
+      "title": "FCC Sets June 2026 for AWS-3 Spectrum Auction (Auction 113)",
+      "url": "https://www.advanced-television.com/2025/12/22/fcc-sets-june-2026-for-next-spectrum-auction/",
+      "source_name": "Advanced Television",
+      "source_type": "news",
+      "published_date": "2025-12-22",
+      "category_hint": "Political",
+      "summary": "FCC scheduled AWS-3 Auction 113 deadline for June 23, 2026. Filing window for interested parties opens January 26, 2026; upfront pre-bidding payments due April 8, 2026. Separately, FCC advancing upper C-band (3.98-4.2 GHz) auction rulemaking for up to 180 MHz, targeting 5G/6G services. OBBBA requires upper C-band auction completion by July 2027. This represents critical mid-band spectrum expansion for 5G-to-6G transition.",
+      "key_entities": [
+        "FCC",
+        "AWS-3 spectrum",
+        "Auction 113",
+        "upper C-band",
+        "3.98-4.2 GHz",
+        "OBBBA",
+        "mid-band spectrum"
+      ],
+      "key_facts": [
+        "AWS-3 Auction 113 deadline: June 23, 2026",
+        "Filing window opens: January 26, 2026",
+        "Pre-bidding payments: April 8, 2026",
+        "Upper C-band: 3.98-4.2 GHz (up to 180 MHz)",
+        "Upper C-band deadline: July 2027 (OBBBA mandate)",
+        "FCC voted November 20, 2025 to advance rulemaking",
+        "Target: 5G/6G mid-band expansion"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-013",
+      "title": "RedCap and eRedCap Module Launches Expected Throughout 2026",
+      "url": "https://www.abiresearch.com/blog/5g-redcap",
+      "source_name": "ABI Research",
+      "source_type": "news",
+      "published_date": "2025-11-25",
+      "category_hint": "Technological",
+      "summary": "RedCap commercial devices entered market in 2025-2026 after chipset availability in 2023-2024. Enhanced RedCap (eRedCap) scheduled for commercial rollout in 2026, enabling smoother LTE category transitions. 30 operators across 21 countries investing (China Mobile, China Telecom, China Unicom, Dito, STC, T-Mobile US). AT&T announced complete nationwide RedCap coverage July 2025. GCF-certified modules emerging throughout 2025-2026.",
+      "key_entities": [
+        "RedCap",
+        "eRedCap",
+        "China Mobile",
+        "AT&T",
+        "T-Mobile US",
+        "GCF",
+        "cellular IoT",
+        "5G Reduced Capability"
+      ],
+      "key_facts": [
+        "Commercial devices: 2025-2026",
+        "eRedCap rollout: 2026",
+        "30 operators in 21 countries investing",
+        "AT&T nationwide coverage: July 2025",
+        "Operators: China Mobile/Telecom/Unicom, Dito, STC, T-Mobile",
+        "Target: Wearables, industrial sensors, video surveillance",
+        "GCF-certified modules emerging 2025-2026",
+        "Bridges gap between low-power IoT and full 5G"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-014",
+      "title": "Wi-Fi 7 Access Point Shipments Projected to Reach 117.9M in 2026",
+      "url": "https://www.networkcomputing.com/wireless-networking/wi-fi-7-picks-up-speed-new-devices-accelerate-enterprise-adoption",
+      "source_name": "Network Computing",
+      "source_type": "news",
+      "published_date": "2025-12-15",
+      "category_hint": "Technological",
+      "summary": "Wi-Fi 7 AP shipments jumped from 26.3M (2024) to 66.5M (2025), with ABI Research forecasting 117.9M in 2026. Enterprise adoption accelerating faster than previous generations, with Wi-Fi 7 becoming 'default refresh' for new enterprise AP purchases. Wi-Fi Alliance forecasts 1.1B total Wi-Fi 7 device shipments in 2026 (including 196.1M IoT, 22.3M healthcare, 159.4M consumer devices). 38% of survey respondents plan 2026 deployments.",
+      "key_entities": [
+        "Wi-Fi 7",
+        "Wi-Fi Alliance",
+        "ABI Research",
+        "IEEE 802.11be",
+        "enterprise networking",
+        "access points"
+      ],
+      "key_facts": [
+        "AP shipments: 26.3M (2024) → 66.5M (2025) → 117.9M (2026)",
+        "Total device shipments 2026: 1.1B",
+        "IoT devices: 196.1M",
+        "Healthcare devices: 22.3M",
+        "Consumer devices: 159.4M",
+        "Enterprise: Wi-Fi 7 as default refresh",
+        "38% of respondents planning 2026 deployments",
+        "Faster adoption than prior generations"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-015",
+      "title": "Wi-Fi Alliance Introduces 20 MHz-Only Wi-Fi 7 Certification (January 2026)",
+      "url": "https://www.rcrwireless.com/20260107/network-infrastructure/wi-fi-7-20-mhz-devices",
+      "source_name": "RCR Wireless",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Technological",
+      "summary": "Wi-Fi Alliance introduced new Wi-Fi Certified 7 certification option for client devices operating exclusively on 20 MHz channels (January 2026). This extends next-generation Wi-Fi 7 features to broader classes of connected products including residential, enterprise, and industrial devices. Enables Wi-Fi 7 adoption for bandwidth-constrained devices that don't require full wide-channel capabilities.",
+      "key_entities": [
+        "Wi-Fi Alliance",
+        "Wi-Fi Certified 7",
+        "20 MHz channels",
+        "IoT",
+        "industrial devices"
+      ],
+      "key_facts": [
+        "Announcement: January 2026",
+        "New certification: 20 MHz-only Wi-Fi 7 devices",
+        "Target: Residential, enterprise, industrial products",
+        "Extends Wi-Fi 7 to broader device classes",
+        "Enables adoption for bandwidth-constrained devices",
+        "Complements existing wide-channel Wi-Fi 7"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-016",
+      "title": "Open RAN Poised for 2026 Surge Despite 2025 Turbulence",
+      "url": "https://www.fierce-network.com/wireless/despite-2025-turbulence-open-ran-poised-2026-surge",
+      "source_name": "Fierce Network",
+      "source_type": "news",
+      "published_date": "2025-12-30",
+      "category_hint": "Technological",
+      "summary": "Industry experts expect 2026 as year of 'meaningful open RAN scaling,' driven by European operators. 31% of MNOs planning near-RT RIC deployment by 2026; 35% planning RIC for all Open RAN operations. Deutsche Telekom targets 3,000 'O-RAN compatible' sites (5% of antennas) by 2026. Open RAN transitioning from promising concept to scalable, commercially viable reality, though RIC technology still maturing.",
+      "key_entities": [
+        "Open RAN",
+        "near-RT RIC",
+        "Deutsche Telekom",
+        "O-RAN Alliance",
+        "European operators",
+        "BT",
+        "Vodafone"
+      ],
+      "key_facts": [
+        "2026: Year of meaningful Open RAN scaling",
+        "31% of MNOs deploying near-RT RIC by 2026",
+        "35% planning RIC for all Open RAN operations",
+        "Deutsche Telekom: 3,000 sites (5% antennas) by 2026",
+        "Europe leading deployment momentum",
+        "RIC technology in plug fests and trials",
+        "Transition to commercial viability underway"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-017",
+      "title": "6G Standardization Timeline: 3GPP Release 21 Specs Decided by June 2026",
+      "url": "https://www.lightreading.com/6g/looking-ahead-ready-or-not-here-comes-6g",
+      "source_name": "Light Reading",
+      "source_type": "news",
+      "published_date": "2025-12-15",
+      "category_hint": "Technological",
+      "summary": "6G standards discussions started earnestly in early 2025, with clearer picture expected by end 2026. First 6G specifications in 3GPP Release 21, with timeline for spec work decided by June 2026. Commercial 6G services anticipated ~2030. ETSI workshop (April 2025) brought O-RAN Alliance and 3GPP together for 6G open RAN discussions. 5G Advanced capabilities evolving to 6G: ML integration in RAN/core, energy efficiency, low latency, advanced MIMO, satellite integration.",
+      "key_entities": [
+        "3GPP",
+        "Release 21",
+        "ETSI",
+        "O-RAN Alliance",
+        "6G",
+        "5G Advanced",
+        "machine learning",
+        "satellite integration"
+      ],
+      "key_facts": [
+        "Standards discussions: Early 2025 start",
+        "First specs: 3GPP Release 21",
+        "Timeline decision: June 2026",
+        "Commercial 6G: ~2030",
+        "ETSI workshop: April 2025 (O-RAN + 3GPP)",
+        "Key features: ML in RAN/core, energy efficiency",
+        "Also: Low latency, advanced MIMO, satellite integration",
+        "Evolution from 5G Advanced capabilities"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-018",
+      "title": "Quantum-Safe 5G: QORE Framework Enables Post-Quantum Cryptography Transition",
+      "url": "https://quantumzeitgeist.com/quantum-networks-secure-b5g-core-qore-enables-transition-post-cryptography/",
+      "source_name": "Quantum Zeitgeist",
+      "source_type": "news",
+      "published_date": "2025-12-10",
+      "category_hint": "Technological",
+      "summary": "QORE framework engineered to transition 5G core networks to post-quantum cryptography, addressing quantum computing threats. Utilizes NIST-standardized lattice-based algorithms (ML-KEM, ML-DSA) across 5G Service-Based Architecture. Research shows ML-KEM achieves robust security with minimal performance overhead, meeting carrier-grade 5G low-latency/high-throughput requirements. RSA ciphers projected to be broken before 2030, creating urgency for quantum-resistant migration.",
+      "key_entities": [
+        "QORE framework",
+        "ML-KEM",
+        "ML-DSA",
+        "NIST",
+        "post-quantum cryptography",
+        "5G Service-Based Architecture",
+        "quantum computing",
+        "lattice-based algorithms"
+      ],
+      "key_facts": [
+        "QORE: Post-quantum crypto for 5G core networks",
+        "NIST-standardized lattice-based algorithms",
+        "ML-KEM: Module-Lattice Key Encapsulation Mechanism",
+        "ML-DSA: Module-Lattice Digital Signature Algorithm",
+        "Minimal performance overhead",
+        "Meets carrier-grade latency/throughput requirements",
+        "RSA vulnerable before 2030",
+        "Urgent migration required"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-019",
+      "title": "eSIM Device Shipments to Exceed 633M in 2026 Driven by China and SGP.32",
+      "url": "https://www.abiresearch.com/press/esim-enabled-device-shipments-will-exceed-633-million-in-2026-driven-by-chinese-smartphone-adoption-and-sgp32-advancements-across-consumer-and-iot-markets",
+      "source_name": "ABI Research",
+      "source_type": "news",
+      "published_date": "2025-12-05",
+      "category_hint": "Technological",
+      "summary": "ABI Research forecasts eSIM-enabled device shipments exceeding 633M in 2026, driven by Chinese smartphone adoption and SGP.32 standard advancements across consumer and IoT markets. Enterprise eSIM demand growing faster than consumer travel use, prioritizing reliability, visibility, security over ease/pricing. By 2026, eSIM/iSIM are 'default expectations' in many RFPs. Android/iOS integrating network slicing support for enterprise IT routing to dedicated corporate slices.",
+      "key_entities": [
+        "eSIM",
+        "iSIM",
+        "SGP.32",
+        "ABI Research",
+        "China market",
+        "enterprise IoT",
+        "network slicing"
+      ],
+      "key_facts": [
+        "2026 shipments: 633M+ eSIM devices",
+        "Key drivers: China adoption, SGP.32 standard",
+        "Enterprise demand growing faster than consumer",
+        "Enterprise priorities: Reliability, security, visibility",
+        "eSIM/iSIM default in IoT RFPs by 2026",
+        "Android/iOS network slicing integration",
+        "Enterprise IT routing to corporate slices",
+        "Growing separation of consumer vs. enterprise needs"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-020",
+      "title": "Ericsson Publishes Indoor 5G Neutral Host Deployment Framework (2026)",
+      "url": "https://www.ericsson.com/en/blog/2026/1/making-sense-of-indoor-5g-a-practical-guide-for-seamless-and-reliable-indoor-connectivity",
+      "source_name": "Ericsson",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Technological",
+      "summary": "Ericsson released indoor 5G neutral host guidebook covering practical considerations and five-stage deployment framework. Neutral host market may reach $8.7B by 2028, driven by indoor data traffic and private network adoption (manufacturing, education, healthcare, retail). Three architecture models: Site Sharing, Shared Radio, Shared RAN. CBRS-enabled shared spectrum MOCN model 'gaining prominence in U.S.' Verizon revealed first 5G neutral host private networking product (Cummins deal).",
+      "key_entities": [
+        "Ericsson",
+        "neutral host",
+        "MOCN",
+        "CBRS",
+        "Verizon",
+        "Cummins",
+        "DAS",
+        "shared RAN"
+      ],
+      "key_facts": [
+        "Ericsson guidebook published January 2026",
+        "Five-stage deployment framework",
+        "Market: $8.7B by 2028",
+        "Architecture: Site Sharing, Shared Radio, Shared RAN",
+        "Technologies: DAS, small cells, Open RAN, virtualization",
+        "CBRS-enabled MOCN gaining U.S. prominence",
+        "Verizon: First 5G neutral host product (Cummins)",
+        "Sectors: Manufacturing, education, healthcare, retail"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-021",
+      "title": "Global FTTH Deployment Enters New Growth Cycle in 2026",
+      "url": "https://www.openpr.com/news/4275743/2026-global-ftth-deployment-outlook-shows-strong-demand",
+      "source_name": "OpenPR",
+      "source_type": "news",
+      "published_date": "2025-12-20",
+      "category_hint": "Technological",
+      "summary": "FTTH development entering new growth cycle in 2026, with operators in Europe, Latin America, Middle East, and Africa accelerating deployments for higher speeds, low-latency apps, and next-gen PON upgrades. Pre-terminated solutions can halve installation costs and accelerate deployment 70%, especially urban areas. Industry needs 28,000 additional broadband construction workers and 30,000 more technicians. Most U.S. states starting BEAD program deployments in 2026.",
+      "key_entities": [
+        "FTTH",
+        "BEAD program",
+        "PON",
+        "pre-terminated fiber",
+        "Europe",
+        "Latin America",
+        "Middle East",
+        "Africa"
+      ],
+      "key_facts": [
+        "New growth cycle starting 2026",
+        "Regions: Europe, Latin America, Middle East, Africa",
+        "Pre-terminated solutions: 50% cost reduction, 70% faster",
+        "Workforce needs: 28,000 construction, 30,000 technicians",
+        "U.S. BEAD deployments starting 2026",
+        "Target: Higher speeds, low-latency, next-gen PON",
+        "Aerial deployment for suburban/rural areas",
+        "Eliminates fusion-splicing skill requirement"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-022",
+      "title": "SoftBank's $4B DigitalBridge Investment Signals AI Infrastructure Pivot",
+      "url": "https://www.ceotodaymagazine.com/2026/01/softbank-digitalbridge-ai-infrastructure-sovereignty/",
+      "source_name": "CEO Today Magazine",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category_hint": "Economic",
+      "summary": "SoftBank Group's $4B move into DigitalBridge reflects strategic pivot from speculative, asset-light tech investments toward owning physical AI economy backbone. 26North Partners in advanced talks to acquire DigitalBridge Group Inc. (parent of Vertical Bridge). DigitalBridge closed third value-added digital infrastructure fund (Partners III) with $7.2B+ in commitments. IEA forecasts global data-center electricity demand could double by 2026, driven by AI training/inference.",
+      "key_entities": [
+        "SoftBank",
+        "DigitalBridge",
+        "Vertical Bridge",
+        "26North Partners",
+        "DigitalBridge Partners III",
+        "IEA",
+        "AI infrastructure"
+      ],
+      "key_facts": [
+        "SoftBank: $4B DigitalBridge investment",
+        "Shift to physical AI infrastructure ownership",
+        "26North pursuing DigitalBridge acquisition",
+        "Partners III fund: $7.2B+ commitments",
+        "IEA: Data center demand could double by 2026",
+        "Driver: AI training/inference workloads",
+        "Tower infrastructure consolidation trend",
+        "Focus on digital infrastructure backbone"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-023",
+      "title": "MediaTek and Qualcomm Launch Next-Gen 5G Modems with Satellite and 10 Gbps+ at MWC 2025",
+      "url": "https://moorinsightsstrategy.com/next-gen-5g-modems-from-mediatek-and-qualcomm-debut-at-mwc-2025/",
+      "source_name": "Moor Insights & Strategy",
+      "source_type": "news",
+      "published_date": "2025-02-24",
+      "category_hint": "Technological",
+      "summary": "MediaTek announced M90 modem at MWC 2025 with 3GPP NTN/IoT-NR satellite connectivity and Modem AI 2.0 (usage pattern recognition, device orientation optimization). Qualcomm countered with X85 modem powering Dragonwing FWA Gen 4 Elite (40 TOPS NPU for 5G AI) and X82 for mainstream applications. Both break 10 Gbps barrier using AI and satellite functionality. MediaTek market share: 29.2% (from 22.8%); Qualcomm: 26.5% (from 31.2%).",
+      "key_entities": [
+        "MediaTek M90",
+        "Qualcomm X85",
+        "Qualcomm X82",
+        "Dragonwing FWA Gen 4 Elite",
+        "NTN",
+        "Modem AI 2.0",
+        "MWC 2025"
+      ],
+      "key_facts": [
+        "MWC 2025 announcements",
+        "MediaTek M90: 3GPP NTN, IoT-NR satellite",
+        "Modem AI 2.0: Pattern recognition, orientation optimization",
+        "Qualcomm X85: 40 TOPS NPU, FWA Gen 4 Elite",
+        "X82: Mainstream segment",
+        "Both: 10+ Gbps, AI integration, satellite",
+        "MediaTek share: 22.8% → 29.2%",
+        "Qualcomm share: 31.2% → 26.5%"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-024",
+      "title": "Dish Network Decommissions 5G, Sells Spectrum to AT&T, Becomes MVNO",
+      "url": "https://www.techdirt.com/2024/03/08/dish-network-the-trump-era-fix-for-the-sprint-t-mobile-merger-heads-into-its-final-death-spiral/",
+      "source_name": "Techdirt",
+      "source_type": "news",
+      "published_date": "2025-11-15",
+      "category_hint": "Economic",
+      "summary": "Dish Network announced 2025 decommissioning of its 5G network infrastructure, selling most wireless spectrum to AT&T, and shifting Boost Mobile from facilities-based network to MVNO on AT&T's network. Complete reversal of T-Mobile-Sprint merger conditions designed to maintain four nationwide competitors. Original 2019 deal: Dish bought Boost/Virgin/Sprint prepaid for $1.4B plus $3.6B in 800 MHz spectrum, with 7-year T-Mobile network access during buildout. All merger critics' predictions (layoffs, price hikes, reduced competition) came true.",
+      "key_entities": [
+        "Dish Network",
+        "Boost Mobile",
+        "AT&T",
+        "T-Mobile",
+        "Sprint",
+        "DOJ",
+        "MVNO",
+        "spectrum sale"
+      ],
+      "key_facts": [
+        "2025: Dish decommissioning 5G infrastructure",
+        "Spectrum assets sold to AT&T (most)",
+        "Boost Mobile: Facilities-based → MVNO on AT&T",
+        "Original 2019 deal: $1.4B (Boost/Virgin), $3.6B (spectrum)",
+        "7-year T-Mobile network access (during buildout)",
+        "Merger condition: Maintain 4 nationwide competitors",
+        "Result: Complete plan failure",
+        "Subscriber losses: 314,000/quarter (249K satellite, 65K Sling)"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-TELECOM-025",
+      "title": "Terahertz Research Breakthroughs for 6G: J-Band Testbed at 220-330 GHz",
+      "url": "https://www.rcrwireless.com/20251106/fundamentals/telecom-trends-for-2026",
+      "source_name": "RCR Wireless",
+      "source_type": "news",
+      "published_date": "2025-11-06",
+      "category_hint": "Technological",
+      "summary": "Researchers at SUNY Polytechnic Institute and Florida International University claimed terahertz breakthroughs for 6G networks. Built J-band terahertz testbed (220-330 GHz) studying ultra-high frequency signal behavior, finding THz waves exhibit extended near-field region and asymmetrical uplink-downlink behavior. D-band (110-170 GHz) identified as promising 6G frequency. THz technology supports 100 Gbps to Tbps-level data rates (100-1000x faster than 5G). Global 6G market poised for $500M-$1B (2026) to $150B-$300B (2036).",
+      "key_entities": [
+        "SUNY Polytechnic Institute",
+        "Florida International University",
+        "J-band",
+        "D-band",
+        "terahertz",
+        "6G",
+        "220-330 GHz",
+        "110-170 GHz"
+      ],
+      "key_facts": [
+        "J-band testbed: 220-330 GHz",
+        "D-band (110-170 GHz): Promising for 6G",
+        "THz data rates: 100 Gbps to Tbps",
+        "Speed: 100-1000x faster than 5G",
+        "Extended near-field region observed",
+        "Asymmetrical uplink-downlink behavior",
+        "6G market: $500M-$1B (2026) → $150B-$300B (2036)",
+        "Research: SUNY + Florida International U"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    }
+  ],
+  "scan_summary": {
+    "methodology": "Multi-source web search and content extraction focusing on telecommunications industry developments within 24-hour window",
+    "source_coverage": {
+      "Light Reading": 3,
+      "RCR Wireless": 5,
+      "Fierce Network/Wireless": 4,
+      "Telecom TV": 1,
+      "Total Telecom": 0,
+      "Other telecom sources": 12
+    },
+    "technology_themes": [
+      "6G research and standardization (Release 21, June 2026 timeline)",
+      "Network slicing commercialization (Verizon, T-Mobile)",
+      "Direct-to-Device satellite (AT&T/AST, Starlink/T-Mobile)",
+      "Private 5G deployments (Samsung, Ericsson/CIMPOR)",
+      "Open RAN scaling in Europe (DT target: 3,000 sites)",
+      "RedCap/eRedCap IoT device launches",
+      "Wi-Fi 7 enterprise acceleration (117.9M APs in 2026)",
+      "Post-quantum cryptography (QORE framework)",
+      "AI-RAN integration (NVIDIA AI Aerial stack)",
+      "Spectrum auctions (AWS-3, upper C-band)",
+      "Terahertz research (220-330 GHz testbeds)",
+      "Neutral host infrastructure (MOCN/CBRS)",
+      "eSIM/iSIM enterprise adoption (633M+ devices)",
+      "LEO constellation expansion (Starlink 15,000 satellites)"
+    ],
+    "key_industry_shifts": [
+      "Network slicing moving from trials to commercial SLA-backed services",
+      "Direct-to-Device satellite exiting beta (15-20 Mbps on unmodified phones)",
+      "Private 5G becoming default for Industry 4.0 (41% CAGR to $5B by 2028)",
+      "Open RAN reaching deployment inflection point in Europe (2026)",
+      "6G standardization timeline crystallizing (3GPP R21 by June 2026)",
+      "Quantum-safe migration becoming urgent (RSA vulnerable before 2030)",
+      "Wi-Fi 7 as default enterprise refresh (faster adoption than prior gens)",
+      "Dish 5G network failure, complete reversal to MVNO model",
+      "Tower infrastructure consolidation for AI data center demand"
+    ],
+    "geographic_focus": [
+      "United States (FCC spectrum policy, operator network slicing)",
+      "Europe (Open RAN scaling, FTTH growth cycle)",
+      "China (RedCap deployments, eSIM adoption driver)",
+      "United Kingdom (BT-Starlink rural broadband)",
+      "Portugal (CIMPOR private 5G cement plants)",
+      "Japan (KDDI Starlink Direct-to-Cell)",
+      "Australia (Optus Starlink Direct-to-Cell)"
+    ],
+    "time_sensitivity_notes": [
+      "AWS-3 Auction 113 filing window opens January 26, 2026 (14 days)",
+      "Starlink Gen3 satellites (1+ Tbps) expected H1 2026",
+      "T-Mobile dynamic network slicing launch early 2026",
+      "AT&T D2D satellite beta in H1 2026",
+      "BT-Starlink launch H2 2026 in rural UK",
+      "3GPP 6G timeline decision by June 2026",
+      "BEAD fiber deployments starting across U.S. states in 2026"
+    ]
+  }
+}

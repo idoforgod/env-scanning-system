@@ -11,13 +11,13 @@ description: 최종 보고서 승인 및 배포
 다음 파일들이 정상 생성되었는지 확인하세요:
 
 1. **일일 보고서**
-   - `env-scanning/reports/daily/environmental-scan-{today}.md`
+   - `data/{date}/reports/environmental-scan-{today}.md`
 
 2. **신호 DB**
-   - `env-scanning/signals/database.json` (업데이트됨)
+   - `signals/database.json` (업데이트됨)
 
 3. **분석 데이터**
-   - `env-scanning/analysis/priority-ranked-{today}.json`
+   - `data/{date}/analysis/priority-ranked-{today}.json`
 
 ## 승인 시 수행 작업
 

@@ -1,7 +1,7 @@
 ---
 name: dedup-filter
 description: 환경스캐닝 중복 신호 필터링. 기존 DB와 비교하여 중복 제거. env-scanner 워크플로우의 3단계.
-tools: Read, Write
+tools: Read, Write, Bash
 model: haiku
 ---
 
@@ -9,6 +9,33 @@ You are a deduplication specialist for environmental scanning.
 
 ## Task
 Filter out duplicate signals by comparing against existing database.
+
+## Token Optimization (MANDATORY)
+
+**결정론적 중복 검사는 Python 스크립트로 외부화됨 (60-80% 토큰 절감)**
+
+```bash
+# 중복 검사 실행
+python src/scripts/dedup_processor.py \
+  data/{date}/raw/daily-scan-{date}.json \
+  signals/database.json
+
+# 또는 Python 직접 호출
+from scripts.dedup_processor import DedupProcessor
+processor = DedupProcessor(similarity_threshold=0.85)
+result = processor.find_duplicates(new_signals, existing_signals)
+```
+
+**LLM 역할 제한:**
+- Python 스크립트 결과 해석
+- 엣지 케이스 판단 (동일 이벤트 다른 소스 등)
+- 결과 검증 및 로그 작성
+
+**Python 스크립트가 처리:**
+- URL 정확 매칭
+- 제목/내용 유사도 계산
+- 엔티티 겹침 분석
+- 중복 인덱스 생성/조회
 
 ## Strict Rules
 
@@ -19,11 +46,24 @@ Filter out duplicate signals by comparing against existing database.
 
 ## Process
 
-1. **Load Inputs**
+1. **Load Inputs (병합된 파일 우선)**
    ```
-   Read env-scanning/raw/daily-scan-{date}.json
-   Read env-scanning/context/previous-signals.json
+   # 병합된 파일 우선 확인 (네이버 + WebSearch 통합)
+   Read data/{date}/raw/scanned-signals-{date}-merged.json
+
+   # 병합 파일 없으면 개별 파일 로드
+   Read data/{date}/raw/daily-scan-{date}.json
+   Read data/{date}/raw/naver-scan-{date}.json  # 네이버 크롤링 결과
+
+   # 기존 신호 DB
+   Read context/previous-signals.json
    ```
+
+   **입력 파일 우선순위:**
+   1. `scanned-signals-{date}-merged.json` (병합 완료)
+   2. `daily-scan-{date}.json` + `naver-scan-{date}.json` (개별)
+
+   **IMPORTANT:** 네이버 크롤링 결과가 있으면 반드시 포함
 
 2. **For Each Raw Signal**:
 
@@ -52,12 +92,12 @@ Filter out duplicate signals by comparing against existing database.
 
    New signals:
    ```
-   Write to env-scanning/filtered/new-signals-{date}.json
+   Write to data/{date}/filtered/new-signals-{date}.json
    ```
 
    Duplicate log:
    ```
-   Write to env-scanning/logs/duplicates-removed-{date}.log
+   Write to logs/duplicates-removed-{date}.log
    ```
 
 ## Output Format

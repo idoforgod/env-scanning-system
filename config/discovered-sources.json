@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "version": "1.1",
+    "created": "2026-01-12",
+    "last_updated": "2026-01-12",
+    "last_marathon": "2026-01-12",
+    "total_discovered": 28,
+    "pending_review": 28,
+    "promoted_to_regular": 0,
+    "rejected": 0,
+    "description": "마라톤 모드에서 발견된 새 소스 후보 관리"
+  },
+  "evaluation_criteria": {
+    "auto_promote_threshold": 70,
+    "pending_review_threshold": 50,
+    "rejection_threshold": 50,
+    "minimum_scans_for_promotion": 3,
+    "weights": {
+      "update_frequency": 0.25,
+      "content_depth": 0.25,
+      "steeps_relevance": 0.20,
+      "accessibility": 0.15,
+      "credibility": 0.15
+    }
+  },
+  "discovery_methods": {
+    "link_tracking": "기사 내 인용/참고문헌 추적",
+    "random_exploration": "무작위 키워드 검색으로 발견",
+    "domain_expansion": "기존 소스의 관련 사이트",
+    "regional_search": "새 국가/언어권 검색",
+    "format_diversification": "새 형식(팟캐스트, 뉴스레터 등)"
+  },
+  "candidates": [
+    "See env-scanning/evolution/pending-sources-2026-01-12.json for full list of 28 discovered sources"
+  ],
+  "promoted": [],
+  "rejected": [],
+  "exploration_keywords": {
+    "base_steeps": {
+      "Social": ["gen z trends", "workforce changes", "lifestyle shifts", "demographic changes", "education innovation"],
+      "Technological": ["AI breakthrough", "quantum computing", "robotics advancement", "biotech innovation", "space technology"],
+      "Economic": ["global trade", "startup funding", "supply chain", "market disruption", "fintech innovation"],
+      "Environmental": ["climate policy", "renewable energy", "carbon capture", "sustainability", "ESG trends"],
+      "Political": ["AI regulation", "geopolitics", "tech policy", "governance innovation", "international relations"],
+      "Spiritual": ["wellness trends", "mindfulness", "meaning economy", "spiritual technology", "consciousness research"]
+    },
+    "modifiers": ["2026", "emerging", "breakthrough", "first time", "unprecedented", "new research", "latest"],
+    "regions": ["Asia Pacific", "Latin America", "Middle East", "Africa", "Eastern Europe", "Nordic", "Southeast Asia"],
+    "languages": ["Korean", "Japanese", "Chinese", "Spanish", "German", "French", "Portuguese"]
+  },
+  "marathon_history": [
+    {
+      "date": "2026-01-12",
+      "phase": "Stage 2: Exploration Scanner",
+      "duration_minutes": 60,
+      "sources_discovered": 28,
+      "avg_quality_score": 84.1,
+      "strategies_used": ["keyword_expansion", "domain_exploration", "regional_expansion", "citation_tracking"],
+      "steeps_focus": ["Spiritual", "Social"],
+      "geographic_expansion": ["Singapore", "Australia", "Mexico", "UAE", "Kenya", "South Africa"],
+      "top_discoveries": [
+        "Nature Human Behaviour (93)",
+        "U Michigan ISR (92)",
+        "Science Advances (92)",
+        "CSER Cambridge (91)",
+        "Tech Forecasting & Social Change (91)"
+      ],
+      "files_created": [
+        "env-scanning/evolution/pending-sources-2026-01-12.json",
+        "env-scanning/logs/exploration-2026-01-12.json",
+        "env-scanning/reports/marathon-stage2-exploration-summary-2026-01-12.md"
+      ],
+      "notes": "Successfully filled Spiritual gap (+67% potential increase). Added 6 non-Western sources. 15 peer-reviewed journals discovered."
+    }
+  ],
+  "performance_tracking": {
+    "sources_by_tier": {
+      "tier_1_recommended": 9,
+      "tier_2_recommended": 16,
+      "tier_3_recommended": 3
+    },
+    "sources_by_steeps": {
+      "Spiritual": 8,
+      "Social": 6,
+      "Technological": 5,
+      "Economic": 4,
+      "Political": 3,
+      "Environmental": 2
+    },
+    "quality_distribution": {
+      "90_plus": 5,
+      "85_89": 8,
+      "80_84": 9,
+      "75_79": 4,
+      "below_75": 2
+    }
+  },
+  "next_actions": {
+    "immediate": [
+      "Begin probationary scanning of top 5 discoveries",
+      "Monitor signal quality over 3 scans",
+      "Track update frequency"
+    ],
+    "short_term": [
+      "Evaluate all Tier 1 recommendations (9 sources)",
+      "Batch evaluate Tier 2 sources (16 sources)",
+      "Cross-validate with existing sources"
+    ],
+    "medium_term": [
+      "Promote successful sources to regular-sources.json",
+      "Archive low-performers to rejected list",
+      "Update STEEPS coverage metrics"
+    ]
+  }
+}

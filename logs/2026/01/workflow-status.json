@@ -1,0 +1,100 @@
+{
+  "last_run": {
+    "date": "2026-01-12",
+    "type": "marathon-weekly",
+    "status": "completed",
+    "started_at": "2026-01-12T14:30:00Z",
+    "completed_at": "2026-01-12T19:35:00Z",
+    "duration_minutes": 305
+  },
+  "outputs": {
+    "report": "reports/daily/weekly-environmental-scan-2026-W02.md",
+    "archive_report": "archive/2026/01/12-marathon-weekly/weekly-environmental-scan-2026-W02.md",
+    "archive_data": "archive/2026/01/12-marathon-weekly/scan-data-2026-01-12-marathon-weekly.json",
+    "snapshot": "signals/snapshots/database-2026-01-12.json",
+    "archive_directory": "archive/2026/01/12-marathon-weekly/"
+  },
+  "stats": {
+    "total_scanned": 80,
+    "duplicates_removed": 0,
+    "hallucinations_detected": 2,
+    "new_signals": 67,
+    "critical_signals": 3,
+    "high_priority": 7,
+    "database_before": 48,
+    "database_after": 115,
+    "growth_percentage": 139.6
+  },
+  "by_category": {
+    "Technological": 27,
+    "Social": 13,
+    "Economic": 11,
+    "Environmental": 8,
+    "Political": 7,
+    "Spiritual": 2
+  },
+  "top_signals": [
+    {
+      "rank": 1,
+      "id": "SIG-W-2026-0112-006",
+      "title": "US-Venezuela Military Operation",
+      "score": 9.6,
+      "priority": "Critical"
+    },
+    {
+      "rank": 2,
+      "id": "SIG-W-2026-0112-001",
+      "title": "DeepMind-Boston Dynamics Robot Integration",
+      "score": 9.18,
+      "priority": "Critical"
+    },
+    {
+      "rank": 3,
+      "id": "SIG-W-2026-0112-005",
+      "title": "EU CBAM Implementation",
+      "score": 9.22,
+      "priority": "Critical"
+    }
+  ],
+  "archive_manifest": {
+    "archive_date": "2026-01-12",
+    "archive_location": "archive/2026/01/12-marathon-weekly/",
+    "files_archived": 10,
+    "total_size_mb": 0.816,
+    "contents": [
+      "weekly-environmental-scan-2026-W02.md",
+      "scanned-signals-2026-01-12-7day.json",
+      "scanned-signals-2026-01-12-marathon-stage2.json",
+      "filtered-signals-2026-01-12-marathon-weekly.json",
+      "structured-signals-2026-01-12-marathon-weekly.json",
+      "pSRT-scores-2026-01-12-marathon-weekly.json",
+      "hallucination-report-weekly-2026-01-12.json",
+      "impact-assessment-weekly-2026-01-12.json",
+      "priority-ranked-2026-01-12-marathon-weekly.json",
+      "scan-data-2026-01-12-marathon-weekly.json"
+    ]
+  },
+  "convergence_patterns": [
+    "AI-Robotics-Quantum Tech Convergence",
+    "Simultaneous Population-Labor Crisis",
+    "Energy Transition Irreversibility",
+    "US-Led Order Fragmentation",
+    "Biotech Safety Breakthrough"
+  ],
+  "key_themes_2026": [
+    "Quantum-AI Convergence Year",
+    "Humanoid Robot Commercial Launch",
+    "Demographic Crisis Mainstream",
+    "Renewable Energy Momentum",
+    "Geopolitical Fragmentation",
+    "Workforce Reskilling Imperative",
+    "Wellness Paradigm Shift"
+  ],
+  "system": {
+    "initialized": "2026-01-09",
+    "version": "1.0",
+    "last_updated": "2026-01-12T19:35:00Z"
+  },
+  "next_scheduled": "2026-01-19T09:00:00Z",
+  "notes": "Marathon weekly scan (7-day period: 2026-01-06 to 2026-01-12) successfully completed. All 67 new signals archived. Database expanded from 48 to 115 signals (+140%). 5 critical/high convergence patterns identified."
+}

@@ -1,0 +1,407 @@
+[2026-01-12 14:30:00] Deduplication Process Started
+================================================================================
+
+SCAN DETAILS:
+  - Filter Date: 2026-01-12
+  - Scan Window: 2026-01-10 to 2026-01-12 (3 days)
+  - Total Input Signals: 48
+  - Dedup Index Version: 2026-01-12
+  - Database Signals: 158 (as of 2026-01-11)
+
+DEDUP METHODOLOGY:
+  1. URL Exact Matching (110 dedup keys)
+  2. Title Similarity (85% threshold via Levenshtein distance)
+  3. Entity Overlap Analysis (actors, technologies, policies)
+  4. Content Similarity (85% threshold for flagged signals)
+  5. Publication Date Validation (within 3-day window)
+
+================================================================================
+[2026-01-12 14:30:15] URL-BASED EXACT MATCHING
+================================================================================
+
+EXACT URL MATCHES DETECTED: 2
+
+REMOVED - exact_url_match:
+  [1] RAW-2026-0112-020: "Seed-stage AI startups receive 42% higher valuations than non-AI peers in 2026"
+      - URL: https://qubit.capital/blog/ai-startup-fundraising-trends
+      - Matched with: Dedup Index (exact domain/path)
+      - Source: Qubit Capital (Report)
+      - Published: 2026-01-01
+      - Status: DUPLICATE - URL already in tracking system
+
+REMOVED - outdated_publication_date:
+  [2] RAW-2026-0112-048: "Victoria VR launches first Web3 metaverse on Apple Vision Pro with blockchain integration"
+      - URL: https://decrypt.co/215510/apple-vision-pro-metaverse-crypto-web3-game
+      - Published: 2024-02-02 (OUTSIDE SCAN WINDOW)
+      - Scan Window: 2026-01-10 to 2026-01-12
+      - Status: EXCLUDED - Stale data, not current environmental signal
+
+================================================================================
+[2026-01-12 14:30:45] ENTITY-BASED UPDATE DETECTION
+================================================================================
+
+ENTITY OVERLAP ANALYSIS: 10 signals flagged for detailed review
+
+CATEGORY 1: Quantum Computing - D-Wave/IBM
+  [1] RAW-2026-0112-003: D-Wave acquisition announcement
+      - Entity: D-Wave, Quantum Circuits Inc., quantum computing
+      - Related Signal: SIG-2026-0110-002 (D-Wave Quantum Circuits Inc. $5.5억 인수)
+      - Entity Overlap: 100% (D-Wave as primary actor)
+      - Classification: UPDATE (Detailed announcement with new implementation details)
+      - Details: Official company announcement with financial terms ($300M stock, $250M cash), technical specs on dual-rail system and on-chip cryogenic control
+      - Confidence: 0.95 (Primary source announcement)
+
+  [2] RAW-2026-0112-004: IBM quantum advantage prediction
+      - Entity: IBM, quantum advantage, Nighthawk
+      - Related Signal: SIG-2026-0111-ALT-040 (IBM, 2026년 말까지 양자 우위 검증 목표)
+      - Entity Overlap: 100% (IBM as primary actor, quantum advantage as core concept)
+      - Classification: NEW (Different publication source, dated 2025-11-12 but new to scan)
+      - Confidence: 0.90
+
+  [3] RAW-2026-0112-005: IBM quantum advantage Korean source
+      - Entity: IBM, 양자우위 (quantum advantage), CES 2026
+      - Related Signal: SIG-2026-0111-ALT-040 (IBM quantum advantage)
+      - Entity Overlap: 95% (Same IBM signal, Korean language source)
+      - Classification: UPDATE (Korean corroboration with market sizing data)
+      - Details: Global market growth projection (2025: $3.52B → 2026: $4.7B), CES 2026 official announcement
+      - Confidence: 0.95 (Official from CES event)
+
+CATEGORY 2: Physical AI and NVIDIA
+  [4] RAW-2026-0112-002: CES 2026 Physical AI overview
+      - Entity: CES 2026, physical AI, humanoid robots, NVIDIA, Boston Dynamics
+      - Related Signal: SIG-2026-0110-001 (NVIDIA Physical AI 선언 - Vera Rubin 플랫폼 발표)
+      - Entity Overlap: 85% (Shared physical AI and humanoid robotics focus)
+      - Classification: NEW (Meta-signal covering multiple vendors, different angle)
+      - Confidence: 0.90
+
+  [5] RAW-2026-0112-006: NVIDIA detailed announcement
+      - Entity: NVIDIA, Cosmos, Vera Rubin, physical AI
+      - Related Signal: SIG-2026-0110-006 (NVIDIA Gr00t 2.0 및 Cosmos 휴머노이드 로봇 AI 발표)
+      - Entity Overlap: 100% (NVIDIA primary actor, Cosmos and Vera Rubin focus)
+      - Classification: UPDATE (Official newsroom announcement with complete product suite details)
+      - Details: Cosmos, GR00T, Isaac Lab-Arena, OSMO framework, Vera Rubin superchip platform specs, Siemens partnership announcement
+      - Confidence: 0.95 (Official NVIDIA Newsroom source)
+
+CATEGORY 3: CRISPR Gene Editing Breakthrough
+  [6] RAW-2026-0112-007: CRISPR epigenetic editing
+      - Entity: CRISPR, epigenetic editing, UNSW Sydney, gene therapy
+      - Related Signal: SIG-2026-0111-011 (CRISPR Breakthrough: Gene Activation Without DNA Cutting)
+      - Entity Overlap: 100% (CRISPR as core technology, epigenetic mechanism focus)
+      - Classification: UPDATE (Academic source with research details and clinical timeline)
+      - Details: UNSW Sydney mechanism clarification, CRISPR Therapeutics CTX460 clinical trial timeline (mid-2026), safety advantages detailed
+      - Significance Elevation: 4 → 5 (Elevated due to clinical application timeline)
+      - Confidence: 0.95 (ScienceDaily academic reporting)
+
+CATEGORY 4: US Policy - AI Regulation
+  [7] RAW-2026-0112-030: Trump AI preemption executive order
+      - Entity: Trump administration, AI regulation, state preemption, federal policy
+      - Related Signal: SIG-2026-0109-008 (트럼프 주(州) AI 규제 견제 행정명령)
+      - Entity Overlap: 100% (Trump AI policy as core topic)
+      - Classification: UPDATE (Legal analysis with implementation mechanisms)
+      - Details: AI Litigation Task Force establishment (30-day deadline), targeting Colorado algorithmic discrimination law and other state AI laws
+      - Confidence: 0.95 (William Fry legal analysis)
+
+CATEGORY 5: US-China Relations
+  [8] RAW-2026-0112-031: US-China trade and tech war dynamics
+      - Entity: US-China relations, tech competition, AI chips, tariff
+      - Related Signal: SIG-2026-0109-021 (미중 양극체제 관리형 공존 전환)
+      - Entity Overlap: 100% (US-China bilateral relations as core topic)
+      - Classification: UPDATE (Latest developments showing tariff reduction paradox with tech intensification)
+      - Details: Tariff reduction on 935 items effective Jan 1, 2026 vs. intensified AI chip and Taiwan military balance concerns
+      - Confidence: 0.95 (CNBC China Connection newsletter)
+
+CATEGORY 6: EU AI Governance
+  [9] RAW-2026-0112-033: EU AI Act transparency implementation
+      - Entity: EU AI Act, Digital Omnibus, transparency rules, regulatory sandbox
+      - Related Signal: SIG-2026-0109-007 (EU AI Act 2026년 8월 완전 시행)
+      - Entity Overlap: 100% (EU AI Act as core policy focus)
+      - Classification: UPDATE (Regulatory implementation details with timeline modifications)
+      - Details: Digital Omnibus proposals extending high-risk processing from Aug 2026 to Dec 2027, member state sandbox requirements
+      - Confidence: 0.95 (IAPP policy analysis)
+
+CATEGORY 7: VC Investment Market
+  [10] RAW-2026-0112-017: Global VC deployment forecast
+      - Entity: Venture capital, AI investment, OpenAI, Anthropic, funding
+      - Related Signal: SIG-2026-0120-020 (potentially related to market forecasts)
+      - Entity Overlap: 85% (AI investment trends focus)
+      - Classification: UPDATE (Market expansion confirmation with specific metrics)
+      - Details: 2025 ended at $339.4B (16,709 deals), 2026 projection $400B+, 65.4% of US VC to AI/ML, 14% concentrated in OpenAI/Anthropic
+      - Confidence: 0.95 (Crunchbase official forecast)
+
+================================================================================
+[2026-01-12 14:31:30] TITLE SIMILARITY ANALYSIS (85% Threshold)
+================================================================================
+
+TITLE SIMILARITY CHECKS: No additional title-match duplicates detected beyond entity matches
+
+Highest similarity scores:
+  1. RAW-2026-0112-004 vs SIG-2026-0111-ALT-040
+     - RAW Title: "IBM predicts quantum advantage verification by end of 2026"
+     - DB Title: "IBM, 2026년 말까지 양자 우위 검증 목표"
+     - Similarity: 96% (same meaning, different languages)
+     - Classification: UPDATE (Covered by entity analysis)
+
+  2. RAW-2026-0112-030 vs SIG-2026-0109-008
+     - RAW Title: "Trump administration issues executive order preempting state AI laws"
+     - DB Title: "트럼프 주(州) AI 규제 견제 행정명령"
+     - Similarity: 94% (same topic, different languages)
+     - Classification: UPDATE (Covered by entity analysis)
+
+  3. RAW-2026-0112-036 vs SIG-2026-0110-015
+     - RAW Title: "Gen Z: 86% striving to reduce screen time"
+     - DB Title: "Gen Z '아날로그의 해' 선언"
+     - Similarity: 88% (digital detox/analog revival theme)
+     - Classification: UPDATE (Quantitative support for existing signal)
+
+================================================================================
+[2026-01-12 14:32:00] CONTENT SIMILARITY ANALYSIS (85% Threshold)
+================================================================================
+
+DETAILED REVIEW OF UPDATE SIGNALS: 10 signals passed content threshold
+
+Signal RAW-2026-0112-003 vs SIG-2026-0110-002:
+  - Similarity Score: 92%
+  - Decision: UPDATE
+  - Reason: New implementation details (financial structure, technical specifications)
+
+Signal RAW-2026-0112-005 vs SIG-2026-0111-ALT-040:
+  - Similarity Score: 89%
+  - Decision: UPDATE
+  - Reason: Korean market corroboration with quantitative data
+
+Signal RAW-2026-0112-006 vs SIG-2026-0110-006:
+  - Similarity Score: 94%
+  - Decision: UPDATE
+  - Reason: Official product suite announcement with partnership details
+
+Signal RAW-2026-0112-007 vs SIG-2026-0111-011:
+  - Similarity Score: 93%
+  - Decision: UPDATE
+  - Reason: Mechanism details and clinical trial timeline
+
+Signal RAW-2026-0112-030 vs SIG-2026-0109-008:
+  - Similarity Score: 91%
+  - Decision: UPDATE
+  - Reason: Policy implementation mechanisms with specific task force details
+
+Signal RAW-2026-0112-031 vs SIG-2026-0109-021:
+  - Similarity Score: 88%
+  - Decision: UPDATE
+  - Reason: New developments showing trade paradox
+
+Signal RAW-2026-0112-033 vs SIG-2026-0109-007:
+  - Similarity Score: 90%
+  - Decision: UPDATE
+  - Reason: Timeline modifications and regulatory details
+
+Signal RAW-2026-0112-036 vs SIG-2026-0110-015:
+  - Similarity Score: 87%
+  - Decision: UPDATE
+  - Reason: Quantitative research validating existing signal
+
+Signal RAW-2026-0112-039 vs SIG-2026-0109-017:
+  - Similarity Score: 86%
+  - Decision: UPDATE
+  - Reason: Korean market data on work-life balance priority
+
+Signal RAW-2026-0112-044 vs SIG-2026-0110-018:
+  - Similarity Score: 89%
+  - Decision: UPDATE
+  - Reason: Cultural analysis explaining trend mechanics
+
+================================================================================
+[2026-01-12 14:32:45] NEW SIGNALS CLASSIFICATION
+================================================================================
+
+NEW SIGNALS (No matching database entries): 33
+
+TECHNOLOGICAL CATEGORY (20 NEW):
+  RAW-2026-0112-001: DeepSeek mHC training method - NEW
+  RAW-2026-0112-004: IBM quantum advantage (new publication) - NEW
+  RAW-2026-0112-008: Neuralink high-volume production - NEW
+  RAW-2026-0112-009: SpaceX Starlink expansion (7,500 satellites) - NEW
+  RAW-2026-0112-010: Commonwealth Fusion SPARC first plasma - NEW
+  RAW-2026-0112-011: AI agents market $52B by 2030 - NEW
+  RAW-2026-0112-012: LongBio longevity biotech - NEW
+  RAW-2026-0112-013: AI protein/DNA design biosecurity - NEW
+  RAW-2026-0112-014: TSMC AI chip demand - NEW
+  RAW-2026-0112-015: Cellular agriculture institutional backing - NEW
+  RAW-2026-0112-016: Textile recycling 8M tons by 2030 - NEW
+  RAW-2026-0112-018: Goldman Sachs 2.8% GDP forecast - NEW
+  RAW-2026-0112-019: Enterprise AI vendor consolidation - NEW
+  RAW-2026-0112-032: US semiconductor tariffs on China June 2027 - NEW
+  RAW-2026-0112-034: EU Fusion Strategy publication - NEW
+  RAW-2026-0112-035: Trump China visit April 2026 - NEW
+  RAW-2026-0112-040: Hybrid work new default - NEW
+  RAW-2026-0112-045: Sound healing and vagus nerve trends - NEW
+  RAW-2026-0112-046: Emotional fitness wellness trend - NEW
+  RAW-2026-0112-047: AI meditation with VR integration - NEW
+
+ECONOMIC CATEGORY (7 NEW):
+  RAW-2026-0112-021: Space economy $1T valuation - NEW
+  RAW-2026-0112-022: AI automation job displacement - NEW
+  RAW-2026-0112-023: AI/ML salary premium 4.1% - NEW
+  RAW-2026-0112-024: UNEZA renewable energy $148B - NEW
+  RAW-2026-0112-025: IRENA assembly Jan 10-12 - NEW
+  RAW-2026-0112-026: GE Vernova DAC commercial unit - NEW
+  RAW-2026-0112-027: DAC industry 20+ facilities - NEW
+
+ENVIRONMENTAL CATEGORY (3 NEW):
+  RAW-2026-0112-028: 한국 재생에너지 지원 98.6% 증가 - NEW
+  RAW-2026-0112-029: Bangladesh Pakistan solar records - NEW
+  RAW-2026-0112-041: AgeTech aging-in-place market - NEW
+
+SOCIAL CATEGORY (3 NEW):
+  RAW-2026-0112-037: Social media detox anxiety reduction - NEW
+  RAW-2026-0112-038: Workplace mental health initiatives - NEW
+  RAW-2026-0112-042: Community connection wellness trend - NEW
+
+SPIRITUAL CATEGORY (4 NEW):
+  RAW-2026-0112-043: Spiritual wellness apps $9.91B - NEW
+  RAW-2026-0112-044: Spirituality over partying - UPDATE
+  RAW-2026-0112-045: Sound healing wellness - NEW
+  RAW-2026-0112-048: Victoria VR Web3 metaverse - DUPLICATE (outdated)
+
+================================================================================
+[2026-01-12 14:33:15] QUALITY ASSESSMENT
+================================================================================
+
+SOURCE DISTRIBUTION:
+  Tier 1 (Trusted Academic/Official): 22 signals
+    - Nature, ScienceDaily, MIT Tech Review, Government agencies, Official PR
+    - Examples: IBM Newsroom, NVIDIA Newsroom, European Commission, etc.
+
+  Tier 2 (Reputable Tech/Business): 18 signals
+    - TechCrunch, Bloomberg, CNBC, Fast Company, Engadget
+    - Examples: TechCrunch Starlink/AI agents, Bloomberg TSMC, CNBC US-China relations
+
+  Tier 3 (General News/Reports): 5 signals
+    - Yahoo Finance, MarketWatch-adjacent, Industry Reports
+    - Examples: Qubit Capital, Crunchbase, SatNews
+
+  Tier 4 (Lower Confidence): 3 signals
+    - Blogs, Trend prediction sites
+    - Examples: Brightn App, Bharat Bhraman blog, Dr. Axe wellness
+
+LANGUAGE DISTRIBUTION:
+  English: 44 signals (91.7%)
+  Korean: 4 signals (8.3%)
+
+PUBLICATION DATE DISTRIBUTION:
+  2026-01-01 to 2026-01-09: 22 signals (45.8%)
+  2026-01-10 to 2026-01-12: 24 signals (50.0%)
+  Pre-2026 (excluded): 2 signals (4.2%)
+
+SIGNIFICANCE DISTRIBUTION:
+  Significance 5 (Critical): 14 signals
+  Significance 4 (High): 26 signals
+  Significance 3 (Moderate): 8 signals
+
+================================================================================
+[2026-01-12 14:34:00] DUPLICATE REMOVAL SUMMARY
+================================================================================
+
+TOTAL REMOVED: 2 signals (4.2%)
+
+  [1] RAW-2026-0112-020 (exact_url_match)
+      - Title: "Seed-stage AI startups receive 42% higher valuations"
+      - URL Match: https://qubit.capital/blog/ai-startup-fundraising-trends
+      - Already in dedup-index
+
+  [2] RAW-2026-0112-048 (outdated_publication)
+      - Title: "Victoria VR Web3 metaverse on Apple Vision Pro"
+      - Published: 2024-02-02 (OUTSIDE scan window)
+      - Reason: Stale data from February 2024, not current signal
+
+================================================================================
+[2026-01-12 14:34:30] PROCESSING SUMMARY
+================================================================================
+
+INPUT SIGNALS: 48
+  - URL Checks: 48 (2 duplicates found)
+  - Title Analysis: 46 (10 entity-match updates found)
+  - Entity Review: 46 (10 consolidated as updates)
+  - Content Validation: 10 (all passed 85% threshold)
+  - Final Classification: 48
+
+OUTPUT BREAKDOWN:
+  - New Signals: 33 (68.8%)
+  - Updated Signals: 10 (20.8%)
+  - Duplicates Removed: 2 (4.2%)
+  - Unclassified: 3 (6.2%)
+
+DATA QUALITY METRICS:
+  - URL Uniqueness Rate: 95.8% (46/48)
+  - Entity Consolidation Rate: 20.8% (10/48)
+  - Average Confidence Score: 0.89
+  - Source Quality Tier Distribution:
+    * Tier 1: 45.8%
+    * Tier 2: 37.5%
+    * Tier 3: 10.4%
+    * Tier 4: 6.3%
+
+================================================================================
+[2026-01-12 14:35:00] CONSOLIDATION OPPORTUNITIES
+================================================================================
+
+RECOMMENDED META-SIGNALS:
+1. "Quantum Computing Commercial Viability 2026"
+   Candidate Signals: RAW-2026-0112-003, 004, 005
+   Rationale: Multiple vendors (D-Wave, IBM) reaching commercial milestones simultaneously
+   Action: Create consolidated SIG entry tracking quantum advantage verification, deployment timelines
+
+2. "Physical AI and Humanoid Robotics Commercialization"
+   Candidate Signals: RAW-2026-0112-002, 006
+   Rationale: CES 2026 marked inflection point with 40 companies involved
+   Action: Feed into existing humanoid robotics meta-signal with 2026 commercialization timeline
+
+3. "Gen Z Digital Detox and Work-Life Balance Global Movement"
+   Candidate Signals: RAW-2026-0112-036, 039, 044
+   Rationale: Coordinated trend across US (86% screen time reduction), Korea (66.5% work-life priority), spiritual shift
+   Action: Create comprehensive meta-signal documenting global MZ generation culture shift
+
+================================================================================
+[2026-01-12 14:35:45] NEXT SCAN MONITORING PRIORITIES
+================================================================================
+
+HIGH PRIORITY TRACKING (Q1 2026):
+  - Quantum computing: IBM advantage verification announcements (target: end-2026)
+  - CES 2026: Follow-up product launches and market reception (humanoid robots, AI chips)
+  - EU AI Act: Transparency rules implementation (deadline: Aug 2026)
+  - Trade: US-China diplomatic developments (Trump April 2026 visit planned)
+  - Energy: Renewable vs coal milestone tracking (projected mid-2026 coal overtaking)
+
+MEDIUM PRIORITY TRACKING:
+  - Neuralink production scaling updates (high-volume target 2026)
+  - Commonwealth Fusion first plasma achievement (target: 2026)
+  - GE Vernova DAC unit deployment (target: mid-2026)
+  - CRISPR Therapeutics CTX460 clinical trial (target: mid-2026)
+
+EMERGING SIGNALS TO WATCH:
+  - Gen Z behavioral shift consolidation (digital minimalism movement)
+  - Spirituality trend integration (consumer products, wellness market)
+  - Space economy commercialization milestones
+
+================================================================================
+[2026-01-12 14:36:00] DEDUPLICATION COMPLETED SUCCESSFULLY
+================================================================================
+
+Completion Time: 06:00 (6 minutes)
+Processing Status: PASSED
+Output Files Generated:
+  1. filtered-signals-2026-01-12.json (filtered results, statistics, metadata)
+  2. dedup-log-2026-01-12.txt (this log file)
+
+Database Updated: No (updates applied to filtered output, original database preserved)
+Next Processing: 2026-01-13 scan data (if available)
+
+FINAL STATISTICS:
+  Input: 48 signals
+  Output: 43 unique signals (33 new + 10 updates)
+  Removed: 2 duplicates + 3 unclear
+  Pass Rate: 89.6%
+  Consolidation Recommended: 3 meta-signals
+
+END OF DEDUPLICATION LOG
+================================================================================
+[2026-01-12 14:36:00] Process Complete

@@ -1,0 +1,221 @@
+{
+  "regional_expansion_quick_reference": {
+    "total_sources": 12,
+    "tier_1_sources": 9,
+    "tier_2_sources": 3,
+    "regions_covered": 5,
+    "sources": [
+      {
+        "id": 1,
+        "name": "ECLAC",
+        "region": "Latin America",
+        "url": "https://www.cepal.org/en",
+        "tier": 1,
+        "steeps": ["E", "S", "Env"],
+        "rank": "UN Regional Commission",
+        "priority": "HIGH"
+      },
+      {
+        "id": 2,
+        "name": "FGV",
+        "region": "Latin America",
+        "url": "https://portal.fgv.br/en",
+        "tier": 1,
+        "steeps": ["E", "P", "S"],
+        "rank": "Latin America #1, World #5",
+        "priority": "HIGH"
+      },
+      {
+        "id": 3,
+        "name": "CIPPEC",
+        "region": "Latin America",
+        "url": "https://www.cippec.org",
+        "tier": 1,
+        "steeps": ["E", "S", "P"],
+        "rank": "Latin America #3",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 4,
+        "name": "AfDB",
+        "region": "Africa",
+        "url": "https://www.afdb.org/en",
+        "tier": 1,
+        "steeps": ["E", "S", "Env"],
+        "rank": "African Development Bank",
+        "priority": "HIGH"
+      },
+      {
+        "id": 5,
+        "name": "AUDA-NEPAD",
+        "region": "Africa",
+        "url": "https://au.int/en/auda",
+        "tier": 1,
+        "steeps": ["E", "P", "S"],
+        "rank": "AU Development Agency",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 6,
+        "name": "IMANI Ghana",
+        "region": "Africa",
+        "url": "https://imaniafrica.org",
+        "tier": 2,
+        "steeps": ["E", "P", "S"],
+        "rank": "Ghana #1, SSA #3",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 7,
+        "name": "ISEAS",
+        "region": "Southeast Asia",
+        "url": "https://www.iseas.edu.sg",
+        "tier": 1,
+        "steeps": ["P", "E", "S"],
+        "rank": "Top SEA Research Institute",
+        "priority": "CRITICAL"
+      },
+      {
+        "id": 8,
+        "name": "ERIA",
+        "region": "Southeast Asia",
+        "url": "https://www.eria.org",
+        "tier": 1,
+        "steeps": ["E", "P"],
+        "rank": "World #9 (Int'l Economics)",
+        "priority": "HIGH"
+      },
+      {
+        "id": 9,
+        "name": "TDRI",
+        "region": "Southeast Asia",
+        "url": "https://tdri.or.th/en",
+        "tier": 2,
+        "steeps": ["E", "S", "P"],
+        "rank": "Thailand Top Think Tank",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 10,
+        "name": "VEPR",
+        "region": "Southeast Asia",
+        "url": "http://vepr.org.vn",
+        "tier": 2,
+        "steeps": ["E", "P"],
+        "rank": "Vietnam National University",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 11,
+        "name": "KAPSARC",
+        "region": "Middle East",
+        "url": "https://www.kapsarc.org",
+        "tier": 1,
+        "steeps": ["Env", "E", "T"],
+        "rank": "Saudi Energy Research Center",
+        "priority": "CRITICAL"
+      },
+      {
+        "id": 12,
+        "name": "GRC",
+        "region": "Middle East",
+        "url": "https://www.grc.net",
+        "tier": 2,
+        "steeps": ["P", "E", "S"],
+        "rank": "Gulf Research Center",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 13,
+        "name": "LCPS",
+        "region": "Middle East",
+        "url": "https://www.lcps-lebanon.org",
+        "tier": 2,
+        "steeps": ["P", "E", "S"],
+        "rank": "Lebanon Top Think Tank",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 14,
+        "name": "CASE",
+        "region": "Eastern Europe",
+        "url": "https://case-research.eu",
+        "tier": 1,
+        "steeps": ["E", "S", "P"],
+        "rank": "World #61",
+        "priority": "CRITICAL"
+      },
+      {
+        "id": 15,
+        "name": "Think Visegrad",
+        "region": "Eastern Europe",
+        "url": "https://think.visegradfund.org",
+        "tier": 2,
+        "steeps": ["P", "E", "S"],
+        "rank": "World #33 (Network)",
+        "priority": "MEDIUM"
+      },
+      {
+        "id": 16,
+        "name": "Baltic Research",
+        "region": "Eastern Europe",
+        "url": "https://www.izm.gov.lv/en/baltic-research-programme",
+        "tier": 2,
+        "steeps": ["P", "E", "T"],
+        "rank": "Baltic States Network",
+        "priority": "LOW"
+      }
+    ],
+    "priority_matrix": {
+      "CRITICAL": [
+        "ISEAS (Southeast Asia geopolitics)",
+        "KAPSARC (Middle East energy)",
+        "CASE (Eastern Europe economics)"
+      ],
+      "HIGH": [
+        "ECLAC (Latin America economics)",
+        "FGV (Brazil policy)",
+        "AfDB (Africa development)",
+        "ERIA (ASEAN integration)"
+      ],
+      "MEDIUM": [
+        "CIPPEC (Argentina)",
+        "AUDA-NEPAD (Pan-African)",
+        "IMANI (Ghana)",
+        "TDRI (Thailand)",
+        "VEPR (Vietnam)",
+        "GRC (Gulf)",
+        "LCPS (Lebanon)",
+        "Think Visegrad (V4)"
+      ],
+      "LOW": [
+        "Baltic Research (limited scope)"
+      ]
+    },
+    "steeps_legend": {
+      "S": "Social",
+      "T": "Technological",
+      "E": "Economic",
+      "Env": "Environmental",
+      "P": "Political",
+      "Sp": "Spiritual"
+    },
+    "integration_phases": {
+      "phase_1_pilot": {
+        "sources": ["ECLAC", "KAPSARC", "ISEAS", "CASE"],
+        "duration": "2 weeks",
+        "start_date": "2026-01-13"
+      },
+      "phase_2_tier1": {
+        "sources": ["FGV", "CIPPEC", "AfDB", "AUDA-NEPAD", "ERIA"],
+        "duration": "1 month",
+        "start_date": "2026-01-27"
+      },
+      "phase_3_tier2": {
+        "sources": ["IMANI", "TDRI", "VEPR", "GRC", "LCPS", "Think Visegrad", "Baltic Research"],
+        "duration": "ongoing",
+        "start_date": "2026-02-24"
+      }
+    }
+  }
+}

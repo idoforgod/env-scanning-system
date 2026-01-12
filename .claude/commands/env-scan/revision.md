@@ -27,7 +27,7 @@ $ARGUMENTS
 
 3. **재생성**
    - 수정된 내용으로 보고서 재생성
-   - `env-scanning/reports/daily/environmental-scan-{date}.md` 덮어쓰기
+   - `data/{date}/reports/environmental-scan-{date}.md` 덮어쓰기
 
 4. **재검토 요청**
    - 수정된 보고서 제시

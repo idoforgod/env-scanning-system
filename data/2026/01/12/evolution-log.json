@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-01-12",
+    "description": "자기개선 진화 변경 이력",
+    "total_changes": 0,
+    "last_change": null
+  },
+  "statistics": {
+    "total_promotions": 0,
+    "total_demotions": 0,
+    "total_deactivations": 0,
+    "total_new_sources": 0,
+    "total_rollbacks": 0
+  },
+  "changes": [],
+  "pending_changes": {
+    "description": "상한선 초과로 대기 중인 변경",
+    "queue": []
+  },
+  "anomaly_alerts": {
+    "description": "이상 탐지 알림 기록",
+    "alerts": []
+  },
+  "weekly_summaries": []
+}

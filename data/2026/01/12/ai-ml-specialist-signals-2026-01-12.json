@@ -1,0 +1,373 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-12",
+    "scan_time": "14:30:00",
+    "scan_window_hours": 24,
+    "scan_period_start": "2026-01-11T09:00:00+09:00",
+    "scan_period_end": "2026-01-12T09:00:00+09:00",
+    "timezone": "Asia/Seoul",
+    "specialist_focus": "AI/ML Foundation Models, Enterprise Adoption, Reasoning, Safety & Regulation",
+    "total_signals": 7,
+    "by_category": {
+      "Technological": 6,
+      "Political": 1,
+      "Economic": 1
+    },
+    "confidence_avg": 4.0
+  },
+  "signals": [
+    {
+      "raw_id": "RAW-2026-0112-Mercury-001",
+      "title": "Mercury: Ultra-Fast Language Models Based on Diffusion",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury",
+      "arxiv_url": "https://arxiv.org/abs/2506.17298",
+      "source_name": "Inception Labs",
+      "source_type": "research_lab",
+      "published_date": "2026-01",
+      "category": "Technological",
+      "subcategory": "Foundation Models - Inference Optimization",
+      "summary": "Inception Labs introduced Mercury, a family of diffusion-based LLMs generating multiple tokens in parallel via coarse-to-fine refinement. Mercury Coder Mini and Small achieve 1,109 and 737 tokens/sec respectively on NVIDIA H100s—up to 10x faster than speed-optimized autoregressive LLMs while maintaining competitive coding benchmarks.",
+      "key_entities": [
+        "Inception Labs",
+        "Mercury",
+        "Diffusion LLMs",
+        "Parallel token generation",
+        "NVIDIA H100",
+        "Coarse-to-fine refinement"
+      ],
+      "weak_signal_why": "Represents emerging architectural paradigm for LLMs. Diffusion previously proven only in visual domains (Sora, Midjourney); breakthrough application to text/code signals fundamental shift in model design philosophy. Eliminates traditional speed-quality tradeoff.",
+      "significance_score": 5,
+      "significance_rationale": "Potential to reshape inference cost economics for latency-sensitive workloads (customer support, code generation, real-time systems). Industry convergence (Inception Labs + Tencent WeDLM) on diffusion within weeks suggests transition from research novelty to production-viable technology.",
+      "confidence": 4.5,
+      "confidence_factors": [
+        "Peer-reviewed preprint (ArXiv)",
+        "Open-source code available",
+        "Reproducible benchmarks",
+        "Early adoption on Hugging Face"
+      ],
+      "future_implications": [
+        "Cloud providers (AWS, Azure, GCP) may optimize inference engines for diffusion-based models in 2026-2027",
+        "Speed-optimized inference services (e.g., vLLM) may need architectural evolution",
+        "Cost per inference token may drop significantly, changing model selection calculus"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en"
+    },
+    {
+      "raw_id": "RAW-2026-0112-WeDLM-002",
+      "title": "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention",
+      "url": "https://github.com/Tencent/WeDLM",
+      "arxiv_url": "https://arxiv.org/html/2512.22737v1",
+      "huggingface_url": "https://huggingface.co/tencent/WeDLM-8B-Base",
+      "source_name": "Tencent WeChat AI",
+      "source_type": "research_lab",
+      "published_date": "2025-12",
+      "category": "Technological",
+      "subcategory": "Foundation Models - Inference Optimization",
+      "summary": "Tencent's WeChat AI released WeDLM, a diffusion-based LLM achieving 3-6x speedup on reasoning tasks with compatibility for standard causal attention and KV caching. First diffusion model to outperform vLLM on standard benchmarks. 7B and 8B models available under Apache 2.0 license.",
+      "key_entities": [
+        "Tencent",
+        "WeChat AI",
+        "WeDLM",
+        "Diffusion LLM",
+        "Topological reordering",
+        "Streaming parallel decoding",
+        "vLLM compatibility",
+        "KV cache"
+      ],
+      "weak_signal_why": "Convergence of two independent labs (Inception Labs + Tencent) on diffusion-based inference within weeks signals transition from niche research to production viability. Emphasis on infrastructure compatibility (vLLM, FlashAttention) rather than custom silicon indicates enterprise readiness. Open-source release accelerates adoption.",
+      "significance_score": 5,
+      "significance_rationale": "Resolves critical bottleneck: previous diffusion models required custom inference infrastructure. WeDLM's compatibility with existing optimization frameworks enables drop-in deployment. Could accelerate industry-wide adoption of diffusion methods in 2026-2027.",
+      "confidence": 4.5,
+      "confidence_factors": [
+        "Open-source implementation (GitHub)",
+        "Reproducible benchmarks (GSM8K, others)",
+        "Already deployed on Hugging Face (47k downloads)",
+        "Multiple model sizes available (7B, 8B)"
+      ],
+      "future_implications": [
+        "Established inference optimization companies (NVIDIA) may need to adapt strategies",
+        "Cost structure for inference-heavy enterprises may shift significantly",
+        "New class of 'diffusion-optimized' hardware accelerators may emerge",
+        "Potential shift in developer mindset from autoregressive-first to architecture-agnostic"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en"
+    },
+    {
+      "raw_id": "RAW-2026-0112-KEXAONE-003",
+      "title": "K-EXAONE: LG's 236B Multilingual Foundation Model for Sovereign AI",
+      "url": "https://github.com/LG-AI-EXAONE/K-EXAONE",
+      "arxiv_url": "https://arxiv.org/pdf/2601.01739",
+      "source_name": "LG AI Research / Korean Ministry of Science and ICT",
+      "source_type": "research_lab",
+      "published_date": "2026-01",
+      "category": "Technological",
+      "subcategory": "Foundation Models - Regional Sovereignty",
+      "summary": "LG AI Research unveiled K-EXAONE, a 236B-parameter Mixture-of-Experts model positioning South Korea's AI independence. Introduced at the country's first 'sovereign AI' briefing by the Ministry of Science and ICT. Ranks 7th globally with 23B active parameters, 6-language support (Korean cultural context), 256K context window, and A100 GPU compatibility.",
+      "key_entities": [
+        "LG AI Research",
+        "K-EXAONE",
+        "South Korea",
+        "Sovereign AI",
+        "Ministry of Science and ICT",
+        "MoE architecture",
+        "Regional model",
+        "Cultural embedding"
+      ],
+      "weak_signal_why": "Signals emerging pattern of regional AI consolidation as geopolitical tensions around AI supply chains intensify. K-EXAONE's public positioning as 'sovereign AI' with explicit government involvement suggests this is becoming a strategic differentiator. Watch for similar announcements from EU, India, Japan in 2026.",
+      "significance_score": 4,
+      "significance_rationale": "Represents shift toward multi-polar AI world where governments mandate or incentivize deployment of domestically-controlled models. Creates fragmentation opportunity, regulatory risk, and market segmentation based on geopolitical alignment rather than pure capability.",
+      "confidence": 4.0,
+      "confidence_factors": [
+        "Official government involvement (Ministry of Science and ICT)",
+        "Published technical report and benchmarks",
+        "Global media coverage (Korea Herald, etc.)",
+        "Public GitHub repository"
+      ],
+      "future_implications": [
+        "Enterprises in regulated sectors may face pressure to use regional models",
+        "EU may accelerate funding of European foundation models (Mistral, ALEPH-Alpha successor)",
+        "Supply chain for GPU/compute may become geopolitically segmented",
+        "Multi-model strategies may emerge as enterprises hedge geopolitical risk",
+        "New compliance category: 'data residency and model sovereignty'"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en",
+      "language_secondary": "ko"
+    },
+    {
+      "raw_id": "RAW-2026-0112-ATLAS-004",
+      "title": "Boston Dynamics Atlas Powered by Gemini 3: Production-Ready Humanoid",
+      "url": "https://bostondynamics.com/blog/boston-dynamics-google-deepmind-form-new-ai-partnership/",
+      "source_name": "Boston Dynamics / Google DeepMind",
+      "source_type": "company_announcement",
+      "published_date": "2026-01-05",
+      "category": "Technological",
+      "subcategory": "AI Agents & Embodied AI - Robotics",
+      "summary": "Boston Dynamics announced full-scale integration of Google DeepMind's Gemini 3 into production-ready Atlas humanoid. Gemini 3 features Sparse Mixture-of-Experts optimized for robotics with 1M-token context window. Atlas has 56 degrees of freedom, 2.3m reach, can lift 50kg. All 2026 deployments pre-committed (Hyundai, Google DeepMind).",
+      "key_entities": [
+        "Boston Dynamics",
+        "Google DeepMind",
+        "Atlas",
+        "Gemini 3",
+        "Humanoid robot",
+        "Sparse MoE",
+        "Hyundai",
+        "Production deployment"
+      ],
+      "weak_signal_why": "Signals transition of AI agents from software to hardware embodiment. Critical insight: Google DeepMind explicitly built reasoning models *for* robotics (not adapted generic LLMs). This indicates industry confidence that embodied AI is moving from demos to deployment. Pre-committed production deployments are concrete signal, not hype.",
+      "significance_score": 4,
+      "significance_rationale": "Represents inflection point where AI reasoning models become controlling agents for physical systems. Demonstrates convergence of three previously separate domains: LLMs, robotics, and industrial automation. Pre-committed deployments signal commercial viability.",
+      "confidence": 5.0,
+      "confidence_factors": [
+        "Official partnership announcement (high-credibility sources)",
+        "Public deployment timeline and commitments",
+        "Demonstrated at CES 2026 (major industry event)",
+        "Partner (Hyundai) is major automotive manufacturer"
+      ],
+      "future_implications": [
+        "Manufacturing sector may undergo rapid robotics adoption wave in 2026-2027",
+        "Competing announcements likely from Tesla (Optimus), Figure AI, Boston Dynamics rivals",
+        "Enterprises may need to evaluate 'robot-readiness' of their AI infrastructure",
+        "Supply chains for humanoid hardware may become bottleneck (limited production capacity)",
+        "New category: 'robotics-optimized' foundation models may emerge"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en"
+    },
+    {
+      "raw_id": "RAW-2026-0112-REACHY-005",
+      "title": "Reachy Mini: Open-Source Humanoid for AI Agent Embodiment",
+      "url": "https://huggingface.co/blog/nvidia-reachy-mini",
+      "source_name": "Hugging Face / Pollen Robotics / Seeed Studio",
+      "source_type": "research_community",
+      "published_date": "2026-01-06",
+      "category": "Technological",
+      "subcategory": "AI Agents & Embodied AI - Open Source",
+      "summary": "Pollen Robotics partnered with Hugging Face and Seeed Studio on Reachy Mini, a customizable open-source humanoid for AI agent deployment. Integrates NVIDIA Nemotron reasoning models, vision language models, NeMo Agent Toolkit, Pipecat for real-time streams. Full Python SDK, simulation-to-hardware parity.",
+      "key_entities": [
+        "Pollen Robotics",
+        "Hugging Face",
+        "Seeed Studio",
+        "Reachy Mini",
+        "NVIDIA Nemotron",
+        "NeMo Agent Toolkit",
+        "Open source",
+        "Simulation-to-hardware"
+      ],
+      "weak_signal_why": "Unlike production-ready Atlas, Reachy Mini signals democratization of embodied AI research. Weak signal: complexity barriers are *lowering* but *not eliminated* (requires GPU infrastructure, expertise, ~65GB disk). This suggests 'early enthusiast' phase (analogous to 2012 deep learning moment). If barriers drop significantly in H2 2026, expect rapid proliferation.",
+      "significance_score": 3,
+      "significance_rationale": "Signals transition from hardware-only expertise to accessible developer community. Represents potential starting point for large developer migration from cloud/web to embodied AI. Early indicator of future skill demand.",
+      "confidence": 3.5,
+      "confidence_factors": [
+        "Published open-source code and demos",
+        "Partnership with major platforms (Hugging Face)",
+        "Community feedback available (47 upvotes on Hugging Face)",
+        "Limited but clear real-world examples"
+      ],
+      "future_implications": [
+        "Developer community around embodied agents may grow 10-50x if infrastructure barriers lower",
+        "Potential talent shift from web/cloud to robotics in 2026-2027",
+        "New market segment: 'embodied agent startups' may emerge",
+        "Educational institutions may add robotics+AI to curriculum",
+        "Consumer applications (home robots, office assistants) may become viable"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en"
+    },
+    {
+      "raw_id": "RAW-2026-0112-ANTHROPIC-006",
+      "title": "Anthropic Partners with Allianz: Enterprise AI Adoption in Regulated Sectors",
+      "url": "https://techcrunch.com/2026/01/09/anthropic-adds-allianz-to-growing-list-of-enterprise-wins",
+      "source_name": "TechCrunch / Anthropic",
+      "source_type": "news",
+      "published_date": "2026-01-09",
+      "category": "Economic",
+      "subcategory": "Enterprise AI Adoption - Regulated Industries",
+      "summary": "Anthropic announced strategic partnership with Munich-based Allianz insurance conglomerate involving: Claude Code for all employees, custom AI agents for multi-step workflows with human oversight, transparency logging for regulatory compliance. Anthropic holds 40% of enterprise AI market share (up from 32% in July 2025).",
+      "key_entities": [
+        "Anthropic",
+        "Allianz",
+        "Enterprise AI",
+        "Insurance sector",
+        "Regulated industries",
+        "Claude Code",
+        "AI agents",
+        "Transparency logging"
+      ],
+      "weak_signal_why": "Signals market segmentation in enterprise AI: price-conscious buyers gravitating to OpenAI/Google for commodity tasks, while regulated sectors prefer Anthropic's transparency-first approach. Weak signal: 2026 may see explicit 'enterprise AI flavors' emerge—commodity vs. regulated-sector versions with different compliance postures.",
+      "significance_score": 3,
+      "significance_rationale": "Indicates that AI market is not monolithic. Regulated industries may require different vendors, governance, and operational models than tech-forward companies. This creates opportunity for specialization and potential lock-in.",
+      "confidence": 4.5,
+      "confidence_factors": [
+        "Public company announcement",
+        "Market share data cited (40% enterprise share)",
+        "Specific compliance requirements mentioned",
+        "Major Fortune 500 partner (Allianz, ~$150B annual revenue)"
+      ],
+      "future_implications": [
+        "Financial services sector may consolidate around specific AI vendors (likely Anthropic or Google)",
+        "Healthcare, pharma may follow same pattern (regulated sector preference)",
+        "Enterprise AI procurement may split into two tracks: commodity and regulated",
+        "Compliance and audit infrastructure may become major competitive differentiator",
+        "New class of 'compliance-grade' AI services may command premium pricing"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en"
+    },
+    {
+      "raw_id": "RAW-2026-0112-POLICY-007",
+      "title": "Federal vs. State AI Regulation: Preemption Executive Order Signals Coming Legal Battles",
+      "url": "https://www.kslaw.com/news-and-insights/new-state-ai-laws-are-effective-on-january-1-2026-but-a-new-executive-order-signals-disruption",
+      "source_name": "King & Spalding / NBC News",
+      "source_type": "policy_analysis",
+      "published_date": "2026-01",
+      "category": "Political",
+      "subcategory": "AI Regulation & Compliance",
+      "summary": "President Trump signed executive order 'Ensuring a National Policy Framework for Artificial Intelligence' (Dec 11, 2025) proposing federal preemption of state AI laws. Conflicts with California AI Safety Act (SB 53, effective Jan 1), New York AI Safety Law (signed Dec 2025), Colorado AI Act (delayed to Jun 30). Includes AI Litigation Task Force to challenge state laws.",
+      "key_entities": [
+        "Trump administration",
+        "Federal preemption",
+        "California SB 53",
+        "New York AI Safety Law",
+        "Colorado AI Act",
+        "AI Litigation Task Force",
+        "Regulatory fragmentation",
+        "Compliance costs"
+      ],
+      "weak_signal_why": "The collision between federal and state regulations signals upcoming litigation and policy uncertainty. Weak signal: this regulatory fragmentation may accelerate 'AI compliance as a service' market and increase adoption of privacy-preserving, auditable AI systems to hedge regulatory risk.",
+      "significance_score": 4,
+      "significance_rationale": "Creates legal uncertainty for enterprises operating across multiple US states. Companies must choose between compliance strategies, potentially increasing costs. May accelerate investment in governance and audit infrastructure.",
+      "confidence": 4.5,
+      "confidence_factors": [
+        "Executive order is official government action",
+        "Multiple state laws documented and in effect",
+        "Legal analysis from major law firms (King & Spalding)",
+        "Enforcement mechanisms explicitly mentioned (Litigation Task Force)"
+      ],
+      "future_implications": [
+        "Expect major legal battles in 2026 (federal vs. California likely first)",
+        "Enterprises may need to implement multiple compliance strategies simultaneously",
+        "Compliance costs may rise 50-200% for companies serving regulated US markets",
+        "New market for 'AI compliance platforms' and audit services",
+        "International companies may find US market compliance costs prohibitive",
+        "Potential for regulatory arbitrage (some states may relax rules to compete)"
+      ],
+      "scanned_at": "2026-01-12T14:30:00+09:00",
+      "language": "en"
+    }
+  ],
+  "patterns": {
+    "shift_from_scaling_to_efficiency": {
+      "description": "2025 was the year of 'bigger models.' Early 2026 signals show industry pivoting to 'better inference,' 'regional control,' and 'practical deployment.'",
+      "signals_supporting": [
+        "Mercury (diffusion-based inference)",
+        "WeDLM (infrastructure-compatible optimization)",
+        "K-EXAONE (regional efficiency focus)"
+      ]
+    },
+    "physical_ai_inflection": {
+      "description": "Humanoid robots moving from 'research curiosity' (2024) → 'pre-production' (2025) → 'production deployment' (2026). Not robotics breakthrough, but AI-readiness breakthrough.",
+      "signals_supporting": [
+        "Boston Dynamics Atlas + Gemini 3",
+        "NVIDIA Cosmos & GR00T",
+        "Reachy Mini (open-source democratization)"
+      ]
+    },
+    "regulatory_enforcement_year": {
+      "description": "2025 saw regulatory frameworks proposed. 2026 is enforcement year with conflicting federal-state directives, making AI compliance critical.",
+      "signals_supporting": [
+        "Federal preemption executive order",
+        "Multiple state laws effective Jan 1",
+        "Anthropic's compliance-first positioning"
+      ]
+    },
+    "geopolitical_fragmentation": {
+      "description": "Emergence of 'sovereign AI' frameworks signals multi-polar AI world where enterprises navigate regional model deployment requirements.",
+      "signals_supporting": [
+        "K-EXAONE (South Korea sovereign AI)",
+        "Government involvement in model development",
+        "Expected EU responses in coming months"
+      ]
+    }
+  },
+  "monitoring_recommendations": {
+    "high_priority_30_days": [
+      "Adoption metrics: WeDLM/Mercury by cloud providers (AWS, Azure, GCP)",
+      "EU sovereign AI announcements (response to K-EXAONE)",
+      "Tesla Optimus / Figure AI hardware + AI integration updates",
+      "Court challenges and federal-state regulatory battles",
+      "Claude 5 / Gemini 3 performance benchmarks and adoption"
+    ],
+    "medium_priority_60_days": [
+      "AI safety research addressing alignment (Anthropic, OpenAI)",
+      "Enterprise AI ROI reports (early 2026 will show value distribution)",
+      "Robotics market data and deployment volumes",
+      "Regional AI model announcements (Japan, India, Singapore, EU)",
+      "Compliance and audit platform market emergence"
+    ]
+  },
+  "sources_scanned": {
+    "research_labs": [
+      "Inception Labs",
+      "Tencent WeChat AI",
+      "LG AI Research",
+      "Google DeepMind",
+      "NVIDIA Research"
+    ],
+    "publications": [
+      "ArXiv (cs.AI, cs.LG)",
+      "TechCrunch",
+      "Engadget",
+      "MIT Technology Review",
+      "King & Spalding Legal Blog"
+    ],
+    "platforms": [
+      "GitHub",
+      "Hugging Face",
+      "Boston Dynamics Blog",
+      "NVIDIA Newsroom"
+    ]
+  }
+}

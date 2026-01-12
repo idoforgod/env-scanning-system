@@ -1,0 +1,496 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-12",
+    "scan_time": "00:00:00",
+    "scan_type": "specialized_ocean_maritime",
+    "time_window_hours": 24,
+    "strict_mode": true,
+    "timezone": "Asia/Seoul",
+    "target_sources": [
+      "SeafoodSource",
+      "The Maritime Executive",
+      "TradeWinds",
+      "Ocean Conservancy",
+      "Hakai Magazine"
+    ],
+    "keywords": [
+      "ocean 2026",
+      "aquaculture",
+      "sustainable fishing",
+      "shipping decarbonization",
+      "port automation",
+      "marine biodiversity",
+      "ocean mining"
+    ],
+    "total_scanned": 23,
+    "by_category": {
+      "Environmental": 8,
+      "Technological": 7,
+      "Economic": 5,
+      "Political": 2,
+      "Social": 1
+    }
+  },
+  "items": [
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-001",
+      "title": "UN Marine Biodiversity Treaty Enters Force January 17, 2026",
+      "url": "https://press.un.org/en/2025/l3306.doc.htm",
+      "source_name": "UN Press",
+      "source_type": "policy",
+      "published_date": "2025-09-19",
+      "category_hint": "Political",
+      "summary": "The Agreement under the UN Convention on the Law of the Sea on marine biological diversity beyond national jurisdiction will officially enter into force on January 17, 2026. This historic treaty applies to over two-thirds of the world's oceans, establishing mechanisms for conservation, benefit-sharing from marine genetic resources, area-based management tools including marine protected areas, and environmental impact assessments. The treaty reached the required 60 ratifications in just over two years, demonstrating unprecedented global commitment to ocean protection.",
+      "key_entities": [
+        "United Nations",
+        "UNCLOS",
+        "BBNJ Treaty",
+        "António Guterres",
+        "International Seabed Authority"
+      ],
+      "raw_content": "Entry into force date: January 17, 2026 (120 days after 60th ratification on September 19, 2025). Key provisions include conservation and sustainable use of marine biodiversity in areas beyond national jurisdiction, benefit-sharing from marine genetic resources, area-based management tools including marine protected areas, environmental impact assessments, and capacity-building for developing nations. A Preparatory Commission is preparing for the first Conference of the Parties within one year of entry into force.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-002",
+      "title": "Transpacific Ocean Shipping Rates Spike 22-30% to Start 2026",
+      "url": "https://www.supplychaindive.com/news/transpacific-ocean-rates-spike-2026-freightos/808979/",
+      "source_name": "Supply Chain Dive",
+      "source_type": "news",
+      "published_date": "2026-01-07",
+      "category_hint": "Economic",
+      "summary": "Container shipping rates from Asia to U.S. West Coast surged 22% week-over-week to $2,617/FEU, and to U.S. East Coast rose 12% to $3,757/FEU, driven by Lunar New Year demand and carrier rate increases. Despite near-term spikes, 2026 volumes face a 10% year-over-year decline projection due to elevated retailer inventories from prior tariff-related frontloading. The rate increases reflect seasonal patterns but mask underlying capacity concerns for the shipping industry.",
+      "key_entities": [
+        "Freightos",
+        "Port of Los Angeles",
+        "container shipping",
+        "Lunar New Year",
+        "FEU rates"
+      ],
+      "raw_content": "Asia to U.S. West Coast: $2,617/FEU (+22% WoW, +30% since mid-December). Asia to U.S. East Coast: $3,757/FEU (+12% WoW, +20% since mid-December). Primary catalyst: Lunar New Year demand and general rate increases from carriers. 2026 outlook: Container volumes projected to decline 10% YoY vs 2025 due to elevated retailer inventories from tariff frontloading. Port of Los Angeles expects single-digit import volume declines.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-003",
+      "title": "Shipping Decarbonization Shifts from Targets to Trade-Offs in 2026",
+      "url": "https://maritime-executive.com/corporate/from-targets-to-trade-offs-why-2026-will-redefine-decarbonization-path",
+      "source_name": "The Maritime Executive",
+      "source_type": "news",
+      "published_date": "2025-12-24",
+      "category_hint": "Environmental",
+      "summary": "According to EmissionLink's Managing Director, 2026 marks a critical shift in shipping decarbonization as regulatory frameworks advance faster than fuel infrastructure can support. The industry is pivoting from long-term transformation to short-term compliance strategies, with 2026 characterized as 'a year of pragmatic, compliance-safe decisions' rather than breakthrough fuel adoption. Alternative fuel orders (ammonia, methanol) are declining sharply as owners prioritize practical compliance using existing tools. Europe's FuelEU Maritime regulation is already reshaping behavior through mandatory emissions reporting and digital tracking systems.",
+      "key_entities": [
+        "EmissionLink",
+        "Philippos Ioulianou",
+        "FuelEU Maritime",
+        "IMO",
+        "alternative fuels"
+      ],
+      "raw_content": "Key insight: 'What we are seeing is regulation running ahead of infrastructure and fuel availability.' Strategic shift: Conversation moves from targets to trade-offs, with owners prioritizing compliance and competitiveness over betting on breakthrough fuels. 2026 outlook: Not the year of ammonia or methanol - pragmatic compliance decisions dominate. Digital emissions management becoming operationally essential. Government revenue tension: Climate goals vs carbon pricing as revenue mechanism reshaping policy design around LNG and bio-LNG eligibility.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-004",
+      "title": "Trump Administration Halts $25B in US Offshore Wind Projects Over National Security",
+      "url": "https://www.technologyreview.com/2026/01/08/1130868/legal-challenges-offshore-wind",
+      "source_name": "MIT Technology Review",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Political",
+      "summary": "The Trump administration paused leases for five East Coast wind farms on December 22, 2025, affecting $25 billion in projects that would generate 10,000 jobs and power 2.5+ million homes. Projects include Vineyard Wind 1, Revolution Wind (87% complete), Empire Wind (60% complete), Sunrise Wind, and Coastal Virginia Offshore Wind. Developers Orsted and Equinor filed lawsuits seeking preliminary injunctions, arguing projects underwent lengthy federal reviews addressing radar interference concerns. Industry projections dropped from 39 GW to 6 GW by 2035, with a 2025 study showing 3.5 GW of operational offshore wind would have saved ratepayers $400 million.",
+      "key_entities": [
+        "Trump administration",
+        "Orsted",
+        "Equinor",
+        "Revolution Wind",
+        "BloombergNEF"
+      ],
+      "raw_content": "Legal action: Three companies filed lawsuits for preliminary injunctions. Projects under challenge: Vineyard Wind 1 (MA), Revolution Wind (RI), Sunrise Wind & Empire Wind (NY), Coastal Virginia Offshore Wind (VA). Technical issue: Wind turbines create radar clutter affecting air traffic control, weather forecasting, defense systems. DOE acknowledges no mitigation technology has fully restored impacted radar performance. Economic impact: 3.5 GW operational offshore wind would have reduced 2024-2025 winter energy prices by 11%, saving $400M. Industry outlook: Unpredictable environment threatening future development.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-005",
+      "title": "South Korea Plans September 2026 Arctic Route Container Shipping Pilot to Rotterdam",
+      "url": "https://www.worldcargonews.com/news/2026/01/south-korea-to-test-arctic-route-for-container-shipping-to-rotterdam/",
+      "source_name": "World Cargo News",
+      "source_type": "news",
+      "published_date": "2026-01-08",
+      "category_hint": "Technological",
+      "summary": "South Korea government announced plans for a pilot container vessel voyage from Busan to Rotterdam via the Northern Sea Route, scheduled for approximately September 2026. The initiative represents South Korea's push to become the first Western-aligned country to launch regular trans-Arctic shipping operations. A dedicated Arctic shipping task force has been established to prepare for the pilot operations scheduled for summer 2026, reflecting strategic interest in Arctic maritime routes as climate change opens new shipping corridors.",
+      "key_entities": [
+        "South Korea",
+        "Port of Busan",
+        "Port of Rotterdam",
+        "Northern Sea Route",
+        "Arctic shipping"
+      ],
+      "raw_content": "Route: Busan (South Korea) to Rotterdam (Netherlands) via Northern Sea Route above Russia. Timeline: Approximately September 2026. Government established dedicated Arctic shipping task force. Pilot operations scheduled for summer 2026. Strategic significance: First Western-aligned country attempting regular trans-Arctic shipping. Related developments: Connection to Venta Maersk, Sea Legend, and Polar Silk Road initiatives.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-006",
+      "title": "China Achieves Record 14 Arctic Container Shipping Voyages in 2025, Plans 2026 Expansion",
+      "url": "https://gcaptain.com/china-expands-arctic-container-shipping-with-record-14-voyages-in-2025/",
+      "source_name": "gCaptain",
+      "source_type": "news",
+      "published_date": "2025-12-28",
+      "category_hint": "Economic",
+      "summary": "Chinese shipping companies completed 14 container ship voyages through the Arctic's Northern Sea Route in 2025, up from 11 in 2024 and seven in 2023, demonstrating accelerating adoption of polar shipping corridors. NewNew Shipping Line and Sea Legend signaled plans to further expand Arctic container offerings in 2026, aiming to add sailings and improve schedule reliability. The expansion reflects China's strategic interest in developing the 'Polar Silk Road' as an alternative to traditional shipping routes, reducing transit times between Asia and Europe.",
+      "key_entities": [
+        "NewNew Shipping Line",
+        "Sea Legend",
+        "Northern Sea Route",
+        "Polar Silk Road",
+        "China"
+      ],
+      "raw_content": "2025 voyages: 14 container ships (vs 11 in 2024, 7 in 2023). 2026 expansion plans: NewNew Shipping Line and Sea Legend to add sailings and improve schedule reliability. Strategic context: Part of China's Polar Silk Road initiative. Benefits: Reduced transit times between Asia and Europe compared to traditional routes. Seasonal operations due to ice conditions, infrastructure challenges remain.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-007",
+      "title": "100 Sanctioned Vessels Used Russia's Northern Sea Route in 2025, Security Concerns Rise",
+      "url": "https://www.highnorthnews.com/en/russias-arctic-shipping-route-turns-dark-fleet-corridor-used-100-sanctioned-vessels",
+      "source_name": "High North News",
+      "source_type": "news",
+      "published_date": "2025-12-18",
+      "category_hint": "Political",
+      "summary": "A Bellona Foundation report revealed that 100 sanctioned vessels used Russia's Northern Sea Route during 2025, up from just 13 in 2024, including 38 sanctioned oil tankers (13 with no or low ice-classification). This dramatic increase raises significant environmental and security concerns as the Arctic route becomes a corridor for 'dark fleet' operations circumventing international sanctions. The trend highlights challenges in enforcing maritime regulations in Arctic waters and potential environmental risks from poorly equipped vessels operating in sensitive polar ecosystems.",
+      "key_entities": [
+        "Bellona Foundation",
+        "Russia",
+        "Northern Sea Route",
+        "dark fleet",
+        "sanctioned vessels"
+      ],
+      "raw_content": "2025: 100 sanctioned vessels used NSR (vs 13 in 2024). Breakdown: 38 sanctioned oil tankers, 13 with no/low ice-classification. Security concerns: Circumventing international sanctions. Environmental risks: Poorly equipped vessels in sensitive Arctic ecosystems. Enforcement challenges in Arctic waters. Report source: Bellona Foundation analysis.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-008",
+      "title": "IMO to Finalize Non-Mandatory Autonomous Ships Code in May 2026",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx",
+      "source_name": "International Maritime Organization",
+      "source_type": "policy",
+      "published_date": "2025-12-15",
+      "category_hint": "Technological",
+      "summary": "The International Maritime Organization plans to finalize and adopt a non-mandatory MASS (Maritime Autonomous Surface Ships) Code in May 2026, according to IMO Secretary-General Arsenio Dominguez who stated 'all eyes will be on the finalization of the autonomous ships code in 2026.' In December 2026, the IMO will develop a framework for an Experience-building phase (EBP) post-adoption. This regulatory milestone will provide the first international framework for autonomous vessel operations, potentially accelerating commercial deployment of unmanned and remotely operated ships.",
+      "key_entities": [
+        "IMO",
+        "Arsenio Dominguez",
+        "MASS Code",
+        "autonomous ships",
+        "Experience-building phase"
+      ],
+      "raw_content": "May 2026: Finalization and adoption of non-mandatory MASS Code. December 2026: Development of Experience-building phase (EBP) framework post-adoption. Significance: First international regulatory framework for autonomous vessels. Status: Non-mandatory code to guide member states and industry. Expected impact: Acceleration of commercial autonomous ship deployment. IMO Secretary-General emphasis on 2026 as pivotal year for autonomous shipping regulations.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-009",
+      "title": "Autonomous Ship Expo 2026 Set for June 16-18 in Amsterdam with 8,000+ Expected Attendees",
+      "url": "https://www.unmannedsystemstechnology.com/events/autonomous-ship-expo/",
+      "source_name": "Unmanned Systems Technology",
+      "source_type": "news",
+      "published_date": "2025-11-20",
+      "category_hint": "Technological",
+      "summary": "The Autonomous Ship Expo and Conference will convene at RAI Amsterdam on June 16-18, 2026, showcasing vessel control systems, e-navigation, AI/edge computing platforms, route optimization tools, big data analytics, port infrastructure, charging systems including cold ironing, naval architecture innovations, lightweight materials, and regulatory compliance software. The event will feature diverse autonomous and smart vessel technologies as the maritime industry approaches key regulatory milestones with the IMO's MASS Code finalization scheduled for May 2026.",
+      "key_entities": [
+        "Autonomous Ship Expo",
+        "RAI Amsterdam",
+        "MASS",
+        "maritime AI",
+        "vessel automation"
+      ],
+      "raw_content": "Dates: June 16-18, 2026. Location: RAI Amsterdam, Netherlands. Focus areas: Vessel control/monitoring systems, e-navigation and AI/edge computing, route optimization, big data analytics, port infrastructure, charging systems (cold ironing), naval architecture innovations, lightweight materials, regulatory compliance software, emissions monitoring. Context: Timing aligns with IMO MASS Code finalization (May 2026). Industry gathering for autonomous and smart vessel technology showcase.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-010",
+      "title": "AI Agents to Optimize Maritime Routes and Port Scheduling in 2026",
+      "url": "https://itbrief.asia/story/in-2026-ai-is-setting-course-for-maritime-competitiveness",
+      "source_name": "IT Brief Asia",
+      "source_type": "news",
+      "published_date": "2026-01-06",
+      "category_hint": "Technological",
+      "summary": "AI agents are expected to become operational in 2026, with software systems able to act autonomously or semi-autonomously to optimize maritime operations including route optimization, collision avoidance, and port call scheduling. These AI systems represent a shift from passive decision-support tools to active autonomous agents capable of real-time operational adjustments. The technology promises significant efficiency gains in fuel consumption, emissions reduction, and port turnaround times, integrating with existing vessel management systems and port infrastructure.",
+      "key_entities": [
+        "AI agents",
+        "maritime AI",
+        "route optimization",
+        "autonomous systems",
+        "port operations"
+      ],
+      "raw_content": "2026 deployment: AI agents becoming operational for maritime optimization. Capabilities: Route optimization, collision avoidance, port call scheduling. Shift from passive decision-support to active autonomous agents. Benefits: Fuel efficiency, emissions reduction, improved port turnaround times. Integration with vessel management systems and port infrastructure. Real-time operational adjustments based on weather, traffic, port availability.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-011",
+      "title": "World Seafood Congress 2026 in India (Feb 9-11) to Address Aquaculture Sustainability",
+      "url": "https://wsc2026.com/",
+      "source_name": "World Seafood Congress",
+      "source_type": "news",
+      "published_date": "2025-11-15",
+      "category_hint": "Social",
+      "summary": "The World Seafood Congress 2026 will be hosted in India for the first time, taking place February 9-11, 2026 at Chennai Trade Centre. The congress will bring together global seafood trade leaders, policymakers, and experts to explore latest innovations, sustainability practices, and emerging trends impacting safe sustainable seafood trade. The event reflects India's growing importance in global aquaculture, as the country seeks to expand its role in sustainable seafood production and export markets.",
+      "key_entities": [
+        "World Seafood Congress",
+        "India",
+        "Chennai",
+        "aquaculture",
+        "sustainable seafood"
+      ],
+      "raw_content": "Dates: February 9-11, 2026. Location: Chennai Trade Centre, Chennai, India. First time hosted in India. Focus: Global seafood trade, sustainability practices, innovations, emerging trends. Attendees: Trade leaders, policymakers, experts. Themes: Safe sustainable seafood trade, aquaculture innovations, market trends. Significance: Reflects India's growing role in global aquaculture sector.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-012",
+      "title": "Rabobank Forecasts Aquaculture Growth in 2025-2026 on Lower Feed Costs, Rising Demand",
+      "url": "https://www.seafoodsource.com/news/aquaculture/rabobank-predicts-2025-to-bring-aquaculture-growth-on-improved-demand-lower-input-costs",
+      "source_name": "SeafoodSource",
+      "source_type": "news",
+      "published_date": "2025-12-20",
+      "category_hint": "Economic",
+      "summary": "Rabobank's RaboResearch unit forecasts increased global aquaculture production in 2025 and 2026, driven by lower feed prices and rising demand despite potential tariff and trade uncertainties. Atlantic salmon production is expected to achieve mild growth from 2024 to 2026, with projections of 531,000 MT in 2025 rising to 545,000 MT (3% increase) in 2026. The positive outlook reflects improving input cost economics and strengthening global protein demand, positioning aquaculture for sustained expansion.",
+      "key_entities": [
+        "Rabobank",
+        "RaboResearch",
+        "aquaculture",
+        "Atlantic salmon",
+        "feed prices"
+      ],
+      "raw_content": "2025-2026 forecast: Increased global aquaculture production. Drivers: Lower feed prices, rising demand. Atlantic salmon: 531,000 MT (2025) → 545,000 MT (2026), 3% increase. Challenges: Potential tariff and trade uncertainties. Input cost economics improving. Global protein demand strengthening. Outlook: Sustained aquaculture sector expansion.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-013",
+      "title": "FAO Endorses New Guidelines for Sustainable Aquaculture at COFI Meeting",
+      "url": "https://www.seafoodsource.com/news/environment-sustainability/fao-endorses-new-aquaculture-guidelines-during-latest-committee-on-fisheries-meeting",
+      "source_name": "SeafoodSource",
+      "source_type": "policy",
+      "published_date": "2025-12-12",
+      "category_hint": "Environmental",
+      "summary": "The Food and Agriculture Organization (FAO) of the United Nations' Committee on Fisheries endorsed Guidelines for Sustainable Aquaculture (GSA) at the committee's 36th session in Rome, Italy. The guidelines were designed with aid from NOAA and other stakeholders to provide a comprehensive framework for sustainable aquaculture development globally. This represents a significant policy milestone for standardizing sustainable practices across the rapidly expanding global aquaculture industry.",
+      "key_entities": [
+        "FAO",
+        "COFI",
+        "NOAA",
+        "Guidelines for Sustainable Aquaculture",
+        "Rome"
+      ],
+      "raw_content": "Event: FAO Committee on Fisheries (COFI) 36th session in Rome, Italy. Outcome: Endorsement of Guidelines for Sustainable Aquaculture (GSA). Development: Designed with NOAA and stakeholder input. Purpose: Comprehensive framework for global sustainable aquaculture development. Significance: Standardization of sustainable practices across rapidly expanding industry. Policy milestone for aquaculture sector.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-014",
+      "title": "The Ocean Cleanup Achieves Record 25M kg Plastic Removal in 2025, Announces 30 Cities Expansion",
+      "url": "https://theoceancleanup.com/updates/2025-in-review-the-ocean-cleanup/",
+      "source_name": "The Ocean Cleanup",
+      "source_type": "news",
+      "published_date": "2025-12-30",
+      "category_hint": "Environmental",
+      "summary": "The Ocean Cleanup removed over 25 million kilograms of trash in 2025, bringing cumulative total to over 45 million kilograms. The organization announced the 30 Cities Program at the UN Ocean Conference in Nice, targeting deployment of Interceptor technology in thirty of the world's most polluting urban areas to reduce riverine plastic pollution by one-third by 2030. Nine Interceptor units now operate in Kingston Bay, Jamaica, with additional deployments in Indonesia, Malaysia, and Panama. A new sorting facility opened on the Klang river in Malaysia for immediate trash processing. The organization promises 2026 will deliver even more deployments, trash removed, and positive impact.",
+      "key_entities": [
+        "The Ocean Cleanup",
+        "30 Cities Program",
+        "Interceptor",
+        "Great Pacific Garbage Patch",
+        "UN Ocean Conference"
+      ],
+      "raw_content": "2025 achievement: 25M kg plastic removed (annual record). Cumulative total: 45M+ kg. 30 Cities Program: Announced at UN Ocean Conference Nice. Target: 1/3 reduction in riverine plastic by 2030. Deployments: 9 Interceptor units in Kingston Bay Jamaica, plus Indonesia, Malaysia, Panama. New facility: Sorting facility on Klang river Malaysia. Research: Ghost net trackers, Net Environmental Benefit Assessment. 2026 outlook: More deployments, increased trash removal, expanded positive impact.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-015",
+      "title": "US NOAA Schedules Deep-Sea Mining Public Hearings for January 26-27, 2026",
+      "url": "https://www.federalregister.gov/documents/2025/12/23/2025-23795/deep-seabed-mining-notice-of-receipt-of-applications-for-deep-seabed-mining-exploration-licenses-and",
+      "source_name": "Federal Register",
+      "source_type": "policy",
+      "published_date": "2025-12-23",
+      "category_hint": "Political",
+      "summary": "NOAA received amended applications from The Metals Company USA, LLC (TMC USA) for licenses to conduct seabed mining exploration activities in the Clarion-Clipperton Zone on July 27 and 28, 2025. Virtual public hearings are scheduled for January 26 and 27, 2026, with written comments accepted through February 23, 2026. This follows a July 2025 proposed rule to streamline application processes and transition to electronic delivery. The development reflects the US fast-tracking deep-sea mining following a 2025 executive order, despite 40 countries announcing opposition to deep-seabed mining as of December 2025.",
+      "key_entities": [
+        "NOAA",
+        "The Metals Company USA",
+        "Clarion-Clipperton Zone",
+        "deep-sea mining",
+        "public hearings"
+      ],
+      "raw_content": "Applications: The Metals Company USA for Clarion-Clipperton Zone exploration (July 27-28, 2025). Public hearings: January 26-27, 2026 (virtual). Written comments: Through February 23, 2026. July 2025 proposed rule: Streamline application process, electronic delivery. Context: US executive order 2025 to fast-track deep-sea mining. Opposition: 40 countries announced opposition as of December 2025. ISA unable to agree on commercial mining rules (July 2025 talks).",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-016",
+      "title": "Blue Economy Projected to Exceed $3.2 Trillion by 2030, Investment Gap Persists",
+      "url": "https://www.weforum.org/stories/2025/05/the-business-case-for-a-sustainable-blue-economy/",
+      "source_name": "World Economic Forum",
+      "source_type": "report",
+      "published_date": "2025-05-15",
+      "category_hint": "Economic",
+      "summary": "The sustainable blue economy is expected to grow rapidly to over $3.2 trillion by 2030, with the global ocean economy already exceeding $2.2 trillion annually (doubled since 2010) and projected to outpace global economic growth by 2030. However, a substantial funding gap continues to hinder sustainable ocean-related development and innovation. Between 2012-2022, just $13 billion was invested in ocean sustainability, mostly from official development assistance and philanthropic sources. Ocean-related technologies garnered less than 3% of climate technology investment in 2024, presenting significant opportunity for increased investment in offshore renewables, sustainable aquaculture, and ocean data technologies.",
+      "key_entities": [
+        "World Economic Forum",
+        "blue economy",
+        "ocean economy",
+        "sustainable investment",
+        "ocean technology"
+      ],
+      "raw_content": "Current: $2.2 trillion annually (doubled since 2010). 2030 projection: $3.2+ trillion. Early 2030s: Could surpass $5 trillion (6-8% annual growth). Investment gap: $13B invested 2012-2022 (mostly ODA and philanthropic). Ocean tech <3% of climate tech investment (2024). High-growth sectors: Offshore renewables, sustainable aquaculture, ocean data technologies. Funding sources needed: Private capital expansion beyond current philanthropic/ODA dominance.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-017",
+      "title": "Blockchain Traceability Expands in Aquaculture for Seafood Supply Chain Transparency",
+      "url": "https://agtech.folio3.com/blogs/top-aquaculture-technologies-in-farming/",
+      "source_name": "Folio3 AgTech",
+      "source_type": "news",
+      "published_date": "2025-10-18",
+      "category_hint": "Technological",
+      "summary": "Blockchain technology is making its way into aquaculture for traceability in 2026, with increasing consumer demand for sustainable and ethically sourced seafood adding a layer of trust. From hatchery to harvest, every stage of production is recorded, ensuring data on feed type, medication use, harvest time, and transport is secure and verifiable. Blockchain creates a permanent record of seafood transactions, ensuring tracking is safe and clear, recording every step of the supply chain and providing real-time insights into origin, handling and processing. Real-world implementations include Walmart-IBM collaboration with IoT sensors tracking temperature/humidity during shipping.",
+      "key_entities": [
+        "blockchain",
+        "aquaculture traceability",
+        "seafood supply chain",
+        "IoT sensors",
+        "Walmart-IBM"
+      ],
+      "raw_content": "Application: Hatchery to harvest production recording. Data tracked: Feed type, medication use, harvest time, transport conditions. Features: Smart contracts, distributed consensus, transaction verification, security, immutability. Use cases: Quality assurance, food safety, fraud prevention, IUU fishing combat, working condition transparency. Implementation example: Walmart-IBM blockchain + IoT sensors for temperature/humidity monitoring. Benefits: Brand protection, regulatory compliance, consumer confidence, supply chain visibility. Future: Integration with AI-driven insights and automation.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-018",
+      "title": "LNG Remains Top Choice for Dual-Fuel Vessels Despite Methanol, Ammonia Orders",
+      "url": "https://www.rystadenergy.com/news/lng-shipping",
+      "source_name": "Rystad Energy",
+      "source_type": "news",
+      "published_date": "2025-11-08",
+      "category_hint": "Technological",
+      "summary": "LNG remains the fuel of choice for lower-carbon shipping despite rise in orders for vessels with dual-fuel methanol and ammonia engines, primarily due to price competitiveness, abundant supply and well-developed infrastructure. More than 2,400 vessels are equipped to operate on LNG globally with another 1,000 ordered. Europe has 85 LNG bunkering ports while Asia has 26 led by China, Japan and South Korea. However, methane slip remains a critical industry challenge. Methanol has ~60 vessels operational and 300+ on order with ~20 ports offering green methanol bunkering. Ammonia is rapidly approaching proof of concept with first vessels piloted, but toxicity, corrosion, and infrastructure requirements mean realistic relevance after 2035.",
+      "key_entities": [
+        "LNG",
+        "methanol",
+        "ammonia",
+        "alternative marine fuels",
+        "decarbonization"
+      ],
+      "raw_content": "LNG: 2,400 vessels operational, 1,000 ordered. Infrastructure: Europe 85 ports, Asia 26 ports (China, Japan, South Korea). Challenge: Methane slip (~30x stronger GHG than CO2). Methanol: 60 vessels operational, 300+ ordered, ~20 ports offering green methanol. Issues: Fossil-based dominance, expensive green methanol, lower energy density (20 MJ/kg). Ammonia: First vessels piloted, engine testing near completion. Challenges: Toxic, corrosive, new safety/bunkering infrastructure needed, realistic post-2035. Comparative: LNG bridging fuel, no single winning alternative fuel yet.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-019",
+      "title": "Seaweed Farming for Carbon Capture Faces Massive Scale Challenges",
+      "url": "https://www.nature.com/articles/s43247-023-00833-2",
+      "source_name": "Nature Communications Earth & Environment",
+      "source_type": "academic",
+      "published_date": "2023-06-15",
+      "category_hint": "Environmental",
+      "summary": "Research reveals that climate-relevant carbon mass (1 GtC year⁻¹) could be harvested by farming seaweed in the most productive 0.8% of exclusive economic zones worldwide (~1 million km²), representing a ~370-fold increase over current farmed area (~2,500 km²). However, currently most carbon fixed by seaweeds is stored in short-term reservoirs (seaweed products) with only a minority in long-term storage. At present, even in low emissions scenarios, any carbon removal capacity provided by seaweed farms globally is likely offset by their emissions, as most energy and materials depend on fossil fuels. Additional benefits include counteracting ocean acidification, especially beneficial for coral reefs and shellfish.",
+      "key_entities": [
+        "seaweed farming",
+        "carbon capture",
+        "ocean acidification",
+        "blue carbon",
+        "macroalgae"
+      ],
+      "raw_content": "Scale requirement: ~1 million km² for climate-relevant carbon capture (1 GtC/year). Current: ~2,500 km² farmed (370x increase needed). Carbon storage: Majority in short-term reservoirs (products), minority in long-term. Current limitation: Farm emissions offset carbon removal (fossil fuel dependent operations). Target: 2.5-13 billion tons atmospheric CO2 capture annually needed. Co-benefits: Ocean acidification mitigation, coral reef/shellfish protection. Challenge: Energy/materials transition from fossil fuels needed for net carbon removal.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-020",
+      "title": "Oceanology International 2026 Opens Registration for March 10-12 London Event",
+      "url": "https://www.marinetechnologynews.com/news/ocean-innovation-technology-showcase-656440",
+      "source_name": "Marine Technology News",
+      "source_type": "news",
+      "published_date": "2025-10-15",
+      "category_hint": "Technological",
+      "summary": "Oceanology International 2026 returns to Excel London March 10-12, 2026, connecting more than 8,000 attendees and 500 exhibitors from over 80 countries. The event will spotlight breakthrough solutions in ocean exploration, environmental monitoring, sustainable marine engineering, and the ocean enterprise. Registration is now open for the global nexus of ocean technology innovation, coinciding with critical developments in autonomous vessels (IMO MASS Code finalization in May 2026), marine biodiversity protection (BBNJ Treaty entry January 17, 2026), and blue economy investment expansion.",
+      "key_entities": [
+        "Oceanology International",
+        "Excel London",
+        "ocean technology",
+        "marine innovation",
+        "ocean exploration"
+      ],
+      "raw_content": "Dates: March 10-12, 2026. Location: Excel London. Scale: 8,000+ attendees, 500+ exhibitors, 80+ countries. Focus areas: Ocean exploration, environmental monitoring, sustainable marine engineering, ocean enterprise. Timing significance: Between BBNJ Treaty entry (Jan 17) and IMO MASS Code finalization (May). Context: Global blue economy expansion, autonomous vessel commercialization, marine technology innovation acceleration. Registration: Open for 2026 edition.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-021",
+      "title": "Singapore's Tuas Mega Port Leads Automation with 1,000+ AGVs and AI-Powered Terminal Control",
+      "url": "https://kalelogistics.com/usa/the-key-role-of-ai-automation-and-robotics-in-port-efficiency/",
+      "source_name": "Kale Logistics",
+      "source_type": "news",
+      "published_date": "2025-09-22",
+      "category_hint": "Technological",
+      "summary": "Singapore's Tuas Mega Port is leading the port automation shift with over 1,000 autonomous guided vehicles (AGVs) and a growing fleet of automated cranes. AI-driven harbor marine operations have reduced tug and pilot operation distances by 20% and slashed waiting times for visiting ships from 2.5 hours to just 30 minutes. Europe and Japan have committed to digital twin models and AI-powered terminal control to increase ship turnaround efficiency. Technologies include real-time data analysis, predictive maintenance, and resource optimization contributing to port sustainability and emissions reduction.",
+      "key_entities": [
+        "Tuas Mega Port",
+        "Singapore",
+        "autonomous guided vehicles",
+        "port automation",
+        "AI terminal control"
+      ],
+      "raw_content": "Tuas Mega Port: 1,000+ autonomous guided vehicles (AGVs), automated crane fleet. Performance: 20% reduction in tug/pilot distances, waiting time 2.5 hours → 30 minutes. Europe/Japan: Digital twin models, AI-powered terminal control. AI applications: Fuel optimization, predictive maintenance, route planning, smart energy management. Benefits: Real-time data analysis, resource optimization, emissions reduction. Port sustainability: Operational efficiency improvements directly reduce carbon footprint.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-022",
+      "title": "EU ETS Phase Expands to Maritime from January 1, 2026, Increasing Sea Journey Costs",
+      "url": "https://johnmason.com/blog/january-2026-international-shipping-update-what-you-need-to-know/",
+      "source_name": "John Mason International",
+      "source_type": "news",
+      "published_date": "2026-01-02",
+      "category_hint": "Political",
+      "summary": "From January 1, 2026, a new phase of the EU Emissions Trading System (ETS) has made many sea journeys more expensive, especially when an EU port is involved. The expansion of the EU ETS to maritime transport represents a major regulatory shift affecting shipping economics and operational planning for vessels calling at European ports. This carbon pricing mechanism is driving shipping companies to prioritize emissions reduction and fuel efficiency measures, accelerating the industry's decarbonization efforts through direct financial incentives.",
+      "key_entities": [
+        "EU ETS",
+        "European Union",
+        "maritime emissions",
+        "carbon pricing",
+        "shipping regulation"
+      ],
+      "raw_content": "Effective: January 1, 2026. Scope: New phase of EU Emissions Trading System (ETS) covering maritime transport. Impact: Increased costs for sea journeys involving EU ports. Mechanism: Carbon pricing for maritime emissions. Effect: Direct financial incentive for emissions reduction and fuel efficiency. Industry response: Accelerated decarbonization efforts, operational planning adjustments. Strategic significance: Major regulatory shift in shipping economics.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-OCEAN-023",
+      "title": "Arctic Sea Route Access Could Increase Global Shipping Emissions 8.2% by 2100",
+      "url": "https://www.nature.com/articles/s41467-025-64437-4",
+      "source_name": "Nature Communications",
+      "source_type": "academic",
+      "published_date": "2025-01-08",
+      "category_hint": "Environmental",
+      "summary": "Research published in Nature Communications indicates that Arctic Sea Route use will increase global shipping emissions by 8.2% by 2100, with Arctic emissions rising from 0.22% to 2.72% of global maritime emissions. The study analyzes how climate change-driven sea ice reduction is opening Arctic shipping corridors, potentially creating shorter routes between Asia and Europe but simultaneously increasing overall shipping activity and associated emissions. The findings challenge assumptions that Arctic routes will reduce global maritime emissions, revealing instead a rebound effect where convenience drives increased shipping volume.",
+      "key_entities": [
+        "Arctic Sea Route",
+        "shipping emissions",
+        "climate change",
+        "Northern Sea Route",
+        "Nature Communications"
+      ],
+      "raw_content": "Projection: +8.2% global shipping emissions by 2100 from Arctic route use. Arctic emissions: 0.22% → 2.72% of global maritime total. Mechanism: Climate-driven sea ice reduction opening corridors. Paradox: Shorter routes but increased overall shipping activity. Rebound effect: Convenience drives volume increase offsetting per-voyage efficiency gains. Implication: Arctic routes not emissions solution as assumed. Research source: Nature Communications peer-reviewed study. Climate feedback: Shipping expansion accelerates Arctic warming.",
+      "language": "en",
+      "scanned_at": "2026-01-12T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-12",
+    "scan_time": "2026-01-12T15:30:00Z",
+    "scanner_focus": "Startup/VC Ecosystem - Weak Signals of Future Change",
+    "time_window_hours": 24,
+    "timezone": "Asia/Seoul",
+    "total_signals": 8,
+    "confidence_level": "medium"
+  },
+  "scan_summary": {
+    "description": "Comprehensive scan of Y Combinator, Andreessen Horowitz, Sequoia Capital, TechCrunch, Crunchbase, PitchBook, and emerging startup ecosystems (Singapore, Berlin, Tel Aviv) for weak signals of market shifts, new funding categories, VC thesis changes, and geographic innovation dynamics.",
+    "key_themes": [
+      "Agent-native software as emerging category",
+      "Data infrastructure and entropy as critical bottleneck",
+      "Physical AI/Robotics hitting inflection point",
+      "Defense tech becoming mainstream VC focus",
+      "Geographic shifts toward Asia and Europe",
+      "VC consolidation and larger fund sizes",
+      "Bifurcated market structure emerging"
+    ]
+  },
+  "signals": [
+    {
+      "raw_id": "RAW-2026-0112-001",
+      "title": "Agent-Native Software Emerges as New Software Category - A16z Signals Major Thesis Shift",
+      "source_name": "Andreessen Horowitz Big Ideas 2026",
+      "source_type": "vc_thesis",
+      "published_date": "2026-01-09",
+      "category": "Technological",
+      "secondary_categories": ["Economic"],
+      "summary": "A16z's Big Ideas 2026 thesis signals a fundamental shift from traditional enterprise software toward 'agent-native' systems where autonomous agents are primary operational interfaces, not supplementary features. This represents rebuilding enterprise infrastructure for 'agent-speed' workloads with recursion patterns of 5,000+ sub-tasks in milliseconds - fundamentally different from human-speed systems.",
+      "description": "A16z identifies 'agentic workflow redesign' as 2026's defining trend. Rather than layering AI on legacy systems, startups are building from first principles with agents as primary compute units. This requires new architectures for control planes, concurrency management, and operational data flows. Examples emerging: Tensol (hospitality OS with AI agents), Sandra AI (dealership AI OS). Venture signals a category inflection point similar to SaaS vs client-server transition.",
+      "key_entities": [
+        "Andreessen Horowitz",
+        "Agent-native startups",
+        "Tensol",
+        "Sandra AI",
+        "Enterprise software architecture",
+        "Agentic workflows"
+      ],
+      "weak_signal_significance": "Signals early stage category emergence before mainstream adoption. VC thesis changes typically precede market traction by 6-18 months. Indicates startups building agent-first architectures may outcompete legacy software incumbents attempting layer AI on top.",
+      "business_implications": [
+        "Enterprise software market structure vulnerable to disruption",
+        "New SaaS category emerging with different unit economics",
+        "Incumbent CRM/ITSM vendors face architectural disadvantage",
+        "New venture category justifying new funding models"
+      ],
+      "significance_score": 4,
+      "confidence": 0.85,
+      "sources": [
+        "https://a16z.com/newsletter/big-ideas-2026-part-1/",
+        "https://algogene.com/community/post/354"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-002",
+      "title": "Data Infrastructure Becomes Critical Bottleneck - A16z Identifies 'Data Entropy' as Core Challenge",
+      "source_name": "Andreessen Horowitz Big Ideas 2026",
+      "source_type": "vc_thesis",
+      "published_date": "2026-01-09",
+      "category": "Technological",
+      "secondary_categories": ["Economic"],
+      "summary": "A16z's 2026 thesis identifies 'data entropy' as the critical bottleneck limiting AI adoption in enterprises. Rather than building more foundation models, the real opportunity is infrastructure for cleaning, structuring, validating, and governing multimodal data - extracting structure from unstructured documents, images, and videos.",
+      "description": "This signals a major pivot in AI infrastructure investment away from model-centric toward data-centric infrastructure. Startups like Fivetran (ELT automation) and Firecrawl (data extraction) represent the category. A16z's capital allocation toward 'Apps & Infrastructure' ($1.7B in new fund) reflects this thesis. Market dynamic: as enterprises hit limits of generic AI models, data quality becomes competitive moat.",
+      "key_entities": [
+        "Data entropy",
+        "Data infrastructure",
+        "Fivetran",
+        "Firecrawl",
+        "Multimodal data governance",
+        "Data cleaning/structuring",
+        "ELT automation"
+      ],
+      "weak_signal_significance": "Marks shift from model innovation (saturated with xAI, Anthropic, OpenAI mega-rounds) to infrastructure plays. Indicates market recognizing model commoditization risk. Signals emerging category for next wave of AI infrastructure startups.",
+      "business_implications": [
+        "New category of data infrastructure startups gaining investor attention",
+        "Competitive advantage shifting from model training to data quality",
+        "Enterprise buyers reorganizing around data governance",
+        "Potential consolidation opportunity in fragmented data tooling market"
+      ],
+      "significance_score": 4,
+      "confidence": 0.8,
+      "sources": [
+        "https://a16z.com/newsletter/big-ideas-2026-part-1/"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-003",
+      "title": "Physical AI and Robotics Hitting GPT-3 Moment Inflection Point - Funding Expected to Double in 2026",
+      "source_name": "Crunchbase, TechCrunch, Industry Analysis",
+      "source_type": "market_analysis",
+      "published_date": "2026-01-10",
+      "category": "Technological",
+      "secondary_categories": ["Economic"],
+      "summary": "Multiple sources confirm robotics and physical AI are hitting critical inflection point in 2026 - equivalent to GPT-3 moment for generative AI (2020). Robotics startups raised $8.5B in 2025; funding expected to double in 2026 as hardware costs drop and AI capabilities mature simultaneously.",
+      "description": "Convergence of reduced sensor/battery costs, improved AI reasoning, and successful early deployments creating perfect conditions for general-purpose robotics adoption. Qualcomm unveiling Dragonwing robotics platform at CES 2026 signals chipmaker attention. Physical AI companies attracted $7.5B in 2024 alone with mega-rounds becoming norm. Y Combinator robotics portfolio expanding. Market projected to reach $88.3B by 2026.",
+      "key_entities": [
+        "Physical AI",
+        "Robotics startups",
+        "General-purpose robots",
+        "Qualcomm Dragonwing",
+        "Nvidia Jetson",
+        "Hardware sensors",
+        "AI actuator control"
+      ],
+      "weak_signal_significance": "Indicates shift from AI-as-software toward embodied intelligence. Early adopters reporting 3x efficiency gains signals market validation phase. Funding trajectory suggests 2026 as tipping point before mainstream deployment 2027-2028.",
+      "business_implications": [
+        "New manufacturing paradigm emerging for robotics at scale",
+        "Supply chain constraints around high-precision actuators likely",
+        "Robotics replacing labor in logistics, manufacturing, agriculture",
+        "New safety and regulatory frameworks needed"
+      ],
+      "significance_score": 4,
+      "confidence": 0.82,
+      "sources": [
+        "https://www.ainvest.com/news/robotics-revolution-2026-investing-gpt-3-moment-physical-ai-2512/",
+        "https://techcrunch.com/2026/01/02/nvidias-ai-empire-a-look-at-its-top-startup-investments/",
+        "https://www.automate.org/news/ces-2026-qualcomm-targets-nvidia-jetson-with-new-robotics-developer-platform"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-004",
+      "title": "Defense Tech Becomes Mainstream VC Category - $7.7B Raised by Oct 2025, Expected to Accelerate",
+      "source_name": "Crunchbase, StartUs Insights, Defense Industry Analysis",
+      "source_type": "market_data",
+      "published_date": "2026-01-08",
+      "category": "Political",
+      "secondary_categories": ["Technological", "Economic"],
+      "summary": "Defense tech startups raised $7.7B by October 2025 - already more than double 2024 ($3.2B) and largest annual figure ever recorded. Government budget requests $961.6B for FY2026 with $179B for R&D focusing on AI, autonomy, hypersonics. Anduril closed $2.5B Series G at $30.5B valuation.",
+      "description": "Geopolitical tensions and government procurement reform driving mainstream VC interest in national security technology. 2026 NDAA codified defense acquisition reforms. Corporate investment in defense tech hit $5.9B in 2025 (28% increase from 2024). In Los Angeles, 38% of VC funding went to defense/aerospace - higher than any other sector. Major players: Anduril (autonomous defense), Shield AI (military drones), with faster acquisition cycles reshaping procurement.",
+      "key_entities": [
+        "Defense tech",
+        "National security startups",
+        "Anduril Industries",
+        "Shield AI",
+        "Autonomous systems",
+        "Government procurement reform",
+        "Hypersonics research"
+      ],
+      "weak_signal_significance": "Signals sustained government/corporate focus on geopolitical competition through technology. Regulatory environment shifting to enable faster startup integration. Indicates emerging permanent VC category previously seen as niche. Defense spending likely continues regardless of economic cycles.",
+      "business_implications": [
+        "Defense tech becoming primary growth engine for VC in next 5-10 years",
+        "Regulatory barriers lowering for startup participation in government contracts",
+        "Talent competition increasing between commercial and defense tech",
+        "Potential venture returns differentiation through defense focus"
+      ],
+      "significance_score": 4,
+      "confidence": 0.88,
+      "sources": [
+        "https://www.techloy.com/global-defense-tech-startup-funding-hits-record-high-in-2025-as-the-sector-becomes-venture-capital-new-obsession",
+        "https://www.startus-insights.com/innovators-guide/us-defense-companies/",
+        "https://fundraiseinsider.com/blog/recently-funded-defense-spacetech-startups/"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-005",
+      "title": "VC Mega-Fund Consolidation Accelerating - A16z Raises $15B, Signaling Market Bifurcation Strategy",
+      "source_name": "Andreessen Horowitz, TechCrunch",
+      "source_type": "market_news",
+      "published_date": "2026-01-09",
+      "category": "Economic",
+      "secondary_categories": ["Technological"],
+      "summary": "A16z announced $15B+ in new funding across five specialized funds: Growth ($6.75B), Apps & Infrastructure ($1.7B each), American Dynamism ($1.176B), Biotech ($700M), other strategies ($3B). Brings firm AUM to $90B+ - neck-and-neck with Sequoia as largest VC. Specialization strategy signals move away from generalist approach.",
+      "description": "Fund specialization represents strategic pivot toward vertical/mission-based investing. Growth fund sized for mega-rounds to winners (barbell effect). American Dynamism fund ($1.176B) reflects national security thesis. Biotech specialization indicates healthcare/longevity focus. This capital concentration accelerates bifurcation: winners getting larger rounds, everyone else struggling. Also signals VC market maturation - mega-funds becoming quasi-growth equity firms with 15-20 year horizons.",
+      "key_entities": [
+        "Andreessen Horowitz",
+        "Specialized VC funds",
+        "Growth capital",
+        "American Dynamism fund",
+        "Mega-fund consolidation",
+        "Barbell effect",
+        "Long-duration capital"
+      ],
+      "weak_signal_significance": "Indicates VC market entering new maturity phase. Mega-funds shifting from venture model to quasi-buyout model with longer holding periods. Signals smaller VCs increasingly squeezed or forced into niche/geographic focus. Market structure likely to consolidate further.",
+      "business_implications": [
+        "Smaller VC firms facing existential pressure",
+        "Founder access to capital increasingly bifurcated",
+        "Fund-of-funds becoming more important for LP allocation",
+        "Specialized expertise becoming competitive moat for mega-funds"
+      ],
+      "significance_score": 3,
+      "confidence": 0.9,
+      "sources": [
+        "https://techcrunch.com/2026/01/09/the-venture-firm-that-ate-silicon-valley/",
+        "https://a16z.com/newsletter/big-ideas-2026-part-1/"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-006",
+      "title": "Tel Aviv Moves to 4th Global Startup Ecosystem Ranking - Growth Signal for Emerging Geographic Hubs",
+      "source_name": "Startup Genome, Times of Israel",
+      "source_type": "market_analysis",
+      "published_date": "2026-01-05",
+      "category": "Economic",
+      "secondary_categories": ["Political", "Technological"],
+      "summary": "Tel Aviv climbed to 4th place in global startup ecosystem rankings (tied with Los Angeles) with ecosystem value of $235B. Israeli startups raised $12.2B in 2024 (31% increase YoY). 83% of Tel Aviv startups received corporate investment. Four Tel Aviv AI startups featured in Time's Best Inventions 2024 list.",
+      "description": "Geographic shift signal: Tel Aviv competing directly with traditional hubs. Ecosystem strengthened by 180+ multinational corporation R&D centers. Wiz (cybersecurity unicorn valued at $32B after Google acquisition in 2025) now establishing HQ in Tel Aviv. NEXT 2026 Summit bringing 40 top VC funds and 100 Israeli startups. Focus areas: deep-tech semiconductors, med-tech, UAV systems, robotics, energy storage - hardware-intensive categories.",
+      "key_entities": [
+        "Tel Aviv startup ecosystem",
+        "Israeli tech companies",
+        "Wiz cybersecurity",
+        "Corporate R&D centers",
+        "Deep-tech innovation",
+        "NEXT 2026 Summit",
+        "Life Sciences growth"
+      ],
+      "weak_signal_significance": "Indicates geographic diversification of innovation hubs away from pure San Francisco dominance. Hardware-heavy focus (semiconductors, robotics, medtech) signals different startup category mix than US hubs. Growing corporate presence suggests multinational confidence in ecosystem resilience.",
+      "business_implications": [
+        "Talent attraction becoming global competition for innovation hubs",
+        "Emerging hubs gaining investor attention for geographic diversification",
+        "Hardware innovation consolidating in Europe/Middle East/Asia",
+        "Supply chain dynamics shifting with hardware-focused hubs"
+      ],
+      "significance_score": 3,
+      "confidence": 0.85,
+      "sources": [
+        "https://startupgenome.com/ecosystems/tel-aviv",
+        "https://www.timesofisrael.com/tel-aviv-moves-up-to-4th-place-in-annual-ranking-of-global-tech-ecosystems",
+        "https://www.ynetnews.com/tech-and-digital/article/b11n9x6bwx"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-007",
+      "title": "Berlin Fintech and CleanTech Leadership Accelerating - European Hub Consolidating Deep Tech Focus",
+      "source_name": "StartUp Genome, European Innovation Council",
+      "source_type": "market_analysis",
+      "published_date": "2026-01-08",
+      "category": "Economic",
+      "secondary_categories": ["Environmental", "Technological"],
+      "summary": "Berlin startup ecosystem grew 20.7% in 2025. Berlin startups secured 89% of Germany's Fintech funding ($508M across 31 rounds). CleanTech innovation accelerating with Enpal securing $1.5B (2024) and Bees & Bears raising $500M (2025). European Commission allocated 1.4B euros for 2026 funding via European Innovation Council.",
+      "description": "Geographic shift toward Europe signal: Berlin consolidating position as fintech leader while simultaneously building cleantech competency. Unlike US focus on AI/software, Berlin attracting capital for infrastructure-intensive sectors (fintech rails, renewable energy). Strong VC ecosystem (Earlybird, Project A, HV Capital) with 15B euros under management. 871 Berlin startups with $15.9B aggregate funding. Government support through EIC program creating sustained tailwind.",
+      "key_entities": [
+        "Berlin startup ecosystem",
+        "Fintech leadership",
+        "CleanTech startups",
+        "Enpal solar",
+        "European Innovation Council",
+        "German VC firms",
+        "Infrastructure financing"
+      ],
+      "weak_signal_significance": "Signals European venture ecosystem maturing independently from US models. Different category focus (fintech rails, cleantech infrastructure) vs US (AI models, consumer apps). Government EIC funding creating structural advantage for European startups. May indicate VC market fragmentation by geography and category.",
+      "business_implications": [
+        "European startups increasingly capital-competitive with US peers",
+        "Investor thesis divergence by geography (Europe: infrastructure, Asia: hardware, US: software/AI)",
+        "Regulatory support accelerating European startup growth trajectories",
+        "Multi-geography portfolio strategy becoming standard VC approach"
+      ],
+      "significance_score": 3,
+      "confidence": 0.83,
+      "sources": [
+        "https://startupgenome.com/ecosystems/berlin",
+        "https://blog.foundersuite.com/17-active-venture-capital-firms-in-berlin-in-2026/",
+        "https://eic.ec.europa.eu/eic-2026-work-programme_en"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    },
+    {
+      "raw_id": "RAW-2026-0112-008",
+      "title": "Market Bifurcation Intensifying - VC Thesis Shift Toward 'AI Fundamentals First' Funding Model",
+      "source_name": "Crunchbase, Sapphire Ventures, TechCrunch",
+      "source_type": "vc_analysis",
+      "published_date": "2026-01-10",
+      "category": "Economic",
+      "secondary_categories": ["Technological"],
+      "summary": "Crunchbase 2026 prediction: global VC deployment increasing 10-25% to reach high $400B range, BUT funding concentrating dramatically on proven winners and fundamentals-focused companies. Without strong 'AI advantage' or real revenue traction, funding access declining sharply. 'Barbell' market forming with mega-rounds for winners and survival challenge for others.",
+      "description": "Sapphire Ventures thesis: '2026 is fundamentals-first year where capital rewards revenue growth, efficiency, and real AI advantage - punishes AI veneer on old ideas.' This signals end of 2023-2024 era of funding on AI hype alone. Investors now demanding: repeatable sales engines, proprietary workflows, deep subject matter expertise. Climate tech losing share (long cycles), crypto cooling (price sensitivity), generic SaaS struggling. Physical AI, Defense, Infrastructure gaining traction. Distribution advantage increasingly critical.",
+      "key_entities": [
+        "VC market bifurcation",
+        "Fundamentals-first funding",
+        "AI advantage requirements",
+        "Distribution moats",
+        "Revenue efficiency metrics",
+        "Mega-round concentration",
+        "Barbell market structure"
+      ],
+      "weak_signal_significance": "Marks transition from gold-rush mentality (2023-2025) to disciplined capital allocation (2026+). Winners will be those with real unit economics and market defensibility, not hype. Signals potential correction in startup valuations for 2026-2027. AI bubble risk reducing through fundamentals focus.",
+      "business_implications": [
+        "Founder pressure to achieve profitability/unit economics accelerating",
+        "Startup failure rate likely increasing for companies without clear moat",
+        "M&A activity for struggling AI startups likely 2026-2027",
+        "Geographic and category bifurcation creating arbitrage opportunities",
+        "Second-tier VCs increasingly squeezed without differentiation"
+      ],
+      "significance_score": 4,
+      "confidence": 0.87,
+      "sources": [
+        "https://news.crunchbase.com/venture/crunchbase-predicts-vcs-expect-more-funding-ai-ipo-ma-2026-forecast/",
+        "https://sapphireventures.com/blog/2026-outlook-10-ai-predictions-shaping-enterprise-infrastructure-the-next-wave-of-innovation/",
+        "https://techcrunch.com/2025/12/26/whats-ahead-for-startups-and-vcs-in-2026-investors-weigh-in/"
+      ],
+      "language": "en",
+      "scanned_at": "2026-01-12T15:30:00Z"
+    }
+  ],
+  "weak_signals_summary": {
+    "emerging_categories": [
+      "Agent-native software (score: 4/5)",
+      "Data infrastructure (score: 4/5)",
+      "Physical AI/Robotics (score: 4/5)",
+      "Defense tech (score: 4/5)"
+    ],
+    "vc_thesis_shifts": [
+      "From model-centric to data-centric AI infrastructure",
+      "From general enterprise software to agent-native architectures",
+      "From 'AI hype' to 'fundamentals-first' funding discipline",
+      "From generalist to specialized mega-funds",
+      "From US-centric to geographic diversification"
+    ],
+    "geographic_shifts": [
+      "Tel Aviv rising to 4th global ecosystem (hardware/deeptech focus)",
+      "Berlin consolidating fintech + cleantech leadership",
+      "Singapore maintaining Asia-Pacific hub status ($12.6B Q1 2025 funding)",
+      "European ecosystem independent maturation (1.4B euros EIC allocation)"
+    ],
+    "market_structure_changes": [
+      "Barbell effect concentrating capital on winners",
+      "Mega-fund consolidation reducing VC market optionality",
+      "Mission-based fund specialization (Defense, Biotech, Infrastructure)",
+      "Bifurcated startup market emerging (winners vs strugglers)"
+    ]
+  },
+  "significance_distribution": {
+    "score_5": 0,
+    "score_4": 5,
+    "score_3": 3,
+    "score_2": 0,
+    "score_1": 0
+  },
+  "methodology": {
+    "sources_scanned": [
+      "Andreessen Horowitz Big Ideas 2026 thesis",
+      "Y Combinator portfolio analysis",
+      "Crunchbase market data and predictions",
+      "TechCrunch funding announcements",
+      "Startup Genome ecosystem rankings",
+      "Industry analyst reports",
+      "Government policy announcements"
+    ],
+    "time_window": "24 hours (2026-01-11 09:00 KST through 2026-01-12 09:00 KST)",
+    "languages": ["English"],
+    "regions": ["Global with focus on US, Asia-Pacific, Europe"]
+  }
+}

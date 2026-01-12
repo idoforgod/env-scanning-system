@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-01-12",
+    "description": "자기개선형 환경스캐닝 진화 규칙 정의",
+    "automation_level": "level_2_conditional"
+  },
+  "source_evolution": {
+    "promotion_rules": {
+      "enabled": true,
+      "conditions": {
+        "min_pSRT_avg": 70,
+        "min_scans": 3,
+        "required_trend": "improving",
+        "min_signals_found": 2
+      },
+      "action": {
+        "tier_change": -1,
+        "max_tier": 1,
+        "notification": true
+      }
+    },
+    "demotion_rules": {
+      "enabled": true,
+      "conditions": {
+        "max_pSRT_avg": 40,
+        "min_scans": 3,
+        "required_trend": "declining"
+      },
+      "action": {
+        "tier_change": 1,
+        "min_tier": 4,
+        "notification": true
+      }
+    },
+    "deactivation_rules": {
+      "enabled": true,
+      "conditions": {
+        "max_pSRT_avg": 30,
+        "min_scans": 5,
+        "max_signals_found": 0
+      },
+      "action": {
+        "status": "inactive",
+        "notification": true,
+        "retain_history": true
+      }
+    }
+  },
+  "safety_limits": {
+    "max_changes_per_scan": {
+      "source_tier_changes": 5,
+      "source_additions": 5,
+      "source_deactivations": 3,
+      "keyword_changes": 10
+    },
+    "overflow_handling": "queue_to_pending",
+    "require_snapshot_before_change": true
+  },
+  "anomaly_detection": {
+    "enabled": true,
+    "triggers": {
+      "pSRT_sudden_drop": {
+        "threshold_percent": 30,
+        "action": "pause_and_alert"
+      },
+      "signal_count_drop": {
+        "threshold_percent": 50,
+        "action": "pause_and_alert"
+      },
+      "mass_demotion": {
+        "threshold_count": 10,
+        "action": "pause_and_alert"
+      }
+    }
+  },
+  "marathon_mode": {
+    "total_duration_minutes": 180,
+    "time_allocation": {
+      "mode": "dynamic_forced",
+      "existing_sources": {
+        "description": "기존 소스 스캔 (소요 시간 측정)",
+        "max_allocation_percent": 50,
+        "priority": "high_tier_first"
+      },
+      "new_source_discovery": {
+        "description": "신규 소스 탐색 (잔여 시간 전체 강제 배정)",
+        "allocation": "remaining_all",
+        "min_guaranteed_minutes": 60
+      }
+    },
+    "discovery_strategies": [
+      "citation_tracking",
+      "domain_exploration",
+      "keyword_expansion",
+      "regional_expansion"
+    ]
+  },
+  "rollback": {
+    "enabled": true,
+    "max_snapshots_kept": 30,
+    "snapshot_retention_days": 90,
+    "command": "/evolution:rollback [date]"
+  },
+  "reporting": {
+    "weekly_review": {
+      "enabled": true,
+      "day": "sunday",
+      "includes": [
+        "tier_changes_summary",
+        "new_sources_added",
+        "sources_deactivated",
+        "pSRT_trends",
+        "steeps_balance"
+      ]
+    },
+    "change_notification": {
+      "on_promotion": true,
+      "on_demotion": true,
+      "on_deactivation": true,
+      "on_new_source": true
+    }
+  }
+}

@@ -11,13 +11,13 @@ description: 분석 결과 검토 및 수정
 다음 파일들을 읽어 결과를 표시하세요:
 
 1. **우선순위 랭킹**
-   - @env-scanning/analysis/priority-ranked-{today}.json
+   - @data/{date}/analysis/priority-ranked-{today}.json
 
 2. **영향도 분석**
-   - @env-scanning/analysis/impact-assessment-{today}.json
+   - @data/{date}/analysis/impact-assessment-{today}.json
 
 3. **분류 결과**
-   - @env-scanning/structured/classified-signals-{today}.json
+   - @data/{date}/structured/classified-signals-{today}.json
 
 ## 표시 형식
 

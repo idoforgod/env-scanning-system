@@ -1,0 +1,57 @@
+{
+  "marathon_session": {
+    "date": "2026-01-12",
+    "mode": "marathon_test",
+    "total_target_minutes": 180,
+
+    "stage1_existing_sources": {
+      "start": "2026-01-12T15:16:34+09:00",
+      "end": "2026-01-12T15:20:00+09:00",
+      "duration_minutes": 3.5,
+      "sources_scanned": 177,
+      "signals_found": 30,
+      "status": "completed"
+    },
+
+    "stage2_new_source_discovery": {
+      "start": "2026-01-12T15:20:00+09:00",
+      "end": "2026-01-12T15:27:34+09:00",
+      "duration_minutes": 7.5,
+      "allocated_minutes": 176.5,
+      "forced_allocation": true,
+
+      "strategies": {
+        "citation_tracking": {
+          "duration_minutes": 1.9,
+          "sources_discovered": 10,
+          "status": "completed"
+        },
+        "domain_exploration": {
+          "duration_minutes": 1.9,
+          "sources_discovered": 10,
+          "status": "completed"
+        },
+        "keyword_expansion": {
+          "duration_minutes": 1.9,
+          "sources_discovered": 12,
+          "status": "completed"
+        },
+        "regional_expansion": {
+          "duration_minutes": 1.9,
+          "sources_discovered": 12,
+          "status": "completed"
+        }
+      },
+
+      "total_new_sources_discovered": 44,
+      "status": "completed"
+    },
+
+    "summary": {
+      "stage1_signals": 30,
+      "stage2_new_sources": 44,
+      "time_efficiency": "Stage 1 only 3.5 min → 176.5 min for Stage 2 (97.6%)",
+      "execution_mode": "test (accelerated)"
+    }
+  }
+}

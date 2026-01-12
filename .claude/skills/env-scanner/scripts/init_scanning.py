@@ -109,8 +109,8 @@ def main():
     print("=" * 60)
     print(f"""
 Next steps:
-  1. Configure domains: env-scanning/config/domains.yaml
-  2. Configure sources: env-scanning/config/sources.yaml
+  1. Configure domains: data/config/domains.yaml
+  2. Configure sources: data/config/sources.yaml
   3. Run scanning: /run-scan
 
 Directory structure:

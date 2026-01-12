@@ -1,0 +1,238 @@
+# 환경스캐닝 자동화 설정
+# Marathon Mode: 자기개선형 소스 탐색 시스템
+
+# Marathon Mode (3시간 자기개선형 소스 탐색)
+marathon:
+  enabled: true
+  target_duration_hours: 3
+  purpose: "자기개선형 소스 탐색 - 시간이 갈수록 더 좋은 자료 발견"
+
+  # 3시간 타임라인
+  timeline:
+    phase_a:
+      name: "Tier 1 핵심 소스 스캔"
+      duration_minutes: 30
+      agent: "multi-source-scanner"
+      focus: "tier_1_only"
+
+    phase_b:
+      name: "무작위 탐험 스캔"
+      duration_minutes: 60
+      agent: "exploration-scanner"
+      focus: "discover_new_sources"
+      strategies:
+        - keyword_variation
+        - regional_expansion
+        - domain_exploration
+        - format_diversification
+
+    phase_c:
+      name: "링크 추적 & 새 소스 발견"
+      duration_minutes: 60
+      agent: "link-tracker"
+      focus: "trace_citations"
+      tracking_types:
+        - academic_citations
+        - report_references
+        - author_institutions
+        - related_news
+
+    phase_d:
+      name: "발견된 소스 검증 & 평가"
+      duration_minutes: 30
+      agent: "source-evaluator"
+      focus: "evaluate_and_promote"
+      thresholds:
+        auto_promote: 70
+        pending_review: 50
+        reject: 50
+
+  # Marathon 완료 후
+  post_marathon:
+    - agent: "performance-updater"
+      task: "update_source_statistics"
+    - agent: "dedup-filter"
+      task: "filter_collected_signals"
+
+# 자기개선 시스템
+self_improvement:
+  enabled: true
+
+  # 소스 성과 추적
+  performance_tracking:
+    enabled: true
+    metrics:
+      - signal_to_scan_ratio
+      - average_significance
+      - recency_bonus
+      - steeps_coverage_value
+      - consistency
+
+    scoring_weights:
+      signal_to_scan_ratio: 0.30
+      average_significance: 0.25
+      recency_bonus: 0.15
+      steeps_coverage_value: 0.15
+      consistency: 0.15
+
+  # Tier 자동 조정
+  tier_adjustment:
+    enabled: true
+    upgrade_threshold: 85
+    downgrade_threshold: 30
+    deactivate_after_days_without_signal: 30
+    minimum_scans_for_decision: 5
+
+  # STEEPS 균형 관리
+  steeps_balance:
+    enabled: true
+    target_coverage:
+      Social: 20%
+      Technological: 25%
+      Economic: 20%
+      Environmental: 15%
+      Political: 15%
+      Spiritual: 5%
+    gap_priority_boost: 1.5  # 부족한 카테고리 소스 발견 시 보너스
+
+# 소스 발견 설정
+source_discovery:
+  # 탐험 키워드
+  exploration_keywords:
+    base_steeps:
+      Social:
+        - "gen z trends"
+        - "workforce changes"
+        - "lifestyle shifts"
+        - "demographic changes"
+        - "education innovation"
+      Technological:
+        - "AI breakthrough"
+        - "quantum computing"
+        - "robotics advancement"
+        - "biotech innovation"
+        - "space technology"
+      Economic:
+        - "global trade"
+        - "startup funding"
+        - "supply chain"
+        - "market disruption"
+        - "fintech innovation"
+      Environmental:
+        - "climate policy"
+        - "renewable energy"
+        - "carbon capture"
+        - "sustainability"
+        - "ESG trends"
+      Political:
+        - "AI regulation"
+        - "geopolitics"
+        - "tech policy"
+        - "governance innovation"
+        - "international relations"
+      Spiritual:
+        - "wellness trends"
+        - "mindfulness"
+        - "meaning economy"
+        - "spiritual technology"
+        - "consciousness research"
+
+    modifiers:
+      - "2026"
+      - "emerging"
+      - "breakthrough"
+      - "first time"
+      - "unprecedented"
+      - "new research"
+      - "latest"
+
+    regions:
+      - "Asia Pacific"
+      - "Latin America"
+      - "Middle East"
+      - "Africa"
+      - "Eastern Europe"
+      - "Nordic"
+      - "Southeast Asia"
+
+  # 소스 평가 기준
+  evaluation_criteria:
+    update_frequency:
+      weight: 0.25
+      daily: 25
+      weekly: 20
+      biweekly: 15
+      monthly: 10
+      irregular: 5
+
+    content_depth:
+      weight: 0.25
+      original_research: 25
+      in_depth_reporting: 20
+      standard_news: 15
+      aggregation: 10
+      shallow: 5
+
+    steeps_relevance:
+      weight: 0.20
+      multiple_categories: 20
+      single_category: 15
+      occasional: 10
+      rare: 5
+
+    accessibility:
+      weight: 0.15
+      fully_open: 15
+      partial_free: 10
+      registration: 8
+      soft_paywall: 5
+      hard_paywall: 2
+
+    credibility:
+      weight: 0.15
+      academic_gov: 15
+      organization: 12
+      major_news: 10
+      industry: 8
+      blog: 5
+
+# Context Management (컨텍스트 관리)
+context_management:
+  # Context low 감지 시 자동 compact
+  auto_compact:
+    enabled: true
+    trigger_threshold: "low"
+
+  # Compact 후 자동 재개
+  auto_resume:
+    enabled: true
+    resume_from_checkpoint: true
+    max_resume_attempts: 10
+
+  # 체크포인트 저장
+  checkpoint:
+    enabled: true
+    save_path: "logs/checkpoint-{date}.json"
+    save_on_phase_complete: true
+
+# 로깅
+logging:
+  enabled: true
+  log_paths:
+    exploration: "logs/exploration-{date}.json"
+    link_tracking: "logs/link-tracking-{date}.json"
+    source_evaluation: "logs/source-evaluation-{date}.json"
+    performance_update: "logs/performance-update-{date}.json"
+
+# 예상 자기개선 목표
+improvement_targets:
+  monthly:
+    new_sources_discovered: 30
+    sources_promoted: 6
+    avg_quality_improvement: "+5%"
+  quarterly:
+    total_sources_growth: "+40%"
+    steeps_gap_reduction: "Spiritual 3→4"
+  annual:
+    source_network_size: 350
+    avg_signal_quality: 4.5
