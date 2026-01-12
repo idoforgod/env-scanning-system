@@ -26,10 +26,19 @@ env:
   ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
 jobs:
-  marathon-scan:
-    name: Marathon Environmental Scanning (3hr)
+  # ============================================================
+  # Phase A: Tier 1 핵심 소스 스캔 (30분)
+  # ============================================================
+  phase-a-tier1-scan:
+    name: "Phase A: Tier 1 Core Sources (30min)"
     runs-on: ubuntu-latest
-    timeout-minutes: 240  # 4시간 (마라톤 3시간 + 여유 1시간)
+    timeout-minutes: 45
+    outputs:
+      date: ${{ steps.date.outputs.date }}
+      year: ${{ steps.date.outputs.year }}
+      month: ${{ steps.date.outputs.month }}
+      day: ${{ steps.date.outputs.day }}
+      phase_a_success: ${{ steps.scan.outputs.success }}
 
     steps:
       - name: Checkout repository
@@ -54,111 +63,424 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python dependencies
-        run: |
-          pip install pyyaml requests python-dateutil
+        run: pip install pyyaml requests python-dateutil
 
       - name: Get current date (KST)
         id: date
         run: |
-          echo "date=$(TZ='Asia/Seoul' date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+          DATE=$(TZ='Asia/Seoul' date '+%Y-%m-%d')
+          echo "date=$DATE" >> $GITHUB_OUTPUT
           echo "datetime=$(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M:%S KST')" >> $GITHUB_OUTPUT
-          echo "weekday=$(TZ='Asia/Seoul' date '+%u')" >> $GITHUB_OUTPUT
+          echo "year=$(echo $DATE | cut -d'-' -f1)" >> $GITHUB_OUTPUT
+          echo "month=$(echo $DATE | cut -d'-' -f2)" >> $GITHUB_OUTPUT
+          echo "day=$(echo $DATE | cut -d'-' -f3)" >> $GITHUB_OUTPUT
 
-      - name: Determine scan type
-        id: scan-type
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "type=${{ github.event.inputs.scan_type }}" >> $GITHUB_OUTPUT
-          else
-            # 기본: marathon 모드
-            echo "type=marathon" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Run Marathon Environmental Scan
+      - name: "Run Phase A: Tier 1 Scan"
         id: scan
         run: |
           echo "========================================"
-          echo "환경스캐닝 시작: ${{ steps.date.outputs.datetime }}"
-          echo "스캔 유형: ${{ steps.scan-type.outputs.type }} (Marathon Mode)"
-          echo "예상 소요: 3시간"
+          echo "Phase A 시작: Tier 1 핵심 소스 스캔"
+          echo "예상 소요: 30분"
           echo "========================================"
 
-          # Marathon 모드 스캔 실행
-          claude -p "/env-scan:run --marathon --skip-human
+          mkdir -p data/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}/${{ steps.date.outputs.day }}/{raw,filtered,structured,analysis,reports}
+          mkdir -p logs/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}
+
+          claude -p "Marathon Mode Phase A를 실행합니다.
 
           오늘 날짜: ${{ steps.date.outputs.date }}
 
-          Marathon Mode (3시간 자기개선형 소스 탐색):
-          - Phase A (30분): Tier 1 핵심 소스 스캔
-          - Phase B (60분): 무작위 탐험 스캔
-          - Phase C (60분): 링크 추적 & 새 소스 발견
-          - Phase D (30분): 발견된 소스 검증 & 평가
+          [Phase A: Tier 1 핵심 소스 스캔 - 30분]
 
-          모든 human review 단계는 자동 통과합니다.
-          결과 파일들을 저장하고 완료 시 요약을 출력하세요." \
+          1. @archive-loader 실행: 기존 신호 DB 로딩
+          2. @multi-source-scanner 실행: Tier 1 소스만 스캔 (config/regular-sources.json의 tier:1)
+          3. 결과를 data/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}/${{ steps.date.outputs.day }}/raw/phase-a-signals.json에 저장
+          4. 체크포인트를 logs/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}/checkpoint-phase-a.json에 저장
+
+          human review 없이 자동 진행합니다." \
           --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
-          --max-turns 200 \
-          2>&1 | tee scan-output.log
+          --max-turns 100 \
+          2>&1 | tee phase-a-output.log
 
-          # 스캔 결과 확인 (새 경로 구조)
-          DATE="${{ steps.date.outputs.date }}"
-          YEAR=$(echo $DATE | cut -d'-' -f1)
-          MONTH=$(echo $DATE | cut -d'-' -f2)
-          DAY=$(echo $DATE | cut -d'-' -f3)
-
-          if [ -f "data/$YEAR/$MONTH/$DAY/reports/environmental-scan.md" ] || [ -f "data/$YEAR/$MONTH/$DAY/reports/environmental-scan-$DATE-marathon.md" ]; then
-            echo "scan_success=true" >> $GITHUB_OUTPUT
-            echo "report_path=data/$YEAR/$MONTH/$DAY/reports/" >> $GITHUB_OUTPUT
+          if [ -f "data/${{ steps.date.outputs.year }}/${{ steps.date.outputs.month }}/${{ steps.date.outputs.day }}/raw/phase-a-signals.json" ]; then
+            echo "success=true" >> $GITHUB_OUTPUT
           else
-            echo "scan_success=false" >> $GITHUB_OUTPUT
+            echo "success=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Generate scan summary
-        if: always()
+      - name: Upload Phase A artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-a-results
+          path: |
+            data/
+            logs/
+            signals/
+            context/
+            phase-a-output.log
+          retention-days: 7
+
+  # ============================================================
+  # Phase B: 무작위 탐험 스캔 (60분)
+  # ============================================================
+  phase-b-exploration:
+    name: "Phase B: Exploration Scan (60min)"
+    runs-on: ubuntu-latest
+    needs: phase-a-tier1-scan
+    timeout-minutes: 75
+    outputs:
+      phase_b_success: ${{ steps.scan.outputs.success }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
         run: |
-          DATE="${{ steps.date.outputs.date }}"
-          YEAR=$(echo $DATE | cut -d'-' -f1)
-          MONTH=$(echo $DATE | cut -d'-' -f2)
-          DAY=$(echo $DATE | cut -d'-' -f3)
+          npm install -g @anthropic-ai/claude-code
+          claude --version
 
-          echo "## 환경스캐닝 결과 요약 (Marathon Mode)" > scan-summary.md
-          echo "" >> scan-summary.md
-          echo "**실행 시간**: ${{ steps.date.outputs.datetime }}" >> scan-summary.md
-          echo "**스캔 유형**: ${{ steps.scan-type.outputs.type }} (3시간 자기개선형)" >> scan-summary.md
-          echo "**상태**: ${{ steps.scan.outputs.scan_success == 'true' && '✅ 성공' || '❌ 실패' }}" >> scan-summary.md
-          echo "" >> scan-summary.md
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-          # 신호 DB 통계 (새 경로)
+      - name: Install Python dependencies
+        run: pip install pyyaml requests python-dateutil
+
+      - name: Download Phase A artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: phase-a-results
+          path: .
+
+      - name: "Run Phase B: Exploration Scan"
+        id: scan
+        env:
+          DATE: ${{ needs.phase-a-tier1-scan.outputs.date }}
+          YEAR: ${{ needs.phase-a-tier1-scan.outputs.year }}
+          MONTH: ${{ needs.phase-a-tier1-scan.outputs.month }}
+          DAY: ${{ needs.phase-a-tier1-scan.outputs.day }}
+        run: |
+          echo "========================================"
+          echo "Phase B 시작: 무작위 탐험 스캔"
+          echo "예상 소요: 60분"
+          echo "========================================"
+
+          claude -p "Marathon Mode Phase B를 실행합니다.
+
+          오늘 날짜: $DATE
+
+          [Phase B: 무작위 탐험 스캔 - 60분]
+
+          Phase A 결과 파일: data/$YEAR/$MONTH/$DAY/raw/phase-a-signals.json
+
+          @exploration-scanner를 사용하여:
+          1. 키워드 변이: STEEPS 키워드 확장 검색
+          2. 지역 확장: 미개척 지역 (라틴아메리카, 아프리카, 동남아) 소스 탐색
+          3. 도메인 탐험: 기존 소스와 유사한 새 도메인 탐색
+
+          결과를 data/$YEAR/$MONTH/$DAY/raw/phase-b-signals.json에 저장
+          발견된 새 소스를 config/discovered-sources.json에 추가
+          체크포인트를 logs/$YEAR/$MONTH/checkpoint-phase-b.json에 저장
+
+          human review 없이 자동 진행합니다." \
+          --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
+          --max-turns 150 \
+          2>&1 | tee phase-b-output.log
+
+          if [ -f "data/$YEAR/$MONTH/$DAY/raw/phase-b-signals.json" ]; then
+            echo "success=true" >> $GITHUB_OUTPUT
+          else
+            echo "success=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload Phase B artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-b-results
+          path: |
+            data/
+            logs/
+            signals/
+            context/
+            config/
+            phase-b-output.log
+          retention-days: 7
+
+  # ============================================================
+  # Phase C: 링크 추적 & 새 소스 발견 (60분)
+  # ============================================================
+  phase-c-link-tracking:
+    name: "Phase C: Link Tracking (60min)"
+    runs-on: ubuntu-latest
+    needs: [phase-a-tier1-scan, phase-b-exploration]
+    timeout-minutes: 75
+    outputs:
+      phase_c_success: ${{ steps.scan.outputs.success }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude --version
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml requests python-dateutil
+
+      - name: Download Phase B artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: phase-b-results
+          path: .
+
+      - name: "Run Phase C: Link Tracking"
+        id: scan
+        env:
+          DATE: ${{ needs.phase-a-tier1-scan.outputs.date }}
+          YEAR: ${{ needs.phase-a-tier1-scan.outputs.year }}
+          MONTH: ${{ needs.phase-a-tier1-scan.outputs.month }}
+          DAY: ${{ needs.phase-a-tier1-scan.outputs.day }}
+        run: |
+          echo "========================================"
+          echo "Phase C 시작: 링크 추적 & 새 소스 발견"
+          echo "예상 소요: 60분"
+          echo "========================================"
+
+          claude -p "Marathon Mode Phase C를 실행합니다.
+
+          오늘 날짜: $DATE
+
+          [Phase C: 링크 추적 & 새 소스 발견 - 60분]
+
+          이전 Phase 결과:
+          - Phase A: data/$YEAR/$MONTH/$DAY/raw/phase-a-signals.json
+          - Phase B: data/$YEAR/$MONTH/$DAY/raw/phase-b-signals.json
+
+          @link-tracker를 사용하여:
+          1. Phase A, B에서 발견된 신호의 인용/참고문헌 추적
+          2. 원천 소스 발굴
+          3. 새로운 전문가/기관 발견
+
+          결과를 data/$YEAR/$MONTH/$DAY/raw/phase-c-signals.json에 저장
+          발견된 새 소스를 config/discovered-sources.json에 추가
+          체크포인트를 logs/$YEAR/$MONTH/checkpoint-phase-c.json에 저장
+
+          human review 없이 자동 진행합니다." \
+          --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
+          --max-turns 150 \
+          2>&1 | tee phase-c-output.log
+
+          if [ -f "data/$YEAR/$MONTH/$DAY/raw/phase-c-signals.json" ]; then
+            echo "success=true" >> $GITHUB_OUTPUT
+          else
+            echo "success=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload Phase C artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-c-results
+          path: |
+            data/
+            logs/
+            signals/
+            context/
+            config/
+            phase-c-output.log
+          retention-days: 7
+
+  # ============================================================
+  # Phase D: 소스 검증 & 최종 처리 (30분)
+  # ============================================================
+  phase-d-finalization:
+    name: "Phase D: Validation & Report (30min)"
+    runs-on: ubuntu-latest
+    needs: [phase-a-tier1-scan, phase-b-exploration, phase-c-link-tracking]
+    timeout-minutes: 60
+    outputs:
+      phase_d_success: ${{ steps.scan.outputs.success }}
+      report_path: ${{ steps.scan.outputs.report_path }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude --version
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml requests python-dateutil
+
+      - name: Download Phase C artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: phase-c-results
+          path: .
+
+      - name: "Run Phase D: Validation & Finalization"
+        id: scan
+        env:
+          DATE: ${{ needs.phase-a-tier1-scan.outputs.date }}
+          YEAR: ${{ needs.phase-a-tier1-scan.outputs.year }}
+          MONTH: ${{ needs.phase-a-tier1-scan.outputs.month }}
+          DAY: ${{ needs.phase-a-tier1-scan.outputs.day }}
+        run: |
+          echo "========================================"
+          echo "Phase D 시작: 소스 검증 & 최종 처리"
+          echo "예상 소요: 30분"
+          echo "========================================"
+
+          claude -p "Marathon Mode Phase D를 실행합니다.
+
+          오늘 날짜: $DATE
+
+          [Phase D: 소스 검증 & 최종 처리 - 30분]
+
+          이전 Phase 결과:
+          - Phase A: data/$YEAR/$MONTH/$DAY/raw/phase-a-signals.json
+          - Phase B: data/$YEAR/$MONTH/$DAY/raw/phase-b-signals.json
+          - Phase C: data/$YEAR/$MONTH/$DAY/raw/phase-c-signals.json
+
+          1. 모든 Phase 신호 병합
+          2. @dedup-filter: 중복 제거
+          3. @signal-classifier: STEEPS 분류 + pSRT 계산
+          4. @hallucination-detector: 할루시네이션 검증
+          5. @source-evaluator: 발견된 소스 품질 평가
+          6. @db-updater: 마스터 DB 업데이트
+          7. @report-generator: 최종 보고서 생성
+          8. @performance-updater: 소스 성과 통계 갱신
+
+          최종 보고서: data/$YEAR/$MONTH/$DAY/reports/environmental-scan-$DATE-marathon.md
+
+          human review 없이 자동 진행합니다." \
+          --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
+          --max-turns 150 \
+          2>&1 | tee phase-d-output.log
+
+          REPORT_PATH="data/$YEAR/$MONTH/$DAY/reports/environmental-scan-$DATE-marathon.md"
+          if [ -f "$REPORT_PATH" ]; then
+            echo "success=true" >> $GITHUB_OUTPUT
+            echo "report_path=$REPORT_PATH" >> $GITHUB_OUTPUT
+          else
+            echo "success=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload Phase D artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-d-results
+          path: |
+            data/
+            logs/
+            signals/
+            context/
+            config/
+            phase-d-output.log
+          retention-days: 7
+
+  # ============================================================
+  # 최종 커밋 & 정리
+  # ============================================================
+  commit-results:
+    name: "Commit & Cleanup"
+    runs-on: ubuntu-latest
+    needs: [phase-a-tier1-scan, phase-d-finalization]
+    if: needs.phase-d-finalization.outputs.phase_d_success == 'true'
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download final artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: phase-d-results
+          path: .
+
+      - name: Generate summary
+        env:
+          DATE: ${{ needs.phase-a-tier1-scan.outputs.date }}
+        run: |
+          echo "## Marathon Mode 환경스캐닝 완료" > scan-summary.md
+          echo "" >> scan-summary.md
+          echo "- 날짜: $DATE" >> scan-summary.md
+          echo "- Phase A: ${{ needs.phase-a-tier1-scan.outputs.phase_a_success == 'true' && 'Success' || 'Failed' }}" >> scan-summary.md
+          echo "- Phase B: ${{ needs.phase-b-exploration.outputs.phase_b_success == 'true' && 'Success' || 'Failed' }}" >> scan-summary.md
+          echo "- Phase C: ${{ needs.phase-c-link-tracking.outputs.phase_c_success == 'true' && 'Success' || 'Failed' }}" >> scan-summary.md
+          echo "- Phase D: ${{ needs.phase-d-finalization.outputs.phase_d_success == 'true' && 'Success' || 'Failed' }}" >> scan-summary.md
+
           if [ -f "signals/database.json" ]; then
             TOTAL=$(cat signals/database.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d.get('signals', [])))" 2>/dev/null || echo "N/A")
-            echo "**총 신호 수**: $TOTAL" >> scan-summary.md
-          fi
-
-          # 오늘 보고서 존재 여부
-          if [ -d "data/$YEAR/$MONTH/$DAY/reports" ]; then
-            REPORT_COUNT=$(ls -1 data/$YEAR/$MONTH/$DAY/reports/*.md 2>/dev/null | wc -l)
-            echo "**보고서 수**: $REPORT_COUNT" >> scan-summary.md
+            echo "- 총 신호 수: $TOTAL" >> scan-summary.md
           fi
 
           cat scan-summary.md
 
       - name: Commit scan results
-        if: steps.scan.outputs.scan_success == 'true' && github.event.inputs.skip_commit != 'true'
+        if: github.event.inputs.skip_commit != 'true'
+        env:
+          DATE: ${{ needs.phase-a-tier1-scan.outputs.date }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 새 경로 구조로 추가
           git add data/ signals/ context/ logs/ config/
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "$(cat <<'EOF'
-          chore: Marathon 환경스캐닝 결과 (${{ steps.date.outputs.date }})
+            git commit -m "$(cat <<EOF
+          chore: Marathon 환경스캐닝 결과 ($DATE)
 
-          스캔 유형: ${{ steps.scan-type.outputs.type }} (3시간 자기개선형)
-          실행 시간: ${{ steps.date.outputs.datetime }}
+          4-Phase Marathon Mode 완료
+          - Phase A: Tier 1 핵심 소스 스캔
+          - Phase B: 무작위 탐험 스캔
+          - Phase C: 링크 추적 & 새 소스 발견
+          - Phase D: 검증 & 보고서 생성
 
           Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           EOF
@@ -167,25 +489,32 @@ jobs:
             git push
           fi
 
-      - name: Upload artifacts
+      - name: Upload final artifacts
         uses: actions/upload-artifact@v4
-        if: always()
         with:
-          name: marathon-scan-${{ steps.date.outputs.date }}
+          name: marathon-scan-${{ needs.phase-a-tier1-scan.outputs.date }}
           path: |
             data/
             logs/
-            scan-output.log
+            signals/
             scan-summary.md
           retention-days: 90
 
+  # ============================================================
+  # 실패 시 알림
+  # ============================================================
+  notify-failure:
+    name: "Notify on Failure"
+    runs-on: ubuntu-latest
+    needs: [phase-a-tier1-scan, phase-b-exploration, phase-c-link-tracking, phase-d-finalization]
+    if: failure()
+
+    steps:
       - name: Create issue on failure
-        if: failure()
         uses: actions/github-script@v7
         with:
           script: |
-            const date = '${{ steps.date.outputs.date }}';
-            const scanType = '${{ steps.scan-type.outputs.type }}';
+            const date = '${{ needs.phase-a-tier1-scan.outputs.date }}' || new Date().toISOString().split('T')[0];
 
             await github.rest.issues.create({
               owner: context.repo.owner,
@@ -195,8 +524,13 @@ jobs:
                 '## Marathon 환경스캐닝 워크플로우 실패',
                 '',
                 `- 날짜: ${date}`,
-                `- 스캔 유형: ${scanType} (3시간 자기개선형)`,
                 `- 워크플로우: [Run #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})`,
+                '',
+                '### Phase 상태',
+                `- Phase A: ${{ needs.phase-a-tier1-scan.result }}`,
+                `- Phase B: ${{ needs.phase-b-exploration.result }}`,
+                `- Phase C: ${{ needs.phase-c-link-tracking.result }}`,
+                `- Phase D: ${{ needs.phase-d-finalization.result }}`,
                 '',
                 '로그를 확인하고 수동으로 재실행하세요.',
                 '',
@@ -207,11 +541,14 @@ jobs:
               labels: ['bug', 'env-scanning', 'marathon']
             });
 
+  # ============================================================
+  # 주간 심층 스캔 (별도 Job)
+  # ============================================================
   weekly-deep-scan:
     name: Weekly Deep Scan
     runs-on: ubuntu-latest
     if: github.event.inputs.scan_type == 'weekly-deep'
-    needs: marathon-scan
+    needs: commit-results
     timeout-minutes: 120
 
     steps:
@@ -242,4 +579,4 @@ jobs:
 
           --skip-human 모드로 진행합니다." \
           --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
-          --max-turns 50
+          --max-turns 100
