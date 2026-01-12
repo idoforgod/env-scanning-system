@@ -1,4 +1,4 @@
-name: Daily Environmental Scan
+name: Daily Environmental Scan (Marathon Mode)
 
 on:
   schedule:
@@ -9,12 +9,12 @@ on:
       scan_type:
         description: '스캔 유형'
         required: true
-        default: 'daily'
+        default: 'marathon'
         type: choice
         options:
+          - marathon
           - daily
           - weekly-deep
-          - alt-sources
       skip_commit:
         description: '결과 커밋 건너뛰기'
         required: false
@@ -26,10 +26,10 @@ env:
   ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
 jobs:
-  daily-scan:
-    name: Daily Environmental Scanning
+  marathon-scan:
+    name: Marathon Environmental Scanning (3hr)
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 240  # 4시간 (마라톤 3시간 + 여유 1시간)
 
     steps:
       - name: Checkout repository
@@ -69,47 +69,46 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             echo "type=${{ github.event.inputs.scan_type }}" >> $GITHUB_OUTPUT
-          elif [ "${{ steps.date.outputs.weekday }}" == "1" ]; then
-            # 월요일이면 주간 심층 스캔
-            echo "type=weekly-deep" >> $GITHUB_OUTPUT
           else
-            echo "type=daily" >> $GITHUB_OUTPUT
+            # 기본: marathon 모드
+            echo "type=marathon" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run Environmental Scan
+      - name: Run Marathon Environmental Scan
         id: scan
         run: |
           echo "========================================"
           echo "환경스캐닝 시작: ${{ steps.date.outputs.datetime }}"
-          echo "스캔 유형: ${{ steps.scan-type.outputs.type }}"
+          echo "스캔 유형: ${{ steps.scan-type.outputs.type }} (Marathon Mode)"
+          echo "예상 소요: 3시간"
           echo "========================================"
 
-          # 스캔 실행
-          claude -p "env-scanner 워크플로우를 실행합니다.
+          # Marathon 모드 스캔 실행
+          claude -p "/env-scan:run --marathon --skip-human
+
           오늘 날짜: ${{ steps.date.outputs.date }}
-          스캔 유형: ${{ steps.scan-type.outputs.type }}
 
-          다음 단계를 순차적으로 수행하세요:
-          1. archive-loader로 기존 DB 로딩
-          2. multi-source-scanner로 STEEPS 스캐닝 (regular-sources.json 참조)
-          3. dedup-filter로 중복 필터링
-          4. signal-classifier로 신호 분류
-          5. impact-analyzer로 영향 분석
-          6. priority-ranker로 우선순위 산정
-          7. db-updater로 DB 업데이트
-          8. report-generator로 보고서 생성
-          9. archive-notifier로 아카이빙
+          Marathon Mode (3시간 자기개선형 소스 탐색):
+          - Phase A (30분): Tier 1 핵심 소스 스캔
+          - Phase B (60분): 무작위 탐험 스캔
+          - Phase C (60분): 링크 추적 & 새 소스 발견
+          - Phase D (30분): 발견된 소스 검증 & 평가
 
-          모든 human review 단계는 자동 통과합니다 (--skip-human 모드).
+          모든 human review 단계는 자동 통과합니다.
           결과 파일들을 저장하고 완료 시 요약을 출력하세요." \
           --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
-          --max-turns 100 \
+          --max-turns 200 \
           2>&1 | tee scan-output.log
 
-          # 스캔 결과 확인
-          if [ -f "env-scanning/reports/daily/${{ steps.date.outputs.date }}.md" ]; then
+          # 스캔 결과 확인 (새 경로 구조)
+          DATE="${{ steps.date.outputs.date }}"
+          YEAR=$(echo $DATE | cut -d'-' -f1)
+          MONTH=$(echo $DATE | cut -d'-' -f2)
+          DAY=$(echo $DATE | cut -d'-' -f3)
+
+          if [ -f "data/$YEAR/$MONTH/$DAY/reports/environmental-scan.md" ] || [ -f "data/$YEAR/$MONTH/$DAY/reports/environmental-scan-$DATE-marathon.md" ]; then
             echo "scan_success=true" >> $GITHUB_OUTPUT
-            echo "report_path=env-scanning/reports/daily/${{ steps.date.outputs.date }}.md" >> $GITHUB_OUTPUT
+            echo "report_path=data/$YEAR/$MONTH/$DAY/reports/" >> $GITHUB_OUTPUT
           else
             echo "scan_success=false" >> $GITHUB_OUTPUT
           fi
@@ -117,22 +116,28 @@ jobs:
       - name: Generate scan summary
         if: always()
         run: |
-          echo "## 환경스캐닝 결과 요약" > scan-summary.md
+          DATE="${{ steps.date.outputs.date }}"
+          YEAR=$(echo $DATE | cut -d'-' -f1)
+          MONTH=$(echo $DATE | cut -d'-' -f2)
+          DAY=$(echo $DATE | cut -d'-' -f3)
+
+          echo "## 환경스캐닝 결과 요약 (Marathon Mode)" > scan-summary.md
           echo "" >> scan-summary.md
           echo "**실행 시간**: ${{ steps.date.outputs.datetime }}" >> scan-summary.md
-          echo "**스캔 유형**: ${{ steps.scan-type.outputs.type }}" >> scan-summary.md
-          echo "**상태**: ${{ steps.scan.outputs.scan_success == 'true' && '성공' || '실패' }}" >> scan-summary.md
+          echo "**스캔 유형**: ${{ steps.scan-type.outputs.type }} (3시간 자기개선형)" >> scan-summary.md
+          echo "**상태**: ${{ steps.scan.outputs.scan_success == 'true' && '✅ 성공' || '❌ 실패' }}" >> scan-summary.md
           echo "" >> scan-summary.md
 
-          # 신호 DB 통계
-          if [ -f "env-scanning/signals/database.json" ]; then
-            TOTAL=$(cat env-scanning/signals/database.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d.get('signals', [])))" 2>/dev/null || echo "N/A")
+          # 신호 DB 통계 (새 경로)
+          if [ -f "signals/database.json" ]; then
+            TOTAL=$(cat signals/database.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d.get('signals', [])))" 2>/dev/null || echo "N/A")
             echo "**총 신호 수**: $TOTAL" >> scan-summary.md
           fi
 
           # 오늘 보고서 존재 여부
-          if [ -f "env-scanning/reports/daily/${{ steps.date.outputs.date }}.md" ]; then
-            echo "**보고서**: 생성됨" >> scan-summary.md
+          if [ -d "data/$YEAR/$MONTH/$DAY/reports" ]; then
+            REPORT_COUNT=$(ls -1 data/$YEAR/$MONTH/$DAY/reports/*.md 2>/dev/null | wc -l)
+            echo "**보고서 수**: $REPORT_COUNT" >> scan-summary.md
           fi
 
           cat scan-summary.md
@@ -143,17 +148,21 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          git add env-scanning/
+          # 새 경로 구조로 추가
+          git add data/ signals/ context/ logs/ config/
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: 일일 환경스캐닝 결과 (${{ steps.date.outputs.date }})
+            git commit -m "$(cat <<'EOF'
+          chore: Marathon 환경스캐닝 결과 (${{ steps.date.outputs.date }})
 
-          스캔 유형: ${{ steps.scan-type.outputs.type }}
+          스캔 유형: ${{ steps.scan-type.outputs.type }} (3시간 자기개선형)
           실행 시간: ${{ steps.date.outputs.datetime }}
 
-          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          EOF
+          )"
 
             git push
           fi
@@ -162,10 +171,10 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: scan-results-${{ steps.date.outputs.date }}
+          name: marathon-scan-${{ steps.date.outputs.date }}
           path: |
-            env-scanning/reports/daily/
-            env-scanning/logs/
+            data/
+            logs/
             scan-output.log
             scan-summary.md
           retention-days: 90
@@ -181,27 +190,28 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `[Alert] 환경스캐닝 실패 - ${date}`,
-              body: `## 환경스캐닝 워크플로우 실패
-
-              **날짜**: ${date}
-              **스캔 유형**: ${scanType}
-              **워크플로우 실행**: [Run #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-
-              로그를 확인하고 수동으로 재실행하세요.
-
-              \`\`\`
-              gh workflow run daily-scan.yml --ref main
-              \`\`\`
-              `,
-              labels: ['bug', 'env-scanning']
+              title: `[Alert] Marathon 환경스캐닝 실패 - ${date}`,
+              body: [
+                '## Marathon 환경스캐닝 워크플로우 실패',
+                '',
+                `- 날짜: ${date}`,
+                `- 스캔 유형: ${scanType} (3시간 자기개선형)`,
+                `- 워크플로우: [Run #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})`,
+                '',
+                '로그를 확인하고 수동으로 재실행하세요.',
+                '',
+                '```',
+                'gh workflow run daily-scan.yml --ref main',
+                '```'
+              ].join('\n'),
+              labels: ['bug', 'env-scanning', 'marathon']
             });
 
   weekly-deep-scan:
     name: Weekly Deep Scan
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 0 * * 1' || github.event.inputs.scan_type == 'weekly-deep'
-    needs: daily-scan
+    if: github.event.inputs.scan_type == 'weekly-deep'
+    needs: marathon-scan
     timeout-minutes: 120
 
     steps:
@@ -228,7 +238,7 @@ jobs:
           1. 지난 7일간 수집된 모든 신호 종합 분석
           2. 메타 신호 및 패턴 식별
           3. 시나리오 시사점 도출
-          4. 주간 요약 보고서 생성 (env-scanning/reports/weekly/)
+          4. 주간 요약 보고서 생성 (data/weekly/)
 
           --skip-human 모드로 진행합니다." \
           --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \
