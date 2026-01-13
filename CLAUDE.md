@@ -10,9 +10,9 @@
 
 | 명령어 | 설명 |
 |--------|------|
-| `/env-scan:run` | **기본값: Marathon Mode (심층 스캔)** |
+| `/env-scan:run` | **기본값: Marathon Mode (심층 스캔, 자동 실행)** |
 | `/env-scan:run --fast` | Fast Mode (핵심 소스만 빠르게 스캔) |
-| `/env-scan:run --skip-human` | Marathon + Human Review 생략 |
+| `/env-scan:run --with-review` | Human Review 포함 (각 Phase 후 검토) |
 | `/env-scan:resume` | 체크포인트에서 재개 |
 | `/env-scan:status` | 현재 상태 확인 |
 

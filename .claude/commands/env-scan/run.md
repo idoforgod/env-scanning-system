@@ -1,7 +1,7 @@
 ---
-description: 일일 환경스캐닝 워크플로우 전체 실행 (기본값: Marathon Mode)
+description: 일일 환경스캐닝 워크플로우 전체 실행 (기본값: Marathon Mode, Human Review 생략)
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Task
-argument-hint: [--fast | --skip-human | --phase <1|2|3> | --resume]
+argument-hint: [--fast | --with-review | --phase <1|2|3> | --resume]
 ---
 
 # 환경스캐닝 워크플로우 - Orchestrator Mode
@@ -82,7 +82,7 @@ Task @dedup-filter:
   출력: data/{date}/filtered/filtered-signals.json
 ```
 
-**Step 4: [Human Review]** (--skip-human 시 생략)
+**Step 4: [Human Review]** (기본 생략, --with-review 시 포함)
 ```
 /env-scan:review-filter 로 결과 검토
 ```
@@ -136,7 +136,7 @@ Task @impact-analyzer + @priority-ranker (PARALLEL):
   출력: data/{date}/analysis/impact-assessment.json, data/{date}/analysis/priority-ranked.json
 ```
 
-**Step 11: [Human Review]** (--skip-human 시 생략)
+**Step 11: [Human Review]** (기본 생략, --with-review 시 포함)
 ```
 /env-scan:review-analysis 로 결과 검토
 ```
@@ -172,7 +172,7 @@ Task @source-evolver + @file-organizer (PARALLEL, optional):
   ※ Marathon 모드 후 실행, 실패해도 워크플로우 계속
 ```
 
-**Step 17: [Human Approval]** (--skip-human 시 생략)
+**Step 17: [Human Approval]** (기본 생략, --with-review 시 포함)
 ```
 /env-scan:approve 또는 /env-scan:revision 으로 최종 승인
 ```
@@ -255,11 +255,11 @@ Context low 발생 시:
 ## 실행 예시
 
 ```bash
-# 기본 실행 (Marathon Mode - 심층 스캔)
+# 기본 실행 (Marathon Mode - 심층 스캔, Human Review 생략)
 /env-scan:run
 
-# Marathon Mode + Human Review 생략
-/env-scan:run --skip-human
+# Human Review 포함 (각 Phase 후 검토 단계 추가)
+/env-scan:run --with-review
 
 # Fast Mode (핵심 소스만 빠르게 스캔)
 /env-scan:run --fast

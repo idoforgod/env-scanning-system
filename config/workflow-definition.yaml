@@ -8,6 +8,7 @@ description: "환경스캐닝 자동화 워크플로우 (17단계 전체)"
 
 # 모드 설정
 default_mode: marathon  # 기본 모드를 Marathon으로 설정
+skip_human_review: true  # Human Review 기본 생략 (--with-review로 포함)
 
 modes:
   fast:
