@@ -266,9 +266,11 @@ Task @signal-classifier:
 
 ---
 
-## Step 17: Root Cleanup (자동)
+## Step 17: Cleanup (자동)
 
-Gate 3 통과 후 **루트 디렉토리 임시 파일 자동 삭제**:
+Gate 3 통과 후 **임시 파일 자동 삭제** (2단계):
+
+### Step 17-A: 루트 디렉토리 정리
 
 ```bash
 # 삭제 대상 (루트 디렉토리만)
@@ -283,9 +285,58 @@ rm -f ./test_*.py ./verify_*.py           # 테스트 스크립트
 rm -f ./*.sh                              # 임시 쉘 스크립트
 
 # 보호 파일 (절대 삭제 금지)
-# - CLAUDE.md
-# - README.md
-# - WARP.md
+# - CLAUDE.md, README.md, WARP.md, LICENSE
+```
+
+### Step 17-B: data 폴더 정리
+
+```bash
+# ═══════════════════════════════════════════════════════════════
+# 유지 필수 파일 (다음 스캔에서 참조 또는 아카이브용)
+# ═══════════════════════════════════════════════════════════════
+# 1. structured/structured-signals-{date}.json  ← DB 대조 및 아카이브
+# 2. reports/environmental-scan-{date}.md       ← 최종 보고서
+# 3. analysis/priority-ranked-{date}.json       ← 우선순위 기록
+
+# ═══════════════════════════════════════════════════════════════
+# 삭제 대상 (중간 산출물, 병합 후 불필요)
+# ═══════════════════════════════════════════════════════════════
+
+DATA_DIR="data/{YYYY}/{MM}/{DD}"
+
+# 1. raw/ 폴더 전체 삭제 (병합 완료 후 불필요)
+rm -rf ${DATA_DIR}/raw/
+
+# 2. filtered/ 폴더 전체 삭제 (구조화 완료 후 불필요)
+rm -rf ${DATA_DIR}/filtered/
+
+# 3. execution/ 폴더 전체 삭제 (실행 로그)
+rm -rf ${DATA_DIR}/execution/
+
+# 4. logs/ 폴더 전체 삭제 (dedup 로그)
+rm -rf ${DATA_DIR}/logs/
+
+# 5. analysis/ 폴더 정리 (priority-ranked만 유지)
+find ${DATA_DIR}/analysis/ -type f ! -name "priority-ranked-*.json" -delete
+
+# 6. data/{date}/ 루트 임시 파일 삭제
+rm -f ${DATA_DIR}/*.md ${DATA_DIR}/*.txt ${DATA_DIR}/*.py
+
+# 7. reports/ 내 중복 파일 정리 (최종 보고서만 유지)
+rm -rf ${DATA_DIR}/reports/archive/
+find ${DATA_DIR}/reports/ -type f ! -name "environmental-scan-*.md" -delete
+```
+
+### 정리 후 data 폴더 구조
+
+```
+data/{YYYY}/{MM}/{DD}/
+├── structured/
+│   └── structured-signals-{date}.json  ← 유지 (아카이브)
+├── analysis/
+│   └── priority-ranked-{date}.json     ← 유지 (우선순위 기록)
+└── reports/
+    └── environmental-scan-{date}.md    ← 유지 (최종 보고서)
 ```
 
 **삭제 조건**: Gate 3 통과 (report.md 생성 확인) 후에만 실행
