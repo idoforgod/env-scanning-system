@@ -162,6 +162,16 @@ FLAGGED - entity_overlap (review recommended):
 - **Recurring topic**: Only include if genuinely new development
 - **Translation**: Check original language source first
 
+## Output Paths Convention
+
+| 파일 유형 | 경로 |
+|----------|------|
+| 필터링 결과 | `data/{date}/filtered/new-signals-{date}.json` |
+| 중복 로그 | `logs/duplicates-removed-{date}.log` |
+| 실행 요약 | `data/{date}/execution/dedup-summary.md` |
+
+**IMPORTANT**: 실행 요약/퀵레퍼런스 파일은 반드시 `data/{date}/execution/` 폴더에 저장. 루트 디렉토리에 생성 금지.
+
 ## Important
 
 - When in doubt, keep the signal (false negative worse than false positive)

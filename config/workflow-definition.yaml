@@ -1,0 +1,312 @@
+# Environmental Scanning Workflow Definition
+# Orchestrator가 참조하는 선언적 워크플로우 정의
+
+version: "2.0"
+name: "env-scanning-workflow"
+description: "환경스캐닝 자동화 워크플로우"
+
+# 모드 설정
+modes:
+  standard:
+    total_duration: 60  # 분
+    scanner_duration: 30
+    marathon_enabled: false
+
+  marathon:
+    total_duration: 240  # 4시간 (3시간 스캔 + 1시간 분석/보고)
+    scanner_duration: 180  # 3시간
+    marathon_enabled: true
+    stage2_strategies:
+      - citation_tracking
+      - domain_exploration
+      - keyword_expansion
+      - regional_expansion
+
+# Phase 정의
+phases:
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 1: Research (정보 수집)
+  # ═══════════════════════════════════════════════════════════════════
+  - id: phase1
+    name: "Research"
+    description: "정보 수집 및 원시 데이터 생성"
+
+    steps:
+      - id: step1_1
+        agent: archive-loader
+        description: "기존 신호 DB 로드"
+        parallel: false
+        input:
+          database: "signals/database.json"
+        output:
+          summary: "context/archive-summary-{date}.json"
+          dedup_index: "context/dedup-index-{date}.json"
+        token_estimate: 800
+
+      - id: step1_2
+        agent: multi-source-scanner
+        description: "다중 소스 스캐닝"
+        parallel: false
+        marathon_mode:
+          enabled: "{mode.marathon_enabled}"
+          stage1_output: "data/{date}/raw/stage1-signals.json"
+          stage2_output: "data/{date}/raw/exploration-signals.json"
+        input:
+          sources: "config/regular-sources.json"
+          previous: "context/dedup-index-{date}.json"
+        output:
+          signals: "data/{date}/raw/scanned-signals.json"
+        token_estimate: 2000
+
+      - id: step1_3
+        agent: dedup-filter
+        description: "중복 신호 필터링"
+        parallel: false
+        input:
+          signals: "data/{date}/raw/scanned-signals.json"
+          database: "signals/database.json"
+          index: "context/dedup-index-{date}.json"
+        output:
+          filtered: "data/{date}/filtered/filtered-signals.json"
+          new_index: "context/dedup-index-{date}.json"
+        token_estimate: 600
+
+    gate:
+      id: gate1
+      name: "Phase 1 Quality Gate"
+      checks:
+        - name: "filtered signals exist"
+          file: "data/{date}/filtered/filtered-signals.json"
+          condition: "exists"
+        - name: "signal count > 0"
+          file: "data/{date}/filtered/filtered-signals.json"
+          condition: "json_count > 0"
+          path: "$.signals"
+        - name: "dedup index valid"
+          file: "context/dedup-index-{date}.json"
+          condition: "exists"
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 2: Planning (분석 및 구조화)
+  # ═══════════════════════════════════════════════════════════════════
+  - id: phase2
+    name: "Planning"
+    description: "신호 분석, 분류, 우선순위 산정"
+
+    steps:
+      - id: step2_1
+        agent: signal-classifier
+        description: "STEEPS 분류 및 pSRT 계산"
+        parallel: false
+        input:
+          signals: "data/{date}/filtered/filtered-signals.json"
+        output:
+          structured: "data/{date}/structured/structured-signals.json"
+          psrt: "data/{date}/analysis/pSRT-scores.json"
+        token_estimate: 1200
+
+      - id: step2_2
+        agent: hallucination-detector
+        description: "할루시네이션 검증"
+        parallel: false
+        mandatory: true  # 필수 - 실패 시 워크플로우 중단
+        input:
+          psrt: "data/{date}/analysis/pSRT-scores.json"
+          structured: "data/{date}/structured/structured-signals.json"
+        output:
+          report: "data/{date}/analysis/hallucination-report.json"
+        token_estimate: 800
+
+      - id: step2_3_parallel
+        agents:
+          - impact-analyzer
+          - priority-ranker
+        description: "영향 분석 + 우선순위 산정 (병렬)"
+        parallel: true
+        input:
+          structured: "data/{date}/structured/structured-signals.json"
+          hallucination: "data/{date}/analysis/hallucination-report.json"
+        output:
+          impact: "data/{date}/analysis/impact-assessment.json"
+          priority: "data/{date}/analysis/priority-ranked.json"
+        token_estimate: 1500  # 병렬이므로 합산
+
+    gate:
+      id: gate2
+      name: "Phase 2 Quality Gate"
+      checks:
+        - name: "hallucination report exists"
+          file: "data/{date}/analysis/hallucination-report.json"
+          condition: "exists"
+          mandatory: true
+        - name: "pSRT scores exist"
+          file: "data/{date}/analysis/pSRT-scores.json"
+          condition: "exists"
+        - name: "priority ranking exists"
+          file: "data/{date}/analysis/priority-ranked.json"
+          condition: "exists"
+        - name: "signal count consistency"
+          condition: "signal_count_match"
+          files:
+            - "data/{date}/filtered/filtered-signals.json"
+            - "data/{date}/structured/structured-signals.json"
+          tolerance: 0.05  # 5% 허용
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 3: Implementation (보고서 생성)
+  # ═══════════════════════════════════════════════════════════════════
+  - id: phase3
+    name: "Implementation"
+    description: "DB 업데이트, 보고서 생성, 아카이빙"
+
+    steps:
+      - id: step3_1_parallel
+        agents:
+          - db-updater
+          - report-generator
+        description: "DB 업데이트 + 보고서 생성 (병렬)"
+        parallel: true
+        input:
+          structured: "data/{date}/structured/structured-signals.json"
+          analysis: "data/{date}/analysis/"
+        output:
+          database: "signals/database.json"
+          snapshot: "signals/snapshots/database-{date}.json"
+          report: "data/{date}/reports/environmental-scan-{date}.md"
+        token_estimate: 1200
+
+      - id: step3_2
+        agent: archive-notifier
+        description: "아카이빙 및 완료 처리"
+        parallel: false
+        input:
+          all_outputs: "data/{date}/"
+        output:
+          archive_report: "logs/archive-notifier-report-{date}.md"
+          status: "logs/workflow-status.json"
+        token_estimate: 500
+
+      - id: step3_3_optional
+        agents:
+          - source-evolver
+          - file-organizer
+        description: "소스 진화 + 파일 정리 (선택적)"
+        parallel: true
+        optional: true  # 실패해도 워크플로우 계속
+        input:
+          pending_sources: "config/evolution/pending-sources.json"
+          data_folder: "data/{date}/"
+        output:
+          evolution_log: "config/evolution/evolution-log.json"
+        token_estimate: 400
+
+    gate:
+      id: gate3
+      name: "Phase 3 Quality Gate"
+      checks:
+        - name: "report generated"
+          file: "data/{date}/reports/environmental-scan-{date}.md"
+          condition: "exists"
+        - name: "database updated"
+          file: "signals/database.json"
+          condition: "updated_today"
+        - name: "archive complete"
+          file: "logs/archive-notifier-report-{date}.md"
+          condition: "exists"
+
+# 에이전트 메타데이터
+agents:
+  archive-loader:
+    subagent_type: "archive-loader"
+    max_retries: 2
+    timeout: 300  # 5분
+    skippable: false
+
+  multi-source-scanner:
+    subagent_type: "multi-source-scanner"
+    max_retries: 1
+    timeout: 10800  # 3시간 (Marathon)
+    skippable: false
+
+  dedup-filter:
+    subagent_type: "dedup-filter"
+    max_retries: 2
+    timeout: 600  # 10분
+    skippable: false
+
+  signal-classifier:
+    subagent_type: "signal-classifier"
+    max_retries: 2
+    timeout: 900  # 15분
+    skippable: false
+
+  hallucination-detector:
+    subagent_type: "general-purpose"  # 전용 에이전트 없으므로
+    max_retries: 2
+    timeout: 600
+    skippable: false
+    mandatory: true
+
+  impact-analyzer:
+    subagent_type: "impact-analyzer"
+    max_retries: 2
+    timeout: 900
+    skippable: false
+
+  priority-ranker:
+    subagent_type: "priority-ranker"
+    max_retries: 2
+    timeout: 600
+    skippable: false
+
+  db-updater:
+    subagent_type: "db-updater"
+    max_retries: 3
+    timeout: 600
+    skippable: false
+
+  report-generator:
+    subagent_type: "report-generator"
+    max_retries: 2
+    timeout: 900
+    skippable: false
+
+  archive-notifier:
+    subagent_type: "archive-notifier"
+    max_retries: 2
+    timeout: 600
+    skippable: false
+
+  source-evolver:
+    subagent_type: "general-purpose"
+    max_retries: 1
+    timeout: 300
+    skippable: true  # 실패해도 계속
+
+  file-organizer:
+    subagent_type: "general-purpose"
+    max_retries: 1
+    timeout: 300
+    skippable: true  # 실패해도 계속
+
+# 토큰 예산
+token_budget:
+  total_limit: 100000
+  phase1_limit: 4000
+  phase2_limit: 4000
+  phase3_limit: 3000
+  overhead: 1000  # Orchestrator 자체 사용
+
+# 체크포인트 설정
+checkpoint:
+  enabled: true
+  interval: "after_each_step"
+  location: "logs/checkpoint-{date}.json"
+  auto_resume: true
+
+# 알림 설정
+notifications:
+  on_phase_complete: true
+  on_gate_failure: true
+  on_workflow_complete: true
+  on_error: true

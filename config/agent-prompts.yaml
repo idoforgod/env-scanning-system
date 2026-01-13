@@ -1,0 +1,246 @@
+# Agent Minimal Prompt Templates
+# Orchestrator가 사용하는 최소 컨텍스트 에이전트 호출 템플릿
+# 토큰 최적화: 각 템플릿 500-800 토큰 이하
+
+version: "1.0"
+
+templates:
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 1 에이전트
+  # ═══════════════════════════════════════════════════════════════════
+
+  archive-loader:
+    prompt: |
+      날짜: {date}
+      작업: 기존 신호 DB 로드 및 중복 검사 인덱스 생성
+
+      입력:
+      - signals/database.json
+
+      출력:
+      - context/archive-summary-{date}.json (기존 신호 수, 카테고리 분포)
+      - context/dedup-index-{date}.json (URL, 제목 인덱스)
+
+      완료 시 반환: {{ "status": "success", "signal_count": N }}
+    token_estimate: 150
+
+  multi-source-scanner-standard:
+    prompt: |
+      날짜: {date}
+      모드: standard
+      작업: 등록 소스 스캔
+
+      입력:
+      - config/regular-sources.json
+      - context/dedup-index-{date}.json
+
+      출력:
+      - data/{date}/raw/scanned-signals.json
+
+      완료 시 반환: {{ "status": "success", "signal_count": N }}
+    token_estimate: 200
+
+  multi-source-scanner-marathon:
+    prompt: |
+      날짜: {date}
+      모드: marathon (3시간)
+      작업: Stage 1 (등록 소스) + Stage 2 (탐험)
+
+      입력:
+      - config/regular-sources.json
+      - context/dedup-index-{date}.json
+
+      출력:
+      - data/{date}/raw/stage1-signals.json
+      - data/{date}/raw/exploration-signals.json
+      - data/{date}/raw/scanned-signals.json (병합)
+
+      Stage 2 전략: 인용추적, 도메인탐험, 키워드확장, 지역확장
+
+      완료 시 반환: {{ "status": "success", "stage1": N, "stage2": M, "total": N+M }}
+    token_estimate: 300
+
+  dedup-filter:
+    prompt: |
+      날짜: {date}
+      작업: 중복 신호 필터링
+
+      입력:
+      - data/{date}/raw/scanned-signals.json
+      - signals/database.json
+      - context/dedup-index-{date}.json
+
+      출력:
+      - data/{date}/filtered/filtered-signals.json
+
+      중복 기준: URL 일치 또는 제목 유사도 85%+
+
+      완료 시 반환: {{ "status": "success", "input": N, "output": M, "removed": N-M }}
+    token_estimate: 180
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 2 에이전트
+  # ═══════════════════════════════════════════════════════════════════
+
+  signal-classifier:
+    prompt: |
+      날짜: {date}
+      작업: STEEPS 분류 및 pSRT 계산
+
+      입력:
+      - data/{date}/filtered/filtered-signals.json
+
+      출력:
+      - data/{date}/structured/structured-signals.json
+      - data/{date}/analysis/pSRT-scores.json
+
+      STEEPS: Social, Technological, Economic, Environmental, Political, Spiritual
+      pSRT: Source(20%), Signal(35%), Analysis(25%), Report(20%)
+
+      완료 시 반환: {{ "status": "success", "count": N, "avg_psrt": X.X }}
+    token_estimate: 250
+
+  hallucination-detector:
+    prompt: |
+      날짜: {date}
+      작업: 할루시네이션 위험 검증 [필수]
+
+      입력:
+      - data/{date}/analysis/pSRT-scores.json
+      - data/{date}/structured/structured-signals.json
+
+      출력:
+      - data/{date}/analysis/hallucination-report.json
+
+      검증 기준:
+      - pSRT < 60: 검증 필요
+      - 출처 불명확: 플래그
+      - 정량 데이터 없음: 플래그
+
+      분류: HIGH (즉시 검증), MEDIUM (추가 확인), LOW (통과)
+
+      완료 시 반환: {{ "status": "success", "high": N, "medium": M, "low": L }}
+    token_estimate: 220
+
+  impact-analyzer:
+    prompt: |
+      날짜: {date}
+      작업: Futures Wheel 영향도 분석
+
+      입력:
+      - data/{date}/structured/structured-signals.json
+
+      출력:
+      - data/{date}/analysis/impact-assessment.json
+
+      분석 대상: significance 5인 신호 우선
+      방법: 1차 영향 → 2차 영향 → 교차 영향
+
+      완료 시 반환: {{ "status": "success", "analyzed": N, "patterns": M }}
+    token_estimate: 200
+
+  priority-ranker:
+    prompt: |
+      날짜: {date}
+      작업: 우선순위 산정
+
+      입력:
+      - data/{date}/structured/structured-signals.json
+      - data/{date}/analysis/impact-assessment.json
+
+      출력:
+      - data/{date}/analysis/priority-ranked.json
+
+      가중치: 영향도(40%), 발생가능성(30%), 긴급도(20%), 신규성(10%)
+
+      완료 시 반환: {{ "status": "success", "high": N, "medium": M, "low": L }}
+    token_estimate: 180
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 3 에이전트
+  # ═══════════════════════════════════════════════════════════════════
+
+  db-updater:
+    prompt: |
+      날짜: {date}
+      작업: 마스터 신호 DB 업데이트
+
+      입력:
+      - data/{date}/structured/structured-signals.json
+      - data/{date}/analysis/priority-ranked.json
+      - signals/database.json
+
+      출력:
+      - signals/database.json (업데이트)
+      - signals/snapshots/database-{date}.json (백업)
+
+      완료 시 반환: {{ "status": "success", "added": N, "before": M, "after": M+N }}
+    token_estimate: 180
+
+  report-generator:
+    prompt: |
+      날짜: {date}
+      작업: 일일 환경스캐닝 보고서 생성 (한국어)
+
+      입력:
+      - data/{date}/structured/structured-signals.json
+      - data/{date}/analysis/priority-ranked.json
+      - data/{date}/analysis/impact-assessment.json
+      - data/{date}/analysis/hallucination-report.json
+
+      출력:
+      - data/{date}/reports/environmental-scan-{date}.md
+
+      포함: Executive Summary, STEEPS별 분석, Top 10 신호, 위험 경보
+
+      완료 시 반환: {{ "status": "success", "file": "path/to/report.md" }}
+    token_estimate: 220
+
+  archive-notifier:
+    prompt: |
+      날짜: {date}
+      작업: 아카이빙 및 완료 처리
+
+      입력:
+      - data/{date}/ (전체 폴더)
+
+      출력:
+      - logs/archive-notifier-report-{date}.md
+      - logs/workflow-status.json
+
+      작업: 파일 검증, 상태 업데이트, 완료 로그 생성
+
+      완료 시 반환: {{ "status": "success", "archived": N, "total_signals": M }}
+    token_estimate: 150
+
+# 에이전트별 반환 형식 검증
+return_schemas:
+  success:
+    required: ["status"]
+    properties:
+      status: "success"
+
+  failure:
+    required: ["status", "error"]
+    properties:
+      status: "failure"
+      error: "string"
+
+# 총 예상 토큰 (Orchestrator 오버헤드 포함)
+total_estimates:
+  standard_mode:
+    agent_prompts: 1730
+    agent_responses: 2000
+    orchestrator_overhead: 500
+    total: 4230
+
+  marathon_mode:
+    agent_prompts: 1830
+    agent_responses: 2500
+    orchestrator_overhead: 600
+    total: 4930
+
+  comparison:
+    previous_method: 26000
+    orchestrator_method: 5000
+    savings_percent: 81

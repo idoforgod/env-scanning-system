@@ -77,6 +77,16 @@ Load existing scanning reports and signal database to build context for deduplic
 - If no archives found: Proceed with empty context, log info
 - Always output a valid context file even if empty
 
+## Output Paths Convention
+
+| 파일 유형 | 경로 |
+|----------|------|
+| 데이터 파일 | `context/previous-signals.json` |
+| 로그 파일 | `logs/archive-load-{date}.log` |
+| 실행 요약 | `data/{date}/execution/archive-loader-summary.md` |
+
+**IMPORTANT**: 실행 요약/퀵레퍼런스 파일은 반드시 `data/{date}/execution/` 폴더에 저장. 루트 디렉토리에 생성 금지.
+
 ## Log Output
 
 Write summary to `logs/archive-load-{date}.log`:

@@ -1,0 +1,46 @@
+{
+  "session_id": "orch-2026-0113-test",
+  "date": "2026-01-13",
+  "mode": "standard",
+  "status": "completed",
+  "start_time": "2026-01-13T10:00:00Z",
+  "end_time": "2026-01-13T10:25:00Z",
+  "current_phase": 3,
+  "current_step": "completed",
+  "phases": {
+    "phase1": {
+      "status": "completed",
+      "steps": [
+        {"id": "archive-loader", "status": "completed", "result": {"signal_count": 143}},
+        {"id": "dedup-filter", "status": "completed", "result": {"input": 70, "output": 68, "removed": 2}}
+      ]
+    },
+    "phase2": {
+      "status": "completed",
+      "steps": [
+        {"id": "signal-classifier", "status": "completed", "result": {"count": 68, "avg_psrt": 75.1}},
+        {"id": "hallucination-detector", "status": "completed", "result": {"high": 2, "medium": 19, "low": 47}},
+        {"id": "impact-analyzer", "status": "completed", "result": {"analyzed": 13, "patterns": 8}},
+        {"id": "priority-ranker", "status": "completed", "result": {"high": 10, "medium": 13, "low": 5}}
+      ]
+    },
+    "phase3": {
+      "status": "completed",
+      "steps": [
+        {"id": "db-updater", "status": "completed", "result": {"added": 68, "before": 115, "after": 183}},
+        {"id": "report-generator", "status": "completed", "result": {"file": "data/2026/01/13/reports/environmental-scan-2026-01-13.md"}},
+        {"id": "archive-notifier", "status": "completed", "result": {"archived": 2, "total_signals": 183}}
+      ]
+    }
+  },
+  "gates": {
+    "gate1": {"passed": true, "checks": ["filtered-signals exists", "signal_count > 0"]},
+    "gate2": {"passed": true, "checks": ["hallucination-report exists", "pSRT-scores exists", "priority-ranked exists"]},
+    "gate3": {"passed": true, "checks": ["report generated", "database updated", "archive complete"]}
+  },
+  "token_usage": {
+    "estimated_traditional": 26000,
+    "orchestrator_actual": 8500,
+    "savings_percent": 67
+  }
+}

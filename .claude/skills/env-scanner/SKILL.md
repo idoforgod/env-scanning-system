@@ -64,16 +64,28 @@ description: 미래 연구(Futures Research)를 위한 환경스캐닝 워크플
 
 ```
 data/
+├── {YYYY}/{MM}/{DD}/              # 날짜별 데이터 (권장 구조)
+│   ├── raw/                       # 원시 수집 데이터
+│   ├── filtered/                  # 필터링된 신호
+│   ├── structured/                # 구조화된 신호
+│   ├── analysis/                  # 분석 결과
+│   ├── reports/                   # 일일 보고서
+│   └── execution/                 # 실행 요약 (NEW)
 ├── signals/database.json          # 마스터 신호 DB
-├── reports/daily/                 # 일일 보고서
-├── reports/archive/{year}/{month}/ # 아카이브
-├── raw/daily-scan-{date}.json     # 원시 수집 데이터
-├── filtered/new-signals-{date}.json # 필터링된 신규 신호
-├── structured/classified-signals-{date}.json # 구조화된 신호
-├── analysis/                      # 영향도, 우선순위 분석
-├── context/previous-signals.json  # 중복 체크용 컨텍스트
+├── context/                       # 중복 체크용 컨텍스트
 └── logs/                          # 실행 로그
 ```
+
+### 실행 요약 파일 경로 규칙 (IMPORTANT)
+
+| 파일 유형 | 올바른 경로 | 잘못된 경로 |
+|----------|------------|------------|
+| Archive 로딩 요약 | `data/{date}/execution/archive-loader-summary.md` | ~~`/ARCHIVE-LOADER-*.md`~~ |
+| Dedup 필터 요약 | `data/{date}/execution/dedup-summary.md` | ~~`/DEDUP-*.md`~~ |
+| Stage 실행 요약 | `data/{date}/execution/stage-summary.md` | ~~`/STAGE*-*.md`~~ |
+| 퀵레퍼런스 | `data/{date}/execution/*-reference.md` | ~~`/*-REFERENCE*.md`~~ |
+
+**모든 실행 요약 파일은 `data/{date}/execution/` 폴더에 저장. 루트 디렉토리 생성 금지.**
 
 ## 슬래시 커맨드
 
