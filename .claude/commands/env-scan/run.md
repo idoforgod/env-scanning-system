@@ -1,59 +1,76 @@
 ---
-description: 일일 환경스캐닝 워크플로우 전체 실행 (기본값: Marathon Mode, Human Review 생략)
-allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Task
+description: 일일 환경스캐닝 워크플로우 전체 실행 (v3.2 - 워크플로우 순서 수정)
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Task, WebSearch, WebFetch
 argument-hint: [--fast | --with-review | --phase <1|2|3> | --resume]
 ---
 
-# 환경스캐닝 워크플로우 - Orchestrator Mode
+# 환경스캐닝 워크플로우 v3.2 - 완전 스캔
 
 오늘 날짜: !`date +%Y-%m-%d`
 옵션: $ARGUMENTS
 
 ---
 
-## Orchestrator 실행 프로토콜
+## 핵심 변경 (v3.2)
 
-**토큰 최적화 원칙**:
-1. 각 에이전트에 **최소 컨텍스트**만 전달 (config/agent-prompts.yaml 참조)
-2. 병렬 가능 작업은 **동시 실행** (Task 도구로 여러 에이전트 동시 호출)
-3. 모든 데이터는 **파일 기반 통신** (메시지에 경로만 포함)
-4. 결과는 **요약본**만 수신 (상세는 파일에서 읽기)
+**v3.1 결함**: Marathon Stage 2 신호가 signal-merger/dedup-filter를 거치지 않음
+**v3.2 해결**: 워크플로우 순서 수정 - 모든 데이터 수집 후 병합
+
+```
+v3.1 (결함):
+  스캐너 → merger → dedup → Marathon Stage 2 → Gate 1
+  ❌ Marathon 신호가 병합/중복제거 안됨
+
+v3.2 (수정):
+  스캐너 → Marathon Stage 2 → merger (6개 통합) → dedup → Gate 1
+  ✓ 모든 신호가 병합/중복제거됨
+```
 
 ---
 
-## 워크플로우 구조 (17단계 전체 유지)
+## 워크플로우 구조
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                        ORCHESTRATOR                                  │
+│                        ORCHESTRATOR v3.2                            │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  Phase 1: Research          Phase 2: Planning      Phase 3: Impl    │
-│  ┌─────────────────┐       ┌─────────────────┐    ┌──────────────┐  │
-│  │ 1.archive-loader│       │ 5.signal-classif│    │12.db-updater │  │
-│  │       ↓         │       │       ↓         │    │13.report-gen │  │
-│  │ 2.multi-source  │       │ 6.confidence-   │    │  [PARALLEL]  │  │
-│  │   -scanner      │  →    │   evaluator     │ →  │      ↓       │  │
-│  │       ↓         │       │       ↓         │    │14.archive-   │  │
-│  │ 3.dedup-filter  │       │ 7.hallucination │    │   notifier   │  │
-│  │       ↓         │       │       ↓         │    │      ↓       │  │
-│  │ 4.[Human Review]│       │ 8.pipeline-     │    │15.source-    │  │
-│  └─────────────────┘       │   validator     │    │   evolver    │  │
-│         ↓                  │       ↓         │    │16.file-      │  │
-│     [Gate 1]               │ 9.impact-analyz │    │   organizer  │  │
-│                            │10.priority-rank │    │  [PARALLEL]  │  │
-│                            │  [PARALLEL]     │    │      ↓       │  │
-│                            │       ↓         │    │17.[Approval] │  │
-│                            │11.[Human Review]│    └──────────────┘  │
-│                            └─────────────────┘         ↓            │
-│                                    ↓                [Gate 3]        │
-│                                [Gate 2]                             │
+│  Phase 1: Research (데이터 수집 → 병합 → 중복제거)                   │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │ 1. archive-loader                                            │    │
+│  │         ↓                                                    │    │
+│  │ 2. 4개 스캐너 병렬 (강제!)                                    │    │
+│  │    ┌────────────┬────────────┬────────────┬────────────┐     │    │
+│  │    │ naver-news │ global-news│ google-news│ STEEPS     │     │    │
+│  │    │  crawler   │  crawler   │  crawler   │ scanner    │     │    │
+│  │    └─────┬──────┴─────┬──────┴─────┬──────┴─────┬──────┘     │    │
+│  │          └────────────┴────────────┴────────────┘            │    │
+│  │                           ↓                                  │    │
+│  │ 3. Marathon Stage 2 (강제!) - 스캐너 완료 후 실행            │    │
+│  │    ┌────────────────────────────────────────────────────┐    │    │
+│  │    │ 3-1. gap-analyzer (선행)                            │    │    │
+│  │    │         ↓                                           │    │    │
+│  │    │ 3-2. frontier-explorer + citation-chaser (병렬)     │    │    │
+│  │    │         ↓                                           │    │    │
+│  │    │ 3-3. rapid-validator (후행)                         │    │    │
+│  │    └────────────────────────────────────────────────────┘    │    │
+│  │                           ↓                                  │    │
+│  │ 4. signal-merger (6개 소스 통합!)                            │    │
+│  │    입력: naver + global + google + steeps + frontier + citation │
+│  │         ↓                                                    │    │
+│  │ 5. dedup-filter (모든 신호 중복 제거)                        │    │
+│  └─────────────────────────────────────────────────────────────┘    │
+│         ↓                                                            │
+│     [Gate 1 - 8개 파일 필수!]                                        │
+│                                                                      │
+│  Phase 2: Planning (기존과 동일)                                     │
+│  Phase 3: Implementation (기존과 동일)                               │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 실행 단계 (Orchestrator가 자동 수행)
+## 실행 단계 (Orchestrator 강제 수행)
 
 ### Phase 1: Research (정보 수집)
 
@@ -65,135 +82,196 @@ Task @archive-loader:
   출력: context/archive-summary-{date}.json, context/dedup-index-{date}.json
 ```
 
-**Step 2: Multi-Source Scanner**
+---
+
+## ⚠️ Step 2: 4개 스캐너 병렬 호출 (강제!) ⚠️
+
+**중요**: 아래 4개 Task를 **반드시 모두** 병렬 실행해야 합니다.
+
 ```
-Task @multi-source-scanner:
-  날짜: {date}
-  모드: {marathon | standard}
-  입력: config/regular-sources.json
-  출력: data/{date}/raw/scanned-signals.json
+# ═══════════════════════════════════════════════════════════════
+# Task 1: 네이버 뉴스 크롤러 (필수)
+# ═══════════════════════════════════════════════════════════════
+Task @naver-news-crawler:
+  subagent_type: naver-news-crawler
+  prompt: |
+    날짜: {date}
+    STEEPS 키워드로 네이버 뉴스 검색
+    출력: data/{date}/raw/naver-scan-{date}.json
+    최소 5개 이상 신호 수집
+
+# ═══════════════════════════════════════════════════════════════
+# Task 2: 글로벌 뉴스 크롤러 (필수)
+# ═══════════════════════════════════════════════════════════════
+Task @global-news-crawler:
+  subagent_type: global-news-crawler
+  prompt: |
+    날짜: {date}
+    6개국 주요 신문 크롤링 (한국, 미국, 영국, 중국, 일본, 중동)
+    출력: data/{date}/raw/global-news-{date}.json
+    최소 10개 이상 신호 수집
+
+# ═══════════════════════════════════════════════════════════════
+# Task 3: 구글 뉴스 크롤러 (필수)
+# ═══════════════════════════════════════════════════════════════
+Task @google-news-crawler:
+  subagent_type: google-news-crawler
+  prompt: |
+    날짜: {date}
+    STEEPS 키워드로 구글 뉴스 검색
+    출력: data/{date}/raw/google-news-{date}.json
+    최소 5개 이상 신호 수집
+
+# ═══════════════════════════════════════════════════════════════
+# Task 4: STEEPS WebSearch 스캐너 (필수)
+# ═══════════════════════════════════════════════════════════════
+Task @steeps-scanner:
+  subagent_type: general-purpose
+  prompt: |
+    날짜: {date}
+    WebSearch로 STEEPS 카테고리별 미래 변화 신호 수집
+    출력: data/{date}/raw/steeps-scan-{date}.json
+    총 15개 이상 신호 수집
 ```
 
-**Step 3: Dedup Filter**
+**검증**: 4개 모두 완료될 때까지 대기.
+
+---
+
+## ⚠️ Step 3: Marathon Stage 2 (강제!) ⚠️
+
+**중요**: 4개 스캐너 완료 후 **반드시** 실행해야 합니다.
+
+```
+# ═══════════════════════════════════════════════════════════════
+# Step 3-1: Gap Analyzer (선행)
+# ═══════════════════════════════════════════════════════════════
+Task @gap-analyzer:
+  subagent_type: gap-analyzer
+  prompt: |
+    날짜: {date}
+    4개 스캐너 결과 분석하여 STEEPS/지역/언어 갭 식별
+    입력: data/{date}/raw/ 폴더의 4개 스캔 파일
+    출력: data/{date}/analysis/gap-analysis-{date}.json
+
+# ═══════════════════════════════════════════════════════════════
+# Step 3-2: Frontier Explorer + Citation Chaser (병렬)
+# ═══════════════════════════════════════════════════════════════
+Task @frontier-explorer (병렬):
+  subagent_type: frontier-explorer
+  prompt: |
+    날짜: {date}
+    Gap 분석 결과 기반 미개척 영역 탐험
+    출력: data/{date}/raw/frontier-signals-{date}.json
+
+Task @citation-chaser (병렬):
+  subagent_type: citation-chaser
+  prompt: |
+    날짜: {date}
+    기존 신호의 인용/참고문헌 역추적
+    출력: data/{date}/raw/citation-signals-{date}.json
+
+# ═══════════════════════════════════════════════════════════════
+# Step 3-3: Rapid Validator (후행)
+# ═══════════════════════════════════════════════════════════════
+Task @rapid-validator:
+  subagent_type: rapid-validator
+  prompt: |
+    날짜: {date}
+    발견된 소스 검증, 70점+ 자동 승격
+    출력: data/{date}/analysis/validated-sources-{date}.json
+```
+
+---
+
+## Step 4: Signal Merger (6개 소스 통합!)
+
+**핵심**: 이제 signal-merger는 **6개 소스**를 통합합니다.
+
+```
+Task @signal-merger:
+  날짜: {date}
+  입력 (6개 필수):
+    # 4개 스캐너 출력
+    - data/{date}/raw/naver-scan-{date}.json
+    - data/{date}/raw/global-news-{date}.json
+    - data/{date}/raw/google-news-{date}.json
+    - data/{date}/raw/steeps-scan-{date}.json
+    # Marathon Stage 2 출력
+    - data/{date}/raw/frontier-signals-{date}.json
+    - data/{date}/raw/citation-signals-{date}.json
+  출력: data/{date}/raw/scanned-signals-{date}.json
+```
+
+---
+
+## Step 5: Dedup Filter
+
 ```
 Task @dedup-filter:
   날짜: {date}
-  입력: data/{date}/raw/scanned-signals.json, context/dedup-index-{date}.json
-  출력: data/{date}/filtered/filtered-signals.json
+  입력: data/{date}/raw/scanned-signals-{date}.json, context/dedup-index-{date}.json
+  출력: data/{date}/filtered/filtered-signals-{date}.json
 ```
-
-**Step 4: [Human Review]** (기본 생략, --with-review 시 포함)
-```
-/env-scan:review-filter 로 결과 검토
-```
-
-**Gate 1 검증**: filtered-signals.json 존재 + 신호수 > 0
 
 ---
 
-### Phase 2: Planning (분석 및 구조화)
+## ⚠️ Gate 1 검증 (강화!) ⚠️
 
-**Step 5: Signal Classifier**
+**필수 파일 8개** - 하나라도 없으면 Phase 2 진입 불가:
+
+| 검증 항목 | 파일 | 실패 시 |
+|-----------|------|---------|
+| **4개 스캐너 출력** | | |
+| 네이버 크롤러 | `naver-scan-{date}.json` | 워크플로우 중단 |
+| 글로벌 뉴스 | `global-news-{date}.json` | 워크플로우 중단 |
+| 구글 뉴스 | `google-news-{date}.json` | 워크플로우 중단 |
+| STEEPS 스캔 | `steeps-scan-{date}.json` | 워크플로우 중단 |
+| **Marathon Stage 2 출력** | | |
+| Gap 분석 | `gap-analysis-{date}.json` | 워크플로우 중단 |
+| Frontier 탐험 | `frontier-signals-{date}.json` | 워크플로우 중단 |
+| Citation 추적 | `citation-signals-{date}.json` | 워크플로우 중단 |
+| 소스 검증 | `validated-sources-{date}.json` | 워크플로우 중단 |
+| **병합 결과** | | |
+| 병합 파일 | `scanned-signals-{date}.json` | 워크플로우 중단 |
+| 필터링 파일 | `filtered-signals-{date}.json` | 워크플로우 중단 |
+
+---
+
+### Phase 2: Planning (기존과 동일)
+
+**Step 6: Signal Classifier**
 ```
 Task @signal-classifier:
-  날짜: {date}
-  입력: data/{date}/filtered/filtered-signals.json
-  출력: data/{date}/structured/structured-signals.json, data/{date}/analysis/pSRT-scores.json
+  입력: data/{date}/filtered/filtered-signals-{date}.json
+  출력: data/{date}/structured/structured-signals-{date}.json, data/{date}/analysis/pSRT-scores-{date}.json
 ```
 
-**Step 6: Confidence Evaluator**
-```
-Task @confidence-evaluator:
-  날짜: {date}
-  입력: data/{date}/analysis/pSRT-scores.json
-  출력: data/{date}/analysis/confidence-evaluation.json
-  작업: pSRT 심층 평가 및 할루시네이션 플래그 생성
-```
+**Step 7: Confidence Evaluator**
+**Step 8: Hallucination Detector [필수]**
+**Step 9: Pipeline Validator**
+**Step 10-11: Impact + Priority [병렬]**
 
-**Step 7: Hallucination Detector [필수]**
-```
-Task @hallucination-detector:
-  날짜: {date}
-  입력: data/{date}/analysis/pSRT-scores.json, data/{date}/analysis/confidence-evaluation.json
-  출력: data/{date}/analysis/hallucination-report.json
-  ⚠️ 이 단계를 건너뛰면 워크플로우 실패로 처리
-```
-
-**Step 8: Pipeline Validator**
-```
-Task @pipeline-validator:
-  날짜: {date}
-  입력: data/{date}/structured/structured-signals.json, data/{date}/analysis/pSRT-scores.json
-  출력: data/{date}/analysis/validation-report.json
-  작업: pSRT 신호 수와 structured 신호 수 일치 확인
-```
-
-**Step 9-10: Impact + Priority [병렬]**
-```
-Task @impact-analyzer + @priority-ranker (PARALLEL):
-  날짜: {date}
-  입력: data/{date}/structured/structured-signals.json
-  출력: data/{date}/analysis/impact-assessment.json, data/{date}/analysis/priority-ranked.json
-```
-
-**Step 11: [Human Review]** (기본 생략, --with-review 시 포함)
-```
-/env-scan:review-analysis 로 결과 검토
-```
-
-**Gate 2 검증**: hallucination-report.json + validation-report.json 존재 (필수)
+**Gate 2 검증**: hallucination-report + validation-report 존재 (필수)
 
 ---
 
-### Phase 3: Implementation (보고서 생성)
+### Phase 3: Implementation (기존과 동일)
 
 **Step 12-13: DB + Report [병렬]**
-```
-Task @db-updater + @report-generator (PARALLEL):
-  날짜: {date}
-  입력: data/{date}/structured/, data/{date}/analysis/
-  출력: signals/database.json, data/{date}/reports/environmental-scan-{date}.md
-```
-
 **Step 14: Archive Notifier**
-```
-Task @archive-notifier:
-  날짜: {date}
-  입력: data/{date}/ (전체 폴더)
-  출력: logs/archive-notifier-report-{date}.md
-```
-
 **Step 15-16: Source Evolver + File Organizer [병렬, 선택적]**
-```
-Task @source-evolver + @file-organizer (PARALLEL, optional):
-  날짜: {date}
-  입력: config/evolution/pending-sources.json, data/{date}/
-  출력: config/evolution/evolution-log.json
-  ※ Marathon 모드 후 실행, 실패해도 워크플로우 계속
-```
-
-**Step 17: [Human Approval]** (기본 생략, --with-review 시 포함)
-```
-/env-scan:approve 또는 /env-scan:revision 으로 최종 승인
-```
 
 **Gate 3 검증**: report.md 생성 완료
 
 ---
 
-## Marathon Mode (기본값)
+## 금지 사항
 
-**Marathon = multi-source-scanner 심층 확장 스캔**
-
-```
-Stage 1: 등록된 소스 스캔
-       ↓
-Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)
-  ├── @gap-analyzer: STEEPS/지역/언어 갭 분석
-  ├── @frontier-explorer: 미개척 영역 탐험 (55%)
-  ├── @citation-chaser: 인용 체인 역추적 (35%)
-  └── @rapid-validator: 발견 소스 실시간 검증 (10%)
-```
+1. **multi-source-scanner 위임 금지**: 스캐너를 직접 호출
+2. **스캐너/Marathon 생략 금지**: 모두 실행 필수
+3. **순서 변경 금지**: 스캐너 → Marathon → merger → dedup 순서 준수
+4. **출력 없이 진행 금지**: Gate 1에서 8개 파일 확인
 
 ---
 
@@ -201,73 +279,35 @@ Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)
 
 ```
 data/{YYYY}/{MM}/{DD}/
-├── raw/scanned-signals.json
-├── filtered/filtered-signals.json
-├── structured/structured-signals.json
+├── raw/
+│   ├── naver-scan-{date}.json        # 스캐너 1
+│   ├── global-news-{date}.json       # 스캐너 2
+│   ├── google-news-{date}.json       # 스캐너 3
+│   ├── steeps-scan-{date}.json       # 스캐너 4
+│   ├── frontier-signals-{date}.json  # Marathon: Frontier
+│   ├── citation-signals-{date}.json  # Marathon: Citation
+│   └── scanned-signals-{date}.json   # 6개 통합 결과
+├── filtered/
+│   └── filtered-signals-{date}.json  # 중복 제거 결과
 ├── analysis/
-│   ├── pSRT-scores.json
-│   ├── confidence-evaluation.json
-│   ├── hallucination-report.json
-│   ├── validation-report.json
-│   ├── impact-assessment.json
-│   └── priority-ranked.json
-└── reports/environmental-scan-{date}.md
+│   ├── gap-analysis-{date}.json      # Marathon: Gap 분석
+│   └── validated-sources-{date}.json # Marathon: 검증 결과
+└── reports/
 ```
-
----
-
-## 품질 게이트
-
-| Gate | 검증 항목 | 실패 시 |
-|------|----------|---------|
-| Gate 1 | filtered-signals.json 존재, 신호수 > 0 | Phase 2 진입 불가 |
-| Gate 2 | hallucination-report.json + validation-report.json 존재 | Phase 3 진입 불가 |
-| Gate 3 | report.md 생성 완료 | 경고 표시 |
-
----
-
-## 토큰 예산
-
-| 구분 | 예상 토큰 |
-|------|----------|
-| Phase 1 에이전트 (4단계) | ~2,500 |
-| Phase 2 에이전트 (7단계) | ~4,000 |
-| Phase 3 에이전트 (6단계) | ~2,500 |
-| Orchestrator 오버헤드 | ~500 |
-| **총합** | **~9,500** |
-
-기존 방식 대비 **63% 절감** (26,000 → 9,500)
-
----
-
-## 체크포인트
-
-각 단계 완료 시 자동 저장:
-- `logs/checkpoint-{date}.json`
-- `logs/orchestrator-state-{date}.json`
-
-Context low 발생 시:
-1. 즉시 체크포인트 저장
-2. `/env-scan:resume`로 재개
 
 ---
 
 ## 실행 예시
 
 ```bash
-# 기본 실행 (Marathon Mode - 심층 스캔, Human Review 생략)
+# 기본 실행 (6개 소스 통합 스캔)
 /env-scan:run
 
-# Human Review 포함 (각 Phase 후 검토 단계 추가)
+# Human Review 포함
 /env-scan:run --with-review
 
-# Fast Mode (핵심 소스만 빠르게 스캔)
+# Fast Mode (STEEPS 스캔만)
 /env-scan:run --fast
-
-# 특정 Phase만
-/env-scan:run --phase 1
-/env-scan:run --phase 2
-/env-scan:run --phase 3
 
 # 체크포인트에서 재개
 /env-scan:run --resume

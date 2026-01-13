@@ -10,36 +10,98 @@
 
 | 명령어 | 설명 |
 |--------|------|
-| `/env-scan:run` | **기본값: Marathon Mode (심층 스캔, 자동 실행)** |
-| `/env-scan:run --fast` | Fast Mode (핵심 소스만 빠르게 스캔) |
+| `/env-scan:run` | **기본값: Marathon Mode (심층 스캔, 크롤러 강제 호출)** |
+| `/env-scan:run --fast` | Fast Mode (구글 뉴스만 빠르게 스캔) |
 | `/env-scan:run --with-review` | Human Review 포함 (각 Phase 후 검토) |
 | `/env-scan:resume` | 체크포인트에서 재개 |
 | `/env-scan:status` | 현재 상태 확인 |
 
 ---
 
-## Orchestrator 패턴
+## v3.2 주요 변경 (2026-01-13)
 
-### 핵심 원칙 (토큰 최적화)
+### 워크플로우 순서 수정
 
-1. **최소 컨텍스트**: 각 에이전트에 필요한 최소 정보만 전달
-2. **파일 기반 통신**: 데이터는 파일로, 메시지는 경로만
-3. **병렬 실행**: 독립 작업은 동시 수행
-4. **결과 압축**: 상세는 파일에, 메시지는 요약만
-
-### 토큰 절감 효과
+**v3.1 결함**: Marathon Stage 2 신호가 signal-merger/dedup-filter를 거치지 않음
+**v3.2 해결**: **모든 데이터 수집 후 병합** - 워크플로우 순서 수정
 
 ```
-기존 방식: ~26,000 토큰/실행
-Orchestrator: ~8,500 토큰/실행
-절감률: 69%
+v2.x (문제):
+  multi-source-scanner → WebSearch만 (크롤러 무시)
+
+v3.0 (불완전):
+  3개 크롤러만 → 기존 WebSearch 스캐닝 누락
+
+v3.1 (결함):
+  스캐너 → merger → dedup → Marathon Stage 2 → Gate 1
+  ❌ Marathon 신호가 병합/중복제거 안됨
+
+v3.2 (수정):
+  스캐너 → Marathon Stage 2 → merger (6개 통합) → dedup → Gate 1
+  ✓ 모든 신호가 병합/중복제거됨
+```
+
+### Gate 1 강화
+
+**필수 파일 8개** (하나라도 없으면 Phase 2 진입 불가):
+
+**4개 스캐너 출력:**
+- `naver-scan-{date}.json` - 네이버 뉴스 크롤러
+- `global-news-{date}.json` - 글로벌 뉴스 크롤러
+- `google-news-{date}.json` - 구글 뉴스 크롤러
+- `steeps-scan-{date}.json` - STEEPS WebSearch 스캐너
+
+**Marathon Stage 2 출력:**
+- `gap-analysis-{date}.json` - Gap 분석
+- `frontier-signals-{date}.json` - Frontier 탐험
+- `citation-signals-{date}.json` - Citation 추적
+- `validated-sources-{date}.json` - 소스 검증
+
+---
+
+## Orchestrator 패턴 v3.2
+
+### 핵심 원칙
+
+1. **6개 소스 통합 병합**: 4개 스캐너 + 2개 Marathon 출력 통합
+2. **파일 기반 게이트**: 8개 출력 파일 필수 검증
+3. **병렬 실행**: 스캐너 4개 동시, Marathon 탐험 2개 동시
+4. **올바른 순서**: 데이터 수집 → 병합 → 중복제거
+
+### Phase 1 워크플로우 (v3.2 - 수정된 순서)
+
+```
+Step 1: archive-loader
+        ↓
+Step 2: 4개 스캐너 병렬 (강제!)
+        ┌────────────┬────────────┬────────────┬────────────┐
+        │ naver-news │ global-news│ google-news│ STEEPS     │
+        │  crawler   │  crawler   │  crawler   │ scanner    │
+        └─────┬──────┴─────┬──────┴─────┬──────┴─────┬──────┘
+              └────────────┴────────────┴────────────┘
+                           ↓
+Step 3: Marathon Stage 2 (강제!) - 스캐너 완료 후 실행
+        ┌────────────────────────────────────────────┐
+        │ 3-1: gap-analyzer (선행)                   │
+        │         ↓                                  │
+        │ 3-2: frontier-explorer + citation-chaser  │
+        │         ↓                                  │
+        │ 3-3: rapid-validator (후행)               │
+        └────────────────────────────────────────────┘
+                           ↓
+Step 4: signal-merger (6개 소스 통합!)
+        입력: naver + global + google + steeps + frontier + citation
+        ↓
+Step 5: dedup-filter (모든 신호 중복 제거)
+        ↓
+     [Gate 1 - 8개 파일 필수!]
 ```
 
 ### 설정 파일
 
-- `config/workflow-definition.yaml`: 워크플로우 정의
-- `config/agent-prompts.yaml`: 에이전트 호출 템플릿
-- `logs/orchestrator-state-{date}.json`: 실행 상태
+- `config/workflow-definition-v3.yaml`: v3.2 워크플로우 정의
+- `.claude/commands/env-scan/run.md`: v3.2 실행 프로토콜
+- `.claude/agents/signal-merger.md`: 6개 소스 결과 병합 에이전트
 
 ---
 
@@ -57,9 +119,11 @@ Orchestrator: ~8,500 토큰/실행
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Stage 1: 기존 소스 스캔 (가변)                          │
-│  • DB에 등록된 소스 스캔                                 │
-│  • 네이버/글로벌/구글 크롤러 병렬 실행                   │
+│  Stage 1: 크롤러 강제 호출                               │
+│  • naver-news-crawler (한국 뉴스)                       │
+│  • global-news-crawler (6개국 신문)                     │
+│  • google-news-crawler (글로벌 뉴스)                    │
+│  • signal-merger (결과 병합)                            │
 ├─────────────────────────────────────────────────────────┤
 │  Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)      │
 │  • Step 2-1: @gap-analyzer (갭 분석)                    │
@@ -76,6 +140,15 @@ Orchestrator: ~8,500 토큰/실행
 | `@frontier-explorer` | 미개척 지역/비영어권/신규 플랫폼 탐험 | 55% |
 | `@citation-chaser` | 인용 체인 역추적, 원천 소스 발굴 | 35% |
 | `@rapid-validator` | 발견 소스 실시간 검증 (70점+ 자동 승격) | 10% |
+
+---
+
+## 금지 사항 (v3.2)
+
+1. **multi-source-scanner 위임 금지**: 스캐너를 직접 호출해야 함
+2. **스캐너/Marathon 생략 금지**: 6개 소스 모두 실행 필수
+3. **출력 없이 진행 금지**: Gate 1에서 8개 파일 확인
+4. **순서 변경 금지**: 스캐너 → Marathon → merger → dedup 순서 준수
 
 ---
 
@@ -102,54 +175,54 @@ Orchestrator: ~8,500 토큰/실행
 
 ---
 
-## 데이터 구조 (v2.0)
+## 데이터 구조 (v3.2)
 
 ```
 프로젝트/
 ├── .claude/                    # Claude Code 설정
 │   ├── agents/                 # 에이전트 정의
+│   │   ├── naver-news-crawler.md
+│   │   ├── global-news-crawler.md
+│   │   ├── google-news-crawler.md
+│   │   ├── gap-analyzer.md     # Marathon: 갭 분석
+│   │   ├── frontier-explorer.md # Marathon: 미개척 탐험
+│   │   ├── citation-chaser.md  # Marathon: 인용 추적
+│   │   ├── rapid-validator.md  # Marathon: 실시간 검증
+│   │   └── signal-merger.md    # 6개 소스 결과 병합
 │   ├── commands/               # 명령어 정의
 │   └── skills/                 # 스킬 정의
 │
-├── src/                        # 소스 코드
-│   └── scripts/
-│       ├── crawlers/           # 크롤러 (naver, global, google)
-│       ├── processors/         # 처리 모듈 (dedup, psrt 등)
-│       ├── utils/              # 유틸리티
-│       └── runners/            # 실행 스크립트
-│
 ├── config/                     # 설정 파일
-│   ├── automation.yaml         # 자동화 설정
-│   ├── sources.yaml            # 소스 목록
-│   ├── domains.yaml            # 스캐닝 도메인
-│   ├── thresholds.yaml         # 임계값 설정
+│   ├── workflow-definition-v3.yaml  # v3.2 워크플로우
 │   ├── regular-sources.json    # 정규 소스 목록
 │   └── evolution/              # 진화 관련 설정
 │
 ├── data/                       # 결과 데이터 (날짜별)
-│   ├── YYYY/MM/DD/
-│   │   ├── raw/                # 원시 스캔 데이터
-│   │   ├── filtered/           # 필터링된 신호
-│   │   ├── structured/         # 구조화된 신호
-│   │   ├── analysis/           # 분석 결과
-│   │   └── reports/            # 일일 보고서
-│   └── weekly/                 # 주간 집계
-│       └── YYYY/W{WW}/
+│   └── YYYY/MM/DD/
+│       ├── raw/
+│       │   ├── naver-scan-{date}.json        # 스캐너 1 (필수)
+│       │   ├── global-news-{date}.json       # 스캐너 2 (필수)
+│       │   ├── google-news-{date}.json       # 스캐너 3 (필수)
+│       │   ├── steeps-scan-{date}.json       # 스캐너 4 (필수)
+│       │   ├── frontier-signals-{date}.json  # Marathon (필수)
+│       │   ├── citation-signals-{date}.json  # Marathon (필수)
+│       │   └── scanned-signals-{date}.json   # 6개 통합 결과
+│       ├── filtered/
+│       │   └── filtered-signals-{date}.json  # 중복 제거 결과
+│       ├── analysis/
+│       │   ├── gap-analysis-{date}.json      # Marathon: Gap 분석
+│       │   └── validated-sources-{date}.json # Marathon: 검증 결과
+│       ├── structured/
+│       └── reports/
 │
-├── signals/                    # 신호 DB (별도 관리)
-│   ├── database.json           # 마스터 DB
-│   ├── snapshots/              # 스냅샷
-│   └── backups/                # 백업
+├── signals/                    # 신호 DB
+│   ├── database.json
+│   └── snapshots/
 │
 ├── context/                    # 컨텍스트 파일
-├── logs/YYYY/MM/               # 로그 (날짜별)
-├── docs/                       # 문서
-│   ├── design/                 # 설계 문서
-│   └── archive/                # 보관 문서
-│
-├── cache/                      # 캐시
+├── logs/                       # 로그
 ├── CLAUDE.md                   # 프로젝트 지침
-└── README.md                   # 프로젝트 설명
+└── README.md
 ```
 
 ## STEEPS 분류 (6개 카테고리)
