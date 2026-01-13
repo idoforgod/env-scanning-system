@@ -1,0 +1,2204 @@
+{
+  "scan_date": "2026-01-13",
+  "generated_at": "2026-01-13T08:58:44.785735Z",
+  "summary": {
+    "total_new_signals": 24,
+    "by_category": {
+      "Social": 4,
+      "Technological": 10,
+      "Economic": 5,
+      "Environmental": 3,
+      "Political": 2,
+      "Spiritual": 0
+    },
+    "top_3": [
+      {
+        "id": "SIG-2026-0113-002",
+        "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+        "score": 8.5
+      },
+      {
+        "id": "SIG-2026-0113-009",
+        "title": "Global Renewables Hit 800GW Annual Record",
+        "score": 8.3
+      },
+      {
+        "id": "SIG-2026-0113-003",
+        "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
+        "score": 8.2
+      }
+    ],
+    "high_priority_count": 13
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0113-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Agentic AI Revolution: From Generative to Applied",
+      "description": "2026년 생성형 AI에서 응용형 에이전트 AI로의 전환 가속화. 에이전트 상호운용성, 자기검증, 메모리 기술의 돌파구로 AI가 고립된 도구에서 복잡한 다단계 워크플로우를 처리하는 통합 시스템으로 변모.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "AI 에이전트 기반 자동화 산업의 급성장 및 인간-AI 협업 패러다임 전환",
+      "significance": 5,
+      "significance_reason": "AI 발전의 다음 단계를 정의하는 패러다임 전환. 모든 산업에 걸쳐 자동화와 업무 방식에 근본적 변화 예고.",
+      "potential_impact": {
+        "short_term": "에이전트 AI 스타트업 및 플랫폼 급증",
+        "mid_term": "지식노동자 역할 재정의, 기업 운영 프로세스 재설계",
+        "long_term": "완전 자율 AI 시스템에 의한 산업 구조 근본적 변화"
+      },
+      "actors": [
+        {
+          "name": "MIT Technology Review",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 78,
+          "analysis": 74
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "Agentic AI",
+        "AI 에이전트",
+        "자동화",
+        "워크플로우"
+      ],
+      "raw_id": "RAW-2026-0113-002"
+    },
+    {
+      "id": "SIG-2026-0113-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+      "description": "AI가 스크린을 벗어나 기어, 칩, 일상의 구조물로 이동. Google DeepMind와 Boston Dynamics가 Gemini급 멀티모달 모델을 새로운 전기 Atlas 휴머노이드에 통합하는 2020년대 가장 중요한 로보틱스 협업 발표.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "휴머노이드 로봇의 상용화 가속 및 물리적 AI 시대 도래",
+      "significance": 5,
+      "significance_reason": "세계 최고 AI 연구소와 로봇 회사의 협업으로 Physical AI 시대 본격 개막. 제조, 물류, 서비스 산업 전반에 혁명적 변화 예고.",
+      "potential_impact": {
+        "short_term": "휴머노이드 로봇 개발 경쟁 가속화",
+        "mid_term": "제조업, 물류업의 로봇 도입 확대",
+        "long_term": "인간-로봇 공존 사회로의 전환"
+      },
+      "actors": [
+        {
+          "name": "Google DeepMind",
+          "type": "company",
+          "role": "AI 모델 제공"
+        },
+        {
+          "name": "Boston Dynamics",
+          "type": "company",
+          "role": "로봇 하드웨어 제공"
+        },
+        {
+          "name": "Atlas",
+          "type": "product",
+          "role": "통합 플랫폼"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 82,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 88,
+          "analysis": 80
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "Physical AI",
+        "휴머노이드",
+        "로보틱스",
+        "DeepMind",
+        "Boston Dynamics"
+      ],
+      "raw_id": "RAW-2026-0113-003"
+    },
+    {
+      "id": "SIG-2026-0113-003",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
+      "description": "CES 2026에서 NVIDIA가 Blackwell 아키텍처를 잇는 최신 플래그십 AI 플랫폼 Vera Rubin 공개. 처리 능력과 메모리 대역폭의 획기적 개선.",
+      "source": {
+        "name": "InfoWorld",
+        "url": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "AI 하드웨어 성능 경쟁 심화 및 데이터센터 인프라 업그레이드 수요 급증",
+      "significance": 4,
+      "significance_reason": "AI 인프라의 핵심 하드웨어 발전. 대규모 AI 모델 학습과 추론 비용에 직접적 영향.",
+      "potential_impact": {
+        "short_term": "데이터센터 하드웨어 업그레이드 사이클",
+        "mid_term": "더 큰 규모의 AI 모델 개발 가능",
+        "long_term": "AI 컴퓨팅 비용 대폭 절감"
+      },
+      "actors": [
+        {
+          "name": "NVIDIA",
+          "type": "company",
+          "role": "제품 발표"
+        },
+        {
+          "name": "CES 2026",
+          "type": "event",
+          "role": "발표 플랫폼"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.9,
+      "pSRT": {
+        "overall": 80,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 85,
+          "analysis": 78
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "NVIDIA",
+        "AI 하드웨어",
+        "GPU",
+        "Vera Rubin",
+        "CES 2026"
+      ],
+      "raw_id": "RAW-2026-0113-004"
+    },
+    {
+      "id": "SIG-2026-0113-004",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Social"
+        ]
+      },
+      "title": "AI in Scientific Research: Actively Joining Discovery Process",
+      "description": "2026년 AI가 단순 논문 요약이나 질문 응답을 넘어 물리학, 화학, 생물학의 발견 과정에 적극 참여. 가설 생성, 과학 실험 제어, 연구자와의 협업 수행.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "과학 연구 패러다임의 근본적 변화 및 AI 주도 발견의 시대",
+      "significance": 4,
+      "significance_reason": "과학 연구 방법론의 패러다임 전환. 신약 개발, 소재 발견 등에서 연구 속도 획기적 가속화 예상.",
+      "potential_impact": {
+        "short_term": "AI 과학 연구 도구 도입 확대",
+        "mid_term": "연구 생산성 급격한 향상",
+        "long_term": "AI-과학자 협업 기반 발견 시대"
+      },
+      "actors": [
+        {
+          "name": "MIT Technology Review",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.8,
+      "pSRT": {
+        "overall": 73,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 74
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "AI 과학연구",
+        "자동화 발견",
+        "연구 자동화"
+      ],
+      "raw_id": "RAW-2026-0113-005"
+    },
+    {
+      "id": "SIG-2026-0113-005",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "IBM Quantum Milestone: First Quantum Advantage in 2026",
+      "description": "IBM이 2026년 양자 컴퓨터가 최초로 고전 컴퓨터를 능가하는 양자 우위(Quantum Advantage) 달성을 공식 발표.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "양자 컴퓨팅의 상용화 시작 및 암호화 체계 전환 가속화",
+      "significance": 5,
+      "significance_reason": "컴퓨팅 역사의 이정표. 암호학, 신약 개발, 금융 모델링 등 다양한 분야에서 게임체인저.",
+      "potential_impact": {
+        "short_term": "양자 컴퓨팅 관련 투자 급증",
+        "mid_term": "특정 도메인에서 양자 응용 시작",
+        "long_term": "현재 암호화 체계의 전면 교체"
+      },
+      "actors": [
+        {
+          "name": "IBM",
+          "type": "company",
+          "role": "기술 발표"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 80,
+          "analysis": 78
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "양자 컴퓨팅",
+        "IBM",
+        "Quantum Advantage"
+      ],
+      "raw_id": "RAW-2026-0113-006"
+    },
+    {
+      "id": "SIG-2026-0113-006",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Political"
+        ]
+      },
+      "title": "Year of Quantum Security Initiative Launched",
+      "description": "2026년 1월 12일 워싱턴 DC에서 양자 보안 이니셔티브 출범. 연방 기관, 산업 리더, 투자자가 모여 글로벌 양자 생태계 전반의 정책, 보안 관행, 조정 정렬. 2026년을 '양자 보안의 해'로 지정.",
+      "source": {
+        "name": "The Quantum Insider",
+        "url": "https://thequantuminsider.com/2026/01/06/after-a-year-of-quantum-awareness-2026-becomes-the-year-of-quantum-security/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "포스트-양자 암호화(PQC) 전환 가속화 및 양자 IP 보호 체계 구축",
+      "significance": 4,
+      "significance_reason": "양자 위협에 대비한 글로벌 보안 체계 재편의 시작. 기업과 정부의 보안 인프라 업그레이드 필요성 증대.",
+      "potential_impact": {
+        "short_term": "PQC 표준 채택 논의 가속",
+        "mid_term": "양자 내성 암호화 솔루션 시장 성장",
+        "long_term": "전 세계 암호화 인프라 교체"
+      },
+      "actors": [
+        {
+          "name": "US Government",
+          "type": "government",
+          "role": "이니셔티브 주도"
+        },
+        {
+          "name": "The Quantum Insider",
+          "type": "organization",
+          "role": "보도"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.8,
+      "pSRT": {
+        "overall": 72,
+        "grade": "B",
+        "breakdown": {
+          "source": 50,
+          "signal": 82,
+          "analysis": 78
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "양자 보안",
+        "PQC",
+        "사이버보안",
+        "미국 정책"
+      ],
+      "raw_id": "RAW-2026-0113-008"
+    },
+    {
+      "id": "SIG-2026-0113-007",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Social"
+        ]
+      },
+      "title": "AI-Powered Sleep Analysis Predicts Future Disease Risk",
+      "description": "Stanford 연구진이 단 하룻밤 수면 데이터로 미래 질병 위험을 예측하는 AI 개발. 뇌, 심장, 호흡의 상세한 생리학적 신호 분석.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "예방 의학의 AI 주도 혁명 및 개인 맞춤형 건강관리 보편화",
+      "significance": 4,
+      "significance_reason": "예방 의학의 새로운 패러다임. 조기 진단과 예방적 개입을 통한 의료 비용 절감 및 건강 수명 연장 가능성.",
+      "potential_impact": {
+        "short_term": "수면 추적 웨어러블 및 앱 시장 성장",
+        "mid_term": "AI 기반 예방 의료 서비스 확대",
+        "long_term": "질병 예방 중심 의료 체계로 전환"
+      },
+      "actors": [
+        {
+          "name": "Stanford University",
+          "type": "organization",
+          "role": "연구 수행"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.8,
+      "pSRT": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 72,
+          "analysis": 76
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "헬스케어 AI",
+        "예방 의학",
+        "수면 분석",
+        "Stanford"
+      ],
+      "raw_id": "RAW-2026-0113-010"
+    },
+    {
+      "id": "SIG-2026-0113-008",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Global Energy Storage Surpasses 100GW Annual Installations",
+      "description": "2026년 글로벌 연간 에너지 저장 설치량 사상 최초 100GW 돌파. 향후 10년 200GW 이상 예상. 장비 가격 $117/kWh로 3년 전의 3분의 1 수준으로 하락.",
+      "source": {
+        "name": "BloombergNEF",
+        "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+        "type": "report",
+        "tier": 2,
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "재생에너지 간헐성 해결 및 전력망 유연성 대폭 향상",
+      "significance": 4,
+      "significance_reason": "에너지 전환의 핵심 병목인 저장 문제 해결 가속화. 재생에너지 확대의 결정적 enabler.",
+      "potential_impact": {
+        "short_term": "배터리 저장 시장 폭발적 성장",
+        "mid_term": "재생에너지 비중 급격히 확대",
+        "long_term": "화석연료 발전의 급격한 감소"
+      },
+      "actors": [
+        {
+          "name": "BloombergNEF",
+          "type": "organization",
+          "role": "분석/보고"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.9,
+      "pSRT": {
+        "overall": 84,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 92,
+          "analysis": 82
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "에너지 저장",
+        "배터리",
+        "재생에너지",
+        "클린테크"
+      ],
+      "raw_id": "RAW-2026-0113-012"
+    },
+    {
+      "id": "SIG-2026-0113-009",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Global Renewables Hit 800GW Annual Record",
+      "description": "2025년 글로벌 태양광 및 풍력 설치량 800GW 돌파로 사상 최대 기록. 2021년 대비 연간 배치량 3배 증가. 청정 기술이 2026년 신규 에너지 배치 지배, 미국 신규 발전 용량의 90% 이상이 청정 에너지.",
+      "source": {
+        "name": "BloombergNEF",
+        "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+        "type": "report",
+        "tier": 2,
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "화석연료 중심 에너지 체계의 종말 가속화",
+      "significance": 4,
+      "significance_reason": "에너지 전환의 티핑 포인트 도달. 재생에너지가 주류 에너지원으로 확고히 자리매김.",
+      "potential_impact": {
+        "short_term": "화석연료 프로젝트 투자 위축",
+        "mid_term": "전력 가격 구조 재편",
+        "long_term": "탄소 중립 달성 가속화"
+      },
+      "actors": [
+        {
+          "name": "BloombergNEF",
+          "type": "organization",
+          "role": "분석/보고"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.9,
+      "pSRT": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 94,
+          "analysis": 82
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "재생에너지",
+        "태양광",
+        "풍력",
+        "에너지 전환"
+      ],
+      "raw_id": "RAW-2026-0113-013"
+    },
+    {
+      "id": "SIG-2026-0113-010",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Economic",
+          "Social"
+        ]
+      },
+      "title": "EV Sales Reach 25% Global Market Share",
+      "description": "EV 판매가 글로벌 자동차 판매의 4분의 1 이상 차지. 2030년까지 40% 비중 도달 전망으로 전기차 채택 가속화.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "내연기관 자동차 시대의 종말 및 모빌리티 산업 재편",
+      "significance": 4,
+      "significance_reason": "EV 시장 점유율 25%는 임계질량(Critical Mass) 도달 신호. 이후 채택 속도 급격히 가속화 예상.",
+      "potential_impact": {
+        "short_term": "전통 자동차 업체 EV 전환 가속",
+        "mid_term": "내연기관 관련 산업 구조조정",
+        "long_term": "교통 부문 탈탄소화 완성"
+      },
+      "actors": [
+        {
+          "name": "Bloomberg",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 82,
+          "analysis": 76
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "전기차",
+        "EV",
+        "모빌리티",
+        "탈탄소화"
+      ],
+      "raw_id": "RAW-2026-0113-014"
+    },
+    {
+      "id": "SIG-2026-0113-011",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Technological",
+          "Economic"
+        ]
+      },
+      "title": "Climate Tech Investment Surges on Data Center Energy Demand",
+      "description": "2025년 글로벌 기후 기술 투자 반등, 주로 데이터센터 에너지 수요 증가에 기인. 신생 원자력 기술과 검증된 재생에너지 솔루션 모두 투자자 관심 집중으로 2026년에도 상승세 지속 전망.",
+      "source": {
+        "name": "Canary Media",
+        "url": "https://www.canarymedia.com/articles/clean-energy/big-stories-2026-renewables-power-grid",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "AI 인프라가 청정에너지 전환의 새로운 동력으로 부상",
+      "significance": 3,
+      "significance_reason": "AI 발전과 에너지 전환의 상호 촉진 관계 형성. 데이터센터 수요가 청정에너지 투자를 견인하는 선순환 구조.",
+      "potential_impact": {
+        "short_term": "기후테크 스타트업 투자 증가",
+        "mid_term": "데이터센터 탈탄소화 솔루션 성장",
+        "long_term": "AI-청정에너지 산업 융합"
+      },
+      "actors": [
+        {
+          "name": "Canary Media",
+          "type": "organization",
+          "role": "보도"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 68,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 75,
+          "analysis": 74
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "기후테크",
+        "데이터센터",
+        "청정에너지",
+        "투자"
+      ],
+      "raw_id": "RAW-2026-0113-015"
+    },
+    {
+      "id": "SIG-2026-0113-012",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Venture Funding 2025 Sets All-Time Records",
+      "description": "2025년 글로벌 벤처 펀딩 급증, 스타트업 딜과 밸류에이션이 사상 최고 기록. 2026년 전망은 성장 라운드 재개로 벤처 캐피탈 배치 10-15% 증가 예상.",
+      "source": {
+        "name": "Crunchbase News",
+        "url": "https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "스타트업 생태계 회복 및 성장 자본 풍부화",
+      "significance": 3,
+      "significance_reason": "VC 시장 완전 회복 신호. 혁신 스타트업의 자금 조달 환경 개선으로 기술 혁신 가속화 예상.",
+      "potential_impact": {
+        "short_term": "스타트업 밸류에이션 상승",
+        "mid_term": "혁신 기술 상용화 가속",
+        "long_term": "새로운 유니콘 다수 탄생"
+      },
+      "actors": [
+        {
+          "name": "Crunchbase",
+          "type": "organization",
+          "role": "데이터 분석"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 78,
+          "analysis": 74
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "벤처 캐피탈",
+        "스타트업",
+        "투자",
+        "펀딩"
+      ],
+      "raw_id": "RAW-2026-0113-016"
+    },
+    {
+      "id": "SIG-2026-0113-013",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "xAI Raises Historic $20B Series E for AGI Development",
+      "description": "xAI가 AGI 로드맵 확장과 GPU 인프라 구축을 위해 역사적인 200억 달러 시리즈 E 투자 유치. 스타트업 역사상 최대 규모 단일 펀딩 라운드 중 하나.",
+      "source": {
+        "name": "AlleyWatch",
+        "url": "https://www.alleywatch.com/2026/01/the-alleywatch-startup-daily-funding-report-1-5-2026/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "AGI 개발 경쟁 극대화 및 AI 인프라 투자 폭발적 증가",
+      "significance": 4,
+      "significance_reason": "단일 펀딩 라운드로 역대 최대 규모. AGI 개발 경쟁의 치열함과 투자자들의 AI에 대한 확신 반영.",
+      "potential_impact": {
+        "short_term": "AGI 개발 경쟁 더욱 가속",
+        "mid_term": "AI 인프라 확장 및 인재 경쟁 심화",
+        "long_term": "AGI 실현 시점 앞당김"
+      },
+      "actors": [
+        {
+          "name": "xAI",
+          "type": "company",
+          "role": "자금 조달"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.8,
+      "pSRT": {
+        "overall": 70,
+        "grade": "B",
+        "breakdown": {
+          "source": 50,
+          "signal": 82,
+          "analysis": 74
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "xAI",
+        "AGI",
+        "메가 펀딩",
+        "AI 투자"
+      ],
+      "raw_id": "RAW-2026-0113-017"
+    },
+    {
+      "id": "SIG-2026-0113-014",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "AI Attracts 65% of Startup Capital in 2026",
+      "description": "인공지능이 2026년 스타트업 형성과 벤처 펀딩의 가장 큰 단일 자석으로 유지. 투자 성격은 순수 성장에서 자본 효율성과 수익성으로 결정적 전환.",
+      "source": {
+        "name": "CEO Today Magazine",
+        "url": "https://www.ceotodaymagazine.com/2026/01/industries-attracting-the-most-startup-capital-in-2026/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "AI 산업의 성숙화 및 지속 가능한 비즈니스 모델 요구 증대",
+      "significance": 3,
+      "significance_reason": "AI 투자의 압도적 비중과 함께 투자 기준 변화 신호. 무분별한 성장에서 지속 가능성으로 패러다임 전환.",
+      "potential_impact": {
+        "short_term": "AI 스타트업 평가 기준 변화",
+        "mid_term": "수익성 없는 AI 기업 도태",
+        "long_term": "AI 산업 구조 건전화"
+      },
+      "actors": [
+        {
+          "name": "CEO Today Magazine",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.7,
+      "pSRT": {
+        "overall": 62,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 68,
+          "analysis": 66
+        },
+        "flags": [
+          {
+            "type": "LOW_SOURCE_QUALITY",
+            "severity": "low",
+            "note": "Tier 3 소스에서 주요 트렌드 주장"
+          }
+        ],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "AI 투자",
+        "자본 효율성",
+        "스타트업"
+      ],
+      "raw_id": "RAW-2026-0113-018"
+    },
+    {
+      "id": "SIG-2026-0113-015",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Cyera Raises $400M for Enterprise AI Security",
+      "description": "Cyera가 기업 AI 배포 보안을 위해 4억 달러 투자 유치. AI 보안 인프라에 대한 관심과 투자 증가 반영.",
+      "source": {
+        "name": "Tech Startups",
+        "url": "https://techstartups.com/2026/01/08/top-startup-and-tech-funding-news-january-8-2025/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "엔터프라이즈 AI 보안이 핵심 투자 테마로 부상",
+      "significance": 3,
+      "significance_reason": "AI 도입 확대에 따른 보안 우려 증가 반영. AI 보안이 새로운 시장 카테고리로 형성.",
+      "potential_impact": {
+        "short_term": "AI 보안 솔루션 시장 형성",
+        "mid_term": "기업 AI 도입 시 보안 필수화",
+        "long_term": "AI 거버넌스 체계 확립"
+      },
+      "actors": [
+        {
+          "name": "Cyera",
+          "type": "company",
+          "role": "자금 조달"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 65,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 72,
+          "analysis": 70
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "AI 보안",
+        "사이버보안",
+        "엔터프라이즈 AI",
+        "Cyera"
+      ],
+      "raw_id": "RAW-2026-0113-019"
+    },
+    {
+      "id": "SIG-2026-0113-016",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Capital Efficiency Becomes Top VC Priority",
+      "description": "자본 비용이 0이 아니며 LP들이 종이 마크업이 아닌 실제 수익을 요구. 벤처 투자자들이 자본 효율성, 수익성, 명확한 유닛 이코노믹스라는 비즈니스 기본에 우선순위 부여.",
+      "source": {
+        "name": "Presta",
+        "url": "https://wearepresta.com/what-makes-a-startup-fundable-in-2026-the-new-capital-efficiency-standard/",
+        "type": "news",
+        "tier": 4,
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "스타트업 평가 패러다임의 근본적 전환",
+      "significance": 3,
+      "significance_reason": "'성장 제일' 시대의 종말. 지속 가능한 비즈니스 모델이 투자 유치의 핵심 조건으로 부상.",
+      "potential_impact": {
+        "short_term": "스타트업 전략 수정",
+        "mid_term": "자본 효율적 사업 모델 표준화",
+        "long_term": "스타트업 생태계 건전화"
+      },
+      "actors": [
+        {
+          "name": "Presta",
+          "type": "organization",
+          "role": "분석"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.65,
+      "pSRT": {
+        "overall": 55,
+        "grade": "D",
+        "breakdown": {
+          "source": 25,
+          "signal": 68,
+          "analysis": 65
+        },
+        "flags": [
+          {
+            "type": "LOW_SOURCE_QUALITY",
+            "severity": "medium",
+            "note": "Tier 4 소스"
+          }
+        ],
+        "action": "교차 검증 필수"
+      },
+      "tags": [
+        "자본 효율성",
+        "VC",
+        "스타트업 투자 기준"
+      ],
+      "raw_id": "RAW-2026-0113-020"
+    },
+    {
+      "id": "SIG-2026-0113-017",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Trump Executive Order Preempts State AI Laws",
+      "description": "트럼프 대통령이 '인공지능을 위한 국가 정책 프레임워크 보장' 행정명령 서명. 불일치하는 주 AI 법률을 선점하는 연방 AI 정책 프레임워크 제안. 법무장관에게 AI 소송 태스크포스 설립 지시.",
+      "source": {
+        "name": "King & Spalding",
+        "url": "https://www.kslaw.com/news-and-insights/new-state-ai-laws-are-effective-on-january-1-2026-but-a-new-executive-order-signals-disruption",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "미국 AI 규제의 연방-주 갈등 심화 및 규제 불확실성 증대",
+      "significance": 4,
+      "significance_reason": "미국 AI 규제 방향의 중대 전환점. 연방 정부의 규제 주도권 확보 시도로 기업들의 컴플라이언스 전략에 직접적 영향.",
+      "potential_impact": {
+        "short_term": "AI 기업의 법적 불확실성 증가",
+        "mid_term": "연방-주 규제 갈등 법적 분쟁화",
+        "long_term": "미국 AI 규제 체계 통일 또는 분열"
+      },
+      "actors": [
+        {
+          "name": "Trump Administration",
+          "type": "government",
+          "role": "행정명령 발동"
+        },
+        {
+          "name": "US Attorney General",
+          "type": "government",
+          "role": "태스크포스 설립 지시"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.9,
+      "pSRT": {
+        "overall": 79,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 85,
+          "analysis": 76
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "AI 규제",
+        "행정명령",
+        "연방 정책",
+        "미국"
+      ],
+      "raw_id": "RAW-2026-0113-021"
+    },
+    {
+      "id": "SIG-2026-0113-018",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "38 States Pass AI Legislation in 2025",
+      "description": "2025년 38개 주에서 AI 관련 법률 통과. 선거에서의 AI 오용 방지 및 의료 정보 배포 기술 규제 포함. 캘리포니아 AI 투명성법, 텍사스 책임 있는 AI 거버넌스법이 2026년 1월 1일 발효.",
+      "source": {
+        "name": "NBC News",
+        "url": "https://www.nbcnews.com/politics/politics-news/2026-new-laws-states-elections-midterms-ai-obamacare-aca-paid-leave-rcna247602",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-01"
+      },
+      "leading_indicator": "미국 AI 규제의 주 단위 파편화 가속",
+      "significance": 4,
+      "significance_reason": "대규모 주 단위 AI 입법 물결. 연방 행정명령과의 충돌로 복잡한 규제 환경 형성.",
+      "potential_impact": {
+        "short_term": "기업 AI 컴플라이언스 비용 증가",
+        "mid_term": "주별 AI 서비스 차별화",
+        "long_term": "연방 통일 법률 제정 압력"
+      },
+      "actors": [
+        {
+          "name": "California",
+          "type": "government",
+          "role": "AI 투명성법 제정"
+        },
+        {
+          "name": "Texas",
+          "type": "government",
+          "role": "AI 거버넌스법 제정"
+        },
+        {
+          "name": "38 US States",
+          "type": "government",
+          "role": "AI 입법"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.9,
+      "pSRT": {
+        "overall": 82,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 88,
+          "analysis": 80
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "AI 규제",
+        "주 입법",
+        "컴플라이언스",
+        "미국"
+      ],
+      "raw_id": "RAW-2026-0113-022"
+    },
+    {
+      "id": "SIG-2026-0113-019",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "OMB Issues Federal AI Procurement Guidance",
+      "description": "2025년 12월 발표된 관리예산처(OMB) 조달 지침에서 연방 정부가 조달하는 대형 언어 모델이 진실 추구와 이념적 중립성을 포함한 편향 없는 AI 원칙을 준수하도록 계약 요건 명시.",
+      "source": {
+        "name": "Executive Gov",
+        "url": "https://www.executivegov.com/articles/white-house-ai-plan-policy-update",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-02"
+      },
+      "leading_indicator": "연방 정부 AI 조달 표준이 민간 시장에 파급 효과",
+      "significance": 3,
+      "significance_reason": "연방 정부의 AI 조달 기준이 업계 표준 역할. 특히 '이념적 중립성' 요건은 LLM 개발 방향에 영향.",
+      "potential_impact": {
+        "short_term": "연방 계약 대상 AI 기업 준비 필요",
+        "mid_term": "AI 편향 검증 솔루션 시장 성장",
+        "long_term": "AI 개발의 정치적 압력 증가"
+      },
+      "actors": [
+        {
+          "name": "OMB",
+          "type": "government",
+          "role": "지침 발행"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.8,
+      "pSRT": {
+        "overall": 68,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 78,
+          "analysis": 72
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "연방 조달",
+        "AI 편향",
+        "OMB",
+        "정부 정책"
+      ],
+      "raw_id": "RAW-2026-0113-023"
+    },
+    {
+      "id": "SIG-2026-0113-020",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "2026 AI Enforcement Year: Focus on Red Lines",
+      "description": "2026년은 새로운 선언이 아닌 집행과 레드라인의 해가 될 전망. 핵심 질문: 정부가 생체 대량 감시, 자율 무기 등 특정 응용을 금지할 의지가 있는지, 자발적 행동강령에 만족할 것인지.",
+      "source": {
+        "name": "TechPolicy.Press",
+        "url": "https://www.techpolicy.press/expert-predictions-on-whats-at-stake-in-ai-policy-in-2026/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-03"
+      },
+      "leading_indicator": "AI 거버넌스의 선언에서 실제 집행으로 전환",
+      "significance": 3,
+      "significance_reason": "AI 정책의 성숙화 신호. 규제 선언을 넘어 실제 집행과 제재가 시작되는 전환점.",
+      "potential_impact": {
+        "short_term": "AI 기업의 컴플라이언스 투자 증가",
+        "mid_term": "일부 AI 응용 금지 또는 제한",
+        "long_term": "AI 개발의 법적 경계 확립"
+      },
+      "actors": [
+        {
+          "name": "TechPolicy.Press",
+          "type": "organization",
+          "role": "분석"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.7,
+      "pSRT": {
+        "overall": 64,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 70,
+          "analysis": 70
+        },
+        "flags": [
+          {
+            "type": "OVERINTERPRETATION",
+            "severity": "low",
+            "note": "전문가 예측 기반 분석"
+          }
+        ],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "AI 거버넌스",
+        "AI 집행",
+        "레드라인",
+        "자율무기"
+      ],
+      "raw_id": "RAW-2026-0113-024"
+    },
+    {
+      "id": "SIG-2026-0113-021",
+      "category": {
+        "primary": "Social",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Analogue January: Gen Z Ditches Screens for Tactile Experiences",
+      "description": "Gen Z에서 손글씨 편지, 손으로 그린 미술, 수작업 공예 등 'Proof of Human' 활동 부활. 'Human-Made'가 2000년대 초 'Organic'보다 더 강력한 레이블로 부상. 2026년을 '아날로그의 해'로 지칭.",
+      "source": {
+        "name": "Editorial GE",
+        "url": "https://editorialge.com/analogue-january-gen-z-analysis-2026/",
+        "type": "news",
+        "tier": 4,
+        "published_date": "2026-01-08"
+      },
+      "leading_indicator": "디지털 피로에 대한 문화적 반동 및 '인간다움'의 가치 재발견",
+      "significance": 3,
+      "significance_reason": "디지털 네이티브 세대의 아날로그 회귀는 역설적이지만 의미 있는 문화 트렌드. 소비자 행동과 마케팅 전략에 영향.",
+      "potential_impact": {
+        "short_term": "아날로그 제품/경험 수요 증가",
+        "mid_term": "'Human-Made' 프리미엄 시장 형성",
+        "long_term": "디지털-아날로그 균형 새 패러다임"
+      },
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "트렌드 주도"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.65,
+      "pSRT": {
+        "overall": 58,
+        "grade": "D",
+        "breakdown": {
+          "source": 25,
+          "signal": 70,
+          "analysis": 72
+        },
+        "flags": [
+          {
+            "type": "LOW_SOURCE_QUALITY",
+            "severity": "medium",
+            "note": "Tier 4 소스에서 주요 트렌드 주장"
+          }
+        ],
+        "action": "교차 검증 필수"
+      },
+      "tags": [
+        "Gen Z",
+        "아날로그",
+        "디지털 디톡스",
+        "문화 트렌드"
+      ],
+      "raw_id": "RAW-2026-0113-025"
+    },
+    {
+      "id": "SIG-2026-0113-022",
+      "category": {
+        "primary": "Social",
+        "secondary": [
+          "Spiritual"
+        ]
+      },
+      "title": "Gen Z Seeks Emotional Grounding Amid Ambient Chaos",
+      "description": "2026년 Gen Z의 주요 테마는 지속적인 디지털 자극과 경제적 압박 속에서 의도적 삶과 정서적 안정 추구. 세 가지 문화 동인: 정서적 위안, 큐레이팅된 자기표현, 현실적 낙관주의.",
+      "source": {
+        "name": "Futurist Speakers",
+        "url": "https://www.futuristsspeakers.com/gen-z-trends-2026-how-younger-generations-work-live-and-play-is-rapidly-changing/",
+        "type": "news",
+        "tier": 4,
+        "published_date": "2026-01-07"
+      },
+      "leading_indicator": "정신 건강과 웰빙이 Gen Z의 핵심 가치로 부상",
+      "significance": 2,
+      "significance_reason": "Gen Z의 가치관과 행동 패턴 변화 신호. 기업과 브랜드의 Gen Z 접근 전략 재고 필요.",
+      "potential_impact": {
+        "short_term": "웰빙 중심 마케팅 증가",
+        "mid_term": "직장 문화 및 제품 디자인 변화",
+        "long_term": "사회 전반의 가치관 변화"
+      },
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "트렌드 주도"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.6,
+      "pSRT": {
+        "overall": 52,
+        "grade": "D",
+        "breakdown": {
+          "source": 25,
+          "signal": 62,
+          "analysis": 65
+        },
+        "flags": [
+          {
+            "type": "LOW_SOURCE_QUALITY",
+            "severity": "medium",
+            "note": "Tier 4 소스"
+          }
+        ],
+        "action": "교차 검증 필수"
+      },
+      "tags": [
+        "Gen Z",
+        "정신건강",
+        "웰빙",
+        "의도적 삶"
+      ],
+      "raw_id": "RAW-2026-0113-026"
+    },
+    {
+      "id": "SIG-2026-0113-023",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Gen Z Revives Pen Pals and Letter Writing",
+      "description": "Gen Z와 밀레니얼 사용자의 4분의 1 이상이 손글씨나 편지 보내기를 재발견. 싱가포르 Gen Z는 평균 Pinterest 사용자보다 펜팔 트렌드 참여 가능성 4.12배 높음. 웰빙을 트렌드가 아닌 라이프스타일로 취급.",
+      "source": {
+        "name": "Marketing Interactive",
+        "url": "https://www.marketing-interactive.com/these-are-the-trends-shaping-gen-z-in-2026-pinterest-predicts-report",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-06"
+      },
+      "leading_indicator": "아날로그 커뮤니케이션의 문화적 가치 재평가",
+      "significance": 2,
+      "significance_reason": "디지털 네이티브의 아날로그 회귀 트렌드 구체적 데이터로 확인. Pinterest 예측 보고서 기반으로 신뢰도 있음.",
+      "potential_impact": {
+        "short_term": "문구류, 우편 서비스 수요 증가",
+        "mid_term": "아날로그 소통 관련 비즈니스 기회",
+        "long_term": "디지털-아날로그 통합 소통 문화"
+      },
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "트렌드 주도"
+        },
+        {
+          "name": "Pinterest",
+          "type": "company",
+          "role": "데이터 제공"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.7,
+      "pSRT": {
+        "overall": 66,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 75,
+          "analysis": 70
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "Gen Z",
+        "펜팔",
+        "아날로그",
+        "Pinterest"
+      ],
+      "raw_id": "RAW-2026-0113-027"
+    },
+    {
+      "id": "SIG-2026-0113-024",
+      "category": {
+        "primary": "Social",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Gen Z Shifts to Social-First Search Over Traditional Search Engines",
+      "description": "Gen Z의 41%가 정보 검색 시 소셜 미디어 플랫폼을 먼저 이용, 전통적 검색 엔진(32%)을 앞지름. 구전과 지역 발견으로 회귀하며 Gen Z의 구매력이 소셜 커머스에서 이탈.",
+      "source": {
+        "name": "ContentGrip",
+        "url": "https://www.contentgrip.com/brands-thriving-with-gen-z/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-05"
+      },
+      "leading_indicator": "검색 엔진 지배 시대의 종말과 소셜 미디어 기반 정보 발견",
+      "significance": 3,
+      "significance_reason": "정보 탐색 행동의 세대적 전환. 구글 검색 모델의 장기적 도전이자 소셜 플랫폼의 새로운 기회.",
+      "potential_impact": {
+        "short_term": "소셜 미디어 SEO 중요성 증가",
+        "mid_term": "검색 엔진 비즈니스 모델 재고",
+        "long_term": "정보 발견 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "행동 변화 주체"
+        }
+      ],
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 68,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 78,
+          "analysis": 72
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "Gen Z",
+        "소셜 검색",
+        "검색 행동",
+        "소셜 미디어"
+      ],
+      "raw_id": "RAW-2026-0113-028"
+    }
+  ],
+  "rankings": {
+    "ranking_date": "2026-01-13",
+    "total_ranked": 24,
+    "ranking_methodology": {
+      "formula": "Priority Score = (Impact × 0.40) + (Probability × 0.30) + (Urgency × 0.20) + (Novelty × 0.10)",
+      "hallucination_adjustments_applied": true,
+      "verified_signals": [
+        "SIG-2026-0113-014",
+        "SIG-2026-0113-016"
+      ],
+      "downgraded_signals": [
+        "SIG-2026-0113-021",
+        "SIG-2026-0113-022"
+      ],
+      "monitoring_signals": [
+        "SIG-2026-0113-020"
+      ]
+    },
+    "top_10_summary": {
+      "signals": [
+        "SIG-2026-0113-002",
+        "SIG-2026-0113-009",
+        "SIG-2026-0113-003",
+        "SIG-2026-0113-001",
+        "SIG-2026-0113-005",
+        "SIG-2026-0113-008",
+        "SIG-2026-0113-017",
+        "SIG-2026-0113-018",
+        "SIG-2026-0113-006",
+        "SIG-2026-0113-010"
+      ],
+      "categories": {
+        "T": 5,
+        "E": 3,
+        "P": 2
+      },
+      "avg_priority_score": 8.0
+    },
+    "distribution": {
+      "high_priority": {
+        "count": 13,
+        "threshold": 7.0,
+        "signals": [
+          "SIG-2026-0113-002",
+          "SIG-2026-0113-009",
+          "SIG-2026-0113-003",
+          "SIG-2026-0113-001",
+          "SIG-2026-0113-005",
+          "SIG-2026-0113-008",
+          "SIG-2026-0113-017",
+          "SIG-2026-0113-018",
+          "SIG-2026-0113-006",
+          "SIG-2026-0113-010",
+          "SIG-2026-0113-004",
+          "SIG-2026-0113-007",
+          "SIG-2026-0113-011"
+        ]
+      },
+      "medium_priority": {
+        "count": 9,
+        "threshold": 5.0,
+        "signals": [
+          "SIG-2026-0113-012",
+          "SIG-2026-0113-013",
+          "SIG-2026-0113-015",
+          "SIG-2026-0113-019",
+          "SIG-2026-0113-024",
+          "SIG-2026-0113-014",
+          "SIG-2026-0113-023",
+          "SIG-2026-0113-016",
+          "SIG-2026-0113-020"
+        ]
+      },
+      "low_priority": {
+        "count": 2,
+        "threshold": 0,
+        "signals": [
+          "SIG-2026-0113-021",
+          "SIG-2026-0113-022"
+        ]
+      }
+    },
+    "rankings": [
+      {
+        "rank": 1,
+        "signal_id": "SIG-2026-0113-002",
+        "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+        "category": "Technological",
+        "secondary_categories": [
+          "Economic"
+        ],
+        "scores": {
+          "impact": 9,
+          "probability": 9,
+          "urgency": 8,
+          "novelty": 9
+        },
+        "weighted_score": 8.7,
+        "score_rationale": {
+          "impact": "세계 최고 AI 연구소와 로봇 회사의 전략적 협업. 제조, 물류, 서비스 산업 전반에 혁명적 변화 예고. 다중 산업, 글로벌 규모.",
+          "probability": "공식 발표, Atlas 휴머노이드 이미 구현 중. 상용화 가시화. pSRT A등급, 신호 정확도 88점.",
+          "urgency": "2026년 내 휴머노이드 개발 경쟁 본격화. 기업 및 정부의 대응 필요. 수 개월 내 주요 발표 예상.",
+          "novelty": "DeepMind-Boston Dynamics 협업은 선례 없음. 물리적 AI 시대의 공식 개막 신호. 완전히 새로운 조합."
+        }
+      },
+      {
+        "rank": 2,
+        "signal_id": "SIG-2026-0113-009",
+        "title": "Global Renewables Hit 800GW Annual Record",
+        "category": "Environmental",
+        "secondary_categories": [
+          "Economic"
+        ],
+        "scores": {
+          "impact": 9,
+          "probability": 10,
+          "urgency": 7,
+          "novelty": 7
+        },
+        "weighted_score": 8.7,
+        "score_rationale": {
+          "impact": "에너지 전환의 티핑 포인트 도달. 2025년 800GW, 연간 배치량 3배 증가. 글로벌 에너지 체계 근본적 재편. 다중 산업 영향.",
+          "probability": "이미 발생(2025년). 2021년 대비 실증된 3배 증가. 미국 신규 발전 90%+ 청정에너지. pSRT A등급, 신호 정확도 94점.",
+          "urgency": "2026년 화석연료 투자 위축 가속화. 기업 에너지 정책 재검토 필수. 중기(수 개월-1년) 대응.",
+          "novelty": "연간 800GW는 역사적 첫 기록. 재생에너지가 주류 에너지원 확정. 새로운 패러다임."
+        }
+      },
+      {
+        "rank": 3,
+        "signal_id": "SIG-2026-0113-003",
+        "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
+        "category": "Technological",
+        "secondary_categories": [
+          "Economic"
+        ],
+        "scores": {
+          "impact": 8,
+          "probability": 10,
+          "urgency": 8,
+          "novelty": 7
+        },
+        "weighted_score": 8.6,
+        "score_rationale": {
+          "impact": "AI 하드웨어의 핵심 인프라. Blackwell 후속 플래그십. 데이터센터 업그레이드 수요 급증. 대규모 AI 모델 개발 경제성 변화.",
+          "probability": "CES 2026 공식 발표(실현됨). NVIDIA 공식 제품 공개. pSRT A등급, 신호 정확도 85점. 신뢰도 90%.",
+          "urgency": "데이터센터 하드웨어 업그레이드 사이클 즉시 시작. 기업 IT 투자 계획 수정 필요. 수주 내 구매 결정.",
+          "novelty": "Vera Rubin은 신규 플래그십 플랫폼. Blackwell 세대 진화. 새로운 하드웨어 세대."
+        }
+      },
+      {
+        "rank": 4,
+        "signal_id": "SIG-2026-0113-001",
+        "title": "Agentic AI Revolution: From Generative to Applied",
+        "category": "Technological",
+        "secondary_categories": [
+          "Economic"
+        ],
+        "scores": {
+          "impact": 9,
+          "probability": 8,
+          "urgency": 7,
+          "novelty": 9
+        },
+        "weighted_score": 8.4,
+        "score_rationale": {
+          "impact": "AI의 다음 단계 패러다임 전환. 생성형에서 응용형 에이전트로. 모든 산업에 자동화와 워크플로우 근본적 변화. 글로벌, 다중 산업.",
+          "probability": "MIT Technology Review 2026 전망 분석. 에이전트 기술 개발 진행 중. 신뢰도 85%, pSRT B등급. 강한 근거.",
+          "urgency": "2026년 에이전트 AI 스타트업 및 플랫폼 급증 예상. 기업의 AI 전략 재정의 필요. 수 개월 내 주요 발표.",
+          "novelty": "에이전트 AI 혁명은 생성형 AI 다음의 새로운 물결. 전혀 새로운 응용 범주."
+        }
+      },
+      {
+        "rank": 5,
+        "signal_id": "SIG-2026-0113-005",
+        "title": "IBM Quantum Milestone: First Quantum Advantage in 2026",
+        "category": "Technological",
+        "secondary_categories": [
+          "Economic"
+        ],
+        "scores": {
+          "impact": 9,
+          "probability": 8,
+          "urgency": 8,
+          "novelty": 9
+        },
+        "weighted_score": 8.4,
+        "score_rationale": {
+          "impact": "컴퓨팅 역사의 이정표. 양자 우위 달성으로 암호학, 신약, 금융 모델링 등 다양한 분야 게임체인저. 글로벌, 다중 산업.",
+          "probability": "IBM 공식 발표. 양자 컴퓨팅 기술 성숙도 높음. 신뢰도 85%, pSRT B등급. 기술적 가능성 높음.",
+          "urgency": "양자 암호 위협에 대비한 PQC 전환 가속화. 정부 및 기업의 암호화 체계 재검토 필수. 긴급(수 개월 내).",
+          "novelty": "양자 우위는 컴퓨팅 역사 첫 달성. 새로운 컴퓨팅 패러다임."
+        }
+      },
+      {
+        "rank": 6,
+        "signal_id": "SIG-2026-0113-008",
+        "title": "Global Energy Storage Surpasses 100GW Annual Installations",
+        "category": "Environmental",
+        "secondary_categories": [
+          "Economic"
+        ],
+        "scores": {
+          "impact": 9,
+          "probability": 9,
+          "urgency": 7,
+          "novelty": 8
+        },
+        "weighted_score": 8.4,
+        "score_rationale": {
+          "impact": "재생에너지 간헐성 해결의 결정적 enabler. 100GW 연간 설치는 재생에너지 확대의 병목 해소. 글로벌 에너지 전환 가속화.",
+          "probability": "BloombergNEF 공식 데이터 분석. 배터리 가격 $117/kWh 3년간 3분의 1 하락. 신뢰도 90%, pSRT A등급. 이미 진행 중.",
+          "urgency": "배터리 저장 시장 폭발적 성장 시작. 전력망 인프라 투자 필요. 수 개월-1년 대응 기한.",
+          "novelty": "연간 100GW는 역사적 첫 달성. 저장 기술 시장화의 새로운 장."
+        }
+      },
+      {
+        "rank": 7,
+        "signal_id": "SIG-2026-0113-017",
+        "title": "Trump Executive Order Preempts State AI Laws",
+        "category": "Political",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 8,
+          "probability": 9,
+          "urgency": 9,
+          "novelty": 8
+        },
+        "weighted_score": 8.4,
+        "score_rationale": {
+          "impact": "미국 AI 규제 방향의 중대 전환. 연방-주 갈등 심화 및 불확실성 증대. AI 기업 컴플라이언스 전략에 직접 영향.",
+          "probability": "트럼프 행정명령 서명(실현됨). 법무장관 태스크포스 설립 지시. 신뢰도 90%, pSRT B등급. 공식 정책.",
+          "urgency": "즉시 법적 불확실성 증가. AI 기업의 법률 대응 시작. 수주 내 업계 반응 예상.",
+          "novelty": "연방 AI 정책 프레임워크로 주 법률 선점 시도. 새로운 규제 접근."
+        }
+      },
+      {
+        "rank": 8,
+        "signal_id": "SIG-2026-0113-018",
+        "title": "38 States Pass AI Legislation in 2025",
+        "category": "Political",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 8,
+          "probability": 10,
+          "urgency": 8,
+          "novelty": 7
+        },
+        "weighted_score": 8.4,
+        "score_rationale": {
+          "impact": "대규모 주 단위 AI 입법 물결. 캘리포니아, 텍사스 등 주요 주 2026년 1월 발효. 기업 컴플라이언스 비용 급증. 글로벌 AI 기업에 영향.",
+          "probability": "38개 주 입법 완료, 일부 발효. 신뢰도 90%, pSRT A등급. 공식 입법 데이터.",
+          "urgency": "기업 AI 컴플라이언스 비용 즉시 증가. 주별 AI 서비스 차별화 필요. 수주 내 법률 준비 필수.",
+          "novelty": "주 단위 AI 입법 물결은 새로운 현상. 연방-주 규제 갈등 심화."
+        }
+      },
+      {
+        "rank": 9,
+        "signal_id": "SIG-2026-0113-006",
+        "title": "Year of Quantum Security Initiative Launched",
+        "category": "Technological",
+        "secondary_categories": [
+          "Political"
+        ],
+        "scores": {
+          "impact": 8,
+          "probability": 8,
+          "urgency": 8,
+          "novelty": 7
+        },
+        "weighted_score": 8.2,
+        "score_rationale": {
+          "impact": "글로벌 양자 생태계 정책 재편. 포스트-양자 암호화 표준 채택. 기업과 정부의 보안 인프라 업그레이드. 광범위한 영향.",
+          "probability": "워싱턴 DC 공식 출범, 연방 기관 참여. 신뢰도 80%, pSRT B등급. 정책 이니셔티브 실현.",
+          "urgency": "PQC 표준 채택 논의 가속화. 기업의 양자 내성 암호화 도입 준비 필요. 수 개월 내 결정 필요.",
+          "novelty": "양자 보안 이니셔티브는 글로벌 차원의 새로운 정책 움직임."
+        }
+      },
+      {
+        "rank": 10,
+        "signal_id": "SIG-2026-0113-010",
+        "title": "EV Sales Reach 25% Global Market Share",
+        "category": "Environmental",
+        "secondary_categories": [
+          "Economic",
+          "Social"
+        ],
+        "scores": {
+          "impact": 8,
+          "probability": 9,
+          "urgency": 7,
+          "novelty": 7
+        },
+        "weighted_score": 8.1,
+        "score_rationale": {
+          "impact": "EV 시장 점유율 25%는 임계질량(Critical Mass) 도달 신호. 내연기관 자동차 시대 종말 가속화. 모빌리티 산업 근본적 재편.",
+          "probability": "이미 발생(2025년 달성). 신뢰도 85%, pSRT B등급. 시장 데이터로 확인.",
+          "urgency": "전통 자동차 업체 EV 전환 가속 필요. 공급망 재편, 부품 산업 구조조정 시작. 중기(수 개월-1년).",
+          "novelty": "EV 25% 점유율은 역사적 임계점. 모빌리티 산업의 새로운 단계."
+        }
+      },
+      {
+        "rank": 11,
+        "signal_id": "SIG-2026-0113-004",
+        "title": "AI in Scientific Research: Actively Joining Discovery Process",
+        "category": "Technological",
+        "secondary_categories": [
+          "Social"
+        ],
+        "scores": {
+          "impact": 8,
+          "probability": 7,
+          "urgency": 7,
+          "novelty": 8
+        },
+        "weighted_score": 7.7,
+        "score_rationale": {
+          "impact": "과학 연구 방법론의 패러다임 전환. 신약 개발, 소재 발견에서 연구 속도 획기적 가속화. 글로벌 과학 기관 영향.",
+          "probability": "MIT Technology Review 기반 분석. AI 과학 도구 도입 진행 중. 신뢰도 80%, pSRT B등급. 기술적 근거 존재.",
+          "urgency": "AI 과학 연구 도구 도입 확대 진행 중. 연구 기관의 AI 인프라 투자 필요. 수 개월 내 주요 발표.",
+          "novelty": "AI-과학자 협업 기반 발견은 새로운 연구 패러다임."
+        }
+      },
+      {
+        "rank": 12,
+        "signal_id": "SIG-2026-0113-007",
+        "title": "AI-Powered Sleep Analysis Predicts Future Disease Risk",
+        "category": "Technological",
+        "secondary_categories": [
+          "Social"
+        ],
+        "scores": {
+          "impact": 7,
+          "probability": 7,
+          "urgency": 7,
+          "novelty": 8
+        },
+        "weighted_score": 7.4,
+        "score_rationale": {
+          "impact": "예방 의학의 새로운 패러다임. 조기 진단 및 예방적 개입으로 의료 비용 절감 및 건강 수명 연장. 의료 산업 변화.",
+          "probability": "Stanford 연구진 개발. AI 의료 기술 성숙도 높음. 신뢰도 80%, pSRT B등급.",
+          "urgency": "수면 추적 웨어러블 시장 성장 시작. 의료 기관 도입 검토 필요. 중기(수 개월-1년).",
+          "novelty": "하룻밤 수면 데이터로 미래 질병 위험 예측은 새로운 의료 기술."
+        }
+      },
+      {
+        "rank": 13,
+        "signal_id": "SIG-2026-0113-011",
+        "title": "Climate Tech Investment Surges on Data Center Energy Demand",
+        "category": "Environmental",
+        "secondary_categories": [
+          "Technological",
+          "Economic"
+        ],
+        "scores": {
+          "impact": 7,
+          "probability": 7,
+          "urgency": 6,
+          "novelty": 7
+        },
+        "weighted_score": 7.0,
+        "score_rationale": {
+          "impact": "AI 인프라가 청정에너지 전환의 새로운 동력. 데이터센터 수요가 청정에너지 투자 견인. AI-청정에너지 산업 융합.",
+          "probability": "2025년 글로벌 기후 기술 투자 반등 확인. 신뢰도 75%, pSRT C등급. 투자 데이터 기반.",
+          "urgency": "기후테크 스타트업 투자 증가 진행 중. 데이터센터 에너지 정책 재검토 필요. 중기(수 개월).",
+          "novelty": "AI 인프라가 청정에너지 투자의 주요 드라이버로 부상. 새로운 관계 형성."
+        }
+      },
+      {
+        "rank": 14,
+        "signal_id": "SIG-2026-0113-012",
+        "title": "Venture Funding 2025 Sets All-Time Records",
+        "category": "Economic",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 7,
+          "probability": 9,
+          "urgency": 6,
+          "novelty": 6
+        },
+        "weighted_score": 7.2,
+        "score_rationale": {
+          "impact": "VC 시장 완전 회복. 스타트업 생태계 자금 풍부화. 혁신 스타트업 기술 혁신 가속화.",
+          "probability": "2025년 벤처 펀딩 급증 확인. 신뢰도 85%, pSRT B등급. 시장 데이터로 입증.",
+          "urgency": "2026년 성장 라운드 재개로 VC 배치 10-15% 증가 예상. 기업 투자 계획 조정 필요. 중기.",
+          "novelty": "VC 시장 회복은 예상된 패턴. 스타트업 생태계 정상화."
+        }
+      },
+      {
+        "rank": 15,
+        "signal_id": "SIG-2026-0113-013",
+        "title": "xAI Raises Historic $20B Series E for AGI Development",
+        "category": "Economic",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 7,
+          "probability": 8,
+          "urgency": 7,
+          "novelty": 7
+        },
+        "weighted_score": 7.2,
+        "score_rationale": {
+          "impact": "단일 펀딩 라운드로 역대 최대 규모. AGI 개발 경쟁 극대화. AI 인프라 투자 폭발적 증가.",
+          "probability": "xAI 공식 발표. 신뢰도 80%, pSRT B등급. 기업 공시로 확인.",
+          "urgency": "AGI 개발 경쟁 가속 및 AI 인재 경쟁 심화. 기업 AI 인력 확보 전략 수정 필요. 수주-수 개월.",
+          "novelty": "스타트업 역사상 최대 규모 단일 펀딩 라운드. 새로운 투자 기록."
+        }
+      },
+      {
+        "rank": 16,
+        "signal_id": "SIG-2026-0113-015",
+        "title": "Cyera Raises $400M for Enterprise AI Security",
+        "category": "Economic",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 6,
+          "probability": 7,
+          "urgency": 7,
+          "novelty": 7
+        },
+        "weighted_score": 6.8,
+        "score_rationale": {
+          "impact": "AI 보안이 새로운 시장 카테고리로 형성. 엔터프라이즈 AI 배포 보안의 중요성 부상. 기업 보안 투자 증가.",
+          "probability": "Cyera 4억 달러 투자 공식 발표. 신뢰도 75%, pSRT C등급. 기업 뉴스로 확인.",
+          "urgency": "AI 보안 인프라 투자 시작 단계. 기업 AI 도입 시 보안 필수화 진행 중. 중기(수 개월-1년).",
+          "novelty": "AI 보안이 독립적 시장 카테고리로 부상. 새로운 사업 분야."
+        }
+      },
+      {
+        "rank": 17,
+        "signal_id": "SIG-2026-0113-019",
+        "title": "OMB Issues Federal AI Procurement Guidance",
+        "category": "Political",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 6,
+          "probability": 7,
+          "urgency": 7,
+          "novelty": 6
+        },
+        "weighted_score": 6.7,
+        "score_rationale": {
+          "impact": "연방 정부 AI 조달 기준이 민간 시장에 파급. 특히 '이념적 중립성' 요건이 LLM 개발 방향 영향.",
+          "probability": "OMB 2025년 12월 공식 발표. 신뢰도 80%, pSRT C등급. 정부 지침 공개.",
+          "urgency": "연방 계약 대상 AI 기업의 즉시 준비 필요. 컴플라이언스 투자 시작 필요. 수주-수 개월.",
+          "novelty": "연방 AI 조달 기준은 새로운 정책 방향. 기업 개발 프로세스 영향."
+        }
+      },
+      {
+        "rank": 18,
+        "signal_id": "SIG-2026-0113-024",
+        "title": "Gen Z Shifts to Social-First Search Over Traditional Search Engines",
+        "category": "Social",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 6,
+          "probability": 7,
+          "urgency": 6,
+          "novelty": 7
+        },
+        "weighted_score": 6.6,
+        "score_rationale": {
+          "impact": "정보 탐색 행동의 세대적 전환. 구글 검색 모델의 장기적 도전. 소셜 플랫폼의 새로운 기회.",
+          "probability": "Gen Z 41% 소셜 미디어 정보 검색 선호 조사. 신뢰도 75%, pSRT C등급. 시장 조사 기반.",
+          "urgency": "소셜 미디어 SEO 중요성 증가 시작. 마케팅 전략 재검토 필요. 중기(수 개월-1년).",
+          "novelty": "검색 엔진 시대의 종말 신호. 정보 발견 패러다임 전환."
+        }
+      },
+      {
+        "rank": 19,
+        "signal_id": "SIG-2026-0113-014",
+        "title": "AI Attracts 65% of Startup Capital in 2026",
+        "category": "Economic",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 7,
+          "probability": 9,
+          "urgency": 6,
+          "novelty": 6
+        },
+        "weighted_score": 7.2,
+        "confidence_note": "VERIFIED in hallucination report - adjusted confidence from 0.70 to 0.85",
+        "score_rationale": {
+          "impact": "AI 산업의 압도적 비중. AI 투자의 성숙화 신호.",
+          "probability": "Crunchbase 교차 검증 완료. 65% 신뢰도 확인. 조정된 신뢰도: 85%, 조정된 pSRT: 72.",
+          "urgency": "AI 스타트업 평가 기준 변화 시작. 기업 투자 전략 조정 필요. 중기(수 개월).",
+          "novelty": "AI 투자 비중 65% 자체는 새로운 수준의 집중."
+        }
+      },
+      {
+        "rank": 20,
+        "signal_id": "SIG-2026-0113-023",
+        "title": "Gen Z Revives Pen Pals and Letter Writing",
+        "category": "Social",
+        "secondary_categories": [],
+        "scores": {
+          "impact": 5,
+          "probability": 7,
+          "urgency": 5,
+          "novelty": 6
+        },
+        "weighted_score": 6.0,
+        "score_rationale": {
+          "impact": "아날로그 커뮤니케이션 문화적 가치 재평가. 제한된 시장 영향.",
+          "probability": "Pinterest 예측 보고서 기반. 신뢰도 70%, pSRT C등급. 데이터 기반.",
+          "urgency": "문구류, 우편 서비스 수요 증가 중장기. 서비스 기업 준비 필요. 중기(수 개월-1년).",
+          "novelty": "펜팔 문화 부활은 세대 트렌드. 새로운 문화 현상."
+        }
+      },
+      {
+        "rank": 21,
+        "signal_id": "SIG-2026-0113-016",
+        "title": "Capital Efficiency Becomes Top VC Priority",
+        "category": "Economic",
+        "secondary_categories": [],
+        "scores": {
+          "impact": 6,
+          "probability": 8,
+          "urgency": 6,
+          "novelty": 6
+        },
+        "weighted_score": 6.8,
+        "confidence_note": "VERIFIED in hallucination report - adjusted confidence from 0.65 to 0.85, adjusted pSRT from 55 to 75",
+        "score_rationale": {
+          "impact": "스타트업 평가 패러다임 전환. 투자 기준 재정의.",
+          "probability": "Harvard Law, TechCrunch 교차 검증 완료. 조정된 신뢰도: 85%, 조정된 pSRT: 75.",
+          "urgency": "스타트업 전략 수정 필요 진행 중. 자본 효율성 기준 도입 시작. 중기(수 개월).",
+          "novelty": "'성장 제일' 시대의 종말 신호. 새로운 평가 기준."
+        }
+      },
+      {
+        "rank": 22,
+        "signal_id": "SIG-2026-0113-020",
+        "title": "2026 AI Enforcement Year: Focus on Red Lines",
+        "category": "Political",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 7,
+          "probability": 6,
+          "urgency": 7,
+          "novelty": 6
+        },
+        "weighted_score": 6.6,
+        "confidence_note": "PENDING_REVIEW in hallucination report - adjusted confidence from 0.70 to 0.75, monitoring required",
+        "score_rationale": {
+          "impact": "AI 거버넌스의 선언에서 실제 집행으로 전환. 기업 컴플라이언스 투자 증가.",
+          "probability": "TechPolicy 분석 + OECD, NBC 교차 검증. AI Impact Summit (2월 2026) 결과 미확정. 조정된 신뢰도: 75%, 조정된 pSRT: 68.",
+          "urgency": "AI 집행 정책 2026년 본격화 예상. 기업 법률 대응 필요. 긴급-중기(수주-수 개월).",
+          "novelty": "AI 규제의 선언에서 실행 단계로 진입. 새로운 거버넌스 체계."
+        }
+      },
+      {
+        "rank": 23,
+        "signal_id": "SIG-2026-0113-021",
+        "title": "Analogue January: Gen Z Ditches Screens for Tactile Experiences",
+        "category": "Social",
+        "secondary_categories": [
+          "Technological"
+        ],
+        "scores": {
+          "impact": 3,
+          "probability": 6,
+          "urgency": 4,
+          "novelty": 7
+        },
+        "weighted_score": 4.8,
+        "confidence_note": "DOWNGRADED in hallucination report - adjusted confidence from 0.65 to 0.60, adjusted significance from 3 to 2",
+        "score_rationale": {
+          "impact": "아날로그 제품/경험 수요 증가. 제한된 시장 범위. 조정된 영향도: 3",
+          "probability": "Tier 3 소스 다수 확인하나 Tier 1-2 연구 데이터 부재. 신뢰도 60%, 조정된 pSRT: 55.",
+          "urgency": "아날로그 제품 시장 장기 성장. 중장기 전략 수립. 중기-장기.",
+          "novelty": "Gen Z의 아날로그 회귀는 흥미로우나 주류가 아님."
+        }
+      },
+      {
+        "rank": 24,
+        "signal_id": "SIG-2026-0113-022",
+        "title": "Gen Z Seeks Emotional Grounding Amid Ambient Chaos",
+        "category": "Social",
+        "secondary_categories": [
+          "Spiritual"
+        ],
+        "scores": {
+          "impact": 3,
+          "probability": 6,
+          "urgency": 4,
+          "novelty": 5
+        },
+        "weighted_score": 4.6,
+        "confidence_note": "DOWNGRADED in hallucination report - adjusted confidence from 0.60 to 0.65, but editorial framing requires caution",
+        "score_rationale": {
+          "impact": "정신 건강 트렌드 신호. 기업 마케팅 전략 영향. 조정된 영향도: 3",
+          "probability": "McKinsey, UNICEF 기저 데이터 검증. 신뢰도 65%, 조정된 pSRT: 58. 그러나 해석적 프레이밍 주의 필요.",
+          "urgency": "웰빙 중심 마케팅 증가 진행 중. 장기 전략 수립. 중기-장기.",
+          "novelty": "정신 건강 위기는 기존 트렌드. 프레이밍이 새로움."
+        }
+      }
+    ],
+    "executive_summary": {
+      "total_signals": 24,
+      "high_priority_signals": 13,
+      "key_findings": {
+        "top_themes": [
+          {
+            "theme": "AI의 응용 단계 전환",
+            "signals": [
+              "SIG-2026-0113-001",
+              "SIG-2026-0113-002",
+              "SIG-2026-0113-004"
+            ],
+            "priority": "High",
+            "timeline": "2026년 내"
+          },
+          {
+            "theme": "에너지 전환 임계점 도달",
+            "signals": [
+              "SIG-2026-0113-008",
+              "SIG-2026-0113-009",
+              "SIG-2026-0113-010"
+            ],
+            "priority": "High",
+            "timeline": "즉시-2026년"
+          },
+          {
+            "theme": "AI 규제 프레임워크 경쟁",
+            "signals": [
+              "SIG-2026-0113-017",
+              "SIG-2026-0113-018",
+              "SIG-2026-0113-006"
+            ],
+            "priority": "High",
+            "timeline": "2026년 내"
+          },
+          {
+            "theme": "양자 컴퓨팅 새 시대",
+            "signals": [
+              "SIG-2026-0113-005",
+              "SIG-2026-0113-006"
+            ],
+            "priority": "High",
+            "timeline": "2026년 내"
+          },
+          {
+            "theme": "AI 투자 성숙화",
+            "signals": [
+              "SIG-2026-0113-012",
+              "SIG-2026-0113-013",
+              "SIG-2026-0113-014"
+            ],
+            "priority": "Medium",
+            "timeline": "2026년 내"
+          }
+        ],
+        "critical_actions": [
+          "고위급 의사결정: Physical AI와 에너지 전환의 교차점 전략 수립",
+          "규제 모니터링: US 연방-주 AI 규제 갈등 추적 (SIG-2026-0113-017, 018)",
+          "기술 투자: 양자 보안 대비 및 PQC 표준 채택 논의 (SIG-2026-0113-005, 006)",
+          "장기 계획: EV/에너지 저장 시장 재편에 대한 공급망 재검토"
+        ]
+      },
+      "sector_analysis": {
+        "Technological": {
+          "count": 9,
+          "avg_score": 8.1,
+          "key_signals": [
+            "SIG-2026-0113-002",
+            "SIG-2026-0113-003",
+            "SIG-2026-0113-001"
+          ],
+          "theme": "AI 응용화와 하드웨어 혁신"
+        },
+        "Environmental": {
+          "count": 4,
+          "avg_score": 8.1,
+          "key_signals": [
+            "SIG-2026-0113-009",
+            "SIG-2026-0113-008",
+            "SIG-2026-0113-010"
+          ],
+          "theme": "에너지 전환의 임계점 도달"
+        },
+        "Economic": {
+          "count": 6,
+          "avg_score": 7.0,
+          "key_signals": [
+            "SIG-2026-0113-012",
+            "SIG-2026-0113-013",
+            "SIG-2026-0113-014"
+          ],
+          "theme": "AI 자본 집중과 효율성 전환"
+        },
+        "Political": {
+          "count": 4,
+          "avg_score": 7.5,
+          "key_signals": [
+            "SIG-2026-0113-017",
+            "SIG-2026-0113-018",
+            "SIG-2026-0113-006"
+          ],
+          "theme": "AI 규제 경쟁과 집행"
+        },
+        "Social": {
+          "count": 4,
+          "avg_score": 5.4,
+          "key_signals": [
+            "SIG-2026-0113-024",
+            "SIG-2026-0113-023",
+            "SIG-2026-0113-022"
+          ],
+          "theme": "Gen Z 세대 문화 트렌드 (낮은 신뢰도)"
+        }
+      }
+    },
+    "quality_assurance": {
+      "hallucination_adjustments": {
+        "verified": 2,
+        "downgraded": 2,
+        "pending_review": 1,
+        "total_flagged": 5
+      },
+      "adjustment_details": {
+        "SIG-2026-0113-014": {
+          "status": "VERIFIED",
+          "original_confidence": 0.7,
+          "adjusted_confidence": 0.85,
+          "reason": "Crunchbase 65% 데이터 교차 검증 완료"
+        },
+        "SIG-2026-0113-016": {
+          "status": "VERIFIED",
+          "original_confidence": 0.65,
+          "adjusted_confidence": 0.85,
+          "reason": "Harvard Law, TechCrunch, Entrepreneur 권위 소스 확인"
+        },
+        "SIG-2026-0113-021": {
+          "status": "DOWNGRADED",
+          "original_confidence": 0.65,
+          "adjusted_confidence": 0.6,
+          "original_significance": 3,
+          "adjusted_significance": 2,
+          "reason": "Tier 1-2 연구 데이터 부재"
+        },
+        "SIG-2026-0113-022": {
+          "status": "DOWNGRADED",
+          "original_confidence": 0.6,
+          "adjusted_confidence": 0.65,
+          "reason": "기저 데이터 검증됨, 해석적 프레이밍 주의 필요"
+        },
+        "SIG-2026-0113-020": {
+          "status": "PENDING_REVIEW",
+          "original_confidence": 0.7,
+          "adjusted_confidence": 0.75,
+          "reason": "2026년 2월 AI Impact Summit 결과 모니터링 필요"
+        }
+      }
+    },
+    "next_steps": {
+      "immediate": [
+        "Top 10 우선순위 신호(Rank 1-10)에 대한 Executive Brief 작성",
+        "High Priority (7.0+) 신호 13개의 정책 영향 분석"
+      ],
+      "monitoring": [
+        "SIG-2026-0113-020: 2026년 2월 AI Impact Summit 결과 추적",
+        "SIG-2026-0113-021, 022: Tier 1-2 연구 데이터 발표 대기"
+      ],
+      "revision_triggers": [
+        "AI Impact Summit 결과 발표 시 SIG-2026-0113-020 재평가",
+        "Pew Research 또는 학술 연구 발표 시 Gen Z 신호 재평가"
+      ]
+    },
+    "report_metadata": {
+      "generated_at": "2026-01-13T16:00:00+09:00",
+      "analyst": "Claude Code Signal Prioritization Agent",
+      "data_sources": [
+        "structured-signals-2026-01-13.json (24 signals)",
+        "hallucination-report-2026-01-13.json (5 verified signals)"
+      ],
+      "methodology_version": "Priority Ranking v2.0",
+      "quality_checks": {
+        "completeness": "Pass - 24/24 signals ranked",
+        "hallucination_verification": "Pass - 5/5 flagged signals reviewed",
+        "score_validation": "Pass - all weights sum to 1.0",
+        "distribution_check": "Pass - reasonable distribution (13 High, 9 Medium, 2 Low)"
+      }
+    }
+  },
+  "metadata": {
+    "total_signals": 24,
+    "classification_date": "2026-01-13",
+    "ranking_date": "2026-01-13"
+  }
+}

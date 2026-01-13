@@ -1,0 +1,1161 @@
+{
+  "classification_date": "2026-01-13",
+  "signals": [
+    {
+      "signal_id": "SIG-20260113-001",
+      "raw_id": "RAW-2026-0113-001",
+      "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
+      "psrt": {
+        "overall": 90,
+        "grade": "A+",
+        "breakdown": {
+          "source": 100,
+          "signal": 100,
+          "analysis": 79,
+          "report": 75
+        },
+        "flags": [],
+        "action": "즉시 활용 가능"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-002",
+      "raw_id": "RAW-2026-0113-002",
+      "title": "D-Wave Announces First Major Quantum Computing Breakthrough of 2026",
+      "psrt": {
+        "overall": 87,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-003",
+      "raw_id": "RAW-2026-0113-003",
+      "title": "AI-Quantum Convergence: 2026 Inflection Point",
+      "psrt": {
+        "overall": 82,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-004",
+      "raw_id": "RAW-2026-0113-004",
+      "title": "Error-Correction Technology Brings Quantum Computing Closer to Reality",
+      "psrt": {
+        "overall": 65,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 46,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-001",
+      "raw_id": "RAW-2026-0113-006",
+      "title": "Climate Status 2026: Record Temperatures Despite La Nina",
+      "psrt": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-001",
+      "raw_id": "RAW-2026-0113-007",
+      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
+      "psrt": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-002",
+      "raw_id": "RAW-2026-0113-008",
+      "title": "WHO Pandemic Agreement to be Finalized in 2026",
+      "psrt": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-001",
+      "raw_id": "RAW-2026-0113-009",
+      "title": "UN Declaration on NCDs and Mental Health Adopted",
+      "psrt": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 76,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-001",
+      "raw_id": "RAW-2026-0113-010",
+      "title": "IMF Projects Global Growth Slowdown to 3.1% by 2026",
+      "psrt": {
+        "overall": 89,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 100,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-002",
+      "raw_id": "RAW-2026-0113-011",
+      "title": "World Bank Warns of Insufficient Income Gap Closing",
+      "psrt": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-002",
+      "raw_id": "RAW-2026-0113-012",
+      "title": "Social Exit Movement: Abandoning Constant Digital Exposure",
+      "psrt": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-005",
+      "raw_id": "RAW-2026-0113-013",
+      "title": "Exclusive Digital Networks Replace Open Algorithms",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-003",
+      "raw_id": "RAW-2026-0113-014",
+      "title": "Hyper-Personalization and Identity-Driven Consumption Rise",
+      "psrt": {
+        "overall": 69,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-001",
+      "raw_id": "RAW-2026-0113-015",
+      "title": "Spirituality Over Partying: Inner Peace as New Social Currency",
+      "psrt": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 79,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-002",
+      "raw_id": "RAW-2026-0113-016",
+      "title": "Emotional Fitness and Nervous System Regulation Mainstream",
+      "psrt": {
+        "overall": 67,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 58,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-006",
+      "raw_id": "RAW-2026-0113-017",
+      "title": "DeepSeek mHC: Architecture Breakthrough for Trillion-Parameter Models",
+      "psrt": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-007",
+      "raw_id": "RAW-2026-0113-018",
+      "title": "Recursive Language Models: The 2026 AI Paradigm",
+      "psrt": {
+        "overall": 82,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-003",
+      "raw_id": "RAW-2026-0113-019",
+      "title": "Venture Capital to Increase 10% to High $400B in 2026",
+      "psrt": {
+        "overall": 81,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 76,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-004",
+      "raw_id": "RAW-2026-0113-020",
+      "title": "AI Captures 65% of US VC Deal Value in 2026",
+      "psrt": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-005",
+      "raw_id": "RAW-2026-0113-021",
+      "title": "2026 Fundamentals-First Year: Revenue Growth Over AI Veneer",
+      "psrt": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-006",
+      "raw_id": "RAW-2026-0113-022",
+      "title": "IPO Market Forecasts 68 Offerings in 2026 (44.7% Increase)",
+      "psrt": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-003",
+      "raw_id": "RAW-2026-0113-023",
+      "title": "State Interventionism and Trade Policy Acceleration in 2026",
+      "psrt": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-004",
+      "raw_id": "RAW-2026-0113-024",
+      "title": "AI Regulation: EU AI Act Becomes Fully Applicable August 2, 2026",
+      "psrt": {
+        "overall": 87,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-005",
+      "raw_id": "RAW-2026-0113-025",
+      "title": "New START Expires February 2026: End of Nuclear Arms Control",
+      "psrt": {
+        "overall": 87,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-002",
+      "raw_id": "RAW-2026-0113-026",
+      "title": "China as 'Electrostate': 50%+ EV Sales, Renewable Dominance",
+      "psrt": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-004",
+      "raw_id": "RAW-2026-0113-027",
+      "title": "US Foreign Aid Cuts: $63.3B to $28.5B (55% Reduction)",
+      "psrt": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-008",
+      "raw_id": "RAW-2026-0113-028",
+      "title": "Korea's AI Semiconductor R&D Budget Jumps 24.3% to 1.68T Won",
+      "psrt": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-009",
+      "raw_id": "RAW-2026-0113-029",
+      "title": "Korea's First Commercial Quantum-AI Hybrid Data Center Launching",
+      "psrt": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-010",
+      "raw_id": "RAW-2026-0113-030",
+      "title": "Korea AI Semiconductor Leap Strategy: 5 Unicorns by 2030",
+      "psrt": {
+        "overall": 78,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-011",
+      "raw_id": "RAW-2026-0113-031",
+      "title": "CES 2026: Agentic AI and Physical AI Era Begins",
+      "psrt": {
+        "overall": 80,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-012",
+      "raw_id": "RAW-2026-0113-032",
+      "title": "FDA Approves First TA-TMA Treatment (Omeros Yartemlea)",
+      "psrt": {
+        "overall": 70,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 64,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-013",
+      "raw_id": "RAW-2026-0113-033",
+      "title": "Kyverna CAR-T Shows Breakthrough Results for Stiff Person Syndrome",
+      "psrt": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-007",
+      "raw_id": "RAW-2026-0113-034",
+      "title": "Biotech M&A Expected to Surge in 2026 Amid Patent Cliff",
+      "psrt": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-014",
+      "raw_id": "RAW-2026-0113-035",
+      "title": "US Space Force Bets on On-Orbit Satellite Servicing: 4 Missions in 2026",
+      "psrt": {
+        "overall": 82,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-006",
+      "raw_id": "RAW-2026-0113-036",
+      "title": "China Integrates Commercial Space into National Development Plan",
+      "psrt": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-015",
+      "raw_id": "RAW-2026-0113-037",
+      "title": "Vast Plans First Commercial Space Station Launch (Haven-1) in 2026",
+      "psrt": {
+        "overall": 80,
+        "grade": "A",
+        "breakdown": {
+          "source": 75,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-007",
+      "raw_id": "RAW-2026-0113-038",
+      "title": "Space Regulatory Deadline: Part 450 Compliance by March 10, 2026",
+      "psrt": {
+        "overall": 75,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 82,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-008",
+      "raw_id": "RAW-2026-0113-039",
+      "title": "US Policy Reforms to Expedite Space Mission Authorizations",
+      "psrt": {
+        "overall": 69,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-003",
+      "raw_id": "RAW-2026-0113-040",
+      "title": "14 Climate Trends for 2026: EVs to Nuclear Power",
+      "psrt": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-016",
+      "raw_id": "RAW-2026-0113-041",
+      "title": "Gene Editing Clinical Trials for Rare Disorders Expected in 2026",
+      "psrt": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-017",
+      "raw_id": "RAW-2026-0113-042",
+      "title": "COVID mRNA Vaccines May Enhance Cancer Immunotherapy",
+      "psrt": {
+        "overall": 67,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 52,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-004",
+      "raw_id": "EXPL-2026-0113-001",
+      "title": "University of Helsinki develops low-temperature CO2 capture compound",
+      "psrt": {
+        "overall": 66,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-003",
+      "raw_id": "EXPL-2026-0113-002",
+      "title": "Gen Z choosing spirituality over nightlife globally",
+      "psrt": {
+        "overall": 62,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 52,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-004",
+      "raw_id": "EXPL-2026-0113-003",
+      "title": "Spiritual wellness apps market growing 14.66% CAGR to $9.91B by 2035",
+      "psrt": {
+        "overall": 64,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 64,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-005",
+      "raw_id": "EXPL-2026-0113-004",
+      "title": "Singapore delays ISSB climate reporting for 5 years; Malaysia leads",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-006",
+      "raw_id": "EXPL-2026-0113-005",
+      "title": "ASEAN Power Grid gains traction after 30-year delay",
+      "psrt": {
+        "overall": 67,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 52,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-018",
+      "raw_id": "EXPL-2026-0113-006",
+      "title": "Sodium-ion batteries accelerating for grid-scale storage",
+      "psrt": {
+        "overall": 72,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 52,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-019",
+      "raw_id": "EXPL-2026-0113-007",
+      "title": "Virtual power plants gaining AI-driven traction",
+      "psrt": {
+        "overall": 65,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 52,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-009",
+      "raw_id": "EXPL-2026-0113-008",
+      "title": "South Korea enforces AI Basic Act early 2026",
+      "psrt": {
+        "overall": 66,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-010",
+      "raw_id": "EXPL-2026-0113-009",
+      "title": "China removes 'warning shot' for data violations in 2026",
+      "psrt": {
+        "overall": 66,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-020",
+      "raw_id": "EXPL-2026-0113-010",
+      "title": "Q-CTRL achieves first commercial quantum advantage in GPS-denied navigation",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-005",
+      "raw_id": "EXPL-2026-0113-011",
+      "title": "Gen Z: 40% openly discuss salaries, breaking workplace norms",
+      "psrt": {
+        "overall": 60,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 52,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-006",
+      "raw_id": "EXPL-2026-0113-012",
+      "title": "72% of Gen Z would leave jobs without flexible work policy",
+      "psrt": {
+        "overall": 60,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 52,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-008",
+      "raw_id": "EXPL-2026-0113-013",
+      "title": "Latin America e-commerce disruption creates supply chain opportunities",
+      "psrt": {
+        "overall": 69,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-009",
+      "raw_id": "EXPL-2026-0113-014",
+      "title": "USMCA renewal uncertainty threatens Latin America trade",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-021",
+      "raw_id": "EXPL-2026-0113-015",
+      "title": "Daily Maverick: South Africa faces AI readiness crisis",
+      "psrt": {
+        "overall": 65,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 52,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-022",
+      "raw_id": "EXPL-2026-0113-016",
+      "title": "Africa's tech ecosystem growing: 160 to 300+ defense-tech startups",
+      "psrt": {
+        "overall": 65,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 52,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-010",
+      "raw_id": "EXPL-2026-0113-017",
+      "title": "Thailand's digital payments to exceed $18.6B, rivaling Singapore/Indonesia",
+      "psrt": {
+        "overall": 69,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-011",
+      "raw_id": "EXPL-2026-0113-018",
+      "title": "Singapore's RIE 2030: SGD 37B for research and innovation",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-011",
+      "raw_id": "EXPL-2026-0113-019",
+      "title": "Middle East attracting $100B+ annually in energy/renewables by 2026",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-012",
+      "raw_id": "EXPL-2026-0113-020",
+      "title": "Saudi Arabia's Vision 2030 enters final delivery phase",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-013",
+      "raw_id": "EXPL-2026-0113-021",
+      "title": "Israel's tech ecosystem: $32B Wiz acquisition by Google",
+      "psrt": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-023",
+      "raw_id": "EXPL-2026-0113-022",
+      "title": "MIT Technology Review: Personalized gene editing reaches clinical reality",
+      "psrt": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-024",
+      "raw_id": "EXPL-2026-0113-023",
+      "title": "Commercial space stations: First orbital outpost launching May 2026",
+      "psrt": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-012",
+      "raw_id": "EXPL-2026-0113-024",
+      "title": "Chatham House: New START treaty expires February 2026",
+      "psrt": {
+        "overall": 81,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 76,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-014",
+      "raw_id": "EXPL-2026-0113-025",
+      "title": "Brookings: Companies with advanced foresight capabilities outperform",
+      "psrt": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 64,
+          "analysis": 67,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-025",
+      "raw_id": "EXPL-2026-0113-026",
+      "title": "StartUs Insights: Agentic AI funding reaches $2.8B in H1 2025",
+      "psrt": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 76,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      }
+    },
+    {
+      "signal_id": "SIG-20260113-007",
+      "raw_id": "EXPL-2026-0113-027",
+      "title": "Harvard study validates AI mental health app (Flourish) as population-level prevention",
+      "psrt": {
+        "overall": 67,
+        "grade": "C",
+        "breakdown": {
+          "source": 75,
+          "signal": 52,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      }
+    }
+  ]
+}

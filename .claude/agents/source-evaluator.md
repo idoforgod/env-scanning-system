@@ -14,7 +14,7 @@ Evaluate source candidates discovered during Marathon Mode and decide their fate
 - **Pending**: Keep for re-evaluation (score 50-69)
 - **Reject**: Remove from candidates (score < 50)
 
-## Marathon Mode Phase D: 발견된 소스 검증 & 평가 (30분)
+## Marathon Mode Phase D: 발견된 소스 검증 & 평가
 
 ### 1. 평가 기준 (100점 만점)
 

@@ -1,0 +1,63 @@
+{
+  "last_run": {
+    "date": "2026-01-13",
+    "status": "completed",
+    "mode": "marathon",
+    "started_at": "2026-01-13T11:00:00Z",
+    "completed_at": "2026-01-13T17:58:00Z",
+    "duration_minutes": 418,
+    "archive_completed_at": "2026-01-13T17:58:00Z"
+  },
+  "outputs": {
+    "report": "data/2026/01/13/reports/environmental-scan-2026-01-13.md",
+    "archive_report": "data/2026/01/13/reports/archive/2026/01/environmental-scan-2026-01-13.md",
+    "archive_data": "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json",
+    "snapshot": "signals/snapshots/database-2026-01-13.json",
+    "archive_notifier_report": "logs/archive-notifier-report-2026-01-13.md"
+  },
+  "stats": {
+    "new_signals": 24,
+    "high_priority": 13,
+    "medium_priority": 11,
+    "total_db_signals": 207,
+    "average_psrt": 71.8,
+    "top_category": "Technological"
+  },
+  "archive_stats": {
+    "report_size_kb": 31,
+    "archive_data_size_kb": 78,
+    "archive_location": "data/2026/01/13/reports/archive/2026/01/",
+    "files_archived": 2,
+    "validation_status": "all_valid"
+  },
+  "category_distribution": {
+    "Technological": 10,
+    "Economic": 5,
+    "Social": 4,
+    "Environmental": 3,
+    "Political": 2,
+    "Spiritual": 0
+  },
+  "top_signals": [
+    {
+      "id": "SIG-2026-0113-002",
+      "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+      "score": 8.5,
+      "category": "Technological"
+    },
+    {
+      "id": "SIG-2026-0113-009",
+      "title": "Global Renewables Hit 800GW Annual Record",
+      "score": 8.3,
+      "category": "Environmental"
+    },
+    {
+      "id": "SIG-2026-0113-003",
+      "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
+      "score": 8.2,
+      "category": "Technological"
+    }
+  ],
+  "next_scheduled": "2026-01-14T11:00:00Z",
+  "version": "2.0"
+}

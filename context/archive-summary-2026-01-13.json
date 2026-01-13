@@ -1,0 +1,125 @@
+{
+  "loaded_date": "2026-01-13",
+  "archive_loading_status": "success",
+  "database_stats": {
+    "total_signals": 183,
+    "scan_count": 9,
+    "database_created": "2026-01-09",
+    "database_last_updated": "2026-01-13T09:15:00Z",
+    "by_status": {
+      "emerging": 179,
+      "developing": 4
+    },
+    "by_category": {
+      "Technological": 58,
+      "Economic": 32,
+      "Social": 25,
+      "Environmental": 20,
+      "Political": 26,
+      "Spiritual": 11
+    },
+    "by_significance": {
+      "5": 42,
+      "4": 92,
+      "3": 44,
+      "2": 5
+    },
+    "by_priority": {
+      "critical": 22,
+      "high": 48,
+      "medium": 55,
+      "low": 22,
+      "archived": 36
+    }
+  },
+  "archive_stats": {
+    "reports_loaded": 0,
+    "archive_scan_dates": [],
+    "source_files": [],
+    "total_archive_signals": 0,
+    "archive_coverage": "No archives loaded",
+    "days_covered": 0,
+    "coverage_percentage": "0%"
+  },
+  "recent_7day_window": {
+    "active_dates": ["2026-01-07", "2026-01-08", "2026-01-09", "2026-01-10", "2026-01-11", "2026-01-12", "2026-01-13"],
+    "signals_in_database": 183,
+    "active_dedup_threshold": "high_sensitivity"
+  },
+  "dedup_index_metrics": {
+    "total_unique_ids": 183,
+    "exact_url_matching_entries": 6,
+    "title_indexed": 183,
+    "entities_indexed": 282,
+    "tag_indexed": 584,
+    "title_similarity_threshold": "0.85+",
+    "entity_overlap_threshold": "0.70+",
+    "fuzzy_match_threshold": "0.85+",
+    "category_consolidation_enabled": true,
+    "confidence_level": "VERY_HIGH"
+  },
+  "top_priority_signals": [
+    {
+      "rank": 1,
+      "id": "SIG-2026-0113-001",
+      "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
+      "score": 8.4,
+      "category": "Technological",
+      "status": "emerging",
+      "date_added": "2026-01-13"
+    },
+    {
+      "rank": 2,
+      "id": "SIG-2026-0113-024",
+      "title": "New START Expires February 2026: End of Nuclear Arms Control",
+      "score": 9.3,
+      "category": "Political",
+      "status": "emerging",
+      "date_added": "2026-01-13"
+    },
+    {
+      "rank": 3,
+      "id": "SIG-2026-0113-023",
+      "title": "AI Regulation: EU AI Act Becomes Fully Applicable August 2, 2026",
+      "score": 9.1,
+      "category": "Technological",
+      "status": "emerging",
+      "date_added": "2026-01-13"
+    },
+    {
+      "rank": 4,
+      "id": "SIG-2026-0113-063",
+      "title": "MIT: Personalized Gene Editing Reaches Clinical Reality",
+      "score": 8.7,
+      "category": "Technological",
+      "status": "emerging",
+      "date_added": "2026-01-13"
+    },
+    {
+      "rank": 5,
+      "id": "SIG-2026-0113-006",
+      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
+      "score": 8.7,
+      "category": "Environmental",
+      "status": "emerging",
+      "date_added": "2026-01-13"
+    }
+  ],
+  "update_summary": {
+    "update_date": "2026-01-13",
+    "new_signals_added": 68,
+    "signals_updated": 0,
+    "signals_removed": 0,
+    "total_signals_before": 115,
+    "total_signals_after": 183,
+    "deduplication_checked": true,
+    "duplicate_signals_skipped": 0,
+    "hallucination_excluded": 0
+  },
+  "index_completeness": {
+    "coverage_percentage": "100%",
+    "status": "ready_for_scanning",
+    "last_validation": "2026-01-13T10:00:00Z",
+    "notes": "Complete dedup index with 183 signals from signals/database.json. All 183 signals indexed for deduplication. Ready for new daily scans with high-sensitivity deduplication capability. Database contains 68 new signals added on 2026-01-13."
+  }
+}

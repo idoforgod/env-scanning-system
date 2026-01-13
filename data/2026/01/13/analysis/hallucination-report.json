@@ -1,0 +1,437 @@
+{
+  "report_date": "2026-01-13",
+  "report_type": "hallucination_verification",
+  "phase": "Phase 2 - Quality Assurance",
+  "summary": {
+    "total_signals_evaluated": 68,
+    "high_risk": 2,
+    "medium_risk": 19,
+    "low_risk": 47,
+    "passed": 47,
+    "flagged": 21
+  },
+  "risk_criteria": {
+    "high": "pSRT < 60 OR source_score < 60 AND signal_score < 50",
+    "medium": "pSRT 60-65 OR signal_score < 55 OR source tier 3",
+    "low": "pSRT >= 65 AND verifiable source AND quantitative data present"
+  },
+  "flagged_signals": [
+    {
+      "signal_id": "SIG-2026-0113-052",
+      "title": "Gen Z: 40% Openly Discuss Salaries, Breaking Workplace Norms",
+      "risk_level": "HIGH",
+      "pSRT_score": 59.0,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 45.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Tier 3 source (Employer Branding News) - limited credibility verification",
+        "No primary research citation provided",
+        "Specific percentage (40%) lacks methodology or sample size",
+        "Signal score below threshold (45.0)"
+      ],
+      "verification_status": "UNVERIFIED",
+      "recommendation": "Cross-validate with reputable HR research firms (Gallup, SHRM, Deloitte)"
+    },
+    {
+      "signal_id": "SIG-2026-0113-053",
+      "title": "72% of Gen Z Would Leave Jobs Without Flexible Work Policy",
+      "risk_level": "HIGH",
+      "pSRT_score": 59.0,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 45.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Tier 3 source (Employer Branding News) - same as SIG-052",
+        "Specific statistic (72%) without study citation",
+        "No sample size, methodology, or geographic scope provided",
+        "Signal score below threshold (45.0)"
+      ],
+      "verification_status": "UNVERIFIED",
+      "recommendation": "Seek primary survey data from LinkedIn, Glassdoor, or academic sources"
+    },
+    {
+      "signal_id": "SIG-2026-0113-043",
+      "title": "Gen Z Choosing Spirituality Over Nightlife Globally",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 60.2,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Tier 3 source (Bharat Bhraman) - unfamiliar/niche publication",
+        "Broad claim ('globally') without geographic evidence",
+        "Qualitative assertion without supporting statistics",
+        "Signal score at lower threshold (45.0)"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Cross-reference with Pew Research, McKinsey consumer surveys"
+    },
+    {
+      "signal_id": "SIG-2026-0113-049",
+      "title": "Quantum Sensing Commercialization Accelerating",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 60.2,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Tier 3 source credibility concerns",
+        "Vague timeline ('accelerating') without specifics",
+        "Signal score at threshold (45.0)"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with physics journals, defense technology publications"
+    },
+    {
+      "signal_id": "SIG-2026-0113-050",
+      "title": "Middle East Defense Tech Consolidation",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 60.2,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Tier 3 source",
+        "Limited specificity on consolidation details",
+        "Signal score at threshold"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with Jane's Defence, SIPRI databases"
+    },
+    {
+      "signal_id": "SIG-2026-0113-048",
+      "title": "Solid-State Batteries Mass Production Timeline",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 61.5,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Signal score below threshold (45.0)",
+        "Timeline claims often overoptimistic in battery tech",
+        "Multiple previous false positives in solid-state battery announcements"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Cross-validate with BloombergNEF, manufacturer press releases"
+    },
+    {
+      "signal_id": "SIG-2026-0113-056",
+      "title": "South Africa Faces AI Readiness Crisis",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 61.5,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Signal score below threshold (45.0)",
+        "'Crisis' framing may be editorialized",
+        "Ranking methodology not specified"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with IMD, WEF competitiveness reports"
+    },
+    {
+      "signal_id": "SIG-2026-0113-057",
+      "title": "Africa's Tech Ecosystem Growing: 160 to 300+ Defense-Tech Startups",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 61.5,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Signal score at threshold (45.0)",
+        "Startup count range (160-300+) seems inconsistent",
+        "Defense-tech in Africa claim needs verification"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Cross-check with Partech Africa, Briter Bridges data"
+    },
+    {
+      "signal_id": "SIG-2026-0113-004",
+      "title": "Error-Correction Technology Brings Quantum Computing Closer to Reality",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 62.8,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Signal score at threshold (45.0)",
+        "'Million qubits' claim needs technical verification",
+        "No specific actors mentioned"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with Nature, Science publications, IBM/Google announcements"
+    },
+    {
+      "signal_id": "SIG-2026-0113-046",
+      "title": "BRICS Expansion Impact on Global Trade",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 62.8,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Signal score at threshold (45.0)",
+        "BRICS impact projections historically overestimated"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Cross-reference with IMF, World Bank trade data"
+    },
+    {
+      "signal_id": "SIG-2026-0113-060",
+      "title": "Middle East Attracting $100B+ Annually in Energy/Renewables by 2026",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 62.8,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Signal score at threshold (45.0)",
+        "$100B figure needs source verification",
+        "Investment projections often inflated"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with IEA, IRENA investment tracking"
+    },
+    {
+      "signal_id": "SIG-2026-0113-068",
+      "title": "European Regulatory Pressure on AI Development",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 62.8,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 45.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Signal score at threshold (45.0)",
+        "General claim needs specific regulatory citations"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with EU AI Act official documents"
+    },
+    {
+      "signal_id": "SIG-2026-0113-044",
+      "title": "Spiritual Wellness Apps Market Growing 14.66% CAGR to $9.91B by 2035",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 62.8,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 56.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Tier 3 market research source",
+        "Long-term projections (2035) inherently uncertain",
+        "CAGR calculation methodology not disclosed"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Cross-validate with Grand View Research, Statista"
+    },
+    {
+      "signal_id": "SIG-2026-0113-015",
+      "title": "Global Policy Trends Signal Increasing Fragmentation",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 63.2,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 50.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Signal score below 55",
+        "Broad geopolitical claim needs specific evidence"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Reference specific policy actions, trade barriers"
+    },
+    {
+      "signal_id": "SIG-2026-0113-038",
+      "title": "US Policy Reforms to Expedite Space Mission Authorizations",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 63.2,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 50.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Signal score at 50.0",
+        "'Far-reaching actions' is vague",
+        "Policy status unclear"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with FAA, DoC official announcements"
+    },
+    {
+      "signal_id": "SIG-2026-0113-041",
+      "title": "COVID mRNA Vaccines May Enhance Cancer Immunotherapy",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 64.5,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 50.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Signal score at 50.0",
+        "'May enhance' indicates preliminary findings",
+        "Correlation vs causation concerns"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Track peer-reviewed publication of full study"
+    },
+    {
+      "signal_id": "SIG-2026-0113-054",
+      "title": "Latin America E-Commerce Disruption Creates Supply Chain Opportunities",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 65.3,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 56.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Analysis score below 70",
+        "Indonesia GMV figure ($100B) seems misplaced in Latin America story"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Clarify regional data confusion"
+    },
+    {
+      "signal_id": "SIG-2026-0113-058",
+      "title": "Thailand's Digital Payments to Exceed $18.6B, Rivaling Singapore/Indonesia",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 65.3,
+      "breakdown": {
+        "source": 72.5,
+        "signal": 56.0,
+        "analysis": 69.0
+      },
+      "issues": [
+        "Analysis score below 70",
+        "Specific figure needs methodology verification"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Cross-reference with central bank data"
+    },
+    {
+      "signal_id": "SIG-2026-0113-042",
+      "title": "University of Helsinki Develops Low-Temperature CO2 Capture Compound",
+      "risk_level": "MEDIUM",
+      "pSRT_score": 65.5,
+      "breakdown": {
+        "source": 60.0,
+        "signal": 60.0,
+        "analysis": 74.0
+      },
+      "issues": [
+        "Tier 3 source (The Register)",
+        "Technical claims need peer review verification",
+        "'156mg CO2 per gram' efficiency claim"
+      ],
+      "verification_status": "PARTIALLY_VERIFIED",
+      "recommendation": "Verify with original Helsinki research publication"
+    }
+  ],
+  "verification_status": {
+    "verified": {
+      "count": 47,
+      "criteria": "Tier 1-2 source, pSRT >= 65, specific data with citations"
+    },
+    "partially_verified": {
+      "count": 19,
+      "criteria": "Some credibility concerns but not critical",
+      "action": "Include with caveat, monitor for confirmation"
+    },
+    "unverified": {
+      "count": 2,
+      "criteria": "pSRT < 60, major credibility concerns",
+      "action": "Exclude from primary report or flag prominently"
+    }
+  },
+  "recommendations": {
+    "immediate_actions": [
+      {
+        "priority": 1,
+        "action": "Remove or heavily caveat SIG-2026-0113-052 and SIG-2026-0113-053",
+        "reason": "Both signals from same low-tier source with specific statistics lacking methodology"
+      },
+      {
+        "priority": 2,
+        "action": "Add verification notes to 19 MEDIUM-risk signals in report",
+        "reason": "Maintain transparency about confidence levels"
+      },
+      {
+        "priority": 3,
+        "action": "Upgrade source tracking for tier 3 sources",
+        "reason": "Multiple flags from same tier 3 sources indicate systematic quality issue"
+      }
+    ],
+    "source_quality_improvements": [
+      "Add 'Employer Branding News' to watch list for future verification requirements",
+      "Require primary source citation for specific statistics (percentages, dollar amounts)",
+      "Cross-validation protocol for market size projections"
+    ],
+    "process_improvements": [
+      "Implement dual-source requirement for claims with specific numbers",
+      "Flag signals with signal_score < 50 automatically for review",
+      "Add methodology verification step for market research projections"
+    ]
+  },
+  "quality_metrics": {
+    "average_pSRT": 67.8,
+    "median_pSRT": 67.1,
+    "signals_above_70": 31,
+    "signals_60_to_70": 35,
+    "signals_below_60": 2,
+    "tier_distribution": {
+      "tier_1": 29,
+      "tier_2": 27,
+      "tier_3": 12
+    }
+  },
+  "methodology": {
+    "evaluation_criteria": [
+      "pSRT overall score threshold analysis",
+      "Source tier credibility assessment",
+      "Signal specificity score review",
+      "Quantitative claim verification check",
+      "Actor/entity citation verification"
+    ],
+    "risk_assignment_logic": {
+      "HIGH": "pSRT < 60 indicates systematic quality issues across all dimensions",
+      "MEDIUM": "Individual dimension weakness but overall acceptable with verification",
+      "LOW": "All dimensions meet quality thresholds"
+    }
+  },
+  "generated_at": "2026-01-13T09:15:00+09:00",
+  "next_steps": [
+    "Phase 3: Generate final report with risk flags incorporated",
+    "Archive unverified signals for future re-evaluation",
+    "Update source quality database with findings"
+  ]
+}

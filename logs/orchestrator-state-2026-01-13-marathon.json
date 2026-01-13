@@ -1,0 +1,29 @@
+{
+  "session_id": "orch-2026-0113-marathon-full",
+  "date": "2026-01-13",
+  "mode": "marathon",
+  "status": "running",
+  "start_time": "2026-01-13T11:00:00Z",
+  "options": ["--marathon", "--skip-human"],
+  "current_phase": 1,
+  "current_step": 1,
+  "total_steps": 17,
+  "token_tracking": {
+    "phase1": 0,
+    "phase2": 0,
+    "phase3": 0,
+    "overhead": 0,
+    "total": 0
+  },
+  "phases": {
+    "phase1": {"status": "pending", "steps": [1, 2, 3, 4]},
+    "phase2": {"status": "pending", "steps": [5, 6, 7, 8, 9, 10, 11]},
+    "phase3": {"status": "pending", "steps": [12, 13, 14, 15, 16, 17]}
+  },
+  "marathon_config": {
+    "total_duration_minutes": 180,
+    "stage1_output": "data/2026/01/13/raw/stage1-signals.json",
+    "stage2_output": "data/2026/01/13/raw/exploration-signals.json",
+    "stage2_strategies": ["citation_tracking", "domain_exploration", "keyword_expansion", "regional_expansion"]
+  }
+}

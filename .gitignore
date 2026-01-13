@@ -74,3 +74,22 @@ coverage.xml
 
 # mypy
 .mypy_cache/
+
+# Environmental Scanning - Root Directory Protection
+# 실행 요약 파일들 (data/YYYY/MM/DD/execution/ 에 저장되어야 함)
+/ARCHIVE-*.md
+/ARCHIVE-*.txt
+/DEDUP-*.md
+/STAGE*-*.md
+/SCAN-*.md
+/*-SUMMARY*.md
+/*-REPORT*.md
+/*-INDEX*.md
+/*-REFERENCE*.md
+
+# 임시 Python 스크립트 (src/scripts/ 에 있어야 함)
+/archive_loader.py
+/dedup_filter.py
+
+# 캐시 폴더
+/cache/

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "version": "1.1",
+    "created": "2026-01-09",
+    "last_updated": "2026-01-13T16:30:00Z",
+    "total_signals": 207,
+    "scan_count": 10,
+    "last_db_update": "2026-01-13",
+    "update_source": "Phase 3: DB Updater (daily-scan-2026-01-13)"
+  },
+  "snapshot_info": {
+    "snapshot_date": "2026-01-13T16:30:00Z",
+    "snapshot_type": "post-update",
+    "note": "Complete snapshot after daily update - 24 new signals added",
+    "signals_before": 183,
+    "signals_after": 207,
+    "new_signals_count": 24
+  },
+  "statistics": {
+    "by_status": {
+      "emerging": 199,
+      "developing": 8
+    },
+    "by_category": {
+      "Technological": 81,
+      "Social": 29,
+      "Economic": 37,
+      "Political": 30,
+      "Environmental": 24,
+      "Spiritual": 6
+    },
+    "by_significance": {
+      "5": 48,
+      "4": 101,
+      "3": 52,
+      "2": 6
+    }
+  }
+}

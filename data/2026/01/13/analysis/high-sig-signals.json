@@ -1,0 +1,733 @@
+{
+  "analysis_date": "2026-01-13",
+  "total_signals": 68,
+  "high_significance_signals": [
+    {
+      "id": "SIG-20260113-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
+      "description": "Hyperscale AI data centers are now consuming over 1 gigawatt of electricity each, bundling hundreds of thousands of GPUs like Nvidia's H100s. Over 50% powered by fossil fuels, raising energy costs and infrastructure concerns for communities. Major tech firms investing hundreds of billions.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/12/1129982/hyperscale-ai-data-centers-energy-usage-2026-breakthrough-technology/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "energy infrastructure crisis",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Technological 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "Amazon",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Google",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Meta",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Microsoft",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Nvidia",
+          "type": "company",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 90,
+        "grade": "A+",
+        "breakdown": {
+          "source": 100,
+          "signal": 100,
+          "analysis": 79,
+          "report": 75
+        },
+        "flags": [],
+        "action": "즉시 활용 가능"
+      },
+      "tags": [
+        "Meta",
+        "Google",
+        "resistance",
+        "energy",
+        "infrastructure",
+        "Technological",
+        "Amazon",
+        "Energy",
+        "community"
+      ],
+      "raw_id": "RAW-2026-0113-001"
+    },
+    {
+      "id": "SIG-20260113-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "D-Wave Announces First Major Quantum Computing Breakthrough of 2026",
+      "description": "D-Wave claimed quantum supremacy after successfully simulating magnetic materials properties using Advantage2 annealing quantum computer. IBM predicts 2026 will mark first time quantum outperforms classical computers on practical problems.",
+      "source": {
+        "name": "Fast Company",
+        "url": "https://www.fastcompany.com/91469364/d-wave-quantum-computing-first-major-breakthrough-of-2026-scalable-technology",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-early"
+      },
+      "leading_indicator": "quantum supremacy milestone",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Technological 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "D-Wave",
+          "type": "organization",
+          "role": "mentioned"
+        },
+        {
+          "name": "IBM",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 87,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "supremacy",
+        "inflection",
+        "quantum",
+        "point",
+        "IBM",
+        "D-Wave",
+        "Quantum",
+        "Technological"
+      ],
+      "raw_id": "RAW-2026-0113-002"
+    },
+    {
+      "id": "SIG-20260113-001",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Climate Status 2026: Record Temperatures Despite La Nina",
+      "description": "2025 was second-hottest year on record. Last 12 years warmest ever measured. Oceans absorbed energy equivalent to detonating nearly 10 Hiroshima bombs per second every minute in 2025. US emissions rose 2% in 2025 reversing downward trend.",
+      "source": {
+        "name": "Yale Climate Connections",
+        "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-early"
+      },
+      "leading_indicator": "ocean heat acceleration",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Environmental 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "ocean",
+        "Environmental",
+        "acceleration",
+        "Climate",
+        "ineffectiveness",
+        "Energy"
+      ],
+      "raw_id": "RAW-2026-0113-006"
+    },
+    {
+      "id": "SIG-20260113-001",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Environmental"
+        ]
+      },
+      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
+      "description": "China's emissions stabilized over past 18 months. EVs comprise >50% of new car sales. China installed >300 GW renewable capacity annually, exceeding entire US historical total. Exported >$200B clean technologies globally.",
+      "source": {
+        "name": "Yale Climate Connections",
+        "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-early"
+      },
+      "leading_indicator": "emission peak",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Political 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "China",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "majority",
+        "China",
+        "Climate",
+        "emission",
+        "Political"
+      ],
+      "raw_id": "RAW-2026-0113-007"
+    },
+    {
+      "id": "SIG-20260113-006",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "DeepSeek mHC: Architecture Breakthrough for Trillion-Parameter Models",
+      "description": "DeepSeek released paper solving training instability at scale by constraining information mixing to doubly stochastic matrices, enabling stable training of much larger models. Could unlock trillion-parameter AI models.",
+      "source": {
+        "name": "Introl / DeepSeek",
+        "url": "https://introl.com/blog/deepseek-mhc-architecture-breakthrough",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-early"
+      },
+      "leading_indicator": "trillion-parameter feasibility",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Technological 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "DeepSeek",
+          "type": "organization",
+          "role": "mentioned"
+        },
+        {
+          "name": "Sebastian Raschka",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 74,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 70,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "training",
+        "DeepSeek",
+        "feasibility",
+        "Sebastian Raschka",
+        "Technological",
+        "trillion-parameter",
+        "stability"
+      ],
+      "raw_id": "RAW-2026-0113-017"
+    },
+    {
+      "id": "SIG-20260113-004",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "AI Captures 65% of US VC Deal Value in 2026",
+      "description": "AI driving VC momentum, capturing 65% of US VC deal value and 37.1% of non-life-sciences first financings. AI startups commanding significantly higher valuations. US accounts for 85% of global AI funding and 53% of AI deals.",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2025/12/26/whats-ahead-for-startups-and-vcs-in-2026-investors-weigh-in/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2025-12-26"
+      },
+      "leading_indicator": "AI market dominance",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Economic 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 85,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 88,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "market",
+        "concentration",
+        "Economic",
+        "dominance"
+      ],
+      "raw_id": "RAW-2026-0113-020"
+    },
+    {
+      "id": "SIG-20260113-003",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "State Interventionism and Trade Policy Acceleration in 2026",
+      "description": "Governments enacting new trade policies, tariffs, export controls, local content requirements to mandate or incentivize companies to modify supply chains and trade patterns. State interventionism flourishing.",
+      "source": {
+        "name": "EY",
+        "url": "https://www.ey.com/en_gl/insights/geostrategy/geostrategic-outlook",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-early"
+      },
+      "leading_indicator": "economic nationalism",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Political 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "EY",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 83,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 82,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "chain",
+        "supply",
+        "economic",
+        "nationalism",
+        "Political"
+      ],
+      "raw_id": "RAW-2026-0113-023"
+    },
+    {
+      "id": "SIG-20260113-004",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "AI Regulation: EU AI Act Becomes Fully Applicable August 2, 2026",
+      "description": "Governments increasingly treating AI assets as national security priority and critical infrastructure. AI serving as force multiplier of cyber conflicts. EU AI Act moving from planning to real operational gravity August 2, 2026.",
+      "source": {
+        "name": "EY",
+        "url": "https://www.ey.com/en_gl/insights/geostrategy/geostrategic-outlook",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-early"
+      },
+      "leading_indicator": "AI securitization",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Political 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "European Union",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 87,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "regulatory",
+        "securitization",
+        "European Union",
+        "Political",
+        "fragmentation"
+      ],
+      "raw_id": "RAW-2026-0113-024"
+    },
+    {
+      "id": "SIG-20260113-005",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "title": "New START Expires February 2026: End of Nuclear Arms Control",
+      "description": "New START treaty expires February 2026, leaving US and Russia without legally binding nuclear restrictions. Without verification mechanisms, deployed warheads could potentially exceed 6,000 within a decade.",
+      "source": {
+        "name": "Council on Foreign Relations",
+        "url": "https://www.cfr.org/article/visualizing-2026-five-foreign-policy-trends-watch",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-early"
+      },
+      "leading_indicator": "nuclear proliferation risk",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Political 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [
+        {
+          "name": "United States",
+          "type": "government",
+          "role": "mentioned"
+        },
+        {
+          "name": "Russia",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.85,
+      "pSRT": {
+        "overall": 87,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 94,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "verification",
+        "collapse",
+        "proliferation",
+        "Russia",
+        "Energy",
+        "Political",
+        "nuclear",
+        "United States"
+      ],
+      "raw_id": "RAW-2026-0113-025"
+    },
+    {
+      "id": "SIG-20260113-009",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "South Korea enforces AI Basic Act early 2026",
+      "description": "First nation to operationalize binding AI governance, mandates liability insurance for high-risk systems",
+      "source": {
+        "name": "AtomicMail / Innovation News Network",
+        "url": "https://atomicmail.io/blog/ai-regulation-news-global-changes-and-watchlist",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026"
+      },
+      "leading_indicator": "AI liability framework",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Political 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.55,
+      "pSRT": {
+        "overall": 66,
+        "grade": "C",
+        "breakdown": {
+          "source": 50,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "추가 검증 후 활용"
+      },
+      "tags": [
+        "first-mover",
+        "regulation",
+        "liability",
+        "framework",
+        "Regulation",
+        "Political"
+      ],
+      "raw_id": "EXPL-2026-0113-008"
+    },
+    {
+      "id": "SIG-20260113-020",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Q-CTRL achieves first commercial quantum advantage in GPS-denied navigation",
+      "description": "Quantum sensors outperform best conventional alternative by 50X-100X when GPS unavailable",
+      "source": {
+        "name": "Q-CTRL",
+        "url": "https://q-ctrl.com/blog/2025-year-in-review-realizing-true-commercial-quantum-advantage-in-the-international-year-of-quantum",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2025-2026"
+      },
+      "leading_indicator": "quantum sensing commercial use",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Technological 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 71,
+        "grade": "B",
+        "breakdown": {
+          "source": 75,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "quantum",
+        "military",
+        "Quantum",
+        "Technological",
+        "sensing",
+        "applications"
+      ],
+      "raw_id": "EXPL-2026-0113-010"
+    },
+    {
+      "id": "SIG-20260113-023",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "MIT Technology Review: Personalized gene editing reaches clinical reality",
+      "description": "Baby KJ receives first personalized gene-editing treatment at 7 months; bespoke drugs potentially approved within years",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/12/1130697/10-breakthrough-technologies-2026/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-12"
+      },
+      "leading_indicator": "personalized medicine milestone",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Technological 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "breakdown": {
+          "source": 100,
+          "signal": 64,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": [
+        "personalized",
+        "democratization",
+        "therapy",
+        "Healthcare",
+        "Technological",
+        "medicine"
+      ],
+      "raw_id": "EXPL-2026-0113-022"
+    },
+    {
+      "id": "SIG-20260113-012",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "title": "Chatham House: New START treaty expires February 2026",
+      "description": "Nuclear arms control at crossroads; NPT Review Conference April 2026; test for international community cooperation",
+      "source": {
+        "name": "Chatham House",
+        "url": "https://www.chathamhouse.org/2025/12/global-security-continued-unravel-2025-crucial-tests-are-coming-2026",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2025-12"
+      },
+      "leading_indicator": "nuclear governance gap",
+      "significance": 5,
+      "significance_reason": "글로벌 영향력 및 패러다임 전환 가능성. Political 영역의 획기적 변화.",
+      "potential_impact": {
+        "short_term": "산업 선도자의 전략 수립 및 기술 투자 가속화",
+        "mid_term": "업계 표준화 및 광범위한 기술/정책 도입",
+        "long_term": "산업 구조 변화 및 패러다임 전환"
+      },
+      "actors": [],
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "confidence": 0.75,
+      "pSRT": {
+        "overall": 81,
+        "grade": "A",
+        "breakdown": {
+          "source": 100,
+          "signal": 76,
+          "analysis": 76,
+          "report": 75
+        },
+        "flags": [],
+        "action": "활용 권장"
+      },
+      "tags": [
+        "collapse",
+        "control",
+        "Energy",
+        "governance",
+        "Political",
+        "nuclear"
+      ],
+      "raw_id": "EXPL-2026-0113-024"
+    }
+  ]
+}
