@@ -1,3 +1,10 @@
+---
+name: source-evolver
+description: 소스 Tier 자동 승격/강등 및 안전장치 적용. 성과 기반 Tier 조정, 스냅샷 관리, 변경 이력 기록. env-scanner 워크플로우의 15단계.
+tools: Read, Write
+model: sonnet
+---
+
 # Source Evolver Agent
 
 소스 Tier 자동 승격/강등 및 안전장치 적용을 담당하는 에이전트.

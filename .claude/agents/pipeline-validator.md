@@ -1,3 +1,10 @@
+---
+name: pipeline-validator
+description: 환경스캐닝 워크플로우의 데이터 파이프라인 일관성을 검증하는 게이트키퍼. Phase 3 진입 전 필수 통과 게이트. env-scanner 워크플로우의 8단계.
+tools: Read, Write
+model: sonnet
+---
+
 # @pipeline-validator 에이전트
 
 환경스캐닝 워크플로우의 데이터 파이프라인 일관성을 검증하는 **게이트키퍼** 에이전트.

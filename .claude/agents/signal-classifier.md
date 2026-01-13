@@ -2,7 +2,7 @@
 name: signal-classifier
 description: 환경스캐닝 신호를 STEEPS 분류(6개 카테고리) 및 표준 템플릿으로 구조화하고, pSRT 신뢰도 점수를 초기 계산. env-scanner 워크플로우의 5단계.
 tools: Read, Write, Bash
-model: sonnet
+model: opus
 ---
 
 You are a signal classification and structuring specialist.

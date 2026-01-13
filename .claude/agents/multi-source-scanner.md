@@ -11,62 +11,62 @@ You are a futures research specialist scanning for weak signals of change.
 
 Check the scan mode from arguments:
 - **일반 모드**: 기존 소스에서 신호 수집 (기본)
-- **Marathon 모드**: 3시간 자기개선형 소스 탐색 (--marathon 플래그)
+- **Marathon 모드**: 3시간 확장 - Stage 1 + Stage 2 (--marathon 플래그)
 
 ---
 
-## MARATHON MODE (3시간 자기개선형 탐색)
+## MARATHON MODE (3시간 = Stage 1 + Stage 2)
 
-Marathon 모드에서는 신호 수집과 함께 **새로운 소스 발견**에 집중합니다.
+Marathon 모드는 다중 소스 스캐닝 단계만 3시간으로 확장합니다.
 
-### 3시간 타임라인
+### 핵심 구조: 2단계
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ Phase A  │ Tier 1 핵심 소스 스캔                           │
-│ Phase B  │ 무작위 탐험 스캔                                │
-│ Phase C  │ 링크 추적 & 새 소스 발견                        │
-│ Phase D  │ 발견된 소스 검증 & 평가                         │
+│  Stage 1: 기존 소스 스캔 (가변)                              │
+│  ─────────────────────────────                              │
+│  • DB에 등록된 소스 순차 스캔                                │
+│  • 네이버/글로벌/구글 크롤러 병렬 실행                       │
+│  • 소요 시간 측정 (stage1_duration)                         │
+├─────────────────────────────────────────────────────────────┤
+│  Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)          │
+│  ─────────────────────────────────────────────              │
+│  • 이전에 한 번도 스캔하지 않은 소스 발굴                    │
+│  • 4개 전문 에이전트 순차/병렬 실행                          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Phase A: Tier 1 핵심 소스 스캔
-- `config/regular-sources.json`에서 Tier 1 소스 로드
-- 각 소스에서 최근 24시간 콘텐츠 스캔
-- 발견된 신호를 `raw/` 폴더에 저장
-- **병렬 호출**: `@exploration-scanner` 준비
-- **병렬 호출**: `@naver-news-crawler` (한국어 뉴스 수집)
+---
 
-#### 네이버 뉴스 크롤러 호출 (필수)
+## STAGE 1: 기존 소스 스캔
+
+### 실행 내용
+- `config/regular-sources.json`에서 등록된 소스 로드
+- 각 소스에서 최근 24시간 콘텐츠 스캔
+- 발견된 신호를 `data/{date}/raw/` 폴더에 저장
+- 소요 시간 측정 (stage1_duration)
+
+### 병렬 크롤러 실행
+
+#### 네이버 뉴스 크롤러 (필수)
 
 ```
-Task(subagent_type="general-purpose"):
-  prompt: "네이버 뉴스 크롤러 실행. 지침: .claude/agents/naver-news-crawler.md 참조.
+Task(subagent_type="naver-news-crawler"):
+  prompt: "네이버 뉴스 크롤러 실행.
            오늘 날짜 {date} 기준, STEEPS 전 카테고리, 섹션당 15개, 24시간 필터.
-           차단 시 크롤러 코드(scripts/naver_news_crawler.py) 직접 수정하여 완수.
+           차단 시 크롤러 코드 직접 수정하여 완수.
            출력: data/{date}/raw/naver-scan-{date}.json"
 ```
 
-**네이버 크롤러 특성:**
-- 차단 시 자가 수정(self-healing)으로 코드 실시간 수정
-- 크롤링 목적 반드시 완수 (실패 불허)
-- 수정 로그: `logs/crawler-modifications-{date}.json`
-
-#### 글로벌 뉴스 크롤러 호출 (필수)
+#### 글로벌 뉴스 크롤러 (필수)
 
 ```
-Task(subagent_type="general-purpose"):
-  prompt: "글로벌 뉴스 크롤러 실행. 지침: .claude/agents/global-news-crawler.md 참조.
-           오늘 날짜 {date} 기준, 6개국 전체 (Korea, USA, UK, China, Japan, Saudi Arabia).
+Task(subagent_type="global-news-crawler"):
+  prompt: "글로벌 뉴스 크롤러 실행.
+           오늘 날짜 {date} 기준, 6개국 전체.
            신문당 최대 5개 기사, 차단 시 크롤러 코드 직접 수정하여 완수.
            출력: data/{date}/raw/global-news-{date}.json"
 ```
-
-**글로벌 크롤러 특성:**
-- 6개국 30개 주요 신문 크롤링
-- RSS 피드 우선 시도, 실패 시 직접 크롤링
-- 차단 시 자가 수정(self-healing)으로 코드 실시간 수정
-- 수정 로그: `logs/global-crawler-modifications-{date}.json`
 
 **지원 신문:**
 | 국가 | 신문 |
@@ -78,43 +78,71 @@ Task(subagent_type="general-purpose"):
 | Japan | Japan Times, Nikkei, Asahi, NHK, Mainichi |
 | Saudi | Arab News, Saudi Gazette, Al Arabiya, Asharq, Gulf News |
 
-#### 구글 뉴스 크롤러 호출 (필수)
+#### 구글 뉴스 크롤러 (필수)
 
 ```
-Task(subagent_type="general-purpose"):
-  prompt: "구글 뉴스 크롤러 실행. 지침: .claude/agents/google-news-crawler.md 참조.
+Task(subagent_type="google-news-crawler"):
+  prompt: "구글 뉴스 크롤러 실행.
            오늘 날짜 {date} 기준, STEEPS 전 카테고리 검색.
            카테고리당 최대 5개, 차단 시 크롤러 코드 직접 수정하여 완수.
            출력: data/{date}/raw/google-news-{date}.json"
 ```
 
-**구글 크롤러 특성:**
-- STEEPS 6개 카테고리별 키워드 검색
-- RSS 피드 우선 시도, 실패 시 직접 크롤링
-- 7개국 지원 (US, KR, GB, JP, CN, DE, FR)
-- 차단 시 자가 수정(self-healing)으로 코드 실시간 수정
-- 대체 전략: 국가 변경, 직접 검색, 대체 소스 활용
-- 수정 로그: `logs/google-crawler-modifications-{date}.json`
+---
 
-### Phase B: 무작위 탐험 스캔
-- `@exploration-scanner` 에이전트 호출
-- 키워드 변이 + 지역 확장 + 도메인 탐험
-- 새 소스 후보를 `discovered-sources.json`에 추가
+## STAGE 2: 신규 소스 탐험
 
-### Phase C: 링크 추적 & 새 소스 발견
-- `@link-tracker` 에이전트 호출
-- Phase A, B에서 발견한 기사의 인용/참고문헌 추적
-- 원천 소스 발견 및 기록
+**잔여 시간 = 180분 - stage1_duration (전체 강제 배정)**
 
-### Phase D: 발견된 소스 검증 & 평가
-- `@source-evaluator` 에이전트 호출
-- 발견된 소스 품질 평가 (0-100점)
-- 70점+ 소스는 정규 소스로 승격
+### 전문화된 4개 에이전트 순차/병렬 실행
 
-### Marathon 완료 후
-- `@performance-updater` 에이전트 호출
-- 소스별 성과 통계 갱신
-- 자기개선 지표 기록
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Step 2-1: @gap-analyzer                                     │
+│  • 현재 소스 DB의 STEEPS/지역/언어 갭 분석                  │
+│  • 탐험 우선순위 맵 생성                                    │
+│  출력: context/exploration-priorities-{date}.json            │
+├─────────────────────────────────────────────────────────────┤
+│  Step 2-2: @frontier-explorer + @citation-chaser (병렬)      │
+│  ┌───────────────────────┬─────────────────────────────┐    │
+│  │ @frontier-explorer    │ @citation-chaser            │    │
+│  │ (55% 시간)            │ (35% 시간)                  │    │
+│  │ • 미개척 지역 탐험    │ • Stage 1 신호 인용 추적    │    │
+│  │ • 비영어권 소스 발굴  │ • 원천의 원천 역추적       │    │
+│  │ • 신규 플랫폼 탐색    │ • 학술/싱크탱크 발굴       │    │
+│  └───────────────────────┴─────────────────────────────┘    │
+│  출력: config/discovered-sources.json (추가)                 │
+├─────────────────────────────────────────────────────────────┤
+│  Step 2-3: @rapid-validator (10% 시간)                       │
+│  • 발견된 소스 즉시 평가 (100점 척도)                       │
+│  • 70점+ → 자동 승격 (Tier 3)                              │
+│  • 50-69점 → 보류, 49점 이하 → 폐기                        │
+│  출력: config/regular-sources.json (승격 시)                 │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Stage 2 에이전트 호출
+
+```
+# Step 2-1: 갭 분석
+Task(subagent_type="gap-analyzer", model="haiku"):
+  prompt: "소스 DB 갭 분석. 입력: config/regular-sources.json, signals/database.json
+           출력: context/exploration-priorities-{date}.json"
+
+# Step 2-2: 병렬 탐험
+Task(subagent_type="frontier-explorer") [PARALLEL]:
+  prompt: "미개척 영역 탐험. 입력: context/exploration-priorities-{date}.json
+           출력: config/discovered-sources.json"
+
+Task(subagent_type="citation-chaser") [PARALLEL]:
+  prompt: "인용 역추적. 입력: data/{date}/raw/scanned-signals.json
+           출력: config/discovered-sources.json"
+
+# Step 2-3: 실시간 검증
+Task(subagent_type="rapid-validator", model="haiku"):
+  prompt: "발견 소스 검증. 입력: config/discovered-sources.json
+           70점+ 승격: config/regular-sources.json"
+```
 
 ---
 

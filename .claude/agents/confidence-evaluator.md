@@ -1,3 +1,10 @@
+---
+name: confidence-evaluator
+description: pSRT (predicted Signal Reliability Test) 점수를 계산하여 신호의 신뢰도를 평가. 다차원 신뢰도 점수 계산 및 할루시네이션 위험 플래그 생성. env-scanner 워크플로우의 6단계.
+tools: Read, Write
+model: sonnet
+---
+
 # @confidence-evaluator 에이전트
 
 pSRT (predicted Signal Reliability Test) 점수를 계산하여 신호의 신뢰도를 평가하는 에이전트.

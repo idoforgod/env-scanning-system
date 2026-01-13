@@ -1,7 +1,7 @@
 ---
-description: 일일 환경스캐닝 워크플로우 전체 실행 (Orchestrator 사용)
+description: 일일 환경스캐닝 워크플로우 전체 실행 (기본값: Marathon Mode)
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Task
-argument-hint: [--marathon | --skip-human | --phase <1|2|3> | --resume]
+argument-hint: [--fast | --skip-human | --phase <1|2|3> | --resume]
 ---
 
 # 환경스캐닝 워크플로우 - Orchestrator Mode
@@ -181,18 +181,18 @@ Task @source-evolver + @file-organizer (PARALLEL, optional):
 
 ---
 
-## Marathon Mode
+## Marathon Mode (기본값)
 
-**Marathon = multi-source-scanner만 3시간 확장**
+**Marathon = multi-source-scanner 심층 확장 스캔**
 
 ```
-Stage 1 (가변): 등록된 소스 스캔
+Stage 1: 등록된 소스 스캔
        ↓
-Stage 2 (잔여 시간 전체): 신규 소스 탐험
-  - 인용 추적 (25%)
-  - 도메인 탐험 (25%)
-  - 키워드 확장 (25%)
-  - 지역 확장 (25%)
+Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)
+  ├── @gap-analyzer: STEEPS/지역/언어 갭 분석
+  ├── @frontier-explorer: 미개척 영역 탐험 (55%)
+  ├── @citation-chaser: 인용 체인 역추적 (35%)
+  └── @rapid-validator: 발견 소스 실시간 검증 (10%)
 ```
 
 ---
@@ -255,11 +255,14 @@ Context low 발생 시:
 ## 실행 예시
 
 ```bash
-# Marathon 모드 (3시간 확장)
-/env-scan:run --marathon --skip-human
-
-# 일반 모드
+# 기본 실행 (Marathon Mode - 심층 스캔)
 /env-scan:run
+
+# Marathon Mode + Human Review 생략
+/env-scan:run --skip-human
+
+# Fast Mode (핵심 소스만 빠르게 스캔)
+/env-scan:run --fast
 
 # 특정 Phase만
 /env-scan:run --phase 1

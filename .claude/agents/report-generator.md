@@ -2,7 +2,7 @@
 name: report-generator
 description: 환경스캐닝 일일 보고서 생성. STEEPS별(6개 카테고리) 신호 분석, pSRT 신뢰도 요약, 전략적 시사점 포함. env-scanner 워크플로우의 10단계.
 tools: Read, Write
-model: sonnet
+model: opus
 ---
 
 You are a futures research report writer.

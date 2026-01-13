@@ -7,21 +7,50 @@ name: "env-scanning-workflow"
 description: "환경스캐닝 자동화 워크플로우 (17단계 전체)"
 
 # 모드 설정
+default_mode: marathon  # 기본 모드를 Marathon으로 설정
+
 modes:
-  standard:
-    total_duration: 60  # 분
-    scanner_duration: 30
+  fast:
+    description: "핵심 소스만 빠르게 스캔"
     marathon_enabled: false
 
-  marathon:
-    total_duration: 240  # 4시간 (3시간 스캔 + 1시간 분석/보고)
-    scanner_duration: 180  # 3시간
+  marathon:  # 기본 모드
+    description: "심층 확장 스캔 + 신규 소스 탐험"
     marathon_enabled: true
-    stage2_strategies:
-      - citation_tracking
-      - domain_exploration
-      - keyword_expansion
-      - regional_expansion
+
+    # Stage 1: 기존 소스 스캔 (가변 시간)
+    stage1:
+      description: "기존 DB 로딩 및 등록된 소스 스캔"
+      crawlers:
+        - naver-news-crawler
+        - global-news-crawler
+        - google-news-crawler
+
+    # Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)
+    stage2:
+      description: "완전히 새로운 소스 발굴"
+      forced_allocation: true  # 잔여 시간 전체 강제 배정
+      agents:
+        - id: gap-analyzer
+          order: 1
+          parallel: false
+          time_allocation: fixed_5min
+          model: haiku
+        - id: frontier-explorer
+          order: 2
+          parallel: true
+          time_allocation: 55%
+          model: sonnet
+        - id: citation-chaser
+          order: 2
+          parallel: true
+          time_allocation: 35%
+          model: sonnet
+        - id: rapid-validator
+          order: 3
+          parallel: false
+          time_allocation: 10%
+          model: haiku
 
 # Phase 정의
 phases:
@@ -261,7 +290,7 @@ phases:
           file: "logs/archive-notifier-report-{date}.md"
           condition: "exists"
 
-# 에이전트 메타데이터 (17개 에이전트)
+# 에이전트 메타데이터 (17개 + Stage 2 에이전트 4개)
 agents:
   # Phase 1
   archive-loader:
@@ -282,37 +311,75 @@ agents:
     timeout: 600  # 10분
     skippable: false
 
+  # Marathon Mode Stage 2 전용 에이전트
+  gap-analyzer:
+    subagent_type: "gap-analyzer"
+    max_retries: 1
+    timeout: 300  # 5분
+    skippable: false
+    model: haiku
+    description: "STEEPS/지역/언어 갭 분석"
+
+  frontier-explorer:
+    subagent_type: "frontier-explorer"
+    max_retries: 1
+    timeout: 5400  # 90분
+    skippable: false
+    model: opus
+    description: "미개척 영역 탐험 (지역/언어/플랫폼)"
+
+  citation-chaser:
+    subagent_type: "citation-chaser"
+    max_retries: 1
+    timeout: 3600  # 60분
+    skippable: false
+    model: sonnet
+    description: "인용 체인 역추적"
+
+  rapid-validator:
+    subagent_type: "rapid-validator"
+    max_retries: 1
+    timeout: 1200  # 20분
+    skippable: false
+    model: haiku
+    description: "발견 소스 실시간 검증 및 승격"
+
   # Phase 2
   signal-classifier:
     subagent_type: "signal-classifier"
     max_retries: 2
     timeout: 900  # 15분
     skippable: false
+    model: opus
 
   confidence-evaluator:
-    subagent_type: "general-purpose"  # 전용 에이전트 없으므로
+    subagent_type: "confidence-evaluator"
     max_retries: 2
     timeout: 600
     skippable: false
+    model: sonnet
 
   hallucination-detector:
-    subagent_type: "general-purpose"  # 전용 에이전트 없으므로
+    subagent_type: "hallucination-detector"
     max_retries: 2
     timeout: 600
     skippable: false
     mandatory: true
+    model: opus
 
   pipeline-validator:
-    subagent_type: "general-purpose"  # 전용 에이전트 없으므로
+    subagent_type: "pipeline-validator"
     max_retries: 2
     timeout: 300
     skippable: false
+    model: sonnet
 
   impact-analyzer:
     subagent_type: "impact-analyzer"
     max_retries: 2
     timeout: 900
     skippable: false
+    model: opus
 
   priority-ranker:
     subagent_type: "priority-ranker"
@@ -332,6 +399,7 @@ agents:
     max_retries: 2
     timeout: 900
     skippable: false
+    model: opus
 
   archive-notifier:
     subagent_type: "archive-notifier"
@@ -340,10 +408,11 @@ agents:
     skippable: false
 
   source-evolver:
-    subagent_type: "general-purpose"
+    subagent_type: "source-evolver"
     max_retries: 1
     timeout: 300
     skippable: true  # 실패해도 계속
+    model: sonnet
 
   file-organizer:
     subagent_type: "general-purpose"

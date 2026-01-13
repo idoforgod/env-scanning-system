@@ -1,3 +1,10 @@
+---
+name: hallucination-detector
+description: 환경스캐닝 신호의 할루시네이션(환각/날조) 위험을 심층 검증. AI가 생성한 정보의 신뢰성을 보장하는 마지막 방어선. env-scanner 워크플로우의 7단계.
+tools: Read, Write, WebSearch, WebFetch
+model: opus
+---
+
 # @hallucination-detector 에이전트
 
 환경스캐닝 신호의 할루시네이션(환각/날조) 위험을 심층 검증하는 에이전트.

@@ -10,8 +10,9 @@
 
 | 명령어 | 설명 |
 |--------|------|
-| `/env-scan:run --marathon` | **3시간 자기개선형 소스 탐색** |
-| `/env-scan:run` | 일반 환경스캐닝 실행 |
+| `/env-scan:run` | **기본값: Marathon Mode (심층 스캔)** |
+| `/env-scan:run --fast` | Fast Mode (핵심 소스만 빠르게 스캔) |
+| `/env-scan:run --skip-human` | Marathon + Human Review 생략 |
 | `/env-scan:resume` | 체크포인트에서 재개 |
 | `/env-scan:status` | 현재 상태 확인 |
 
@@ -42,28 +43,39 @@ Orchestrator: ~8,500 토큰/실행
 
 ---
 
-## Marathon Mode: 자기개선형 소스 탐색
+## Marathon Mode (기본값): 심층 소스 탐험
 
 ### 핵심 목적
-- Phase 1의 multi-source-scanner를 **3시간** 동안 실행
-- 더 많은 소스를 **무작위로 탐색**하여 좋은 소스 발견
-- 시간이 갈수록 더 좋은 자료를 찾는 **'자기개선'** 달성
+- 다중 소스 스캐닝 단계를 **확장**하여 심층 탐색 수행
+- **이전에 한 번도 스캔하지 않은** 완전히 새로운 소스 발굴
+- Stage 1 완료 후 잔여 시간 **전체**를 Stage 2에 **강제 배정**
 
-### 3시간 타임라인
+> **Note**: `/env-scan:run` 실행 시 기본적으로 Marathon 모드로 작동합니다.
+> 빠른 스캔이 필요하면 `--fast` 옵션을 사용하세요.
+
+### 2단계 구조
+
 ```
-0:00-0:30  Phase A: Tier 1 핵심 소스 스캔
-0:30-1:30  Phase B: 무작위 탐험 스캔 (@exploration-scanner)
-1:30-2:30  Phase C: 링크 추적 & 새 소스 발견 (@link-tracker)
-2:30-3:00  Phase D: 발견된 소스 검증 & 평가 (@source-evaluator)
+┌─────────────────────────────────────────────────────────┐
+│  Stage 1: 기존 소스 스캔 (가변)                          │
+│  • DB에 등록된 소스 스캔                                 │
+│  • 네이버/글로벌/구글 크롤러 병렬 실행                   │
+├─────────────────────────────────────────────────────────┤
+│  Stage 2: 신규 소스 탐험 (잔여 시간 전체 강제 배정)      │
+│  • Step 2-1: @gap-analyzer (갭 분석)                    │
+│  • Step 2-2: @frontier-explorer + @citation-chaser (병렬)│
+│  • Step 2-3: @rapid-validator (실시간 검증)             │
+└─────────────────────────────────────────────────────────┘
 ```
 
-### Marathon 전용 에이전트
-| 에이전트 | 역할 |
-|----------|------|
-| `@exploration-scanner` | 무작위 탐험, 새 소스 발견 |
-| `@link-tracker` | 인용/참고문헌 추적 |
-| `@source-evaluator` | 소스 품질 평가 및 승격 |
-| `@performance-updater` | 성과 통계 갱신 |
+### Stage 2 전문 에이전트
+
+| 에이전트 | 역할 | 배분 |
+|----------|------|------|
+| `@gap-analyzer` | STEEPS/지역/언어 갭 분석, 우선순위 맵 생성 | 선행 |
+| `@frontier-explorer` | 미개척 지역/비영어권/신규 플랫폼 탐험 | 55% |
+| `@citation-chaser` | 인용 체인 역추적, 원천 소스 발굴 | 35% |
+| `@rapid-validator` | 발견 소스 실시간 검증 (70점+ 자동 승격) | 10% |
 
 ---
 
