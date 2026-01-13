@@ -100,6 +100,25 @@ templates:
       완료 시 반환: {{ "status": "success", "count": N, "avg_psrt": X.X }}
     token_estimate: 250
 
+  confidence-evaluator:
+    prompt: |
+      날짜: {date}
+      작업: pSRT 심층 평가 및 할루시네이션 플래그 생성
+
+      입력:
+      - data/{date}/analysis/pSRT-scores.json
+
+      출력:
+      - data/{date}/analysis/confidence-evaluation.json
+
+      평가 기준:
+      - pSRT < 60: 검증 필요 플래그
+      - 출처 불명확: 플래그
+      - 정량 데이터 없음: 플래그
+
+      완료 시 반환: {{ "status": "success", "flagged": N, "passed": M }}
+    token_estimate: 200
+
   hallucination-detector:
     prompt: |
       날짜: {date}
@@ -121,6 +140,26 @@ templates:
 
       완료 시 반환: {{ "status": "success", "high": N, "medium": M, "low": L }}
     token_estimate: 220
+
+  pipeline-validator:
+    prompt: |
+      날짜: {date}
+      작업: 데이터 동기화 검증
+
+      입력:
+      - data/{date}/structured/structured-signals.json
+      - data/{date}/analysis/pSRT-scores.json
+
+      출력:
+      - data/{date}/analysis/validation-report.json
+
+      검증 항목:
+      - pSRT 신호 수 == structured 신호 수
+      - 모든 신호 ID 매칭
+      - 필수 필드 존재 확인
+
+      완료 시 반환: {{ "status": "success", "matched": N, "mismatched": M }}
+    token_estimate: 150
 
   impact-analyzer:
     prompt: |
@@ -212,6 +251,44 @@ templates:
 
       완료 시 반환: {{ "status": "success", "archived": N, "total_signals": M }}
     token_estimate: 150
+
+  source-evolver:
+    prompt: |
+      날짜: {date}
+      작업: 발견된 소스 평가 및 등록
+
+      입력:
+      - config/evolution/pending-sources.json
+
+      출력:
+      - config/evolution/evolution-log.json
+      - config/regular-sources.json (업데이트)
+
+      평가 기준:
+      - 3회 이상 좋은 신호 제공 → Tier 승격 후보
+      - 할루시네이션 신호 다수 → Tier 강등 후보
+
+      완료 시 반환: {{ "status": "success", "promoted": N, "demoted": M }}
+    token_estimate: 150
+
+  file-organizer:
+    prompt: |
+      날짜: {date}
+      작업: 파일 자동 정리
+
+      입력:
+      - data/{date}/ (전체 폴더)
+
+      출력:
+      - 정리 완료 로그
+
+      작업 내용:
+      - 임시 파일 정리
+      - 날짜별 폴더 구조 정리
+      - 중복 파일 제거
+
+      완료 시 반환: {{ "status": "success", "organized": N, "removed": M }}
+    token_estimate: 100
 
 # 에이전트별 반환 형식 검증
 return_schemas:

@@ -1,9 +1,10 @@
 # Environmental Scanning Workflow Definition
 # Orchestrator가 참조하는 선언적 워크플로우 정의
+# 기존 17단계 워크플로우 전체 유지
 
-version: "2.0"
+version: "2.1"
 name: "env-scanning-workflow"
-description: "환경스캐닝 자동화 워크플로우"
+description: "환경스캐닝 자동화 워크플로우 (17단계 전체)"
 
 # 모드 설정
 modes:
@@ -25,14 +26,14 @@ modes:
 # Phase 정의
 phases:
   # ═══════════════════════════════════════════════════════════════════
-  # Phase 1: Research (정보 수집)
+  # Phase 1: Research (정보 수집) - 4단계
   # ═══════════════════════════════════════════════════════════════════
   - id: phase1
     name: "Research"
     description: "정보 수집 및 원시 데이터 생성"
 
     steps:
-      - id: step1_1
+      - id: step1
         agent: archive-loader
         description: "기존 신호 DB 로드"
         parallel: false
@@ -43,7 +44,7 @@ phases:
           dedup_index: "context/dedup-index-{date}.json"
         token_estimate: 800
 
-      - id: step1_2
+      - id: step2
         agent: multi-source-scanner
         description: "다중 소스 스캐닝"
         parallel: false
@@ -58,7 +59,7 @@ phases:
           signals: "data/{date}/raw/scanned-signals.json"
         token_estimate: 2000
 
-      - id: step1_3
+      - id: step3
         agent: dedup-filter
         description: "중복 신호 필터링"
         parallel: false
@@ -70,6 +71,13 @@ phases:
           filtered: "data/{date}/filtered/filtered-signals.json"
           new_index: "context/dedup-index-{date}.json"
         token_estimate: 600
+
+      - id: step4
+        type: human_review
+        description: "[Human Review] 필터링 결과 검토"
+        skip_condition: "--skip-human"
+        command: "/env-scan:review-filter"
+        token_estimate: 0
 
     gate:
       id: gate1
@@ -87,14 +95,14 @@ phases:
           condition: "exists"
 
   # ═══════════════════════════════════════════════════════════════════
-  # Phase 2: Planning (분석 및 구조화)
+  # Phase 2: Planning (분석 및 구조화) - 7단계
   # ═══════════════════════════════════════════════════════════════════
   - id: phase2
     name: "Planning"
     description: "신호 분석, 분류, 우선순위 산정"
 
     steps:
-      - id: step2_1
+      - id: step5
         agent: signal-classifier
         description: "STEEPS 분류 및 pSRT 계산"
         parallel: false
@@ -105,19 +113,41 @@ phases:
           psrt: "data/{date}/analysis/pSRT-scores.json"
         token_estimate: 1200
 
-      - id: step2_2
+      - id: step6
+        agent: confidence-evaluator
+        description: "pSRT 심층 평가 및 할루시네이션 플래그 생성"
+        parallel: false
+        input:
+          psrt: "data/{date}/analysis/pSRT-scores.json"
+        output:
+          evaluation: "data/{date}/analysis/confidence-evaluation.json"
+        token_estimate: 600
+
+      - id: step7
         agent: hallucination-detector
         description: "할루시네이션 검증"
         parallel: false
         mandatory: true  # 필수 - 실패 시 워크플로우 중단
         input:
           psrt: "data/{date}/analysis/pSRT-scores.json"
+          evaluation: "data/{date}/analysis/confidence-evaluation.json"
           structured: "data/{date}/structured/structured-signals.json"
         output:
           report: "data/{date}/analysis/hallucination-report.json"
         token_estimate: 800
 
-      - id: step2_3_parallel
+      - id: step8
+        agent: pipeline-validator
+        description: "데이터 동기화 검증"
+        parallel: false
+        input:
+          structured: "data/{date}/structured/structured-signals.json"
+          psrt: "data/{date}/analysis/pSRT-scores.json"
+        output:
+          validation: "data/{date}/analysis/validation-report.json"
+        token_estimate: 400
+
+      - id: step9_10_parallel
         agents:
           - impact-analyzer
           - priority-ranker
@@ -131,6 +161,13 @@ phases:
           priority: "data/{date}/analysis/priority-ranked.json"
         token_estimate: 1500  # 병렬이므로 합산
 
+      - id: step11
+        type: human_review
+        description: "[Human Review] 분석 결과 검토"
+        skip_condition: "--skip-human"
+        command: "/env-scan:review-analysis"
+        token_estimate: 0
+
     gate:
       id: gate2
       name: "Phase 2 Quality Gate"
@@ -139,6 +176,9 @@ phases:
           file: "data/{date}/analysis/hallucination-report.json"
           condition: "exists"
           mandatory: true
+        - name: "validation report exists"
+          file: "data/{date}/analysis/validation-report.json"
+          condition: "exists"
         - name: "pSRT scores exist"
           file: "data/{date}/analysis/pSRT-scores.json"
           condition: "exists"
@@ -153,14 +193,14 @@ phases:
           tolerance: 0.05  # 5% 허용
 
   # ═══════════════════════════════════════════════════════════════════
-  # Phase 3: Implementation (보고서 생성)
+  # Phase 3: Implementation (보고서 생성) - 6단계
   # ═══════════════════════════════════════════════════════════════════
   - id: phase3
     name: "Implementation"
     description: "DB 업데이트, 보고서 생성, 아카이빙"
 
     steps:
-      - id: step3_1_parallel
+      - id: step12_13_parallel
         agents:
           - db-updater
           - report-generator
@@ -175,7 +215,7 @@ phases:
           report: "data/{date}/reports/environmental-scan-{date}.md"
         token_estimate: 1200
 
-      - id: step3_2
+      - id: step14
         agent: archive-notifier
         description: "아카이빙 및 완료 처리"
         parallel: false
@@ -186,11 +226,11 @@ phases:
           status: "logs/workflow-status.json"
         token_estimate: 500
 
-      - id: step3_3_optional
+      - id: step15_16_parallel
         agents:
           - source-evolver
           - file-organizer
-        description: "소스 진화 + 파일 정리 (선택적)"
+        description: "소스 진화 + 파일 정리 (선택적, 병렬)"
         parallel: true
         optional: true  # 실패해도 워크플로우 계속
         input:
@@ -199,6 +239,13 @@ phases:
         output:
           evolution_log: "config/evolution/evolution-log.json"
         token_estimate: 400
+
+      - id: step17
+        type: human_approval
+        description: "[Human Approval] 최종 승인"
+        skip_condition: "--skip-human"
+        command: "/env-scan:approve 또는 /env-scan:revision"
+        token_estimate: 0
 
     gate:
       id: gate3
@@ -214,8 +261,9 @@ phases:
           file: "logs/archive-notifier-report-{date}.md"
           condition: "exists"
 
-# 에이전트 메타데이터
+# 에이전트 메타데이터 (17개 에이전트)
 agents:
+  # Phase 1
   archive-loader:
     subagent_type: "archive-loader"
     max_retries: 2
@@ -234,10 +282,17 @@ agents:
     timeout: 600  # 10분
     skippable: false
 
+  # Phase 2
   signal-classifier:
     subagent_type: "signal-classifier"
     max_retries: 2
     timeout: 900  # 15분
+    skippable: false
+
+  confidence-evaluator:
+    subagent_type: "general-purpose"  # 전용 에이전트 없으므로
+    max_retries: 2
+    timeout: 600
     skippable: false
 
   hallucination-detector:
@@ -246,6 +301,12 @@ agents:
     timeout: 600
     skippable: false
     mandatory: true
+
+  pipeline-validator:
+    subagent_type: "general-purpose"  # 전용 에이전트 없으므로
+    max_retries: 2
+    timeout: 300
+    skippable: false
 
   impact-analyzer:
     subagent_type: "impact-analyzer"
@@ -259,6 +320,7 @@ agents:
     timeout: 600
     skippable: false
 
+  # Phase 3
   db-updater:
     subagent_type: "db-updater"
     max_retries: 3
@@ -289,13 +351,14 @@ agents:
     timeout: 300
     skippable: true  # 실패해도 계속
 
-# 토큰 예산
+# 토큰 예산 (17단계 기준)
 token_budget:
   total_limit: 100000
-  phase1_limit: 4000
-  phase2_limit: 4000
-  phase3_limit: 3000
-  overhead: 1000  # Orchestrator 자체 사용
+  phase1_limit: 3500   # 4단계
+  phase2_limit: 4500   # 7단계
+  phase3_limit: 2500   # 6단계
+  overhead: 1000       # Orchestrator 자체 사용
+  estimated_total: 11500  # 기존 26,000 대비 56% 절감
 
 # 체크포인트 설정
 checkpoint:

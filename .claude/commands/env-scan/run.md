@@ -21,7 +21,7 @@ argument-hint: [--marathon | --skip-human | --phase <1|2|3> | --resume]
 
 ---
 
-## 워크플로우 구조
+## 워크플로우 구조 (17단계 전체 유지)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -30,16 +30,24 @@ argument-hint: [--marathon | --skip-human | --phase <1|2|3> | --resume]
 │                                                                      │
 │  Phase 1: Research          Phase 2: Planning      Phase 3: Impl    │
 │  ┌─────────────────┐       ┌─────────────────┐    ┌──────────────┐  │
-│  │ archive-loader  │       │ signal-classif  │    │ db-updater   │  │
+│  │ 1.archive-loader│       │ 5.signal-classif│    │12.db-updater │  │
+│  │       ↓         │       │       ↓         │    │13.report-gen │  │
+│  │ 2.multi-source  │       │ 6.confidence-   │    │  [PARALLEL]  │  │
+│  │   -scanner      │  →    │   evaluator     │ →  │      ↓       │  │
+│  │       ↓         │       │       ↓         │    │14.archive-   │  │
+│  │ 3.dedup-filter  │       │ 7.hallucination │    │   notifier   │  │
 │  │       ↓         │       │       ↓         │    │      ↓       │  │
-│  │ multi-source    │  →    │ hallucination   │ →  │ report-gen   │  │
-│  │ -scanner        │       │ [PARALLEL]      │    │ [PARALLEL]   │  │
-│  │       ↓         │       │ impact+priority │    │      ↓       │  │
-│  │ dedup-filter    │       └─────────────────┘    │ archive-     │  │
-│  └─────────────────┘                              │ notifier     │  │
-│         ↓                          ↓              └──────────────┘  │
-│     [Gate 1]                   [Gate 2]               [Gate 3]      │
-│                                                                      │
+│  │ 4.[Human Review]│       │ 8.pipeline-     │    │15.source-    │  │
+│  └─────────────────┘       │   validator     │    │   evolver    │  │
+│         ↓                  │       ↓         │    │16.file-      │  │
+│     [Gate 1]               │ 9.impact-analyz │    │   organizer  │  │
+│                            │10.priority-rank │    │  [PARALLEL]  │  │
+│                            │  [PARALLEL]     │    │      ↓       │  │
+│                            │       ↓         │    │17.[Approval] │  │
+│                            │11.[Human Review]│    └──────────────┘  │
+│                            └─────────────────┘         ↓            │
+│                                    ↓                [Gate 3]        │
+│                                [Gate 2]                             │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -47,39 +55,45 @@ argument-hint: [--marathon | --skip-human | --phase <1|2|3> | --resume]
 
 ## 실행 단계 (Orchestrator가 자동 수행)
 
-### Phase 1: Research
+### Phase 1: Research (정보 수집)
 
-**Step 1.1: Archive Loader**
+**Step 1: Archive Loader**
 ```
 Task @archive-loader:
   날짜: {date}
   입력: signals/database.json
-  출력: context/archive-summary-{date}.json
+  출력: context/archive-summary-{date}.json, context/dedup-index-{date}.json
 ```
 
-**Step 1.2: Multi-Source Scanner**
+**Step 2: Multi-Source Scanner**
 ```
 Task @multi-source-scanner:
   날짜: {date}
   모드: {marathon | standard}
+  입력: config/regular-sources.json
   출력: data/{date}/raw/scanned-signals.json
 ```
 
-**Step 1.3: Dedup Filter**
+**Step 3: Dedup Filter**
 ```
 Task @dedup-filter:
   날짜: {date}
-  입력: data/{date}/raw/scanned-signals.json
+  입력: data/{date}/raw/scanned-signals.json, context/dedup-index-{date}.json
   출력: data/{date}/filtered/filtered-signals.json
+```
+
+**Step 4: [Human Review]** (--skip-human 시 생략)
+```
+/env-scan:review-filter 로 결과 검토
 ```
 
 **Gate 1 검증**: filtered-signals.json 존재 + 신호수 > 0
 
 ---
 
-### Phase 2: Planning
+### Phase 2: Planning (분석 및 구조화)
 
-**Step 2.1: Signal Classifier**
+**Step 5: Signal Classifier**
 ```
 Task @signal-classifier:
   날짜: {date}
@@ -87,15 +101,34 @@ Task @signal-classifier:
   출력: data/{date}/structured/structured-signals.json, data/{date}/analysis/pSRT-scores.json
 ```
 
-**Step 2.2: Hallucination Detector [필수]**
+**Step 6: Confidence Evaluator**
 ```
-Task @hallucination-detector (general-purpose):
+Task @confidence-evaluator:
   날짜: {date}
   입력: data/{date}/analysis/pSRT-scores.json
-  출력: data/{date}/analysis/hallucination-report.json
+  출력: data/{date}/analysis/confidence-evaluation.json
+  작업: pSRT 심층 평가 및 할루시네이션 플래그 생성
 ```
 
-**Step 2.3: Impact + Priority [병렬]**
+**Step 7: Hallucination Detector [필수]**
+```
+Task @hallucination-detector:
+  날짜: {date}
+  입력: data/{date}/analysis/pSRT-scores.json, data/{date}/analysis/confidence-evaluation.json
+  출력: data/{date}/analysis/hallucination-report.json
+  ⚠️ 이 단계를 건너뛰면 워크플로우 실패로 처리
+```
+
+**Step 8: Pipeline Validator**
+```
+Task @pipeline-validator:
+  날짜: {date}
+  입력: data/{date}/structured/structured-signals.json, data/{date}/analysis/pSRT-scores.json
+  출력: data/{date}/analysis/validation-report.json
+  작업: pSRT 신호 수와 structured 신호 수 일치 확인
+```
+
+**Step 9-10: Impact + Priority [병렬]**
 ```
 Task @impact-analyzer + @priority-ranker (PARALLEL):
   날짜: {date}
@@ -103,13 +136,18 @@ Task @impact-analyzer + @priority-ranker (PARALLEL):
   출력: data/{date}/analysis/impact-assessment.json, data/{date}/analysis/priority-ranked.json
 ```
 
-**Gate 2 검증**: hallucination-report.json 존재 (필수)
+**Step 11: [Human Review]** (--skip-human 시 생략)
+```
+/env-scan:review-analysis 로 결과 검토
+```
+
+**Gate 2 검증**: hallucination-report.json + validation-report.json 존재 (필수)
 
 ---
 
-### Phase 3: Implementation
+### Phase 3: Implementation (보고서 생성)
 
-**Step 3.1: DB + Report [병렬]**
+**Step 12-13: DB + Report [병렬]**
 ```
 Task @db-updater + @report-generator (PARALLEL):
   날짜: {date}
@@ -117,14 +155,29 @@ Task @db-updater + @report-generator (PARALLEL):
   출력: signals/database.json, data/{date}/reports/environmental-scan-{date}.md
 ```
 
-**Step 3.2: Archive Notifier**
+**Step 14: Archive Notifier**
 ```
 Task @archive-notifier:
   날짜: {date}
+  입력: data/{date}/ (전체 폴더)
   출력: logs/archive-notifier-report-{date}.md
 ```
 
-**Gate 3 검증**: report 생성 완료
+**Step 15-16: Source Evolver + File Organizer [병렬, 선택적]**
+```
+Task @source-evolver + @file-organizer (PARALLEL, optional):
+  날짜: {date}
+  입력: config/evolution/pending-sources.json, data/{date}/
+  출력: config/evolution/evolution-log.json
+  ※ Marathon 모드 후 실행, 실패해도 워크플로우 계속
+```
+
+**Step 17: [Human Approval]** (--skip-human 시 생략)
+```
+/env-scan:approve 또는 /env-scan:revision 으로 최종 승인
+```
+
+**Gate 3 검증**: report.md 생성 완료
 
 ---
 
@@ -153,7 +206,9 @@ data/{YYYY}/{MM}/{DD}/
 ├── structured/structured-signals.json
 ├── analysis/
 │   ├── pSRT-scores.json
+│   ├── confidence-evaluation.json
 │   ├── hallucination-report.json
+│   ├── validation-report.json
 │   ├── impact-assessment.json
 │   └── priority-ranked.json
 └── reports/environmental-scan-{date}.md
@@ -166,7 +221,7 @@ data/{YYYY}/{MM}/{DD}/
 | Gate | 검증 항목 | 실패 시 |
 |------|----------|---------|
 | Gate 1 | filtered-signals.json 존재, 신호수 > 0 | Phase 2 진입 불가 |
-| Gate 2 | hallucination-report.json 존재 (필수) | Phase 3 진입 불가 |
+| Gate 2 | hallucination-report.json + validation-report.json 존재 | Phase 3 진입 불가 |
 | Gate 3 | report.md 생성 완료 | 경고 표시 |
 
 ---
@@ -175,13 +230,13 @@ data/{YYYY}/{MM}/{DD}/
 
 | 구분 | 예상 토큰 |
 |------|----------|
-| Phase 1 에이전트 | ~2,500 |
-| Phase 2 에이전트 | ~3,500 |
-| Phase 3 에이전트 | ~2,000 |
+| Phase 1 에이전트 (4단계) | ~2,500 |
+| Phase 2 에이전트 (7단계) | ~4,000 |
+| Phase 3 에이전트 (6단계) | ~2,500 |
 | Orchestrator 오버헤드 | ~500 |
-| **총합** | **~8,500** |
+| **총합** | **~9,500** |
 
-기존 방식 대비 **69% 절감** (26,000 → 8,500)
+기존 방식 대비 **63% 절감** (26,000 → 9,500)
 
 ---
 
