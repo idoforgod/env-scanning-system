@@ -76,7 +76,36 @@ coverage.xml
 .mypy_cache/
 
 # Environmental Scanning - Root Directory Protection
-# 실행 요약 파일들 (data/YYYY/MM/DD/execution/ 에 저장되어야 함)
+# ═══════════════════════════════════════════════════════════════
+
+# 날짜별 완료 보고서 (루트에 생성되면 안됨)
+/*-2026-*.md
+/*-2026-*.txt
+/*-2026-*.json
+/*-2026-*.py
+
+# 에이전트 생성 임시 스크립트
+/FINAL_RUN.py
+/EXECUTE_UPDATE.py
+/*_updater*.py
+/*_update*.py
+/*_ranking*.py
+/execute_*.py
+/test_*.py
+/verify_*.py
+/run_*.py
+/process_*.py
+/final_*.py
+/exec_*.py
+/db_*.py
+/dedup_*.py
+/priority_*.py
+
+# 임시 쉘 스크립트
+/*.sh
+!/src/**/*.sh
+
+# 완료 보고서 패턴
 /ARCHIVE-*.md
 /ARCHIVE-*.txt
 /DEDUP-*.md
@@ -86,10 +115,14 @@ coverage.xml
 /*-REPORT*.md
 /*-INDEX*.md
 /*-REFERENCE*.md
-
-# 임시 Python 스크립트 (src/scripts/ 에 있어야 함)
-/archive_loader.py
-/dedup_filter.py
+/*-COMPLETION*.md
+/*-EXECUTION*.md
+/*-STATUS*.md
+/*-OUTPUTS*.txt
+/*-ANALYSIS*.txt
 
 # 캐시 폴더
 /cache/
+
+# env-scanning 임시 폴더
+/env-scanning/

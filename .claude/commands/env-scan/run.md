@@ -266,6 +266,32 @@ Task @signal-classifier:
 
 ---
 
+## Step 17: Root Cleanup (자동)
+
+Gate 3 통과 후 **루트 디렉토리 임시 파일 자동 삭제**:
+
+```bash
+# 삭제 대상 (루트 디렉토리만)
+rm -f ./*-{date}.md      # 날짜별 완료 보고서
+rm -f ./*-{date}.txt     # 날짜별 상태 파일
+rm -f ./*-{date}.json    # 날짜별 임시 JSON
+rm -f ./*-{date}.py      # 날짜별 임시 스크립트
+rm -f ./FINAL_RUN.py ./EXECUTE_UPDATE.py  # DB 업데이트 스크립트
+rm -f ./*_updater*.py ./*_update*.py      # 업데이터 스크립트
+rm -f ./*_ranking*.py ./execute_*.py      # 랭킹/실행 스크립트
+rm -f ./test_*.py ./verify_*.py           # 테스트 스크립트
+rm -f ./*.sh                              # 임시 쉘 스크립트
+
+# 보호 파일 (절대 삭제 금지)
+# - CLAUDE.md
+# - README.md
+# - WARP.md
+```
+
+**삭제 조건**: Gate 3 통과 (report.md 생성 확인) 후에만 실행
+
+---
+
 ## 금지 사항
 
 1. **multi-source-scanner 위임 금지**: 스캐너를 직접 호출
