@@ -22,6 +22,7 @@ import json
 import random
 import time
 from datetime import datetime, timedelta
+from typing import ClassVar
 from urllib.parse import quote_plus
 
 try:
@@ -49,11 +50,11 @@ class GoogleNewsCrawler:
     """구글 뉴스 크롤러"""
 
     # Google News RSS 기본 URL
-    RSS_BASE = "https://news.google.com/rss"
-    SEARCH_RSS = "https://news.google.com/rss/search"
+    RSS_BASE: ClassVar[str] = "https://news.google.com/rss"
+    SEARCH_RSS: ClassVar[str] = "https://news.google.com/rss/search"
 
     # STEEPS 카테고리별 검색 키워드
-    STEEPS_KEYWORDS = {
+    STEEPS_KEYWORDS: ClassVar[dict[str, list[str]]] = {
         "Social": [
             "population crisis",
             "demographic shift",
@@ -147,7 +148,7 @@ class GoogleNewsCrawler:
     }
 
     # User-Agent 로테이션
-    USER_AGENTS = [
+    USER_AGENTS: ClassVar[list[str]] = [
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -156,7 +157,7 @@ class GoogleNewsCrawler:
     ]
 
     # 국가 코드 매핑
-    COUNTRY_CODES = {
+    COUNTRY_CODES: ClassVar[dict[str, dict[str, str]]] = {
         "KR": {"hl": "ko", "gl": "KR", "ceid": "KR:ko"},
         "US": {"hl": "en-US", "gl": "US", "ceid": "US:en"},
         "GB": {"hl": "en-GB", "gl": "GB", "ceid": "GB:en"},
@@ -194,7 +195,7 @@ class GoogleNewsCrawler:
             self.errors.append(f"Fetch error for {url}: {e!s}")
             return None
 
-    def _build_search_url(self, query: str, country: str = None) -> str:
+    def _build_search_url(self, query: str, country: str | None = None) -> str:
         """검색 RSS URL 생성"""
         country = country or self.country
         params = self.COUNTRY_CODES.get(country, self.COUNTRY_CODES["US"])
@@ -224,7 +225,7 @@ class GoogleNewsCrawler:
                 try:
                     pub_date = datetime.strptime(published, "%a, %d %b %Y %H:%M:%S %Z")
                     pub_date_str = pub_date.strftime("%Y-%m-%d")
-                except:
+                except Exception:
                     pub_date_str = datetime.now().strftime("%Y-%m-%d")
 
                 # 소스 추출
@@ -255,16 +256,16 @@ class GoogleNewsCrawler:
         text = soup.get_text(separator=" ", strip=True)
         return text[:500]
 
-    def _is_recent(self, pub_date: str, hours: int = 24) -> bool:
-        """최근 N시간 이내인지 확인"""
+    def _is_recent(self, pub_date: str, hours: int = 168) -> bool:
+        """최근 N시간 이내인지 확인 (기본: 7일)"""
         try:
             pub = datetime.strptime(pub_date, "%Y-%m-%d")
             cutoff = datetime.now() - timedelta(hours=hours)
             return pub >= cutoff.replace(hour=0, minute=0, second=0)
-        except:
+        except Exception:
             return True  # 파싱 실패 시 포함
 
-    def search_news(self, query: str, max_items: int = 10, country: str = None) -> list[dict]:
+    def search_news(self, query: str, max_items: int = 10, country: str | None = None) -> list[dict]:
         """키워드로 뉴스 검색"""
         print(f"  [INFO] 검색: '{query[:30]}...' (최대 {max_items}건)")
 
@@ -280,7 +281,7 @@ class GoogleNewsCrawler:
 
         return recent_articles[:max_items]
 
-    def _crawl_search_page(self, query: str, country: str = None) -> list[dict]:
+    def _crawl_search_page(self, query: str, country: str | None = None) -> list[dict]:
         """직접 크롤링 (RSS 실패 시 대체)"""
         country = country or self.country
         params = self.COUNTRY_CODES.get(country, self.COUNTRY_CODES["US"])
@@ -357,7 +358,7 @@ class GoogleNewsCrawler:
 
         return all_articles
 
-    def search_trending(self, country: str = None, max_items: int = 20) -> list[dict]:
+    def search_trending(self, country: str | None = None, max_items: int = 20) -> list[dict]:
         """트렌딩 뉴스 수집"""
         country = country or self.country
         params = self.COUNTRY_CODES.get(country, self.COUNTRY_CODES["US"])
@@ -497,10 +498,7 @@ def main():
     # 출력
     today = datetime.now().strftime("%Y-%m-%d")
 
-    if args.raw_format:
-        result = crawler.to_raw_format(articles, today)
-    else:
-        result = {"total": len(articles), "items": articles}
+    result = crawler.to_raw_format(articles, today) if args.raw_format else {"total": len(articles), "items": articles}
 
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:

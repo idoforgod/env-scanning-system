@@ -2,54 +2,82 @@
   "loaded_date": "2026-01-13",
   "archive_loading_status": "success",
   "database_stats": {
-    "total_signals": 183,
-    "scan_count": 9,
+    "total_signals": 207,
+    "scan_count": 10,
     "database_created": "2026-01-09",
-    "database_last_updated": "2026-01-13T09:15:00Z",
+    "database_last_updated": "2026-01-13T16:30:00Z",
     "by_status": {
-      "emerging": 179,
-      "developing": 4
+      "emerging": 199,
+      "developing": 8
     },
     "by_category": {
-      "Technological": 58,
-      "Economic": 32,
-      "Social": 25,
-      "Environmental": 20,
-      "Political": 26,
-      "Spiritual": 11
+      "Technological": 81,
+      "Social": 29,
+      "Economic": 37,
+      "Political": 30,
+      "Environmental": 24,
+      "Spiritual": 6
     },
     "by_significance": {
-      "5": 42,
-      "4": 92,
-      "3": 44,
-      "2": 5
+      "5": 48,
+      "4": 101,
+      "3": 52,
+      "2": 6
     },
     "by_priority": {
       "critical": 22,
       "high": 48,
       "medium": 55,
       "low": 22,
-      "archived": 36
+      "archived": 36,
+      "high_priority_2026": 13,
+      "medium_priority_2026": 9,
+      "low_priority_2026": 2
     }
   },
   "archive_stats": {
-    "reports_loaded": 0,
-    "archive_scan_dates": [],
-    "source_files": [],
-    "total_archive_signals": 0,
-    "archive_coverage": "No archives loaded",
-    "days_covered": 0,
-    "coverage_percentage": "0%"
+    "reports_loaded": 1,
+    "archive_scan_dates": ["2026-01-13"],
+    "source_files": [
+      "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json"
+    ],
+    "total_archive_signals": 24,
+    "archive_coverage": "Latest daily scan loaded",
+    "days_covered": 1,
+    "coverage_percentage": "100% (latest day)",
+    "latest_archive_summary": {
+      "file": "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json",
+      "scan_date": "2026-01-13",
+      "total_new_signals": 24,
+      "by_category": {
+        "Social": 4,
+        "Technological": 10,
+        "Economic": 5,
+        "Environmental": 3,
+        "Political": 2,
+        "Spiritual": 0
+      },
+      "high_priority_count": 13,
+      "generated_at": "2026-01-13T08:58:44.785735Z"
+    }
   },
   "recent_7day_window": {
-    "active_dates": ["2026-01-07", "2026-01-08", "2026-01-09", "2026-01-10", "2026-01-11", "2026-01-12", "2026-01-13"],
-    "signals_in_database": 183,
+    "active_dates": [
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-09",
+      "2026-01-10",
+      "2026-01-11",
+      "2026-01-12",
+      "2026-01-13"
+    ],
+    "signals_in_database": 207,
     "active_dedup_threshold": "high_sensitivity"
   },
   "dedup_index_metrics": {
-    "total_unique_ids": 183,
+    "total_unique_ids": 207,
     "exact_url_matching_entries": 6,
-    "title_indexed": 183,
+    "title_indexed": 207,
     "entities_indexed": 282,
     "tag_indexed": 584,
     "title_similarity_threshold": "0.85+",
@@ -61,65 +89,182 @@
   "top_priority_signals": [
     {
       "rank": 1,
-      "id": "SIG-2026-0113-001",
-      "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
-      "score": 8.4,
+      "id": "SIG-2026-0113-002",
+      "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+      "score": 8.7,
       "category": "Technological",
       "status": "emerging",
       "date_added": "2026-01-13"
     },
     {
       "rank": 2,
-      "id": "SIG-2026-0113-024",
-      "title": "New START Expires February 2026: End of Nuclear Arms Control",
-      "score": 9.3,
-      "category": "Political",
-      "status": "emerging",
+      "id": "SIG-2026-0113-009",
+      "title": "Global Renewables Hit 800GW Annual Record",
+      "score": 8.7,
+      "category": "Environmental",
+      "status": "developing",
       "date_added": "2026-01-13"
     },
     {
       "rank": 3,
-      "id": "SIG-2026-0113-023",
-      "title": "AI Regulation: EU AI Act Becomes Fully Applicable August 2, 2026",
-      "score": 9.1,
+      "id": "SIG-2026-0113-003",
+      "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
+      "score": 8.6,
       "category": "Technological",
       "status": "emerging",
       "date_added": "2026-01-13"
     },
     {
       "rank": 4,
-      "id": "SIG-2026-0113-063",
-      "title": "MIT: Personalized Gene Editing Reaches Clinical Reality",
-      "score": 8.7,
+      "id": "SIG-2026-0113-001",
+      "title": "Agentic AI Revolution: From Generative to Applied",
+      "score": 8.4,
       "category": "Technological",
-      "status": "emerging",
+      "status": "developing",
       "date_added": "2026-01-13"
     },
     {
       "rank": 5,
-      "id": "SIG-2026-0113-006",
-      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
-      "score": 8.7,
-      "category": "Environmental",
+      "id": "SIG-2026-0113-005",
+      "title": "IBM Quantum Milestone: First Quantum Advantage in 2026",
+      "score": 8.4,
+      "category": "Technological",
       "status": "emerging",
       "date_added": "2026-01-13"
     }
   ],
   "update_summary": {
     "update_date": "2026-01-13",
-    "new_signals_added": 68,
+    "source_files": [
+      "data/2026/01/13/structured/structured-signals-2026-01-13.json",
+      "data/2026/01/13/analysis/priority-ranked-2026-01-13.json"
+    ],
+    "new_signals_added": 24,
     "signals_updated": 0,
     "signals_removed": 0,
-    "total_signals_before": 115,
-    "total_signals_after": 183,
+    "total_signals_before": 183,
+    "total_signals_after": 207,
     "deduplication_checked": true,
     "duplicate_signals_skipped": 0,
     "hallucination_excluded": 0
   },
+  "category_distribution": {
+    "Technological": {
+      "count": 81,
+      "percentage": "39.1%",
+      "major_topics": [
+        "AI & Machine Learning (Agentic AI, Physical AI)",
+        "Quantum Computing",
+        "Gene Editing & Biotech",
+        "Space & Commercial Space",
+        "Data Centers & Energy"
+      ]
+    },
+    "Economic": {
+      "count": 37,
+      "percentage": "17.9%",
+      "major_topics": [
+        "Venture Capital & Funding",
+        "Trade Policy & Protectionism",
+        "Energy Markets",
+        "Cryptocurrency",
+        "Capital Efficiency"
+      ]
+    },
+    "Political": {
+      "count": 30,
+      "percentage": "14.5%",
+      "major_topics": [
+        "AI Regulation (EU AI Act, State laws)",
+        "Nuclear Arms Control",
+        "Geopolitical Tensions",
+        "Government AI Procurement"
+      ]
+    },
+    "Social": {
+      "count": 29,
+      "percentage": "14.0%",
+      "major_topics": [
+        "Gen Z Trends (Analog shift, pen pals)",
+        "Mental Health Crisis",
+        "Demographic Aging",
+        "Immigration & Labor"
+      ]
+    },
+    "Environmental": {
+      "count": 24,
+      "percentage": "11.6%",
+      "major_topics": [
+        "Renewable Energy & Climate Tech",
+        "Water Scarcity",
+        "Ocean Acidification",
+        "Energy Storage & EVs"
+      ]
+    },
+    "Spiritual": {
+      "count": 6,
+      "percentage": "2.9%",
+      "major_topics": [
+        "Religious Polarization",
+        "Belief Systems as Identity"
+      ]
+    }
+  },
+  "key_insights": {
+    "dominant_narratives": [
+      "AI/ML as primary economic & technological driver (39.1% of signals)",
+      "Energy transition as critical infrastructure challenge",
+      "Regulatory tightening across US, EU, and Asia",
+      "Gen Z behavioral shift toward analog & emotional grounding",
+      "Geopolitical competition for tech dominance"
+    ],
+    "underrepresented_regions": [
+      "Africa (except South Africa)",
+      "Latin America",
+      "Southeast Asia",
+      "Middle East"
+    ],
+    "underrepresented_sectors": [
+      "Agriculture & Food Systems",
+      "Transportation & Logistics",
+      "Retail & Commerce",
+      "Manufacturing",
+      "Financial Services"
+    ]
+  },
+  "top_sources_by_tier": {
+    "tier_1": [
+      "MIT Technology Review",
+      "BloombergNEF",
+      "Bloomberg",
+      "Yale Climate Connections",
+      "InfoWorld"
+    ],
+    "tier_2": [
+      "MIT Technology Review",
+      "King & Spalding",
+      "NBC News",
+      "The Quantum Insider",
+      "ET Edge Insights"
+    ],
+    "tier_3": [
+      "Canary Media",
+      "Crunchbase News",
+      "AlleyWatch",
+      "CEO Today Magazine",
+      "Tech Startups",
+      "Presta",
+      "Executive Gov",
+      "TechPolicy.Press",
+      "Marketing Interactive",
+      "ContentGrip"
+    ]
+  },
   "index_completeness": {
     "coverage_percentage": "100%",
     "status": "ready_for_scanning",
-    "last_validation": "2026-01-13T10:00:00Z",
-    "notes": "Complete dedup index with 183 signals from signals/database.json. All 183 signals indexed for deduplication. Ready for new daily scans with high-sensitivity deduplication capability. Database contains 68 new signals added on 2026-01-13."
+    "last_validation": "2026-01-13T16:30:00Z",
+    "last_db_update_source": "Phase 3: DB Updater (daily-scan-2026-01-13)",
+    "notes": "Complete archive context with 207 signals from signals/database.json and 24 signals from latest daily scan archive. All signals indexed for deduplication with high-sensitivity threshold. Database updated with 24 new signals on 2026-01-13."
   }
 }

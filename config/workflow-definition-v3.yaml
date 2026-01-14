@@ -1,0 +1,301 @@
+# Environmental Scanning Workflow Definition v3.0
+# 크롤러 호출 강제화 버전 - 개별 크롤러 직접 호출
+# 문제: multi-source-scanner 위임 시 LLM이 크롤러 호출을 생략하는 문제 해결
+
+version: "3.0"
+name: "env-scanning-workflow-enforced"
+description: "환경스캐닝 자동화 워크플로우 - 크롤러 강제 호출 버전"
+
+# 변경 이력
+changelog:
+  - version: "3.0"
+    date: "2026-01-13"
+    changes:
+      - "multi-source-scanner를 3개 개별 크롤러 호출로 분리"
+      - "Gate 1에 크롤러별 출력 파일 필수 검증 추가"
+      - "크롤러 병합 단계 신설"
+      - "비결정적 LLM 위임 제거"
+
+# 모드 설정
+default_mode: marathon
+skip_human_review: true
+
+modes:
+  fast:
+    description: "핵심 소스만 빠르게 스캔"
+    marathon_enabled: false
+    crawlers:
+      - google-news-crawler  # Fast 모드는 구글만
+
+  marathon:
+    description: "심층 확장 스캔 + 신규 소스 탐험"
+    marathon_enabled: true
+
+# ═══════════════════════════════════════════════════════════════════
+# Phase 정의 - 크롤러 강제 호출 버전
+# ═══════════════════════════════════════════════════════════════════
+phases:
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 1: Research (정보 수집) - 7단계로 확장
+  # ═══════════════════════════════════════════════════════════════════
+  - id: phase1
+    name: "Research"
+    description: "정보 수집 및 원시 데이터 생성 (크롤러 강제 호출)"
+
+    steps:
+      # Step 1: Archive Loader (기존과 동일)
+      - id: step1
+        agent: archive-loader
+        description: "기존 신호 DB 로드"
+        parallel: false
+        mandatory: true
+        input:
+          database: "signals/database.json"
+        output:
+          summary: "context/archive-summary-{date}.json"
+          dedup_index: "context/dedup-index-{date}.json"
+        token_estimate: 800
+
+      # ═══════════════════════════════════════════════════════════════
+      # Step 2: 3개 크롤러 병렬 호출 (핵심 변경!)
+      # Orchestrator가 직접 3개 Task를 병렬 실행
+      # ═══════════════════════════════════════════════════════════════
+      - id: step2_crawlers
+        type: parallel_crawlers
+        description: "3개 크롤러 병렬 실행 (강제)"
+        mandatory: true
+
+        crawlers:
+          - id: naver-news-crawler
+            subagent_type: "naver-news-crawler"
+            mandatory: true  # 필수!
+            output:
+              file: "data/{date}/raw/naver-scan-{date}.json"
+              min_signals: 5  # 최소 5개 신호 필수
+            timeout: 1800  # 30분
+
+          - id: global-news-crawler
+            subagent_type: "global-news-crawler"
+            mandatory: true  # 필수!
+            output:
+              file: "data/{date}/raw/global-news-{date}.json"
+              min_signals: 10  # 최소 10개 신호 필수
+            timeout: 1800  # 30분
+
+          - id: google-news-crawler
+            subagent_type: "google-news-crawler"
+            mandatory: true  # 필수!
+            output:
+              file: "data/{date}/raw/google-news-{date}.json"
+              min_signals: 5  # 최소 5개 신호 필수
+            timeout: 1200  # 20분
+
+        # 병렬 실행 후 검증
+        post_validation:
+          - check: "all_files_exist"
+            files:
+              - "data/{date}/raw/naver-scan-{date}.json"
+              - "data/{date}/raw/global-news-{date}.json"
+              - "data/{date}/raw/google-news-{date}.json"
+            on_failure: "abort"  # 하나라도 없으면 중단
+
+      # Step 3: 크롤러 결과 병합
+      - id: step3_merge
+        agent: signal-merger
+        description: "3개 크롤러 결과 병합"
+        parallel: false
+        mandatory: true
+        input:
+          naver: "data/{date}/raw/naver-scan-{date}.json"
+          global: "data/{date}/raw/global-news-{date}.json"
+          google: "data/{date}/raw/google-news-{date}.json"
+        output:
+          merged: "data/{date}/raw/scanned-signals-{date}.json"
+        token_estimate: 400
+
+      # Step 4: Dedup Filter
+      - id: step4
+        agent: dedup-filter
+        description: "중복 신호 필터링"
+        parallel: false
+        mandatory: true
+        input:
+          signals: "data/{date}/raw/scanned-signals-{date}.json"
+          database: "signals/database.json"
+          index: "context/dedup-index-{date}.json"
+        output:
+          filtered: "data/{date}/filtered/filtered-signals-{date}.json"
+          new_index: "context/dedup-index-{date}.json"
+        token_estimate: 600
+
+      # Step 5: Marathon Stage 2 (선택적)
+      - id: step5_marathon
+        type: marathon_exploration
+        description: "Marathon Mode Stage 2 - 신규 소스 탐험"
+        condition: "{mode.marathon_enabled}"
+        optional: true
+        agents:
+          - gap-analyzer
+          - frontier-explorer
+          - citation-chaser
+          - rapid-validator
+
+      # Step 6: Human Review (기본 생략)
+      - id: step6
+        type: human_review
+        description: "[Human Review] 필터링 결과 검토"
+        skip_condition: "--skip-human"
+        command: "/env-scan:review-filter"
+
+    # ═══════════════════════════════════════════════════════════════
+    # Gate 1: 강화된 검증 (핵심 변경!)
+    # ═══════════════════════════════════════════════════════════════
+    gate:
+      id: gate1
+      name: "Phase 1 Quality Gate - Enhanced"
+
+      # 필수 검증 (하나라도 실패 시 Phase 2 진입 불가)
+      mandatory_checks:
+        # 크롤러별 출력 파일 존재 확인
+        - name: "네이버 크롤러 출력 존재"
+          file: "data/{date}/raw/naver-scan-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+          error_message: "네이버 뉴스 크롤러가 실행되지 않았습니다!"
+
+        - name: "글로벌 뉴스 크롤러 출력 존재"
+          file: "data/{date}/raw/global-news-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+          error_message: "글로벌 뉴스 크롤러가 실행되지 않았습니다!"
+
+        - name: "구글 뉴스 크롤러 출력 존재"
+          file: "data/{date}/raw/google-news-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+          error_message: "구글 뉴스 크롤러가 실행되지 않았습니다!"
+
+        # 병합 파일 존재 확인
+        - name: "병합된 신호 파일 존재"
+          file: "data/{date}/raw/scanned-signals-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+
+        # 필터링 파일 존재 확인
+        - name: "필터링된 신호 존재"
+          file: "data/{date}/filtered/filtered-signals-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+
+      # 품질 검증 (경고만, 진행은 가능)
+      quality_checks:
+        - name: "네이버 신호 최소 수량"
+          file: "data/{date}/raw/naver-scan-{date}.json"
+          condition: "json_count >= 5"
+          path: "$.signals"
+          on_failure: "warn"
+
+        - name: "글로벌 신호 최소 수량"
+          file: "data/{date}/raw/global-news-{date}.json"
+          condition: "json_count >= 10"
+          path: "$.signals"
+          on_failure: "warn"
+
+        - name: "총 신호 수 > 0"
+          file: "data/{date}/filtered/filtered-signals-{date}.json"
+          condition: "json_count > 0"
+          path: "$.signals"
+          on_failure: "abort"
+
+      # 다양성 검증 (한국어 + 영어 소스 균형)
+      diversity_checks:
+        - name: "한국어 소스 비율 >= 20%"
+          condition: "korean_source_ratio >= 0.2"
+          on_failure: "warn"
+
+        - name: "글로벌 소스 비율 >= 30%"
+          condition: "global_source_ratio >= 0.3"
+          on_failure: "warn"
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 2: Planning (기존과 동일)
+  # ═══════════════════════════════════════════════════════════════════
+  - id: phase2
+    name: "Planning"
+    description: "신호 분석, 분류, 우선순위 산정"
+    # ... (기존과 동일)
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Phase 3: Implementation (기존과 동일)
+  # ═══════════════════════════════════════════════════════════════════
+  - id: phase3
+    name: "Implementation"
+    description: "DB 업데이트, 보고서 생성, 아카이빙"
+    # ... (기존과 동일)
+
+# ═══════════════════════════════════════════════════════════════════
+# 에이전트 메타데이터
+# ═══════════════════════════════════════════════════════════════════
+agents:
+  # Phase 1 - 크롤러
+  naver-news-crawler:
+    subagent_type: "naver-news-crawler"
+    mandatory: true
+    max_retries: 3
+    timeout: 1800
+    self_healing: true
+
+  global-news-crawler:
+    subagent_type: "global-news-crawler"
+    mandatory: true
+    max_retries: 3
+    timeout: 1800
+    self_healing: true
+
+  google-news-crawler:
+    subagent_type: "google-news-crawler"
+    mandatory: true
+    max_retries: 2
+    timeout: 1200
+
+  signal-merger:
+    subagent_type: "signal-merger"
+    mandatory: true
+    max_retries: 2
+    timeout: 300
+
+  # (기존 에이전트들...)
+  archive-loader:
+    subagent_type: "archive-loader"
+    max_retries: 2
+    timeout: 300
+
+  dedup-filter:
+    subagent_type: "dedup-filter"
+    max_retries: 2
+    timeout: 600
+
+# ═══════════════════════════════════════════════════════════════════
+# Orchestrator 실행 지침 (중요!)
+# ═══════════════════════════════════════════════════════════════════
+orchestrator_instructions: |
+  ## 크롤러 강제 호출 프로토콜
+
+  Step 2에서 반드시 다음과 같이 실행:
+
+  ```
+  # 3개 크롤러를 병렬로 직접 호출 (Task 도구 사용)
+
+  Task 1: naver-news-crawler
+  Task 2: global-news-crawler
+  Task 3: google-news-crawler
+
+  # 3개 모두 완료될 때까지 대기
+  # 하나라도 실패 시 재시도 (max_retries까지)
+  # 모든 재시도 실패 시 워크플로우 중단
+  ```
+
+  ## 금지 사항
+  - multi-source-scanner에 위임 금지
+  - WebSearch로 대체 금지
+  - 크롤러 출력 파일 없이 다음 단계 진행 금지

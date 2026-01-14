@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "version": "1.1",
+    "version": "1.4",
     "created": "2026-01-12",
-    "last_updated": "2026-01-12",
-    "last_marathon": "2026-01-12",
-    "total_discovered": 28,
-    "pending_review": 28,
+    "last_updated": "2026-01-14",
+    "last_marathon": "2026-01-14",
+    "total_discovered": 76,
+    "pending_review": 76,
     "promoted_to_regular": 0,
     "rejected": 0,
     "description": "마라톤 모드에서 발견된 새 소스 후보 관리"
@@ -28,26 +28,1172 @@
     "random_exploration": "무작위 키워드 검색으로 발견",
     "domain_expansion": "기존 소스의 관련 사이트",
     "regional_search": "새 국가/언어권 검색",
-    "format_diversification": "새 형식(팟캐스트, 뉴스레터 등)"
+    "format_diversification": "새 형식(팟캐스트, 뉴스레터 등)",
+    "citation_backtracking": "원천 논문 및 기관 역추적",
+    "frontier_exploration": "Gap 기반 미개척 영역 탐험"
   },
   "candidates": [
-    "See env-scanning/evolution/pending-sources-2026-01-12.json for full list of 28 discovered sources"
+    {
+      "rank": 1,
+      "url": "https://www.nature.com/articles/s41467-025-63167-x",
+      "name": "Nature Communications - Programmable Epigenome Editing",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "ScienceDaily CRISPR coverage",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological"],
+      "source_type": "academic",
+      "update_frequency": "monthly",
+      "credibility_score": 95,
+      "quality_indicators": [
+        "peer_reviewed",
+        "high_impact_journal",
+        "nature_brand",
+        "2025_publication"
+      ],
+      "content_depth": "technical_research",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "international"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.irena.org",
+      "name": "International Renewable Energy Agency (IRENA)",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "COP30 climate finance announcements",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Environmental", "Political", "Economic"],
+      "source_type": "government_international",
+      "update_frequency": "weekly",
+      "credibility_score": 96,
+      "quality_indicators": [
+        "international_organization",
+        "cop28_consensus",
+        "government_affiliation",
+        "peer_reviewed_reports"
+      ],
+      "content_depth": "policy_research_data",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.worldeconomicforum.org",
+      "name": "World Economic Forum - Future of Jobs Report",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Employment automation signals",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Economic", "Social", "Technological"],
+      "source_type": "think_tank",
+      "update_frequency": "annual",
+      "credibility_score": 92,
+      "quality_indicators": [
+        "primary_research",
+        "1000_employer_survey",
+        "global_reach",
+        "peer_reviewed_methodology"
+      ],
+      "content_depth": "primary_research",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 4,
+      "url": "https://news.mit.edu",
+      "name": "MIT News - Science & Technology Coverage",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Commonwealth Fusion Systems coverage",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Environmental"],
+      "source_type": "academic_media",
+      "update_frequency": "daily",
+      "credibility_score": 94,
+      "quality_indicators": [
+        "mit_affiliation",
+        "research_institution",
+        "peer_reviewed_standards",
+        "technical_depth"
+      ],
+      "content_depth": "research_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "US"
+    },
+    {
+      "rank": 5,
+      "url": "https://docs.fcc.gov",
+      "name": "Federal Communications Commission - Regulatory Filings",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Starlink satellite constellation approval",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Political"],
+      "source_type": "government_regulatory",
+      "update_frequency": "weekly",
+      "credibility_score": 98,
+      "quality_indicators": [
+        "official_government",
+        "regulatory_authority",
+        "legally_binding",
+        "technical_specifications"
+      ],
+      "content_depth": "regulatory_technical",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "US"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.goldmansachs.com/insights",
+      "name": "Goldman Sachs Research - Macro & Economic Analysis",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Global GDP growth forecasts",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Economic"],
+      "source_type": "financial_research",
+      "update_frequency": "quarterly",
+      "credibility_score": 91,
+      "quality_indicators": [
+        "major_bank_research",
+        "chief_economist",
+        "quarterly_revision",
+        "professional_forecasting"
+      ],
+      "content_depth": "economic_analysis",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 7,
+      "url": "https://about.bnef.com",
+      "name": "BloombergNEF - Energy Transition Research",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Energy transition investment tracking",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Environmental", "Economic", "Technological"],
+      "source_type": "financial_research",
+      "update_frequency": "quarterly",
+      "credibility_score": 93,
+      "quality_indicators": [
+        "bloomberg_research",
+        "energy_expertise",
+        "investment_data",
+        "global_tracking"
+      ],
+      "content_depth": "investment_research",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 8,
+      "url": "https://arxiv.org",
+      "name": "arXiv Preprint Server - AI & Protein Design",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "AI protein design research papers",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological"],
+      "source_type": "academic_preprint",
+      "update_frequency": "daily",
+      "credibility_score": 89,
+      "quality_indicators": [
+        "peer_moderated",
+        "latest_research",
+        "2025_2026_papers",
+        "multiple_institutions"
+      ],
+      "content_depth": "cutting_edge_research",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "international"
+    },
+    {
+      "rank": 9,
+      "url": "https://www.unsw.edu.au/newsroom",
+      "name": "UNSW Sydney - Research & News",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "CRISPR epigenetic editing research",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological"],
+      "source_type": "academic_institution",
+      "update_frequency": "weekly",
+      "credibility_score": 94,
+      "quality_indicators": [
+        "research_institution",
+        "nature_publications",
+        "international_collaboration",
+        "clinical_applications"
+      ],
+      "content_depth": "research_institution",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Australia"
+    },
+    {
+      "rank": 10,
+      "url": "https://ir.crisprtx.com",
+      "name": "CRISPR Therapeutics - Investor Relations & Press",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "CTX460 epigenetic therapy clinical trials",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "corporate",
+      "update_frequency": "quarterly",
+      "credibility_score": 88,
+      "quality_indicators": [
+        "company_financial_disclosure",
+        "clinical_trial_updates",
+        "regulatory_filings",
+        "peer_reviewed_data"
+      ],
+      "content_depth": "corporate_research",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "US"
+    },
+    {
+      "rank": 11,
+      "url": "https://www.marketsandmarkets.com",
+      "name": "MarketsandMarkets Research - AI Agents Market",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "AI agents market forecast $52B by 2030",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "market_research",
+      "update_frequency": "annual",
+      "credibility_score": 87,
+      "quality_indicators": [
+        "market_research_firm",
+        "detailed_cagr_analysis",
+        "segment_breakdown",
+        "technology_forecast"
+      ],
+      "content_depth": "market_analysis",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 12,
+      "url": "https://cfs.energy",
+      "name": "Commonwealth Fusion Systems - Research & News",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "SPARC fusion reactor first plasma 2026",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Environmental"],
+      "source_type": "corporate",
+      "update_frequency": "monthly",
+      "credibility_score": 90,
+      "quality_indicators": [
+        "mit_spinout",
+        "major_funding",
+        "technical_specifications",
+        "milestone_tracking"
+      ],
+      "content_depth": "corporate_technology",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "US"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.gevernova.com",
+      "name": "GE Vernova - Direct Air Capture Technology",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "GE Vernova 1,500-tonne/year DAC commercialization",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Environmental"],
+      "source_type": "corporate",
+      "update_frequency": "quarterly",
+      "credibility_score": 89,
+      "quality_indicators": [
+        "major_corporation_division",
+        "pilot_deployment",
+        "technical_specifications",
+        "commercialization_tracking"
+      ],
+      "content_depth": "corporate_technology",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "US"
+    },
+    {
+      "rank": 14,
+      "url": "https://www.korea.net",
+      "name": "Korea.net - Official Korean Government Policy",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "South Korea renewable energy budget +98.6%",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Environmental", "Political", "Economic"],
+      "source_type": "government_policy",
+      "update_frequency": "weekly",
+      "credibility_score": 93,
+      "quality_indicators": [
+        "official_government",
+        "policy_announcements",
+        "budget_tracking",
+        "national_targets"
+      ],
+      "content_depth": "government_policy",
+      "accessibility": "fully_open",
+      "language": "en, ko",
+      "region": "South Korea"
+    },
+    {
+      "rank": 15,
+      "url": "https://pmc.ncbi.nlm.nih.gov",
+      "name": "PMC/NIH - Peer-Reviewed Medical Research",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Screen time reduction mental health impact studies",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Social", "Technological"],
+      "source_type": "academic",
+      "update_frequency": "daily",
+      "credibility_score": 96,
+      "quality_indicators": [
+        "nih_funded",
+        "peer_reviewed",
+        "randomized_controlled_trials",
+        "latest_research"
+      ],
+      "content_depth": "peer_reviewed_research",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.expressvpn.com/blog",
+      "name": "ExpressVPN Digital Minimalism Survey & Trends",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Gen Z screen time reduction survey data",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Social", "Technological"],
+      "source_type": "research_blog",
+      "update_frequency": "quarterly",
+      "credibility_score": 82,
+      "quality_indicators": [
+        "survey_data_2026",
+        "generational_analysis",
+        "trend_tracking",
+        "consumer_behavior"
+      ],
+      "content_depth": "trend_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.technologyreview.com",
+      "name": "MIT Technology Review - In-Depth Analysis",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Fusion energy and technology deep dives",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Environmental", "Economic"],
+      "source_type": "academic_media",
+      "update_frequency": "daily",
+      "credibility_score": 93,
+      "quality_indicators": [
+        "mit_affiliated",
+        "technical_depth",
+        "expert_interviews",
+        "long_form_analysis"
+      ],
+      "content_depth": "technical_analysis",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 18,
+      "url": "https://www.sciencedaily.com",
+      "name": "ScienceDaily - University Press Release Hub",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "CRISPR epigenetic editing coverage",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Scientific"],
+      "source_type": "science_news_aggregator",
+      "update_frequency": "daily",
+      "credibility_score": 85,
+      "quality_indicators": [
+        "university_press_releases",
+        "peer_review_linked",
+        "broad_reach",
+        "current_coverage"
+      ],
+      "content_depth": "science_news",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 19,
+      "url": "https://carboncapturemagazine.com",
+      "name": "Carbon Capture Magazine - DAC Industry Coverage",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "GE Vernova Direct Air Capture commercialization",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Environmental", "Technological"],
+      "source_type": "trade_publication",
+      "update_frequency": "weekly",
+      "credibility_score": 84,
+      "quality_indicators": [
+        "industry_trade_publication",
+        "technical_coverage",
+        "business_partnership_tracking",
+        "technology_comparison"
+      ],
+      "content_depth": "industry_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.biorxiv.org",
+      "name": "bioRxiv - Biological & Life Sciences Preprints",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "AI protein design research validation",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological"],
+      "source_type": "academic_preprint",
+      "update_frequency": "daily",
+      "credibility_score": 88,
+      "quality_indicators": [
+        "peer_moderated_preprints",
+        "cutting_edge_research",
+        "institutional_affiliations",
+        "experimental_data"
+      ],
+      "content_depth": "research_preprints",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "international"
+    },
+    {
+      "rank": 21,
+      "url": "https://www.gartner.com/en/newsroom",
+      "name": "Gartner Research - Enterprise Technology",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "AI agents enterprise adoption forecasts",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "market_research",
+      "update_frequency": "weekly",
+      "credibility_score": 91,
+      "quality_indicators": [
+        "gartner_research_authority",
+        "quarterly_press_releases",
+        "enterprise_focus",
+        "analyst_reports"
+      ],
+      "content_depth": "market_research",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 22,
+      "url": "https://cop30.br",
+      "name": "COP30 Official - Climate Finance Framework",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "COP30 climate finance commitments & UNEZA",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Environmental", "Political"],
+      "source_type": "government_international",
+      "update_frequency": "event_based",
+      "credibility_score": 97,
+      "quality_indicators": [
+        "official_cop30",
+        "government_multilateral",
+        "binding_commitments",
+        "policy_frameworks"
+      ],
+      "content_depth": "climate_policy",
+      "accessibility": "fully_open",
+      "language": "en, pt",
+      "region": "Brazil"
+    },
+    {
+      "rank": 23,
+      "url": "https://news.un.org",
+      "name": "UN News - Global Climate & Development",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "COP30 global climate commitments coverage",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Environmental", "Political", "Social"],
+      "source_type": "international_organization",
+      "update_frequency": "daily",
+      "credibility_score": 96,
+      "quality_indicators": [
+        "official_un_news",
+        "international_coverage",
+        "multilingual",
+        "authoritative_source"
+      ],
+      "content_depth": "global_news_analysis",
+      "accessibility": "fully_open",
+      "language": "multiple",
+      "region": "global"
+    },
+    {
+      "rank": 24,
+      "url": "https://www.fiercebiotech.com",
+      "name": "FierceBiotech - Biotech Industry Coverage",
+      "discovered_via": "citation_backtracking",
+      "discovery_date": "2026-01-13",
+      "parent_sources": [
+        "Neuralink BCI production scaling",
+        "Environmental Scan 2026-01-12"
+      ],
+      "steeps_category": ["Technological"],
+      "source_type": "trade_publication",
+      "update_frequency": "daily",
+      "credibility_score": 86,
+      "quality_indicators": [
+        "biotech_industry_focus",
+        "company_announcements",
+        "regulatory_tracking",
+        "clinical_trial_coverage"
+      ],
+      "content_depth": "biotech_industry_news",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 25,
+      "url": "https://techpoint.africa",
+      "name": "Techpoint Africa",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Africa region gap identified"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "tech_news",
+      "update_frequency": "daily",
+      "credibility_score": 90,
+      "quality_indicators": [
+        "daily_digest_newsletter",
+        "30k_subscribers",
+        "professional_editorial",
+        "africa_focused"
+      ],
+      "content_depth": "tech_news_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Africa"
+    },
+    {
+      "rank": 26,
+      "url": "https://techcabal.com",
+      "name": "TechCabal",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Africa region gap identified"
+      ],
+      "steeps_category": ["Technological", "Economic", "Political"],
+      "source_type": "tech_news",
+      "update_frequency": "daily",
+      "credibility_score": 92,
+      "quality_indicators": [
+        "future_focused_publication",
+        "multiple_newsletters",
+        "research_reports",
+        "professional_journalism"
+      ],
+      "content_depth": "tech_news_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Africa"
+    },
+    {
+      "rank": 27,
+      "url": "https://disruptafrica.com",
+      "name": "Disrupt Africa",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Africa region gap identified"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "tech_news",
+      "update_frequency": "daily",
+      "credibility_score": 88,
+      "quality_indicators": [
+        "established_since_2014",
+        "annual_funding_reports",
+        "regional_correspondents",
+        "podcast_content"
+      ],
+      "content_depth": "startup_funding_news",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Africa"
+    },
+    {
+      "rank": 28,
+      "url": "https://www.wamda.com",
+      "name": "Wamda",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Middle East region gap identified"
+      ],
+      "steeps_category": ["Economic", "Technological"],
+      "source_type": "startup_ecosystem",
+      "update_frequency": "daily",
+      "credibility_score": 90,
+      "quality_indicators": [
+        "investment_arm_wamda_capital",
+        "portfolio_includes_careem",
+        "bilingual_content",
+        "mena_focused"
+      ],
+      "content_depth": "ecosystem_platform",
+      "accessibility": "fully_open",
+      "language": "en, ar",
+      "region": "Middle East"
+    },
+    {
+      "rank": 29,
+      "url": "https://www.menabytes.com",
+      "name": "MENAbytes",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Middle East region gap identified"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "tech_news",
+      "update_frequency": "daily",
+      "credibility_score": 85,
+      "quality_indicators": [
+        "mena_turkey_pakistan_coverage",
+        "startup_focused",
+        "regional_tech_news"
+      ],
+      "content_depth": "tech_news",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Middle East"
+    },
+    {
+      "rank": 30,
+      "url": "https://techcollectivesea.com",
+      "name": "Tech Collective SEA",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Southeast Asia region gap identified"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "tech_analysis",
+      "update_frequency": "weekly",
+      "credibility_score": 78,
+      "quality_indicators": [
+        "southeast_asia_focus",
+        "opinion_pieces",
+        "trend_forecasts"
+      ],
+      "content_depth": "analysis_opinion",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Southeast Asia"
+    },
+    {
+      "rank": 31,
+      "url": "https://contemplativejournal.org",
+      "name": "Journal of Contemplative Studies",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Spiritual STEEPS gap identified"
+      ],
+      "steeps_category": ["Spiritual", "Social"],
+      "source_type": "academic_journal",
+      "update_frequency": "quarterly",
+      "credibility_score": 95,
+      "quality_indicators": [
+        "peer_reviewed",
+        "open_access",
+        "uva_contemplative_sciences_center",
+        "issn_3066_9030"
+      ],
+      "content_depth": "academic_research",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 32,
+      "url": "https://contxto.com",
+      "name": "Contxto",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Latin America region gap identified"
+      ],
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "tech_news",
+      "update_frequency": "daily",
+      "credibility_score": 88,
+      "quality_indicators": [
+        "trilingual_platform",
+        "job_board_latamtalent",
+        "professional_seo",
+        "latam_vc_focus"
+      ],
+      "content_depth": "tech_vc_news",
+      "accessibility": "fully_open",
+      "language": "en, es, pt",
+      "region": "Latin America"
+    },
+    {
+      "rank": 33,
+      "url": "https://ecosistemastartup.com",
+      "name": "El Ecosistema Startup",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Spanish language gap identified"
+      ],
+      "steeps_category": ["Economic", "Technological"],
+      "source_type": "startup_news",
+      "update_frequency": "weekly",
+      "credibility_score": 75,
+      "quality_indicators": [
+        "spanish_language",
+        "latam_startup_focus",
+        "trend_coverage"
+      ],
+      "content_depth": "startup_news",
+      "accessibility": "fully_open",
+      "language": "es",
+      "region": "Latin America"
+    },
+    {
+      "rank": 34,
+      "url": "https://www.techpolicy.press",
+      "name": "TechPolicy.Press",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Political AI governance gap identified"
+      ],
+      "steeps_category": ["Political", "Technological"],
+      "source_type": "policy_analysis",
+      "update_frequency": "weekly",
+      "credibility_score": 85,
+      "quality_indicators": [
+        "expert_predictions",
+        "ai_policy_focus",
+        "tech_governance"
+      ],
+      "content_depth": "policy_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 35,
+      "url": "https://link.springer.com/journal/12671",
+      "name": "Mindfulness Journal (Springer)",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Spiritual STEEPS gap identified"
+      ],
+      "steeps_category": ["Spiritual", "Social"],
+      "source_type": "academic_journal",
+      "update_frequency": "monthly",
+      "credibility_score": 92,
+      "quality_indicators": [
+        "peer_reviewed",
+        "springer_publication",
+        "international_scope",
+        "cross_cultural_research"
+      ],
+      "content_depth": "academic_research",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 36,
+      "url": "https://purposeeconomy.com",
+      "name": "Purpose Economy",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "parent_sources": [
+        "Gap Analysis 2026-01-14",
+        "Spiritual STEEPS gap identified"
+      ],
+      "steeps_category": ["Spiritual", "Economic", "Social"],
+      "source_type": "research_platform",
+      "update_frequency": "monthly",
+      "credibility_score": 78,
+      "quality_indicators": [
+        "meaning_economy_research",
+        "purpose_driven_work",
+        "fulfillment_measurement"
+      ],
+      "content_depth": "research_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "global"
+    },
+    {
+      "rank": 37,
+      "url": "https://www.springhealth.com/blog",
+      "name": "Spring Health Blog - Mental Health & Workplace Wellness",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "mindfulness workplace trends 2026 research",
+      "steeps_category": ["Spiritual", "Social"],
+      "source_type": "wellness_platform_blog",
+      "update_frequency": "weekly",
+      "credibility_score": 85,
+      "quality_indicators": [
+        "2026_workplace_trends",
+        "81%_employee_survey_data",
+        "professional_mental_health_platform",
+        "evidence_based_recommendations"
+      ],
+      "content_depth": "trend_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Global"
+    },
+    {
+      "rank": 38,
+      "url": "https://impactco.es/",
+      "name": "ImpactCO - Purpose Economy Consulting",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "meaning economy purpose-driven work 2026",
+      "steeps_category": ["Spiritual", "Economic", "Social"],
+      "source_type": "consulting_insights",
+      "update_frequency": "monthly",
+      "credibility_score": 82,
+      "quality_indicators": [
+        "purpose_economy_expertise",
+        "2026_forward_looking",
+        "corporate_esg_focus",
+        "operational_frameworks"
+      ],
+      "content_depth": "consulting_analysis",
+      "accessibility": "fully_open",
+      "language": "en, es",
+      "region": "Global"
+    },
+    {
+      "rank": 39,
+      "url": "https://e27.co/",
+      "name": "e27 - Southeast Asia Startup Ecosystem Platform",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "Southeast Asia tech startup news Vietnam Indonesia",
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "startup_platform",
+      "update_frequency": "daily",
+      "credibility_score": 90,
+      "quality_indicators": [
+        "established_platform",
+        "regional_coverage_indonesia_vietnam",
+        "17%_traffic_from_india",
+        "startup_funding_tracking"
+      ],
+      "content_depth": "tech_news_ecosystem",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Southeast Asia"
+    },
+    {
+      "rank": 40,
+      "url": "https://latamlist.com/",
+      "name": "LatamList - Latin America Startup & Tech News",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "Latin America innovation technology news Spanish Portuguese",
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "tech_news_platform",
+      "update_frequency": "daily",
+      "credibility_score": 88,
+      "quality_indicators": [
+        "premier_english_latam_source",
+        "vc_funding_tracking",
+        "weekly_podcast",
+        "bimonthly_roundups"
+      ],
+      "content_depth": "startup_vc_news",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Latin America"
+    },
+    {
+      "rank": 41,
+      "url": "https://allafrica.com/",
+      "name": "allAfrica - Pan-African News Aggregator",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "Africa renewable energy climate policy 2026",
+      "steeps_category": ["Environmental", "Political", "Economic"],
+      "source_type": "news_aggregator",
+      "update_frequency": "daily",
+      "credibility_score": 87,
+      "quality_indicators": [
+        "pan_african_coverage",
+        "energy_section",
+        "climate_policy_tracking",
+        "multilingual_content"
+      ],
+      "content_depth": "news_aggregation",
+      "accessibility": "fully_open",
+      "language": "en, fr, pt",
+      "region": "Africa"
+    },
+    {
+      "rank": 42,
+      "url": "https://link.springer.com/journal/10943",
+      "name": "Journal of Religion and Health (Springer)",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "spiritual wellness research journal peer-reviewed",
+      "steeps_category": ["Spiritual", "Social"],
+      "source_type": "academic_journal",
+      "update_frequency": "bimonthly",
+      "credibility_score": 94,
+      "quality_indicators": [
+        "peer_reviewed",
+        "springer_publication",
+        "60_years_established",
+        "most_productive_spirituality_journal"
+      ],
+      "content_depth": "academic_research",
+      "accessibility": "partially_paywall",
+      "language": "en",
+      "region": "Global"
+    },
+    {
+      "rank": 43,
+      "url": "https://consciousness.arizona.edu/",
+      "name": "The Science of Consciousness Conference (Arizona)",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "contemplative science consciousness research 2026",
+      "steeps_category": ["Spiritual", "Technological"],
+      "source_type": "academic_conference",
+      "update_frequency": "annual",
+      "credibility_score": 91,
+      "quality_indicators": [
+        "32nd_annual_conference",
+        "interdisciplinary_approach",
+        "university_of_arizona",
+        "2026_event_scheduled"
+      ],
+      "content_depth": "academic_research",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Global"
+    },
+    {
+      "rank": 44,
+      "url": "https://illuminem.com/",
+      "name": "illuminem - Climate & Sustainability News Platform",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "Illuminem climate sustainability news Africa Asia",
+      "steeps_category": ["Environmental", "Political"],
+      "source_type": "sustainability_news",
+      "update_frequency": "daily",
+      "credibility_score": 86,
+      "quality_indicators": [
+        "africa_climate_focus",
+        "asia_climate_summits",
+        "cop30_coverage",
+        "carbon_markets"
+      ],
+      "content_depth": "sustainability_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Global"
+    },
+    {
+      "rank": 45,
+      "url": "https://purpose-economy.org/",
+      "name": "Purpose Economy Organization",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "meaning economy purpose-driven work 2026",
+      "steeps_category": ["Spiritual", "Economic"],
+      "source_type": "purpose_economy_platform",
+      "update_frequency": "monthly",
+      "credibility_score": 80,
+      "quality_indicators": [
+        "purpose_economy_pioneers",
+        "new_economic_models",
+        "community_good_focus"
+      ],
+      "content_depth": "platform_insights",
+      "accessibility": "fully_open",
+      "language": "en, de",
+      "region": "Global"
+    },
+    {
+      "rank": 46,
+      "url": "https://health.calm.com/",
+      "name": "Calm Health - Workforce Well-being Platform",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "mindfulness workplace trends 2026 research",
+      "steeps_category": ["Spiritual", "Technological"],
+      "source_type": "wellness_platform",
+      "update_frequency": "monthly",
+      "credibility_score": 83,
+      "quality_indicators": [
+        "ai_powered_wellness",
+        "wearables_integration",
+        "2026_trends_analysis",
+        "consultant_focus"
+      ],
+      "content_depth": "trend_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Global"
+    },
+    {
+      "rank": 47,
+      "url": "https://africasustainabilitymatters.com/",
+      "name": "Africa Sustainability Matters",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "Africa renewable energy climate policy 2026",
+      "steeps_category": ["Environmental", "Economic"],
+      "source_type": "sustainability_news",
+      "update_frequency": "weekly",
+      "credibility_score": 81,
+      "quality_indicators": [
+        "africa_focused",
+        "energy_outlook_coverage",
+        "funding_gap_analysis",
+        "power_access_tracking"
+      ],
+      "content_depth": "regional_analysis",
+      "accessibility": "fully_open",
+      "language": "en",
+      "region": "Africa"
+    },
+    {
+      "rank": 48,
+      "url": "https://www.middleeastbriefing.com/",
+      "name": "Middle East Briefing - Business & Tech News",
+      "discovered_via": "frontier_exploration",
+      "discovery_date": "2026-01-14",
+      "discovery_query": "Middle East technology Dubai Saudi Arabia innovation",
+      "steeps_category": ["Technological", "Economic"],
+      "source_type": "business_briefing",
+      "update_frequency": "weekly",
+      "credibility_score": 84,
+      "quality_indicators": [
+        "uae_saudi_tech_markets",
+        "vision_2030_tracking",
+        "regional_business_focus",
+        "multilingual"
+      ],
+      "content_depth": "market_analysis",
+      "accessibility": "fully_open",
+      "language": "en, ar",
+      "region": "Middle East"
+    }
   ],
   "promoted": [],
   "rejected": [],
-  "exploration_keywords": {
-    "base_steeps": {
-      "Social": ["gen z trends", "workforce changes", "lifestyle shifts", "demographic changes", "education innovation"],
-      "Technological": ["AI breakthrough", "quantum computing", "robotics advancement", "biotech innovation", "space technology"],
-      "Economic": ["global trade", "startup funding", "supply chain", "market disruption", "fintech innovation"],
-      "Environmental": ["climate policy", "renewable energy", "carbon capture", "sustainability", "ESG trends"],
-      "Political": ["AI regulation", "geopolitics", "tech policy", "governance innovation", "international relations"],
-      "Spiritual": ["wellness trends", "mindfulness", "meaning economy", "spiritual technology", "consciousness research"]
-    },
-    "modifiers": ["2026", "emerging", "breakthrough", "first time", "unprecedented", "new research", "latest"],
-    "regions": ["Asia Pacific", "Latin America", "Middle East", "Africa", "Eastern Europe", "Nordic", "Southeast Asia"],
-    "languages": ["Korean", "Japanese", "Chinese", "Spanish", "German", "French", "Portuguese"]
-  },
   "marathon_history": [
     {
       "date": "2026-01-12",
@@ -64,52 +1210,98 @@
         "Science Advances (92)",
         "CSER Cambridge (91)",
         "Tech Forecasting & Social Change (91)"
-      ],
-      "files_created": [
-        "env-scanning/evolution/pending-sources-2026-01-12.json",
-        "env-scanning/logs/exploration-2026-01-12.json",
-        "env-scanning/reports/marathon-stage2-exploration-summary-2026-01-12.md"
-      ],
-      "notes": "Successfully filled Spiritual gap (+67% potential increase). Added 6 non-Western sources. 15 peer-reviewed journals discovered."
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "phase": "Stage 3: Link Tracking & Citation Backtracking",
+      "duration_minutes": 120,
+      "sources_discovered": 24,
+      "avg_quality_score": 90.8,
+      "strategies_used": ["citation_backtracking", "academic_journal_tracking", "institutional_research", "government_regulatory", "corporate_research"],
+      "steeps_focus": ["Technological", "Environmental", "Economic"],
+      "geographic_expansion": ["Brazil", "Australia", "South Korea"],
+      "top_discoveries": [
+        "Nature Communications (95)",
+        "FCC Regulatory Documents (98)",
+        "IRENA International (96)",
+        "MIT News (94)",
+        "PMC/NIH Research (96)"
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "phase": "Stage 2: Frontier Exploration",
+      "duration_minutes": 45,
+      "sources_discovered": 12,
+      "avg_quality_score": 85.25,
+      "strategies_used": ["regional_frontier", "language_frontier", "steeps_gap", "platform_frontier"],
+      "steeps_focus": ["Spiritual", "Political"],
+      "geographic_expansion": ["Africa", "Middle East", "Latin America", "Southeast Asia"],
+      "top_discoveries": [
+        "Journal of Religion and Health (94)",
+        "Science of Consciousness Conference (91)",
+        "e27 (90)",
+        "LatamList (88)",
+        "allAfrica (87)"
+      ]
     }
   ],
   "performance_tracking": {
     "sources_by_tier": {
-      "tier_1_recommended": 9,
-      "tier_2_recommended": 16,
-      "tier_3_recommended": 3
+      "tier_1_recommended": 18,
+      "tier_2_recommended": 21,
+      "tier_3_recommended": 9
     },
     "sources_by_steeps": {
-      "Spiritual": 8,
-      "Social": 6,
-      "Technological": 5,
-      "Economic": 4,
-      "Political": 3,
-      "Environmental": 2
+      "Technological": 16,
+      "Environmental": 11,
+      "Economic": 14,
+      "Social": 8,
+      "Political": 8,
+      "Spiritual": 11,
+      "Multi_category": 8
+    },
+    "sources_by_region": {
+      "Global": 27,
+      "Africa": 6,
+      "Middle_East": 4,
+      "Latin_America": 3,
+      "Southeast_Asia": 2,
+      "US": 6,
+      "International": 4
     },
     "quality_distribution": {
-      "90_plus": 5,
-      "85_89": 8,
-      "80_84": 9,
-      "75_79": 4,
-      "below_75": 2
+      "95_plus": 8,
+      "90_94": 17,
+      "85_89": 13,
+      "80_84": 7,
+      "below_80": 3
+    },
+    "accessibility": {
+      "fully_open": 38,
+      "partially_paywall": 9,
+      "restricted": 1
     }
   },
   "next_actions": {
     "immediate": [
-      "Begin probationary scanning of top 5 discoveries",
-      "Monitor signal quality over 3 scans",
-      "Track update frequency"
+      "Begin probationary scanning of 12 new frontier-discovered sources",
+      "Monitor signal quality over 3 scans (starting 2026-01-15)",
+      "Promote Journal of Religion and Health and Science of Consciousness to Tier 1",
+      "Track update frequency for each source"
     ],
     "short_term": [
-      "Evaluate all Tier 1 recommendations (9 sources)",
-      "Batch evaluate Tier 2 sources (16 sources)",
-      "Cross-validate with existing sources"
+      "Expand French-speaking Africa coverage (Jeune Afrique, etc.)",
+      "Add Vietnamese and Indonesian local tech sources",
+      "Find Arabic-language primary sources for MENA",
+      "Evaluate all Tier 2 recommendations (21 sources)"
     ],
     "medium_term": [
-      "Promote successful sources to regular-sources.json",
-      "Archive low-performers to rejected list",
-      "Update STEEPS coverage metrics"
+      "Promote top 10-12 sources to regular-sources.json after 3-scan validation",
+      "Archive underperformers to rejected list",
+      "Update STEEPS coverage metrics",
+      "Balance regional representation further"
     ]
   }
 }

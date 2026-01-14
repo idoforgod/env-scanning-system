@@ -1,63 +1,238 @@
 {
   "last_run": {
-    "date": "2026-01-13",
+    "date": "2026-01-14",
     "status": "completed",
     "mode": "marathon",
-    "started_at": "2026-01-13T11:00:00Z",
-    "completed_at": "2026-01-13T17:58:00Z",
-    "duration_minutes": 418,
-    "archive_completed_at": "2026-01-13T17:58:00Z"
+    "started_at": "2026-01-14T06:00:00Z",
+    "completed_at": "2026-01-14T06:48:45Z",
+    "duration_minutes": 48.75,
+    "archive_completed_at": "2026-01-14T06:48:45Z",
+    "timezone": "KST"
+  },
+  "workflow_phases": {
+    "phase_1": {
+      "name": "Archive Loader",
+      "status": "completed",
+      "description": "Historical data and archive loading"
+    },
+    "phase_2": {
+      "name": "Multi-source Scanner & Marathon Stage 2",
+      "status": "completed",
+      "description": "4 scanners + frontier exploration (gap analysis, frontier explorer, citation chaser)",
+      "signals_scanned": 51,
+      "duplicates_removed": 0,
+      "marathon_mode": "enabled"
+    },
+    "phase_3": {
+      "name": "Analysis & Ranking",
+      "status": "completed",
+      "description": "Classification, impact assessment, priority ranking",
+      "signals_classified": 51,
+      "signals_ranked": 51
+    },
+    "phase_4": {
+      "name": "Database Update & Archiving",
+      "status": "completed",
+      "description": "Database update, report generation, and archiving",
+      "signals_added": 51,
+      "signals_updated": 0
+    }
   },
   "outputs": {
-    "report": "data/2026/01/13/reports/environmental-scan-2026-01-13.md",
-    "archive_report": "data/2026/01/13/reports/archive/2026/01/environmental-scan-2026-01-13.md",
-    "archive_data": "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json",
-    "snapshot": "signals/snapshots/database-2026-01-13.json",
-    "archive_notifier_report": "logs/archive-notifier-report-2026-01-13.md"
+    "report": "data/2026/01/14/reports/environmental-scan-2026-01-14.md",
+    "archive_report": "data/2026/01/14/reports/archive/2026/01/environmental-scan-2026-01-14.md",
+    "archive_data": "data/2026/01/14/reports/archive/2026/01/scan-data-2026-01-14.json",
+    "snapshot": "signals/snapshots/database-2026-01-14.json",
+    "archive_notifier_report": "logs/archive-notifier-report-2026-01-14.md"
   },
-  "stats": {
-    "new_signals": 24,
-    "high_priority": 13,
-    "medium_priority": 11,
-    "total_db_signals": 207,
-    "average_psrt": 71.8,
+  "statistics": {
+    "total_scanned": 51,
+    "new_signals": 51,
+    "updated_signals": 0,
+    "high_priority": 7,
+    "medium_priority": 35,
+    "low_priority": 9,
+    "hallucinations_detected": 10,
+    "hallucinations_confirmed": 3,
+    "total_db_signals": 422,
+    "average_psrt": 71.2,
     "top_category": "Technological"
   },
   "archive_stats": {
-    "report_size_kb": 31,
-    "archive_data_size_kb": 78,
-    "archive_location": "data/2026/01/13/reports/archive/2026/01/",
+    "report_size_kb": 31.8,
+    "archive_data_size_kb": 25.2,
+    "archive_location": "data/2026/01/14/reports/archive/2026/01/",
     "files_archived": 2,
-    "validation_status": "all_valid"
+    "validation_status": "all_valid",
+    "total_files_generated": 102,
+    "json_files_generated": 58
   },
   "category_distribution": {
-    "Technological": 10,
-    "Economic": 5,
-    "Social": 4,
-    "Environmental": 3,
-    "Political": 2,
-    "Spiritual": 0
+    "Technological": 130,
+    "Economic": 104,
+    "Political": 84,
+    "Environmental": 55,
+    "Social": 30,
+    "Spiritual": 19
+  },
+  "category_percentage": {
+    "Technological": 30.8,
+    "Economic": 24.6,
+    "Political": 19.9,
+    "Environmental": 13.0,
+    "Social": 7.1,
+    "Spiritual": 4.5
   },
   "top_signals": [
     {
-      "id": "SIG-2026-0113-002",
-      "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
-      "score": 8.5,
-      "category": "Technological"
+      "id": "RAW-2026-0114-014",
+      "title": "Generative AI Coding: 30% of Microsoft's Code Now Written by AI",
+      "score": 8.8,
+      "category": "Technological",
+      "significance": "Enterprise-scale AI coding viability validated. Global software development transformation underway."
     },
     {
-      "id": "SIG-2026-0113-009",
-      "title": "Global Renewables Hit 800GW Annual Record",
-      "score": 8.3,
-      "category": "Environmental"
+      "id": "RAW-2026-0114-015",
+      "title": "Mechanistic Interpretability: Mapping the Inner Workings of AI Models",
+      "score": 8.6,
+      "category": "Technological",
+      "significance": "AI black box problem solved. Foundation for AI trust and regulation established."
     },
     {
-      "id": "SIG-2026-0113-003",
-      "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
-      "score": 8.2,
-      "category": "Technological"
+      "id": "RAW-2026-0114-016",
+      "title": "D-Wave's $550M Quantum Breakthrough: First Scalable On-Chip Cryogenic Control",
+      "score": 8.4,
+      "category": "Technological",
+      "significance": "Quantum computing transition from lab to commercial viability. 5-10 year industry disruption timeline."
     }
   ],
-  "next_scheduled": "2026-01-14T11:00:00Z",
-  "version": "2.0"
+  "pSRT_analysis": {
+    "average_score": 71.2,
+    "grade_distribution": {
+      "A_plus": 8,
+      "A": 15,
+      "B": 18,
+      "C": 7,
+      "D": 3,
+      "E": 0,
+      "F": 0
+    },
+    "confidence_level": "Good (B grade indicates reliable strategic planning material)"
+  },
+  "priority_distribution": {
+    "high": {
+      "count": 7,
+      "threshold": "8.0+",
+      "percentage": 13.7
+    },
+    "medium": {
+      "count": 35,
+      "threshold": "6.0-7.9",
+      "percentage": 68.6
+    },
+    "low": {
+      "count": 9,
+      "threshold": "<6.0",
+      "percentage": 17.6
+    }
+  },
+  "quality_metrics": {
+    "hallucination_exclusions": 0,
+    "validated_signals": 7,
+    "downgraded_signals": 3,
+    "monitoring_signals": 10,
+    "duplicate_detection_rate": "100%",
+    "data_integrity": "all_valid"
+  },
+  "database_status": {
+    "version": "1.2",
+    "total_signals": 422,
+    "signals_before_update": 371,
+    "signals_after_update": 422,
+    "by_status": {
+      "emerging": 408,
+      "developing": 14
+    },
+    "by_significance": {
+      "1": 183,
+      "2": 20,
+      "3": 127,
+      "4": 51,
+      "5": 41
+    },
+    "last_updated": "2026-01-14T06:45:30Z",
+    "update_source": "Phase 4: DB Updater (daily-scan-2026-01-14)"
+  },
+  "archiving_checklist": {
+    "report_validation": true,
+    "structured_signals_validation": true,
+    "priority_rankings_validation": true,
+    "database_snapshot_verification": true,
+    "archive_directory_creation": true,
+    "report_file_copied": true,
+    "combined_json_archive_created": true,
+    "file_integrity_confirmed": true,
+    "summary_statistics_extracted": true
+  },
+  "execution_timeline": [
+    {
+      "step": "Archive Loader Started",
+      "status": "completed",
+      "phase": "phase_1"
+    },
+    {
+      "step": "Multi-source Scanner Started",
+      "status": "completed",
+      "phase": "phase_2"
+    },
+    {
+      "step": "Marathon Stage 2 Started",
+      "status": "completed",
+      "phase": "phase_2"
+    },
+    {
+      "step": "Signal Classifier Started",
+      "status": "completed",
+      "phase": "phase_3"
+    },
+    {
+      "step": "Impact Analyzer Started",
+      "status": "completed",
+      "phase": "phase_3"
+    },
+    {
+      "step": "Priority Ranker Started",
+      "status": "completed",
+      "phase": "phase_3"
+    },
+    {
+      "step": "DB Updater Started",
+      "status": "completed",
+      "phase": "phase_4"
+    },
+    {
+      "step": "Report Generator Started",
+      "status": "completed",
+      "phase": "phase_4"
+    },
+    {
+      "step": "Archive Notifier Started",
+      "status": "completed",
+      "phase": "phase_4"
+    }
+  ],
+  "next_scheduled": {
+    "date": "2026-01-15",
+    "time": "06:00:00Z",
+    "mode": "standard",
+    "timezone": "KST"
+  },
+  "metadata": {
+    "version": "3.2",
+    "pattern": "Orchestrator Pattern",
+    "generated_by": "Archive Notifier Agent",
+    "generated_at": "2026-01-14T06:48:45Z",
+    "archive_report_path": "logs/archive-notifier-report-2026-01-14.md",
+    "archive_directory_structure": "data/{date}/reports/archive/{year}/{month}/"
+  }
 }

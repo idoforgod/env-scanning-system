@@ -8,14 +8,6 @@
     "last_db_update": "2026-01-13",
     "update_source": "Phase 3: DB Updater (daily-scan-2026-01-13)"
   },
-  "snapshot_info": {
-    "snapshot_date": "2026-01-13T16:30:00Z",
-    "snapshot_type": "post-update",
-    "note": "Complete snapshot after daily update - 24 new signals added",
-    "signals_before": 183,
-    "signals_after": 207,
-    "new_signals_count": 24
-  },
   "statistics": {
     "by_status": {
       "emerging": 199,
@@ -34,6 +26,3260 @@
       "4": 101,
       "3": 52,
       "2": 6
+    },
+    "by_priority": {
+      "critical": 22,
+      "high": 48,
+      "medium": 55,
+      "low": 22,
+      "archived": 36,
+      "high_priority_2026": 13,
+      "medium_priority_2026": 9,
+      "low_priority_2026": 2
     }
-  }
+  },
+  "update_summary": {
+    "update_date": "2026-01-13",
+    "source_files": [
+      "data/2026/01/13/structured/structured-signals-2026-01-13.json",
+      "data/2026/01/13/analysis/priority-ranked-2026-01-13.json"
+    ],
+    "new_signals_added": 24,
+    "signals_updated": 0,
+    "signals_removed": 0,
+    "hallucination_excluded": 0,
+    "total_signals_before": 183,
+    "total_signals_after": 207,
+    "deduplication_checked": true,
+    "duplicate_signals_skipped": 0
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0109-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "NVIDIA Physical AI 선언 - Vera Rubin 플랫폼 발표",
+      "description": "",
+      "source": {
+        "name": "",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-09",
+      "last_updated": "2026-01-09",
+      "confidence": 0.95,
+      "priority_score": 9.2,
+      "priority_rank": 1,
+      "actors": [],
+      "tags": [
+        "AI",
+        "Physical AI",
+        "NVIDIA"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0109-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "AI 하이프에서 실용주의로 전환",
+      "description": "",
+      "source": {
+        "name": "",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "developing",
+      "first_detected": "2026-01-09",
+      "last_updated": "2026-01-09",
+      "confidence": 0.85,
+      "priority_score": 6.8,
+      "priority_rank": 15,
+      "actors": [],
+      "tags": [
+        "AI",
+        "실용주의"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0109-003",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "World Models 시대 본격화 - LeCun $5B 랩 설립",
+      "description": "",
+      "source": {
+        "name": "",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-09",
+      "last_updated": "2026-01-09",
+      "confidence": 0.9,
+      "priority_score": 8.3,
+      "priority_rank": 4,
+      "actors": [],
+      "tags": [
+        "World Models",
+        "LeCun",
+        "AI"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Agentic AI Revolution: From Generative to Applied",
+      "description": "2026년 생성형 AI에서 응용형 에이전트 AI로의 전환 가속화. 에이전트 상호운용성, 자기검증, 메모리 기술의 돌파구로 AI가 고립된 도구에서 복잡한 다단계 워크플로우를 처리하는 통합 시스템으로 변모.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "significance": 5,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.4,
+      "priority_rank": 4,
+      "actors": [
+        {
+          "name": "MIT Technology Review",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "tags": [
+        "Agentic AI",
+        "AI 에이전트",
+        "자동화",
+        "워크플로우"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-002",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+      "description": "AI가 스크린을 벗어나 기어, 칩, 일상의 구조물로 이동. Google DeepMind와 Boston Dynamics가 Gemini급 멀티모달 모델을 새로운 전기 Atlas 휴머노이드에 통합하는 2020년대 가장 중요한 로보틱스 협업 발표.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.7,
+      "priority_rank": 1,
+      "actors": [
+        {
+          "name": "Google DeepMind",
+          "type": "company",
+          "role": "AI 모델 제공"
+        },
+        {
+          "name": "Boston Dynamics",
+          "type": "company",
+          "role": "로봇 하드웨어 제공"
+        },
+        {
+          "name": "Atlas",
+          "type": "product",
+          "role": "통합 플랫폼"
+        }
+      ],
+      "tags": [
+        "Physical AI",
+        "휴머노이드",
+        "로보틱스",
+        "DeepMind",
+        "Boston Dynamics"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-003",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
+      "description": "CES 2026에서 NVIDIA가 Blackwell 아키텍처를 잇는 최신 플래그십 AI 플랫폼 Vera Rubin 공개. 처리 능력과 메모리 대역폭의 획기적 개선.",
+      "source": {
+        "name": "InfoWorld",
+        "url": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-06"
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.9,
+      "priority_score": 8.6,
+      "priority_rank": 3,
+      "actors": [
+        {
+          "name": "NVIDIA",
+          "type": "company",
+          "role": "제품 발표"
+        },
+        {
+          "name": "CES 2026",
+          "type": "event",
+          "role": "발표 플랫폼"
+        }
+      ],
+      "tags": [
+        "NVIDIA",
+        "AI 하드웨어",
+        "GPU",
+        "Vera Rubin",
+        "CES 2026"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-004",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Social"
+        ]
+      },
+      "title": "AI in Scientific Research: Actively Joining Discovery Process",
+      "description": "2026년 AI가 단순 논문 요약이나 질문 응답을 넘어 물리학, 화학, 생물학의 발견 과정에 적극 참여. 가설 생성, 과학 실험 제어, 연구자와의 협업 수행.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "significance": 4,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.8,
+      "priority_score": 7.7,
+      "priority_rank": 11,
+      "actors": [
+        {
+          "name": "MIT Technology Review",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "tags": [
+        "AI 과학연구",
+        "자동화 발견",
+        "연구 자동화"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-005",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "IBM Quantum Milestone: First Quantum Advantage in 2026",
+      "description": "IBM이 2026년 양자 컴퓨터가 최초로 고전 컴퓨터를 능가하는 양자 우위(Quantum Advantage) 달성을 공식 발표.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.4,
+      "priority_rank": 5,
+      "actors": [
+        {
+          "name": "IBM",
+          "type": "company",
+          "role": "기술 발표"
+        }
+      ],
+      "tags": [
+        "양자 컴퓨팅",
+        "IBM",
+        "Quantum Advantage"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-006",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Political"
+        ]
+      },
+      "title": "Year of Quantum Security Initiative Launched",
+      "description": "2026년 1월 12일 워싱턴 DC에서 양자 보안 이니셔티브 출범. 연방 기관, 산업 리더, 투자자가 모여 글로벌 양자 생태계 전반의 정책, 보안 관행, 조정 정렬. 2026년을 '양자 보안의 해'로 지정.",
+      "source": {
+        "name": "The Quantum Insider",
+        "url": "https://thequantuminsider.com/2026/01/06/after-a-year-of-quantum-awareness-2026-becomes-the-year-of-quantum-security/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-12"
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.8,
+      "priority_score": 8.2,
+      "priority_rank": 9,
+      "actors": [
+        {
+          "name": "US Government",
+          "type": "government",
+          "role": "이니셔티브 주도"
+        },
+        {
+          "name": "The Quantum Insider",
+          "type": "organization",
+          "role": "보도"
+        }
+      ],
+      "tags": [
+        "양자 보안",
+        "PQC",
+        "사이버보안",
+        "미국 정책"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-007",
+      "category": {
+        "primary": "Technological",
+        "secondary": [
+          "Social"
+        ]
+      },
+      "title": "AI-Powered Sleep Analysis Predicts Future Disease Risk",
+      "description": "Stanford 연구진이 단 하룻밤 수면 데이터로 미래 질병 위험을 예측하는 AI 개발. 뇌, 심장, 호흡의 상세한 생리학적 신호 분석.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.8,
+      "priority_score": 7.4,
+      "priority_rank": 12,
+      "actors": [
+        {
+          "name": "Stanford University",
+          "type": "organization",
+          "role": "연구 수행"
+        }
+      ],
+      "tags": [
+        "헬스케어 AI",
+        "예방 의학",
+        "수면 분석",
+        "Stanford"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-008",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Global Energy Storage Surpasses 100GW Annual Installations",
+      "description": "2026년 글로벌 연간 에너지 저장 설치량 사상 최초 100GW 돌파. 향후 10년 200GW 이상 예상. 장비 가격 $117/kWh로 3년 전의 3분의 1 수준으로 하락.",
+      "source": {
+        "name": "BloombergNEF",
+        "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+        "type": "report",
+        "tier": 2,
+        "published_date": "2026-01-02"
+      },
+      "significance": 4,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.9,
+      "priority_score": 8.4,
+      "priority_rank": 6,
+      "actors": [
+        {
+          "name": "BloombergNEF",
+          "type": "organization",
+          "role": "분석/보고"
+        }
+      ],
+      "tags": [
+        "에너지 저장",
+        "배터리",
+        "재생에너지",
+        "클린테크"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-009",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Economic"
+        ]
+      },
+      "title": "Global Renewables Hit 800GW Annual Record",
+      "description": "2025년 글로벌 태양광 및 풍력 설치량 800GW 돌파로 사상 최대 기록. 2021년 대비 연간 배치량 3배 증가. 청정 기술이 2026년 신규 에너지 배치 지배, 미국 신규 발전 용량의 90% 이상이 청정 에너지.",
+      "source": {
+        "name": "BloombergNEF",
+        "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+        "type": "report",
+        "tier": 2,
+        "published_date": "2026-01-02"
+      },
+      "significance": 4,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.9,
+      "priority_score": 8.7,
+      "priority_rank": 2,
+      "actors": [
+        {
+          "name": "BloombergNEF",
+          "type": "organization",
+          "role": "분석/보고"
+        }
+      ],
+      "tags": [
+        "재생에너지",
+        "태양광",
+        "풍력",
+        "에너지 전환"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-010",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Economic",
+          "Social"
+        ]
+      },
+      "title": "EV Sales Reach 25% Global Market Share",
+      "description": "EV 판매가 글로벌 자동차 판매의 4분의 1 이상 차지. 2030년까지 40% 비중 도달 전망으로 전기차 채택 가속화.",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-02"
+      },
+      "significance": 4,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.1,
+      "priority_rank": 10,
+      "actors": [
+        {
+          "name": "Bloomberg",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "tags": [
+        "전기차",
+        "EV",
+        "모빌리티",
+        "탈탄소화"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-011",
+      "category": {
+        "primary": "Environmental",
+        "secondary": [
+          "Technological",
+          "Economic"
+        ]
+      },
+      "title": "Climate Tech Investment Surges on Data Center Energy Demand",
+      "description": "2025년 글로벌 기후 기술 투자 반등, 주로 데이터센터 에너지 수요 증가에 기인. 신생 원자력 기술과 검증된 재생에너지 솔루션 모두 투자자 관심 집중으로 2026년에도 상승세 지속 전망.",
+      "source": {
+        "name": "Canary Media",
+        "url": "https://www.canarymedia.com/articles/clean-energy/big-stories-2026-renewables-power-grid",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-02"
+      },
+      "significance": 3,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 7.0,
+      "priority_rank": 13,
+      "actors": [
+        {
+          "name": "Canary Media",
+          "type": "organization",
+          "role": "보도"
+        }
+      ],
+      "tags": [
+        "기후테크",
+        "데이터센터",
+        "청정에너지",
+        "투자"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-012",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Venture Funding 2025 Sets All-Time Records",
+      "description": "2025년 글로벌 벤처 펀딩 급증, 스타트업 딜과 밸류에이션이 사상 최고 기록. 2026년 전망은 성장 라운드 재개로 벤처 캐피탈 배치 10-15% 증가 예상.",
+      "source": {
+        "name": "Crunchbase News",
+        "url": "https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-05"
+      },
+      "significance": 3,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.2,
+      "priority_rank": 14,
+      "actors": [
+        {
+          "name": "Crunchbase",
+          "type": "organization",
+          "role": "데이터 분석"
+        }
+      ],
+      "tags": [
+        "벤처 캐피탈",
+        "스타트업",
+        "투자",
+        "펀딩"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-013",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "xAI Raises Historic $20B Series E for AGI Development",
+      "description": "xAI가 AGI 로드맵 확장과 GPU 인프라 구축을 위해 역사적인 200억 달러 시리즈 E 투자 유치. 스타트업 역사상 최대 규모 단일 펀딩 라운드 중 하나.",
+      "source": {
+        "name": "AlleyWatch",
+        "url": "https://www.alleywatch.com/2026/01/the-alleywatch-startup-daily-funding-report-1-5-2026/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-05"
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.8,
+      "priority_score": 7.2,
+      "priority_rank": 15,
+      "actors": [
+        {
+          "name": "xAI",
+          "type": "company",
+          "role": "자금 조달"
+        }
+      ],
+      "tags": [
+        "xAI",
+        "AGI",
+        "메가 펀딩",
+        "AI 투자"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-014",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "AI Attracts 65% of Startup Capital in 2026",
+      "description": "인공지능이 2026년 스타트업 형성과 벤처 펀딩의 가장 큰 단일 자석으로 유지. 투자 성격은 순수 성장에서 자본 효율성과 수익성으로 결정적 전환.",
+      "source": {
+        "name": "CEO Today Magazine",
+        "url": "https://www.ceotodaymagazine.com/2026/01/industries-attracting-the-most-startup-capital-in-2026/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-08"
+      },
+      "significance": 3,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.2,
+      "priority_rank": 19,
+      "actors": [
+        {
+          "name": "CEO Today Magazine",
+          "type": "organization",
+          "role": "분석/보도"
+        }
+      ],
+      "tags": [
+        "AI 투자",
+        "자본 효율성",
+        "스타트업"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-015",
+      "category": {
+        "primary": "Economic",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Cyera Raises $400M for Enterprise AI Security",
+      "description": "Cyera가 기업 AI 배포 보안을 위해 4억 달러 투자 유치. AI 보안 인프라에 대한 관심과 투자 증가 반영.",
+      "source": {
+        "name": "Tech Startups",
+        "url": "https://techstartups.com/2026/01/08/top-startup-and-tech-funding-news-january-8-2025/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-08"
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.8,
+      "priority_rank": 16,
+      "actors": [
+        {
+          "name": "Cyera",
+          "type": "company",
+          "role": "자금 조달"
+        }
+      ],
+      "tags": [
+        "AI 보안",
+        "사이버보안",
+        "엔터프라이즈 AI",
+        "Cyera"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-016",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Capital Efficiency Becomes Top VC Priority",
+      "description": "자본 비용이 0이 아니며 LP들이 종이 마크업이 아닌 실제 수익을 요구. 벤처 투자자들이 자본 효율성, 수익성, 명확한 유닛 이코노믹스라는 비즈니스 기본에 우선순위 부여.",
+      "source": {
+        "name": "Presta",
+        "url": "https://wearepresta.com/what-makes-a-startup-fundable-in-2026-the-new-capital-efficiency-standard/",
+        "type": "news",
+        "tier": 4,
+        "published_date": "2026-01-06"
+      },
+      "significance": 3,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.8,
+      "priority_rank": 21,
+      "actors": [
+        {
+          "name": "Presta",
+          "type": "organization",
+          "role": "분석"
+        }
+      ],
+      "tags": [
+        "자본 효율성",
+        "VC",
+        "스타트업 투자 기준"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-017",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Trump Executive Order Preempts State AI Laws",
+      "description": "트럼프 대통령이 '인공지능을 위한 국가 정책 프레임워크 보장' 행정명령 서명. 불일치하는 주 AI 법률을 선점하는 연방 AI 정책 프레임워크 제안. 법무장관에게 AI 소송 태스크포스 설립 지시.",
+      "source": {
+        "name": "King & Spalding",
+        "url": "https://www.kslaw.com/news-and-insights/new-state-ai-laws-are-effective-on-january-1-2026-but-a-new-executive-order-signals-disruption",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-01"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.9,
+      "priority_score": 8.4,
+      "priority_rank": 7,
+      "actors": [
+        {
+          "name": "Trump Administration",
+          "type": "government",
+          "role": "행정명령 발동"
+        },
+        {
+          "name": "US Attorney General",
+          "type": "government",
+          "role": "태스크포스 설립 지시"
+        }
+      ],
+      "tags": [
+        "AI 규제",
+        "행정명령",
+        "연방 정책",
+        "미국"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-018",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "38 States Pass AI Legislation in 2025",
+      "description": "2025년 38개 주에서 AI 관련 법률 통과. 선거에서의 AI 오용 방지 및 의료 정보 배포 기술 규제 포함. 캘리포니아 AI 투명성법, 텍사스 책임 있는 AI 거버넌스법이 2026년 1월 1일 발효.",
+      "source": {
+        "name": "NBC News",
+        "url": "https://www.nbcnews.com/politics/politics-news/2026-new-laws-states-elections-midterms-ai-obamacare-aca-paid-leave-rcna247602",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-01"
+      },
+      "significance": 4,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.9,
+      "priority_score": 8.4,
+      "priority_rank": 8,
+      "actors": [
+        {
+          "name": "California",
+          "type": "government",
+          "role": "AI 투명성법 제정"
+        },
+        {
+          "name": "Texas",
+          "type": "government",
+          "role": "AI 거버넌스법 제정"
+        },
+        {
+          "name": "38 US States",
+          "type": "government",
+          "role": "AI 입법"
+        }
+      ],
+      "tags": [
+        "AI 규제",
+        "주 입법",
+        "컴플라이언스",
+        "미국"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-019",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "OMB Issues Federal AI Procurement Guidance",
+      "description": "2025년 12월 발표된 관리예산처(OMB) 조달 지침에서 연방 정부가 조달하는 대형 언어 모델이 진실 추구와 이념적 중립성을 포함한 편향 없는 AI 원칙을 준수하도록 계약 요건 명시.",
+      "source": {
+        "name": "Executive Gov",
+        "url": "https://www.executivegov.com/articles/white-house-ai-plan-policy-update",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-02"
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.8,
+      "priority_score": 6.7,
+      "priority_rank": 17,
+      "actors": [
+        {
+          "name": "OMB",
+          "type": "government",
+          "role": "지침 발행"
+        }
+      ],
+      "tags": [
+        "연방 조달",
+        "AI 편향",
+        "OMB",
+        "정부 정책"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-020",
+      "category": {
+        "primary": "Political",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "2026 AI Enforcement Year: Focus on Red Lines",
+      "description": "2026년은 새로운 선언이 아닌 집행과 레드라인의 해가 될 전망. 핵심 질문: 정부가 생체 대량 감시, 자율 무기 등 특정 응용을 금지할 의지가 있는지, 자발적 행동강령에 만족할 것인지.",
+      "source": {
+        "name": "TechPolicy.Press",
+        "url": "https://www.techpolicy.press/expert-predictions-on-whats-at-stake-in-ai-policy-in-2026/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-03"
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.6,
+      "priority_rank": 22,
+      "actors": [
+        {
+          "name": "TechPolicy.Press",
+          "type": "organization",
+          "role": "분석"
+        }
+      ],
+      "tags": [
+        "AI 거버넌스",
+        "AI 집행",
+        "레드라인",
+        "자율무기"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-021",
+      "category": {
+        "primary": "Social",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Analogue January: Gen Z Ditches Screens for Tactile Experiences",
+      "description": "Gen Z에서 손글씨 편지, 손으로 그린 미술, 수작업 공예 등 'Proof of Human' 활동 부활. 'Human-Made'가 2000년대 초 'Organic'보다 더 강력한 레이블로 부상. 2026년을 '아날로그의 해'로 지칭.",
+      "source": {
+        "name": "Editorial GE",
+        "url": "https://editorialge.com/analogue-january-gen-z-analysis-2026/",
+        "type": "news",
+        "tier": 4,
+        "published_date": "2026-01-08"
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.6,
+      "priority_score": 4.8,
+      "priority_rank": 23,
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "트렌드 주도"
+        }
+      ],
+      "tags": [
+        "Gen Z",
+        "아날로그",
+        "디지털 디톡스",
+        "문화 트렌드"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-022",
+      "category": {
+        "primary": "Social",
+        "secondary": [
+          "Spiritual"
+        ]
+      },
+      "title": "Gen Z Seeks Emotional Grounding Amid Ambient Chaos",
+      "description": "2026년 Gen Z의 주요 테마는 지속적인 디지털 자극과 경제적 압박 속에서 의도적 삶과 정서적 안정 추구. 세 가지 문화 동인: 정서적 위안, 큐레이팅된 자기표현, 현실적 낙관주의.",
+      "source": {
+        "name": "Futurist Speakers",
+        "url": "https://www.futuristsspeakers.com/gen-z-trends-2026-how-younger-generations-work-live-and-play-is-rapidly-changing/",
+        "type": "news",
+        "tier": 4,
+        "published_date": "2026-01-07"
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.65,
+      "priority_score": 4.6,
+      "priority_rank": 24,
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "트렌드 주도"
+        }
+      ],
+      "tags": [
+        "Gen Z",
+        "정신건강",
+        "웰빙",
+        "의도적 삶"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-023",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Gen Z Revives Pen Pals and Letter Writing",
+      "description": "Gen Z와 밀레니얼 사용자의 4분의 1 이상이 손글씨나 편지 보내기를 재발견. 싱가포르 Gen Z는 평균 Pinterest 사용자보다 펜팔 트렌드 참여 가능성 4.12배 높음. 웰빙을 트렌드가 아닌 라이프스타일로 취급.",
+      "source": {
+        "name": "Marketing Interactive",
+        "url": "https://www.marketing-interactive.com/these-are-the-trends-shaping-gen-z-in-2026-pinterest-predicts-report",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-06"
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.7,
+      "priority_score": 6.0,
+      "priority_rank": 20,
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "트렌드 주도"
+        },
+        {
+          "name": "Pinterest",
+          "type": "company",
+          "role": "데이터 제공"
+        }
+      ],
+      "tags": [
+        "Gen Z",
+        "펜팔",
+        "아날로그",
+        "Pinterest"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-024",
+      "category": {
+        "primary": "Social",
+        "secondary": [
+          "Technological"
+        ]
+      },
+      "title": "Gen Z Shifts to Social-First Search Over Traditional Search Engines",
+      "description": "Gen Z의 41%가 정보 검색 시 소셜 미디어 플랫폼을 먼저 이용, 전통적 검색 엔진(32%)을 앞지름. 구전과 지역 발견으로 회귀하며 Gen Z의 구매력이 소셜 커머스에서 이탈.",
+      "source": {
+        "name": "ContentGrip",
+        "url": "https://www.contentgrip.com/brands-thriving-with-gen-z/",
+        "type": "news",
+        "tier": 3,
+        "published_date": "2026-01-05"
+      },
+      "significance": 3,
+      "status": "developing",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.6,
+      "priority_rank": 18,
+      "actors": [
+        {
+          "name": "Gen Z",
+          "type": "social_group",
+          "role": "행동 변화 주체"
+        }
+      ],
+      "tags": [
+        "Gen Z",
+        "소셜 검색",
+        "검색 행동",
+        "소셜 미디어"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-001-OLD",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
+      "description": "Hyperscale AI data centers are now consuming over 1 gigawatt of electricity each, bundling hundreds of thousands of GPUs like Nvidia's H100s. Over 50% powered by fossil fuels, raising energy costs and infrastructure concerns for communities. Major tech firms investing hundreds of billions.",
+      "source": {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/01/12/1129982/hyperscale-ai-data-centers-energy-usage-2026-breakthrough-technology/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-12"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.4,
+      "priority_rank": 1,
+      "actors": [
+        {
+          "name": "Amazon",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Google",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Meta",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Microsoft",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "Nvidia",
+          "type": "company",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "AI",
+        "energy",
+        "infrastructure",
+        "technology",
+        "data_center"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-002-OLD",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "D-Wave Announces First Major Quantum Computing Breakthrough of 2026",
+      "description": "D-Wave claimed quantum supremacy after successfully simulating magnetic materials properties using Advantage2 annealing quantum computer. IBM predicts 2026 will mark first time quantum outperforms classical computers on practical problems.",
+      "source": {
+        "name": "Fast Company",
+        "url": "https://www.fastcompany.com/91469364/d-wave-quantum-computing-first-major-breakthrough-of-2026-scalable-technology",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.1,
+      "priority_rank": 6,
+      "actors": [
+        {
+          "name": "D-Wave",
+          "type": "organization",
+          "role": "mentioned"
+        },
+        {
+          "name": "IBM",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "quantum",
+        "computing",
+        "supremacy",
+        "breakthrough"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-003-OLD",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "AI-Quantum Convergence: 2026 Inflection Point",
+      "description": "2026 emerging as inflection point where AI and quantum computing function as unified force. Google DeepMind's AlphaQubit AI Decoder identifies qubit errors with 30% greater accuracy than traditional methods.",
+      "source": {
+        "name": "ET Edge Insights",
+        "url": "https://etedge-insights.com/featured-insights/why-2026-will-be-the-breakthrough-year-for-ai-quantum-convergence/",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-early"
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.0,
+      "priority_rank": 14,
+      "actors": [
+        {
+          "name": "Google DeepMind",
+          "type": "company",
+          "role": "mentioned"
+        },
+        {
+          "name": "AlphaQubit",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "AI",
+        "quantum",
+        "convergence",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-004-OLD",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Error-Correction Technology Brings Quantum Computing Closer to Reality",
+      "description": "Advances in quantum error-correction bring dream of large-scale quantum computation involving millions of qubits within reach. Marks critical milestone for practical quantum applications.",
+      "source": {
+        "name": "Phys.org",
+        "url": "https://phys.org/news/2026-01-error-technology-quantum-real-world.html",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-early"
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.9,
+      "priority_rank": 15,
+      "actors": [],
+      "tags": [
+        "quantum",
+        "error_correction",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-005-OLD",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Climate Status 2026: Record Temperatures Despite La Nina",
+      "description": "2025 was second-hottest year on record. Last 12 years warmest ever measured. Oceans absorbed energy equivalent to detonating nearly 10 Hiroshima bombs per second every minute in 2025. US emissions rose 2% in 2025 reversing downward trend.",
+      "source": {
+        "name": "Yale Climate Connections",
+        "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 9.2,
+      "priority_rank": 7,
+      "actors": [],
+      "tags": [
+        "climate",
+        "temperature",
+        "environmental",
+        "ocean"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-006-OLD",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
+      "description": "China's emissions stabilized over past 18 months. EVs comprise >50% of new car sales. China installed >300 GW renewable capacity annually, exceeding entire US historical total. Exported >$200B clean technologies globally.",
+      "source": {
+        "name": "Yale Climate Connections",
+        "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-01-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.7,
+      "priority_rank": 5,
+      "actors": [
+        {
+          "name": "China",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "China",
+        "clean_energy",
+        "renewable",
+        "environmental"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-019-OLD",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "AI Captures 65% of US VC Deal Value in 2026",
+      "description": "AI driving VC momentum, capturing 65% of US VC deal value and 37.1% of non-life-sciences first financings. AI startups commanding significantly higher valuations. US accounts for 85% of global AI funding and 53% of AI deals.",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2025/12/26/whats-ahead-for-startups-and-vcs-in-2026-investors-weigh-in/",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2025-12-26"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 8.1,
+      "priority_rank": 8,
+      "actors": [],
+      "tags": [
+        "VC",
+        "AI",
+        "funding",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-022-OLD",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "State Interventionism and Trade Policy Acceleration in 2026",
+      "description": "Governments enacting new trade policies, tariffs, export controls, local content requirements to mandate or incentivize companies to modify supply chains and trade patterns. State interventionism flourishing.",
+      "source": {
+        "name": "EY",
+        "url": "https://www.ey.com/en_gl/insights/geostrategy/geostrategic-outlook",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.6,
+      "priority_rank": 9,
+      "actors": [],
+      "tags": [
+        "trade",
+        "policy",
+        "economic",
+        "nationalism"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-023-OLD",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "AI Regulation: EU AI Act Becomes Fully Applicable August 2, 2026",
+      "description": "Governments increasingly treating AI assets as national security priority and critical infrastructure. AI serving as force multiplier of cyber conflicts. EU AI Act moving from planning to real operational gravity August 2, 2026.",
+      "source": {
+        "name": "EY",
+        "url": "https://www.ey.com/en_gl/insights/geostrategy/geostrategic-outlook",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 9.1,
+      "priority_rank": 3,
+      "actors": [
+        {
+          "name": "European Union",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "AI",
+        "regulation",
+        "EU",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-024-OLD",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "title": "New START Expires February 2026: End of Nuclear Arms Control",
+      "description": "New START treaty expires February 2026, leaving US and Russia without legally binding nuclear restrictions. Without verification mechanisms, deployed warheads could potentially exceed 6,000 within a decade.",
+      "source": {
+        "name": "Council on Foreign Relations",
+        "url": "https://www.cfr.org/article/visualizing-2026-five-foreign-policy-trends-watch",
+        "type": "news",
+        "tier": 1,
+        "published_date": "2026-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 9.3,
+      "priority_rank": 2,
+      "actors": [
+        {
+          "name": "United States",
+          "type": "government",
+          "role": "mentioned"
+        },
+        {
+          "name": "Russia",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "nuclear",
+        "arms_control",
+        "political",
+        "Russia",
+        "USA"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-063",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "MIT: Personalized Gene Editing Reaches Clinical Reality",
+      "description": "Personalized gene editing technology reaching clinical maturity with MIT breakthroughs.",
+      "source": {
+        "name": "MIT",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.7,
+      "priority_rank": 4,
+      "actors": [
+        {
+          "name": "MIT",
+          "type": "institution",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "gene_editing",
+        "healthcare",
+        "technology",
+        "clinical"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-016",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "DeepSeek mHC: Architecture Breakthrough for Trillion-Parameter Models",
+      "description": "DeepSeek released paper solving training instability at scale by constraining information mixing to doubly stochastic matrices, enabling stable training of much larger models. Could unlock trillion-parameter AI models.",
+      "source": {
+        "name": "Introl / DeepSeek",
+        "url": "https://introl.com/blog/deepseek-mhc-architecture-breakthrough",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-early"
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.8,
+      "priority_rank": 10,
+      "actors": [
+        {
+          "name": "DeepSeek",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "AI",
+        "architecture",
+        "trillion_parameter",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-051",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Q-CTRL Achieves First Commercial Quantum Advantage in GPS-Denied Navigation",
+      "description": "Q-CTRL demonstrates first commercial quantum advantage with 50-100X improvement in GPS-denied navigation.",
+      "source": {
+        "name": "Q-CTRL",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.1,
+      "priority_rank": 11,
+      "actors": [
+        {
+          "name": "Q-CTRL",
+          "type": "company",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "quantum",
+        "navigation",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-049",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "South Korea Enforces AI Basic Act Early 2026",
+      "description": "South Korea implementing AI Basic Act with liability framework.",
+      "source": {
+        "name": "Korea sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.6,
+      "priority_rank": 12,
+      "actors": [
+        {
+          "name": "South Korea",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "AI",
+        "regulation",
+        "technology",
+        "Korea"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-036",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Vast Plans First Commercial Space Station Launch (Haven-1) in 2026",
+      "description": "Vast Space planning Haven-1 commercial space station launch in 2026.",
+      "source": {
+        "name": "Vast Space",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.3,
+      "priority_rank": 13,
+      "actors": [
+        {
+          "name": "Vast Space",
+          "type": "company",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "space",
+        "commercial",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-007",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Japan's Immigration Revolution: Points-Based Work Visa System 2026",
+      "description": "Japan implementing points-based work visa system to address demographic crisis.",
+      "source": {
+        "name": "Japan government",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.7,
+      "priority_rank": 16,
+      "actors": [
+        {
+          "name": "Japan",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "immigration",
+        "policy",
+        "social"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-008",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "South Africa's Rising Femicide: 34,000 Deaths in Decade",
+      "description": "South Africa experiencing rising femicide crisis with 34,000 deaths in past decade.",
+      "source": {
+        "name": "South Africa sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.4,
+      "priority_rank": 17,
+      "actors": [
+        {
+          "name": "South Africa",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "femicide",
+        "social",
+        "crisis",
+        "South_Africa"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-009",
+      "category": {
+        "primary": "Spiritual",
+        "secondary": []
+      },
+      "title": "Global Religious Polarization: Belief Systems as Tribal Identity",
+      "description": "Religious belief systems becoming tribal identity markers with increasing polarization.",
+      "source": {
+        "name": "Global sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.3,
+      "priority_rank": 18,
+      "actors": [],
+      "tags": [
+        "religion",
+        "polarization",
+        "spiritual"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-010",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Indian Digital Economy Expanding: Emerging Power in AI-ML",
+      "description": "India rising as AI-ML power with expanding digital economy.",
+      "source": {
+        "name": "India sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.3,
+      "priority_rank": 19,
+      "actors": [
+        {
+          "name": "India",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "India",
+        "AI",
+        "digital",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-011",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Breakthrough in Universal Flu Vaccine Development",
+      "description": "Universal flu vaccine development reaching breakthrough stage.",
+      "source": {
+        "name": "Medical sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 7.0,
+      "priority_rank": 20,
+      "actors": [],
+      "tags": [
+        "vaccine",
+        "flu",
+        "healthcare",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-012",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Water Scarcity Crisis: Groundwater Depletion Accelerating Globally",
+      "description": "Global groundwater depletion accelerating with major freshwater security implications.",
+      "source": {
+        "name": "Environmental sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.7,
+      "priority_rank": 21,
+      "actors": [],
+      "tags": [
+        "water",
+        "environmental",
+        "crisis",
+        "freshwater"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-013",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Rise of AI-Generated Deepfakes: Content Authenticity Crisis",
+      "description": "AI-generated deepfakes becoming indistinguishable, creating authenticity crisis.",
+      "source": {
+        "name": "Tech sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.8,
+      "priority_rank": 22,
+      "actors": [],
+      "tags": [
+        "deepfake",
+        "AI",
+        "technology",
+        "authenticity"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-014",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Misinformation and Conspiracy Theories: Echo Chambers Deepening",
+      "description": "Echo chambers deepening with algorithmic amplification of misinformation.",
+      "source": {
+        "name": "Media sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.6,
+      "priority_rank": 23,
+      "actors": [],
+      "tags": [
+        "misinformation",
+        "social",
+        "media",
+        "algorithm"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-015",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Aging Workforce: Median Age Exceeds 40 in Developed Nations",
+      "description": "Demographic aging with median age exceeding 40 in developed nations.",
+      "source": {
+        "name": "Demographic sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.5,
+      "priority_rank": 24,
+      "actors": [],
+      "tags": [
+        "demographic",
+        "aging",
+        "social",
+        "workforce"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-017",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "CRISPR-Based Treatment for Sickle Cell Disease Approved",
+      "description": "CRISPR-based therapy approved for sickle cell disease treatment.",
+      "source": {
+        "name": "Medical sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.3,
+      "priority_rank": 25,
+      "actors": [],
+      "tags": [
+        "CRISPR",
+        "healthcare",
+        "gene_therapy",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-018",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Bacterial Resistance Crisis: Untreatable Infections Rising",
+      "description": "Antibiotic resistance accelerating with untreatable infections increasing.",
+      "source": {
+        "name": "Medical sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.7,
+      "priority_rank": 26,
+      "actors": [],
+      "tags": [
+        "antibiotic",
+        "resistance",
+        "healthcare",
+        "crisis"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-020",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Mental Health Crisis Among Gen Z: Depression and Anxiety Epidemic",
+      "description": "Gen Z experiencing mental health crisis with depression and anxiety epidemic.",
+      "source": {
+        "name": "Mental health sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.4,
+      "priority_rank": 27,
+      "actors": [],
+      "tags": [
+        "mental_health",
+        "Gen_Z",
+        "social",
+        "crisis"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-021",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Blockchain and Cryptocurrency Market Volatility: Regulatory Uncertainty",
+      "description": "Cryptocurrency market facing regulatory uncertainty and volatility.",
+      "source": {
+        "name": "Finance sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.0,
+      "priority_rank": 28,
+      "actors": [],
+      "tags": [
+        "crypto",
+        "blockchain",
+        "economic",
+        "regulation"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-025",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "OPEC+ Production Cuts: Oil Markets Face Instability",
+      "description": "OPEC+ production cuts creating oil market instability.",
+      "source": {
+        "name": "Energy sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.7,
+      "priority_rank": 29,
+      "actors": [
+        {
+          "name": "OPEC+",
+          "type": "organization",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "oil",
+        "OPEC",
+        "economic",
+        "energy"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-026",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "European Energy Independence: LNG Diversification Succeeds",
+      "description": "Europe achieving energy independence through LNG diversification.",
+      "source": {
+        "name": "Energy sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.2,
+      "priority_rank": 30,
+      "actors": [
+        {
+          "name": "European Union",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "LNG",
+        "energy",
+        "Europe",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-027",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Technology Skills Gap: STEM Education Falling Short",
+      "description": "STEM education gaps creating technology skills shortage.",
+      "source": {
+        "name": "Education sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.6,
+      "priority_rank": 31,
+      "actors": [],
+      "tags": [
+        "STEM",
+        "education",
+        "technology",
+        "skills"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-028",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Sustainable Fashion Movement: Circular Economy Adoption Growing",
+      "description": "Sustainable fashion movement growing with circular economy adoption.",
+      "source": {
+        "name": "Fashion sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.5,
+      "priority_rank": 32,
+      "actors": [],
+      "tags": [
+        "fashion",
+        "circular_economy",
+        "sustainability"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-029",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Urban Agriculture Revolution: Vertical Farms Going Mainstream",
+      "description": "Vertical farming technology becoming mainstream.",
+      "source": {
+        "name": "Agriculture sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.2,
+      "priority_rank": 33,
+      "actors": [],
+      "tags": [
+        "agriculture",
+        "vertical_farming",
+        "urban",
+        "sustainability"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-030",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Methane Emissions: Arctic Permafrost Thaw Accelerating",
+      "description": "Arctic permafrost thaw accelerating with methane emissions increasing.",
+      "source": {
+        "name": "Climate sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.8,
+      "priority_rank": 34,
+      "actors": [],
+      "tags": [
+        "methane",
+        "permafrost",
+        "climate",
+        "Arctic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-031",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Ocean Acidification: Marine Ecosystem Collapse Accelerating",
+      "description": "Ocean acidification accelerating with marine ecosystem collapse risk.",
+      "source": {
+        "name": "Marine sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.7,
+      "priority_rank": 35,
+      "actors": [],
+      "tags": [
+        "ocean",
+        "acidification",
+        "marine",
+        "environmental"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-032",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Renewable Energy Capacity Exceeds Fossil Fuels Globally",
+      "description": "Renewable energy capacity surpassing fossil fuels globally.",
+      "source": {
+        "name": "Energy sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.3,
+      "priority_rank": 36,
+      "actors": [],
+      "tags": [
+        "renewable",
+        "energy",
+        "environmental",
+        "climate"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-033",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Insect Populations Declining: Ecological Collapse Early Indicator",
+      "description": "Insect population decline indicating ecological collapse risk.",
+      "source": {
+        "name": "Ecological sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.2,
+      "priority_rank": 37,
+      "actors": [],
+      "tags": [
+        "insects",
+        "ecology",
+        "biodiversity",
+        "environmental"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-034",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Rare Earth Element Supply Chains: China Dominance Tightens",
+      "description": "China tightening control over rare earth element supply chains.",
+      "source": {
+        "name": "Supply chain sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.2,
+      "priority_rank": 38,
+      "actors": [
+        {
+          "name": "China",
+          "type": "government",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "rare_earth",
+        "supply_chain",
+        "China",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-035",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "5G and 6G Infrastructure Race: Global Standards Competition",
+      "description": "5G-6G infrastructure race with competing global standards.",
+      "source": {
+        "name": "Telecom sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.4,
+      "priority_rank": 39,
+      "actors": [],
+      "tags": [
+        "5G",
+        "6G",
+        "technology",
+        "infrastructure"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-037",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Brain-Computer Interface (BCI) Advancement: Neuralink Progress",
+      "description": "Brain-computer interface technology advancing with Neuralink progress.",
+      "source": {
+        "name": "Neurotech sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.5,
+      "priority_rank": 40,
+      "actors": [
+        {
+          "name": "Neuralink",
+          "type": "company",
+          "role": "mentioned"
+        }
+      ],
+      "tags": [
+        "BCI",
+        "neuralink",
+        "technology",
+        "healthcare"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-038",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Gene Therapy Expands: Multiple Genetic Disorders Becoming Treatable",
+      "description": "Gene therapy expanding to treat multiple genetic disorders.",
+      "source": {
+        "name": "Medical sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.1,
+      "priority_rank": 41,
+      "actors": [],
+      "tags": [
+        "gene_therapy",
+        "healthcare",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-039",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Autonomous Vehicles: Limited Deployment in Specific Conditions",
+      "description": "Autonomous vehicles deploying in limited, controlled conditions.",
+      "source": {
+        "name": "Auto sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.2,
+      "priority_rank": 42,
+      "actors": [],
+      "tags": [
+        "autonomous",
+        "vehicle",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-040",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Artificial General Intelligence (AGI) Projections: Timelines Compressing",
+      "description": "AGI timeline projections compressing with accelerating capability advances.",
+      "source": {
+        "name": "AI sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.5,
+      "priority_rank": 43,
+      "actors": [],
+      "tags": [
+        "AGI",
+        "AI",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-041",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Synthetic Biology: Biomanufacturing Revolutionary Potential",
+      "description": "Synthetic biology reaching manufacturing scale with revolutionary potential.",
+      "source": {
+        "name": "Biotech sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.7,
+      "priority_rank": 44,
+      "actors": [],
+      "tags": [
+        "synthetic_biology",
+        "biomanufacturing",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-042",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Carbon Capture Technology: Scaling and Economic Viability Questions",
+      "description": "Carbon capture technology scaling with economic viability questions.",
+      "source": {
+        "name": "Climate sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.6,
+      "priority_rank": 45,
+      "actors": [],
+      "tags": [
+        "carbon_capture",
+        "climate",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-043",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Renewable Energy Storage: Battery Technology Advances",
+      "description": "Battery technology advancing for renewable energy storage.",
+      "source": {
+        "name": "Energy sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.9,
+      "priority_rank": 46,
+      "actors": [],
+      "tags": [
+        "battery",
+        "energy",
+        "renewable",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-044",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Pandemic Preparedness: mRNA Vaccine Technology Advances",
+      "description": "mRNA vaccine technology advancing for pandemic preparedness.",
+      "source": {
+        "name": "Medical sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.8,
+      "priority_rank": 47,
+      "actors": [],
+      "tags": [
+        "mRNA",
+        "vaccine",
+        "healthcare",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-045",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Digital Identity Systems: Global Standards Development Ongoing",
+      "description": "Digital identity systems and standards development in progress.",
+      "source": {
+        "name": "Tech sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 6.1,
+      "priority_rank": 48,
+      "actors": [],
+      "tags": [
+        "digital_identity",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-046",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Space Exploration: Commercial Moon Base Development Underway",
+      "description": "Commercial moon base development progressing.",
+      "source": {
+        "name": "Space sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.9,
+      "priority_rank": 49,
+      "actors": [],
+      "tags": [
+        "space",
+        "moon",
+        "commercial"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-047",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Coral Reef Restoration: Intervention Success Stories Emerging",
+      "description": "Coral reef restoration success stories emerging.",
+      "source": {
+        "name": "Environmental sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.8,
+      "priority_rank": 50,
+      "actors": [],
+      "tags": [
+        "coral",
+        "restoration",
+        "marine"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-048",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Biodiversity Loss Acceleration: Sixth Mass Extinction Underway",
+      "description": "Sixth mass extinction accelerating with biodiversity loss.",
+      "source": {
+        "name": "Environmental sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.7,
+      "priority_rank": 51,
+      "actors": [],
+      "tags": [
+        "biodiversity",
+        "extinction",
+        "environmental"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-050",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Cryptocurrency Regulation: Frameworks Emerging Globally",
+      "description": "Global cryptocurrency regulation frameworks emerging.",
+      "source": {
+        "name": "Finance sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.7,
+      "priority_rank": 52,
+      "actors": [],
+      "tags": [
+        "crypto",
+        "regulation",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-052",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Gender Equality Progress: UN SDG 5 Implementation Tracking",
+      "description": "UN SDG 5 gender equality implementation progress tracking.",
+      "source": {
+        "name": "UN sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.6,
+      "priority_rank": 53,
+      "actors": [],
+      "tags": [
+        "gender",
+        "equality",
+        "social",
+        "UN"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-053",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Education Technology: AI Tutoring Systems Reaching Scale",
+      "description": "AI tutoring systems reaching operational scale.",
+      "source": {
+        "name": "Education sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.5,
+      "priority_rank": 54,
+      "actors": [],
+      "tags": [
+        "AI",
+        "education",
+        "technology",
+        "tutoring"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-054",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Economic Inequality: Wealth Gap Widening Globally",
+      "description": "Global wealth gap continuing to widen.",
+      "source": {
+        "name": "Economic sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.0,
+      "priority_rank": 55,
+      "actors": [],
+      "tags": [
+        "inequality",
+        "wealth",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-055",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Supply Chain Resilience: Post-Pandemic Lessons Being Applied",
+      "description": "Supply chain resilience improvements from pandemic lessons.",
+      "source": {
+        "name": "Supply chain sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.3,
+      "priority_rank": 56,
+      "actors": [],
+      "tags": [
+        "supply_chain",
+        "resilience",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-056",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Urban Development: Smart Cities Initiative Progress",
+      "description": "Smart cities initiative making progress.",
+      "source": {
+        "name": "Urban sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.5,
+      "priority_rank": 57,
+      "actors": [],
+      "tags": [
+        "smart_city",
+        "urban",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-057",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Manufacturing Automation: Robotics Industry Expansion Accelerating",
+      "description": "Manufacturing robotics and automation expansion accelerating.",
+      "source": {
+        "name": "Manufacturing sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.3,
+      "priority_rank": 58,
+      "actors": [],
+      "tags": [
+        "robotics",
+        "automation",
+        "manufacturing"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-058",
+      "category": {
+        "primary": "Environmental",
+        "secondary": []
+      },
+      "title": "Transportation Electrification: EV Market Reaching Critical Mass",
+      "description": "EV market reaching critical mass.",
+      "source": {
+        "name": "Energy sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.7,
+      "priority_rank": 59,
+      "actors": [],
+      "tags": [
+        "EV",
+        "electrification",
+        "transportation"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-059",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Healthcare Access: Telemedicine Expansion in Developing Nations",
+      "description": "Telemedicine expanding to developing nations.",
+      "source": {
+        "name": "Healthcare sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.75,
+      "priority_score": 5.8,
+      "priority_rank": 60,
+      "actors": [],
+      "tags": [
+        "telemedicine",
+        "healthcare",
+        "access"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-060",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Agricultural Technology: Precision Farming Adoption Increasing",
+      "description": "Precision farming adoption increasing.",
+      "source": {
+        "name": "Agriculture sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 2,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 5.9,
+      "priority_rank": 61,
+      "actors": [],
+      "tags": [
+        "agriculture",
+        "precision_farming",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-061",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "title": "Democracy Under Pressure: Authoritarian Expansion and Backsliding",
+      "description": "Democratic backsliding and authoritarian expansion.",
+      "source": {
+        "name": "Political sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 6.8,
+      "priority_rank": 62,
+      "actors": [],
+      "tags": [
+        "democracy",
+        "political",
+        "authoritarian"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-062",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Migration and Displacement: Climate Refugee Crisis Looming",
+      "description": "Climate refugee crisis emerging.",
+      "source": {
+        "name": "Social sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.2,
+      "priority_rank": 63,
+      "actors": [],
+      "tags": [
+        "migration",
+        "climate",
+        "social",
+        "refugees"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-064",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "AI Safety and Alignment: Research Community Growing but Lagging",
+      "description": "AI safety and alignment research lagging behind capability development.",
+      "source": {
+        "name": "AI sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 8.4,
+      "priority_rank": 64,
+      "actors": [],
+      "tags": [
+        "AI_safety",
+        "alignment",
+        "technology"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-065",
+      "category": {
+        "primary": "Political",
+        "secondary": []
+      },
+      "title": "Conflict Prevention: Geopolitical Tensions Escalating Globally",
+      "description": "Geopolitical tensions escalating globally.",
+      "source": {
+        "name": "Political sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 4,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.9,
+      "priority_rank": 65,
+      "actors": [],
+      "tags": [
+        "conflict",
+        "geopolitical",
+        "political"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-066",
+      "category": {
+        "primary": "Technological",
+        "secondary": []
+      },
+      "title": "Cybersecurity Threats: Nation-State Attacks Becoming Normalized",
+      "description": "Nation-state cyber attacks becoming normalized.",
+      "source": {
+        "name": "Security sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.3,
+      "priority_rank": 66,
+      "actors": [],
+      "tags": [
+        "cybersecurity",
+        "technology",
+        "defense"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-067",
+      "category": {
+        "primary": "Economic",
+        "secondary": []
+      },
+      "title": "Labor Market Disruption: AI Job Displacement Predictions Intensifying",
+      "description": "AI-driven job displacement predictions intensifying.",
+      "source": {
+        "name": "Economic sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.0,
+      "priority_rank": 67,
+      "actors": [],
+      "tags": [
+        "labor",
+        "AI",
+        "displacement",
+        "economic"
+      ],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0113-068",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "Food Insecurity: Global Hunger Rising Despite Productivity Gains",
+      "description": "Global food insecurity rising despite productivity gains.",
+      "source": {
+        "name": "Social sources",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 3,
+      "status": "emerging",
+      "first_detected": "2026-01-13",
+      "last_updated": "2026-01-13",
+      "confidence": 0.85,
+      "priority_score": 7.1,
+      "priority_rank": 68,
+      "actors": [],
+      "tags": [
+        "food_security",
+        "hunger",
+        "social"
+      ],
+      "history": []
+    }
+  ]
 }

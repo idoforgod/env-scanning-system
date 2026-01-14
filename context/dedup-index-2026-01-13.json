@@ -1,479 +1,491 @@
 {
   "generated_date": "2026-01-13",
-  "index_version": "2.0",
-  "database_source": "signals/database.json",
-  "index_type": "comprehensive_dedup_index",
+  "index_version": "2.1",
+  "database_source": "signals/database.json (207 signals)",
+  "archive_sources": [
+    "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json"
+  ],
+  "index_type": "comprehensive_dedup_index_with_archives",
   "statistics": {
-    "total_signals_indexed": 183,
-    "signals_with_urls": 6,
-    "signals_with_empty_urls": 177,
+    "total_signals_indexed": 207,
+    "signals_from_database": 207,
+    "signals_from_archives": 24,
+    "signals_with_urls": 13,
+    "signals_with_empty_urls": 194,
     "exact_url_matches_tracked": 6,
-    "title_indexed": 183,
+    "duplicate_urls_detected": 1,
+    "title_indexed": 207,
     "entities_indexed": 282,
     "tags_indexed": 584,
     "categories_tracked": 6
   },
   "urls": [
     {
+      "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+      "signal_ids": [
+        "SIG-2026-0113-001",
+        "SIG-2026-0113-002",
+        "SIG-2026-0113-004",
+        "SIG-2026-0113-007"
+      ],
+      "title_examples": [
+        "Agentic AI Revolution: From Generative to Applied",
+        "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
+        "AI in Scientific Research: Actively Joining Discovery Process",
+        "AI-Powered Sleep Analysis Predicts Future Disease Risk"
+      ],
+      "hash": "77698321",
+      "frequency": 4,
+      "note": "Multiple signals from same MIT Technology Review article - consolidation may be needed"
+    },
+    {
       "url": "https://www.technologyreview.com/2026/01/12/1129982/hyperscale-ai-data-centers-energy-usage-2026-breakthrough-technology/",
-      "signal_id": "SIG-2026-0113-001",
+      "signal_ids": ["SIG-2026-0113-001-OLD"],
       "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
-      "hash": "77698321"
+      "hash": "77698322",
+      "frequency": 1
     },
     {
       "url": "https://www.fastcompany.com/91469364/d-wave-quantum-computing-first-major-breakthrough-of-2026-scalable-technology",
-      "signal_id": "SIG-2026-0113-002",
+      "signal_ids": ["SIG-2026-0113-002-OLD"],
       "title": "D-Wave Announces First Major Quantum Computing Breakthrough of 2026",
-      "hash": "34863825"
+      "hash": "34863825",
+      "frequency": 1
     },
     {
       "url": "https://etedge-insights.com/featured-insights/why-2026-will-be-the-breakthrough-year-for-ai-quantum-convergence/",
-      "signal_id": "SIG-2026-0113-003",
+      "signal_ids": ["SIG-2026-0113-003-OLD"],
       "title": "AI-Quantum Convergence: 2026 Inflection Point",
-      "hash": "69525039"
+      "hash": "69525039",
+      "frequency": 1
     },
     {
       "url": "https://phys.org/news/2026-01-error-technology-quantum-real-world.html",
-      "signal_id": "SIG-2026-0113-004",
+      "signal_ids": ["SIG-2026-0113-004-OLD"],
       "title": "Error-Correction Technology Brings Quantum Computing Closer to Reality",
-      "hash": "31703858"
+      "hash": "31703858",
+      "frequency": 1
     },
     {
       "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
-      "signal_id": "SIG-2026-0113-005",
-      "title": "Climate Status 2026: Record Temperatures Despite La Nina",
-      "hash": "3686981"
-    },
-    {
-      "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
-      "signal_id": "SIG-2026-0113-006",
-      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
+      "signal_ids": [
+        "SIG-2026-0113-005-OLD",
+        "SIG-2026-0113-006-OLD"
+      ],
+      "title_examples": [
+        "Climate Status 2026: Record Temperatures Despite La Nina",
+        "China's Clean Energy Dominance: 300 GW Annual Installations"
+      ],
       "hash": "3686981",
-      "duplicate_url_note": "Same URL as SIG-2026-0113-005"
+      "frequency": 2,
+      "duplicate_url_note": "Same URL for different signals",
+      "note": "Requires consolidation - same article covers multiple topics"
+    },
+    {
+      "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+      "signal_ids": [
+        "SIG-2026-0113-008",
+        "SIG-2026-0113-009"
+      ],
+      "title_examples": [
+        "Global Energy Storage Surpasses 100GW Annual Installations",
+        "Global Renewables Hit 800GW Annual Record"
+      ],
+      "hash": "88223344",
+      "frequency": 2,
+      "note": "Multiple signals from same BloombergNEF report"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/features/2026-01-02/14-climate-change-trends-to-follow-in-2026-from-evs-to-nuclear-power",
+      "signal_ids": ["SIG-2026-0113-010"],
+      "title": "EV Sales Reach 25% Global Market Share",
+      "hash": "99334455",
+      "frequency": 1
+    },
+    {
+      "url": "https://www.canarymedia.com/articles/clean-energy/big-stories-2026-renewables-power-grid",
+      "signal_ids": ["SIG-2026-0113-011"],
+      "title": "Climate Tech Investment Surges on Data Center Energy Demand",
+      "hash": "11223344",
+      "frequency": 1
+    },
+    {
+      "url": "https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/",
+      "signal_ids": ["SIG-2026-0113-012"],
+      "title": "Venture Funding 2025 Sets All-Time Records",
+      "hash": "22334455",
+      "frequency": 1
+    },
+    {
+      "url": "https://www.alleywatch.com/2026/01/the-alleywatch-startup-daily-funding-report-1-5-2026/",
+      "signal_ids": ["SIG-2026-0113-013"],
+      "title": "xAI Raises Historic $20B Series E for AGI Development",
+      "hash": "33445566",
+      "frequency": 1
+    },
+    {
+      "url": "https://www.ceotodaymagazine.com/2026/01/industries-attracting-the-most-startup-capital-in-2026/",
+      "signal_ids": ["SIG-2026-0113-014"],
+      "title": "AI Attracts 65% of Startup Capital in 2026",
+      "hash": "44556677",
+      "frequency": 1
+    },
+    {
+      "url": "https://techstartups.com/2026/01/08/top-startup-and-tech-funding-news-january-8-2025/",
+      "signal_ids": ["SIG-2026-0113-015"],
+      "title": "Cyera Raises $400M for Enterprise AI Security",
+      "hash": "55667788",
+      "frequency": 1
     }
   ],
   "title_index": [
     {
       "title": "NVIDIA Physical AI 선언 - Vera Rubin 플랫폼 발표",
       "signal_id": "SIG-2026-0109-001",
-      "hash": "sig2026010901"
+      "hash": "sig2026010901",
+      "category": "Technological"
     },
     {
       "title": "AI 하이프에서 실용주의로 전환",
       "signal_id": "SIG-2026-0109-002",
-      "hash": "sig2026010902"
+      "hash": "sig2026010902",
+      "category": "Technological"
     },
     {
       "title": "World Models 시대 본격화 - LeCun $5B 랩 설립",
       "signal_id": "SIG-2026-0109-003",
-      "hash": "sig2026010903"
+      "hash": "sig2026010903",
+      "category": "Technological"
     },
     {
-      "title": "Hyperscale AI Data Centers: 10 Breakthrough Technologies 2026",
+      "title": "Agentic AI Revolution: From Generative to Applied",
       "signal_id": "SIG-2026-0113-001",
-      "hash": "sig2026011301"
+      "hash": "sig2026011301",
+      "category": "Technological",
+      "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/"
     },
     {
-      "title": "D-Wave Announces First Major Quantum Computing Breakthrough of 2026",
+      "title": "Physical AI Integration: DeepMind-Boston Dynamics Collaboration",
       "signal_id": "SIG-2026-0113-002",
-      "hash": "sig2026011302"
+      "hash": "sig2026011302",
+      "category": "Technological",
+      "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/"
     },
     {
-      "title": "AI-Quantum Convergence: 2026 Inflection Point",
+      "title": "NVIDIA Vera Rubin Platform Unveiled at CES 2026",
       "signal_id": "SIG-2026-0113-003",
-      "hash": "sig2026011303"
+      "hash": "sig2026011303",
+      "category": "Technological"
     },
     {
-      "title": "Error-Correction Technology Brings Quantum Computing Closer to Reality",
+      "title": "AI in Scientific Research: Actively Joining Discovery Process",
       "signal_id": "SIG-2026-0113-004",
-      "hash": "sig2026011304"
+      "hash": "sig2026011304",
+      "category": "Technological"
     },
     {
-      "title": "Climate Status 2026: Record Temperatures Despite La Nina",
+      "title": "IBM Quantum Milestone: First Quantum Advantage in 2026",
       "signal_id": "SIG-2026-0113-005",
-      "hash": "sig2026011305"
+      "hash": "sig2026011305",
+      "category": "Technological"
     },
     {
-      "title": "China's Clean Energy Dominance: 300 GW Annual Installations",
+      "title": "Year of Quantum Security Initiative Launched",
       "signal_id": "SIG-2026-0113-006",
-      "hash": "sig2026011306"
+      "hash": "sig2026011306",
+      "category": "Technological"
     },
     {
-      "title": "AI Captures 65% of US VC Deal Value in 2026",
-      "signal_id": "SIG-2026-0113-019",
-      "hash": "sig2026011319"
+      "title": "AI-Powered Sleep Analysis Predicts Future Disease Risk",
+      "signal_id": "SIG-2026-0113-007",
+      "hash": "sig2026011307",
+      "category": "Technological"
     },
     {
-      "title": "State Interventionism and Trade Policy Acceleration in 2026",
-      "signal_id": "SIG-2026-0113-022",
-      "hash": "sig2026011322"
+      "title": "Global Energy Storage Surpasses 100GW Annual Installations",
+      "signal_id": "SIG-2026-0113-008",
+      "hash": "sig2026011308",
+      "category": "Environmental"
     },
     {
-      "title": "AI Regulation: EU AI Act Becomes Fully Applicable August 2, 2026",
-      "signal_id": "SIG-2026-0113-023",
-      "hash": "sig2026011323"
+      "title": "Global Renewables Hit 800GW Annual Record",
+      "signal_id": "SIG-2026-0113-009",
+      "hash": "sig2026011309",
+      "category": "Environmental"
     },
     {
-      "title": "New START Expires February 2026: End of Nuclear Arms Control",
-      "signal_id": "SIG-2026-0113-024",
-      "hash": "sig2026011324"
+      "title": "EV Sales Reach 25% Global Market Share",
+      "signal_id": "SIG-2026-0113-010",
+      "hash": "sig2026011310",
+      "category": "Environmental"
     }
   ],
   "entity_index": {
-    "actors": [
+    "top_actors": [
       {
-        "name": "Amazon",
+        "name": "Google / Google DeepMind",
         "type": "company",
-        "signal_ids": ["SIG-2026-0113-001"],
-        "frequency": 1
+        "signal_ids": [
+          "SIG-2026-0113-001",
+          "SIG-2026-0113-002",
+          "SIG-2026-0113-003-OLD"
+        ],
+        "frequency": 3,
+        "primary_role": "AI model provider, robotics integration"
       },
       {
-        "name": "Google",
+        "name": "NVIDIA",
         "type": "company",
-        "signal_ids": ["SIG-2026-0113-001", "SIG-2026-0113-003"],
-        "frequency": 2
-      },
-      {
-        "name": "Meta",
-        "type": "company",
-        "signal_ids": ["SIG-2026-0113-001"],
-        "frequency": 1
-      },
-      {
-        "name": "Microsoft",
-        "type": "company",
-        "signal_ids": ["SIG-2026-0113-001"],
-        "frequency": 1
-      },
-      {
-        "name": "Nvidia",
-        "type": "company",
-        "signal_ids": ["SIG-2026-0113-001"],
-        "frequency": 1
-      },
-      {
-        "name": "D-Wave",
-        "type": "organization",
-        "signal_ids": ["SIG-2026-0113-002"],
-        "frequency": 1
+        "signal_ids": [
+          "SIG-2026-0113-001",
+          "SIG-2026-0113-003",
+          "SIG-2026-0109-001"
+        ],
+        "frequency": 3,
+        "primary_role": "AI hardware/GPU provider"
       },
       {
         "name": "IBM",
-        "type": "organization",
-        "signal_ids": ["SIG-2026-0113-002"],
-        "frequency": 1
-      },
-      {
-        "name": "Google DeepMind",
         "type": "company",
-        "signal_ids": ["SIG-2026-0113-003"],
-        "frequency": 1
+        "signal_ids": [
+          "SIG-2026-0113-002-OLD",
+          "SIG-2026-0113-005"
+        ],
+        "frequency": 2,
+        "primary_role": "Quantum computing"
       },
       {
-        "name": "AlphaQubit",
+        "name": "Boston Dynamics",
+        "type": "company",
+        "signal_ids": ["SIG-2026-0113-002"],
+        "frequency": 1,
+        "primary_role": "Robotics hardware"
+      },
+      {
+        "name": "BloombergNEF",
         "type": "organization",
-        "signal_ids": ["SIG-2026-0113-003"],
-        "frequency": 1
+        "signal_ids": [
+          "SIG-2026-0113-008",
+          "SIG-2026-0113-009"
+        ],
+        "frequency": 2,
+        "primary_role": "Energy analysis & reporting"
       },
       {
-        "name": "China",
+        "name": "US Government",
         "type": "government",
-        "signal_ids": ["SIG-2026-0113-006", "SIG-2026-0113-034"],
-        "frequency": 2
+        "signal_ids": [
+          "SIG-2026-0113-017",
+          "SIG-2026-0113-018"
+        ],
+        "frequency": 2,
+        "primary_role": "AI policy & regulation"
       },
       {
         "name": "European Union",
         "type": "government",
-        "signal_ids": ["SIG-2026-0113-023", "SIG-2026-0113-026"],
-        "frequency": 2
+        "signal_ids": [
+          "SIG-2026-0113-023",
+          "SIG-2026-0113-026"
+        ],
+        "frequency": 2,
+        "primary_role": "AI regulation (EU AI Act)"
       },
       {
-        "name": "United States",
+        "name": "China",
         "type": "government",
-        "signal_ids": ["SIG-2026-0113-024"],
-        "frequency": 1
-      },
-      {
-        "name": "Russia",
-        "type": "government",
-        "signal_ids": ["SIG-2026-0113-024"],
-        "frequency": 1
-      },
-      {
-        "name": "DeepSeek",
-        "type": "organization",
-        "signal_ids": ["SIG-2026-0113-016"],
-        "frequency": 1
-      },
-      {
-        "name": "MIT",
-        "type": "institution",
-        "signal_ids": ["SIG-2026-0113-063"],
-        "frequency": 1
-      },
-      {
-        "name": "Q-CTRL",
-        "type": "company",
-        "signal_ids": ["SIG-2026-0113-051"],
-        "frequency": 1
-      },
-      {
-        "name": "South Korea",
-        "type": "government",
-        "signal_ids": ["SIG-2026-0113-049"],
-        "frequency": 1
-      },
-      {
-        "name": "Vast Space",
-        "type": "company",
-        "signal_ids": ["SIG-2026-0113-036"],
-        "frequency": 1
-      },
-      {
-        "name": "Japan",
-        "type": "government",
-        "signal_ids": ["SIG-2026-0113-007"],
-        "frequency": 1
-      },
-      {
-        "name": "South Africa",
-        "type": "government",
-        "signal_ids": ["SIG-2026-0113-008"],
-        "frequency": 1
-      },
-      {
-        "name": "India",
-        "type": "government",
-        "signal_ids": ["SIG-2026-0113-010"],
-        "frequency": 1
-      },
-      {
-        "name": "OPEC+",
-        "type": "organization",
-        "signal_ids": ["SIG-2026-0113-025"],
-        "frequency": 1
-      },
-      {
-        "name": "Neuralink",
-        "type": "company",
-        "signal_ids": ["SIG-2026-0113-037"],
-        "frequency": 1
+        "signal_ids": [
+          "SIG-2026-0113-006-OLD"
+        ],
+        "frequency": 1,
+        "primary_role": "Clean energy leader"
       }
     ]
   },
-  "tag_index": {
-    "technology": [
-      "AI",
-      "Physical AI",
-      "NVIDIA",
-      "quantum",
-      "computing",
-      "supremacy",
-      "breakthrough",
-      "convergence",
-      "error_correction",
-      "world_models",
-      "LeCun",
-      "data_center",
-      "energy",
-      "infrastructure",
-      "AI regulation",
-      "5G",
-      "6G",
-      "BCI",
-      "neuralink",
-      "gene_therapy",
-      "gene_editing",
-      "CRISPR",
-      "synthetic_biology",
-      "battery",
-      "renewable",
-      "autonomous",
-      "vehicle",
-      "AGI",
-      "mRNA",
-      "vaccine",
-      "digital_identity",
-      "space",
-      "moon",
-      "commercial",
-      "AI tutoring",
-      "education",
-      "robotics",
-      "automation",
-      "manufacturing",
-      "smart_city",
-      "urban"
-    ],
-    "environment": [
-      "climate",
-      "temperature",
-      "environmental",
-      "ocean",
-      "clean_energy",
-      "renewable",
-      "environmental",
-      "water",
-      "crisis",
-      "freshwater",
-      "methane",
-      "permafrost",
-      "Arctic",
-      "acidification",
-      "marine",
-      "sustainability",
-      "circular_economy",
-      "agriculture",
-      "vertical_farming",
+  "tag_index_summary": {
+    "technology_tags": {
+      "AI_ML": [
+        "AI",
+        "Agentic AI",
+        "Physical AI",
+        "AGI",
+        "Machine Learning"
+      ],
+      "quantum": [
+        "Quantum Computing",
+        "Quantum Advantage",
+        "Quantum Security",
+        "Error Correction"
+      ],
+      "biotech": [
+        "Gene Editing",
+        "CRISPR",
+        "Gene Therapy",
+        "Personalized Medicine"
+      ],
+      "space": [
+        "Commercial Space",
+        "Haven-1",
+        "Space Station",
+        "Space Tech"
+      ]
+    },
+    "energy_tags": [
+      "Renewable Energy",
+      "Solar",
+      "Wind",
+      "Battery Storage",
+      "Energy Transition",
       "EV",
-      "electrification",
-      "transportation",
-      "carbon_capture"
+      "Clean Tech"
     ],
-    "economy": [
-      "VC",
-      "funding",
-      "economic",
-      "trade",
-      "policy",
-      "nationalism",
-      "supply_chain",
-      "rare_earth",
-      "crypto",
-      "blockchain",
-      "regulation",
-      "oil",
-      "OPEC",
-      "energy",
-      "LNG",
-      "labor",
-      "displacement",
-      "inequality",
-      "wealth",
-      "resilience"
+    "policy_tags": [
+      "AI Regulation",
+      "EU AI Act",
+      "State AI Laws",
+      "Trade Policy",
+      "Nuclear Arms Control"
     ],
-    "social": [
-      "immigration",
-      "femicide",
-      "crisis",
-      "misinformation",
-      "social",
-      "media",
-      "algorithm",
-      "demographic",
-      "aging",
-      "workforce",
-      "mental_health",
-      "Gen_Z",
-      "food_security",
-      "hunger",
-      "migration",
-      "refugees",
-      "telemedicine",
-      "healthcare",
-      "access",
-      "gender",
-      "equality",
-      "UN"
-    ],
-    "political": [
-      "nuclear",
-      "arms_control",
-      "Russia",
-      "USA",
-      "democracy",
-      "political",
-      "authoritarian",
-      "conflict",
-      "geopolitical",
-      "cybersecurity",
-      "technology",
-      "defense"
-    ],
-    "spiritual": [
-      "religion",
-      "polarization",
-      "spiritual"
+    "social_tags": [
+      "Gen Z",
+      "Mental Health",
+      "Immigration",
+      "Demographic Aging",
+      "Femicide",
+      "Mental Health Crisis"
     ]
   },
   "category_distribution": {
     "Technological": {
-      "count": 58,
-      "percentage": "31.7%",
-      "top_tags": ["AI", "quantum", "gene_editing", "space", "energy"]
+      "count": 81,
+      "percentage": "39.1%",
+      "top_tags": [
+        "AI",
+        "Physical AI",
+        "Quantum Computing",
+        "Gene Editing",
+        "Data Centers"
+      ]
     },
     "Economic": {
-      "count": 32,
-      "percentage": "17.5%",
-      "top_tags": ["VC", "trade", "supply_chain", "crypto", "labor"]
+      "count": 37,
+      "percentage": "17.9%",
+      "top_tags": [
+        "VC",
+        "Venture Capital",
+        "Trade Policy",
+        "Supply Chain",
+        "Crypto"
+      ]
     },
     "Social": {
-      "count": 25,
-      "percentage": "13.7%",
-      "top_tags": ["mental_health", "migration", "demographic", "food_security"]
+      "count": 29,
+      "percentage": "14.0%",
+      "top_tags": [
+        "Gen Z",
+        "Mental Health",
+        "Immigration",
+        "Demographic",
+        "Aging"
+      ]
     },
     "Political": {
-      "count": 26,
-      "percentage": "14.2%",
-      "top_tags": ["nuclear", "conflict", "democracy", "cybersecurity"]
+      "count": 30,
+      "percentage": "14.5%",
+      "top_tags": [
+        "AI Regulation",
+        "Nuclear",
+        "Conflict",
+        "Democracy",
+        "Cybersecurity"
+      ]
     },
     "Environmental": {
-      "count": 20,
-      "percentage": "10.9%",
-      "top_tags": ["climate", "clean_energy", "water", "biodiversity"]
+      "count": 24,
+      "percentage": "11.6%",
+      "top_tags": [
+        "Climate",
+        "Renewable Energy",
+        "Water",
+        "Ocean Acidification",
+        "Sustainability"
+      ]
     },
     "Spiritual": {
-      "count": 11,
-      "percentage": "6.0%",
-      "top_tags": ["religion", "polarization"]
+      "count": 6,
+      "percentage": "2.9%",
+      "top_tags": [
+        "Religion",
+        "Polarization",
+        "Belief Systems"
+      ]
     }
   },
   "dedup_rules": {
     "exact_url_match": {
       "priority": "critical",
       "action": "skip_duplicate",
-      "count_tracked": 1
+      "count_tracked": 6,
+      "examples": [
+        "Same URL for multiple signals (consolidation needed)"
+      ]
     },
     "title_similarity": {
       "threshold": 0.85,
       "priority": "high",
-      "algorithm": "cosine_similarity"
+      "algorithm": "cosine_similarity",
+      "notes": "Multi-word titles in both English and Korean"
     },
     "entity_overlap": {
       "threshold": 0.70,
       "priority": "high",
-      "algorithm": "jaccard_similarity"
+      "algorithm": "jaccard_similarity",
+      "notes": "Track corporate actors and government entities"
     },
     "tag_overlap": {
       "threshold": 0.65,
       "priority": "medium",
-      "algorithm": "set_intersection"
+      "algorithm": "set_intersection",
+      "notes": "AI, quantum, and renewable energy tags are high-frequency"
     },
     "category_match": {
       "same_category_different_title": "review_manually",
-      "priority": "medium"
+      "priority": "medium",
+      "notes": "Especially for Technological category which has 81 signals"
     }
   },
   "quality_metrics": {
     "coverage": "100%",
-    "indexed_signals": 183,
-    "signals_with_full_metadata": 183,
-    "signals_missing_urls": 177,
-    "signals_missing_descriptions": 0,
-    "average_tags_per_signal": 3.2,
-    "average_entities_per_signal": 1.5,
+    "indexed_signals": 207,
+    "signals_with_full_metadata": 207,
+    "signals_with_urls": 13,
+    "signals_missing_urls": 194,
+    "average_tags_per_signal": 3.8,
+    "average_entities_per_signal": 1.7,
     "confidence_level": "VERY_HIGH",
-    "last_validation": "2026-01-13T10:00:00Z"
+    "last_validation": "2026-01-13T16:30:00Z",
+    "validation_notes": "All 207 signals indexed with complete title and category metadata. 13 signals have source URLs. No missing descriptions."
   },
   "recommendations": {
     "for_incoming_scans": [
-      "Check all URLs against url_index for exact matches",
-      "Check titles against title_index with 0.85+ similarity threshold",
-      "Check entity mentions against entity_index for overlap",
-      "Check tag overlap for high-frequency tags",
-      "Review manually for same-category signals with different titles"
+      "Step 1: Check all incoming URLs against url_index for exact matches (critical)",
+      "Step 2: Check titles against title_index with 0.85+ similarity threshold (high)",
+      "Step 3: Check entity mentions against entity_index for overlap (high)",
+      "Step 4: Check tag overlap for high-frequency tags: AI, quantum, renewable energy (medium)",
+      "Step 5: Review manually for same-category signals with different titles (medium)"
     ],
-    "archive_coverage": "Database only, no recent archive reports loaded",
+    "consolidation_needed": [
+      "MIT Technology Review article (4 signals from same URL)",
+      "BloombergNEF report (2 signals from same URL)",
+      "Yale Climate Connections article (2 signals from same URL)"
+    ],
+    "archive_coverage": "Latest daily scan (2026-01-13) with 24 new signals integrated",
     "ready_for_dedup": true
+  },
+  "data_quality_notes": {
+    "url_coverage_low": "Only 13 out of 207 signals have URLs (6.3%) - many signals from untracked sources",
+    "multi_language_titles": "Mix of English and Korean titles requires language-aware deduplication",
+    "category_concentration": "Technological category dominates with 81 signals (39.1%) - may need deeper de-duplication",
+    "entity_tracking": "Core tech companies (Google, NVIDIA, IBM) appear frequently - consolidation recommended"
   }
 }

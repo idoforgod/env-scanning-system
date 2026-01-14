@@ -126,3 +126,13 @@ coverage.xml
 
 # env-scanning 임시 폴더
 /env-scanning/
+
+# 워크플로우 자동 생성 스크립트 (src/scripts/)
+src/scripts/archive_loader.py
+src/scripts/classify_signals_batch.py
+src/scripts/dedup_filter.py
+src/scripts/impact_analyzer.py
+src/scripts/priority-ranker.py
+src/scripts/signal_merger.py
+src/scripts/steeps_classifier.py
+src/scripts/db-update-*.py

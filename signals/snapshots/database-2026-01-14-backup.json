@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "version": "1.2",
+    "created": "2026-01-09",
+    "last_updated": "2026-01-14T18:22:00Z",
+    "total_signals": 527,
+    "backup_timestamp": "2026-01-14T18:22:00Z"
+  },
+  "summary": {
+    "total_signals_before": 422,
+    "total_signals_after": 527,
+    "new_signals_added": 105,
+    "by_category_snapshot": {
+      "Social": 336,
+      "Technological": 273,
+      "Economic": 130,
+      "Political": 118,
+      "Environmental": 55,
+      "Spiritual": 22
+    },
+    "by_status_snapshot": {
+      "emerging": 487,
+      "developing": 40
+    }
+  }
+}

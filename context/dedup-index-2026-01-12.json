@@ -1,56 +1,65 @@
 {
   "generated_date": "2026-01-12",
-  "generated_time": "2026-01-12T01:15:00Z",
+  "generated_time": "2026-01-12T12:00:00Z",
   "index_status": "updated_with_complete_archive",
+  "index_version": "2.0",
+  "load_summary": {
+    "status": "success",
+    "total_signals_loaded": 115,
+    "archive_reports_processed": 3,
+    "total_unique_entities": 139
+  },
   "summary": {
-    "total_database_signals": 237,
+    "total_database_signals": 115,
     "archive_coverage_days": 4,
     "archive_date_range": {
       "from": "2026-01-09",
       "to": "2026-01-12"
     },
-    "all_titles_count": 237,
-    "all_signal_ids_count": 237,
-    "critical_keywords_count": 56
+    "all_titles_count": 115,
+    "all_signal_ids_count": 115,
+    "critical_keywords_count": 96
   },
   "database_stats": {
-    "total_signals": 237,
-    "scan_count": 5,
+    "total_signals": 115,
+    "scan_count": 8,
     "by_status": {
-      "emerging": 163,
-      "developing": 66,
-      "mature": 8,
-      "declining": 0
+      "emerging": 112,
+      "developing": 3
     },
     "by_category": {
-      "Technological": 103,
-      "Economic": 48,
-      "Social": 36,
-      "Environmental": 32,
-      "Political": 27,
-      "Spiritual": 18
+      "Technological": 44,
+      "Economic": 18,
+      "Social": 18,
+      "Environmental": 14,
+      "Political": 14,
+      "Spiritual": 7
     },
     "by_significance": {
-      "5": 54,
-      "4": 139,
-      "3": 40,
-      "2": 3,
-      "1": 1
+      "5": 26,
+      "4": 53,
+      "3": 28,
+      "2": 8
     },
     "database_created": "2026-01-09",
-    "database_last_updated": "2026-01-12T16:45:00Z"
+    "database_last_updated": "2026-01-12T22:30:00Z"
   },
   "archive_stats": {
-    "reports_loaded": 1,
-    "archive_scan_date": "2026-01-11",
-    "archive_signals": 24,
-    "new_signals_in_archive": 18,
-    "duplicates_in_archive": 5,
-    "status_updates": 1,
+    "reports_loaded": 3,
+    "archive_scan_dates": ["2026-01-09", "2026-01-11", "2026-01-12"],
+    "source_files": [
+      "data/2026/01/09/filtered/new-signals-2026-01-09.json",
+      "data/2026/01/11/filtered/filtered-signals-2026-01-11.json",
+      "data/2026/01/12/filtered/filtered-signals-2026-01-12.json"
+    ],
+    "total_archive_signals": 46,
+    "new_signals_in_archive": 43,
+    "duplicates_detected": 3,
+    "archive_coverage": "2026-01-09 to 2026-01-12",
     "top_priority_signal": {
-      "id": "SIG-2026-0111-001",
-      "title": "중국 '인공태양' EAST 밀도 한계 돌파 - 핵융합 실용화 가속",
-      "score": 9.2
+      "id": "SIG-2026-0112-022",
+      "title": "U.S. Announces Venezuela Military Operation - Imperial Doctrine Returns",
+      "score": 9.6
     }
   },
   "dedup_index": {
@@ -60,19 +69,10 @@
       "SIG-2026-0109-011", "SIG-2026-0109-012", "SIG-2026-0109-013", "SIG-2026-0109-014", "SIG-2026-0109-015",
       "SIG-2026-0109-016", "SIG-2026-0109-017", "SIG-2026-0109-018", "SIG-2026-0109-019", "SIG-2026-0109-020",
       "SIG-2026-0109-021", "SIG-2026-0109-022", "SIG-2026-0109-023", "SIG-2026-0109-024",
-      "SIG-2026-0110-001", "SIG-2026-0110-002", "SIG-2026-0110-003", "SIG-2026-0110-004", "SIG-2026-0110-005",
-      "SIG-2026-0110-006", "SIG-2026-0110-007", "SIG-2026-0110-008", "SIG-2026-0110-009", "SIG-2026-0110-010",
-      "SIG-2026-0110-011", "SIG-2026-0110-012", "SIG-2026-0110-013", "SIG-2026-0110-014", "SIG-2026-0110-015",
-      "SIG-2026-0110-016", "SIG-2026-0110-017", "SIG-2026-0110-018", "SIG-2026-0110-019", "SIG-2026-0110-020",
       "SIG-2026-0111-001", "SIG-2026-0111-002", "SIG-2026-0111-003", "SIG-2026-0111-004", "SIG-2026-0111-005",
       "SIG-2026-0111-006", "SIG-2026-0111-007", "SIG-2026-0111-008", "SIG-2026-0111-009", "SIG-2026-0111-010",
-      "SIG-2026-0111-011", "SIG-2026-0111-012", "SIG-2026-0111-ALT-001", "SIG-2026-0111-ALT-002", "SIG-2026-0111-ALT-003",
-      "SIG-2026-0111-ALT-004", "SIG-2026-0111-ALT-005", "SIG-2026-0111-ALT-006", "SIG-2026-0111-ALT-008", "SIG-2026-0111-ALT-013",
-      "SIG-2026-0111-ALT-014", "SIG-2026-0111-ALT-016", "SIG-2026-0111-ALT-017", "SIG-2026-0111-ALT-018", "SIG-2026-0111-ALT-019",
-      "SIG-2026-0111-ALT-025", "SIG-2026-0111-ALT-028", "SIG-2026-0111-ALT-029", "SIG-2026-0111-ALT-030", "SIG-2026-0111-ALT-031",
-      "SIG-2026-0111-ALT-032", "SIG-2026-0111-ALT-033", "SIG-2026-0111-ALT-034", "SIG-2026-0111-ALT-036", "SIG-2026-0111-ALT-037",
-      "SIG-2026-0111-ALT-038", "SIG-2026-0111-ALT-039", "SIG-2026-0111-ALT-040", "SIG-2026-0111-ALT-043", "SIG-2026-0111-ALT-044",
-      "SIG-2026-0111-ALT-045", "SIG-2026-0111-ALT-046", "SIG-2026-0111-ALT-047", "SIG-2026-0111-ALT-048",
+      "SIG-2026-0111-011", "SIG-2026-0111-012", "SIG-2026-0111-013", "SIG-2026-0111-014", "SIG-2026-0111-015",
+      "SIG-2026-0111-016", "SIG-2026-0111-017", "SIG-2026-0111-018", "SIG-2026-0111-019", "SIG-2026-0111-020",
       "SIG-2026-0112-001", "SIG-2026-0112-002", "SIG-2026-0112-003", "SIG-2026-0112-004", "SIG-2026-0112-005",
       "SIG-2026-0112-006", "SIG-2026-0112-007", "SIG-2026-0112-008", "SIG-2026-0112-009", "SIG-2026-0112-010",
       "SIG-2026-0112-011", "SIG-2026-0112-012", "SIG-2026-0112-013", "SIG-2026-0112-014", "SIG-2026-0112-015",
@@ -84,75 +84,113 @@
       "SIG-2026-0112-041", "SIG-2026-0112-042", "SIG-2026-0112-043", "SIG-2026-0112-044", "SIG-2026-0112-045",
       "SIG-2026-0112-046"
     ],
+    "urls_for_exact_matching": [
+      "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+      "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance",
+      "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-to-acquire-quantum-circuits/",
+      "https://techcrunch.com/podcast/ces-2026-was-all-about-physical-ai-and-robots-robots-robots/",
+      "https://www.scmp.com/tech/big-tech/article/3338427/deepseek-kicks-2026-paper-signalling-push-train-bigger-models-less",
+      "https://www.newsspace.kr/news/article.html?no=11811",
+      "https://www.sciencedaily.com/releases/2026/01/260101160855.htm",
+      "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/"
+    ],
     "critical_keywords": [
       "NVIDIA", "Physical AI", "Vera Rubin", "AI", "Quantum Computing", "D-Wave",
       "EU AI Act", "Regulation", "Humanoid Robots", "Robotics", "CRISPR",
       "Gene Editing", "Synthetic Biology", "Boston Dynamics", "Atlas",
       "Gemini", "DeepSeek", "LLM", "Language Models", "Transformer",
-      "World Models", "Cosmos", "Gr00t", "GLP-1", "Obesity",
+      "World Models", "Cosmos", "GLP-1", "Obesity",
       "Quantum Error Correction", "Quantum Advantage", "IBM",
-      "Commonwealth Fusion", "Nuclear Fusion", "SPARC", "Direct Air Capture",
+      "Commonwealth Fusion", "Nuclear Fusion", "Direct Air Capture",
       "Carbon Removal", "DAC", "Renewable Energy", "Solar", "Wind",
       "Tariffs", "Trade War", "US-China", "AI Chips", "Semiconductors",
-      "TSMC", "Supply Chain", "ESG", "CBAM", "CSRD", "Climate",
-      "Gen Z", "Wellness", "Spirituality", "Mental Health", "Digital Detox"
+      "TSMC", "Supply Chain", "ESG", "CBAM", "Climate",
+      "Gen Z", "Wellness", "Spirituality", "Mental Health", "Digital Detox",
+      "Japan", "Fertility Crisis", "Robotics", "Smart Rings", "Wearables",
+      "Brain-Computer Interface", "Quantum Advantage", "Renewable Energy Tipping Point"
     ],
     "primary_actors": [
       "NVIDIA", "D-Wave", "Microsoft", "IBM", "Google", "OpenAI", "DeepSeek",
-      "Boston Dynamics", "Hyundai", "Unitree", "Tesla", "AMD", "Intel", "TSMC",
-      "Samsung", "Apple", "Meta", "Amazon", "SpaceX", "Commonwealth Fusion"
+      "Boston Dynamics", "Hyundai", "Tesla", "AMD", "Intel", "TSMC",
+      "Samsung", "Apple", "Meta", "Amazon", "SpaceX", "Commonwealth Fusion",
+      "Japan", "China", "United States", "EU", "Eurasia Group"
     ],
     "primary_technologies": [
       "AI", "Quantum Computing", "CRISPR", "Humanoid Robots", "Physical AI",
       "Neural Networks", "Autonomous Vehicles", "Semiconductor", "Fusion Energy",
-      "Renewable Energy", "Gene Therapy", "Wearables", "VR", "Brain-Computer Interface"
+      "Renewable Energy", "Gene Therapy", "Wearables", "Brain-Computer Interface",
+      "Battery Technology", "EV", "Space Technology", "Robotics", "Multimodal AI"
     ],
     "primary_policies": [
-      "EU AI Act", "CBAM", "CSRD", "GDPR", "California AB 489",
-      "Section 301 Tariffs", "COP31", "Paris Agreement", "SBTi", "EPA Regulations"
+      "EU AI Act", "CBAM", "Export Controls", "GDPR", "California AI Regulations",
+      "Section 301 Tariffs", "COP31", "Paris Agreement", "SBTi", "EPA Regulations",
+      "Post-Quantum Cryptography Standards", "Net-Zero Standards"
     ]
   },
   "recent_major_signals": [
     {
       "rank": 1,
-      "id": "SIG-2026-0112-013",
-      "title": "AI can now design proteins and DNA, scientists warn biosecurity rules urgently needed",
-      "score": 9.5,
-      "category": "Technological",
+      "id": "SIG-2026-0112-022",
+      "title": "U.S. Announces Venezuela Military Operation - Imperial Doctrine Returns",
+      "score": 9.6,
+      "category": "Political",
       "status": "emerging",
       "date_added": "2026-01-12"
     },
     {
       "rank": 2,
-      "id": "SIG-2026-0112-030",
-      "title": "US-China relations enter 2026 with fragile trade truce, tech war intensifying over AI chips",
-      "score": 9.3,
-      "category": "Political",
-      "status": "developing",
+      "id": "SIG-2026-0112-006",
+      "title": "Science's 2025 Breakthrough: Unstoppable Rise of Renewable Energy",
+      "score": 9.8,
+      "category": "Environmental",
+      "status": "emerging",
       "date_added": "2026-01-12"
     },
     {
       "rank": 3,
-      "id": "SIG-2026-0112-029",
-      "title": "Trump administration issues executive order preempting state AI laws",
-      "score": 9.2,
-      "category": "Political",
+      "id": "SIG-2026-0112-005",
+      "title": "IBM Declares 2026 as Year of Quantum Advantage",
+      "score": 9.7,
+      "category": "Technological",
+      "status": "emerging",
+      "date_added": "2026-01-12"
+    },
+    {
+      "rank": 4,
+      "id": "SIG-2026-0112-007",
+      "title": "AI Upskilling Becomes Existential Priority for Organizations",
+      "score": 9.6,
+      "category": "Social",
+      "status": "emerging",
+      "date_added": "2026-01-12"
+    },
+    {
+      "rank": 5,
+      "id": "SIG-2026-0112-008",
+      "title": "Japan's Fertility Rate Hits Historic Low of 1.15 in 2024",
+      "score": 9.5,
+      "category": "Social",
       "status": "emerging",
       "date_added": "2026-01-12"
     }
   ],
   "dedup_stats": {
-    "total_unique_ids": 237,
-    "exact_title_matching_keys": 237,
+    "total_unique_ids": 115,
+    "exact_url_matching_entries": 8,
+    "title_similarity_threshold": "0.85+",
+    "entity_overlap_threshold": "0.70+",
     "fuzzy_match_threshold": "0.85+",
     "entity_grouping_enabled": true,
     "category_consolidation_ready": true,
-    "confidence_level": "VERY_HIGH"
+    "confidence_level": "VERY_HIGH",
+    "urls_indexed": 8,
+    "titles_indexed": 115,
+    "entities_indexed": 139
   },
   "index_completeness": {
     "coverage_percentage": "100%",
     "status": "ready_for_scanning",
-    "last_validation": "2026-01-12T01:15:00Z",
-    "notes": "Complete dedup index with 237 signals from database.json and 1 archive report (2026-01-11). Ready for new daily scans."
+    "last_validation": "2026-01-12T12:00:00Z",
+    "notes": "Complete dedup index with 115 signals from signals/database.json and 3 archive reports (2026-01-09, 2026-01-11, 2026-01-12). Archive coverage: 4 days. Ready for new daily scans with deduplication capability."
   }
 }

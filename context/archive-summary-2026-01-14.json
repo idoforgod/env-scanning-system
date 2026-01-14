@@ -1,0 +1,143 @@
+{
+  "loaded_date": "2026-01-14",
+  "archive_loading_status": "completed",
+  "execution_timestamp": "2026-01-14T16:35:00Z",
+  "database_stats": {
+    "total_signals": 422,
+    "scan_count": 11,
+    "database_created": "2026-01-09",
+    "database_last_updated": "2026-01-14T15:45:30Z",
+    "by_status": {
+      "emerging": 408,
+      "developing": 14
+    },
+    "by_category": {
+      "Technological": 130,
+      "Economic": 104,
+      "Political": 84,
+      "Environmental": 55,
+      "Social": 30,
+      "Spiritual": 19
+    },
+    "by_significance": {
+      "5": 41,
+      "4": 51,
+      "3": 127,
+      "2": 20,
+      "1": 183
+    },
+    "by_priority": {
+      "medium": 422
+    },
+    "by_psrt_grade": {
+      "A_plus": 9,
+      "A": 20,
+      "B": 49,
+      "C": 25,
+      "D": 12,
+      "E": 3,
+      "F": 1
+    }
+  },
+  "archive_stats": {
+    "reports_loaded": 2,
+    "archive_scan_dates": [
+      "2026-01-13",
+      "2026-01-14"
+    ],
+    "source_files": [
+      "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json",
+      "data/2026/01/14/reports/archive/2026/01/scan-data-2026-01-14.json"
+    ],
+    "total_archive_signals": 75,
+    "archive_coverage": "Latest 2 daily scans loaded",
+    "days_covered": 2,
+    "coverage_percentage": "100% (latest 2 days)"
+  },
+  "latest_archive_detail": {
+    "file": "data/2026/01/14/reports/archive/2026/01/scan-data-2026-01-14.json",
+    "scan_date": "2026-01-14",
+    "total_new_signals": 51,
+    "by_category": {
+      "Technological": 16,
+      "Economic": 13,
+      "Political": 12,
+      "Social": 5,
+      "Spiritual": 3,
+      "Environmental": 2
+    },
+    "by_significance": {
+      "5": 2,
+      "4": 12,
+      "3": 25,
+      "2": 10,
+      "1": 2
+    },
+    "by_status": {
+      "emerging": 50,
+      "developing": 1
+    },
+    "priority_distribution": {
+      "high_priority": 7,
+      "medium_priority": 35,
+      "low_priority": 9
+    },
+    "psrt_metrics": {
+      "average_psrt": 71.2,
+      "grade_distribution": {
+        "A_plus": 8,
+        "A": 15,
+        "B": 18,
+        "C": 7,
+        "D": 3,
+        "E": 0,
+        "F": 0
+      }
+    },
+    "top_signals": [
+      {
+        "rank": 1,
+        "title": "Generative AI Coding: 30% of Microsoft's Code Now Written by AI",
+        "category": "Technological",
+        "score": 8.8,
+        "psrt": 87
+      },
+      {
+        "rank": 2,
+        "title": "Mechanistic Interpretability: Mapping the Inner Workings of AI Models",
+        "category": "Technological",
+        "score": 8.6,
+        "psrt": 86
+      },
+      {
+        "rank": 3,
+        "title": "D-Wave's $550M Quantum Breakthrough: First Scalable On-Chip Cryogenic Control",
+        "category": "Technological",
+        "score": 8.4,
+        "psrt": 83
+      }
+    ]
+  },
+  "deduplication_index_info": {
+    "index_file": "context/dedup-index-2026-01-14.json",
+    "index_version": "2.3",
+    "index_entries": 178,
+    "url_entries": 45,
+    "title_entries": 44,
+    "actor_entries": 49,
+    "technology_entries": 19,
+    "policy_entries": 21
+  },
+  "processing_summary": {
+    "signals_database_loaded": true,
+    "signals_count": 422,
+    "archives_loaded": true,
+    "archives_count": 2,
+    "dedup_index_built": true,
+    "urls_extracted": 45,
+    "titles_extracted": 44,
+    "entities_extracted": 89,
+    "processing_status": "success",
+    "notes": "Complete deduplication index built from signal database and latest 2 archive reports"
+  }
+}

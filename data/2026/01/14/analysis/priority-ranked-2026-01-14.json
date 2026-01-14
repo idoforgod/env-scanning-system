@@ -1,0 +1,247 @@
+{
+  "ranking_date": "2026-01-14",
+  "total_ranked": 527,
+  "top_10_summary": {
+    "signals": [
+      "SIG-2026-0114-023",
+      "SIG-2026-0114-024",
+      "SIG-2026-0114-021",
+      "SIG-2026-0114-016",
+      "SIG-2026-0114-014",
+      "SIG-2026-0114-027",
+      "SIG-2026-0114-012",
+      "SIG-2026-0114-034",
+      "SIG-2026-0114-001",
+      "SIG-2026-0114-002"
+    ],
+    "categories": {
+      "E": 3,
+      "T": 2,
+      "P": 2,
+      "S": 3
+    },
+    "avg_priority_score": 7.48
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "signal_id": "SIG-2026-0114-023",
+      "title": "12월 취업자 16.8만 명↑…건설·제조·청년 부진 계속",
+      "category": "Economic",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 7.7,
+      "score_rationale": {
+        "impact": "다중 산업군(건설, 제조) 영향; 청년층 고용 위기 신호; 경제 전반에 영향",
+        "probability": "신뢰도 83%; 국가공식통계(pSRT source 87)",
+        "urgency": "신규 발표 데이터; 즉각적 대응 필요",
+        "novelty": "연속성 데이터지만 부정적 추세 전환 신호"
+      }
+    },
+    {
+      "rank": 2,
+      "signal_id": "SIG-2026-0114-024",
+      "title": "[속보]작년 12월 취업자 수 16만8000명↑...12개월 연속 증가",
+      "category": "Economic",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 7
+      },
+      "weighted_score": 7.75,
+      "score_rationale": {
+        "impact": "경제 고용 시장의 구조적 변화; 다중 지표 포함",
+        "probability": "신뢰도 83%; pSRT source 62, analysis 75(높음)",
+        "urgency": "신규 발표 통계; 정책 대응 필요",
+        "novelty": "12개월 연속 증가 패턴 인식; 추세 전환 가능성"
+      }
+    },
+    {
+      "rank": 3,
+      "signal_id": "SIG-2026-0114-021",
+      "title": "한국거래소, 내년 말 24시간 거래 추진",
+      "category": "Economic",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 6,
+        "novelty": 8
+      },
+      "weighted_score": 7.6,
+      "score_rationale": {
+        "impact": "자본시장 구조 변화; 글로벌 경쟁력 영향; 다중 이해관계자 대상",
+        "probability": "공식 발표(신뢰도 81%); pSRT analysis 75(높음)",
+        "urgency": "2027년 12월 목표; 중기 대응 시간",
+        "novelty": "24시간 거래 시도는 국내 처음; 글로벌 시스템 도입"
+      }
+    },
+    {
+      "rank": 4,
+      "signal_id": "SIG-2026-0114-016",
+      "title": "[속보]지난해 취업자수 19.3만 증가…제조·건설업 '한파' 지속",
+      "category": "Economic",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 7.6,
+      "score_rationale": {
+        "impact": "제조·건설 핵심 산업 동시 부진; 경기침체 신호",
+        "probability": "신뢰도 80%; 공식 통계 기반",
+        "urgency": "경기 추세 즉각 확인 필요",
+        "novelty": "지속적 부진 추세의 확인"
+      }
+    },
+    {
+      "rank": 5,
+      "signal_id": "SIG-2026-0114-014",
+      "title": "전진숙 \"무안공항, 위험관리계획 13㎞ 아닌 5㎞만 관리\"",
+      "category": "Political",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 7
+      },
+      "weighted_score": 7.5,
+      "score_rationale": {
+        "impact": "국가안전 기준 위반; 항공사고와 직결; 광역 영향",
+        "probability": "신뢰도 81%; 공개 국정조사 자료 기반",
+        "urgency": "15일 국정조사 예정; 즉각적 안전 문제",
+        "novelty": "제주항공 사태(12.29)의 후속 조치; 규제 허점 노출"
+      }
+    },
+    {
+      "rank": 6,
+      "signal_id": "SIG-2026-0114-027",
+      "title": "\"AI가 의약정보를 답하다\"···원스글로벌, AI 기반 의약정보 서비스 'Dr.DI' 출시",
+      "category": "Technological",
+      "scores": {
+        "impact": 7,
+        "probability": 7,
+        "urgency": 6,
+        "novelty": 8
+      },
+      "weighted_score": 7.2,
+      "score_rationale": {
+        "impact": "의료·AI 산업 교집합; 생성형 AI 실제 응용",
+        "probability": "신뢰도 75%; 기업 공식 발표; pSRT analysis 75",
+        "urgency": "이미 출시 완료; 모니터링 필요",
+        "novelty": "한국 최초 생성형 AI 의약정보 서비스; 혁신적 접근"
+      }
+    },
+    {
+      "rank": 7,
+      "signal_id": "SIG-2026-0114-012",
+      "title": "\"전두환·노태우보다 엄벌해야\"…특검, 윤석열 사형 구형",
+      "category": "Political",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 7
+      },
+      "weighted_score": 7.9,
+      "score_rationale": {
+        "impact": "국정 최대 현안; 정치·사회 광범위 영향",
+        "probability": "신뢰도 80%; JTBC 보도(pSRT source 87); 사건 진행 중",
+        "urgency": "재판 진행 중; 정부 정책 영향 즉시 발생",
+        "novelty": "사형 구형 자체가 30년 만 첫 사례; 헌정사 사건"
+      }
+    },
+    {
+      "rank": 8,
+      "signal_id": "SIG-2026-0114-034",
+      "title": "관세 0% 앞세운 만다린, 제주감귤 향방은",
+      "category": "Economic",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 7
+      },
+      "weighted_score": 7.3,
+      "score_rationale": {
+        "impact": "지역 농업(제주) 위협; 국제 무역 정책 영향",
+        "probability": "신뢰도 80%; 공식 관세 정책 기반; 실적 데이터(7951톤)",
+        "urgency": "3월부터 경쟁 본격화; 대응 시간 제한적",
+        "novelty": "관세 전면 철폐는 정책 전환; 예상 밖 산업 영향"
+      }
+    },
+    {
+      "rank": 9,
+      "signal_id": "SIG-2026-0114-001",
+      "title": "[2보] 지난해 취업자수 19만3천명 증가…2년 연속 10만명대",
+      "category": "Social",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 6.9,
+      "score_rationale": {
+        "impact": "사회 고용 상황의 변화; 광범위 관심",
+        "probability": "신뢰도 83%; pSRT source 87; 공식 통계",
+        "urgency": "신규 월간 데이터; 정책 수립 필요",
+        "novelty": "지속적 추세의 확인"
+      }
+    },
+    {
+      "rank": 10,
+      "signal_id": "SIG-2026-0114-002",
+      "title": "[속보] 작년 12월 취업자수 16만8천명 증가…다시 10만명대로",
+      "category": "Social",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 6.85,
+      "score_rationale": {
+        "impact": "사회 고용 지표의 변화; 광범위 대상",
+        "probability": "신뢰도 81%; 공식 통계 기반",
+        "urgency": "신규 월간 통계; 정책 참고 필요",
+        "novelty": "월간 수치 업데이트; 주기적 신호"
+      }
+    }
+  ],
+  "distribution": {
+    "high_priority": {
+      "count": 68,
+      "threshold": 7.0
+    },
+    "medium_priority": {
+      "count": 319,
+      "threshold": 5.0
+    },
+    "low_priority": {
+      "count": 140,
+      "threshold": 0
+    }
+  },
+  "statistics": {
+    "average_score": 6.24,
+    "median_score": 6.18,
+    "max_score": 7.9,
+    "min_score": 3.2,
+    "high_priority_pct": 12.9,
+    "medium_priority_pct": 60.5,
+    "low_priority_pct": 26.6
+  },
+  "ranking_methodology": {
+    "formula": "(Impact * 0.40) + (Probability * 0.30) + (Urgency * 0.20) + (Novelty * 0.10)",
+    "impact_40": "Scope (sectors affected), Depth (change magnitude), Duration (time horizon)",
+    "probability_30": "Evidence strength, Trend momentum, Barrier analysis",
+    "urgency_20": "Response window, Acceleration indicators, Decision timing",
+    "novelty_10": "First occurrence, Unique aspects, Surprise factor"
+  }
+}

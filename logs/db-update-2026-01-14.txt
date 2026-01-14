@@ -1,0 +1,62 @@
+[2026-01-14 18:22:00] Database Update Started
+[2026-01-14 18:22:01] Backup created: signals/snapshots/database-2026-01-14-backup.json
+[2026-01-14 18:22:02] Previous total: 422 signals
+[2026-01-14 18:22:03] Source files processed:
+  - data/2026/01/14/structured/structured-signals-2026-01-14.json (527 total classified)
+  - data/2026/01/14/analysis/priority-ranked-2026-01-14.json (10 top signals analyzed)
+
+NEW SIGNALS ADDED (105):
+  - SIG-2026-0114-001 through SIG-2026-0114-105
+
+TOP 10 PRIORITY SIGNALS MERGED:
+  1. SIG-2026-0114-023: "12월 취업자 16.8만 명↑…건설·제조·청년 부진 계속" [priority=7.7, Economic]
+  2. SIG-2026-0114-024: "[속보]작년 12월 취업자 수 16만8000명↑...12개월 연속 증가" [priority=7.75, Economic]
+  3. SIG-2026-0114-004/021: "한국거래소, 내년 말 24시간 거래 추진" [priority=7.6, Economic]
+  4. SIG-2026-0114-006/016: "지난해 취업자수 19.3만 증가…제조·건설업 '한파' 지속" [priority=7.6, Economic]
+  5. SIG-2026-0114-005/014: "전진숙 \"무안공항 위험관리계획 미흡" [priority=7.5, Political]
+  6. SIG-2026-0114-003/007/027: "Dr.DI AI 의약정보 서비스" [priority=7.2, Technological]
+  7. SIG-2026-0114-009/012: "특검 윤석열 사형 구형" [priority=7.9, Political]
+  8. SIG-2026-0114-008: "관세 0% 만다린 제주감귤" [priority=7.3, Economic]
+  9. SIG-2026-0114-001: "지난해 취업자수 19만3천명 증가" [priority=6.9, Social]
+  10. SIG-2026-0114-002: "작년 12월 취업자수 16만8천명 증가" [priority=6.85, Social]
+
+STATUS UPDATES (0):
+  No status changes detected
+
+METADATA RECALCULATION COMPLETE:
+  by_status:
+    - emerging: 487 signals (92.4%)
+    - developing: 40 signals (7.6%)
+  by_category:
+    - Social: 336 signals (63.8%)
+    - Technological: 273 signals (51.8%)
+    - Economic: 130 signals (24.7%)
+    - Political: 118 signals (22.4%)
+    - Environmental: 55 signals (10.4%)
+    - Spiritual: 22 signals (4.2%)
+  by_significance:
+    - 1: 183 signals (34.7%)
+    - 2: 36 signals (6.8%)
+    - 3: 224 signals (42.5%)
+    - 4: 86 signals (16.3%)
+    - 5: 41 signals (7.8%)
+  by_priority:
+    - high: 68 signals (12.9%)
+    - medium: 319 signals (60.5%)
+    - low: 140 signals (26.6%)
+
+INTEGRITY VALIDATION:
+  - metadata.total_signals == actual count: PASSED (527 == 527)
+  - No duplicate signal IDs: PASSED
+  - All required fields present: PASSED
+  - Date consistency check: PASSED
+  - Status transition validation: PASSED
+  - pSRT grades distribution: A+=9, A=20, B=73, C=398, D=142, E=3, F=1
+
+[2026-01-14 18:22:10] New total: 527 signals
+[2026-01-14 18:22:11] Database Update Completed Successfully
+[2026-01-14 18:22:11] Summary:
+  - Signals merged: 527 total (105 new)
+  - Metadata recalculated: All fields synchronized
+  - Backup created: signals/snapshots/database-2026-01-14-backup.json
+  - Master DB updated: signals/database.json

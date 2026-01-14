@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "version": "1.1",
+    "created": "2026-01-09",
+    "last_updated": "2026-01-13T11:35:51.544943Z",
+    "total_signals": 371,
+    "scan_count": 10,
+    "last_db_update": "2026-01-13",
+    "update_source": "Phase 3: DB Updater (daily-scan-2026-01-13)"
+  },
+  "statistics": {
+    "by_status": {
+      "developing": 12,
+      "emerging": 359
+    },
+    "by_category": {
+      "Economic": 91,
+      "Environmental": 53,
+      "Political": 72,
+      "Social": 25,
+      "Spiritual": 16,
+      "Technological": 114
+    },
+    "by_significance": {
+      "1": 181,
+      "2": 16,
+      "3": 102,
+      "4": 39,
+      "5": 33
+    },
+    "by_priority": {
+      "medium": 371
+    }
+  },
+  "backup_note": "Backup created before adding 51 signals from 2026-01-14"
+}
