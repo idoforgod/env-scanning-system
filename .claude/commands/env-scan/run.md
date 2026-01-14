@@ -327,6 +327,24 @@ rm -rf ${DATA_DIR}/reports/archive/
 find ${DATA_DIR}/reports/ -type f ! -name "environmental-scan-*.md" -delete
 ```
 
+### Step 17-C: weekly 폴더 정리
+
+```bash
+# ═══════════════════════════════════════════════════════════════
+# weekly 폴더 정리 (주간 집계 후 실행)
+# ═══════════════════════════════════════════════════════════════
+# 유지: priority-ranked-weekly-*.json, weekly-environmental-scan-*.md
+# 삭제: hallucination-report, impact-assessment, 중간 보고서
+
+WEEKLY_DIR="data/weekly/{YYYY}/W{WW}"
+
+# 1. analysis/ 폴더 정리 (priority-ranked만 유지)
+find ${WEEKLY_DIR}/analysis/ -type f ! -name "priority-ranked-weekly-*.json" -delete 2>/dev/null
+
+# 2. 루트 임시 보고서 삭제 (최종 보고서만 유지)
+find ${WEEKLY_DIR}/ -maxdepth 1 -type f ! -name "weekly-environmental-scan-*.md" -delete 2>/dev/null
+```
+
 ### 정리 후 data 폴더 구조
 
 ```
@@ -337,6 +355,11 @@ data/{YYYY}/{MM}/{DD}/
 │   └── priority-ranked-{date}.json     ← 유지 (우선순위 기록)
 └── reports/
     └── environmental-scan-{date}.md    ← 유지 (최종 보고서)
+
+data/weekly/{YYYY}/W{WW}/
+├── analysis/
+│   └── priority-ranked-weekly-*.json   ← 유지 (주간 우선순위)
+└── weekly-environmental-scan-*.md      ← 유지 (주간 보고서)
 ```
 
 **삭제 조건**: Gate 3 통과 (report.md 생성 확인) 후에만 실행
