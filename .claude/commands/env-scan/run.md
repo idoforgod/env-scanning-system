@@ -389,66 +389,32 @@ Task @report-generator:
 
 ---
 
-## Step 17: Cleanup (자동)
+## Step 17: Cleanup (자동) ⚠️ 필수 실행
 
-Gate 3 통과 후 **임시 파일 자동 삭제** (2단계):
-
-### Step 17-A: 루트 디렉토리 정리
-
-```bash
-# 삭제 대상 (루트 디렉토리만)
-rm -f ./*-{date}.md      # 날짜별 완료 보고서
-rm -f ./*-{date}.txt     # 날짜별 상태 파일
-rm -f ./*-{date}.json    # 날짜별 임시 JSON
-rm -f ./*-{date}.py      # 날짜별 임시 스크립트
-rm -f ./FINAL_RUN.py ./EXECUTE_UPDATE.py  # DB 업데이트 스크립트
-rm -f ./*_updater*.py ./*_update*.py      # 업데이터 스크립트
-rm -f ./*_ranking*.py ./execute_*.py      # 랭킹/실행 스크립트
-rm -f ./test_*.py ./verify_*.py           # 테스트 스크립트
-rm -f ./*.sh                              # 임시 쉘 스크립트
-
-# 보호 파일 (절대 삭제 금지)
-# - CLAUDE.md, README.md, WARP.md, LICENSE
-```
-
-### Step 17-B: data 폴더 정리
+Gate 3 통과 후 **임시 파일 자동 삭제** - Python 스크립트로 자동화됨:
 
 ```bash
 # ═══════════════════════════════════════════════════════════════
-# 유지 필수 파일 (다음 스캔에서 참조 또는 아카이브용)
+# Step 17 자동 실행 (Gate 3 통과 후 필수!)
 # ═══════════════════════════════════════════════════════════════
-# 1. structured/structured-signals-{date}.json  ← DB 대조 및 아카이브
-# 2. reports/environmental-scan-{date}.md       ← 최종 보고서
-# 3. analysis/priority-ranked-{date}.json       ← 우선순위 기록
+python3 src/scripts/cleanup/post_scan_cleanup.py --date {date}
 
-# ═══════════════════════════════════════════════════════════════
-# 삭제 대상 (중간 산출물, 병합 후 불필요)
-# ═══════════════════════════════════════════════════════════════
-
-DATA_DIR="data/{YYYY}/{MM}/{DD}"
-
-# 1. raw/ 폴더 전체 삭제 (병합 완료 후 불필요)
-rm -rf ${DATA_DIR}/raw/
-
-# 2. filtered/ 폴더 전체 삭제 (구조화 완료 후 불필요)
-rm -rf ${DATA_DIR}/filtered/
-
-# 3. execution/ 폴더 전체 삭제 (실행 로그)
-rm -rf ${DATA_DIR}/execution/
-
-# 4. logs/ 폴더 전체 삭제 (dedup 로그)
-rm -rf ${DATA_DIR}/logs/
-
-# 5. analysis/ 폴더 정리 (priority-ranked, keyword-analytics 유지)
-find ${DATA_DIR}/analysis/ -type f ! -name "priority-ranked-*.json" ! -name "keyword-analytics-*.json" -delete
-
-# 6. data/{date}/ 루트 임시 파일 삭제
-rm -f ${DATA_DIR}/*.md ${DATA_DIR}/*.txt ${DATA_DIR}/*.py
-
-# 7. reports/ 내 중복 파일 정리 (최종 보고서만 유지)
-rm -rf ${DATA_DIR}/reports/archive/
-find ${DATA_DIR}/reports/ -type f ! -name "environmental-scan-*.md" -delete
+# 옵션:
+#   --dry-run  : 미리보기 (실제 삭제 안함)
+#   --force    : Gate 3 검증 생략
 ```
+
+### 스크립트가 수행하는 작업
+
+**Step 17-A: 루트 디렉토리 정리**
+- `*-{date}.md`, `*-{date}.txt`, `*-{date}.json` 삭제
+- `*.sh`, `*_updater*.py`, `execute_*.py` 등 임시 스크립트 삭제
+- 보호 파일: CLAUDE.md, README.md, LICENSE 등은 유지
+
+**Step 17-B: data 폴더 정리**
+- `raw/`, `filtered/`, `execution/` 폴더 전체 삭제
+- `analysis/` 폴더: priority-ranked, keyword-analytics만 유지
+- 기타 중간 산출물 삭제
 
 ### Step 17-C: weekly 폴더 정리
 
