@@ -1,76 +1,105 @@
 ---
-description: 일일 환경스캐닝 워크플로우 전체 실행 (v3.2 - 워크플로우 순서 수정)
+description: 일일 환경스캐닝 워크플로우 전체 실행 (v4 - Source of Truth)
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Task, WebSearch, WebFetch
 argument-hint: [--fast | --with-review | --phase <1|2|3> | --resume]
 ---
 
-# 환경스캐닝 워크플로우 v3.2 - 완전 스캔
+# 환경스캐닝 워크플로우 v4 - Source of Truth
 
 오늘 날짜: !`date +%Y-%m-%d`
 옵션: $ARGUMENTS
 
 ---
 
-## 핵심 변경 (v3.2)
-
-**v3.1 결함**: Marathon Stage 2 신호가 signal-merger/dedup-filter를 거치지 않음
-**v3.2 해결**: 워크플로우 순서 수정 - 모든 데이터 수집 후 병합
+## ⚠️ v4 핵심 원칙 (필수)
 
 ```
-v3.1 (결함):
-  스캐너 → merger → dedup → Marathon Stage 2 → Gate 1
-  ❌ Marathon 신호가 병합/중복제거 안됨
-
-v3.2 (수정):
-  스캐너 → Marathon Stage 2 → merger (6개 통합) → dedup → Gate 1
-  ✓ 모든 신호가 병합/중복제거됨
+┌─────────────────────────────────────────────────────────────┐
+│  v4 Source of Truth 원칙                                    │
+│                                                              │
+│  1. URL만 수집 → 실제 기사 본문 추출 → 본문 기반 요약       │
+│  2. LLM 요약은 signal-classifier에서 1회만                  │
+│  3. 이후 단계에서 summary/original_content 수정 금지         │
+│  4. 보고서는 Python 템플릿으로 생성 (LLM 재작성 금지)       │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 워크플로우 구조
+## 워크플로우 구조 (v4)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                        ORCHESTRATOR v3.2                            │
+│                        ORCHESTRATOR v4                               │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  Phase 1: Research (데이터 수집 → 병합 → 중복제거)                   │
+│  Phase 1: Research (URL 수집 → 본문 추출 → 중복제거)                │
 │  ┌─────────────────────────────────────────────────────────────┐    │
 │  │ 1. archive-loader                                            │    │
 │  │         ↓                                                    │    │
-│  │ 2. 4개 스캐너 병렬 (강제!)                                    │    │
+│  │ 2. Stage A: URL Discovery (4개 크롤러 병렬)                  │    │
 │  │    ┌────────────┬────────────┬────────────┬────────────┐     │    │
-│  │    │ naver-news │ global-news│ google-news│ STEEPS     │     │    │
-│  │    │  crawler   │  crawler   │  crawler   │ scanner    │     │    │
+│  │    │ naver-news │ global-news│ google-news│ WebSearch  │     │    │
+│  │    │  (URL만)   │  (URL만)   │  (URL만)   │ (URL만)    │     │    │
 │  │    └─────┬──────┴─────┬──────┴─────┬──────┴─────┬──────┘     │    │
 │  │          └────────────┴────────────┴────────────┘            │    │
 │  │                           ↓                                  │    │
-│  │ 3. Marathon Stage 2 (강제!) - 스캐너 완료 후 실행            │    │
-│  │    ┌────────────────────────────────────────────────────┐    │    │
-│  │    │ 3-1. gap-analyzer (선행)                            │    │    │
-│  │    │         ↓                                           │    │    │
-│  │    │ 3-2. frontier-explorer + citation-chaser (병렬)     │    │    │
-│  │    │         ↓                                           │    │    │
-│  │    │ 3-3. rapid-validator (후행)                         │    │    │
-│  │    └────────────────────────────────────────────────────┘    │    │
+│  │ 3. URL Merger (URL 통합 + 중복 제거)                         │    │
+│  │    출력: urls-{date}.json                                    │    │
 │  │                           ↓                                  │    │
-│  │ 4. signal-merger (6개 소스 통합!)                            │    │
-│  │    입력: naver + global + google + steeps + frontier + citation │
-│  │         ↓                                                    │    │
-│  │ 5. dedup-filter (모든 신호 중복 제거)                        │    │
+│  │ 4. Stage B: Content Fetching (WebFetch로 본문 수집)          │    │
+│  │    출력: articles-{date}.json (Source of Truth!)             │    │
+│  │                           ↓                                  │    │
+│  │ 5. dedup-filter (URL 기반 중복 제거)                         │    │
 │  └─────────────────────────────────────────────────────────────┘    │
 │         ↓                                                            │
-│     [Gate 1 - 8개 파일 필수!]                                        │
+│     [Gate 1 - articles-{date}.json 필수!]                            │
 │                                                                      │
-│  Phase 2: Planning (기존과 동일)                                     │
-│  Phase 3: Implementation (기존과 동일)                               │
+│  Phase 2: Planning (Source of Truth 적용)                            │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │ 6. signal-classifier (유일한 LLM 요약 단계!)                 │    │
+│  │    입력: articles-{date}.json (실제 기사 본문)               │    │
+│  │    출력: structured-signals-{date}.json                      │    │
+│  │         ↓                                                    │    │
+│  │ 7-8. confidence + hallucination (summary ↔ content 검증)     │    │
+│  │         ↓                                                    │    │
+│  │ 9-10. impact + priority (메타데이터만, 내용 변경 금지!)       │    │
+│  └─────────────────────────────────────────────────────────────┘    │
+│         ↓                                                            │
+│     [Gate 2 - hallucination-report 필수!]                            │
+│                                                                      │
+│  Phase 3: Implementation (Python 템플릿)                             │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │ 11-12. db-updater + report-generator (병렬)                  │    │
+│  │    report-generator: Python 스크립트 호출 (LLM 재작성 금지!)  │    │
+│  │         ↓                                                    │    │
+│  │ 13. archive-notifier                                         │    │
+│  └─────────────────────────────────────────────────────────────┘    │
+│         ↓                                                            │
+│     [Gate 3 - report.md 생성 확인]                                   │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## 실행 단계 (Orchestrator 강제 수행)
+
+### Step 0: Pre-Scan Checks (자동) ⚠️ 구조적 문제 방지
+
+스캔 시작 전 사전 검증 수행:
+
+```bash
+# 0-1. 의존성 검증 (구조적 문제 3 방지: 외부 의존성 취약)
+python3 src/scripts/validators/dependency_checker.py --crawler
+# 실패 시: python3 src/scripts/validators/dependency_checker.py --fix
+
+# 0-2. 리뷰 일정 확인
+python3 src/scripts/analytics/review_scheduler.py check
+```
+
+**의존성 검증 실패 시**: `--fix` 옵션으로 자동 설치 후 재시도
+
+---
 
 ### Phase 1: Research (정보 수집)
 
@@ -84,57 +113,105 @@ Task @archive-loader:
 
 ---
 
-## ⚠️ Step 2: 4개 스캐너 병렬 호출 (강제!) ⚠️
+## ⚠️ Step 2: Stage A - URL Discovery (4개 크롤러 병렬) ⚠️
 
-**중요**: 아래 4개 Task를 **반드시 모두** 병렬 실행해야 합니다.
+**v4 핵심**: URL만 수집합니다. 본문은 Stage B에서 WebFetch로 수집합니다.
 
 ```
 # ═══════════════════════════════════════════════════════════════
-# Task 1: 네이버 뉴스 크롤러 (필수)
+# Task 1: 네이버 뉴스 크롤러 (URL만 수집!)
 # ═══════════════════════════════════════════════════════════════
 Task @naver-news-crawler:
   subagent_type: naver-news-crawler
   prompt: |
     날짜: {date}
-    STEEPS 키워드로 네이버 뉴스 검색
-    출력: data/{date}/raw/naver-scan-{date}.json
-    최소 5개 이상 신호 수집
+    ⚠️ URL만 추출, 본문 수집은 Stage B에서 수행
+    STEEPS 키워드로 네이버 뉴스 URL 수집
+    출력: data/{date}/raw/naver-urls-{date}.json
+    최소 15개 이상 URL 수집
 
 # ═══════════════════════════════════════════════════════════════
-# Task 2: 글로벌 뉴스 크롤러 (필수)
+# Task 2: 글로벌 뉴스 크롤러 (URL만 수집!)
 # ═══════════════════════════════════════════════════════════════
 Task @global-news-crawler:
   subagent_type: global-news-crawler
   prompt: |
     날짜: {date}
-    6개국 주요 신문 크롤링 (한국, 미국, 영국, 중국, 일본, 중동)
-    출력: data/{date}/raw/global-news-{date}.json
-    최소 10개 이상 신호 수집
+    ⚠️ URL만 추출, 본문 수집은 Stage B에서 수행
+    6개국 주요 신문 URL 수집 (한국, 미국, 영국, 중국, 일본, 중동)
+    출력: data/{date}/raw/global-urls-{date}.json
+    최소 20개 이상 URL 수집
 
 # ═══════════════════════════════════════════════════════════════
-# Task 3: 구글 뉴스 크롤러 (필수)
+# Task 3: 구글 뉴스 크롤러 (URL만 수집!)
 # ═══════════════════════════════════════════════════════════════
 Task @google-news-crawler:
   subagent_type: google-news-crawler
   prompt: |
     날짜: {date}
-    STEEPS 키워드로 구글 뉴스 검색
-    출력: data/{date}/raw/google-news-{date}.json
-    최소 5개 이상 신호 수집
+    ⚠️ URL만 추출, 본문 수집은 Stage B에서 수행
+    STEEPS 키워드로 구글 뉴스 URL 수집
+    출력: data/{date}/raw/google-urls-{date}.json
+    최소 15개 이상 URL 수집
 
 # ═══════════════════════════════════════════════════════════════
-# Task 4: STEEPS WebSearch 스캐너 (필수)
+# Task 4: STEEPS WebSearch (URL만 수집!)
 # ═══════════════════════════════════════════════════════════════
-Task @steeps-scanner:
+Task @steeps-websearch:
   subagent_type: general-purpose
   prompt: |
     날짜: {date}
-    WebSearch로 STEEPS 카테고리별 미래 변화 신호 수집
-    출력: data/{date}/raw/steeps-scan-{date}.json
-    총 15개 이상 신호 수집
+    ⚠️ URL만 추출, 스니펫은 힌트용 (신호 생성에 미사용!)
+    WebSearch로 STEEPS 카테고리별 URL 수집
+    출력: data/{date}/raw/websearch-urls-{date}.json
+    총 20개 이상 URL 수집
 ```
 
 **검증**: 4개 모두 완료될 때까지 대기.
+
+---
+
+## Step 3: URL Merger + Validation ⚠️ 구조적 문제 방지
+
+```bash
+# 3-1. URL 병합
+python3 src/scripts/pipeline_v4/url_merger.py --date {date}
+# 출력: data/{date}/raw/urls-{date}.json
+
+# 3-2. URL 접근성 사전 검증 (구조적 문제 1 방지: URL≠접근성)
+python3 src/scripts/validators/url_validator.py \
+  --input data/{date}/raw/urls-{date}.json \
+  --output data/{date}/raw/validated-urls-{date}.json \
+  --quick
+```
+
+**접근성 검증 효과**:
+- 페이월/차단 도메인 사전 필터링
+- 404/403 에러 URL 제거
+- 실제 접근 가능한 URL만 Stage B로 전달
+
+---
+
+## ⚠️ Step 4: Stage B - Batch Content Fetching ⚠️ 구조적 문제 방지
+
+**핵심**: 배치 분할 처리로 컨텍스트 과부하 방지 (구조적 문제 2 방지)
+
+```bash
+# 배치 단위 본문 수집 (최대 10개씩 분할)
+python3 src/scripts/pipeline_v4/batch_content_fetcher.py \
+  --date {date} \
+  --batch-size 8
+
+# 입력: data/{date}/raw/validated-urls-{date}.json
+# 출력: data/{date}/raw/articles-{date}.json
+```
+
+**배치 처리 규칙**:
+- 배치 크기: 최대 10개 (기본 8개)
+- 배치 간 대기: 2초
+- 에이전트 컨텍스트 과부하 방지
+
+**⚠️ articles-{date}.json이 신호 생성의 Source of Truth입니다.**
 
 ---
 
@@ -238,27 +315,73 @@ Task @dedup-filter:
 
 ---
 
-### Phase 2: Planning (기존과 동일)
+### Phase 2: Planning (v4 Source of Truth 적용)
 
-**Step 6: Signal Classifier**
+**Step 6: Signal Classifier (유일한 LLM 요약 단계!)**
 ```
 Task @signal-classifier:
-  입력: data/{date}/filtered/filtered-signals-{date}.json
-  출력: data/{date}/structured/structured-signals-{date}.json, data/{date}/analysis/pSRT-scores-{date}.json
+  입력: data/{date}/raw/articles-{date}.json (실제 기사 본문!)
+  출력: data/{date}/structured/structured-signals-{date}.json
+
+  ⚠️ Source of Truth 규칙:
+  1. original_content를 읽고 요약 (창작 금지!)
+  2. url, original_title, original_content 그대로 보존
+  3. 기사에 없는 내용 추가 금지
+  4. 이 단계의 summary가 보고서까지 그대로 사용됨
 ```
 
 **Step 7: Confidence Evaluator**
-**Step 8: Hallucination Detector [필수]**
+**Step 8: Hallucination Detector [필수 - v4 강화]**
+```
+⚠️ v4 추가 검증:
+- summary가 original_content에 근거하는지 확인
+- 기사에 없는 수치/인용이 추가되었는지 검증
+- SUMMARY_CONTENT_MISMATCH 플래그 시 critical 처리
+```
+
 **Step 9: Pipeline Validator**
 **Step 10-11: Impact + Priority [병렬]**
+```
+⚠️ v4 규칙: 메타데이터만 추가, 내용 변경 금지!
+```
 
 **Gate 2 검증**: hallucination-report + validation-report 존재 (필수)
 
 ---
 
-### Phase 3: Implementation (기존과 동일)
+### Step 11-A: Keyword Analytics (자동)
+
+**Phase 2 완료 후 키워드 효과성 분석**
+
+```bash
+# URL 수집 + 신호 전환 분석 자동 실행
+python3 src/scripts/analytics/post_scan_analytics.py --date {date} --phase full
+```
+
+**분석 항목**:
+- 키워드별 URL 수집 건수
+- 키워드별 신호 전환율
+- 카테고리별 평균 우선순위 점수
+- 효과성 메트릭 DB 업데이트
+
+**출력**: `data/{date}/analysis/keyword-analytics-{date}.json`
+
+---
+
+### Phase 3: Implementation (v4 Python 템플릿)
 
 **Step 12-13: DB + Report [병렬]**
+```
+Task @report-generator:
+  ⚠️ v4 규칙: Python 스크립트로 보고서 생성 (LLM 재작성 금지!)
+
+  Bash: python src/scripts/pipeline_v4/report_builder.py {date}
+
+  - summary 그대로 사용
+  - URL 그대로 사용
+  - LLM이 내용을 재작성하거나 편집하지 않음
+```
+
 **Step 14: Archive Notifier**
 **Step 15-16: Source Evolver + File Organizer [병렬, 선택적]**
 
@@ -316,8 +439,8 @@ rm -rf ${DATA_DIR}/execution/
 # 4. logs/ 폴더 전체 삭제 (dedup 로그)
 rm -rf ${DATA_DIR}/logs/
 
-# 5. analysis/ 폴더 정리 (priority-ranked만 유지)
-find ${DATA_DIR}/analysis/ -type f ! -name "priority-ranked-*.json" -delete
+# 5. analysis/ 폴더 정리 (priority-ranked, keyword-analytics 유지)
+find ${DATA_DIR}/analysis/ -type f ! -name "priority-ranked-*.json" ! -name "keyword-analytics-*.json" -delete
 
 # 6. data/{date}/ 루트 임시 파일 삭제
 rm -f ${DATA_DIR}/*.md ${DATA_DIR}/*.txt ${DATA_DIR}/*.py
@@ -352,7 +475,8 @@ data/{YYYY}/{MM}/{DD}/
 ├── structured/
 │   └── structured-signals-{date}.json  ← 유지 (아카이브)
 ├── analysis/
-│   └── priority-ranked-{date}.json     ← 유지 (우선순위 기록)
+│   ├── priority-ranked-{date}.json     ← 유지 (우선순위 기록)
+│   └── keyword-analytics-{date}.json   ← 유지 (키워드 효과성)
 └── reports/
     └── environmental-scan-{date}.md    ← 유지 (최종 보고서)
 
