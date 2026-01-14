@@ -1,40 +1,42 @@
 {
   "loaded_date": "2026-01-14",
   "archive_loading_status": "completed",
-  "execution_timestamp": "2026-01-14T16:35:00Z",
+  "execution_timestamp": "2026-01-14T18:30:00Z",
   "database_stats": {
-    "total_signals": 422,
-    "scan_count": 11,
+    "total_signals": 527,
+    "scan_count": 12,
     "database_created": "2026-01-09",
-    "database_last_updated": "2026-01-14T15:45:30Z",
+    "database_last_updated": "2026-01-14T18:22:00Z",
     "by_status": {
-      "emerging": 408,
-      "developing": 14
+      "emerging": 487,
+      "developing": 40
     },
     "by_category": {
-      "Technological": 130,
-      "Economic": 104,
-      "Political": 84,
+      "Social": 336,
+      "Technological": 273,
+      "Economic": 130,
+      "Political": 118,
       "Environmental": 55,
-      "Social": 30,
-      "Spiritual": 19
+      "Spiritual": 22
     },
     "by_significance": {
       "5": 41,
-      "4": 51,
-      "3": 127,
-      "2": 20,
+      "4": 86,
+      "3": 224,
+      "2": 36,
       "1": 183
     },
     "by_priority": {
-      "medium": 422
+      "high": 68,
+      "medium": 319,
+      "low": 140
     },
     "by_psrt_grade": {
       "A_plus": 9,
       "A": 20,
-      "B": 49,
-      "C": 25,
-      "D": 12,
+      "B": 73,
+      "C": 398,
+      "D": 142,
       "E": 3,
       "F": 1
     }
@@ -97,30 +99,30 @@
     "top_signals": [
       {
         "rank": 1,
-        "title": "Generative AI Coding: 30% of Microsoft's Code Now Written by AI",
-        "category": "Technological",
-        "score": 8.8,
+        "title": "12월 취업자 16.8만 명↑…건설·제조·청년 부진 계속",
+        "category": "Economic",
+        "score": 7.7,
         "psrt": 87
       },
       {
         "rank": 2,
-        "title": "Mechanistic Interpretability: Mapping the Inner Workings of AI Models",
-        "category": "Technological",
-        "score": 8.6,
-        "psrt": 86
+        "title": "[속보]작년 12월 취업자 수 16만8000명↑...12개월 연속 증가",
+        "category": "Economic",
+        "score": 7.75,
+        "psrt": 62
       },
       {
         "rank": 3,
-        "title": "D-Wave's $550M Quantum Breakthrough: First Scalable On-Chip Cryogenic Control",
-        "category": "Technological",
-        "score": 8.4,
-        "psrt": 83
+        "title": "한국거래소, 내년 말 24시간 거래 추진",
+        "category": "Economic",
+        "score": 7.6,
+        "psrt": 85
       }
     ]
   },
   "deduplication_index_info": {
     "index_file": "context/dedup-index-2026-01-14.json",
-    "index_version": "2.3",
+    "index_version": "2.4",
     "index_entries": 178,
     "url_entries": 45,
     "title_entries": 44,
@@ -130,7 +132,7 @@
   },
   "processing_summary": {
     "signals_database_loaded": true,
-    "signals_count": 422,
+    "signals_count": 527,
     "archives_loaded": true,
     "archives_count": 2,
     "dedup_index_built": true,
@@ -138,6 +140,6 @@
     "titles_extracted": 44,
     "entities_extracted": 89,
     "processing_status": "success",
-    "notes": "Complete deduplication index built from signal database and latest 2 archive reports"
+    "notes": "Complete deduplication index built from signal database (527 signals) and latest 2 archive reports. Database update source: Phase 3: DB Updater (daily-scan-2026-01-14)"
   }
 }

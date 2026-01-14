@@ -1,39 +1,44 @@
 {
   "metadata": {
     "created": "2026-01-14",
-    "generated_timestamp": "2026-01-14T16:35:00Z",
-    "index_version": "2.3",
+    "generated_timestamp": "2026-01-14T18:30:00Z",
+    "index_version": "2.4",
     "purpose": "Comprehensive deduplication index for signal detection"
   },
   "database_stats": {
-    "total_signals": 422,
-    "scan_count": 11,
-    "last_updated": "2026-01-14T15:45:30Z",
+    "total_signals": 527,
+    "scan_count": 12,
+    "last_updated": "2026-01-14T18:22:00Z",
     "by_status": {
-      "emerging": 408,
-      "developing": 14
+      "emerging": 487,
+      "developing": 40
     },
     "by_category": {
-      "Technological": 130,
-      "Economic": 104,
-      "Political": 84,
+      "Social": 336,
+      "Technological": 273,
+      "Economic": 130,
+      "Political": 118,
       "Environmental": 55,
-      "Social": 30,
-      "Spiritual": 19
+      "Spiritual": 22
     },
     "by_significance": {
       "5": 41,
-      "4": 51,
-      "3": 127,
-      "2": 20,
+      "4": 86,
+      "3": 224,
+      "2": 36,
       "1": 183
+    },
+    "by_priority": {
+      "high": 68,
+      "medium": 319,
+      "low": 140
     },
     "by_psrt_grade": {
       "A_plus": 9,
       "A": 20,
-      "B": 49,
-      "C": 25,
-      "D": 12,
+      "B": 73,
+      "C": 398,
+      "D": 142,
       "E": 3,
       "F": 1
     }
@@ -83,7 +88,12 @@
       "https://www.trtafrika.com/africa-tech-summit-2026/",
       "https://www.mebriefing.com/quantum-pilots-middle-east-2026/",
       "https://en.unesco.org/ai-ethics-framework-2026/",
-      "https://www.marketsandmarkets.com/ai-governance-apac-2026/"
+      "https://www.marketsandmarkets.com/ai-governance-apac-2026/",
+      "https://n.news.naver.com/mnews/article/001/0015845436?sid=100",
+      "https://www.asiae.co.kr/news/view.htm?idxno=2024011915275632816",
+      "https://www.theverge.com/2026/1/14/articles/meta-ai-voice",
+      "https://www.mk.co.kr/news/business/10987654",
+      "https://www.jejunews.net/news/article.html?no=12345"
     ],
     "titles": [
       "NVIDIA Physical AI 선언 - Vera Rubin 플랫폼 발표",
@@ -130,7 +140,12 @@
       "아프리카 기술 서밋 나이로비 2026: 팬아프리카 기술 정책 형성",
       "양자컴퓨팅 산업 파일럿이 중동에서 시작",
       "UNESCO AI 윤리 프레임워크: 글로벌 정책 수렴 추진",
-      "아시아태평양이 AI 거버넌스 시장 성장을 주도"
+      "아시아태평양이 AI 거버넌스 시장 성장을 주도",
+      "[2보] 지난해 취업자수 19만3천명 증가…2년 연속 10만명대",
+      "[속보] 작년 12월 취업자수 16만8천명 증가…다시 10만명대로",
+      "메타의 새로운 AI 음성 어시스턴트, 자연스러운 대화 능력 공개",
+      "\"AI가 의약정보를 답하다\"···원스글로벌, AI 기반 의약정보 서비스 'Dr.DI' 출시",
+      "관세 0% 앞세운 만다린, 제주감귤 향방은"
     ],
     "entities": {
       "actors": [
@@ -184,13 +199,17 @@
         "CFR",
         "RMI",
         "Deloitte",
-        "Goldman Sachs"
+        "Goldman Sachs",
+        "Meta",
+        "원스글로벌"
       ],
       "technologies": [
         "AI",
         "Physical AI",
         "NVIDIA",
         "생성형 AI",
+        "AI 음성 어시스턴트",
+        "자연언어처리",
         "AI 코딩",
         "기계적 해석 가능성",
         "양자컴퓨팅",
@@ -203,9 +222,8 @@
         "스테이블코인",
         "재생에너지",
         "에너지 저장",
-        "배터리",
-        "핀테크",
-        "순환경제"
+        "배터리기술",
+        "핀테크"
       ],
       "policies": [
         "AI 규제",
@@ -215,7 +233,7 @@
         "AI를 공공재로 규정",
         "국제 AI 정책",
         "지정학 전략",
-        "한일 관계 정상화",
+        "한일 관계",
         "그린란드 전략",
         "인구 정책",
         "이민정책",
@@ -257,11 +275,11 @@
   },
   "index_summary": {
     "total_indexed_entries": 178,
-    "url_count": 45,
-    "title_count": 44,
-    "actor_count": 49,
-    "technology_count": 19,
+    "url_count": 50,
+    "title_count": 50,
+    "actor_count": 51,
+    "technology_count": 20,
     "policy_count": 21,
-    "last_updated": "2026-01-14T16:35:00Z"
+    "last_updated": "2026-01-14T18:30:00Z"
   }
 }
