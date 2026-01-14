@@ -208,13 +208,48 @@ For each category with signals:
 ### E. 용어 정의
 ```
 
+## ⚠️ URL 표시 정책 (Critical)
+
+**절대 URL을 생성하거나 조작하지 마세요.**
+
+### 규칙
+
+1. **URL 필드 확인**: 신호 데이터에 `url` 필드가 있는지 확인
+2. **URL 있는 경우**:
+   ```markdown
+   **출처**: [소스명](실제URL) | 발행일: YYYY-MM-DD
+   ```
+3. **URL 없는 경우**:
+   ```markdown
+   **출처**: 소스명 [출처 미확인] | 발행일: YYYY-MM-DD
+   ```
+4. **URL 조작 금지**:
+   - ❌ `https://www.news1.kr/articles/4567890` (숫자 조작)
+   - ❌ `https://example.com/article/123` (가상 URL)
+   - ✓ URL 없으면 텍스트만 표시
+
+### 출처 표시 예시
+
+```markdown
+# URL 있는 경우 (정상)
+**출처**: [연합뉴스](https://n.news.naver.com/mnews/article/001/0015845402) | 발행일: 2026-01-14
+
+# URL 없는 경우 (경고 표시)
+**출처**: 연합뉴스 [출처 미확인] | 발행일: 2026-01-14
+
+# 부록 B. 출처 섹션
+## B. 출처
+- ✓ 검증됨: [소스명](URL)
+- ⚠ 미확인: 소스명 (URL 없음)
+```
+
 ## Styling Guidelines
 
 - Use consistent heading levels
 - Include visual separators between sections
 - Highlight high-priority items (★★★★★)
 - Use tables for comparative data
-- Include source links for verification
+- Only include verified source links (never fabricate)
 
 ## Output
 

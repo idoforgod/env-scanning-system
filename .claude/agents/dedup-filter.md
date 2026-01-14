@@ -172,8 +172,36 @@ FLAGGED - entity_overlap (review recommended):
 
 **IMPORTANT**: 실행 요약/퀵레퍼런스 파일은 반드시 `data/{date}/execution/` 폴더에 저장. 루트 디렉토리에 생성 금지.
 
+## ⚠️ URL 보존 규칙 (MANDATORY)
+
+**신호 필터링 시 URL 필드를 반드시 보존해야 합니다.**
+
+### 필수 보존 필드
+
+모든 new_signals 항목에 다음 필드가 보존되어야 함:
+
+```json
+{
+  "raw_id": "RAW-2026-0109-001",
+  "title": "...",
+  "url": "https://...",        // ← 반드시 보존!
+  "source_name": "...",
+  "published_date": "..."
+}
+```
+
+### 검증 로직
+
+```
+for signal in new_signals:
+    if not signal.get("url"):
+        signal["url_status"] = "MISSING"
+        log_warning(f"{signal['raw_id']}: URL missing")
+```
+
 ## Important
 
 - When in doubt, keep the signal (false negative worse than false positive)
 - Log all decisions for human review
 - Preserve raw data for audit trail
+- **Always preserve URL field from raw signals**

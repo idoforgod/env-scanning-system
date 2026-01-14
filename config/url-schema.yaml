@@ -1,0 +1,127 @@
+# URL 필드 스키마 정의
+# 환경스캐닝 파이프라인 전체에서 URL 필드를 일관되게 관리하기 위한 규칙
+
+version: "1.0"
+created: "2026-01-14"
+purpose: "URL 보존 및 검증을 위한 표준 스키마"
+
+# ============================================================
+# URL 필드 표준
+# ============================================================
+
+field_names:
+  primary: "url"                    # 기본 URL 필드명
+  alternatives:                      # 대체 필드명 (읽기 시 확인)
+    - "source_url"
+    - "link"
+    - "article_url"
+    - "href"
+  status: "url_status"              # URL 상태 필드
+
+# ============================================================
+# 파이프라인 단계별 규칙
+# ============================================================
+
+pipeline:
+  # 1. 크롤러 (원천 수집)
+  crawler:
+    required: true
+    source: "실제 크롤링에서 수집"
+    format: "https://..."
+    validation: "HTTP HEAD 요청으로 검증 권장"
+
+  # 2. Dedup Filter (중복 제거)
+  dedup_filter:
+    required: true
+    action: "입력 URL 그대로 보존"
+    missing_handling: |
+      url_status: "MISSING" 설정
+
+  # 3. Signal Classifier (분류)
+  signal_classifier:
+    required: true
+    action: "source.url 필드에 복사"
+    missing_handling: |
+      source.url: null
+      source.url_status: "MISSING"
+
+  # 4. Priority Ranker (우선순위)
+  priority_ranker:
+    required: false
+    action: "URL 필드 유지 (변경 없음)"
+
+  # 5. Report Generator (보고서)
+  report_generator:
+    required: true
+    display_rules:
+      - condition: "url exists and not null"
+        format: "[소스명](URL)"
+      - condition: "url is null or missing"
+        format: "소스명 [출처 미확인]"
+    prohibited:
+      - "URL 생성"
+      - "URL 추측"
+      - "더미 URL"
+
+# ============================================================
+# URL 상태 코드
+# ============================================================
+
+url_status_codes:
+  VALID: "URL 존재하고 유효함"
+  MISSING: "원본 데이터에 URL 없음"
+  INVALID: "URL 형식 오류"
+  UNREACHABLE: "URL 접근 불가 (HTTP 오류)"
+  REDIRECTED: "리다이렉트됨"
+
+# ============================================================
+# 검증 규칙
+# ============================================================
+
+validation:
+  # URL 형식 검증
+  format:
+    pattern: "^https?://.+"
+    max_length: 2048
+
+  # HTTP 검증 (선택적)
+  http_check:
+    enabled: false  # 성능 이슈로 기본 비활성화
+    timeout_ms: 5000
+    success_codes: [200, 301, 302]
+
+  # 파이프라인 완료 후 검증
+  final_check:
+    enabled: true
+    report_missing: true
+    report_path: "logs/url-validation-{date}.log"
+
+# ============================================================
+# 금지 사항
+# ============================================================
+
+prohibited:
+  - description: "URL 생성/조작"
+    example: "https://www.news1.kr/articles/4567890"
+    reason: "실제 존재하지 않는 URL"
+
+  - description: "소스명에서 URL 추측"
+    example: "연합뉴스 → https://www.yna.co.kr/..."
+    reason: "정확한 기사 URL 알 수 없음"
+
+  - description: "더미 URL"
+    example: "#, javascript:void(0)"
+    reason: "무의미한 링크"
+
+# ============================================================
+# 출처 표시 표준
+# ============================================================
+
+display_format:
+  with_url:
+    markdown: "**출처**: [소스명](URL) | 발행일: YYYY-MM-DD"
+    html: '<p>출처: <a href="URL">소스명</a> | 발행일: YYYY-MM-DD</p>'
+
+  without_url:
+    markdown: "**출처**: 소스명 [출처 미확인] | 발행일: YYYY-MM-DD"
+    html: '<p>출처: 소스명 <span class="unverified">[출처 미확인]</span> | 발행일: YYYY-MM-DD</p>'

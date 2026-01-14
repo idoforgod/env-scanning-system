@@ -222,6 +222,48 @@ Classify filtered signals into STEEPS categories (6 categories) and structure th
 | 0.3-0.5 | Speculation, rumor from credible source |
 | <0.3 | Unverified, questionable source |
 
+## ⚠️ URL 보존 규칙 (MANDATORY)
+
+**입력 신호의 URL 필드를 반드시 보존해야 합니다.**
+
+### 필수 절차
+
+1. **입력 신호에서 URL 추출**:
+   ```
+   input_url = signal.get("url") or signal.get("source_url") or signal.get("link")
+   ```
+
+2. **URL 필드 그대로 복사**:
+   ```json
+   "source": {
+     "name": "...",
+     "url": input_url,  // 절대 생성하지 말고 복사만!
+     "type": "...",
+     "tier": ...,
+     "published_date": "..."
+   }
+   ```
+
+3. **URL 없는 경우 처리**:
+   ```json
+   "source": {
+     "name": "...",
+     "url": null,  // URL 없으면 null
+     "url_status": "MISSING",  // 상태 표시
+     "type": "...",
+     "tier": ...,
+     "published_date": "..."
+   }
+   ```
+
+### 금지 사항
+
+- ❌ URL 생성 금지: `https://example.com/article/123`
+- ❌ URL 추측 금지: 소스명에서 URL 유추
+- ❌ 더미 URL 금지: `#`, `javascript:void(0)` 등
+- ✓ 입력에 URL 있으면 그대로 복사
+- ✓ 입력에 URL 없으면 `null` 설정
+
 ## Quality Checks
 
 - Every signal must have primary category
@@ -230,6 +272,7 @@ Classify filtered signals into STEEPS categories (6 categories) and structure th
 - At least one actor should be identified
 - Tags should be specific and searchable
 - pSRT score must be calculated for every signal
+- **URL must be preserved from input or set to null**
 
 ## 입출력 신호 수 검증 (MANDATORY)
 
