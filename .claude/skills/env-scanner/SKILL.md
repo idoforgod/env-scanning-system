@@ -37,17 +37,26 @@ description: 미래 연구(Futures Research)를 위한 환경스캐닝 워크플
 
 ## Phase 2: Planning (분석 및 구조화)
 
-| 단계 | 에이전트 | 입력 | 출력 | 필수 |
-|------|----------|------|------|------|
-| 5 | `@signal-classifier` | filtered/ | structured/structured-signals-{date}.json | ✅ |
-| 6 | `@confidence-evaluator` | structured/, config/pSRT-*.* | analysis/pSRT-scores-{date}.json | ✅ |
-| 7 | **`@hallucination-detector`** | analysis/pSRT-scores | analysis/hallucination-report-{date}.json | ⚠️ **필수** |
-| 8 | `@pipeline-validator` | filtered/, structured/, pSRT, hallucination | analysis/validation-report-{date}.json | ✅ |
-| 9 | `@impact-analyzer` | structured/ | analysis/impact-assessment-{date}.json | ✅ |
-| 10 | `@priority-ranker` | analysis/impact-, pSRT-scores | analysis/priority-ranked-{date}.json | ✅ |
-| 11 | **(human)** `/review-analysis` | 분석 결과 검토 | - | 옵션 |
+### pSRT 2.0 4-Phase 신뢰도 평가 파이프라인
 
-> ⚠️ **중요**: `@hallucination-detector`는 반드시 실행해야 합니다. 이 단계를 건너뛰면 품질 보증이 완료되지 않습니다.
+| 단계 | 에이전트 | 입력 | 출력 | 필수 | pSRT Phase |
+|------|----------|------|------|------|------------|
+| 5.0 | `@signal-classifier` | filtered/ | structured/structured-signals-{date}.json | ✅ | - |
+| 5.3 | `@groundedness-verifier` | structured/, original_content | analysis/groundedness-{date}.json | ✅ | **Phase 1** |
+| 5.5 | `@cross-validator` | structured/, groundedness | analysis/cross-validation-{date}.json | ✅ | **Phase 2** |
+| 5.7 | `@confidence-evaluator` | groundedness, cross-validation, pSRT-config | analysis/pSRT-scores-{date}.json | ✅ | **통합** |
+| 5.9 | **`@hallucination-detector`** | pSRT-scores | analysis/hallucination-report-{date}.json | ⚠️ **필수** | **Phase 4** |
+| 6.0 | `@calibration-engine` | pSRT-scores, history/*.json | analysis/calibrated-scores-{date}.json | ✅ | **Phase 3** |
+| 7 | `@pipeline-validator` | 모든 analysis 결과 | analysis/validation-report-{date}.json | ✅ | - |
+| 8 | `@impact-analyzer` | structured/, calibrated-scores | analysis/impact-assessment-{date}.json | ✅ | - |
+| 9 | `@priority-ranker` | impact-assessment, calibrated-scores | analysis/priority-ranked-{date}.json | ✅ | - |
+| 10 | **(human)** `/review-analysis` | 분석 결과 검토 | - | 옵션 | - |
+
+> ⚠️ **중요**: pSRT 2.0 4-Phase 파이프라인은 반드시 순서대로 실행되어야 합니다:
+> 1. **Phase 1 (근거성)**: groundedness-verifier → 원본 대비 주장 검증
+> 2. **Phase 2 (교차검증)**: cross-validator → 독립 소스에서 확인
+> 3. **Phase 4 (할루시네이션)**: hallucination-detector → 6가지 유형 감지 (필수!)
+> 4. **Phase 3 (보정)**: calibration-engine → 역사적 정확도로 보정
 
 ## Phase 3: Implementation (보고서 생성)
 

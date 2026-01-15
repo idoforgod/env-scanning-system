@@ -1,0 +1,161 @@
+{
+  "consolidated_period": {
+    "quarter": "2026-Q1",
+    "start_date": "2026-01-01",
+    "end_date": "2026-03-31",
+    "months_covered": ["2026-01"],
+    "months_pending": ["2026-02", "2026-03"],
+    "weeks_covered": ["W02", "W03"],
+    "status": "in_progress"
+  },
+  "generated_by": "/env-scan:consolidate-quarterly",
+  "generated_at": "2026-01-15T15:00:00+09:00",
+  "version": "v2.0-scanning-focused",
+  "data_sources": {
+    "monthly_reports": [
+      "data/consolidated/monthly/2026-01/"
+    ],
+    "weekly_reports": [
+      "data/consolidated/weekly/2026-W02/",
+      "data/consolidated/weekly/2026-W03/"
+    ]
+  },
+  "signal_summary": {
+    "total_signals": 443,
+    "unique_urls": 362,
+    "duplicate_rate": "2.7%",
+    "by_month": {
+      "2026-01": {"count": 443, "percentage": 100}
+    },
+    "by_week": {
+      "W02": {"count": 67, "percentage": 15.1},
+      "W03": {"count": 376, "percentage": 84.9}
+    },
+    "projection_q1_total": "~1300 (based on Jan pace)"
+  },
+  "category_distribution": {
+    "Social": {"count": 177, "percentage": 47.1, "balance": "over", "target": "30-35%"},
+    "Technological": {"count": 77, "percentage": 20.5, "balance": "ok", "target": "15-25%"},
+    "Political": {"count": 49, "percentage": 13.0, "balance": "ok", "target": "10-20%"},
+    "Economic": {"count": 44, "percentage": 11.7, "balance": "ok", "target": "15-20%"},
+    "Environmental": {"count": 23, "percentage": 6.1, "balance": "under", "target": "10-15%"},
+    "Spiritual": {"count": 9, "percentage": 2.4, "balance": "under", "target": "5-10%"}
+  },
+  "mega_trends_identified": [
+    {
+      "id": "MT-001",
+      "name": "AI-양자컴퓨팅 융합",
+      "probability": 0.85,
+      "timeline": "2026-2028",
+      "velocity": "accelerating",
+      "signals_count": 12,
+      "key_signals": ["IBM 양자우위", "Q-Day 경고", "양자-AI 융합"]
+    },
+    {
+      "id": "MT-002",
+      "name": "노동시장 이중충격",
+      "probability": 0.90,
+      "timeline": "2026-2028",
+      "velocity": "accelerating",
+      "signals_count": 15,
+      "key_signals": ["ILO 고용 전망", "Agentic AI 일자리 대체", "인구 고령화"]
+    },
+    {
+      "id": "MT-003",
+      "name": "국제질서 재편",
+      "probability": 0.75,
+      "timeline": "2026-2030",
+      "velocity": "stable",
+      "signals_count": 8,
+      "key_signals": ["미국 불안정화", "한일 협력 강화", "다극화"]
+    },
+    {
+      "id": "MT-004",
+      "name": "에너지 전환 티핑포인트",
+      "probability": 0.80,
+      "timeline": "2025-2030",
+      "velocity": "accelerating",
+      "signals_count": 10,
+      "key_signals": ["800GW 재생에너지", "EV 25%", "석유 수요 정점"]
+    }
+  ],
+  "weak_signal_tracking": {
+    "identified_q1_start": [
+      {"signal": "양자후 암호화 마이그레이션", "status": "emerging", "frequency": 3},
+      {"signal": "Q-Day 도래 경고", "status": "emerging", "frequency": 2},
+      {"signal": "휴머노이드 로봇 상용화", "status": "early", "frequency": 2},
+      {"signal": "세대 갈등 심화", "status": "rising", "frequency": 4}
+    ],
+    "transition_tracking": {
+      "to_be_evaluated": "Q1 말 평가 예정",
+      "success_criteria": "빈도 5회 이상 증가 시 '강한 신호'로 전환"
+    }
+  },
+  "source_effectiveness": {
+    "tier_1_sources": [
+      {"name": "ILO", "signals": 2, "avg_pSRT": 98.5, "recommendation": "maintain"},
+      {"name": "BloombergNEF", "signals": 1, "avg_pSRT": 100, "recommendation": "maintain"},
+      {"name": "World Bank", "signals": 2, "avg_pSRT": 98, "recommendation": "maintain"},
+      {"name": "CFR", "signals": 1, "avg_pSRT": 98, "recommendation": "maintain"}
+    ],
+    "tier_2_sources": [
+      {"name": "Yale Climate", "signals": 1, "avg_pSRT": 99, "recommendation": "promote to T1"},
+      {"name": "IMD", "signals": 1, "avg_pSRT": 94, "recommendation": "maintain"},
+      {"name": "Atlantic Council", "signals": 1, "avg_pSRT": 93, "recommendation": "maintain"}
+    ],
+    "tier_recommendations": {
+      "promote": ["Yale Climate"],
+      "demote": [],
+      "new_candidates": ["Carbon Brief", "Nature", "Science"]
+    }
+  },
+  "coverage_analysis": {
+    "steeps_balance": {
+      "over_represented": ["Social"],
+      "under_represented": ["Environmental", "Spiritual"],
+      "balanced": ["Technological", "Economic", "Political"]
+    },
+    "geographic_gaps": ["중동", "아프리카", "동남아시아"],
+    "language_gaps": ["아랍어", "스페인어", "포르투갈어"],
+    "improvement_plan": [
+      "환경 전문 매체 3개 추가",
+      "중동 지역 소스 2개 발굴",
+      "AI 윤리 (Spiritual) 소스 확대"
+    ]
+  },
+  "quality_metrics": {
+    "pSRT_trend": {
+      "W02": 75.2,
+      "W03": 62.5,
+      "monthly_avg": 64.5,
+      "trend": "declining",
+      "target_q1_end": 70.0
+    },
+    "high_quality_rate": {
+      "current": "10%",
+      "target": "15%"
+    },
+    "quality_improvement_actions": [
+      "대량 수집 시 품질 필터 강화",
+      "Tier 1 소스 비중 확대",
+      "크로스 레퍼런스 체크 의무화"
+    ]
+  },
+  "next_quarter_recommendations": {
+    "priority_monitoring": [
+      "양자컴퓨팅 보안 위협",
+      "AI 에이전트 규제 동향",
+      "EU AI Act 시행 영향"
+    ],
+    "source_expansion": [
+      "환경/기후 매체 확충",
+      "아시아/중동 지역 다변화",
+      "학술/특허 데이터 연계"
+    ],
+    "process_improvements": [
+      "카테고리 균형 자동 조정",
+      "pSRT 70점 미만 자동 플래그",
+      "약한 신호 추적 대시보드"
+    ]
+  }
+}

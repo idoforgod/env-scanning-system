@@ -28,12 +28,20 @@
 │  │ archive-     │  │ signal-      │  │ db-updater   │              │
 │  │ loader       │  │ classifier   │  │              │              │
 │  ├──────────────┤  ├──────────────┤  ├──────────────┤              │
-│  │ multi-source │  │ hallucin-    │  │ report-      │              │
-│  │ -scanner     │  │ ation-detect │  │ generator    │              │
-│  ├──────────────┤  ├──────────────┤  ├──────────────┤              │
-│  │ dedup-filter │  │ impact-      │  │ archive-     │              │
-│  │              │  │ analyzer     │  │ notifier     │              │
-│  └──────────────┘  ├──────────────┤  └──────────────┘              │
+│  │ multi-source │  │ ╔═══════════╗│  │ report-      │              │
+│  │ -scanner     │  │ ║pSRT 2.0   ║│  │ generator    │              │
+│  ├──────────────┤  │ ║ 4-Phase   ║│  ├──────────────┤              │
+│  │ dedup-filter │  │ ╠═══════════╣│  │ archive-     │              │
+│  │              │  │ ║groundness ║│  │ notifier     │              │
+│  └──────────────┘  │ ║cross-val  ║│  └──────────────┘              │
+│                    │ ║confidence ║│                                 │
+│                    │ ║hallucinat ║│                                 │
+│                    │ ║calibration║│                                 │
+│                    │ ╚═══════════╝│                                 │
+│                    ├──────────────┤                                 │
+│                    │ impact-      │                                 │
+│                    │ analyzer     │                                 │
+│                    ├──────────────┤                                 │
 │                    │ priority-    │                                 │
 │                    │ ranker       │                                 │
 │                    └──────────────┘                                 │
@@ -122,9 +130,23 @@ phases:
     steps:
       - agent: signal-classifier
         parallel: false
-      - agent: hallucination-detector
+      # pSRT 2.0 4-Phase Pipeline
+      - agent: groundedness-verifier     # Phase 1: 근거성 검증
         parallel: false
         mandatory: true
+      - agent: cross-validator           # Phase 2: 교차 검증
+        parallel: false
+        mandatory: true
+      - agent: confidence-evaluator      # pSRT 2.0 통합 평가
+        parallel: false
+        mandatory: true
+      - agent: hallucination-detector    # Phase 4: 할루시네이션 감지
+        parallel: false
+        mandatory: true
+      - agent: calibration-engine        # Phase 3: 역사적 보정
+        parallel: false
+        mandatory: true
+      # End of pSRT 2.0 Pipeline
       - agent: [impact-analyzer, priority-ranker]
         parallel: true  # 병렬 실행
     gate: gate2
@@ -439,18 +461,44 @@ Stage 2 출력: data/{date}/raw/exploration-signals.json
 ## signal-classifier 호출
 날짜: {date}
 입력: data/{date}/filtered/filtered-signals.json
-출력: data/{date}/structured/structured-signals.json, data/{date}/analysis/pSRT-scores.json
-지시: STEEPS 분류, pSRT 계산, 할루시네이션 플래그 생성
+출력: data/{date}/structured/structured-signals.json
+지시: STEEPS 분류, 요약 생성
 
-## hallucination-detector 호출 [MANDATORY]
+## pSRT 2.0 4-Phase Pipeline [SEQUENTIAL - MANDATORY]
+
+### Phase 1: groundedness-verifier 호출
 날짜: {date}
-입력: data/{date}/analysis/pSRT-scores.json
-출력: data/{date}/analysis/hallucination-report.json
-지시: pSRT < 60 플래그, 출처 검증, HIGH/MEDIUM/LOW 분류
+입력: data/{date}/structured/structured-signals.json
+출력: data/{date}/analysis/groundedness-{date}.json
+지시: 원본 대비 모든 주장의 근거성 검증 (30% 가중치)
+
+### Phase 2: cross-validator 호출
+날짜: {date}
+입력: data/{date}/structured/, data/{date}/analysis/groundedness-{date}.json
+출력: data/{date}/analysis/cross-validation-{date}.json
+지시: 독립 소스 3개 이상에서 주장 검증 (25% 가중치)
+
+### confidence-evaluator 호출 (통합)
+날짜: {date}
+입력: groundedness, cross-validation, config/pSRT-config.yaml
+출력: data/{date}/analysis/pSRT-scores-{date}.json
+지시: 4-Phase 점수 통합, 최종 pSRT 산출
+
+### Phase 4: hallucination-detector 호출 [MANDATORY]
+날짜: {date}
+입력: data/{date}/analysis/pSRT-scores-{date}.json
+출력: data/{date}/analysis/hallucination-report-{date}.json
+지시: 6가지 할루시네이션 유형 감지, 페널티 적용
+
+### Phase 3: calibration-engine 호출
+날짜: {date}
+입력: pSRT-scores, signals/history/
+출력: data/{date}/analysis/calibrated-scores-{date}.json
+지시: 역사적 정확도로 신뢰도 보정 (20% 가중치)
 
 ## impact-analyzer + priority-ranker 호출 [PARALLEL]
 날짜: {date}
-입력: data/{date}/structured/structured-signals.json
+입력: data/{date}/structured/, data/{date}/analysis/calibrated-scores-{date}.json
 출력: data/{date}/analysis/impact-assessment.json, data/{date}/analysis/priority-ranked.json
 ```
 
@@ -501,7 +549,13 @@ skippable_agents:
   - performance-updater # 실패해도 워크플로우 계속
 
 mandatory_agents:
-  - hallucination-detector  # 실패 시 워크플로우 중단
+  # pSRT 2.0 4-Phase Pipeline (순서대로 실행 필수)
+  - groundedness-verifier   # Phase 1: 근거성 검증
+  - cross-validator         # Phase 2: 교차 검증
+  - confidence-evaluator    # pSRT 2.0 통합 평가
+  - hallucination-detector  # Phase 4: 할루시네이션 감지
+  - calibration-engine      # Phase 3: 역사적 보정
+  # 기존 필수 에이전트
   - signal-classifier       # 실패 시 워크플로우 중단
   - report-generator        # 실패 시 워크플로우 중단
 ```

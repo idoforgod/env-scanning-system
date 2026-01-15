@@ -11,6 +11,110 @@ argument-hint: [--fast | --with-review | --phase <1|2|3> | --resume]
 
 ---
 
+## ⚠️ 상세 ToDo 체크리스트 (30단계) - 필수!
+
+**워크플로우 시작 시 반드시 아래 30개 상세 단계를 TodoWrite로 등록하세요.**
+
+```yaml
+# config/todo-steps-detailed.yaml 참조
+# 기존 9단계 → 30단계로 3배 상세화
+
+Phase 0: Pre-Scan Checks (3단계)
+  0-1: 의존성 검증 (dependency_checker.py)
+  0-2: 리뷰 일정 확인 (review_scheduler.py)
+  0-3: 데이터 폴더 초기화
+
+Phase 1A: Archive Loading (3단계)
+  1-1: Archive Loader 에이전트 호출
+  1-2: Archive Summary 생성
+  1-3: Dedup Index 생성
+
+Phase 1B: URL Discovery - Stage A (6단계)
+  2-1: 네이버 뉴스 크롤러 시작
+  2-2: 글로벌 뉴스 크롤러 시작
+  2-3: 구글 뉴스 크롤러 시작
+  2-4: WebSearch 스캐너 시작
+  2-5: 4개 크롤러 완료 대기
+  2-6: URL 수집 결과 검증
+
+Phase 1C: URL Processing (4단계)
+  3-1: URL Merger 실행 (병합)
+  3-2: 병합 결과 확인
+  3-3: URL Validator 실행 (접근성 검증)
+  3-4: 접근성 검증 결과 확인
+
+Phase 1D: Content Fetching - Stage B (3단계)
+  4-1: Batch Content Fetcher 시작
+  4-2: 배치 처리 진행 (8개씩)
+  4-3: articles.json 생성 확인 (Source of Truth)
+
+Phase 1E: Deduplication (3단계)
+  5-1: Dedup Filter 에이전트 호출
+  5-2: 중복 제거 결과 확인
+  5-3: Gate 1 검증 (articles.json 필수)
+
+Phase 2: Signal Classification (3단계)
+  6-1: Signal Classifier 호출 (유일한 LLM 요약)
+  6-2: STEEPS 분류 결과 확인
+  6-3: pSRT 신뢰도 점수 계산
+
+Phase 3A: DB Update (2단계)
+  8-1: DB Updater 에이전트 호출
+  8-2: 신호 추가 결과 확인
+
+Phase 3B: Report Generation (2단계)
+  9-1: Report Generator 호출 (Python 템플릿)
+  9-2: Gate 3 검증 (report.md 필수)
+
+Phase 3C: Cleanup (3단계)
+  10-1: 루트 디렉토리 임시 파일 정리
+  10-2: data 폴더 중간 산출물 정리
+  10-3: 워크플로우 완료 확인
+```
+
+### TodoWrite 초기화 템플릿 (복사용)
+
+워크플로우 시작 시 아래 JSON을 TodoWrite에 전달:
+
+```json
+[
+  {"content": "0-1: 의존성 검증 (dependency_checker.py)", "status": "pending", "activeForm": "크롤러 의존성 검증 중"},
+  {"content": "0-2: 리뷰 일정 확인", "status": "pending", "activeForm": "리뷰 일정 확인 중"},
+  {"content": "0-3: 데이터 폴더 초기화", "status": "pending", "activeForm": "데이터 폴더 생성 중"},
+  {"content": "1-1: Archive Loader 에이전트 호출", "status": "pending", "activeForm": "기존 신호 DB 로딩 중"},
+  {"content": "1-2: Archive Summary 생성", "status": "pending", "activeForm": "아카이브 요약 생성 중"},
+  {"content": "1-3: Dedup Index 생성", "status": "pending", "activeForm": "중복 인덱스 생성 중"},
+  {"content": "2-1: 네이버 뉴스 크롤러 시작", "status": "pending", "activeForm": "네이버 뉴스 URL 수집 중"},
+  {"content": "2-2: 글로벌 뉴스 크롤러 시작", "status": "pending", "activeForm": "글로벌 뉴스 URL 수집 중"},
+  {"content": "2-3: 구글 뉴스 크롤러 시작", "status": "pending", "activeForm": "구글 뉴스 URL 수집 중"},
+  {"content": "2-4: WebSearch 스캐너 시작", "status": "pending", "activeForm": "STEEPS WebSearch URL 수집 중"},
+  {"content": "2-5: 4개 크롤러 완료 대기", "status": "pending", "activeForm": "크롤러 완료 대기 중"},
+  {"content": "2-6: URL 수집 결과 검증", "status": "pending", "activeForm": "URL 수집 결과 검증 중"},
+  {"content": "3-1: URL Merger 실행 (병합)", "status": "pending", "activeForm": "URL 병합 실행 중"},
+  {"content": "3-2: 병합 결과 확인", "status": "pending", "activeForm": "병합 결과 확인 중"},
+  {"content": "3-3: URL Validator 실행 (접근성 검증)", "status": "pending", "activeForm": "URL 접근성 검증 중"},
+  {"content": "3-4: 접근성 검증 결과 확인", "status": "pending", "activeForm": "접근성 검증 결과 확인 중"},
+  {"content": "4-1: Batch Content Fetcher 시작", "status": "pending", "activeForm": "배치 본문 추출 시작 중"},
+  {"content": "4-2: 배치 처리 진행 (8개씩)", "status": "pending", "activeForm": "배치별 본문 추출 중"},
+  {"content": "4-3: articles.json 생성 확인", "status": "pending", "activeForm": "기사 본문 파일 검증 중"},
+  {"content": "5-1: Dedup Filter 에이전트 호출", "status": "pending", "activeForm": "중복 필터링 에이전트 호출 중"},
+  {"content": "5-2: 중복 제거 결과 확인", "status": "pending", "activeForm": "중복 제거 결과 확인 중"},
+  {"content": "5-3: Gate 1 검증", "status": "pending", "activeForm": "Gate 1 검증 중"},
+  {"content": "6-1: Signal Classifier 호출", "status": "pending", "activeForm": "STEEPS 분류 및 요약 중"},
+  {"content": "6-2: STEEPS 분류 결과 확인", "status": "pending", "activeForm": "STEEPS 분류 결과 확인 중"},
+  {"content": "6-3: pSRT 신뢰도 점수 계산", "status": "pending", "activeForm": "pSRT 점수 계산 중"},
+  {"content": "8-1: DB Updater 에이전트 호출", "status": "pending", "activeForm": "신호 DB 업데이트 중"},
+  {"content": "8-2: 신호 추가 결과 확인", "status": "pending", "activeForm": "신호 추가 결과 확인 중"},
+  {"content": "9-1: Report Generator 호출", "status": "pending", "activeForm": "보고서 생성 중"},
+  {"content": "9-2: Gate 3 검증", "status": "pending", "activeForm": "Gate 3 검증 중"},
+  {"content": "10-1: 루트 디렉토리 임시 파일 정리", "status": "pending", "activeForm": "루트 임시 파일 정리 중"},
+  {"content": "10-2: data 폴더 중간 산출물 정리", "status": "pending", "activeForm": "data 폴더 정리 중"},
+  {"content": "10-3: 워크플로우 완료 확인", "status": "pending", "activeForm": "워크플로우 완료 처리 중"}
+]
+```
+
+---
+
 ## ⚠️ v4 핵심 원칙 (필수)
 
 ```
@@ -425,13 +529,13 @@ python3 src/scripts/cleanup/post_scan_cleanup.py --date {date}
 # 유지: priority-ranked-weekly-*.json, weekly-environmental-scan-*.md
 # 삭제: hallucination-report, impact-assessment, 중간 보고서
 
-WEEKLY_DIR="data/weekly/{YYYY}/W{WW}"
+WEEKLY_DIR="data/consolidated/weekly/{YYYY}-W{WW}"
 
 # 1. analysis/ 폴더 정리 (priority-ranked만 유지)
 find ${WEEKLY_DIR}/analysis/ -type f ! -name "priority-ranked-weekly-*.json" -delete 2>/dev/null
 
 # 2. 루트 임시 보고서 삭제 (최종 보고서만 유지)
-find ${WEEKLY_DIR}/ -maxdepth 1 -type f ! -name "weekly-environmental-scan-*.md" -delete 2>/dev/null
+find ${WEEKLY_DIR}/ -maxdepth 1 -type f ! -name "weekly-*.md" -delete 2>/dev/null
 ```
 
 ### 정리 후 data 폴더 구조
@@ -446,10 +550,11 @@ data/{YYYY}/{MM}/{DD}/
 └── reports/
     └── environmental-scan-{date}.md    ← 유지 (최종 보고서)
 
-data/weekly/{YYYY}/W{WW}/
+data/consolidated/weekly/{YYYY}-W{WW}/
 ├── analysis/
 │   └── priority-ranked-weekly-*.json   ← 유지 (주간 우선순위)
-└── weekly-environmental-scan-*.md      ← 유지 (주간 보고서)
+├── week-summary.json                   ← 유지 (요약 데이터)
+└── weekly-consolidated-report.md       ← 유지 (주간 종합 보고서)
 ```
 
 **삭제 조건**: Gate 3 통과 (report.md 생성 확인) 후에만 실행

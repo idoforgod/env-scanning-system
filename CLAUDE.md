@@ -15,6 +15,12 @@
 | `/env-scan:run --with-review` | Human Review 포함 (각 Phase 후 검토) |
 | `/env-scan:resume` | 체크포인트에서 재개 |
 | `/env-scan:status` | 현재 상태 확인 |
+| `/env-scan:consolidate` | **주간 종합 보고서 생성 (중복 제거 및 통합)** |
+| `/env-scan:consolidate --week 2026-W03` | 특정 주차 보고서 생성 |
+| `/env-scan:consolidate-monthly` | **월간 종합 보고서 생성 (심층 분석)** |
+| `/env-scan:consolidate-monthly --month 2026-01` | 특정 월 보고서 생성 |
+| `/env-scan:consolidate-quarterly` | **분기 종합 보고서 생성 (메타 분석 및 품질 평가)** |
+| `/env-scan:consolidate-quarterly --quarter 2026-Q1` | 특정 분기 보고서 생성 |
 
 ---
 

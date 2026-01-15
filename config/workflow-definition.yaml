@@ -1,10 +1,26 @@
 # Environmental Scanning Workflow Definition
 # Orchestrator가 참조하는 선언적 워크플로우 정의
-# 기존 17단계 워크플로우 전체 유지
+# 기존 17단계 워크플로우 전체 유지 + v4 Source of Truth 적용
 
-version: "2.1"
-name: "env-scanning-workflow"
-description: "환경스캐닝 자동화 워크플로우 (17단계 전체)"
+version: "4.0"
+name: "env-scanning-workflow-v4"
+description: "환경스캐닝 자동화 워크플로우 (17단계 + Source of Truth)"
+
+# ═══════════════════════════════════════════════════════════════════
+# v4 Source of Truth 원칙
+# ═══════════════════════════════════════════════════════════════════
+#
+# 핵심 원칙:
+#   1. 모든 신호는 실제 URL 본문(original_content)에서 생성
+#   2. LLM 요약은 signal-classifier에서 딱 1번만 수행
+#   3. 요약 후 summary/original_content 수정 절대 금지
+#   4. 보고서는 Python 템플릿으로 생성 (LLM 재작성 금지)
+#
+# 데이터 흐름:
+#   Stage A (URL Discovery) → Stage B (Content Fetching) →
+#   signal-classifier (유일한 요약) → 메타데이터만 추가 → Python 보고서
+#
+# ═══════════════════════════════════════════════════════════════════
 
 # 모드 설정
 default_mode: marathon  # 기본 모드를 Marathon으로 설정
@@ -74,33 +90,83 @@ phases:
           dedup_index: "context/dedup-index-{date}.json"
         token_estimate: 800
 
-      - id: step2
-        agent: multi-source-scanner
-        description: "다중 소스 스캐닝"
-        parallel: false
+      # v4: Stage A - URL Discovery (다중 크롤러 병렬)
+      - id: step2a
+        agents:
+          - naver-news-crawler
+          - global-news-crawler
+          - google-news-crawler
+        description: "Stage A: URL 수집 (검색 스니펫은 힌트용)"
+        parallel: true
         marathon_mode:
           enabled: "{mode.marathon_enabled}"
-          stage1_output: "data/{date}/raw/stage1-signals.json"
-          stage2_output: "data/{date}/raw/exploration-signals.json"
+        input:
+          sources: "config/regular-sources.json"
+          keywords: "config/domains.yaml"
+        output:
+          naver_urls: "data/{date}/raw/naver-urls-{date}.json"
+          global_urls: "data/{date}/raw/global-urls-{date}.json"
+          google_urls: "data/{date}/raw/google-urls-{date}.json"
+        token_estimate: 1500
+
+      # v4: URL Merger (Python 스크립트)
+      - id: step2b
+        type: script
+        script: "python src/scripts/pipeline_v4/url_merger.py {date}"
+        description: "URL 병합 및 중복 제거"
+        parallel: false
+        input:
+          urls: "data/{date}/raw/*-urls-{date}.json"
+        output:
+          merged: "data/{date}/raw/urls-{date}.json"
+        token_estimate: 0
+
+      # v4: Stage B - Content Fetching (본문 추출)
+      - id: step2c
+        type: script
+        script: "python src/scripts/pipeline_v4/content_fetcher.py {date}"
+        description: "Stage B: 실제 기사 본문 추출 (Source of Truth)"
+        parallel: false
+        input:
+          urls: "data/{date}/raw/urls-{date}.json"
+        output:
+          articles: "data/{date}/raw/articles-{date}.json"
+        token_estimate: 0
+        note: "이 본문이 신호 생성의 유일한 Source of Truth"
+
+      # Marathon Mode: 신규 소스 탐험 (옵션)
+      - id: step2d
+        agent: multi-source-scanner
+        description: "Marathon: 신규 소스 탐험 (선택적)"
+        parallel: false
+        condition: "{mode.marathon_enabled}"
+        marathon_mode:
+          enabled: true
+          stage2_agents:
+            - exploration-scanner
+            - link-tracker
+            - source-evaluator
         input:
           sources: "config/regular-sources.json"
           previous: "context/dedup-index-{date}.json"
         output:
-          signals: "data/{date}/raw/scanned-signals.json"
+          exploration: "data/{date}/raw/exploration-urls-{date}.json"
         token_estimate: 2000
 
       - id: step3
         agent: dedup-filter
-        description: "중복 신호 필터링"
+        description: "중복 URL/기사 필터링"
         parallel: false
         input:
-          signals: "data/{date}/raw/scanned-signals.json"
+          # v4: articles (본문 포함) 기준으로 중복 체크
+          articles: "data/{date}/raw/articles-{date}.json"
           database: "signals/database.json"
           index: "context/dedup-index-{date}.json"
         output:
-          filtered: "data/{date}/filtered/filtered-signals.json"
+          filtered: "data/{date}/filtered/filtered-articles-{date}.json"
           new_index: "context/dedup-index-{date}.json"
         token_estimate: 600
+        note: "v4: URL + 제목 + 본문 유사도로 중복 판정"
 
       - id: step4
         type: human_review
@@ -111,15 +177,19 @@ phases:
 
     gate:
       id: gate1
-      name: "Phase 1 Quality Gate"
+      name: "Phase 1 Quality Gate (v4)"
       checks:
-        - name: "filtered signals exist"
-          file: "data/{date}/filtered/filtered-signals.json"
+        - name: "articles fetched"
+          file: "data/{date}/raw/articles-{date}.json"
           condition: "exists"
-        - name: "signal count > 0"
-          file: "data/{date}/filtered/filtered-signals.json"
+          note: "v4: 실제 본문이 추출되었는지 확인"
+        - name: "filtered articles exist"
+          file: "data/{date}/filtered/filtered-articles-{date}.json"
+          condition: "exists"
+        - name: "article count > 0"
+          file: "data/{date}/filtered/filtered-articles-{date}.json"
           condition: "json_count > 0"
-          path: "$.signals"
+          path: "$.articles"
         - name: "dedup index valid"
           file: "context/dedup-index-{date}.json"
           condition: "exists"
@@ -132,16 +202,22 @@ phases:
     description: "신호 분석, 분류, 우선순위 산정"
 
     steps:
+      # ⚠️ v4 핵심: 유일한 LLM 요약 단계
       - id: step5
         agent: signal-classifier
-        description: "STEEPS 분류 및 pSRT 계산"
+        description: "v4 Source of Truth: STEEPS 분류 + 유일한 LLM 요약"
         parallel: false
         input:
-          signals: "data/{date}/filtered/filtered-signals.json"
+          # v4: 실제 기사 본문(articles)을 입력으로 받음
+          articles: "data/{date}/filtered/filtered-articles-{date}.json"
         output:
-          structured: "data/{date}/structured/structured-signals.json"
-          psrt: "data/{date}/analysis/pSRT-scores.json"
-        token_estimate: 1200
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+          psrt: "data/{date}/analysis/pSRT-scores-{date}.json"
+        token_estimate: 1500
+        v4_rules:
+          - "original_content: 기사 본문 그대로 복사"
+          - "summary: 기사 본문만 보고 요약 (검색 스니펫 사용 금지)"
+          - "이후 단계에서 summary 수정 절대 금지"
 
       - id: step6
         agent: confidence-evaluator
@@ -153,43 +229,52 @@ phases:
           evaluation: "data/{date}/analysis/confidence-evaluation.json"
         token_estimate: 600
 
+      # ⚠️ v4 핵심: summary ↔ original_content 일치 검증
       - id: step7
         agent: hallucination-detector
-        description: "할루시네이션 검증"
+        description: "v4 Source of Truth 검증: summary가 original_content에 근거하는지"
         parallel: false
         mandatory: true  # 필수 - 실패 시 워크플로우 중단
         input:
-          psrt: "data/{date}/analysis/pSRT-scores.json"
-          evaluation: "data/{date}/analysis/confidence-evaluation.json"
-          structured: "data/{date}/structured/structured-signals.json"
+          psrt: "data/{date}/analysis/pSRT-scores-{date}.json"
+          evaluation: "data/{date}/analysis/confidence-evaluation-{date}.json"
+          structured: "data/{date}/structured/structured-signals-{date}.json"
         output:
-          report: "data/{date}/analysis/hallucination-report.json"
+          report: "data/{date}/analysis/hallucination-report-{date}.json"
         token_estimate: 800
+        v4_checks:
+          - "summary의 모든 내용이 original_content에 존재하는가?"
+          - "기사에 없는 수치/인용이 추가되지 않았는가?"
+          - "SUMMARY_CONTENT_MISMATCH 시 critical 플래그"
 
       - id: step8
         agent: pipeline-validator
         description: "데이터 동기화 검증"
         parallel: false
         input:
-          structured: "data/{date}/structured/structured-signals.json"
-          psrt: "data/{date}/analysis/pSRT-scores.json"
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+          psrt: "data/{date}/analysis/pSRT-scores-{date}.json"
         output:
-          validation: "data/{date}/analysis/validation-report.json"
+          validation: "data/{date}/analysis/validation-report-{date}.json"
         token_estimate: 400
 
+      # v4: 메타데이터만 추가, 내용 수정 금지
       - id: step9_10_parallel
         agents:
           - impact-analyzer
           - priority-ranker
-        description: "영향 분석 + 우선순위 산정 (병렬)"
+        description: "영향 분석 + 우선순위 산정 (병렬, 메타데이터만)"
         parallel: true
         input:
-          structured: "data/{date}/structured/structured-signals.json"
-          hallucination: "data/{date}/analysis/hallucination-report.json"
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+          hallucination: "data/{date}/analysis/hallucination-report-{date}.json"
         output:
-          impact: "data/{date}/analysis/impact-assessment.json"
-          priority: "data/{date}/analysis/priority-ranked.json"
+          impact: "data/{date}/analysis/impact-assessment-{date}.json"
+          priority: "data/{date}/analysis/priority-ranked-{date}.json"
         token_estimate: 1500  # 병렬이므로 합산
+        v4_rules:
+          - "summary/original_content 수정 금지"
+          - "impact_assessment, priority 필드만 추가"
 
       - id: step11
         type: human_review
@@ -200,26 +285,31 @@ phases:
 
     gate:
       id: gate2
-      name: "Phase 2 Quality Gate"
+      name: "Phase 2 Quality Gate (v4)"
       checks:
         - name: "hallucination report exists"
-          file: "data/{date}/analysis/hallucination-report.json"
+          file: "data/{date}/analysis/hallucination-report-{date}.json"
           condition: "exists"
           mandatory: true
+        - name: "v4 Source of Truth verified"
+          file: "data/{date}/analysis/hallucination-report-{date}.json"
+          condition: "no_critical_flags"
+          path: "$.verification_results.critical_count"
+          note: "SUMMARY_CONTENT_MISMATCH가 없어야 함"
         - name: "validation report exists"
-          file: "data/{date}/analysis/validation-report.json"
+          file: "data/{date}/analysis/validation-report-{date}.json"
           condition: "exists"
         - name: "pSRT scores exist"
-          file: "data/{date}/analysis/pSRT-scores.json"
+          file: "data/{date}/analysis/pSRT-scores-{date}.json"
           condition: "exists"
         - name: "priority ranking exists"
-          file: "data/{date}/analysis/priority-ranked.json"
+          file: "data/{date}/analysis/priority-ranked-{date}.json"
           condition: "exists"
         - name: "signal count consistency"
           condition: "signal_count_match"
           files:
-            - "data/{date}/filtered/filtered-signals.json"
-            - "data/{date}/structured/structured-signals.json"
+            - "data/{date}/filtered/filtered-articles-{date}.json"
+            - "data/{date}/structured/structured-signals-{date}.json"
           tolerance: 0.05  # 5% 허용
 
   # ═══════════════════════════════════════════════════════════════════
@@ -230,20 +320,35 @@ phases:
     description: "DB 업데이트, 보고서 생성, 아카이빙"
 
     steps:
-      - id: step12_13_parallel
-        agents:
-          - db-updater
-          - report-generator
-        description: "DB 업데이트 + 보고서 생성 (병렬)"
-        parallel: true
+      # DB 업데이트
+      - id: step12
+        agent: db-updater
+        description: "DB 업데이트"
+        parallel: false
         input:
-          structured: "data/{date}/structured/structured-signals.json"
+          structured: "data/{date}/structured/structured-signals-{date}.json"
           analysis: "data/{date}/analysis/"
         output:
           database: "signals/database.json"
           snapshot: "signals/snapshots/database-{date}.json"
+        token_estimate: 600
+
+      # ⚠️ v4 핵심: Python 템플릿으로 보고서 생성 (LLM 재작성 금지)
+      - id: step13
+        type: script
+        script: "python src/scripts/pipeline_v4/report_builder.py {date}"
+        description: "v4: Python 템플릿으로 보고서 생성 (summary 그대로 사용)"
+        parallel: false
+        input:
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+          analysis: "data/{date}/analysis/"
+        output:
           report: "data/{date}/reports/environmental-scan-{date}.md"
-        token_estimate: 1200
+        token_estimate: 0
+        v4_rules:
+          - "LLM은 보고서 내용 직접 작성 금지"
+          - "Python report_builder.py가 summary 그대로 복사"
+          - "URL도 신호 데이터에서 그대로 복사"
 
       - id: step14
         agent: archive-notifier
@@ -396,11 +501,13 @@ agents:
     skippable: false
 
   report-generator:
-    subagent_type: "report-generator"
+    # v4: LLM 에이전트 대신 Python 스크립트 사용
+    type: "script"
+    script: "python src/scripts/pipeline_v4/report_builder.py"
     max_retries: 2
-    timeout: 900
+    timeout: 300  # Python 스크립트는 빠름
     skippable: false
-    model: opus
+    note: "v4: LLM이 아닌 Python이 보고서 생성"
 
   archive-notifier:
     subagent_type: "archive-notifier"
@@ -421,14 +528,20 @@ agents:
     timeout: 300
     skippable: true  # 실패해도 계속
 
-# 토큰 예산 (17단계 기준)
+# 토큰 예산 (v4 기준)
 token_budget:
   total_limit: 100000
-  phase1_limit: 3500   # 4단계
-  phase2_limit: 4500   # 7단계
-  phase3_limit: 2500   # 6단계
+  phase1_limit: 2500   # Stage A/B + 중복제거 (Python 스크립트 비용 제외)
+  phase2_limit: 4000   # signal-classifier가 주요 토큰 소비
+  phase3_limit: 1500   # Python 보고서 생성으로 대폭 절감
   overhead: 1000       # Orchestrator 자체 사용
-  estimated_total: 11500  # 기존 26,000 대비 56% 절감
+  estimated_total: 9000  # 기존 대비 65% 절감
+
+  v4_savings:
+    report_generation: "Python 스크립트로 대체 → 토큰 0"
+    content_fetching: "Python 스크립트로 대체 → 토큰 0"
+    url_merging: "Python 스크립트로 대체 → 토큰 0"
+    single_summarization: "signal-classifier에서만 요약 → 중복 제거"
 
 # 체크포인트 설정
 checkpoint:

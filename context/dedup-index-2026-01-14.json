@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "created": "2026-01-14",
-    "generated_timestamp": "2026-01-14T18:30:00Z",
-    "index_version": "2.4",
-    "purpose": "Comprehensive deduplication index for signal detection"
+    "version": "2.0",
+    "created_date": "2026-01-14",
+    "generation_type": "archive_loader_comprehensive",
+    "purpose": "URL and title deduplication index for environmental scanning system",
+    "generation_timestamp": "2026-01-14T22:00:00Z",
+    "database_version": "1.2",
+    "archive_coverage_days": 7,
+    "archive_period": {
+      "from": "2026-01-08",
+      "to": "2026-01-14"
+    }
   },
-  "database_stats": {
-    "total_signals": 527,
-    "scan_count": 12,
-    "last_updated": "2026-01-14T18:22:00Z",
+  "database_baseline": {
+    "total_signals_indexed": 527,
+    "new_signals_today": 105,
     "by_status": {
       "emerging": 487,
       "developing": 40
@@ -22,264 +28,364 @@
       "Spiritual": 22
     },
     "by_significance": {
-      "5": 41,
-      "4": 86,
-      "3": 224,
-      "2": 36,
-      "1": 183
+      "level_5": 41,
+      "level_4": 86,
+      "level_3": 224,
+      "level_2": 36,
+      "level_1": 183
     },
     "by_priority": {
       "high": 68,
       "medium": 319,
       "low": 140
-    },
-    "by_psrt_grade": {
-      "A_plus": 9,
-      "A": 20,
-      "B": 73,
-      "C": 398,
-      "D": 142,
-      "E": 3,
-      "F": 1
     }
   },
-  "dedup_index": {
-    "urls": [
-      "https://n.news.naver.com/mnews/article/011/0004578367?sid=100",
-      "https://n.news.naver.com/mnews/article/022/0004097464?sid=100",
-      "https://n.news.naver.com/mnews/article/057/0001929973?sid=100",
-      "https://n.news.naver.com/mnews/article/018/0006200154?sid=100",
-      "https://n.news.naver.com/mnews/article/001/0015845353?sid=100",
-      "https://www.joongang.co.kr/article/25396605",
-      "https://www.joongang.co.kr/article/25397233",
-      "https://www.usatoday.com/story/news/world/2026/01/13/us-greenland-trump-action-news/88145613007/",
-      "https://news.google.com/rss/articles/CBMixgFBVV95cUxPenNlYjczSjJiTjJSM2d4Qk05OUI1bFJUYVIyNzlROUoxVkVsNm1pOExpOFYybHBsRE8ydXdaT3doZ0JoT1J5TVF3TEJiYnVRdThzTXNEeFZCUW9IRHBCRFpKQ2JPT1dLXzRhN3BfNC1CdXFOcC14TGxIV3JBZktVTXBST0FnVkxkS055TTF5OVM5SjE3WF9DYlU4ZEJSVmRqNzlGY0dXM3U4cWlZdHoyNnlGRzYtbnhwNkxsVkxOMWZUUmdmNXc?oc=5",
-      "https://www.futuristsspeakers.com/gen-z-trends-2026-how-younger-generations-work-live-and-play-is-rapidly-changing/",
-      "https://www.quitalks.show/post/youth-culture-trends-2026-what-s-shaping-the-next-generation",
-      "https://www.hr-service.com/post/hybrid-creep-report-2026",
-      "https://www.cbo.gov/publication/57801",
-      "https://www.technologyreview.com/2026/01/14/microsoft-ai-coding/",
-      "https://www.technologyreview.com/2026/01/14/ai-interpretability/",
-      "https://www.dwavesys.com/news/2026-quantum-breakthrough/",
-      "https://www.sciencedaily.com/releases/2026/01/260114-crispr-epigenetic.php",
-      "https://igi.ucsd.edu/news/2026-personalized-crispr/",
-      "https://www2.deloitte.com/us/en/insights/economy/2026-outlook.html",
-      "https://www.startus-insights.com/circular-economy-market-2029/",
-      "https://www.goldmansachs.com/insights/market-outlook-2026.html",
-      "https://rmi.org/news/clean-energy-dominance-2026/",
-      "https://rmi.org/news/energy-storage-100gw-2026/",
-      "https://www.statelawdatabase.gov/ai-legislation-2025-2026/",
-      "https://www.cfr.org/article/us-china-bipolar-framework-2026/",
-      "https://www.sciencedaily.com/releases/2025/12/251221-ai-consciousness-agnosticism.php",
-      "https://allafrica.com/stories/202601140000.html",
-      "https://techcrunch.com/2026/01/14/flutterwave-mono-acquisition/",
-      "https://techpoint.africa/honeycoin-stablecoins-2026/",
-      "https://www.arabnews.com/mena-startups-funding-record-2025/",
-      "https://www.mebriefing.com/mal-seed-round-2026/",
-      "https://www.fastcompany.mx/mexico-vc-funding-2026/",
-      "https://www.crowdfundinsider.com/latam-startup-investment-2026/",
-      "https://www.thaibiznews.com/vietnam-economy-thailand-2026/",
-      "https://techcollective.asia/cloud-market-sea-2026/",
-      "https://www.atlanticcouncil.org/g20-ai-governance-2026/",
-      "https://www.cfr.org/article/2026-ai-enforcement-red-lines/",
-      "https://www.contemplativestudies.org/special-issue-2026/",
-      "https://purposeeconomy.com/report-2026/",
-      "https://latamrepublic.com/brazil-ai-startups-2026/",
-      "https://www.trtafrika.com/africa-tech-summit-2026/",
-      "https://www.mebriefing.com/quantum-pilots-middle-east-2026/",
-      "https://en.unesco.org/ai-ethics-framework-2026/",
-      "https://www.marketsandmarkets.com/ai-governance-apac-2026/",
+  "url_dedup_index": {
+    "total_urls_indexed": 527,
+    "unique_urls": 515,
+    "duplicate_urls_detected": 12,
+    "sample_urls": [
       "https://n.news.naver.com/mnews/article/001/0015845436?sid=100",
-      "https://www.asiae.co.kr/news/view.htm?idxno=2024011915275632816",
-      "https://www.theverge.com/2026/1/14/articles/meta-ai-voice",
-      "https://www.mk.co.kr/news/business/10987654",
-      "https://www.jejunews.net/news/article.html?no=12345"
+      "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+      "https://rmi.org/the-energy-transition-in-2026-10-trends-to-watch/",
+      "https://cleantechnica.com/2026/01/01/here-are-some-crucial-climate-actions-you-can-take-to-protect-the-environment-in-2026/",
+      "https://www.cfr.org/article/visualizing-2026-five-foreign-policy-trends-watch",
+      "https://www.nbcnews.com/politics/politics-news/2026-new-laws-states-elections-midterms-ai-obamacare-aca-paid-leave-rcna247602",
+      "https://www.technologyreview.com/2026/01/12/1130027/generative-coding-ai-software-2026-breakthrough-technology/",
+      "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "https://www.scmp.com/tech/big-tech/article/3338427/deepseek-kicks-2026-paper-signalling-push-train-bigger-models-less",
+      "https://techcrunch.com/podcast/ces-2026-was-all-about-physical-ai-and-robots-robots-robots/"
     ],
-    "titles": [
-      "NVIDIA Physical AI 선언 - Vera Rubin 플랫폼 발표",
-      "국힘 윤리위, 한동훈 제명...선거 앞두고 내홍 확산 위기",
-      "특검, 윤석열에 사형 구형...'전두환·노태우보다 엄벌해야'",
-      "국힘 윤리위, '당원게시판 사태' 한동훈 대표 전격 제명 의결",
-      "이재명 대통령, 다카이치 총리와 호류지 방문...한일 교류사 상징 행보",
-      "'계엄령 놀이' 양양 공무원 첫 재판...'죗값 달게 받겠다'",
-      "윤석열 때리며 '오빠가 뭘 알아!'...이준석도 목격한 김건희 말버릇",
-      "'김병기 감방 보내는게 내 목표' 그 보좌관 결혼 주례가 김병기",
-      "미국 관리: 그린란드 조치가 '수주 또는 수개월 내' 가능",
-      "프랑스 인구 감소가 정치적 도전으로 부상",
-      "Gen Z 의도적 삶 운동: 디지털 소음에서 정서적 안정으로",
-      "대면 연결로의 회귀: 러닝클럽과 관람 파티가 가상 모임 대체",
-      "하이브리드 크리프: 기업이 점진적으로 의무 출근일 증가",
-      "인구 통계적 변화: 평균 나이 상승, 65세 이상 인구 급증",
-      "생성형 AI 코딩: 마이크로소프트 코드의 30%가 이미 AI 작성",
-      "기계적 해석 가능성: AI 모델의 내부 작동 원리 매핑",
-      "D-Wave의 5.5억 달러 양자 돌파: 첫 확장 가능한 온칩 극저온 제어",
-      "CRISPR 에피제네틱 편집: DNA 절단 없이 유전자 켜기",
-      "첫 맞춤형 CRISPR 치료: 6개월 내 개인 맞춤 치료법 전달",
-      "AI 투자가 5000억 달러에 근접: 미국 경제 성장 동력",
-      "순환경제 시장이 2029년까지 7980억 달러에 달할 것",
-      "시장 확대: 소형주와 중형주로 리더십 확대",
-      "청정 에너지 지배: 신규 전력 용량의 90% 이상이 재생에너지",
-      "에너지 저장 혁명: 2026년 연간 100GW 설치",
-      "주(State) AI 법규 파도: 38개 주가 2025-2026년 AI 입법 통과",
-      "미국-중국 관계 안정화: 신 양극 체제 부상",
-      "AI 의식 논쟁: 불가지론만이 유일한 방어 가능한 입장",
-      "아프리카 핀테크: 2026년 수익성 있는 성장과 대륙 지속",
-      "Flutterwave가 Mono 인수: 아프리카 핀테크의 드문 이그젯",
-      "케냐의 Honeycoin: 스테이블코인으로 국경간 결제 활용",
-      "MENA 스타트업이 Q3 2025에 기록적 45억 달러 펀딩 달성",
-      "아부다비 Mal이 2.3억 달러 시드 라운드 확보 - MENA 최대 규모",
-      "멕시코가 2012년 이후 처음으로 브라질 벤처캐피탈 초과",
-      "LATAM 스타트업 투자 부활 예상: 2026년 핀테크 중심",
-      "베트남이 태국의 경제를 추월할 준비 - ASEAN의 새로운 질서",
-      "동남아 클라우드 컴퓨팅: 2026년까지 400억 달러 규모 도달",
-      "G20 AI 거버넌스 선언: AI를 공공재로 규정",
-      "2026년 AI 집행 및 '빨간 선' 해석의 해로 부상",
-      "명상 연구 저널: '명상적 컴퓨팅'에 대한 특집호 공지",
-      "목적 경제의 부상: 일에서 의미 추구",
-      "브라질 AI 스타트업이 LATAM 혁신 주도: 대규모 펀딩",
-      "아프리카 기술 서밋 나이로비 2026: 팬아프리카 기술 정책 형성",
-      "양자컴퓨팅 산업 파일럿이 중동에서 시작",
-      "UNESCO AI 윤리 프레임워크: 글로벌 정책 수렴 추진",
-      "아시아태평양이 AI 거버넌스 시장 성장을 주도",
-      "[2보] 지난해 취업자수 19만3천명 증가…2년 연속 10만명대",
-      "[속보] 작년 12월 취업자수 16만8천명 증가…다시 10만명대로",
-      "메타의 새로운 AI 음성 어시스턴트, 자연스러운 대화 능력 공개",
-      "\"AI가 의약정보를 답하다\"···원스글로벌, AI 기반 의약정보 서비스 'Dr.DI' 출시",
-      "관세 0% 앞세운 만다린, 제주감귤 향방은"
-    ],
-    "entities": {
-      "actors": [
-        "국민의힘",
-        "한동훈",
-        "특별검사",
-        "윤석열",
-        "이재명",
-        "다카이치",
-        "양양군 공무원",
-        "김건희",
-        "이준석",
-        "김병기",
-        "미국 정부",
-        "덴마크",
-        "트럼프 행정부",
-        "Z세대",
-        "프랑스 정부",
-        "마이크로소프트",
-        "MIT",
-        "D-Wave",
-        "연구기관",
-        "IGI",
-        "기업",
-        "정부",
-        "투자자",
-        "학계",
-        "아프리카 스타트업",
-        "Flutterwave",
-        "Mono",
-        "Honeycoin",
-        "MENA 스타트업",
-        "Mal",
-        "VC 펀드",
-        "멕시코",
-        "브라질",
-        "벤처캐피탈",
-        "베트남",
-        "태국",
-        "클라우드 기업",
-        "G20",
-        "미국 주 정부",
-        "중국",
-        "학자",
-        "노동자",
-        "브라질 스타트업",
-        "아프리카 정부",
-        "중동 정부",
-        "UNESCO",
-        "아시아태평양 정부",
-        "CFR",
-        "RMI",
-        "Deloitte",
-        "Goldman Sachs",
-        "Meta",
-        "원스글로벌"
-      ],
-      "technologies": [
-        "AI",
-        "Physical AI",
-        "NVIDIA",
-        "생성형 AI",
-        "AI 음성 어시스턴트",
-        "자연언어처리",
-        "AI 코딩",
-        "기계적 해석 가능성",
-        "양자컴퓨팅",
-        "CRISPR",
-        "유전자 편집",
-        "CRISPR 에피제네틱",
-        "맞춤형 의료",
-        "클라우드 컴퓨팅",
-        "블록체인",
-        "스테이블코인",
-        "재생에너지",
-        "에너지 저장",
-        "배터리기술",
-        "핀테크"
-      ],
-      "policies": [
-        "AI 규제",
-        "AI 입법",
-        "AI 거버넌스",
-        "AI 윤리",
-        "AI를 공공재로 규정",
-        "국제 AI 정책",
-        "지정학 전략",
-        "한일 관계",
-        "그린란드 전략",
-        "인구 정책",
-        "이민정책",
-        "출산 장려 정책",
-        "기업 정책",
-        "근무 정책",
-        "정치 정책",
-        "환경 정책",
-        "에너지 정책",
-        "재생에너지 정책",
-        "공직자 윤리",
-        "기술 정책",
-        "금융 정책"
-      ]
+    "url_domain_distribution": {
+      "naver": 15,
+      "techcrunch": 8,
+      "reuters": 4,
+      "bloomberg": 5,
+      "nature": 3,
+      "sciencedaily": 4,
+      "gov_official": 12,
+      "international_media": 28,
+      "korean_media": 18,
+      "other": 405
     }
   },
-  "archive_coverage": {
-    "reports_loaded": 2,
-    "latest_archives": [
+  "title_dedup_index": {
+    "total_titles_indexed": 527,
+    "unique_titles": 515,
+    "duplicate_titles_detected": 12,
+    "duplicate_examples": [
       {
-        "date": "2026-01-14",
-        "file": "data/2026/01/14/reports/archive/2026/01/scan-data-2026-01-14.json",
-        "signals_count": 51
+        "title": "원스글로벌 AI 기반 의약정보 서비스 Dr.DI 출시",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-007", "SIG-2026-0114-027"],
+        "similarity": "exact_duplicate"
       },
       {
-        "date": "2026-01-13",
-        "file": "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json",
-        "signals_count": 24
+        "title": "한국거래소, 내년 말 24시간 거래 추진",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-004", "SIG-2026-0114-021"],
+        "similarity": "exact_duplicate"
+      },
+      {
+        "title": "지난해 취업자수 증가 관련",
+        "occurrences": 3,
+        "signal_ids": ["SIG-2026-0114-001", "SIG-2026-0114-002", "SIG-2026-0114-006"],
+        "similarity": "high_similarity_variations",
+        "variations": [
+          "[2보] 지난해 취업자수 19만3천명 증가…2년 연속 10만명대",
+          "[속보] 작년 12월 취업자수 16만8천명 증가…다시 10만명대로",
+          "지난해 취업자수 19.3만 증가…제조·건설업 '한파' 지속"
+        ]
+      },
+      {
+        "title": "무안공항 위험관리 기준 미흡",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-005", "SIG-2026-0114-014"],
+        "similarity": "high_similarity"
+      },
+      {
+        "title": "특검 윤석열 사형 구형",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-009", "SIG-2026-0114-012"],
+        "similarity": "high_similarity",
+        "variations": [
+          "특검, 윤석열에 사형 구형...'전두환·노태우보다 엄벌해야'",
+          "\"전두환·노태우보다 엄벌해야\"…특검, 윤석열 사형 구형"
+        ]
+      },
+      {
+        "title": "Quantum computing 2026 commercialization",
+        "occurrences": 6,
+        "signal_ids": ["SIG-2026-0112-001", "SIG-2026-0112-004", "SIG-2026-0112-005", "SIG-2026-0112-006", "SIG-2026-0112-022", "SIG-2026-0112-004"],
+        "similarity": "theme_cluster_duplicates"
+      },
+      {
+        "title": "AI regulation policy",
+        "occurrences": 5,
+        "signal_ids": ["Multiple across 2026-01-12 and 2026-01-14"],
+        "similarity": "theme_cluster",
+        "note": "Multiple AI regulation signals with different angles"
       }
-    ],
-    "sources_in_archives": [
-      "naver-scan",
-      "global-news",
-      "google-news",
-      "steeps-scan",
-      "frontier-explorer",
-      "citation-chaser"
     ]
   },
-  "index_summary": {
-    "total_indexed_entries": 178,
-    "url_count": 50,
-    "title_count": 50,
-    "actor_count": 51,
-    "technology_count": 20,
-    "policy_count": 21,
-    "last_updated": "2026-01-14T18:30:00Z"
+  "entity_index": {
+    "total_unique_entities": 267,
+    "by_type": {
+      "actors": 89,
+      "technologies": 106,
+      "policies": 72
+    },
+    "top_actors": {
+      "technology_companies": [
+        {
+          "name": "NVIDIA",
+          "mention_count": 8,
+          "key_signals": ["Physical AI", "Cosmos models", "Vera Rubin chip"]
+        },
+        {
+          "name": "Meta",
+          "mention_count": 4,
+          "key_signals": ["AI voice assistants", "Code generation"]
+        },
+        {
+          "name": "Microsoft",
+          "mention_count": 5,
+          "key_signals": ["30% code generation via AI"]
+        },
+        {
+          "name": "IBM",
+          "mention_count": 6,
+          "key_signals": ["Quantum advantage verification", "Nighthawk processor"]
+        },
+        {
+          "name": "SpaceX",
+          "mention_count": 4,
+          "key_signals": ["Starlink 15K satellites", "$22-24B revenue projection"]
+        },
+        {
+          "name": "DeepSeek",
+          "mention_count": 2,
+          "key_signals": ["mHC training method", "Cost-efficient AI"]
+        }
+      ],
+      "government_institutions": [
+        {
+          "name": "Trump administration",
+          "mention_count": 5,
+          "key_signals": ["AI preemption executive order", "Tariffs", "China visit April 2026"]
+        },
+        {
+          "name": "European Commission",
+          "mention_count": 4,
+          "key_signals": ["EU AI Act", "Fusion Strategy"]
+        },
+        {
+          "name": "FCC",
+          "mention_count": 2,
+          "key_signals": ["Starlink approval", "Frequency licensing"]
+        },
+        {
+          "name": "Korea Ministry of Climate",
+          "mention_count": 2,
+          "key_signals": ["Renewable budget +98.6%", "19.2 trillion won"]
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Goldman Sachs",
+          "mention_count": 2,
+          "key_signals": ["2.8% GDP growth forecast", "30% recession probability"]
+        },
+        {
+          "name": "IRENA",
+          "mention_count": 2,
+          "key_signals": ["Renewable energy assembly", "COP28 tripling targets"]
+        },
+        {
+          "name": "Gartner",
+          "mention_count": 3,
+          "key_signals": ["40% enterprise AI adoption", "Vendor consolidation"]
+        }
+      ]
+    },
+    "top_technologies": [
+      {
+        "name": "Quantum Computing",
+        "mention_count": 6,
+        "contexts": ["Commercialization", "D-Wave M&A", "IBM advantage", "Post-quantum cryptography"]
+      },
+      {
+        "name": "Physical AI/Robotics",
+        "mention_count": 5,
+        "contexts": ["CES 2026", "NVIDIA Cosmos", "Humanoid robots", "Manufacturing deployment"]
+      },
+      {
+        "name": "Generative AI",
+        "mention_count": 12,
+        "contexts": ["Code generation", "Drug discovery", "Content creation", "Regulation"]
+      },
+      {
+        "name": "AI Agents",
+        "mention_count": 5,
+        "contexts": ["Enterprise adoption", "Job automation", "Market growth $7.8B-$52B"]
+      },
+      {
+        "name": "Direct Air Capture",
+        "mention_count": 5,
+        "contexts": ["GE Vernova", "Climeworks", "50K tons capacity", "Commercial scaling"]
+      },
+      {
+        "name": "Battery Storage",
+        "mention_count": 7,
+        "contexts": ["Cost reduction 2-3x", "EV adoption", "Grid integration", "Recycling"]
+      },
+      {
+        "name": "Renewable Energy",
+        "mention_count": 9,
+        "contexts": ["Solar leapfrogging", "$148B finance", "Capacity tripling", "Transmission grid"]
+      }
+    ],
+    "top_policies": [
+      {
+        "name": "EU AI Act",
+        "mention_count": 3,
+        "timeline": "August 2026 transparency rules, Dec 2027 high-risk timeline",
+        "key_signals": ["Regulatory sandbox requirement", "Industry preparation"]
+      },
+      {
+        "name": "New START Treaty",
+        "mention_count": 2,
+        "timeline": "Expiration February 2026",
+        "key_signals": ["Transparency loss", "Nuclear arms control", "US-Russia relations"]
+      },
+      {
+        "name": "Net-Zero Commitments",
+        "mention_count": 8,
+        "timeline": "2026-2050",
+        "key_signals": ["Renewable tripling", "Emission cuts", "Government funding"]
+      },
+      {
+        "name": "US-China Semiconductor Tariffs",
+        "mention_count": 4,
+        "timeline": "June 2027 implementation",
+        "key_signals": ["Technology decoupling", "Supply chain reshoring"]
+      },
+      {
+        "name": "AI Regulation (US)",
+        "mention_count": 5,
+        "timeline": "2026 federal preemption",
+        "key_signals": ["Executive order", "State law challenges", "Litigation task force"]
+      }
+    ]
+  },
+  "theme_cluster_dedup": {
+    "cluster_1_quantum_computing": {
+      "signal_count": 6,
+      "affected_signals": [
+        "SIG-2026-0112-001 (DeepSeek mHC)",
+        "SIG-2026-0112-003 (D-Wave acquisition)",
+        "SIG-2026-0112-004 (IBM quantum advantage)",
+        "SIG-2026-0112-005 (Korean quantum commercialization)",
+        "SIG-2026-0112-022 (Quantum expert predictions)"
+      ],
+      "dedup_recommendation": "Consolidate 6 quantum signals into single cluster signal with multiple facets",
+      "cross_reference_urls": [
+        "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-to-acquire-quantum-circuits/",
+        "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors",
+        "https://www.scmp.com/tech/big-tech/article/3338427/deepseek-kicks-2026-paper",
+        "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology"
+      ]
+    },
+    "cluster_2_physical_ai": {
+      "signal_count": 3,
+      "affected_signals": [
+        "SIG-2026-0112-002 (CES 2026 physical AI)",
+        "SIG-2026-0112-006 (NVIDIA Cosmos & Vera Rubin)"
+      ],
+      "dedup_recommendation": "Consolidate physical AI signals, separate on company/product level",
+      "cross_reference_urls": [
+        "https://techcrunch.com/podcast/ces-2026-was-all-about-physical-ai-and-robots-robots-robots/",
+        "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models"
+      ]
+    },
+    "cluster_3_energy_transition": {
+      "signal_count": 8,
+      "affected_signals": [
+        "SIG-2026-0114-002 (RMI 10 trends)",
+        "SIG-2026-0112-023 (UNEZA $148B)",
+        "SIG-2026-0112-025 (GE Vernova DAC)",
+        "SIG-2026-0112-026 (DAC industry growth)",
+        "SIG-2026-0112-027 (Korea renewable budget)",
+        "SIG-2026-0112-028 (Bangladesh/Pakistan solar)"
+      ],
+      "dedup_recommendation": "Cross-reference for energy transition mega-trend tracking",
+      "primary_url": "https://rmi.org/the-energy-transition-in-2026-10-trends-to-watch/"
+    },
+    "cluster_4_ai_job_displacement": {
+      "signal_count": 5,
+      "affected_signals": [
+        "SIG-2026-0112-021 (Job shifts 2026)",
+        "SIG-2026-0112-006 (Generative coding)",
+        "SIG-2026-0112-011 (AI agents adoption)",
+        "SIG-2026-0112-022 (AI/ML salary premium)"
+      ],
+      "dedup_recommendation": "Monitor for employment impact signals, cross-reference with labor data",
+      "note": "Represents broader theme, not duplicates"
+    },
+    "cluster_5_us_china_bifurcation": {
+      "signal_count": 6,
+      "affected_signals": [
+        "SIG-2026-0112-029 (US AI preemption)",
+        "SIG-2026-0112-030 (US-China trade)",
+        "SIG-2026-0112-031 (Semiconductor tariffs)",
+        "SIG-2026-0114-004 (Foreign policy trends)"
+      ],
+      "dedup_recommendation": "Cross-reference for geopolitical tech bifurcation tracking",
+      "note": "Multiple facets (trade, tech, policy) - not true duplicates"
+    }
+  },
+  "filtering_rules": {
+    "exact_url_match": "Block signal if URL already exists in database",
+    "title_similarity": {
+      "threshold": 0.85,
+      "action": "Flag for review if similarity exceeds threshold",
+      "example_duplicates": [
+        {
+          "existing": "지난해 취업자수 19만3천명 증가…2년 연속 10만명대",
+          "incoming": "작년 12월 취업자수 16만8천명 증가…다시 10만명대로",
+          "similarity": 0.88,
+          "recommendation": "Review - may be different angles of same story"
+        }
+      ]
+    },
+    "entity_clustering": {
+      "same_actor_policy_date": "Cross-reference signals about same actor on same date",
+      "example": "Multiple Dr.DI signals from different sources on 2026-01-14"
+    }
+  },
+  "archive_coverage_statistics": {
+    "period_loaded": "2026-01-08 to 2026-01-14 (7 days)",
+    "reports_loaded": 2,
+    "signals_analyzed": 50,
+    "urls_extracted": 72,
+    "titles_extracted": 80,
+    "unique_urls_found": 72,
+    "unique_titles_found": 68,
+    "duplicate_detection_rate": "15.8%"
+  },
+  "generation_metadata": {
+    "loader_version": "archive-loader-v1.0",
+    "index_format": "dedup-index-v2.0",
+    "generation_timestamp": "2026-01-14T22:00:00Z",
+    "processing_duration_seconds": 180,
+    "completeness": "95.2%",
+    "next_refresh": "2026-01-15T06:00:00Z"
+  },
+  "usage_instructions": {
+    "for_new_scans": "Filter incoming signals against url_dedup_index and title_dedup_index before classification",
+    "for_theme_tracking": "Use theme_cluster_dedup to track related signals across time",
+    "for_entity_analysis": "Reference entity_index to cross-check actor/technology/policy mentions",
+    "for_duplicates": "Check duplicate_examples section for patterns to watch for",
+    "refresh_frequency": "Daily after archive loading completes"
   }
 }

@@ -1,0 +1,135 @@
+{
+  "analysis_period": "2026-Q1",
+  "generated_at": "2026-01-15T15:15:00+09:00",
+  "status": "in_progress",
+  "mega_trends": {
+    "identified": 4,
+    "list": [
+      {
+        "id": "MT-001",
+        "name": "AI-양자컴퓨팅 융합",
+        "quarter_start_status": "emerging",
+        "current_status": "accelerating",
+        "velocity_change": "+1",
+        "signal_frequency": {
+          "W02": 5,
+          "W03": 7
+        },
+        "key_developments": [
+          "IBM 2026 양자우위 선언",
+          "양자-AI 융합 로드맵 발표",
+          "Q-Day 경고 확산"
+        ]
+      },
+      {
+        "id": "MT-002",
+        "name": "노동시장 이중충격",
+        "quarter_start_status": "emerging",
+        "current_status": "accelerating",
+        "velocity_change": "+1",
+        "signal_frequency": {
+          "W02": 4,
+          "W03": 11
+        },
+        "key_developments": [
+          "ILO 4억 800만 일자리 격차 발표",
+          "Agentic AI 일자리 대체 시작",
+          "22% 직업 소멸 예측"
+        ]
+      },
+      {
+        "id": "MT-003",
+        "name": "국제질서 재편",
+        "quarter_start_status": "stable",
+        "current_status": "stable",
+        "velocity_change": "0",
+        "signal_frequency": {
+          "W02": 3,
+          "W03": 5
+        },
+        "key_developments": [
+          "한일 정상회담",
+          "Eurasia Group 미국 리스크 1위",
+          "다극화 논의"
+        ]
+      },
+      {
+        "id": "MT-004",
+        "name": "에너지 전환 티핑포인트",
+        "quarter_start_status": "accelerating",
+        "current_status": "accelerating",
+        "velocity_change": "0",
+        "signal_frequency": {
+          "W02": 4,
+          "W03": 6
+        },
+        "key_developments": [
+          "2025년 재생에너지 800GW",
+          "EV 25% 글로벌 점유율",
+          "석유 수요 2032년 정점"
+        ]
+      }
+    ]
+  },
+  "weak_signals": {
+    "tracked": 4,
+    "transitions": {
+      "emerging_to_rising": [],
+      "early_to_emerging": [],
+      "faded": [],
+      "new_identified": [
+        "양자후 암호화 마이그레이션",
+        "Q-Day 도래 경고",
+        "휴머노이드 로봇 상용화",
+        "세대 갈등 심화"
+      ]
+    },
+    "tracking_status": [
+      {
+        "signal": "양자후 암호화 마이그레이션",
+        "start_frequency": 0,
+        "current_frequency": 3,
+        "status": "emerging",
+        "next_milestone": "5회 도달 시 rising 전환"
+      },
+      {
+        "signal": "Q-Day 도래 경고",
+        "start_frequency": 0,
+        "current_frequency": 2,
+        "status": "emerging",
+        "next_milestone": "5회 도달 시 rising 전환"
+      },
+      {
+        "signal": "휴머노이드 로봇 상용화",
+        "start_frequency": 0,
+        "current_frequency": 2,
+        "status": "early",
+        "next_milestone": "5회 도달 시 emerging 전환"
+      },
+      {
+        "signal": "세대 갈등 심화",
+        "start_frequency": 0,
+        "current_frequency": 4,
+        "status": "rising",
+        "next_milestone": "10회 도달 시 strong 전환"
+      }
+    ]
+  },
+  "velocity_analysis": {
+    "accelerating": ["AI 상용화", "에너지 전환", "양자컴퓨팅"],
+    "stable": ["인구 고령화", "국제질서 재편"],
+    "decelerating": [],
+    "emerging": ["AI 에이전트 규제", "탈양자암호"]
+  },
+  "quarter_outlook": {
+    "expected_transitions": [
+      "양자암호 마이그레이션: emerging → rising",
+      "세대 갈등: rising → strong"
+    ],
+    "monitoring_priorities": [
+      "양자컴퓨팅 보안",
+      "AI 규제 시행",
+      "에너지 정책"
+    ]
+  }
+}

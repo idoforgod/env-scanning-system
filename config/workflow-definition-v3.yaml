@@ -218,12 +218,164 @@ phases:
           on_failure: "warn"
 
   # ═══════════════════════════════════════════════════════════════════
-  # Phase 2: Planning (기존과 동일)
+  # Phase 2: Planning (pSRT 2.0 4-Phase Pipeline 통합)
   # ═══════════════════════════════════════════════════════════════════
   - id: phase2
     name: "Planning"
-    description: "신호 분석, 분류, 우선순위 산정"
-    # ... (기존과 동일)
+    description: "신호 분석, 분류, pSRT 2.0 신뢰도 평가, 우선순위 산정"
+
+    steps:
+      # Step 5.0: Signal Classifier
+      - id: step5_0_classifier
+        agent: signal-classifier
+        description: "STEEPS 분류 및 요약 생성"
+        parallel: false
+        mandatory: true
+        input:
+          filtered: "data/{date}/filtered/filtered-signals-{date}.json"
+        output:
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+        token_estimate: 1200
+
+      # ═══════════════════════════════════════════════════════════════
+      # pSRT 2.0 4-Phase Pipeline (순차 실행 필수)
+      # ═══════════════════════════════════════════════════════════════
+
+      # Step 5.3: Phase 1 - Groundedness Verification
+      - id: step5_3_groundedness
+        agent: groundedness-verifier
+        description: "Phase 1: 원본 대비 주장의 근거성 검증 (30%)"
+        parallel: false
+        mandatory: true
+        input:
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+        output:
+          groundedness: "data/{date}/analysis/groundedness-{date}.json"
+        token_estimate: 1500
+
+      # Step 5.5: Phase 2 - Cross-Validation
+      - id: step5_5_crossval
+        agent: cross-validator
+        description: "Phase 2: 독립 소스 교차 검증 (25%)"
+        parallel: false
+        mandatory: true
+        input:
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+          groundedness: "data/{date}/analysis/groundedness-{date}.json"
+        output:
+          cross_validation: "data/{date}/analysis/cross-validation-{date}.json"
+        token_estimate: 2000
+
+      # Step 5.7: pSRT 2.0 Integration
+      - id: step5_7_confidence
+        agent: confidence-evaluator
+        description: "pSRT 2.0 통합 평가 (4 Phase 점수 합산)"
+        parallel: false
+        mandatory: true
+        input:
+          groundedness: "data/{date}/analysis/groundedness-{date}.json"
+          cross_validation: "data/{date}/analysis/cross-validation-{date}.json"
+          config: "config/pSRT-config.yaml"
+        output:
+          pSRT_scores: "data/{date}/analysis/pSRT-scores-{date}.json"
+        token_estimate: 800
+
+      # Step 5.9: Phase 4 - Hallucination Detection
+      - id: step5_9_hallucination
+        agent: hallucination-detector
+        description: "Phase 4: 6가지 할루시네이션 유형 감지 (페널티 기반)"
+        parallel: false
+        mandatory: true  # CRITICAL - 절대 스킵 불가
+        input:
+          pSRT_scores: "data/{date}/analysis/pSRT-scores-{date}.json"
+        output:
+          hallucination_report: "data/{date}/analysis/hallucination-report-{date}.json"
+        token_estimate: 1000
+
+      # Step 6.0: Phase 3 - Historical Calibration
+      - id: step6_0_calibration
+        agent: calibration-engine
+        description: "Phase 3: 역사적 정확도로 신뢰도 보정 (20%)"
+        parallel: false
+        mandatory: true
+        input:
+          pSRT_scores: "data/{date}/analysis/pSRT-scores-{date}.json"
+          signal_history: "signals/history/signal-history.json"
+          source_accuracy: "signals/history/source-accuracy.json"
+          topic_accuracy: "signals/history/topic-accuracy.json"
+        output:
+          calibrated_scores: "data/{date}/analysis/calibrated-scores-{date}.json"
+        token_estimate: 600
+
+      # ═══════════════════════════════════════════════════════════════
+      # End of pSRT 2.0 Pipeline
+      # ═══════════════════════════════════════════════════════════════
+
+      # Step 7.0: Impact Analysis
+      - id: step7_0_impact
+        agent: impact-analyzer
+        description: "영향도 분석"
+        parallel: false
+        mandatory: true
+        input:
+          structured: "data/{date}/structured/structured-signals-{date}.json"
+          calibrated: "data/{date}/analysis/calibrated-scores-{date}.json"
+        output:
+          impact: "data/{date}/analysis/impact-assessment-{date}.json"
+        token_estimate: 800
+
+      # Step 7.0: Priority Ranking (병렬 가능)
+      - id: step7_0_priority
+        agent: priority-ranker
+        description: "우선순위 산정"
+        parallel: false
+        mandatory: true
+        input:
+          impact: "data/{date}/analysis/impact-assessment-{date}.json"
+          calibrated: "data/{date}/analysis/calibrated-scores-{date}.json"
+        output:
+          ranked: "data/{date}/analysis/priority-ranked-{date}.json"
+        token_estimate: 600
+
+      # Step 8: Human Review (기본 생략)
+      - id: step8
+        type: human_review
+        description: "[Human Review] 분석 결과 검토"
+        skip_condition: "--skip-human"
+        command: "/env-scan:review-analysis"
+
+    # Gate 2: pSRT 2.0 파이프라인 검증
+    gate:
+      id: gate2
+      name: "Phase 2 Quality Gate - pSRT 2.0"
+
+      mandatory_checks:
+        - name: "pSRT 점수 파일 존재"
+          file: "data/{date}/analysis/pSRT-scores-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+
+        - name: "할루시네이션 보고서 존재"
+          file: "data/{date}/analysis/hallucination-report-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+          error_message: "할루시네이션 검증이 완료되지 않았습니다!"
+
+        - name: "보정된 점수 파일 존재"
+          file: "data/{date}/analysis/calibrated-scores-{date}.json"
+          condition: "exists"
+          on_failure: "abort"
+
+      quality_checks:
+        - name: "평균 pSRT >= 50"
+          file: "data/{date}/analysis/calibrated-scores-{date}.json"
+          condition: "avg_score >= 50"
+          on_failure: "warn"
+
+        - name: "CRITICAL 할루시네이션 비율 < 5%"
+          file: "data/{date}/analysis/hallucination-report-{date}.json"
+          condition: "critical_rate < 0.05"
+          on_failure: "warn"
 
   # ═══════════════════════════════════════════════════════════════════
   # Phase 3: Implementation (기존과 동일)
@@ -274,6 +426,42 @@ agents:
     subagent_type: "dedup-filter"
     max_retries: 2
     timeout: 600
+
+  # pSRT 2.0 4-Phase Pipeline Agents
+  groundedness-verifier:
+    subagent_type: "groundedness-verifier"
+    mandatory: true
+    max_retries: 2
+    timeout: 900
+    description: "Phase 1: 원본 대비 주장 근거성 검증"
+
+  cross-validator:
+    subagent_type: "cross-validator"
+    mandatory: true
+    max_retries: 2
+    timeout: 1200
+    description: "Phase 2: 독립 소스 교차 검증"
+
+  confidence-evaluator:
+    subagent_type: "confidence-evaluator"
+    mandatory: true
+    max_retries: 2
+    timeout: 600
+    description: "pSRT 2.0 통합 점수 산출"
+
+  hallucination-detector:
+    subagent_type: "hallucination-detector"
+    mandatory: true
+    max_retries: 3
+    timeout: 600
+    description: "Phase 4: 6가지 할루시네이션 유형 감지"
+
+  calibration-engine:
+    subagent_type: "calibration-engine"
+    mandatory: true
+    max_retries: 2
+    timeout: 600
+    description: "Phase 3: 역사적 정확도 기반 보정"
 
 # ═══════════════════════════════════════════════════════════════════
 # Orchestrator 실행 지침 (중요!)

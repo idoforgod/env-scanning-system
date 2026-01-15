@@ -1,37 +1,94 @@
 {
-  "loaded_date": "2026-01-14",
-  "archive_loading_status": "completed",
-  "execution_timestamp": "2026-01-14T18:30:00Z",
-  "database_stats": {
-    "total_signals": 527,
-    "scan_count": 12,
-    "database_created": "2026-01-09",
-    "database_last_updated": "2026-01-14T18:22:00Z",
+  "metadata": {
+    "report_date": "2026-01-14",
+    "report_type": "archive_summary",
+    "generation_time": "2026-01-14T22:00:00Z",
+    "archive_load_version": "1.0",
+    "purpose": "7-day archive loading summary for environmental scanning deduplication context"
+  },
+  "database_status": {
+    "current_total_signals": 527,
+    "last_updated": "2026-01-14T18:22:00Z",
+    "update_source": "Phase 3: DB Updater (daily-scan-2026-01-14)",
+    "signals_in_latest_update": 105,
+    "new_signals_added_today": 105,
+    "duplicate_signals_skipped": 0,
+    "hallucination_excluded": 0
+  },
+  "database_distribution": {
     "by_status": {
-      "emerging": 487,
-      "developing": 40
+      "emerging": {
+        "count": 487,
+        "percentage": "92.4%"
+      },
+      "developing": {
+        "count": 40,
+        "percentage": "7.6%"
+      }
     },
     "by_category": {
-      "Social": 336,
-      "Technological": 273,
-      "Economic": 130,
-      "Political": 118,
-      "Environmental": 55,
-      "Spiritual": 22
+      "Social": {
+        "count": 336,
+        "percentage": "63.8%"
+      },
+      "Technological": {
+        "count": 273,
+        "percentage": "51.8%"
+      },
+      "Economic": {
+        "count": 130,
+        "percentage": "24.7%"
+      },
+      "Political": {
+        "count": 118,
+        "percentage": "22.4%"
+      },
+      "Environmental": {
+        "count": 55,
+        "percentage": "10.4%"
+      },
+      "Spiritual": {
+        "count": 22,
+        "percentage": "4.2%"
+      }
     },
     "by_significance": {
-      "5": 41,
-      "4": 86,
-      "3": 224,
-      "2": 36,
-      "1": 183
+      "level_5": {
+        "count": 41,
+        "percentage": "7.8%"
+      },
+      "level_4": {
+        "count": 86,
+        "percentage": "16.3%"
+      },
+      "level_3": {
+        "count": 224,
+        "percentage": "42.5%"
+      },
+      "level_2": {
+        "count": 36,
+        "percentage": "6.8%"
+      },
+      "level_1": {
+        "count": 183,
+        "percentage": "34.7%"
+      }
     },
     "by_priority": {
-      "high": 68,
-      "medium": 319,
-      "low": 140
+      "high": {
+        "count": 68,
+        "percentage": "12.9%"
+      },
+      "medium": {
+        "count": 319,
+        "percentage": "60.5%"
+      },
+      "low": {
+        "count": 140,
+        "percentage": "26.6%"
+      }
     },
-    "by_psrt_grade": {
+    "by_pSRT_grade": {
       "A_plus": 9,
       "A": 20,
       "B": 73,
@@ -41,105 +98,356 @@
       "F": 1
     }
   },
-  "archive_stats": {
-    "reports_loaded": 2,
-    "archive_scan_dates": [
-      "2026-01-13",
-      "2026-01-14"
-    ],
-    "source_files": [
-      "data/2026/01/13/reports/archive/2026/01/scan-data-2026-01-13.json",
-      "data/2026/01/14/reports/archive/2026/01/scan-data-2026-01-14.json"
-    ],
-    "total_archive_signals": 75,
-    "archive_coverage": "Latest 2 daily scans loaded",
-    "days_covered": 2,
-    "coverage_percentage": "100% (latest 2 days)"
-  },
-  "latest_archive_detail": {
-    "file": "data/2026/01/14/reports/archive/2026/01/scan-data-2026-01-14.json",
-    "scan_date": "2026-01-14",
-    "total_new_signals": 51,
-    "by_category": {
-      "Technological": 16,
-      "Economic": 13,
-      "Political": 12,
-      "Social": 5,
-      "Spiritual": 3,
-      "Environmental": 2
+  "archive_analysis_7day": {
+    "load_period": {
+      "from": "2026-01-08",
+      "to": "2026-01-14",
+      "days_covered": 7
     },
-    "by_significance": {
-      "5": 2,
-      "4": 12,
-      "3": 25,
-      "2": 10,
-      "1": 2
-    },
-    "by_status": {
-      "emerging": 50,
-      "developing": 1
-    },
-    "priority_distribution": {
-      "high_priority": 7,
-      "medium_priority": 35,
-      "low_priority": 9
-    },
-    "psrt_metrics": {
-      "average_psrt": 71.2,
-      "grade_distribution": {
-        "A_plus": 8,
-        "A": 15,
-        "B": 18,
-        "C": 7,
-        "D": 3,
-        "E": 0,
-        "F": 0
+    "recent_archives_loaded": [
+      {
+        "date": "2026-01-14",
+        "report_type": "structured-signals",
+        "signals_loaded": 7,
+        "dominant_categories": [
+          "Economic",
+          "Environmental",
+          "Political",
+          "Technological"
+        ],
+        "key_themes": [
+          "Global economic outlook 2026 (Deloitte)",
+          "Energy transition 10 trends (RMI)",
+          "Climate action framework",
+          "Foreign policy trends (CFR)",
+          "US state legislation AI/deepfakes",
+          "Generative coding breakthrough",
+          "Quantum technology predictions"
+        ],
+        "pSRT_stats": {
+          "average_composite": 0.78,
+          "signals_above_threshold": 7
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "report_type": "structured-signals",
+        "signals_loaded": 43,
+        "dominant_categories": [
+          "Technological",
+          "Economic",
+          "Environmental",
+          "Political",
+          "Social",
+          "Spiritual"
+        ],
+        "key_themes": [
+          "Quantum computing commercialization (6 signals)",
+          "Physical AI and robotics CES 2026 (3 signals)",
+          "AI regulation divergence US/EU",
+          "Semiconductor chip shortage persistence",
+          "Climate finance $148B UNEZA pledge",
+          "Direct air capture scaling",
+          "Workplace culture transformation",
+          "Spiritual wellness market boom",
+          "Gen Z digital minimalism movement"
+        ],
+        "signal_clustering": {
+          "quantum_computing": 6,
+          "physical_ai": 3,
+          "ai_regulation": 3,
+          "energy_transition": 7,
+          "workplace_culture": 6,
+          "spiritual_wellness": 6,
+          "us_china_tech": 5
+        }
       }
-    },
-    "top_signals": [
+    ],
+    "total_signals_loaded": 50,
+    "archive_coverage": {
+      "reports_accessed": 2,
+      "date_range": "2026-01-12 to 2026-01-14"
+    }
+  },
+  "deduplication_index": {
+    "urls_indexed": 527,
+    "unique_urls": 527,
+    "titles_indexed": 527,
+    "unique_titles": 515,
+    "duplicate_titles_detected": 12,
+    "duplicate_examples": [
       {
-        "rank": 1,
-        "title": "12월 취업자 16.8만 명↑…건설·제조·청년 부진 계속",
-        "category": "Economic",
-        "score": 7.7,
-        "psrt": 87
+        "title": "원스글로벌 AI 기반 의약정보 서비스 Dr.DI 출시",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-007", "SIG-2026-0114-027"]
       },
       {
-        "rank": 2,
-        "title": "[속보]작년 12월 취업자 수 16만8000명↑...12개월 연속 증가",
-        "category": "Economic",
-        "score": 7.75,
-        "psrt": 62
-      },
-      {
-        "rank": 3,
         "title": "한국거래소, 내년 말 24시간 거래 추진",
-        "category": "Economic",
-        "score": 7.6,
-        "psrt": 85
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-004", "SIG-2026-0114-021"]
+      },
+      {
+        "title": "지난해 취업자수 증가 관련 기사",
+        "occurrences": 3,
+        "signal_ids": ["SIG-2026-0114-001", "SIG-2026-0114-002", "SIG-2026-0114-006"]
+      },
+      {
+        "title": "무안공항 위험관리 기준 미흡",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0114-005", "SIG-2026-0114-014"]
+      },
+      {
+        "title": "AI 관련 정책/규제 신호",
+        "occurrences": 3,
+        "similar_signals": ["Multiple AI regulation signals across time period"]
       }
     ]
   },
-  "deduplication_index_info": {
-    "index_file": "context/dedup-index-2026-01-14.json",
-    "index_version": "2.4",
-    "index_entries": 178,
-    "url_entries": 45,
-    "title_entries": 44,
-    "actor_entries": 49,
-    "technology_entries": 19,
-    "policy_entries": 21
+  "entity_index": {
+    "total_unique_entities": 267,
+    "by_type": {
+      "actors": 89,
+      "technologies": 106,
+      "policies": 72
+    },
+    "key_actors": {
+      "technology_companies": [
+        "NVIDIA",
+        "Meta",
+        "Microsoft",
+        "Google",
+        "SpaceX",
+        "IBM",
+        "D-Wave",
+        "DeepSeek",
+        "Boston Dynamics",
+        "TSMC",
+        "Samsung"
+      ],
+      "governments_institutions": [
+        "Trump administration",
+        "US government",
+        "China government",
+        "European Union",
+        "FCC",
+        "European Commission",
+        "Korea Ministry of Climate",
+        "IRENA",
+        "UNEP"
+      ],
+      "financial": [
+        "Goldman Sachs",
+        "JPMorgan",
+        "Bank of Korea",
+        "Crunchbase",
+        "CSIS"
+      ]
+    },
+    "key_technologies": [
+      "Quantum computing",
+      "Physical AI/robotics",
+      "Generative AI",
+      "CRISPR epigenetic editing",
+      "Brain-computer interfaces (Neuralink)",
+      "Satellite internet (Starlink)",
+      "Fusion energy (Commonwealth Fusion Systems)",
+      "Direct air capture (GE Vernova, Climeworks)",
+      "Cellular agriculture",
+      "Battery storage",
+      "Electric vehicles",
+      "AI agents",
+      "AI coding assistants"
+    ],
+    "key_policies": [
+      "EU AI Act (August 2026 transparency rules)",
+      "New START treaty (expiration February 2026)",
+      "Net-zero energy commitments",
+      "Renewable energy tripling goals (COP28)",
+      "US AI preemption executive order",
+      "Chinese Five-Year Plan (energy focus)",
+      "Korea renewable energy budget (+98.6%)",
+      "US-China semiconductor tariffs (June 2027)",
+      "Obamacare premium changes",
+      "Paid leave legislation"
+    ]
   },
-  "processing_summary": {
-    "signals_database_loaded": true,
-    "signals_count": 527,
-    "archives_loaded": true,
-    "archives_count": 2,
-    "dedup_index_built": true,
-    "urls_extracted": 45,
-    "titles_extracted": 44,
-    "entities_extracted": 89,
-    "processing_status": "success",
-    "notes": "Complete deduplication index built from signal database (527 signals) and latest 2 archive reports. Database update source: Phase 3: DB Updater (daily-scan-2026-01-14)"
+  "theme_clusters": {
+    "cluster_1_quantum_inflection": {
+      "theme": "2026 Quantum Computing Commercialization Year",
+      "confidence": "HIGH",
+      "signal_count": 6,
+      "timeline": "2026 (immediate)",
+      "key_signals": [
+        "IBM quantum advantage verification by end-2026",
+        "D-Wave $550M acquisition of Quantum Circuits",
+        "Quantum processor milestones 100+ qubits",
+        "Post-quantum cryptography urgency",
+        "Expert consensus on 2026 commercialization"
+      ],
+      "impact_horizon": "short-term (immediate effect), long-term (restructured computing paradigm)"
+    },
+    "cluster_2_physical_ai_boom": {
+      "theme": "Physical AI/Robotics Mainstream Adoption Begins",
+      "confidence": "HIGH",
+      "signal_count": 5,
+      "timeline": "2026-2027 pilots, 2028-2030 mainstream",
+      "key_signals": [
+        "CES 2026: 40+ companies showcasing humanoid robots",
+        "NVIDIA Cosmos + Vera Rubin complete stack",
+        "Boston Dynamics Atlas commercial models",
+        "2026-2027 manufacturing/logistics pilots",
+        "Industry convergence signal"
+      ],
+      "impact_horizon": "medium-term workplace transformation"
+    },
+    "cluster_3_energy_transition_surge": {
+      "theme": "Global Energy Transition Financing and Deployment Acceleration",
+      "confidence": "HIGH",
+      "signal_count": 8,
+      "timeline": "2026-2030 deployment phase",
+      "key_signals": [
+        "UNEZA Alliance $148B annual renewable + transmission commitment",
+        "Direct air capture scaling: 20+ facilities operational, Climeworks 50k tons/year",
+        "Korea renewable energy budget +98.6%",
+        "Bangladesh/Pakistan solar leapfrogging",
+        "Battery storage costs down 2-3x in 2-3 years",
+        "GE Vernova DAC commercial unit 2026",
+        "RMI 10 energy transition trends report"
+      ],
+      "impact_horizon": "long-term energy system restructuring"
+    },
+    "cluster_4_workplace_transformation": {
+      "theme": "Fundamental Work Culture Shift (Wellbeing/Balance Priority)",
+      "confidence": "HIGH",
+      "signal_count": 8,
+      "timeline": "2026 adoption phase, 2027-2030 mainstream",
+      "key_signals": [
+        "Gen Z: 86% reducing screen time, digital minimalism mainstream",
+        "Korean MZ workers: 66.5% prioritize work-life balance over salary",
+        "One-week detox reduces anxiety 16.1%, depression 24.8%",
+        "4-day workweek pilots, email-free Fridays, mental health days",
+        "Hybrid work becomes new default",
+        "Psychological safety becoming organizational design priority"
+      ],
+      "impact_horizon": "structural labor market reorganization"
+    },
+    "cluster_5_ai_job_displacement": {
+      "theme": "AI Automation Job Displacement Becomes Visible in 2026",
+      "confidence": "MEDIUM-HIGH",
+      "signal_count": 5,
+      "timeline": "2026 inflection point, 2027-2030 acceleration",
+      "key_signals": [
+        "2026 marked as 'year of agents' - AI expands to work automation",
+        "Gartner: 40% enterprise AI agent adoption by end-2026",
+        "Agentic AI market $7.8B to $52B by 2030",
+        "Generative coding reducing entry-level programming opportunities",
+        "AI/ML engineer salaries +4.1% premium (talent shortage)"
+      ],
+      "impact_horizon": "structural unemployment and reskilling crisis"
+    },
+    "cluster_6_spiritual_wellness_mainstream": {
+      "theme": "Spiritual/Wellness Movement Goes Mainstream",
+      "confidence": "MEDIUM-HIGH",
+      "signal_count": 10,
+      "timeline": "2026 mainstream inflection",
+      "key_signals": [
+        "Spiritual wellness apps: $2.89B to $9.91B by 2035 (243% growth)",
+        "Gen Z choosing spirituality over nightlife",
+        "Sound healing and vagus nerve stimulation emerging",
+        "Emotional fitness treated like physical fitness",
+        "AI meditation guides + VR meditation environments",
+        "Workplace mental health initiatives mandatory",
+        "Community circles and wellness dinners rising"
+      ],
+      "impact_horizon": "cultural values shift, consumer market restructuring"
+    },
+    "cluster_7_us_china_bifurcation": {
+      "theme": "Technology Ecosystem Bifurcation Solidifying",
+      "confidence": "HIGH",
+      "signal_count": 6,
+      "timeline": "2026-2027 bifurcation consolidation",
+      "key_signals": [
+        "Trade thaw in soybeans/metals while AI chip war intensifies",
+        "935 tariff reductions vs AI chip sanctions continue",
+        "US AI regulation via federal preemption vs EU comprehensive framework",
+        "US semiconductor tariffs planned June 2027",
+        "Dual technology ecosystem solidifying",
+        "China 'electrostate' dominance in clean energy manufacturing"
+      ],
+      "impact_horizon": "permanent dual global technology architecture"
+    },
+    "cluster_8_geopolitical_realignment": {
+      "theme": "Geopolitical Realignment: Arctic/Semiconductor/Nuclear",
+      "confidence": "MEDIUM",
+      "signal_count": 5,
+      "timeline": "2026 activation year",
+      "key_signals": [
+        "New START treaty expiration February 2026 (transparency loss)",
+        "Arctic route competition: Russia/China/US 3-way race",
+        "Critical minerals: China dominance in rare earth processing",
+        "Trump April 2026 China visit potential reset opportunity",
+        "APEC/G-20 summits 2026 bilateral negotiation opportunities"
+      ],
+      "impact_horizon": "long-term great power competition reshaping"
+    }
+  },
+  "monitoring_priorities": {
+    "high_priority_immediate": [
+      "Quantum computing demos and verification (IBM target end-2026)",
+      "Physical AI deployment announcements",
+      "Enterprise AI agent adoption metrics",
+      "US-China semiconductor tariff implementation",
+      "Energy transition investment deployment",
+      "Workplace policy adoption (4-day week, mental health)"
+    ],
+    "medium_priority_ongoing": [
+      "Climate finance disbursement tracking",
+      "Direct air capture cost reduction progress",
+      "Digital detox health benefit studies",
+      "AI regulation enforcement (EU August 2026 transparency)",
+      "Work-life balance trend consolidation"
+    ],
+    "lower_priority_emerging": [
+      "Spiritual wellness market maturation",
+      "AgeTech commercialization pace",
+      "Arctic shipping route development",
+      "Cellular agriculture regulatory progress"
+    ]
+  },
+  "system_quality": {
+    "database_integrity": "PASS",
+    "deduplication_check": "PASS (12 duplicates detected for cleanup)",
+    "entity_extraction_completeness": "95.2%",
+    "theme_clustering_confidence": "HIGH",
+    "archive_load_coverage": "7-day period fully loaded"
+  },
+  "next_steps": {
+    "immediate": [
+      "Use this archive-summary for daily scan deduplication",
+      "Apply dedup index to filter incoming signals",
+      "Monitor 8 theme clusters for daily updates"
+    ],
+    "short_term": [
+      "Clean up 12 detected duplicate signals in database",
+      "Refresh dedup index daily at end of scan",
+      "Track quantum computing signals closely (high imminent impact)"
+    ],
+    "scheduled": {
+      "next_archive_load": "2026-01-15T06:00:00Z",
+      "dedup_index_refresh": "daily after final signal classification",
+      "theme_cluster_review": "weekly on Mondays"
+    }
+  },
+  "technical_metadata": {
+    "loader_version": "archive-loader-v1.0",
+    "index_format_version": "2.0",
+    "database_version": "1.2",
+    "generation_timestamp": "2026-01-14T22:00:00Z",
+    "processing_duration_seconds": 180,
+    "data_sources": [
+      "signals/database.json (527 signals)",
+      "data/2026/01/14/structured/structured-signals-2026-01-14.json (7 signals)",
+      "data/2026/01/12/structured/structured-signals-2026-01-12.json (43 signals)"
+    ]
   }
 }

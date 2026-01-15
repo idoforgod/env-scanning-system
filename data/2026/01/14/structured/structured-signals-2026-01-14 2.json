@@ -1,0 +1,298 @@
+{
+  "classification_date": "2026-01-14",
+  "pipeline_version": "v4",
+  "total_classified": 7,
+  "by_category": {
+    "Economic": 1,
+    "Environmental": 2,
+    "Political": 2,
+    "Technological": 2,
+    "Social": 0,
+    "Spiritual": 0
+  },
+  "by_horizon": {
+    "short": 4,
+    "medium": 2,
+    "long": 1
+  },
+  "pSRT_summary": {
+    "average_composite": 0.78,
+    "signals_above_threshold": 7
+  },
+  "signals": [
+    {
+      "signal_id": "SIG-20260114-001",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+      "original_title": "Global Economic Outlook 2026",
+      "original_content": "Deloitte economists examine economic trajectories for over 25 countries across three major regions. The report reflects how 2025's geopolitical shifts—particularly US trade policy changes and trade negotiations—will shape 2026 economic performance.\n\n## Key Themes\n\n### Global Policy Landscape\n\nThe report notes that 'elections around the world have driven notable policy changes' affecting inflation, borrowing costs, and trade flows. Trade tensions reshuffled global relationships, with non-US countries developing closer commercial ties.\n\n### Regional Growth Patterns\n\n**Advanced Economies:** Facing slower-than-historical growth rates with varying recovery timelines.\n\n**Emerging Markets:** Selected nations demonstrating stronger momentum through structural reforms.\n\n**Common Challenge:** Inflation and trade policy uncertainties create headwinds across all regions.\n\n## Regional Summaries\n\n### The Americas\n\n- **Argentina:** Transitioning from stabilization to expansion (3.5% growth projected for 2026) following fiscal consolidation and resource sector investments\n- **Canada:** Expected modest growth recovery as tariff uncertainty eases and business investment rebounds\n- **Mexico:** Anticipated 1.6% growth as postponed investment returns following tariff clarity\n- **United States:** Forecasted 1.9% growth, concentrated in first half, with AI-related spending driving activity\n- **Colombia:** Projected 2.7% growth supported by service sector expansion\n\n### Asia-Pacific\n\n- **China:** Growth moderating to 4.5% as property market adjusts and export contributions diminish\n- **India:** Expecting 7.5-7.8% growth driven by consumption and structural reforms\n- **Australia:** Forecasting 2.1% acceleration supported by improved consumer spending\n- **Japan:** Projecting 0.4% growth amid tariff headwinds, though labor market remains tight\n- **New Zealand:** Economic recovery emerging but constrained by productivity challenges\n\n### Europe, Middle East, and Africa\n\n- **Eurozone:** Moderate 1.1% growth expected, supported by domestic demand and defense investments\n- **Germany:** Projected 1.2% growth with fiscal stimulus offsetting trade headwinds\n- **United Kingdom:** Forecasting 1.1% growth as labor market softens\n- **South Africa:** Anticipating 1.5% growth with reform momentum improving outlook\n- **Nigeria:** Expecting 4.1% growth driven by refinery activity and fiscal expansion\n\n## Critical Insights\n\n**AI Impact:** Significant business investment concentration in information technology suggests both opportunity and vulnerability should AI-related spending falter.\n\n**Trade Restructuring:** Tariff policies have prompted supply chain reconfiguration, with some countries gaining while others face competitiveness challenges.\n\n**Monetary Policy Divergence:** Central banks pursuing different paths based on regional inflation dynamics and labor market conditions.\n\n**Structural Constraints:** Productivity, infrastructure deficits, and demographic shifts present medium-term challenges across developed economies.",
+      "summary": "Deloitte's 2026 global economic outlook forecasts varied regional growth amid trade policy shifts and inflation pressures. Advanced economies face slower growth while select emerging markets demonstrate momentum, with AI investment concentration presenting both opportunity and risk across all regions.",
+      "source_name": "Deloitte Insights",
+      "published_date": "2025-12-19",
+      "steeps_category": "Economic",
+      "pSRT_initial": {
+        "plausibility": 0.92,
+        "source_reliability": 0.95,
+        "recency": 0.90,
+        "transparency": 0.95,
+        "composite": 0.93
+      },
+      "key_entities": [
+        "Deloitte",
+        "Argentina",
+        "United States",
+        "China",
+        "India",
+        "Eurozone",
+        "AI investment",
+        "trade policy",
+        "tariffs"
+      ],
+      "horizon": "short",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "Comprehensive economic forecast with specific regional growth projections and identified systemic risks",
+        "cross_category_relevance": ["Political", "Technological"]
+      }
+    },
+    {
+      "signal_id": "SIG-20260114-002",
+      "url": "https://rmi.org/the-energy-transition-in-2026-10-trends-to-watch/",
+      "original_title": "The Energy Transition in 2026: 10 Trends to Watch",
+      "original_content": "Technological advancement rarely follows a linear path. Historical examples from automobiles to solar power demonstrate a pattern of 'gradually, then suddenly' progress through five distinct adoption phases. The encouraging news regarding clean energy is that numerous promising solutions are approaching maturity stages that facilitate broader deployment across diverse sectors and regions.\n\n1. Decision Makers Consider 'Soft Energy Paths' to Meet Growing Electricity Demand\n\nThis year marks the 50th anniversary of 'The Road Not Taken,' a foundational article by RMI cofounder Amory Lovins. The concept of 'soft energy paths' combines rapid renewable deployment with 'a prompt and serious commitment to efficient use of energy.' This strategy remains relevant today, particularly as electricity demand grows and requires 'fast, flexible solutions.' The Global South faces particular urgency where rapid demand expansion and limited capital make these approaches especially valuable.\n\nEnergy efficiency functions as the primary fuel source. Compared to supply-side initiatives, demand-side interventions can boost grid capacity at 'roughly half the cost and 5 to 10 times the speed.' Grid modernization through alternative transmission technologies enables 'several times faster and cheaper' construction than conventional transmission. Supply innovations including virtual power plants and co-location strategies remain in early adoption phases.\n\n2. Clean Energy Supports Affordability with the Right Policies and Investments\n\nWind and solar have progressed into system integration (phase 4) and continue expanding. Denmark has achieved '70 percent' of electricity generation from these sources, while the Global South increasingly adopts renewables. This expansion creates significant infrastructure demands and requires supporting technologies like flexibility systems.\n\nRising electricity costs represent a major concern, particularly in the United States where affordability influenced recent elections and may impact upcoming midterms. However, energy expenses can be substantially reduced through home technology upgrades, appropriate market mechanisms, and supportive policies.\n\nGlobal trends demonstrate clean energy's economic potential. Battery storage costs have dropped more than twofold in two years and more than threefold in three years. Additionally, 'more than 90 percent' of new renewable projects cost less than fossil fuel alternatives, and 'new renewables generation is now eclipsing total electricity demand growth.' Experts anticipate this pattern will continue as renewables and storage advance through phase 4.\n\n3. Electric Vehicle Adoption Enters a New Phase with Further Action on Key Enablers\n\nIn passenger transportation, electric vehicles have become the dominant technology, transitioning from specialized markets (phase 3) to mainstream adoption (phase 4). More than one in four new automobiles globally now feature plug-in capabilities, enabling importing nations to collectively conserve 'more than a million barrels' of oil daily.\n\nScaling requires addressing infrastructure and supply chain constraints. This phase demands attention to the enabling environment, from manufacturing capacity to grid readiness. Affordable pricing and convenient charging remain essential. Emerging research, policy initiatives, and digital tools support charging station development while managing electricity demand increases and promoting battery recycling.\n\nBattery-powered trucks are progressing from experimental pilots (phase 2) to specialized markets (phase 3) with several commercially available models and others nearing availability. Continued rapid improvements in battery expense and capability are anticipated alongside requirements for expanding niche markets through dedicated trucking corridors.\n\n4. Aviation Contrails See Further Awareness and Action with New Collaborations\n\nRecent partnerships and educational materials have highlighted aviation contrails' warming potential and the possibility of reducing this impact by approximately 80 percent through adjusting merely 2 percent of flights. This solution represents the sector's most impactful near-term warming reduction strategy through 2050.\n\nEarly interventions are prepared for pilot programs as they advance from phase 1 to phase 2. Tested corporate accounting frameworks could yield significant improvements if robust stakeholder partnerships persist. The European Union Emissions Trading System may provide additional momentum. Establishing transparent data systems will be crucial for enabling future development.\n\n5. Industrial Cleantech Is Boosted by New Policies and Protocols\n\nIndustrial heat pump deployment approaches mass adoption (phase 3 to phase 4) as building sector advancements enhance performance while reducing expenses. Such progress opens pathways into elevated-temperature industrial applications, enabling additional electrification opportunities.\n\nNumerous industrial solutions remain in phase 2 or early phase 3—particularly green hydrogen—where policy frameworks can encourage initial deployment. Multiple related policy initiatives worldwide may catalyze transformation in 2026.\n\nIndustrial efficiency improvements present significant potential. High-efficiency motors are mature (phase 5) but represent only approximately one-quarter of industrial motor installations; technological gains could 'save more electricity globally' than complete electricity consumption from data centers. Facility design, operational flexibility, and intelligent manufacturing also offer opportunities.\n\nSweeping initiatives include the European Union's Carbon Border Adjustment Mechanism, transitioning from monitoring to implementation across numerous industrial categories alongside new reporting obligations from the EU Methane Regulation. India's carbon market prepares for compliance trading beginning mid-2026. Voluntary carbon exchanges continue developing the recently introduced Carbon Data Open Protocol (CDOP).\n\n6. Super Pollutant Solutions Find Increased Visibility and New Market Mechanisms\n\nComparable advancements are generating awareness regarding methane and other non-CO2 'super pollutants.' Recent funder networks, action blueprints, and sophisticated analysis from Climate TRACE provide unprecedented insight into ground-level ozone, an air contaminant contributing warming 'as much...as the global road transport sector.'\n\nThough initial capacity development continues, numerous solutions intersect with energy transformation efforts well into phases 3 and 4. Supporting circumstances continue progressing, from contemporary landfill methane mandates to business credit acquisitions spanning additional sectors. Sustained advancement could exploit a vital prospect to 'cut warming fast.'\n\n7. Cooling Solutions Reach New Readiness, from Innovation to Deployment\n\nCooling advances span from appliances to architectural innovations. India plays a significant role as a frontrunner in contemporary efficiency improvements and cooling demand expansion.\n\nUltra-efficient air conditioning systems have evolved from phase 1 exploration (through the Global Cooling Prize) to phase 2 testing. Testing in India demonstrated that champion technologies can minimize expenses, energy consumption, and peak demand strain by greater than half. The coming year can propel adoption through increasing evidence, growing manufacturer expertise, and pursuing additional market activation techniques across consciousness, investment, and collective purchasing.\n\nPassive daytime radiative cooling (PDRC) approaches similar advancement, with current initiatives seeking real-world pilot demonstrations. Upcoming months may identify which methods succeed.\n\n8. New Standards Catalyze Embodied Carbon Solutions\n\nBuilding improvements through embodied carbon reduction represent another prospect, since this accounts for 'more than one-tenth of global emissions' currently. Countries including India, where roughly 90 percent of future floorspace requires construction, benefit substantially from 'building right the first time.'\n\nWith numerous methods in phases 2 and 3, regulatory standards can promote initial market adoption. The RESNET Standards in America exemplify this approach, with distribution and instruction anticipated in early 2026.\n\n9. China's Upcoming Five-Year Plan Has Ripple Effects Across the World\n\nChina functions as the crucial nation in worldwide energy transformation, and its recent renewable technology exports are 'reshaping the international landscape.' This spring's unveiling of the 15th Five-Year Plan will merit careful observation. As emissions 'begin to plateau and fall,' yet 'climate pledges remain modest,' what direction will the succeeding plan take regarding different power technologies?\n\nChina's renewable energy expansion operates firmly in phases 4 or 5 across primary technologies, enabling rapid transition while seeking emerging markets for solar equipment, batteries, and automobiles. Outcomes depend on how different nations handle trade disputes alongside renewable energy's economic demands.\n\n10. Global Climate Efforts Host Key Convenings After a Year of Unfinished Business\n\nInternationally, 2025 concluded with incomplete work across multiple policy initiatives, spanning from maritime organizations to climate conference conclusions. Regardless of postponements, implementation represents a prominent emphasis as policies attempt synchronizing with technology progression toward commercial viability.\n\nThe coming year encompasses multiple significant moments, incorporating fresh implemention initiatives and April's inaugural conference addressing equitable transitions from fossil resources. Transition roadmaps on carbon sources and woodland areas are designated for completion by subsequent climate negotiations, when Brazilian organizers transmit authority to Turkey and Australia.\n\nNavigating contemporary information streams requires intentional effort. By returning to energy transition phases, stakeholders maintain comprehensive perspective on extraordinary transformation opportunities.",
+      "summary": "RMI identifies 10 key energy transition trends for 2026, including soft energy paths, clean energy affordability through falling battery costs, electric vehicle mainstream adoption, aviation contrail reduction, industrial cleantech advancement, and China's influential Five-Year Plan. Multiple technologies are progressing from specialized to mass adoption phases.",
+      "source_name": "RMI (Rocky Mountain Institute)",
+      "published_date": "2026-01-06",
+      "steeps_category": "Environmental",
+      "pSRT_initial": {
+        "plausibility": 0.90,
+        "source_reliability": 0.92,
+        "recency": 0.95,
+        "transparency": 0.90,
+        "composite": 0.92
+      },
+      "key_entities": [
+        "RMI",
+        "Amory Lovins",
+        "Denmark",
+        "Global South",
+        "India",
+        "China",
+        "European Union",
+        "Climate TRACE",
+        "electric vehicles",
+        "battery storage",
+        "green hydrogen",
+        "aviation contrails"
+      ],
+      "horizon": "medium",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "Comprehensive technology adoption phase analysis with specific metrics and global implementation timeline",
+        "cross_category_relevance": ["Technological", "Economic", "Political"]
+      }
+    },
+    {
+      "signal_id": "SIG-20260114-003",
+      "url": "https://cleantechnica.com/2026/01/01/here-are-some-crucial-climate-actions-you-can-take-to-protect-the-environment-in-2026/",
+      "original_title": "Here Are Some Crucial Climate Actions You Can Take To Protect The Environment In 2026",
+      "original_content": "Our eyes need to be on the environment in 2026. No longer will we accept individual guilt for climate degradation. Yes, changing behaviors is a starting place to protect the environment, but we can only achieve about one-tenth of the emissions-reduction potential that corporations need to adopt, says the World Resources Institute.\n\nWe're done shifting our collective gaze from fossil fuel companies, the biggest drivers of the climate crisis, to individuals like you and me.\n\nCorporations and governments continue to shape the speed and scale of climate disruption, and we as climate activists need to drive systemic corporate change in 2026. It's going to happen through a confluence of pressure that creates enabling conditions and individuals who make eco-conscious daily choices.\n\nThe following list gives you an idea of ways that you can up your climate action game in 2026. The stakes are high, and we need everyone to make an impact.\n\nVote at National and Local Levels\n\nElections directly determine whether governments enable or hinder pro-climate behaviors. A 2025 Yale Program on Climate Change Communication report indicates US voters support:\n\n- 87% favor federal funding to help farmers improve practices to protect and restore soil for carbon storage\n- 77% support increased research funding into renewable energy sources\n- 74% support regulating carbon dioxide as a pollutant\n- 66% support transitioning the US economy to 100% clean energy by 2050\n\nKnow Your Climate Data\n\nInstead of accepting climate misinformation, inform others about the imperative to stop greenhouse gas emissions. Renee Hobbs of the Media Education Lab notes 'five touches are needed to get messages to audiences,' suggesting climate information messages should appear across blogs, conversations, emails, social media, and local events.\n\nMIT's Climate Portal recommends updating buildings and infrastructure to reduce energy consumption. The article emphasizes reforestation through changed farming practices and increased soil carbon storage. It notes that 'collective consumer pressure can help shift large companies toward more climate- and environmentally friendly practices.'\n\nCelebrate Environmental Legislation\n\nLeaders create climate policies at city, county, and state levels. Engage through public comment, pressuring elected officials, and attending meetings. Explain the importance of climate action plans—framework documents for measuring, tracking, and reducing greenhouse gas emissions while adopting climate adaptation measures.\n\nBuild resilience by attending board elections and policy discussions to reinforce climate-conscious governance. Even conservative states enact environmental legislation like renewable energy goals and single-use plastic restrictions.\n\nSpend Time in Nature\n\n'Being immersed in nature can improve your health and well-being.' It enhances brain function, reduces stress, supports heart health, improves mental health, boosts immunity, and extends lifespan. Colorado State researcher Kaiya Tamlyn explains that outdoor time encourages compassionate and pro-environmental thinking toward both people and the natural world.\n\nProtect Ecosystem Resilience\n\nAdvocacy for ecosystems helps natural resource managers and legislators take effective steps toward ecosystem abundance. The US National Resilience Toolkit offers strategies to help ecosystems manage climate change effects. Support habitat conservation for healthy fish, wildlife, and plant populations. Promote species and habitat management for sustainable cultural, recreational, and commercial use. Advocate for enhanced management capacity, adaptive management through integrated monitoring, knowledge sharing on climate impacts, increased awareness and motivation for action, and non-climate stressor management.\n\nClean Up Your Digital Footprint\n\nDeleting and reorganizing digital files is cathartic and reduces data center energy demands. Collectively reducing storage volumes slows new energy-intensive data center construction. Wired recommends simple tech chores: empty computer trash, close excess browser tabs, clear browser history, organize desktop, unsubscribe from unwanted emails, review Google Drive's 'Shared with Me' folder, and cancel unnecessary subscriptions.\n\nEmbrace Renewable Energy\n\nSolar energy is increasingly accessible globally. Many countries explore solar and small-scale renewables for grid independence and electricity access in underserved areas. Solar can charge cell phones, illuminate street lights, heat and cool homes, and power electric vehicles while offering strong return on investment through electricity bill savings. Battery-powered vehicles—hybrid or fully electric—are expanding beyond personal transportation into short-haul trucks, buses, ships, and emerging aircraft applications.\n\nConclusion\n\nAs you intensify climate actions, discuss these climate-forward initiatives with interested others. The article closes with an invitation to 'take a moment to breathe in hope for a healthy and sustainable planet.'",
+      "summary": "CleanTechnica advocates shifting climate action focus from individual guilt to systemic corporate change in 2026, emphasizing voter engagement (with 87% US support for agricultural carbon storage funding), ecosystem advocacy, digital footprint reduction, and renewable energy adoption. The article stresses that individuals can only achieve one-tenth of needed emissions reductions without corporate action.",
+      "source_name": "CleanTechnica",
+      "published_date": "2026-01-01",
+      "steeps_category": "Environmental",
+      "pSRT_initial": {
+        "plausibility": 0.82,
+        "source_reliability": 0.75,
+        "recency": 0.92,
+        "transparency": 0.80,
+        "composite": 0.82
+      },
+      "key_entities": [
+        "World Resources Institute",
+        "Yale Program on Climate Change Communication",
+        "MIT Climate Portal",
+        "US National Resilience Toolkit",
+        "fossil fuel companies",
+        "solar energy",
+        "renewable energy"
+      ],
+      "horizon": "short",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "Actionable climate advocacy framework with specific voter support data and systemic change focus",
+        "cross_category_relevance": ["Social", "Political"]
+      }
+    },
+    {
+      "signal_id": "SIG-20260114-004",
+      "url": "https://www.cfr.org/article/visualizing-2026-five-foreign-policy-trends-watch",
+      "original_title": "Visualizing 2026: Five Foreign Policy Trends to Watch",
+      "original_content": "2026년 국제 정치 경제에 영향을 미칠 5가지 주요 추세 분석\n\n1. 핵심 광물 확보 경쟁 (Critical Minerals Competition)\n중국이 희토류 원소와 광물 처리에서 지배적 위치를 차지하고 있다. 미국은 국내 생산 확대와 다자간 협력을 통해 공급망 다각화를 추진 중이다.\n\n2. 관세로 인한 소비자 부담 (Tariff-Driven Consumer Costs)\n트럼프 행정부의 관세 정책으로 올해 중반쯤 미국 소비자가 관세 부담의 약 67%를 부담할 것으로 예상된다.\n\n3. 핵군축 조약 만료 (Nuclear Arms Treaty Expiration)\n러시아와의 마지막 핵무기 제한 조약(New START)이 2월에 만료되며 양국 간 투명성 확보 메커니즘이 상실될 위기에 처해 있다.\n\n4. 전기국가(Electrostate) 부상 (Rise of the Electrostate)\n중국이 전기차와 태양광 산업에서 주도권을 확보하며 새로운 형태의 에너지 강국으로 부상하고 있다. 'Electrostate'란 청정에너지 기술의 제조와 수출에서 지배력을 가진 국가를 의미한다.\n\n5. 외원조 삭감의 여성 피해 (Women Bear Brunt of Aid Cuts)\n미국의 외원조 대폭 감축으로 전 세계 약 6억7600만 여성이 분쟁 지역에서 인도주의적 지원 부족으로 영향을 받을 것으로 예상된다.",
+      "summary": "CFR identifies five critical 2026 foreign policy trends: China's dominance in critical minerals processing, US consumers bearing 67% of tariff costs by mid-year, New START treaty expiration in February eliminating nuclear transparency mechanisms, China's emergence as an 'electrostate' through clean energy manufacturing dominance, and 676 million women in conflict zones affected by US foreign aid cuts.",
+      "source_name": "Council on Foreign Relations (CFR)",
+      "published_date": "2026-01-14",
+      "steeps_category": "Political",
+      "pSRT_initial": {
+        "plausibility": 0.90,
+        "source_reliability": 0.95,
+        "recency": 1.0,
+        "transparency": 0.88,
+        "composite": 0.93
+      },
+      "key_entities": [
+        "Council on Foreign Relations",
+        "China",
+        "United States",
+        "Russia",
+        "Trump administration",
+        "New START treaty",
+        "critical minerals",
+        "rare earth elements",
+        "electrostate"
+      ],
+      "horizon": "short",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "High-authority geopolitical analysis with specific quantified impacts and near-term treaty expiration",
+        "cross_category_relevance": ["Economic", "Environmental", "Social"]
+      }
+    },
+    {
+      "signal_id": "SIG-20260114-005",
+      "url": "https://www.nbcnews.com/politics/politics-news/2026-new-laws-states-elections-midterms-ai-obamacare-aca-paid-leave-rcna247602",
+      "original_title": "New laws in 2026 target AI and deepfakes, paid leave and rising Obamacare premiums",
+      "original_content": "2026년 미국 전역에서 발효되는 주(state) 법안들의 주요 내용\n\n1. 딥페이크와 AI 관련 법안 (AI and Deepfake Regulations)\n38개 주가 인공지능 관련 입법을 통과시켰다. 캘리포니아와 오리건은 AI가 의료 전문가인 것처럼 환자에게 착각을 주지 못하도록 규제한다. 몬태나와 사우스다코타는 선거에서의 딥페이크 사용 공개를 의무화했다.\n\n2. 유급 가족휴가 및 의료휴가 (Paid Family and Medical Leave)\n메인, 델라웨어, 미네소타에서 유급 가족휴가 정책이 시행된다. 직원들이 급여를 잃지 않으면서 자신과 가족을 돌볼 수 있도록 지원한다.\n\n3. 오바마케어 보조금 만료 (Obamacare Premium Subsidies Expiration)\n모든 50개 주에서 보험료 상승이 예상된다. 콜로래도는 1억 달러를 책정해 보험료 인상을 완화하려 한다.\n\n4. 투표 제한 법안 (Voting Restrictions)\n20개 주가 투표 접근성을 제한하는 37개 법안을 통과시켰다.",
+      "summary": "NBC News reports major 2026 US state legislation including AI regulations in 38 states (California and Oregon banning AI impersonation of medical professionals, Montana and South Dakota mandating deepfake disclosure in elections), paid family leave implementation in Maine, Delaware, and Minnesota, nationwide Obamacare premium increases (with Colorado allocating $100 million for mitigation), and 37 voting restriction bills passed in 20 states.",
+      "source_name": "NBC News",
+      "published_date": "2026-01-01",
+      "steeps_category": "Political",
+      "pSRT_initial": {
+        "plausibility": 0.88,
+        "source_reliability": 0.90,
+        "recency": 0.92,
+        "transparency": 0.90,
+        "composite": 0.90
+      },
+      "key_entities": [
+        "NBC News",
+        "California",
+        "Oregon",
+        "Montana",
+        "South Dakota",
+        "Maine",
+        "Delaware",
+        "Minnesota",
+        "Colorado",
+        "AI regulation",
+        "deepfakes",
+        "Obamacare",
+        "voting restrictions"
+      ],
+      "horizon": "short",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "Comprehensive state-level legislative changes affecting AI governance, healthcare access, and democratic processes",
+        "cross_category_relevance": ["Technological", "Social"]
+      }
+    },
+    {
+      "signal_id": "SIG-20260114-006",
+      "url": "https://www.technologyreview.com/2026/01/12/1130027/generative-coding-ai-software-2026-breakthrough-technology/",
+      "original_title": "Generative Coding: 10 Breakthrough Technologies 2026",
+      "original_content": "Generative AI's capacity to write software code has emerged as one of the technology's most practical business applications.\n\nBoth experienced software engineers and beginners are leveraging AI coding assistants for producing, testing, modifying, and fixing code. This capability significantly reduces time spent on repetitive development tasks. Major technology companies have embraced this shift—Microsoft reports that artificial intelligence generates roughly 30% of its codebase, while Google attributes more than one-quarter of its code production to AI systems. Mark Zuckerberg has indicated Meta plans to have AI agents handle the majority of its code development within the coming months.\n\nNew powerful platforms including GitHub Copilot, Cursor, Lovable, and Replit now enable individuals without coding experience to develop functional applications, games, and websites through simple text prompts describing their desired outcomes.\n\nSome developers employ 'vibe coding,' allowing AI systems to lead code generation while they selectively approve recommendations. However, challenges remain. AI systems produce unreliable suggestions because they 'generate plausible-sounding yet inaccurate information.' MIT CSAIL researchers demonstrate that seemingly credible AI-generated code may malfunction. Additionally, these tools struggle with large, complex codebases, though companies like Cosine and Poolside are addressing these limitations.\n\nThe technology is already affecting employment patterns, particularly reducing 'entry-level programming opportunities for new developers.' While established programmers may enhance productivity, this advancement presents obstacles for career newcomers entering the field.",
+      "summary": "MIT Technology Review highlights generative AI coding as a 2026 breakthrough, with Microsoft generating 30% of code via AI and Google over 25%. GitHub Copilot, Cursor, Lovable, and Replit enable non-coders to build applications, but MIT CSAIL warns of unreliable outputs and reduced entry-level programming opportunities.",
+      "source_name": "MIT Technology Review",
+      "published_date": "2026-01-12",
+      "steeps_category": "Technological",
+      "pSRT_initial": {
+        "plausibility": 0.92,
+        "source_reliability": 0.95,
+        "recency": 0.98,
+        "transparency": 0.92,
+        "composite": 0.94
+      },
+      "key_entities": [
+        "MIT Technology Review",
+        "Microsoft",
+        "Google",
+        "Meta",
+        "Mark Zuckerberg",
+        "GitHub Copilot",
+        "Cursor",
+        "Lovable",
+        "Replit",
+        "MIT CSAIL",
+        "Cosine",
+        "Poolside",
+        "generative AI"
+      ],
+      "horizon": "short",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "Major technology adoption milestone with quantified industry impact and identified labor market disruption",
+        "cross_category_relevance": ["Economic", "Social"]
+      }
+    },
+    {
+      "signal_id": "SIG-20260114-007",
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "original_title": "TQI's Expert Predictions on Quantum Technology in 2026",
+      "original_content": "The Quantum Insider compiled predictions from leading quantum industry experts regarding 2026 developments. Key themes include hardware advancement, commercialization efforts, post-quantum cryptography urgency, and workforce development.\n\nHardware & Computing Progress: Xanadu's Christian Weedbrook anticipates 'compelling proof-of-concept demonstrations in quantum chemistry and materials science' alongside improvements in error rates and scalable architectures. Multiple experts expect processor milestones crossing 100+ qubits with enhanced connectivity.\n\nPost-Quantum Cryptography (PQC) Focus: Lastwall's Karl Holmqvist warns that 'the timeline for quantum-enabled attacks will shrink dramatically, pressuring organizations to expedite their adoption of post-quantum cryptography.' Booz Allen emphasizes organizations must invest in PQC now to protect infrastructure.\n\nMarket Consolidation: SAS predicts increased mergers and acquisitions as quantum vendors consolidate, with both government and private sector investment accelerating.\n\nQuantum Networks & Applications: Safe Quantum's John Prisco highlights advancement in quantum networks for qubit growth and quantum key distribution integration into photonic chips. Quantum sensors are expected to deliver commercial value in biomedical and automotive sectors.\n\nTalent & Education: Xanadu projects expanded university quantum programs driven by industry demand and government support, addressing critical skill gaps in quantum engineering and software development.\n\nMetadata Security Concerns: BlackBerry's Nathan Jenniges warns that 'shielding metadata today makes it much harder for adversaries to build a complete picture' amid post-quantum transition risks.",
+      "summary": "The Quantum Insider's 2026 expert predictions highlight quantum processor milestones exceeding 100 qubits, urgent post-quantum cryptography adoption to counter shrinking attack timelines, market consolidation through M&A, quantum sensor commercialization in biomedical and automotive sectors, and expanded university quantum programs addressing critical talent gaps.",
+      "source_name": "The Quantum Insider",
+      "published_date": "2025-12-30",
+      "steeps_category": "Technological",
+      "pSRT_initial": {
+        "plausibility": 0.85,
+        "source_reliability": 0.82,
+        "recency": 0.95,
+        "transparency": 0.85,
+        "composite": 0.87
+      },
+      "key_entities": [
+        "The Quantum Insider",
+        "Xanadu",
+        "Christian Weedbrook",
+        "Lastwall",
+        "Karl Holmqvist",
+        "Booz Allen",
+        "SAS",
+        "Safe Quantum",
+        "John Prisco",
+        "BlackBerry",
+        "Nathan Jenniges",
+        "quantum computing",
+        "post-quantum cryptography",
+        "quantum sensors"
+      ],
+      "horizon": "long",
+      "status": "Emerging",
+      "classification_metadata": {
+        "classified_at": "2026-01-14T21:00:00Z",
+        "primary_reason": "Multi-expert consensus on quantum technology maturation with specific hardware milestones and security urgency",
+        "cross_category_relevance": ["Economic", "Political"]
+      }
+    }
+  ],
+  "validation": {
+    "input_count": 7,
+    "output_count": 7,
+    "missing_count": 0,
+    "missing_ids": [],
+    "status": "PASS"
+  },
+  "processing_notes": {
+    "v4_compliance": "All signals classified according to v4 Source of Truth rules",
+    "original_content_preserved": "All url, original_title, and original_content fields preserved without modification",
+    "summary_source": "All summaries generated exclusively from original_content field",
+    "no_fabrication": "No information added beyond what exists in original_content",
+    "next_step": "These summaries will propagate through impact-analyzer and report-generator unchanged"
+  },
+  "generated_at": "2026-01-14T21:00:00Z"
+}

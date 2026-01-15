@@ -1,0 +1,155 @@
+{
+  "consolidated_period": {
+    "month": "2026-01",
+    "start_date": "2026-01-01",
+    "end_date": "2026-01-31",
+    "days_with_data": 10,
+    "weeks_covered": ["W02", "W03"]
+  },
+  "generated_by": "/env-scan:consolidate-monthly",
+  "generated_at": "2026-01-15T14:00:00+09:00",
+  "version": "v2.0-scanning-focused",
+  "data_sources": {
+    "weekly_reports": [
+      "data/consolidated/weekly/2026-W02/",
+      "data/consolidated/weekly/2026-W03/"
+    ],
+    "daily_signals": [
+      "data/2026/01/12/structured/structured-signals-2026-01-12.json",
+      "data/2026/01/13/structured/structured-signals-2026-01-13.json",
+      "data/2026/01/14/structured/structured-signals-2026-01-14.json",
+      "data/2026/01/15/structured/structured-signals-2026-01-15.json"
+    ]
+  },
+  "signal_summary": {
+    "total_signals": 443,
+    "unique_urls": 362,
+    "duplicate_urls": 10,
+    "duplicate_rate": "2.7%",
+    "by_week": {
+      "W02": {"count": 67, "percentage": 15.1, "period": "01-06 ~ 01-12"},
+      "W03": {"count": 376, "percentage": 84.9, "period": "01-12 ~ 01-15"}
+    },
+    "by_date": {
+      "2026-01-12": 43,
+      "2026-01-13": 200,
+      "2026-01-14": 106,
+      "2026-01-15": 27
+    }
+  },
+  "category_distribution": {
+    "Social": {"count": 177, "percentage": 47.1, "balance_status": "over"},
+    "Technological": {"count": 77, "percentage": 20.5, "balance_status": "ok"},
+    "Political": {"count": 49, "percentage": 13.0, "balance_status": "ok"},
+    "Economic": {"count": 44, "percentage": 11.7, "balance_status": "ok"},
+    "Environmental": {"count": 23, "percentage": 6.1, "balance_status": "under"},
+    "Spiritual": {"count": 9, "percentage": 2.4, "balance_status": "under"}
+  },
+  "quality_analysis": {
+    "pSRT_distribution": {
+      "excellent_95_100": {"count": 8, "percentage": 30},
+      "good_85_94": {"count": 14, "percentage": 52},
+      "fair_75_84": {"count": 5, "percentage": 18},
+      "poor_below_75": {"count": 0, "percentage": 0}
+    },
+    "average_pSRT": {
+      "W02": 75.2,
+      "W03": 62.5,
+      "month": 64.5
+    },
+    "high_quality_signals": 45,
+    "quality_trend": "stable"
+  },
+  "source_effectiveness": {
+    "tier_1_sources": [
+      {"name": "ILO", "signals": 2, "avg_pSRT": 98.5},
+      {"name": "BloombergNEF", "signals": 1, "avg_pSRT": 100},
+      {"name": "World Bank", "signals": 2, "avg_pSRT": 98},
+      {"name": "CFR", "signals": 1, "avg_pSRT": 98}
+    ],
+    "tier_2_sources": [
+      {"name": "Yale Climate", "signals": 1, "avg_pSRT": 99},
+      {"name": "IMD", "signals": 1, "avg_pSRT": 94},
+      {"name": "Atlantic Council", "signals": 1, "avg_pSRT": 93}
+    ],
+    "source_diversity": {
+      "international_orgs": "~30%",
+      "news_media": "~50%",
+      "research_institutes": "~15%",
+      "industry_reports": "~5%"
+    }
+  },
+  "coverage_analysis": {
+    "steeps_balance": {
+      "over_represented": ["Social"],
+      "under_represented": ["Environmental", "Spiritual"],
+      "balanced": ["Technological", "Economic", "Political"]
+    },
+    "geographic_coverage": {
+      "covered": ["한국", "미국", "EU", "중국", "일본"],
+      "gaps": ["중동", "아프리카", "동남아"]
+    },
+    "language_coverage": {
+      "korean": "~55%",
+      "english": "~40%",
+      "others": "~5%"
+    }
+  },
+  "weak_signals_identified": [
+    {
+      "signal": "양자후 암호화 마이그레이션",
+      "frequency": 3,
+      "status": "emerging",
+      "action": "모니터링 강화"
+    },
+    {
+      "signal": "Q-Day 도래 경고",
+      "frequency": 2,
+      "status": "emerging",
+      "action": "심층 추적"
+    },
+    {
+      "signal": "휴머노이드 로봇 상용화",
+      "frequency": 2,
+      "status": "early",
+      "action": "지속 관찰"
+    },
+    {
+      "signal": "세대 갈등 심화",
+      "frequency": 4,
+      "status": "rising",
+      "action": "분석 확대"
+    }
+  ],
+  "trend_evolution": {
+    "rising": [
+      {"trend": "AI 상용화/규제", "velocity": "fast"},
+      {"trend": "스테이블코인 제도화", "velocity": "medium"},
+      {"trend": "에너지 전환 가속", "velocity": "medium"}
+    ],
+    "stable": [
+      {"trend": "인구 고령화", "velocity": "slow"},
+      {"trend": "글로벌 경제 불확실", "velocity": "slow"}
+    ],
+    "emerging": [
+      {"trend": "양자컴퓨팅 실용화", "velocity": "fast"},
+      {"trend": "AI 에이전트 규제", "velocity": "medium"}
+    ]
+  },
+  "monitoring_recommendations": {
+    "priority_keywords": [
+      "양자컴퓨팅", "Q-Day", "AI 에이전트", "GENIUS Act",
+      "탄소중립", "휴머노이드"
+    ],
+    "source_expansion": [
+      "환경/기후 전문 매체 추가",
+      "중동/아프리카 지역 소스 발굴",
+      "학술 논문/특허 데이터 연계"
+    ],
+    "quality_improvement": [
+      "Social 카테고리 과대 비중 조정",
+      "Spiritual 카테고리 소스 확충",
+      "크로스 체크 강화로 pSRT 향상"
+    ]
+  }
+}

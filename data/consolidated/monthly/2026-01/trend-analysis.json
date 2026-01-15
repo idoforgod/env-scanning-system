@@ -1,0 +1,125 @@
+{
+  "analysis_period": "2026-01",
+  "generated_at": "2026-01-15T10:40:00+09:00",
+  "meta_trends": [
+    {
+      "id": "MT-001",
+      "name": "AI-양자컴퓨팅 융합",
+      "description": "AI 역량과 양자컴퓨팅의 동시 성숙으로 컴퓨팅 패러다임 전환",
+      "related_signals": ["IBM 양자우위", "NVIDIA 플랫폼", "Agentic AI"],
+      "timeline": "2026-2028",
+      "impact_level": "high",
+      "probability": 0.85,
+      "implications": [
+        "암호화 인프라 전면 재구축 필요",
+        "AI 연산 능력 급격한 향상",
+        "금융/의료 분야 혁신 가속"
+      ]
+    },
+    {
+      "id": "MT-002",
+      "name": "노동시장 이중충격",
+      "description": "자동화로 인한 직업 소멸과 인구감소로 인한 노동력 부족 동시 발생",
+      "related_signals": ["ILO 고용 전망", "IMD 직장 트렌드", "인구 고령화"],
+      "timeline": "2026-2028",
+      "impact_level": "critical",
+      "probability": 0.90,
+      "implications": [
+        "22% 직업 소멸 예상",
+        "역설적으로 인력 부족 심화",
+        "자동화/로봇 수요 급증"
+      ]
+    },
+    {
+      "id": "MT-003",
+      "name": "국제질서 재편",
+      "description": "미국 불안정화와 다극화 가속으로 전후 질서 붕괴",
+      "related_signals": ["Eurasia Group 미국 리스크", "한일 협력 강화", "무역정책 변화"],
+      "timeline": "2026-2030",
+      "impact_level": "high",
+      "probability": 0.75,
+      "implications": [
+        "동맹 관계 재정립",
+        "공급망 다변화 필요",
+        "지역 블록화 가속"
+      ]
+    },
+    {
+      "id": "MT-004",
+      "name": "에너지 전환 티핑포인트",
+      "description": "재생에너지가 신규 전력 100% 담당, 화석연료 시대 종언",
+      "related_signals": ["Science 2025 Breakthrough", "탄소중립 정책", "재생에너지 투자"],
+      "timeline": "2025-2030",
+      "impact_level": "high",
+      "probability": 0.80,
+      "implications": [
+        "화석연료 산업 구조조정",
+        "에너지 저장 기술 수요 급증",
+        "기후 목표 달성 가능성 상승"
+      ]
+    }
+  ],
+  "weak_signals": [
+    {
+      "id": "WS-001",
+      "signal": "양자후 암호화 마이그레이션",
+      "frequency": 3,
+      "potential_impact": "보안 체계 전면 재구축",
+      "monitoring_priority": "high",
+      "action_required": "보안 감사 착수 (18개월 내)"
+    },
+    {
+      "id": "WS-002",
+      "signal": "AI 규제 법안 동향",
+      "frequency": 5,
+      "potential_impact": "산업 구조 변화",
+      "monitoring_priority": "high",
+      "action_required": "규제 영향 분석"
+    },
+    {
+      "id": "WS-003",
+      "signal": "휴머노이드 로봇 상용화",
+      "frequency": 2,
+      "potential_impact": "노동시장 대변혁",
+      "monitoring_priority": "medium",
+      "action_required": "기술 동향 모니터링"
+    },
+    {
+      "id": "WS-004",
+      "signal": "세대 갈등 심화",
+      "frequency": 4,
+      "potential_impact": "사회 통합 위기",
+      "monitoring_priority": "medium",
+      "action_required": "사회 동향 모니터링"
+    }
+  ],
+  "trend_velocity": {
+    "accelerating": [
+      {"trend": "AI 상용화", "velocity": "fast", "evidence": "Agentic AI 일자리 대체 시작"},
+      {"trend": "에너지 전환", "velocity": "medium", "evidence": "재생에너지 티핑포인트 통과"}
+    ],
+    "stable": [
+      {"trend": "인구 고령화", "velocity": "slow", "evidence": "구조적 변화, 급격한 변동 없음"}
+    ],
+    "emerging": [
+      {"trend": "양자컴퓨팅 실용화", "velocity": "fast", "evidence": "IBM 2026 양자우위 선언"}
+    ]
+  },
+  "scenario_matrix": {
+    "optimistic": {
+      "probability": 0.25,
+      "description": "AI와 양자컴퓨팅이 생산성 혁명을 이끌며 새로운 일자리 창출",
+      "key_conditions": ["효과적인 재교육", "포용적 기술 정책", "국제 협력 유지"]
+    },
+    "baseline": {
+      "probability": 0.50,
+      "description": "기술 발전과 사회 적응 간 긴장 지속, 점진적 전환",
+      "key_conditions": ["부분적 규제 성공", "일부 산업 구조조정", "지역적 갈등"]
+    },
+    "pessimistic": {
+      "probability": 0.25,
+      "description": "급격한 기술 변화로 사회 불안 심화, 국제 갈등 격화",
+      "key_conditions": ["규제 실패", "대량 실업", "국제 질서 붕괴"]
+    }
+  }
+}

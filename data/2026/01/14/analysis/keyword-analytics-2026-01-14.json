@@ -1,0 +1,86 @@
+{
+  "date": "2026-01-14",
+  "analyzed_at": "2026-01-14T16:28:32.904125",
+  "collection": {
+    "date": "2026-01-14",
+    "phase": "collection",
+    "analyzed_at": "2026-01-14T16:28:32.903704",
+    "sources": {},
+    "by_keyword": {},
+    "by_category": {},
+    "total_urls": 0,
+    "error": "Raw directory not found: /Users/cys/Desktop/ENVscanning-system-main/data/2026/01/14/raw"
+  },
+  "conversion": {
+    "date": "2026-01-14",
+    "phase": "conversion",
+    "analyzed_at": "2026-01-14T16:28:32.903720",
+    "total_signals": 7,
+    "by_category": {
+      "Unknown": {
+        "count": 7,
+        "avg_priority": 7.89
+      }
+    },
+    "by_keyword": {
+      "AI": {
+        "count": 5,
+        "avg_priority": 8.42
+      },
+      "AR": {
+        "count": 7,
+        "avg_priority": 7.89
+      },
+      "inflation": {
+        "count": 1,
+        "avg_priority": 8.6
+      },
+      "trade": {
+        "count": 1,
+        "avg_priority": 8.6
+      },
+      "investment": {
+        "count": 1,
+        "avg_priority": 8.6
+      },
+      "market": {
+        "count": 2,
+        "avg_priority": 7.8
+      },
+      "policy": {
+        "count": 2,
+        "avg_priority": 8.75
+      },
+      "carbon": {
+        "count": 1,
+        "avg_priority": 6.1
+      },
+      "renewable": {
+        "count": 1,
+        "avg_priority": 6.1
+      },
+      "regulation": {
+        "count": 1,
+        "avg_priority": 8.4
+      },
+      "election": {
+        "count": 1,
+        "avg_priority": 8.4
+      },
+      "quantum": {
+        "count": 1,
+        "avg_priority": 7.0
+      },
+      "M&A": {
+        "count": 1,
+        "avg_priority": 7.0
+      }
+    }
+  },
+  "summary": {
+    "total_urls_collected": 0,
+    "total_signals_created": 7,
+    "conversion_rate": 700.0,
+    "keywords_tracked": 0
+  }
+}

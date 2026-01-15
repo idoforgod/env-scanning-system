@@ -1,0 +1,66 @@
+{
+  "comparison_period": "2026-01",
+  "weeks_compared": ["W02", "W03"],
+  "generated_at": "2026-01-15T10:35:00+09:00",
+  "weekly_data": {
+    "W02": {
+      "period": "2026-01-06 ~ 2026-01-12",
+      "total_signals": 67,
+      "top_category": "Technological",
+      "highlight_signals": [
+        {"id": "SIG-2026-0112-005", "title": "IBM 양자우위 선언", "pSRT": 90},
+        {"id": "SIG-2026-0112-001", "title": "NVIDIA Vera Rubin 플랫폼", "pSRT": 89}
+      ],
+      "key_themes": ["양자컴퓨팅", "AI 플랫폼", "로봇공학", "글로벌 리스크"]
+    },
+    "W03": {
+      "period": "2026-01-12 ~ 2026-01-15",
+      "total_signals": 376,
+      "top_category": "Social",
+      "highlight_signals": [
+        {"id": "SIG-2026-01-15-001", "title": "ILO 고용 전망 2026", "pSRT": 100},
+        {"id": "SIG-2026-01-15-002", "title": "IMD 직장 트렌드 2026", "pSRT": 94}
+      ],
+      "key_themes": ["한일 정상회담", "노동시장", "AI 규제", "의료"]
+    }
+  },
+  "comparison_metrics": {
+    "signal_volume": {
+      "W02": 67,
+      "W03": 376,
+      "change": "+461%",
+      "note": "W03에 한일 정상회담으로 대량 보도"
+    },
+    "category_shift": {
+      "W02_top": "Technological (40%)",
+      "W03_top": "Social (47%)",
+      "shift": "기술 → 사회 이슈로 관심 이동"
+    },
+    "pSRT_quality": {
+      "W02_avg": 75.2,
+      "W03_avg": 62.5,
+      "change": "-17%",
+      "note": "대량 수집으로 평균 품질 하락"
+    }
+  },
+  "keyword_evolution": {
+    "rising": ["AI", "규제", "의료", "한일"],
+    "falling": ["양자컴퓨팅"],
+    "emerging": ["GENIUS Act", "정상회담", "드럼외교"],
+    "stable": ["경제", "기후"]
+  },
+  "cross_week_patterns": [
+    {
+      "pattern": "AI 관련 신호 지속 증가",
+      "W02_count": 15,
+      "W03_count": 34,
+      "trend": "상승"
+    },
+    {
+      "pattern": "규제 논의 확대",
+      "W02_count": 5,
+      "W03_count": 14,
+      "trend": "상승"
+    }
+  ]
+}

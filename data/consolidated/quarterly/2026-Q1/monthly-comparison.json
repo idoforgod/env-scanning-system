@@ -1,0 +1,45 @@
+{
+  "comparison_period": "2026-Q1",
+  "months_included": ["2026-01"],
+  "months_pending": ["2026-02", "2026-03"],
+  "generated_at": "2026-01-15T15:10:00+09:00",
+  "monthly_data": {
+    "2026-01": {
+      "total_signals": 443,
+      "weeks": ["W02", "W03"],
+      "category_distribution": {
+        "Social": 47.1,
+        "Technological": 20.5,
+        "Political": 13.0,
+        "Economic": 11.7,
+        "Environmental": 6.1,
+        "Spiritual": 2.4
+      },
+      "avg_pSRT": 64.5,
+      "high_quality_rate": 0.10,
+      "top_keywords": ["AI", "경제", "규제", "의료", "기후"],
+      "highlights": [
+        "한일 정상회담으로 Social 급증",
+        "양자컴퓨팅 메가트렌드 부상",
+        "4개 약한 신호 탐지"
+      ]
+    },
+    "2026-02": {
+      "status": "pending",
+      "expected_signals": "~430"
+    },
+    "2026-03": {
+      "status": "pending",
+      "expected_signals": "~430"
+    }
+  },
+  "cross_month_metrics": {
+    "total_signals_cumulative": 443,
+    "avg_pSRT_trend": [64.5],
+    "category_stability": "to be evaluated at Q1 end"
+  },
+  "quarter_projection": {
+    "total_signals": "~1300",
+    "completion_rate": "34%"
+  }
+}

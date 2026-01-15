@@ -1,0 +1,64 @@
+{
+  "consolidated_period": {
+    "week": "2026-W03",
+    "start_date": "2026-01-12",
+    "end_date": "2026-01-15",
+    "days_covered": 4
+  },
+  "generated_by": "/env-scan:consolidate",
+  "generated_at": "2026-01-15T10:20:00+09:00",
+  "source_files": [
+    "data/2026/01/12/structured/structured-signals-2026-01-12.json",
+    "data/2026/01/13/structured/structured-signals-2026-01-13.json",
+    "data/2026/01/14/structured/structured-signals-2026-01-14.json",
+    "data/2026/01/14/structured/structured-signals-2026-01-14 2.json",
+    "data/2026/01/15/structured/structured-signals-2026-01-15.json"
+  ],
+  "signal_summary": {
+    "total_signals": 376,
+    "unique_urls": 362,
+    "duplicate_urls": 10,
+    "by_date": {
+      "2026-01-12": 43,
+      "2026-01-13": 200,
+      "2026-01-14": 106,
+      "2026-01-15": 27
+    }
+  },
+  "category_distribution": {
+    "Social": {"count": 177, "percentage": 47.1},
+    "Technological": {"count": 77, "percentage": 20.5},
+    "Political": {"count": 49, "percentage": 13.0},
+    "Economic": {"count": 44, "percentage": 11.7},
+    "Environmental": {"count": 23, "percentage": 6.1},
+    "Spiritual": {"count": 9, "percentage": 2.4}
+  },
+  "top_keywords": [
+    {"keyword": "Social", "count": 166},
+    {"keyword": "AI", "count": 49},
+    {"keyword": "Political", "count": 37},
+    {"keyword": "Economic", "count": 31},
+    {"keyword": "Technological", "count": 24},
+    {"keyword": "경제", "count": 23},
+    {"keyword": "규제", "count": 19},
+    {"keyword": "의료", "count": 12},
+    {"keyword": "Environmental", "count": 10},
+    {"keyword": "기후", "count": 4}
+  ],
+  "duplicate_analysis": {
+    "total_titles": 379,
+    "duplicate_titles": 8,
+    "duplicate_examples": [
+      "India Venezuela US (6회)",
+      "장동혁 민주당 공천 (2회)",
+      "상급종합병원 (2회)"
+    ]
+  },
+  "key_trends": [
+    "AI 기술 확산 및 규제 논의",
+    "한일 정상회담 및 외교 관계",
+    "글로벌 경제 전망",
+    "의료/헬스케어 산업 변화",
+    "기후변화 및 에너지 전환"
+  ]
+}
