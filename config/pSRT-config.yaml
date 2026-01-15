@@ -1,59 +1,375 @@
-# pSRT (predicted Signal Reliability Test) 설정
-# 환경스캐닝 자체 신뢰 평가 척도
+# pSRT 2.0 (predicted Signal Reliability Test) 설정
+# 환경스캐닝 자체 신뢰 평가 척도 - AlphaFold pLDDT 영감
+# Version 2.0 - 4 Phase System
 
-version: "1.0"
+version: "2.0"
 created: "2026-01-12"
+updated: "2026-01-14"
 
-# 종합 pSRT 가중치
-overall_weights:
-  source_pSRT: 0.20      # 소스 신뢰도
-  signal_pSRT: 0.35      # 신호 신뢰도 (가장 중요)
-  analysis_pSRT: 0.25    # 분석 신뢰도
-  report_pSRT: 0.20      # 보고서 신뢰도
+# ═══════════════════════════════════════════════════════════════
+#                    pSRT 2.0 4-Phase 아키텍처
+# ═══════════════════════════════════════════════════════════════
+#
+# Phase 1: Groundedness Verification (근거성 검증)
+#          → 모든 주장이 원본에 실제로 존재하는지 확인
+#
+# Phase 2: Cross-Validation (교차 검증)
+#          → 독립적인 다중 소스에서 정보 확인
+#
+# Phase 3: Historical Calibration (역사적 보정)
+#          → 과거 신호 실현률로 현재 신뢰도 보정
+#
+# Phase 4: Hallucination Detection (할루시네이션 감지)
+#          → 6가지 유형의 할루시네이션 실시간 감지
+#
+# ═══════════════════════════════════════════════════════════════
+
+# 최종 pSRT 2.0 가중치 (4 Phase 통합)
+final_pSRT_weights:
+  base_pSRT: 0.25              # 기존 소스/분석 평가
+  groundedness_score: 0.30     # Phase 1: 근거성
+  cross_validation_score: 0.25 # Phase 2: 교차 검증
+  calibration_score: 0.20      # Phase 3: 역사적 보정
+  # Phase 4: 할루시네이션 페널티는 별도 감점
+
+# ═══════════════════════════════════════════════════════════════
+#              Phase 1: Groundedness Verification
+# ═══════════════════════════════════════════════════════════════
+
+groundedness:
+  description: "summary의 모든 주장이 original_content에 실제로 존재하는지 검증"
+
+  # 주장 유형별 가중치
+  claim_weights:
+    factual_claim: 1.0
+    numerical_claim: 1.2      # 수치는 더 엄격하게
+    quote_claim: 1.3          # 인용문은 가장 엄격하게
+    entity_claim: 0.8
+    causal_claim: 1.1
+    temporal_claim: 1.0
+    significance_claim: 0.9
+
+  # 매칭 유형별 점수
+  match_scores:
+    exact: 100                # 정확히 일치
+    semantic: 90              # 의미적으로 유사 (>0.85)
+    partial: 70               # 부분적으로 일치 (>0.7)
+    entity_verified: 60       # 엔티티/수치만 확인됨
+    inference: 40             # 추론이 필요한 경우
+    no_match: 0               # 일치하는 내용 없음
+
+  # Groundedness 등급 체계
+  grade_thresholds:
+    G_plus_plus:
+      min: 95
+      label: "완전 근거"
+      action: "즉시 활용"
+    G_plus:
+      min: 85
+      label: "매우 높은 근거"
+      action: "활용 권장"
+    G:
+      min: 75
+      label: "높은 근거"
+      action: "활용 가능"
+    G_minus:
+      min: 65
+      label: "보통 근거"
+      action: "검토 후 활용"
+    P:
+      min: 50
+      label: "부분 근거"
+      action: "추가 검증 필요"
+    P_minus:
+      min: 30
+      label: "낮은 근거"
+      action: "재작성 권고"
+    F:
+      min: 0
+      label: "근거 없음"
+      action: "제거 권고"
+
+# ═══════════════════════════════════════════════════════════════
+#              Phase 2: Cross-Validation
+# ═══════════════════════════════════════════════════════════════
+
+cross_validation:
+  description: "독립적인 다중 소스에서 주장을 검증"
+
+  # 검색 설정
+  search_settings:
+    min_independent_sources: 3       # 최소 독립 소스 수
+    max_searches_per_claim: 5        # 주장당 최대 검색 수
+    exclude_same_domain: true        # 원본과 같은 도메인 제외
+    freshness_days: 7                # 최신성 (7일 이내 우선)
+    min_source_tier: 3               # 최소 소스 Tier (1-4)
+
+  # 일관성 유형별 점수
+  consistency_scores:
+    FULL_CONFIRMATION: 100           # 모든 소스가 확인
+    MAJORITY_CONFIRMATION: 80        # 다수 소스가 확인
+    PARTIAL_CONFIRMATION: 60         # 일부 소스만 확인
+    CONTRADICTION: 30                # 상충되는 정보 존재
+    NO_CORROBORATION: 20             # 확인 불가
+
+  # CV 등급별 pSRT 조정
+  pSRT_adjustments:
+    CV_plus_plus:
+      min: 90
+      adjustment: "+15"
+    CV_plus:
+      min: 80
+      adjustment: "+10"
+    CV:
+      min: 70
+      adjustment: "+5"
+    CV_minus:
+      min: 60
+      adjustment: "0"
+    P:
+      min: 40
+      adjustment: "-10"
+    P_minus:
+      min: 20
+      adjustment: "-15"
+    F:
+      min: 0
+      adjustment: "-25"
+
+  # 상충 유형 정의
+  contradiction_types:
+    NUMERICAL_CONTRADICTION:
+      severity: HIGH
+      description: "수치가 다른 소스와 불일치"
+    FACTUAL_CONTRADICTION:
+      severity: CRITICAL
+      description: "사실 관계가 상충"
+    TEMPORAL_CONTRADICTION:
+      severity: MEDIUM
+      description: "시간/날짜 정보 상충"
+    SCOPE_CONTRADICTION:
+      severity: MEDIUM
+      description: "범위/규모 정보 상충"
+
+# ═══════════════════════════════════════════════════════════════
+#              Phase 3: Historical Calibration
+# ═══════════════════════════════════════════════════════════════
+
+calibration:
+  description: "과거 신호의 실현률로 현재 신뢰도를 보정"
+
+  # 보정 계수 가중치
+  factor_weights:
+    similar_signal_factor: 0.40      # 유사 신호 기반
+    source_factor: 0.35              # 소스 정확도 기반
+    topic_factor: 0.25               # 주제 정확도 기반
+
+  # 보정 계수 범위 제한
+  factor_limits:
+    min: 0.70                        # 최대 30% 하향
+    max: 1.30                        # 최대 30% 상향
+
+  # 유사 신호 매칭 설정
+  similarity_matching:
+    min_similarity: 0.30             # 최소 유사도 임계값
+    top_k: 10                        # 상위 k개 유사 신호 사용
+    min_sample_size: 5               # 보정에 필요한 최소 샘플
+
+  # 신호 결과 추적 스케줄
+  tracking_schedule:
+    checkpoints:
+      - days_after: 7
+        action: "first_check"
+        description: "초기 징후 확인"
+      - days_after: 30
+        action: "monthly_check"
+        description: "월간 검토"
+      - days_after: 90
+        action: "quarterly_check"
+        description: "분기 검토"
+      - days_after: 180
+        action: "final_check"
+        description: "최종 결과 확정"
+
+    high_significance_override:
+      - days_after: 3
+      - days_after: 7
+      - days_after: 14
+      - days_after: 30
+
+  # 신호 실현 상태 정의
+  realization_status:
+    realized: "예측대로 실현됨"
+    partially_realized: "부분 실현"
+    not_realized: "미실현"
+    contradicted: "반대 결과"
+    unknown: "아직 확인 불가"
+
+  # Calibration 등급 체계
+  grade_thresholds:
+    CAL_plus_plus:
+      factor_range: [1.20, 1.30]
+      label: "매우 높은 역사적 정확도"
+      effect: "pSRT +15~20%"
+    CAL_plus:
+      factor_range: [1.10, 1.19]
+      label: "높은 역사적 정확도"
+      effect: "pSRT +10~15%"
+    CAL:
+      factor_range: [1.00, 1.09]
+      label: "평균 역사적 정확도"
+      effect: "pSRT +0~10%"
+    CAL_minus:
+      factor_range: [0.90, 0.99]
+      label: "낮은 역사적 정확도"
+      effect: "pSRT -0~10%"
+    P:
+      factor_range: [0.80, 0.89]
+      label: "저조한 역사적 정확도"
+      effect: "pSRT -10~20%"
+    P_minus:
+      factor_range: [0.70, 0.79]
+      label: "매우 저조한 역사적 정확도"
+      effect: "pSRT -20~30%"
+
+# ═══════════════════════════════════════════════════════════════
+#              Phase 4: Hallucination Detection
+# ═══════════════════════════════════════════════════════════════
+
+hallucination_detection:
+  enabled: true
+  description: "6가지 할루시네이션 유형을 실시간으로 감지"
+
+  # 6가지 할루시네이션 유형 정의
+  types:
+    FABRICATION:
+      description: "summary에 있지만 original_content에 전혀 없는 내용"
+      severity: CRITICAL
+      penalty: -30
+      action: "제거/수동검토"
+      detection:
+        - "groundedness.match_type == no_match"
+        - "claim_type in [factual, numerical, quote]"
+        - "cross_validation.confirming_sources == 0"
+
+    EXAGGERATION:
+      description: "원본의 내용을 과장하여 표현"
+      severity: HIGH
+      penalty: -15
+      action: "수정 필수"
+      detection:
+        - "groundedness.match_type == partial"
+        - "magnitude_comparison > 1.5"
+        - "hedging_removed == true"
+
+    MISATTRIBUTION:
+      description: "발언/행동을 잘못된 주체에게 귀속"
+      severity: CRITICAL
+      penalty: -25
+      action: "제거/수동검토"
+      detection:
+        - "entity_in_summary not in original_entities"
+        - "quote_attribution mismatch"
+
+    TEMPORAL_DISTORTION:
+      description: "시간/날짜 정보를 잘못 표현"
+      severity: HIGH
+      penalty: -15
+      action: "수정 필수"
+      detection:
+        - "date_in_summary != date_in_original"
+        - "tense_mismatch == true"
+        - "'최근' used for >30 days old"
+
+    CAUSATION_INVENTION:
+      description: "원본에 없는 인과관계를 추가"
+      severity: MEDIUM
+      penalty: -10
+      action: "수정 권고"
+      detection:
+        - "causal_words in summary"
+        - "causal_relationship not in original"
+
+    SCOPE_EXPANSION:
+      description: "원본의 범위를 임의로 확대"
+      severity: MEDIUM
+      penalty: -10
+      action: "수정 권고"
+      detection:
+        - "scope_in_summary > scope_in_original"
+        - "'일부' → '전체' 변환"
+
+  # 심각도별 설정
+  severity_levels:
+    CRITICAL:
+      penalty_range: [-25, -30]
+      action: "제거/수동검토"
+      requires_manual_review: true
+    HIGH:
+      penalty_range: [-15, -20]
+      action: "수정 필수"
+      requires_manual_review: false
+    MEDIUM:
+      penalty_range: [-10, -15]
+      action: "수정 권고"
+      requires_manual_review: false
+    LOW:
+      penalty_range: [-5, -10]
+      action: "모니터링"
+      requires_manual_review: false
+
+  # 최대 페널티 제한
+  max_total_penalty: 50
+
+  # 시스템 건강 목표
+  health_targets:
+    hallucination_rate: "<15%"       # 전체 할루시네이션 비율
+    critical_rate: "<5%"             # CRITICAL 비율
+    false_positive_rate: "<15%"      # 오탐률
+
+# ═══════════════════════════════════════════════════════════════
+#              기존 pSRT 컴포넌트 (하위 호환)
+# ═══════════════════════════════════════════════════════════════
 
 # Source pSRT 계산 설정
 source_pSRT:
   description: "이 정보 출처를 얼마나 신뢰할 수 있는가?"
   weights:
-    authority: 0.30           # 출처 권위성
-    verifiability: 0.25       # 검증 가능성
-    historical_accuracy: 0.25 # 역사적 정확성
-    cross_validation: 0.20    # 교차 검증
+    authority: 0.30
+    verifiability: 0.25
+    historical_accuracy: 0.25
+    cross_validation: 0.20
 
-  # 권위성 점수 기준 (Tier 기반)
   authority_scores:
-    tier_1: 100  # 학술/정부/공식
-    tier_2: 75   # 주요 언론/분석 기관
-    tier_3: 50   # 전문 매체/지역 언론
-    tier_4: 25   # 블로그/트렌드 사이트
-    unknown: 10  # 출처 불명
+    tier_1: 100
+    tier_2: 75
+    tier_3: 50
+    tier_4: 25
+    unknown: 10
 
-  # 검증 가능성 점수 기준
   verifiability_scores:
-    full_verification: 100     # 원본 링크 + 인용 추적 가능
-    partial_verification: 70   # 원본 링크만 존재
-    indirect_verification: 40  # 2차 소스 통해 확인
-    no_verification: 10        # 검증 불가
+    full_verification: 100
+    partial_verification: 70
+    indirect_verification: 40
+    no_verification: 10
 
 # Signal pSRT 계산 설정
 signal_pSRT:
   description: "이 신호가 실제 변화의 징후인가, 노이즈/할루시네이션인가?"
   weights:
-    specificity: 0.25      # 구체성
-    freshness: 0.20        # 신선도
-    independence: 0.20     # 독립성
-    measurability: 0.20    # 측정 가능성
-    pattern_fit: 0.15      # 패턴 일치
+    specificity: 0.25
+    freshness: 0.20
+    independence: 0.20
+    measurability: 0.20
+    pattern_fit: 0.15
 
-  # 구체성 평가 기준
   specificity_criteria:
-    has_date: 20           # 구체적 날짜 포함
-    has_numbers: 20        # 수치 데이터 포함
-    has_actors: 20         # 행위자 명시
-    has_location: 20       # 지역/장소 명시
-    has_mechanism: 20      # 작동 메커니즘 설명
+    has_date: 20
+    has_numbers: 20
+    has_actors: 20
+    has_location: 20
+    has_mechanism: 20
 
-  # 신선도 계산 (시간 기반)
   freshness_decay:
     within_24h: 100
     within_48h: 85
@@ -62,170 +378,112 @@ signal_pSRT:
     within_30d: 30
     older: 10
 
-  # 독립성 평가
   independence_criteria:
-    unique_source: 40        # 단독 소스에서 발견
-    unique_angle: 30         # 새로운 관점/분석
-    not_derivative: 30       # 다른 기사 재탕 아님
+    unique_source: 40
+    unique_angle: 30
+    not_derivative: 30
 
 # Analysis pSRT 계산 설정
 analysis_pSRT:
   description: "분류/영향도/우선순위 분석이 얼마나 정확한가?"
   weights:
-    classification_clarity: 0.25    # 분류 명확성
-    impact_evidence: 0.30           # 영향도 근거
-    priority_consistency: 0.25      # 우선순위 일관성
-    comparative_validation: 0.20    # 비교 검증
+    classification_clarity: 0.25
+    impact_evidence: 0.30
+    priority_consistency: 0.25
+    comparative_validation: 0.20
 
-  # 분류 명확성 기준
   classification_clarity_criteria:
-    single_primary_category: 40      # 명확한 주 카테고리
-    logical_secondary: 30            # 논리적인 부 카테고리
-    tag_relevance: 30                # 태그의 적절성
+    single_primary_category: 40
+    logical_secondary: 30
+    tag_relevance: 30
 
-  # 영향도 근거 기준
   impact_evidence_criteria:
-    explicit_mechanism: 40           # 영향 메커니즘 명시
-    quantifiable_impact: 30          # 정량화 가능한 영향
-    precedent_reference: 30          # 선례/근거 참조
+    explicit_mechanism: 40
+    quantifiable_impact: 30
+    precedent_reference: 30
 
-# Report pSRT 계산 설정
-report_pSRT:
-  description: "최종 보고서의 전체적 신뢰성은 어느 정도인가?"
-  weights:
-    avg_signal_pSRT: 0.35         # 신호 품질 평균
-    source_diversity: 0.20        # 소스 다양성
-    internal_consistency: 0.25    # 내부 일관성
-    coverage_balance: 0.20        # 커버리지 균형
+# ═══════════════════════════════════════════════════════════════
+#              최종 등급 체계 (pSRT 2.0)
+# ═══════════════════════════════════════════════════════════════
 
-  # 소스 다양성 평가
-  source_diversity_criteria:
-    tier_diversity: 30            # Tier 분포
-    region_diversity: 25          # 지역 분포
-    type_diversity: 25            # 유형 분포 (학술/뉴스/보고서)
-    language_diversity: 20        # 언어 분포
-
-  # STEEPS 커버리지 균형 목표
-  coverage_balance_targets:
-    Social: 0.15
-    Technological: 0.25
-    Economic: 0.20
-    Environmental: 0.15
-    Political: 0.15
-    Spiritual: 0.10
-
-# 할루시네이션 탐지 설정
-hallucination_detection:
-  enabled: true
-
-  # 탐지 규칙
-  rules:
-    source_hallucination:
-      condition: "url_verification_failed"
-      severity: "critical"
-      action: "remove"
-
-    signal_fabrication_risk:
-      condition: "specificity < 30 AND independence < 40"
-      severity: "high"
-      action: "verify"
-
-    overinterpretation:
-      condition: "significance >= 4 AND impact_evidence < 40"
-      severity: "medium"
-      action: "downgrade"
-
-    temporal_confusion:
-      condition: "freshness < 30"
-      severity: "medium"
-      action: "verify_date"
-
-    vague_signal:
-      condition: "specificity < 30"
-      severity: "medium"
-      action: "verify"
-
-    duplicate_risk:
-      condition: "independence < 30"
-      severity: "low"
-      action: "review"
-
-    low_source_quality:
-      condition: "source_score < 50 AND significance >= 4"
-      severity: "medium"
-      action: "verify"
-
-# 자동 조치 임계값
-auto_actions:
-  # 보고서에서 제외
-  exclude_threshold: 40
-
-  # "참고용" 표시
-  reference_only_threshold: 50
-
-  # "추가 검증 필요" 표시
-  verification_needed_threshold: 60
-
-  # 자동 승인 가능
-  auto_approve_threshold: 70
-
-  # Critical 플래그 시 즉시 검토
-  critical_flag_action: "immediate_review"
-
-# 등급 체계
 grade_system:
+  A_plus_plus:
+    range: [95, 100]
+    label: "Exceptional Confidence"
+    color: "#00AA00"
+    action: "즉시 활용, 높은 신뢰"
+    emoji: "🟢🟢"
+
   A_plus:
-    range: [90, 100]
+    range: [90, 94]
     label: "Very High Confidence"
     color: "#00C851"
     action: "즉시 활용 가능"
+    emoji: "🟢"
 
   A:
     range: [80, 89]
     label: "High Confidence"
     color: "#33B5E5"
     action: "활용 권장"
+    emoji: "🔵"
 
   B:
     range: [70, 79]
     label: "Good Confidence"
     color: "#2BBBAD"
     action: "활용 가능, 모니터링 권장"
+    emoji: "🟢"
 
   C:
     range: [60, 69]
     label: "Moderate Confidence"
     color: "#FFBB33"
     action: "추가 검증 후 활용"
+    emoji: "🟡"
 
   D:
     range: [50, 59]
     label: "Low Confidence"
     color: "#FF8800"
     action: "교차 검증 필수"
+    emoji: "🟠"
 
   E:
     range: [40, 49]
     label: "Very Low Confidence"
     color: "#FF4444"
     action: "참고용으로만 사용"
+    emoji: "🔴"
 
   F:
     range: [0, 39]
     label: "Unreliable"
     color: "#CC0000"
     action: "제외 권고"
+    emoji: "⛔"
 
-# 시각화 설정
+# 자동 조치 임계값
+auto_actions:
+  exclude_threshold: 40
+  reference_only_threshold: 50
+  verification_needed_threshold: 60
+  auto_approve_threshold: 70
+  high_confidence_threshold: 85
+  critical_flag_action: "immediate_review"
+
+# ═══════════════════════════════════════════════════════════════
+#              시각화 설정
+# ═══════════════════════════════════════════════════════════════
+
 visualization:
-  # 진행바 스타일
   progress_bar:
     filled_char: "█"
     empty_char: "░"
     width: 25
 
-  # 색상 코딩 (터미널용)
   colors:
+    exceptional: "bright_green"
     very_high: "green"
     high: "cyan"
     good: "blue"
@@ -234,11 +492,13 @@ visualization:
     very_low: "red"
     unreliable: "dark_red"
 
-# 피드백 루프 설정
+# ═══════════════════════════════════════════════════════════════
+#              피드백 루프 설정
+# ═══════════════════════════════════════════════════════════════
+
 feedback_loop:
   enabled: true
 
-  # pSRT 정확도 추적
   accuracy_tracking:
     enabled: true
     review_after_days: 30
@@ -246,9 +506,25 @@ feedback_loop:
       - "predicted_vs_actual_significance"
       - "flag_accuracy"
       - "grade_stability"
+      - "hallucination_detection_accuracy"
+      - "calibration_effectiveness"
 
-  # pSRT 모델 자체 개선
   self_improvement:
     enabled: true
     adjust_weights_after_reviews: 10
     minimum_data_points: 50
+
+  # Phase별 피드백
+  phase_feedback:
+    groundedness:
+      track_false_positives: true
+      adjust_match_thresholds: true
+    cross_validation:
+      track_contradiction_accuracy: true
+      optimize_search_queries: true
+    calibration:
+      track_prediction_accuracy: true
+      update_source_accuracy: true
+    hallucination:
+      track_detection_accuracy: true
+      adjust_severity_thresholds: true

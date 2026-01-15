@@ -1,0 +1,2040 @@
+{
+  "discovery_date": "2026-01-15",
+  "generated_at": "2026-01-15T06:11:52.954467",
+  "stage": "Stage A: URL Discovery",
+  "pipeline_version": "v4",
+  "stats": {
+    "sources_loaded": 4,
+    "total_raw": 225,
+    "duplicates_removed": 0,
+    "unique_urls": 225
+  },
+  "note": "이 URL 목록에서 Stage B가 실제 기사 본문을 수집합니다.",
+  "urls": [
+    {
+      "url": "https://n.news.naver.com/mnews/article/417/0001124599?sid=101",
+      "title_hint": "[신년기획] ⑤'분열'이 삼킨 대한민국, '분노'에 저당 잡힌 민주주의",
+      "snippet_hint": "",
+      "source_name": "머니S",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953242"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/081/0003608939?sid=100",
+      "title_hint": "백두대간, 국가 생태자산으로… 세계기록유산 등재 추진",
+      "snippet_hint": "",
+      "source_name": "서울신문",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953255"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/079/0004105246?sid=100",
+      "title_hint": "한동훈 제명 논리, 윤민우 '모든전쟁' 책에서 따왔다",
+      "snippet_hint": "",
+      "source_name": "노컷뉴스",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953262"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/005/0001826291?sid=103",
+      "title_hint": "김영옥·박근형 등 올겨울 연극 무대 달구는 원로배우들",
+      "snippet_hint": "",
+      "source_name": "국민일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953266"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/005/0001826283?sid=103",
+      "title_hint": "건강검진부터 여행까지… 선교사에 ‘쉼·회복’ 선물한다",
+      "snippet_hint": "",
+      "source_name": "국민일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953270"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097794?sid=101",
+      "title_hint": "“AI가 완벽해질수록 우리는 ‘결함’을 사랑한다”... 기술과 공존 택한 디자이너들의 역설",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953273"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097790?sid=101",
+      "title_hint": "정의선, 中·美·印서 ‘광폭 경영 행보’",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953276"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097787?sid=101",
+      "title_hint": "한화, 테크·라이프 사업군 인적분할",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953280"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097778?sid=101",
+      "title_hint": "삼성바이오 “CDMO 역량 집중… 수주 경쟁력 강화”",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953283"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097770?sid=101",
+      "title_hint": "유통업계 ‘초가성비’로 밥상물가 잡는다",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953286"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/422/0000822789?sid=101",
+      "title_hint": "'환율·집값'에 기준금리 동결되나…새해 첫 금통위",
+      "snippet_hint": "",
+      "source_name": "연합뉴스TV",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953289"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/016/0002585935?sid=104",
+      "title_hint": "美연준 베이지북 “미 경제활동 반등 조짐…관세비용 고객전가 시작”",
+      "snippet_hint": "",
+      "source_name": "헤럴드경제",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953292"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097796?sid=101",
+      "title_hint": "“환율 잡자”… 靑·증권업 ‘서학개미 유턴’ 공동작전",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953303"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097772?sid=101",
+      "title_hint": "“올해 5대 대외요인 중 ‘경제리스크’ 가장 위험”",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953306"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/421/0008714951?sid=110",
+      "title_hint": "[기자의 눈] 정청래식 정치적 명분이 놓친 민생",
+      "snippet_hint": "",
+      "source_name": "뉴스1",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953310"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/023/0003953121?sid=101",
+      "title_hint": "주가·환율 급등하자, 벌어지는 ‘딜링룸 전쟁’",
+      "snippet_hint": "",
+      "source_name": "조선일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953312"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/018/0006200929?sid=101",
+      "title_hint": "민간 개발 ‘공공기여’로 도시안전 지킨다…하수도 정비 활용",
+      "snippet_hint": "",
+      "source_name": "이데일리",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953315"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/015/0005237358?sid=101",
+      "title_hint": "석탄발전소, 5조원짜리 '휴지조각' 되나…IMF가 경고한 이유는",
+      "snippet_hint": "",
+      "source_name": "한국경제",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953318"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/001/0015847859?sid=102",
+      "title_hint": "서울시, 생활 인프라에 쓰던 '공공기여'로 낡은 하수도 정비",
+      "snippet_hint": "",
+      "source_name": "연합뉴스",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953322"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/629/0000462647?sid=102",
+      "title_hint": "서울시, 민간개발 공공기여 하수시설 정비에 쓴다",
+      "snippet_hint": "",
+      "source_name": "더팩트",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953324"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/421/0008714928?sid=102",
+      "title_hint": "서울시, 농업인 역량 향상 위해 '새해 실용교육' 운영",
+      "snippet_hint": "",
+      "source_name": "뉴스1",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953328"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/421/0008714954?sid=100",
+      "title_hint": "오늘 본회의…與 '2차 종합특검' 강행, 野 필리버스터 맞불",
+      "snippet_hint": "",
+      "source_name": "뉴스1",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953330"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/018/0006200935?sid=102",
+      "title_hint": "\"교사는 복지사 아냐\"…고조되는 '학맞통' 반대론",
+      "snippet_hint": "",
+      "source_name": "이데일리",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953333"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097777?sid=104",
+      "title_hint": "日, 조기총선 국면 돌입… 2월 8일 유력",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953336"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/022/0004097792?sid=102",
+      "title_hint": "항장불살(降將不殺) [김태훈의 의미 또는 재미]",
+      "snippet_hint": "",
+      "source_name": "세계일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953341"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/374/0000486476?sid=104",
+      "title_hint": "美, 75개국 국민에 이민비자 중단…러시아·이란 등 포함",
+      "snippet_hint": "",
+      "source_name": "SBS Biz",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953344"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/123/0002375721?sid=103",
+      "title_hint": "달콤한 유혹의 대가… 설탕을 매일 먹었더니 생긴 변화",
+      "snippet_hint": "",
+      "source_name": "조세일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953347"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/468/0001209632?sid=102",
+      "title_hint": "화성시, 정신응급대응 1개 의료기관 3병상 추가 확보",
+      "snippet_hint": "",
+      "source_name": "스포츠서울",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953350"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/003/0013711345?sid=104",
+      "title_hint": "출산 후 ‘이것’ 하면…10년 뒤 우울증 위험 확 줄어",
+      "snippet_hint": "",
+      "source_name": "뉴시스",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953353"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/023/0003953061?sid=103",
+      "title_hint": "‘몇 시간 잤나’보다 일정한 시간에 자고 깨는 게 중요",
+      "snippet_hint": "",
+      "source_name": "조선일보",
+      "source_type": "news",
+      "discovered_from": "naver-news",
+      "discovered_at": "2026-01-15T06:11:52.953356"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/society/society_general/1239817.html",
+      "title_hint": "한예종 교수, 수업중 성적표현 ‘비판성명’ 올린 학생 1명 콕집어 고소",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953502"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/society/society_general/1239816.html",
+      "title_hint": "내란, 이제 정말 시작되는 심판의 시간",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953506"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/opinion/column/1239815.html",
+      "title_hint": "없는 자에게도 가닿는 헌법재판을 꿈꾸며 [세상읽기]",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953509"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/economy/finance/1239814.html",
+      "title_hint": "[단독] ‘탈팡’ 확산 현실로…쿠팡 카드 매출액 매일 56억원씩 증발",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953512"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/specialsection/esc_section/1239813.html",
+      "title_hint": "새해 겨울, 러닝을 결심한 이들을 위한 안내서",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953516"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601142349001",
+      "title_hint": "속보서울 시내버스 15일 첫차부터 운행 재개···노사협상 극적 타결",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953519"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601150008001",
+      "title_hint": "서울시내버스 임금 2.9%인상 타결···15일 첫 차부터 버스운행 시작",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953522"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141658001",
+      "title_hint": "“사실상 사형 폐지국”이라면서 윤석열에 사형 구형한 특검, 왜?",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953525"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141557001",
+      "title_hint": "시장실 출입 때 시민·공무원들 '휴대전화 강제 수거'하는 통영시···\"오만한 발상\"",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953527"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141558001",
+      "title_hint": "“법무부 파견 검사들·민정수석이 주도했다”···사퇴한 검찰개혁추진단 자문위원 6명",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953530"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/americas/venezuela-diplomat-us-visit-washington.html",
+      "title_hint": "Venezuela Envoy to Visit U.S. for First Official Trip in Years",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953534"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/europe/greenland-climate.html",
+      "title_hint": "Why Greenland Matters for a Warming World",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953537"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/canada/carney-trip-china-relations-trump.html",
+      "title_hint": "Mark Carney Heads to Beijing to Discuss Canada-China Relations as U.S. Outlook Darkens",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953540"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/middleeast/iran-protests-soltani-execution-trump.html",
+      "title_hint": "Iran Plans to Execute Erfan Soltani as Trump Threatens ‘Strong Action’",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953543"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/americas/greenland-fear-trump-us-takeover.html",
+      "title_hint": "‘We’re Not Stupid’: What Greenlanders Would Say to Trump",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953546"
+    },
+    {
+      "url": "https://www.washingtonpost.com/national-security/2026/01/14/trump-greenland-jd-vance/",
+      "title_hint": "Vance-hosted Greenland meeting ends with ‘fundamental disagreement’",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953549"
+    },
+    {
+      "url": "https://www.washingtonpost.com/world/2026/01/13/venezeula-americans-released-maduro/",
+      "title_hint": "Venezuela releases multiple detained U.S. citizens, State Department says",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953553"
+    },
+    {
+      "url": "https://www.washingtonpost.com/investigations/2026/01/14/iran-protests-videos-government-crackdown/",
+      "title_hint": "Amid Iran’s blackout, videos show lethal violence across the country",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953556"
+    },
+    {
+      "url": "https://www.washingtonpost.com/world/2026/01/14/israel-iran-russia-secret-messages/",
+      "title_hint": "With tensions high, Israel and Iran secretly reassured each other via Russia",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953559"
+    },
+    {
+      "url": "https://www.washingtonpost.com/world/interactive/2026/iran-photos-protests-blackout-crackdown/",
+      "title_hint": "Photos emerge from Iran’s protests, veiled by government blackout",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953562"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jan/13/trump-administration-ends-tps-somalia",
+      "title_hint": "Trump administration ends temporary protected status for Somalis in US",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953565"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/jan/13/developing-countries-poorer-world-bank-report",
+      "title_hint": "Quarter of developing countries poorer than in 2019, World Bank finds",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953568"
+    },
+    {
+      "url": "https://www.theguardian.com/books/2026/jan/12/chimamanda-ngozi-adichie-accuses-lagos-hospital-negligence-son-death",
+      "title_hint": "Author Chimamanda Ngozi Adichie accuses Lagos hospital of negligence after son’s death",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953571"
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2026/jan/09/the-gambia-female-genital-mutilation-fgm-supreme-court-case-overturn-ban",
+      "title_hint": "Attempt to overturn the Gambia’s ban on FGM heard by supreme court",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953574"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/jan/08/questions-targeting-impact-us-airstrikes-in-nigeria",
+      "title_hint": "Two weeks on, questions linger over targeting and impact of US airstrikes in Nigeria",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953577"
+    },
+    {
+      "url": "https://www.bbc.com/news/topics/c2vdnvdg6xxt",
+      "title_hint": "Israel-Gaza War",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953580"
+    },
+    {
+      "url": "https://www.bbc.com/news/war-in-ukraine",
+      "title_hint": "War in Ukraine",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953583"
+    },
+    {
+      "url": "https://www.bbc.com/news/us-canada",
+      "title_hint": "US & Canada",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953587"
+    },
+    {
+      "url": "https://www.bbc.com/news/uk",
+      "title_hint": "UK",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953590"
+    },
+    {
+      "url": "https://www.bbc.com/news/politics",
+      "title_hint": "UK Politics",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953593"
+    },
+    {
+      "url": "https://www.scmp.com/news/china/military/article/3339933/trumps-golden-fleet-shipbuilding-push-give-us-military-and-strategic-advantage?utm_source=rss_feed",
+      "title_hint": "Trump’s ‘Golden Fleet’ shipbuilding push to give US military and strategic advantage",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953597"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3339932/ford-suspends-worker-who-heckled-trump-and-got-flipped-us-president?utm_source=rss_feed",
+      "title_hint": "Ford suspends worker who heckled Trump and got flipped off by US president",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953600"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/europe/article/3339931/france-charges-maths-professor-accused-china-spying-case?utm_source=rss_feed",
+      "title_hint": "France charges maths professor accused in China spying case",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953604"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3339930/fbi-raids-home-us-journalist-who-reported-trump-firings?utm_source=rss_feed",
+      "title_hint": "FBI raids home of US journalist who reported on Trump firings",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953607"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/middle-east/article/3339929/trump-envoy-says-gaza-entering-second-phase-ceasefire-plan-including-disarming-hamas?utm_source=rss_feed",
+      "title_hint": "Trump envoy says Gaza entering second phase of ceasefire plan, including disarming Hamas",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953610"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352618.shtml",
+      "title_hint": "",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953614"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352617.shtml",
+      "title_hint": "",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953617"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352616.shtml",
+      "title_hint": "",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953620"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352615.shtml",
+      "title_hint": "",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953623"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352614.shtml",
+      "title_hint": "",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953626"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/culture/2026/01/14/books/akutagawa-prize-2026/",
+      "title_hint": "Time and history win big at most prestigious Japanese book awards",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953629"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/business/2026/01/14/climate-leadership-firms/",
+      "title_hint": "Japanese companies ahead on climate leadership, data shows",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953632"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/business/2026/01/14/yen-speculators-warning/",
+      "title_hint": "Japan warns speculators after yen sets fresh 18-month low",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953635"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/news/2026/01/14/japan/politics/takaichi-ldp-snap-election-japan/",
+      "title_hint": "Takaichi to roll the dice on risky, but potentially rewarding, snap election",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953638"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/news/2026/01/14/japan/prince-hisahito-poetry-ceremony-debut/",
+      "title_hint": "Prince Hisahito makes debut at imperial New Year's poetry ceremony",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953641"
+    },
+    {
+      "url": "https://asia.nikkei.com/spotlight/environment/marubeni-s-indonesia-forests-took-little-damage-during-deadly-floods",
+      "title_hint": "Marubeni's Indonesia forests took little damage during deadly floods",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953645"
+    },
+    {
+      "url": "https://asia.nikkei.com/business/startups/fintech-startup-alpaca-becomes-first-japanese-founded-unicorn-in-us",
+      "title_hint": "Fintech startup Alpaca becomes first Japanese-founded unicorn in US",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953648"
+    },
+    {
+      "url": "https://asia.nikkei.com/opinion/prediction-markets-are-warping-future-expectations",
+      "title_hint": "Prediction markets are warping future expectations",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953652"
+    },
+    {
+      "url": "https://asia.nikkei.com/politics/behind-takaichi-s-decision-to-call-a-snap-japan-election",
+      "title_hint": "Behind Takaichi's decision to call a snap Japan election",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953655"
+    },
+    {
+      "url": "https://asia.nikkei.com/editor-s-picks/china-up-close/analysis-china-s-tough-stance-backfires-boosting-japan-pm-s-popularity",
+      "title_hint": "Analysis: China's tough stance backfires, boosting Japan PM's popularity",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953658"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/",
+      "title_hint": "News",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953661"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/young-ugandans-hope-for-stability-opportunities-on-eve-of-election",
+      "title_hint": "‘We are stuck’: Young Ugandans want stability, opportunities on eve of vote",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953664"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/is-starlink-helping-iranians-break-internet-blackout-and-how-does-it-work",
+      "title_hint": "Is Starlink helping Iranians break internet blackout, and how does it work?",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953667"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/mapping-who-controls-what-in-yemen-in-2026",
+      "title_hint": "Mapping who controls what in Yemen in 2026",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953670"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/trump-envoy-announces-launch-of-second-phase-of-gaza-plan",
+      "title_hint": "Trump envoy announces launch of ‘phase two’ of plan to end Gaza war",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953673"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/c5y32g7l8lxo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "الولايات المتحدة وبريطانيا تخفضان عدد الأفراد في قاعدة قطر الجوية، وإيران تهدد بقصف القواعد الأمريكية في المنطقة إذا تعرضت لهجوم",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953676"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/cn9zyw55yejo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "الولايات المتحدة تعلن بدء المرحلة الثانية من خطة السلام في غزة",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953679"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/c74vwyp8z4wo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "ترامب يصر على أن الولايات المتحدة بحاجة إلى غرينلاند لـ \"أغراض أمنية\"",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953682"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/c4gr8rxy87xo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "\"الخروج من البيت للضرورة القصوى فقط\": ماذا يحدث في حمص؟ سكان يروون لبي بي سي ومصادر حكومية ترُد",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953685"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/czjgk17n31wo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "السنغال تتأهل إلى نهائي كأس الأمم الأفريقية على حساب مصر، ومواجهة مرتقبة بين المغرب ونيجيريا",
+      "snippet_hint": "",
+      "source_name": "global-news",
+      "source_type": "news",
+      "discovered_from": "global-news",
+      "discovered_at": "2026-01-15T06:11:52.953688"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1RSnBGWXpMZ3JqVmxqeDBEZXBMUkdaR0tzc0VMbTJDN3A1M2pBUXVnNGNobXBKQzR4Y25YVUROYVJ5RDJqX190MlF2WVNWTFJhUnktZmdRVUVib0tFSkNiYnJyTmZvWVVk?oc=5",
+      "title_hint": "10 Bold Predictions for A.I.’s Year Ahead - puck.news",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953882"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSWgzM1FFYUhfd05TNm5MUHBQeXVyM1dCbjFPTHg4MlFhS2RVY2pOT1hyRWJkYlZQVkI3OFNKOTF6RXpkZlpVOG1EY0podnVVVGhOU283ODRPQksyYmlYVl93Uk5KTTdfUXF6ekVxZkszWC1LZVEyUGRiR3Z4V0liR3VpaVJOcGM?oc=5",
+      "title_hint": "How 2026 Could Decide the Future of Artificial Intelligence - Council on Foreign Relations",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953886"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB6ZmstZ1N5emFfaXQzWFZ5V3ctbmN3QzRTZEtkdm82U3djcHQwMnJrMlc0WHZhNjRqazB6eE12aVpDazFnTU94SGxwcmRaTVAzX2xfOVJkTkI1MVQ5NndtNFNEVmRPRHdpaDV4M2F4LVJSVkE?oc=5",
+      "title_hint": "Everything at CES was AI and these are the most pointless uses of it - Polygon",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953890"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBGYWY2VnlxcjNsV2cwd2FybHNsRTQwRGRJRVlVeDZZZWFORXpBeVZqbEhENnBGV29vQmxkbXVtZVlVdVhGQ1lmT3YwSGpQZWNyei04QVJwY2x2WUxMX01DTlBtd3dmdXJDMVQ0WFZ0cU4?oc=5",
+      "title_hint": "Nvidia and Microsoft back AI breakthrough for gene therapies - Financial Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953894"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQVWZGNVZaUDdtUHRhRFVJSFhhb2pURGVaU1Myd21iTXJZeXlKMFFjSExybHhzOXFWTzhkMjZqWE1wZFZWTTdnRklwRTNkdHQ4S0tkRTI4NTdrZklMdEp5Q3ZhZEZmQUpKWkVBQnZvSVhtSjhTaVVHRTM5WFlTOHo4Mm9jM0hVaTc4ck14X19neXRuXzZUU21sVFFseTVQZlQyZFUxS0xKSWJSVGZaYUhUMnNNMkVOSGx5emRQaUxDVExDMXlFY0ttUXpQRDZuR2VzSzVPMGtudlNhTHpmYlFaLU1LY1AyZ1lOVDI4bml1V2NwM1ZRTHlyeTRTbmQ1X1NHTGVr?oc=5",
+      "title_hint": "This is the Claude update I’ve been waiting for — Cowork could reshape how we use AI in 2026 - TechRadar",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953898"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXM4Z19NNkx3VkZQa3BCR3VuRXprcmZmTWF5aUQtcU5TbVBOd01MbUZCZktmSk9ERzVwTnlXWmFrRm9lV044TTdfaU51YXpfcnRJbDNqOWtkcHpCd2FYM2RaMGFkTHBxdmczeGtJbjhwc3VjMkY2X3pjRnpRQm04d0xfVmsxQzYyb01XYVhVcw?oc=5",
+      "title_hint": "Exploring Gen's AI Breakthrough for Deepfake Detection - AI Magazine",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953901"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORTZPaWg0NHJMbkE1QmZRekJGNTFfVGtsT2JsN3FULVpBMXg5Mk5raFNRUWNXSndWQW9kYW16aVViaHBMQmJDeFQ4WUs2ME5mN01wZl9iNkstcVgydTY0eW44d3VaTTlicExPVDNXa2NYUjJ3ZkpaTXQ0LWVCMW9nOFgxMHN4Vmh6ZFo5SV82UmFqV2RB?oc=5",
+      "title_hint": "Honeywell plans to carve out quantum computing unit Quantinuum via IPO - Reuters",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953905"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMFVpSl9saThQZmxZcERXRkt6NWFYNFVWeXNOMnBrTDhLT042T3hTQTdyUjJjNFVxX0tDNU5HRzM2b0g3NjRYOHFOMHFLaGdpS3JoVUVHOHY5Q3I5RVBEb0w4X2ZZVXZDczJ0X213SnJiSFlxSFFTRVc2YWdiWVREYWJtNVZfLTRHQnpPY3Vjc1A?oc=5",
+      "title_hint": "Honeywell plans to carve out quantum computing unit Quantinuum via IPO - Yahoo Finance",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953908"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeEptcVNQN09GMnMtc0ZmNjFIX1E1Z05ObWVsT2RidGNFWU5MVlRuRGlNaVlEQ1otb1ViQ0xVbXhQYjIxUTYtNXoyWUJTUFQza1BHVXR2NTNDZXZMcGdoRE5uREpJV0FENDhwamcxei1vdzFaazRIMjNWUEU4RGdkZTRmUDdqRjdKYjNFWU8zc3pBN01wNEdIZjgzX0h1ZFE?oc=5",
+      "title_hint": "Quantum Computing Stocks: Honeywell's Quantinuum Plans IPO - Investor's Business Daily",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953912"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSVJIQkNHbkprY1YtNlNENzVDNHIxc1pxblFlbV9YdTlOUTBwblhIMV92eFA2Q1N6emJGYmJqaDNSdHpxWU9KRlVZVUI0NnM2TUFtWVZfak9NY3dBVXhGY0pUbVI2NFZWdk0zcXg2Y2lKUFYtSF9YcE5DR2JtakNGTHZiVTR4SjUwSEt5YlVMNElleEo3eHZCSVNRZms5Y1JLcEN6bl9leEhySDhxNmlQVnYydnVidGZpRGVoeS1qclBhWWFIeVNtd0w0T0s?oc=5",
+      "title_hint": "Reauthorizing the NQIA is critical to America’s future | Opinion - The Tennessean",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953915"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZm4zeHhWSFVmMG9WbVQxdjN1bUctSVhKVkFkdXRtS2dhOTlDRUpzYXpWWE1vSHAxeHdvSTNEVkpzVENoQlZfWFZFaVdTUlg2TFl6WlFhR3RDZ0VZdmwtdW5oaEJLZ3VKQk9tT3BGa0VWQ2tCQmd0cUFCdmhyMmhjT2JhWW9zeEJqZnVUTEQwMkhLLU9uN25kdDFtTWY?oc=5",
+      "title_hint": "How Materials Can Enable Commercial Quantum Technologies - IDTechEx",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953919"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONHkyV2ZqOWJYTzNVSnVDSXA5dUNCcDR4OXI2M2xTa0cyRmViNGtZTzlYWXpUdlJrUnltLU5OSG44SWtVRGtSdFREMmhyYmE1SUlPZXB3TzFZQjhUbWRIQWxKTHNOcUNpdHJmR2FrdE5seEN3c0wwbDlSZ1lDTnQteVcteXJHdmRfVjhjR0I4eWVVcWZ2VDRYcFRPZzRLNUVxbXBoSmFieFF4SlE1Q2xJVnFxOUJFMTZKdkN6UVo2b2pSX2vSAcgBQVVfeXFMT0lBWVE2cXVwbW9SU1cwSXZ5NEo5N245Qlg5b2NnR29DUUREYktmRlllelpDOFZzcE5vSl9BUU1SRjNHNzVuTjAyRkZISlZyaDlzQkpCTk9BM1BVVG5nckJpTVdLWDlFSV9Ed09uaUY3bG90clVKU2NNdzN5aEVyRUk3czNxZ0dHaTZrU29RU0hiUFFza1NqdFRESWwzODhoVWZJRHJVb0ZmZ1d1WnZlNF9DUTNUWUhiVFlYMExSdHR6S1g5M3cwSEw?oc=5",
+      "title_hint": "SEEQC Establishes US-Taiwan Quantum Technology Ecosystem to Accelerate Chip-Based Scaling - Quantum Computing Report",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953923"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5aUWJmVmV2dlJFcENIR1lOSktnbkJaU041d3lnaW5jdGlWVWJhcV9fTUxwZl9MaTdoWTdhcXRvVGkzWFhKOWl2bmt4YmI3SXNocjRn?oc=5",
+      "title_hint": "Hyundai Motor Group Announces AI Robotics Strategy to Lead Human-Centered Robotics Era at CES 2026 - HyundaiNews.com",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953927"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYXpQTUdTR1NEelppenIwR0tUVmpkSUIxSmN3ZUxmY0l4OV8zVTlRaHhMcm9tcmlSLUNLMWhmekV4bkExVFJ0QktRcTVRRnZERlFWZ2Q2RW43eDZkblAwYnJFdFRLczFpRml2eVozYTNqdkZ5YUZCdDJSbk9HTFQ2R1JubUpaOUVLQmhQV3FMdnltRDhoLUVSRXUtV2c0VjJ2M3VydG1OMlZUaGJhSzRUTTBvOWJKbGZ3MC1ZaXgwZw?oc=5",
+      "title_hint": "NVIDIA Releases New Physical AI Models as Global Partners Unveil Next-Generation Robots - NVIDIA Newsroom",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953930"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qMjBiSkhHZS1TYnVDOHF5eC0yVWd5eWUzOXJnZlp1bXlERll0YkNJQVNTZmtvd1VzUUduVjlxcFFSQUc3Nk5ZRDZxdGY2MUROVGdRdUtSZFJxYnVwcE1OenRXS1lIRmwxODZTQXRuVy1ibDJTWFcyeF9vdUM?oc=5",
+      "title_hint": "Xinhua Headlines: Physical AI in spotlight at CES 2026, Chinese robotics gain attention - Xinhua",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953933"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zYVBSVnM0OGxaN0JiWlRIQzFWUzlyaWlXVUxwS3hxMmNmVE9vZVNSdmQ4c2x0ZFZRdkxxU1NGdzA0SHpMNEY2eTR2dWtHanpMZHVVelFlTGctQQ?oc=5",
+      "title_hint": "S. Korea, Netherlands to bolster cooperation in semiconductors, quantum tech amid global supply chain shift - Japan Wire by KYODO NEWS",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953937"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRmNLVTVPRmcyYWpsaExSLTRHVnM0eE5vLUw3RVBoYlFUVk54SS1UWXdQbkpxTzVCZHhUWUlwQjhlRU03RDZHekM2eVl0WFNKaVpxREtFdHgzb2NZUHZOQkMxZm13VkMzR1VaNGVxdmVuRjd1bWthYXdra3FWYV9wRXJ5N1RFaWhwZ3g1N3pENHo0aXVXVjJHSVVn?oc=5",
+      "title_hint": "The semiconductor technology shaping the autonomous driving experience - ELE Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953942"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU0NsTG0zLWF3b0FBNncwUi1NM3JZbm15d01ESHNWRDdxaDYzSGZMV05QZkQzYklPcDB5Z015UTg1d2Nzb25uVG1LdEhZZFQ2dW5GUTM0ckx5dFVORFYyWFRxdmtjV1hWQlJvQkZxcUMyNU9nUzZYVlp6eWh1YzNQeUg3aFl2UVhJSHFqU0s2YzhpLVFBYkE1YU1BSExwaFhxNzhFMVBkRnpOcFBIejdrZVpBb3BLOTREUlk1N3ZyQk5aamdFa1E?oc=5",
+      "title_hint": "Summer Jobs in Semiconductor Technology job with AALTO UNIVERSITY | 406017 - Times Higher Education",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953945"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS3d4SVNZYUFfMHhGQmJjZUtqeDJFX3liaHF6LWRka19hMzNIU3pjTkNibGotaWNwdGZhR0J0VWZzSlFyYjI0V1YtMTdMQWhKb2tXQmctYXhMdVRGUkRoY3k5SFJ3M3V3bXJ5TjlRM0NpRGYxVDROaU9qZTIwbWVDcGw5VWF3aUsyTHVWZjRmaUFxb0JmTEZlb0JiTE9XLVN1YnAtOEZGeHNzN1ZNYWFiRjBR?oc=5",
+      "title_hint": "Filip Turek Appointed Government Commissioner For Climate Policy - Brno Daily",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953949"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wajJqM09rNENZUnhJekdIbkNBd2ZTNURJUTV5NkgyeXl0Nlo2eGdsTFBDRFdxRHRYZ3ZNeDREZkpXOXY4WXVVeF9IUDlJd216SXlaaWl5NlJwRXBWdkhfNXVIWEU3RVk2Nm0tLVY2OWw?oc=5",
+      "title_hint": "Climate policy suffers blistering setbacks in 2025 despite clean energy boom - Financial Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953953"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA0eHQyTWstb3lDUUFDclQwc1NhVEVBUUxvczBReUM2Y0VJSk0xT1E4ZE1IbnMzOHRWRTNtal93eUZzZ095X3VvUkcxTVNzVVFCSlBiNnhnWjdyTEpYUGVKNDBnSFozMDBtVmJ1Z3g3Q2lJS3BpZ2ZTb1NoNA?oc=5",
+      "title_hint": "Trump Pulls Out of Global Climate Treaty - The New York Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953956"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQczdrZUwtVGJUc0tIRXlhUWRPN0ZHVUlBbmR0T3BGMkRVZWluX2RBbVVLc1BDNDQ1bGFEMUdGTHgtSnZIMUUxSzNkR1VrTEVNazBvOE5QLWY5aEpsWVhlRWtjM2NBWjNfSUx6bFUwdlF5NXo2T3R0N1g3TW5GYlJPWGVjazFTTkRtQmxwckhVdWM?oc=5",
+      "title_hint": "Carbon Neutrality Market Expected to Grow from $12.5 Billion to $27.22 Billion by 2035 - Yahoo Finance UK",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953959"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQVRQcDBlcXYycmlKUHBmX19PUVZyVDV4NHd3NDhRaDVmRl8wVXB4YUUwbjlsY0dlZGptX0c1c1phdzRURDBNdEpHeVNRNVprWkhSRVhrZFYwU2lCMlpidThfUnlyaVhDODZ4UXdOMmhSMkV0Q3ZsclRBTHM3U3ctZXo3TFRRRmIySmtDSEx6cm9UZ2w3dl9DUTFBWHhHUlJzcHpTSktFU05rblpIcG43aEJQWEl3Nld2Vmc?oc=5",
+      "title_hint": "Alphabet (Google) Surpasses Apple in Value: But How About Their Climate Ambitions and Progress? - CarbonCredits.com",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953963"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ1FYR0VUSE8wV0F1N2drS21yRktZc21qQW9KTE9TOVJIY2I5ajhCWnJsaktidmViM3QwMGF0N3RWclROb0dzSl9ySkMzWU1hMC1SX0NhdVZreVFBenE3NDJDeEVSOWpvRzJYdzIwdE1ycnRCZVUyOWJDQWFVaDFmX3prd29xMnRoMGg4Ym9OcTVhZ19HcTZld202eFRGRHJPRFVCek9ITExIcGFvX1hsNg?oc=5",
+      "title_hint": "eBay unveils first climate plan, targets net-zero by 2045 - Reuters",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953966"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc0VFTUk1cUlnTG8yNGcxNmxxXzR1UUs1N0FOZnlIaGM1VjZFeG8zOGt5djlRWGVHTVRxOTNqekg5YXd2SXFtTTZTTGJvejRRVkRvLVFmeFdVRS16TjZ6cFlsQlJfd2RaaVh2R1h2dXlZR0t3bGNKSmxfWlMyNnNIRDdUT0hGazM2V3IwaXMzWmpZZlMwbVdxZUpFWXA2Zw?oc=5",
+      "title_hint": "Opinion: Despite the death of the National Renewable Energy Lab, its legacy in Golden lives on - The Colorado Sun",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953970"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZFhqSHhPS0V1R1R2OENoeHRtd21zRXVaOWo3LWQ1M0ZNS3RXZGlQVllwWmdYVm5yTFY3VHBhd0JKY2FISG9mM3Y1clpXSURMVGFoV3k3R3VGdmVOWnZoQWdYVXkzVW9DMnJ2N2hyal8xNWpwenhzVjlTeHpqbkR3bzlzU2JpUlk1X1NRSGN3amFZaHlxc1NrcmNoQkxPSHVfQWpzUDBXR2syTXRfX3hTSGlHUWtqcVFqZS1STWxiRQ?oc=5",
+      "title_hint": "Offshore windfarm contracts to fuel 12m homes in Great Britain after record auction - The Guardian",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953973"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN0JWSEZ3YnJMbHdSWTlvRDlYSkIydmx3anQtZlJTQ0FKbUJLYjRqMkdKaWdOSFJlRFhYR1dIQTdNZEtESHFuakFDamppbkZCZlJWaWVsaWYwajlFaDRDaHhkaWlEcmxTbDdTNjZNM0pZc1lkTklzclVCUFlERFNuS2FzbkhFUzhlcmxxVUdKZw?oc=5",
+      "title_hint": "NM lawmaker proposes more oversight, regulations for data center ‘microgrids’ - Yahoo",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953977"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12VFJZOTJSUGJHYndwNWlBN2JFbXpxcEpoRFF1Z3lxN0JzaThUQnJWbTNTRHRPTW1aZktaX1AxZ0dqNTFfYlNCb1Zzc29aSUhnblhvNW5IRFJjZ0NRWDlrR21TR0VWcXlNSUhldG1iaGJtZUc0dHc?oc=5",
+      "title_hint": "Climate Action and Sustainability | Environment & Planning - | Erie County, New York (.gov)",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953980"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUFdSeDN0M05TbDlHekNWTWFxYTVkcm5Lc0RacHVneVgyOHYtc1duUzYwRE1iVGxrYnpqQ3VKeHNnckh2d01acTh4dUc4REd6c0NJdVRXM0M4bGhpUlZ3Z1NRQjBEM3lwTF9WYW93QTJtMUw5Q0k1V0NSZDJBeFBMMldhRnh3N1FlYmY2VE5XQmRSaDg?oc=5",
+      "title_hint": "Climate change mitigation: reducing emissions - European Environment Agency (EEA)",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953983"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNR3ozblB2c09nT19BSHhqZnNNSGdPZU9NdFZ6eUtUdk9oTERtREo1c1NFRkt4N1I3TF9PUi10SWJrWGMtMU50cU9zakE1NzBIOTd2NVhrbW8xMVNubXU4ZkFkMlFSQmcwQmdsbUFJSzhGX0lFVEUyQUg5eEdLQ1FBZjhCMnAzUmNvckM3V2pCYw?oc=5",
+      "title_hint": "Thought-leader group to focus on climate-change action - BizWest",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953986"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNDRkdnkxd1lvdVJDTkQxX2U1TWd6eWpGR0pWYkdjWmxNYkJ2bXdqLTNFLUpHSFhZZG9UQ1RiQi1ZQ20teG8xN2dtNmxHZ2JYb3ZGT1R1WkF0TUtDbTBNQklwLS1QRjBnMW1JRDctdk14bkZGZWdZdW55LW5qNzZIYlU1T0ctWlpLTnpsN3gtNTJpX0hUdTY3Q3lOZlR1OVJKZlFadEJyRmo?oc=5",
+      "title_hint": "eBay unveils climate transition plan to reach 2045 net-zero target - ESG Dive",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953990"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWjJmcGtXa2liZ0ZHNExURGNtVVF5aVZLRkxYRF82dkVCc25aNTZpVVgyN0VHRXlNSnFmTFhTZVdfRzBnUS1jX2t0Yk5jZExfV0l2MXpoV08zWWZqLU1TalpMWmptUDBtQ0VVdllfZWFoZktFbHFiNDdleHhrU0VQZ2dDMmpzVHdhOXdUbHQzYWxUMEZiRG9wRDZHOA?oc=5",
+      "title_hint": "Radisson Hires for Net Zero Manager as it Expands Climate Efforts - Skift",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953994"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYXVUWk8wRFJhMnZFeV9JTFNOTlk4SlRlWGdmZ1gtWVpfaEd6MU03YTdTdHJFUUk3MXhIU25XTXdaR3FIeHlwNVRKNW9KTl9LWXlQM3VJNlJncTdSbFFxcW9JNkV1QzBpdVM4MHZfOTRRRHNpa3I0bVc3dVRjOUJ0ZF9OR1h1VF9CYkdNRThpcnF4VWh3UHVFUFVqNXQ2X3FlZ29tVmdEdzNWeXRQa3hENEZrYjQ2dzFfVTZv?oc=5",
+      "title_hint": "Port of Seattle to Advance Sustainable Growth and Innovation Under New Commission Leadership - portseattle.org",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.953997"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeVBLRUZHV2Y5ZWVaYVFBN1dURG9yTjFzekZyMkt0SnpVandmODUwR3NhR1FheVd3Z1VyTm1rTkZURmxDaVZQakNLa2dvTWdzRWpmX09ld0VhQWNjVV9XWHlrYU5MQXB4OEk0VGNlUHVzUEZNaFFqbG5INVVWU3k1blNPaVdaY2hRdVBtcUJJemhpcmhUS2g2RmtwdFZNck1UNjU0RjlMSHk4dw?oc=5",
+      "title_hint": "How Texworld NYC Helps Brands Build Sustainable, Global, Innovative Supply Chains - Sourcing Journal",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954001"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeThuek1mT0wzS1IydDJfdHQ2ZklmcTloMzlDTUJ5YlIyd1BQRW9ZOWdhSWhmcFlSN0FteFVYX1RvU0ZYMkZZc2dtVm1GODRNVDZjREFER3RPX3AwU0xIVkMyRFRyRWt5aEZxZTZJVmxGcFB6WE1DMWk1ZVA4MWRtaFNNY0lrQXY0TWdDeFpDY00yTUcwdXc5TG90LVg2MEEyYTFRRWY4QW90YVp2SFEtQ1FzcjNDdWVUcTJ4b3ZMWG5Pdw?oc=5",
+      "title_hint": "First Cohort Revealed for L’Oréal’s Sustainable Innovation Program - WWD",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954004"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxORWZ4RVRDY3NlRTI5ZHJaeVFPRElEb3l1b2ZUQVdrT1paQnRWNWpNTUtoekFpdXpFb2JXbUNEcllEM2VRd0dUSVluTjdNa0pzMzdEaFNZZDNCeXBKbW5BbWNFYWFFZ2xsc2RSUFg5aDM5SWVWT1JGeXdwX3pMdjVBQU81VEVmODZwRGJFNEhyMjg0YjQ2UXlfSnpSb0dnMEhTTGRtazJmdVZTZEM0V3BVRGRzV0pMN0Iwc3cteDBBRDh4TWpCTWhTUHNwZjFyUUhlTi1jaDktMUZWU0NaV1h6WkJUVjZPZk1aTExUUEdJcmFsUlp4WEh1Z1hSQUtFaEhxc2xDdE5rWi01YUFLOEMyb01ZdzBWcjNuMWs3R3k0eVFNTERlTjBnSWp2b01TUlU1eUctVlN5N1ZMclYtVmN0bVdlckw3a0lvZnZTQVZZVHhyR2tWaEV4WVliSmM1d0xWOHpYN2QwQU55dGpmRUdGYkFOTTJGb2JpNWZVWGJRUVpvdWJudEJR?oc=5",
+      "title_hint": "Opinion | How to Get Cryptocurrency Regulation Right - The Wall Street Journal",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954009"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaYUYwenI5SXdsdkhCX1Y2Nm9VZC11TEFnUVV4YV9abktxeUlYQ2NDeXhDNUh4YmFWQ1dmV21KaTFYSEVYRGt1b0taTFdZYm5TNlVFb2w2bWxHeUhjMzZpd2pCQjBGY2NNa2c?oc=5",
+      "title_hint": "Cryptocurrency Regulation: A Guide to U.S. & Global Policies - Britannica",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954012"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOGZDVXZHRnhPcnk0QjdET3hFamVpQTVDalNwV3F1VXU0X1RRRG4xQ290X2NNTXA2cjBWWk9vNDloYW1wTlZLVG5GRXdheS0zMXNGa2Zadmh2V3BmTnIwMHVaaGRiWVJ6YTlNMHFtQ0VLSVZ5ZEpLV1pXNzhWbWhyY0hMemd2ZG9ld0FHNXAyV2lLUF9ZdVc1V1NmNU1haTdsX0NuZmwxTmEtY3FtdlhMdF9yY3lsRHpkUGpxUG5hNA?oc=5",
+      "title_hint": "US senators introduce long-awaited bill to define crypto market rules - Reuters",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954015"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PYTNaMWk1b25RTXQ3YkJKSDg5b3ZQX00xSnAzZU04dXNCN0dXaVJaT0d5Sm5FY3NFeUd5SmwxaXZZSG9PRDFPZkN0QmhKTEdIM0wwUWZJb0kyYWtIYm5TTVhuLTVKaE0zU1FZZk12eUV5enZTWEVLR0U4Yldvdw?oc=5",
+      "title_hint": "Eric Adams Hawked a Crypto Coin. A Day Later, $1 Million Was Missing. - The New York Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954019"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8wVU5wRFBkT1VXd2RoTDlrUmdEWFhXQlNPMW8wTnVwS2Vuc01UeVpBZGRuSnRyaldkOGxzYjJsRzV3NTlIWnllQWVlaldCWmFMRk1oRDBMYWFxNXFfTkEwa1VwT2t1c29EXzJ1cndVTXRwdFQwY1hwV29xMHpmQQ?oc=5",
+      "title_hint": "Eric Adams’ Crypto Coin Accused of Scamming Investors, Hijacking Trademark - THE CITY - NYC News",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954022"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNngxb3ZzSm14VDJ1MFNpQjlVZGNCdnV1UVc2ZC1HMEI1alpld2lrSkgyQlE3RTRhV3BrYUUzOFZXV1VTYzhvQ1FOZk9LZHJzUVhvbU9ZY0RKVTZpajFTOTZrb1kwdWJJWC1DVXI1d3VHRHRsREhLU0J3ck1PY2dHYWh5S2RnbWNDczhJY2VOaGIyTlA1clNRT3FFUXJobFVzN1FXNWg5TWhhcVEzbDRzVXVsY09NdGdvdXBUanhBUWZnWVFPcm1yZ3JpbW4?oc=5",
+      "title_hint": "Investors call crypto coin backed by Eric Adams a scam after currency rapidly drops in value - New York Post",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954026"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUDhjQUVfYnF3ZG5pUGlCdmM0d1ItQ3p6QWNmLXNmWDl5ZmM3TzhkSXFJNTBCYUZIRW5yMTIzX3lZQ2g2cW1ZYS1kVURMZnNUSm5DT0dyRkU2cHZHTjU2TGZZcGstSVhBTFhpdVhBUWNtTGlEMlhfYmlfNUMzSVdqZzBYQkpWY1hCeVVCUGZlOWF5QnFONHlqY0x2czMzX3I2WnctNHMzMF9KQVVfN3EwNHhSNnA4d3VXa0o4OVJhUEVoVGF5WTJGSw?oc=5",
+      "title_hint": "World Bank sees resilient global growth in 2026 amid tariffs but fading dynamism - Reuters",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954030"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkV5czNjQjNOQVNkWFRxbklNcEY0Qm5xalczZDBpS0RHYlg5RjZORmp6S3BkYXRCWkZUWW5pTG45cDVwOGEwT21rV0gxV2l1V3kyUXhRNnRGYkxMaHJRYmxEbWs1NDdxcmwyWUdiNVBxOS02WVA0T1hUQUU2ZzZzcHFoVTBXT3dMQmpCY3JwY2gyTC1CM1pDNVVR?oc=5",
+      "title_hint": "Five trends to watch in the global economy in 2026 - Atlantic Council",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954033"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNjFPVmlzUnpVa3lkRGZVd2xjeV9LcWNtTlFyeFRtYlJzb1pMSEh0WDRORFlKSU9mNTZHaUpYRWlESVFkU19oRHpzaWRGeUdxanRPTC1OZXdSZ0RZVTducUZPQi1paWkwUTN3NVJpUTB0NGlkb042Y1J0X0lyU0JIUW1PNVg4UHdheHdaVGxhT1I?oc=5",
+      "title_hint": "Ranked: The World’s 50 Largest Economies by GDP in 2026 - Visual Capitalist",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954036"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYWtSNmh6LTlIY3FmczVRYy1FQ3BpUGo4NHFLRGtCWk5DM2Y0bGRPekxqTGV0T0xGSVRUVUdDX3VmdTl3eFk0RTRfUkJMQXVmQUlGMnh6WFNaaUdfV0tnYm5Ga1Nzc21ULVdua1dwdGJtUklVZUdmdThhR3FSZFZHc1k1a3RvTWlYVnpTWEZHb1dGQQ?oc=5",
+      "title_hint": "US Trade Representative Jamieson Greer on the Future of Trade Policy - Hudson Institute",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954040"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNejZPbEd3SnlTYUZudHplem1GaWlVM3o1bWtMTWYwS3V0QjVJaWVMWmpPZFFFTThvYzdiOUpiekF5QURHZlpSNktOWS0yeXhrdlR0SG5TcGxnbWdLOUtMOTM1R2czd3hTbmJRd3N3bThndHhKSGVyeFhjc3FSdkNxbk5uYllKSXp5VG1FZnhxT1JJanN6eDFQNUhFc1ExLURSM3NuTHJqTQ?oc=5",
+      "title_hint": "Turbulence Ahead: Tariff and Trade Policy Shifts Are Expected Amid Looming Supreme Court Decision - Skadden, Arps, Slate, Meagher & Flom LLP",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954043"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSElXUlIyYkk2cXRTU2JxdTI5TVNiTUZGYUlvVEJELW5hN1FvSmFTNmItZWZKcm1zUGJGaUphTEc2ZHFBSGtCSDNaRWYycTJPWTlmVjI3X1RPWWJid1VYU1gzcGsweGFWT0h3ZXNjd0NGOFNKWkoxQ0VDVnl4UWJ1bkQ3aXZxdVFuR0RuSERSVm15dm5TaGswcWJ1c2RpbVoxQkpTajA3UndJMTRGSk1ibzcxVXZoM1MyaFZNdEt5bV9IZm93UDc4MWt4bjQ1MmVfaWR3UV9Jaw?oc=5",
+      "title_hint": "U.S. Trade Policy Should Reduce International Barriers, Protect U.S. Companies from Digital Service Taxes - National Taxpayers Union",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954047"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX0thSWduSkRfQnRxUko2eUZjejNnTFpmYUNKLUpiUkowSUFYN1Y1NVR1TC1xdEJJN1lsVnJNYmxneWRCN2QweE5aMldLODhnTk91NlM0cXpuRWJlQm9aSlVzUzMyV2FUYVlSVnBHMldxT2NQaUZOTUNLWFVTTGx5QktOdjBpSGJt?oc=5",
+      "title_hint": "News: #Ethiopia, #Japan discuss investment and WTO accession as UN confirms $10.5m Japanese support for aid and development Addis Abeba — Ethiopian officials held a series of high-level talks with a Japanese public-private delegation on investment, tr - Facebook",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954050"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPandUQzlBcWcwVjFlb2EtWmJBMnFEOTMzU0ZpQXh5NUQ2TjVSajBCV21WR2tGYUFuMF9PeHFUeFlsRXRLNUt4SW0xM1p3aXByNVc1LUtRSy03b01DbzluRm8tTVVQZjZwTnNqMkRuMU4wVlh5S09iV0JNQkNLdm9VM2pCb2lvV1JUUFhkQWdHVlNkWW43YnluYi1ULXBRRGoyQXIzbkVXOA?oc=5",
+      "title_hint": "Press Release: More than 260 Groups Oppose Weak Crypto Legislation - Americans for Financial Reform",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954054"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcmVPNGJyanJFN3p4U2dNMHR0T19PU3o0VnFrek8tQ0RRZ202aWtTWFBWOVNoc3RLTHBWRmczSExDb1FMZkNKY0VmOWk3Q2ktUWJhVjhMOGJ2d1ZzbDNoSHh0WGdRQklMYUhPRGhGSVRwOGxpTi1mc2V4cXhBc1hIU041VmswMkF4UU5oOFRERDdYZng0bWYtNXNPX2xnNm5aNUJsdlhGS0hkd0F6RDVkd091RQ?oc=5",
+      "title_hint": "Bolivia Gets $4.5 Billion IDB Loan to Support Emergency Reforms - Bloomberg.com",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954057"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcjZHZjZ3NHpBajduLVg0ZU9XaWV4TGNxLVQzQmF4bktuQWwzWU9kQmltZVpRaGN6QThhYmxlOU9vckZTa2RHd3BtMkNRNkVjWmd6OUlzUjdERURJN2ZER0paa2R3Q0tIVW9qbFdQR19xcW9WbzZhMlpBd1VKQWJvVlpCdFRPeENEOTB4YzM2WFZXTHNIMkxMOXpxVjFqd2dSWklFZ3U5YlRCTVJ5VDEwdWpEN2tHdU1feFBUenpiR2drc2lq?oc=5",
+      "title_hint": "Belgian cybersecurity startup Aikido hits unicorn status with new funding round - Reuters",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954061"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONXZMMWRsUy1TM1ZuWW1CM3dGTHVyYko4YWhOYWpPSnd2ZWo0RDRUZHVXSEV4cEI0UXV5YTlyVVU0NEs1MzlyTkVPN2dHcm5iVnZQNi1vWjREUENTOEJoel90aDRCeUtRSm4tLVpsV1JBWDdmNkpfVERHQkpvVHZfVmhRQTdwTHVpQ3BiMA?oc=5",
+      "title_hint": "LatAm Startup Funding Rebounds In 2025 As Mexico Sees Surge In Investment And VCs Remain Bullish On Region - Crunchbase News",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954065"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUthWEhENFhzS24tb0I3UDZoNnJzZEdqYlljVEhjUUpOR2NjR2ZaZzhEc1QwbjNnR0VHMVhHX0tObnZFSVZXWVNuNmVhOHVGbUNhMFU3NnRIakQ4UTdEZFNGLVljU0NEZ3N6SkxRcENtVF82anJSTzJxY1pBcjkxM21lbVlYeXBnZWk4cjYxTURJLXo4b3c?oc=5",
+      "title_hint": "New Programs Seek to Close Gap in Arkansas Startup Funding - Arkansas Business",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954069"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWHhYUDRuYUVkZUR3aDRrTmtKOWZIcVIzNk5VdzlnMGhxU2lxWTBwbmxHdjRQOWRaR1dHb2YxdjU0SHVmNVY3UzdqMW5MR0lNT3RFdUVZM2hWSTZTb0FWb0xHS0wtS0V0RTh2eGU3ZWZiZTdpc2xZSzFHVng5MXNyeVAxd3JBOVlYX2pnTG9TcFdEUQ?oc=5",
+      "title_hint": "The future of jobs: 6 decision-makers on AI and talent strategies - The World Economic Forum",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954072"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LdlFObjVRVnRLYkE5WWNjc21OOWplTFFma1NMVENHOFNiZWs3ZHhyN0IzazVOUlMzckJDdjlwOUZJRTFEaDcxLTZCQ1dqUzhCdXJSQ2xXR3hjSWgzN0V0cF9PN1ZyMEJlblQ1TW5oc3NaR0c2cmxPaWVB?oc=5",
+      "title_hint": "What 2026 holds for the future of work - Fortune",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954075"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPeFhyNVdCOXJSZ1otdklFYkhralh4UGFCWENUcV9XU0QyQ25GY0tiSmZfYmFRRUo5MDNLTnFfMWhXUzFFOHFWRzgwRUxVaWl4X1NUVWVnTlE4MHRJcEh3c0xrdUxTYjRC?oc=5",
+      "title_hint": "Future of Work Trends 2026: Strategic Insights for CHROs - Gartner",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954079"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wcnltTTYwS0xEOHctT3NxY2xHcTctOHFRX0JSeWpIelRFR2Fkbno1emVBamNoYXo3Slg1YzBJWmwyemstTVNNR1M1ZW9ERFZvMnlqc3hOdF9Xc0dxWXJ2amM1MGZFUEFlaXNsTzRDR1V3OXM0UW5YZGozWXd5dw?oc=5",
+      "title_hint": "The 2026 workforce: Less labor, more automation - Substack",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954082"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ2I5RjhYNl9scXN4ODVCZ2VucWV4Z0ZfSWZfaWJaTHdxSnhsbWRSNnNLTDVPUnNPQ0JXeHRtN3ZpTzZsUTl6REp5NUN6bG5BUUtKS1A4cklhU3ZPdUNlQkdEZWt3UmJUeXMxYllNMXpIQkJIN0l6QTJTdkM3Vmw2N2M2d3puSXV0?oc=5",
+      "title_hint": "Forecast: AI And Automation Will Take 6% Of US Jobs By 2030 - Forrester",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954085"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdTFlTlg2TFZHS1VIYThCQXFBMW9UYnBRT2hUaXBST0JEVlF1czduVldacExNUlVRamVBcGF1Uk1qRDVKcUJsY3hLMVJCeFhzc0VHSmJfY25GN2dXRkJ1bFJFcXFXU0R2Y0R1UHYxV3haUVpoSnJuRWhuWWoxWUxRREktT05BQVRBc1NEbQ?oc=5",
+      "title_hint": "Renewable Jobs Grow Amid Automation, Friction - Mexico Business News",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954089"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNdXdhQkcyZEp4OEVrdF96M05GU2hUSnNfb2kxUk1uMnZocDZYbVVDdjBlNWlrVk1CajB6dUJwRDg2M2FzRzRtenpnbUUtck9VVnRZTFZkc2VGWG42LUpBSW1HWDEzOGlHS2luUXd2LW96M3VMWlZiNjlkeU5Edk1hWnQ0aHZkcF9VNkIyUHhUeVVDem1LbkZMYzdFekJZMzhWMEVGZHNGaUpzT0w1SnhwRVgwYW9jdFRBMjNRemxQRW9MdTBzYXJTYmRGWFlPMHFxRUFzY2oycDZTckdoT2xwZW82X1I3VG5sbEtCMVRXYTJxT0xiMzRLQkNra9IBjwJBVV95cUxNQXgtTXFSckh5aEhNUDNiTjNabnU4cDY2b0VxVk84Y2dZLUI0OVJvZ0hmSFVIQlBvamQ1VWZjbkloM21SXzhBNDZYOUpFMU4xTDVLazcxcUI1WGo3SEpxUVR5ZGxNUlNOQWg4QW9tU1pQNm1IOG9PUmUwUW5aWEJOS0F6VGtqb0taMnlFOFhnb1NjOTRtNkZxRGd5aW5vTHBxYV82cUxUQmd3RjZSa1JMZDlFYkY0LVVUbFZRR1htSHhKTlRIZzF2dm13c25FOHU4Nkg1ZTNhX29jYVZhSmJpQ2Y2bHU1REZmWVY3X3Vxb2lQTWJYZWc5Tmp5ZVNYQVBSOFp0NDRhUks5dWhQTHRv?oc=5",
+      "title_hint": "The long shadow of the one-child policy: China pays for its biggest social experiment with a demographic crisis - EL PAÍS English",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954093"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSlNlNC1HbVVaUWRhZkpDMDNWV3lEZ3V5Y0ZFcVF1WFNuU2NxcmJsR00xZlczaW9RM0hUa01CTWZFN0FLdzRLN3FucFJpVzV1RjZtbm1IUGxWOGtLM0s1X1R1dHhtQVNCRWVOWk1ZYVk1WXcwdUZNcm42UnpKVVhGdXpjSDVnNFNObllVRDlVYjNNOWR5bDcxYmlfNEXSAZ4BQVVfeXFMTVNpeURiaGJUM016ajVVbmlLNzJsZkVTZVBiazY5YWVqeTBVWV84enRVMVZ1dnJ2eGpNRGpJU2ZxemlWdzNKMXhPTzFscTcxYlV1UkFqOHV3dEFSS0wyR2lmbnVsYmlPZVRXN2t0NzVXNTZCMXYzMkk0UmlyNG9FOVBxNzdRQ1FDNFJYSFJPSS1jQVJsMXdVSjBzSXMtTGc?oc=5",
+      "title_hint": "Graphic Truth: Japan set for dramatic population decline - GZERO Media",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954097"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPenNlYjczSjJiTjJSM2d4Qk45OUI1bFJUYVIyNzlROUoxVkVsNm1pOExpOFYybHBsRE8ydXdaT3doZ0JoT1J5TVF3TEJiYnVRdThzTXNEeFZCUW9IRHBCRFpKQ2JPT1dLXzRhN3BfNC1CdXFOcC14TGxIV3JBZktVTXBST0FnVkxkS055TTF5OVM5SjE3WF9DYlU4ZEJSVmRqNzlGY0dXM3U4cWlZdHoyNnlGRzYtbnhwNkxsVkxOMWZUUmdmNXc?oc=5",
+      "title_hint": "France's population decline presents a political challenge - Le Monde.fr",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954101"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN2xZVEpDNHVZNERmaHJXTEp5MVBoRlpMeV9CVkhYOUp1bTRjUkZXZXlicDdMYXVrakpLQkJibVpBdDZLeHVZbW8tOVJUVkVKMmtLQ2txc0FzR3lXOE1JLUtPYWdPRmM3TG92V3FBNUd1U0huUGZ6UEJNbFBlOVhwczZ4NnpaOG45cWZFdVB3?oc=5",
+      "title_hint": "HHS cuts $2 billion in mental health, addiction grants - Roll Call",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954104"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQajJPblZCRHJma1UwT2F5alZQWVdYWGFvQ2M2ZTI0amJLcjk0ZFRiVUY5bk9TRnBIYTlnblZPaDl6eVJCeFZVQ1ZuTG9SVHQ3U0xST3NoRWlJeXgtX3N3X1h6UUJsVUxvNmV0eUhSOUx2Y3phMjFtNEdfTS1hZEpfWXVMU1NXVnAtNmhMam9LTldCdmhIZFlHX0hqcDNsbFFaWGZURQ?oc=5",
+      "title_hint": "Why Philanthropy Must Back Systemic Approaches To Youth Mental Health - Health Policy Watch",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954108"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUR1N2azJ1WHVfdWZDMzNPOW5lelZZc2RfQUIwT1FMMzJlZThIX2RaM0hFUUlXRGlabEUwS01DOVpha3FzRDIzMTBUUXkwZ3MyMy12cjNydHFJcm5QMVl4dGJtWkxRZw?oc=5",
+      "title_hint": "Policy Positions - National Alliance on Mental Illness (NAMI)",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954111"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGQ093RDFZdUxPSGoxbHNZdHJvUF9aSjN6dUNnRmNWUGpwaUswemNqVWpFMjB4OEF6Q1huWkZvVzBWSlQ1RUg4OFREYTZQNng4d21BQndYRi1OenJUQmx3Rkt1Mm9HNWhxTExtZXRJSjJWdGFH?oc=5",
+      "title_hint": "Ageing and health - World Health Organization (WHO)",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954114"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZlNqVUtBMkhTYklBUDcxbGdpZmVlai1FZzh4Tm5iYUNqc1FKc05EemRhVWJpSWJqQjAxSm5mYTlNTy1JcWxYN0hVSm1WMEhGRTJQQ09pMHJsWFVFTGVDSXlWNTdOMllxTzczSTZBcWw1YkNtdjFUbHo3VTVNR0hEZExMdGdaZldOLVg3VGk0d0s2N2EtWnQ0Uk5KQTJDSjlDYU90dmx2cTZIT2VTMGo2c2FIdDJLc3drUXZRUm15ZzBnN2x2WGVZXzdDOW9nY2p4TmhtcVY1a9IB3AFBVV95cUxQakFObjJEWlZJNkVrRHk5VjNwbElPVFhXY21CWUp4SW5lSmJ2U2xvN20xeE5uZUdRaUJWRng5NnNPWjJCbm1JQU1QMXJ3dDY5bUE3TkpyZ1JhdlBhTUI5aVEwTGJGUklTeHlkYlRLOTNScTMwSWJJOG9RU0FwT3lNcGs4NVhNdTREUVBkeWpreEJHMTNBUEgzUVFXMEdsMklROVNmTW5aR0lfNXdZY1ZPUlI3LVNSNXVmekQ4MlNlU3BFeVFLWWtXMmtwVlFQMXJTLVhZZmZzNHJOS185?oc=5",
+      "title_hint": "Travel agency CEO turns Korea's aging society into opportunity with tailored experiences - The Korea Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954119"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONjFRV0x0LXpFYzJjTDNRalpKZk5manIwZk9ZYk5uT3NBMWJpZ21uNUFSMFJUWjZDZHB6TGxqNEUtbTFfRi1XQmFmVU05RGFhWnFkTHlyZjFfUGVlZjVCQTBqQ0RLQ3d3eFBobHA5OHUwS1ZKUi1pRmFCQVVla0hvQUtaN0ZIdlRkX0VnT0l4YVN0X1EzREE?oc=5",
+      "title_hint": "China turns to smart tech to care for a rapidly ageing population - AnewZ",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954122"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbnNjeHJQOFktM0dYdUg0eng4ZV9iU0poWjVURzExUjhhaThRZnNqeWxFWUxFbDA1M2VzeXVGR01Ja0xmdlJWZTMzUjJwN09NYjBJT1B4VHI5QkR5bXlib1V5LUVnUXY2QzJHcUlidlYzV19xUHZkOWhTTWNndHhZZk4tanRJUC1pOWluUjN5Z3k?oc=5",
+      "title_hint": "NYU, HBX Group examine Gen Z travel trends - hotelmanagement.net",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954125"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNHJVeTV3cE9MYXRMUl9neXJiV0NoYl9rVXllX0tsbWNOcmkzbzRidU5GalpGc1JlcjdJTGVPdHMxcGRyY3VBV1hCQUxlNnh6SFpYRi1Bb0xPdUFPVzFlOXk1bm9uM0lnWDNhN3BaQmZheFgxX1Bkbm0xNFFsa3F4UkZ1aU8ybjktS3dpYWtFbDQ0dFRjYk56MkljY2FZVTk2OHJ1M2R3Q0x2TS1wSVZB0gG-AUFVX3lxTFB5Rk01LUtQSDZ2UTZvc1F5N0tHUWRIYWtIbUwwQUVSaHJSb3M2NldnM3pac3AxNE5HT24wR0FFakNhUzZlMUx1R05QTzNZalZSX3h1WndyX1ZHalBHU214VERueFotTEpVLXYwdkxrbmE4V28wdVVybkdyN2pydjM3MEhQRDFNSW56QWFpaTdhT2Z6OVBnemxEODduT3d3VTBGbHNJczlRMWFTWGlieWJGOVFKb2RyMFl3UHphd0E?oc=5",
+      "title_hint": "The 'Gen Z' accessory Princess Kate simply can't stop wearing - HELLO! Magazine",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954129"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSjNkdmFKbXdYTVFUYnFLXzNRbTg1am0tVGxFQU5uUGUxeW9aanlHc3RPQTNMTWNGRHVFZVZfNzdsVTltYUV3N3hXRE0ySlctbDI1TlBQVDJIdkNuWkxDUnRWVWk1VnJkcDk2Vy1vN1l3aEszOFJET0FLM3NoYkwtWHhUX0NRQ2lnZVNidXRYRXZYZnBUdmZUeGFxUHlMOXlGYjJCcHdPUFBIaHFoNmJnRktTa0d6X2o0SzFzRkZhSEp1QVBuVjZ3?oc=5",
+      "title_hint": "How to impress Gen Z consumers: FrieslandCampina trends report offers insight - Supermarket Perimeter",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954134"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2xIQzd5bHRMcjRIUjhaWUFBelRUbkJwM3YzVlgzQXFralh1VkYxWDh5dFpLVThaMEQ3b3BwV25UOXhfNDg0MzZBMk1paDBSaGc5MERGTmUyUVpmVHlSaFY5bXZQLXpjSnlZcTY5NEdwTy1OcEpBVlB1Tm9tZUs2THJRT0FrX3UwbXlKaktfa1U?oc=5",
+      "title_hint": "6 ETFs to Buy When Geopolitical Tensions Rise - US News Money",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954138"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUVplbGNmNUJaa2Z3ZG01REhQU0N1dGJGU0xVemx0U29NMHkzdDJVLU1tLVZGNUk0aUxWeVVIX3k0dmN1UlNiUllTOXB0Rzl1SEk0b2Q5eXhTc1h6Y25iV0J6d2ZmWkJKS0JhUmR2ZmFic3JlZHJKcmlBRi03bmhVbElKZmNPd1ozSzFWdUNRczFYazBlT2NnWlVOWDhVYnBBTDJTbkhNT0I4Yk9WaEpFTVJLb1PSAcgBQVVfeXFMUGxVUF9fQW0xckw5STVMWjltaDNOTjVOeV9uLVhzSEZvR0dsTVFlSGJLVDQzMFVuazE4bmFnWXhyTU9wOFBkVDNpZFd5ZFlVUkZORzJzaml3ckdXQklhZ1VuTm0ybnAwNldQOG5wanR2cTMzekttU3VOb3NBNGQtSFgzdlBfYTFZdnpXVGZpcER0dlZfVHZOX09Dc2Jab05LdF9JY1R0RnA3NkNNTVIzZG9NVF8wODZNUkFtRml5MVRNNURaVEZ6d2c?oc=5",
+      "title_hint": "Alaska’s strategic importance highlighted amid rising global tensions - Alaska's News Source",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954142"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQV2NkYm11RmpKMmFhR2Q5RmdwdVkzbUJzWkM2WGRFY0xjMTNEbE1HTkkyWk1iX2lEN1gyRE5MdXVBVUFvaU1pQTN3b2l4MWVLYktMNlVfRkFCSndDN1FYTHhubkZBdGdPclpBRE5BQTQtSnhHVVdUOXhGN1M0cDZzeG9obFpLQ25TWUxsQ0d6ZmhwcFdHZnRHd3VpNUxlcEJZOTFmaDBUM3gxZzFpTDUyRw?oc=5",
+      "title_hint": "Gold, silver hit historic highs amid geopolitical strains, Fed uncertainty - KITCO",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954145"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb0RJNmZmRHNMLWplYWkxNmIzaFJsZW9HelZ3dUs4bWFyczZvclA0U01KTWhIMmdwLWpmTmJfaU9NdTc2WUtsZm1ra2F1eGN1VTlyQmxQeTA5RGZoOWUycHhXNDQtYjRGb0N1UFdhanJWVHFyeEt0SjJMdkZudXEybGRic1NEcV9TRTlTY0pPU3BGdDVjY25jakZhUVdkSlQ5OXlTei1CMXdJVlhqMVV1NU81eWtENnMwUV91Z0VGa04?oc=5",
+      "title_hint": "Poll: Here’s where Michigan voters stand in the 2026 gubernatorial race - ClickOnDetroit | WDIV Local 4",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954150"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazB1UmlpeU1JRENEOTRIUVJOOVNacWMyTEpHUjVyTkQ0LTF6U2tJY2Z4V2ZMU0lHZjVmb21kTnpWX0Fsb1pxTjJUREhJZmZWc2tPYXotVGJRNE1NOUczZlB2blhQQ1VuNkk3TGJsVl9LX0Jaa3hjMnlRNi1pcHZtWWVBUUpZUWFIa0E?oc=5",
+      "title_hint": "North Carolina’s 2026 primary elections: What you need to know - EducationNC",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954154"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSVJpZ3ZJTjFNNDdHQ1I2a3h6SWk2TnhJQmMzN0NxSGgybW0wa2dDbmNWZ2hPUGhBZ1Jaa0xYdTdUdHRLNVZaWjF2REg5Q1UtODdfWmlHSEk2ZjRTRG5YUGJGaFJEQ2thSVdPbmV2aE5PUjVUUU5Uc281dmtoeTR0aUwyOGRiV1VhWXhmbEFVWE1VaHprR0lGa2U3N0otMmFHTHc?oc=5",
+      "title_hint": "What Are the Chances of a Blue Wave in the Midterms? - Slate",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954157"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObDYwM2IwTzhPR1ZYdHl1SXV3RTJMbDZuMjdDanVvOUlGaVAxS1FfdzZQYklnaXBqZ2VpTnNXYWhtZVpmTDVEVzdGZjQ0aWF2d0NTMEd2R2ZPQjlSOWI1eGhyMEVDZjBZUFFhWnpoMHhJc1NTU2QzLS1HdXE4eUhGUWJwYWFiS2FxaldNcWdjQlJwZFNJYWUzV2FHaVk2RGprdEpxc1hlMjQ4UEdwXzFj?oc=5",
+      "title_hint": "Sheinbaum Prepares Electoral Reform to Reshape Political System - Mexico Business News",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954160"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVmhQbGdGZjZZbVlMMnVybkZMcElITjZXcnl5aXpCSUNQYVRkWHEwRWM0TnBFZ09DanFMTi1EOHBXNDdpaDJHVXg0TzV6NWFSZlhCX1FVRC0tTlB3b0FOTy1KM1NkZGFrbmowZlhJZU9ZbnZKNEV4TWlqYmlFREV0aGV3NDcyN2NneEVscVE0SkFTN3RfWENwTzNlaw?oc=5",
+      "title_hint": "More Subway Cops, No Prison Reforms: State of the State 2026 - New York Focus",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954164"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0NmUjFnR0lLSThkc1NwcGlZQnI4cGY5LU8zRlZDTkk2cHR5UVVSWEgwM0EtdUpBbU5NQ1RWSEFicXQxNEI0eDJBaVh4Q1UybDdqdnNDNGhJczJPTWdXZ2paMkUxZHN5dmFrb01LeWpkRUYxZ3lSelNkSXV3WVkyQlNqVE5UOUJIUW9ERHptQlJYb082NER5NVhqSkwyVThmWUhPRDZ1aDd1MnZseHBDTHRlQkczOVNYc1B5N3EwVnRqV1ZoVGc?oc=5",
+      "title_hint": "US oil lobby group backs repeal of climate rule for vehicles, not power plants - Reuters",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954167"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM2pXYWVpYzVDMmw2TEd5aHJ2NG13RnZOZ19lVG54N014NlhHMl9tWFk5S2t3YjZlRk93czRrcUkxTUpkLW1qNjFzNW55S1czWHBlX2RQaFBkbXN1VnRFNnZpbzRneTZieGtrQnNvN0ZSb3I5LUh0czJQZWVYYTlFc2pNdGgwODVaSVhjV1B1RGlDRGhMY1lZdg?oc=5",
+      "title_hint": "What is behind Iran’s sanctions, from 1979 to today? - Türkiye Today",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954171"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSmxHMU1ZaE1xeEgyYlRpaHU4eHp3T0lBQmxGeE5EMUVONXpCQnk3Z3Vud1Bzd0QxWVRUdENna2R0SVZIMTdINkQ1bGR6alBfUC1reVRvRlBSaVI1Ni1zd2QxYmZFaUt3b0I4UnUwU3A3SFhZMzYxQ2REQmFGRWlBQUhhZDU2X3RoV2Z0T3BTd0JVZ3dPbnZBZHpGQ1VxelFnalV5c2VDd1dEUzRxa2hvajB1VmViVWZaa0FCaGxKc0hVcVd6R0JFcjZmbUoxOU81ZkU4bDJkbw?oc=5",
+      "title_hint": "Ukrainian Intelligence Uncovers Foreign Machines Powering Russia’s War Industry Despite Sanctions - UNITED24 Media",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954174"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQa0htXzlQYjd0dWJMZU9VX21hRVVfY2xpNkM3MUZvT1ZadDNMMmE0S0RWUnp0RVRGSkJITFFTTUtIOWRCdDlEMEpYTzViNDJOamxLbzVTeDY1LURSSFJwVVpzTFlKUGN6VExSMmxGVnY3cURiSGRsdU1NeUl5OHVsbFlRQjhOVU1fMlBZWjBleFk3cFZVYklTQm1RbDVzbFVQcVFZSjdZWWsyV29naTBJUVpB0gG3AUFVX3lxTFAtbUpXcUpQQjlVWmRqR3NFN2EwWi13LXE0YUltdWQwUF9CN0UtMURFWm0zVjNtbUZuS2pCdEVvX0RmRHM4SVJTcEc5c0swN0tHd2JEUVZCOG9KTHJUWkpWY3hXRnBRZjhHSW45OFJHVUxheXRBMFl6bkJmY3ZMbXduZVpTcm1PR3pmVWpfVmJPRDBiN3lVWlJVTkNrem1KaGNuUVhPZHZEMmpya3B4enhvcW1uN3BNTQ?oc=5",
+      "title_hint": "How US sanctions crippled lives of Iranians Trump says he wants to ‘help’ - Al Jazeera",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954178"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmt0eEhDU2VyZzY3MmFTV3hhSHFzZnZJd09MWWdQRWljWEFsTmhxOWQ2ZzhFX0tyNVBwbmJ2QThfMktLWGNnMGpwUUdwZ2NkMXM1ME96OE82VFdwUkU0cndPZ0lpa3FKNERDaXNoS0Z1aGZTTVpta1pTdFpIZTRfdDRZb3g5YVhBcmNXb3cxcE95R2FGX3JqekRqRE1ZX1d4emFpdnZxd1LSAa4BQVVfeXFMTU1GRElDUm5ZLXBudUdYYkJCLWxlZHJqbE10V3FBUV9xcWN0RWN5ZnczM2hsLXFrODc2UjVPalRhcGY0SzlTVTY2VlNweHhfOXVWV0xUZU5DOTVqempiSGd4TGo4eXV2eG5CLTFkY3BWLTNHUnBWbWZjbW9pelE3RnF6SE4xOW81V0ZhTm5TdU9KQTBVdlZqYkxMaW9UZTkxd2lXTlRjSWF2SmtDNG5n?oc=5",
+      "title_hint": "Türkiye, Azerbaijan mark 34th anniversary of diplomatic ties | Daily Sabah - Daily Sabah",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954183"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSEIybVNGaTE1MmhzX3RmV2ZVVnBfdlNpeEN4VG43bURYYlJRdFpUTVVMZ1U0dExzX0xHd1ctZ0padFVCXzU5YVBGOWRZdWVNSmRSdldOeTlQSE43MWFfWGlhWDVzTVNtMUQtaGNnZFp4Rlcwdi15Rmx3aDJZelZjOVZ5YktaYU9fdFFJQXV0RGRETW8wNXpteFR2OU5yZF9idWc?oc=5",
+      "title_hint": "US and Venezuela take first steps toward restoring relations after Maduro’s ouster - AP News",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954186"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZEVLQXRKNDhIWnExYnRNSmVxckFsVFZLYjBwdVYya0tzWWNJcV9oQ1lfYV8zNUVBQkZxamMzTHI5MHFIT281dkFySWNkUHdfQ0l5S1BicG1tS190SG5HUHVNRlJRemtaMXh2bW9ZUkh3bEtxbmhEdThtVFlpMEI1akNncUk?oc=5",
+      "title_hint": "Taiwan’s Coast Guard and White Hull Diplomacy - Global Taiwan Institute",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954190"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWHotdnVEVHhtTWtkV01nSE9FQ3FVcG0zYlVBTHpFcEc0UGtoUXo1SGdPcXkydzRkYmFRb2tPOF81ZWplT2YzaWgxaHlYajZ5ZFdBTHVROWo3MUhMYlNXbGUzdVExMXlwSWNYTmEyeS1QWFlIZVFPeVdqYXBWbkllSkJzUEFNZUN5UDVvWTEtbWw1ak9vTHo5eXFFQ1BhbWVLc3hQMmxaZw?oc=5",
+      "title_hint": "Don’t Believe the Hype: Government Regulation of AI Continues to Advance - Skadden, Arps, Slate, Meagher & Flom LLP",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954193"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcGVTMXZOaFNPYllHcEEzTjFSampZWnJNYmd1akF1MVVXN3RHenYtVDV1TjZ5S0JsRUVhUlJRWmNNUEs3blhUdUZZRlFyNVFmOFlpQjYyZTdKamxXemYxMjFIZzAyeHRjR2F6cG9JZWNWb2RsRkxObVVZcGtvTGwxWFI1R2YyUQ?oc=5",
+      "title_hint": "Federal Government Attacks State and Local Energy Regulations - JD Supra",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954196"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOamd6MExiWjFtOTBhQTFTRkwzV3ptUTg4UzVYMWxrQ0ZFbXN5ZDYyTk9DcElYbGtFcDNTSDNuRmlvS0otcnRUVHVLZU0xanRDU1oyWUpiR3BwV1c2QTZXbjM5TUpFVFR4ZXN5LTh1eWhHTF9QT3FhNjBmckpzbUhORFFtR25Ebjh3MTljRFhMelFJRHZjNlBUSEVEbVc0WDYwd0HSAacBQVVfeXFMTVZNcEdnNjNtV2V5UXJ3VzhEbHZ6azcxb2tvRmgyUmNVLWRCQ1dkZzV4aHgydkYyU0xGcUN5S0U0LTdtUFJwdkpibXgzcUJKM041ejdkTVhhTjJKdnlsNjBRMUEtX2pKTjh2ZGhHaktGVV9TM01FTWl3THM1aG1EUGpJb1RpYkxXc0pBeGJmelZzczlNX0hsRmFTd3hIUWtEaVFXWndPRGs?oc=5",
+      "title_hint": "Mauritania’s fishmeal fever ends as government tightens regulation - Mongabay",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954200"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTVRwRWF6Y2U2ZEVtbUhpbkk4SXFsZ055c1d4Z0doM3lrNlBtb3JMdHN5SEJOUE1ySHRMOWZFZVE2b0FnZ01vdklfZTlvcnRXWkRjUDZ6UzRfSUpvdmxOUXozemtkWDhMVlZmY0lOU0JLZWpsOXMzeUoxN3huLW14Mm5RZXlZblVXZjZKZlB6TnAtc1ZvMjF0TnFIWHR4dXFBUXk4MHkyTFExaHBMUGV2SQ?oc=5",
+      "title_hint": "Campus Wellness Trends Show Students Prioritizing Sleep and Mental Health - The Daily Texan",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954204"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ2Z0UE55ZFY1X3VVNXZTc0g5Zk9WUkY4Q2JUU01YbnBvYmFqblFjSUFJTkV1REtWY1NBdjFoVkVUcFBIb0xNczlaQVo4VE1LOFdoVGE2ZjhwU1VKdnBlY256T3JRUzdPcjhySVhHYUJEMWkxTWo0anlDd2tCX05iOU5xVDZxU1NaTEkzZi1aQnVjTEx5ZXFtc1JKd3FiNm14XzBBdDdBSTJvQQ?oc=5",
+      "title_hint": "How Hey Mary Jane Is Making Mindful Wellness the Must-Have Accessory of 2026 - Daily Front Row",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954207"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYXFUNXlXeXVZUTVUYjA2ckVETGNBeDRIeFM5TzNRcndWankzLTB2T29sa0hWUkFZMWp3M2MtMGNHQXZHRjEtZjBST2FaR1pJVkVkSHJVQUNmN25hU0l5VGhmTHktWC1EX0RoQ2RxdFg5WmJIejVWSTgtUmtpa1BpZVFDU0QtNi1JTkVDeGlOanRKWHVleDMtNE9hZzdYWU9sZGFHZnVWS2gwM0R2M3lyVnluVnBsQWlCb2V2LXBxSDA5dnlaVFJucXI3UUw?oc=5",
+      "title_hint": "News | How hoteliers can incorporate nutrition, exercise and mindfulness into the guest experience - CoStar",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954211"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNWFvLWZZQlRkWnBJTWVkMzhuMkgzVGxjZXlodHRjWnYtNWV5ZUlrRXJjLVRYNHZ1RUVZRU83QU9tX096WTVzSHJGZEhHbGtfbEVSLXZ1TThkYVpDdjNYaUN4SXdjQzByWWwzRU1pQ0NfeWJtcGRKVzh0cUNfZzl4MUtLRkJIZ0lTV3lB?oc=5",
+      "title_hint": "SBU and Ethical AI Innovation - St. Bonaventure University",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954214"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90S0V1VmI0Z1laTUxlZGtQcWJnMEF1OTIxaWlveGFwSnhZeFlrckRWX1JoOTJFZlA1N3NPdl90bks2N3BiQXlNWi1OcFBmakhPTDF2ZTNRLXBQcEFfd0ZkUmMyaDQ0M0lpUFYtbjJzMERlQkxVRG1ITDZ0LWQ?oc=5",
+      "title_hint": "Ethical questions arise as AI use grows - The Martha's Vineyard Times",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954217"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQN0FVTU5ENkVfVExibkJVclZ5VUtNX2EycE84bTFmSUFEaEZINENIMUpoWlFqazRIMUlRUzhaNS1WWlpLbXdIUWk3MERIeVJEMXhhSVNYaGJ2WlExbjlZQ1JNZUhyMmVhdUFjSG9YRWI3Uk5SUkxUZzU4Q21qWV9vUk13?oc=5",
+      "title_hint": "Gen AI: The Battle for Innovation, Ethics and Authenticity - AI Magazine",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954221"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQTVrN3ctZzRWODExcG5DWjRyWDVEMWR6UDJBVFltNnZ0dzVzUVdqYmpldjMzX3F4Nk5WVVlwUmd5TU5zdlNIUVpzc0QwYk4xM3BGMEJjM1hZTXh6NXRRS3l1eUEtMDUyUEVOWndjVVdpb0VVZFN2SFVYaDNmXzV1MjlQTXJPWE9Q?oc=5",
+      "title_hint": "Fescue programs: A roadside meditation - Golf Course Industry",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954224"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUVVPQ2paR3RsV1h4dlNNYnlHMzZWT2ZScG1fdlJzbm9laDIyY0VyS0hJdkFUc3ZKSGVlWk9OMldCN3pqOVNvUUxxaGhSaFB1SUFqY0dBMmZycFN5ZkJIWk5wdUtELTVxcHlJaEZzRWRzNGEtZzROS0V2d2Y1U3FsNFVfbUJja3Rabk95NFhxMmpMX1pyd28wOU9wd1Q0M3pabFlHMTlmd2p3eUU?oc=5",
+      "title_hint": "Yoga and Meditation Service Industry Analysis in North America - Future Market Insights",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954227"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQbFJHTGI1VnRjTkR1N1ItZHRpNlptVG1Mc1hBSmd3Tl95U3N5NlVmTURSTUdlV3hua2dTZThGNElkbHlMQmxSRFpTclhnS2s2NmZBcnlucW05LTJfdkEwVVVEVkxJdzQteW4xemtYWWNOTWl6TzQzZmhlb3NJNmlDdDAtZlhVZlhmal85SmhaRG9WU1NBdzNyalJYRjFxcGs2UGpXM01VcjlDNXBOOGRFRDltNkpDVkR1Mk5pcGNoelhHdFpTeGs4SE85X0JhX1NLMVk4QXN3YWF0Ml90MzRLLVY0US16ODFaN1Uwb3M5dklrSXQ2S2pYc3hrUEZBemFxZ3hzMnh0bXZHMy1sMUo4QlBDZ1AxU1pXcnc?oc=5",
+      "title_hint": "Meditation Market Poised for Explosive Growth, Projected to - GlobeNewswire",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954231"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9oTjNxelI3YkJYOERhNFFLQWZBTWIxa1hCMjlrTzhJMEtoM2dwZHJscXEtUjNEbGxBVjlYQUZQVU5fcDVwY2RyNTNwdERoTHAtMVpGTkVpT2ctUEhzekZlc1hfVmZIX0M0SlRQenFIU0ZPNDhSTk8talpucw?oc=5",
+      "title_hint": "The Top Wellness Tech of CES 2026 - Mix93.3",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954235"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaVd0ZGJzT3llS2RZcXM5dVhiWmtiZkwzVWlIdnVtbjIwQnRqamNPejFNSVdNb2Z2MlY5Wk1CdmZPd3pidGRfa3BlbE1TOEM1cG1pNDh4cEZKWGZTa2tSNmptcVpIQXgxVXdBSWI4blR5T1JOaWtwbDRhSl95SUd5aDlmRzFnaFY5MEd0RXFmSEtjVVBzcGxvUTgwZE1CaWRsSnc?oc=5",
+      "title_hint": "FETC26: Teaching Digital Wellness in an Era of Tech Saturation - GovTech",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954238"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcDNTOG1JTkxmdkpqWEN2M0JBUTFjNjhSM1JiNzF0WHFNVXZCXzB5SEpQVkFVMkMyVS1VZEFxa0FCcU8wZHRxb3JSNnEtR3pkc1B6eUFfWnlLeEFwSmlqVVQ0bFFOZUFrc2JGUG9LenVILURzTVVMbnBfM0dDYU5Db2ZUNHQ1NEs5d1kwRTNtYkE5aGF1WmVDZFc1bnIybjlWVXI3X2lmdUFwUE9FY2FsWmFqM01mcXlJ?oc=5",
+      "title_hint": "Healthy New Year: The 7 Latest Fitness And Wellness Tech For 2026 - Forbes",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954242"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQU1BaNmIyVjNTSkFCbU81THJCVzF1c1ExYTVVWkdDaFlEb2QyVmQwcWEyVG9ramhxZzBtaTViTDU1ZzFPQ05BZ1dQYmlQMWtHRmlwT3otOVNIbnY2T0p1OFNWdElSYjJRLWZkakxMQ2VzVVNPWmo5cmlPYmtZbUptek1IS2Vtbk52cVliQXhKYlg2X1RiZk8xYzN1cmlXMllySEs0ZHRzUk1rQm84VzJWellNVDBCS2lQTVlvcmx2ZlZ4VDRDVjhTa1FvRURMNzlhSUs2elBZdEVzdTZCY0VvRHRPZDNQaUQ0cHpMcVRrSkp3Q0ZFeDctc0Y0dDE0V2ZxY0JXMFZmdEpveHBnak9WNHJIVkY1b3dWQmlKeWozZmxxdVp1UHNGNXJB?oc=5",
+      "title_hint": "From apps that read tarot cards to AI offering spiritual guidance, technology is intersecting with mysticism - newscentermaine.com",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954245"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOZnRTZVpsZ3Z3Y2R6eUgtSEJWNUFCTFVxWXJGVTFYMU5wcTROQkNDMWU5NmcySVIzVXVURUtXeEFHbjQxYmVuMkx1ckRHUFBReGxFeFJvcGlKWk5kejRDSC1TdnYzUGdnTU9kWm40TjVBdml3VEUteFFZdGhUZUdCVHU3MmljWmZ6T19HRlVMbDZmLW4xRGpYVy15OFRONDBlOGRnYmozWXV3am55UXJlNTVENXdoYmw2UV9lYmVYNXpDZ0FVM3prU3lZdmlfTk1BaVh5MGZjNWdFR3RoWjlTbTl5ODdQZkxBZHJ6WFJGVktYSjR5NktQUTdSYzlBbzJGcURKaTY0Y0llX3NTTm12Z25jeGs4alJKWTRhSUUwV3JNaGhONmt3?oc=5",
+      "title_hint": "From apps that read tarot cards to AI offering spiritual guidance, technology is intersecting with mysticism - newscentermaine.com",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954249"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNV2NQWHY0TElHdnZlWTJrMXVJQ25EOXpxMk1Jbi1QMG5ud2VyQy1hRkwxVVN4QzRwaUxGWlFReEFqRUdXd1h6YXBlU1k2Y2hyM0h2dklSV01ySHAtano3bXJ3QW9OSWhRTklLWHdxaHlJVEp1MlBKNG5reTRPeXhPQ2VUbV9Md1RHZHVreUtKTktWRzBjNjFZNUduSUd1U1hnRm03aEJvN0RkUWl0ZXVuMjlsVkVtMUZEdmR1ZEdOaGFUd3BDQlhkLXRfRVNJWmJLRVIzYzJvSmhSVWhtNWFDSjdKbnRfUdIB6wFBVV95cUxPeUpteFNPSEVDdmNLRGtDbHV4a1VFc2ZDN1V2SGQxYWNvcmdERDVsYU5oMlROYjYwb2JzZGk4Z0lDOTcwanNlTnJiLWltV3BvYzNIN1pobzlXQlhQcndxUFBLamJVTmFDRnZaQ0NfVnhCYU1WbklrQ0RNYWZJN2ZnZHB5c3NfeGdPa0wxbUdLTnVCRUQwTmFfa25NSGhSQ0VNQkFFaXViNy0tRGM3OXRQVXBtRjlIOHVfZE1ZRnBheXc1SlNSc0o0V0RrbmRYdElJYnF0R1FpbC1uWkhWSHJqS3dTRE0tdGJUdFE4?oc=5",
+      "title_hint": "Why Gen Z is turning to spiritual tech for micro-healing-platforms - Times of India",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954254"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU1FvLXRzTGdWQmZtYnVyLTFfVXMtQUdUa0pVRkpBSG5DcHBhb1l0SWZQMDJ1OVZTeXA5aEljaXVLa21SQ2lpcW5lRkJZVnpyYUZSQ0tDWi1CSmpxdVdkVWJka1hDM1RtX0F2aXlhTlVrMG12ZDdHcG1HdWlpYzRfMVpuRVJSQzhFa19aWkpZUnJWMlBkRnJDdUdUTGduNnJVT29lSGlB?oc=5",
+      "title_hint": "Synergos focuses on ‘conscious capitalism’ with new deep tech fund - Venture Capital Journal",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954257"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNb3dIaGw2RU81Z1VubW1RRmhtY00wdDlBUktWcFZVVGd3OUROVWRzX1RwaG96bjJnZWZIOU84UElDYVdXdmFVVkZNek5WUzRVN2tHVm1WYXI4VFhVYmhCb0VZQnRJUGpYdG0wNE9IU014N2FTaVRPLXlMUGNsdlFRSnpDMGg4aUZib1R5b2FLODhPWUttWHVHT2JBdEpBbnVSYzM0NVNLNlU5S1R6WU9QZlFpYUhkMmVMRlIxRjltSV9ZUQ?oc=5",
+      "title_hint": "Corporate America soured on ‘business for good.’ Here’s how to reframe conscious capitalism - Fast Company",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954261"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUlBXd2JSM2dHTG5JR2VvYzZMTGdmeHVfWVAtUE81MjNPYkNqRnVLZ1hneHI2VmpXcUh2RndCS25MYXB3T1RRbVg4N3JPNlpOTnRGYkQxa29xUFZtTGgyN2pyX0l0QmViQlpGWWJEdUI5U2pPSlVZY2RKNGI2MTZKbThVR1ZYODE5bm1TaTVBMjdRRXdOa0FXaENvYi1DSU5sakZDamhn?oc=5",
+      "title_hint": "Conscious capitalism transforming the way we do business - The Daily Star",
+      "snippet_hint": "",
+      "source_name": "google-news",
+      "source_type": "news",
+      "discovered_from": "google-news",
+      "discovered_at": "2026-01-15T06:11:52.954264"
+    },
+    {
+      "url": "https://www.ilo.org/publications/flagship-reports/employment-and-social-trends-2026",
+      "title_hint": "Employment and Social Trends 2026 | International Labour Organization",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954330"
+    },
+    {
+      "url": "https://www.imd.org/ibyimd/talent/workplace-trends-for-2026/",
+      "title_hint": "Workplace trends for 2026 - The new labor market reality - I by IMD",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954334"
+    },
+    {
+      "url": "https://www.vistage.com/research-center/business-financials/economic-trends/20251006-social-and-workforce-trends-for-2026-and-beyond/",
+      "title_hint": "Social and Workforce Trends for 2026 and Beyond | Vistage",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954337"
+    },
+    {
+      "url": "https://blogs.worldbank.org/en/developmenttalk/what-do-demographic-changes-mean-for-labor-supply-",
+      "title_hint": "What do demographic changes mean for labor supply? | World Bank",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954341"
+    },
+    {
+      "url": "https://ilostat.ilo.org/blog/how-population-trends-shape-our-workforce/",
+      "title_hint": "How population trends shape our workforce - ILOSTAT",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954344"
+    },
+    {
+      "url": "https://etedge-insights.com/featured-insights/why-2026-will-be-the-breakthrough-year-for-ai-quantum-convergence/",
+      "title_hint": "Why 2026 will be the breakthrough year for AI-quantum convergence",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954347"
+    },
+    {
+      "url": "https://www.startus-insights.com/innovators-guide/future-of-quantum-computing/",
+      "title_hint": "Future of Quantum Computing [2026-2030] | StartUs Insights",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954351"
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title_hint": "TQI's Expert Predictions on Quantum Technology in 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954354"
+    },
+    {
+      "url": "https://thequantuminsider.com/2026/01/02/researchers-map-how-quantum-computing-could-accelerate-single-cell-biology/",
+      "title_hint": "Researchers Map How Quantum Computing Could Accelerate Single-Cell Biology",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954357"
+    },
+    {
+      "url": "https://betanews.com/2025/12/16/practical-quantum-encryption-risk-and-government-regulation-quantum-computing-predictions-for-2026/",
+      "title_hint": "Practical quantum, encryption risk and government regulation - quantum computing predictions for 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954360"
+    },
+    {
+      "url": "https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26",
+      "title_hint": "Global Crypto Policy Review Outlook 2025/26 Report | TRM Labs",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954363"
+    },
+    {
+      "url": "https://sumsub.com/blog/global-crypto-regulations/",
+      "title_hint": "Crypto Regulation in 2026: What Changed and What's Ahead",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954366"
+    },
+    {
+      "url": "https://www.svb.com/industry-insights/fintech/2026-crypto-outlook/",
+      "title_hint": "Future of crypto: 5 crypto predictions for 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954369"
+    },
+    {
+      "url": "https://www.globallegalinsights.com/practice-areas/blockchain-cryptocurrency-laws-and-regulations/",
+      "title_hint": "Blockchain and Cryptocurrency Laws and Regulations 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954373"
+    },
+    {
+      "url": "https://www.fintechweekly.com/magazine/articles/stablecoins-2025-regulation-banks-fintech-digital-money-infrastructure",
+      "title_hint": "Stablecoins in 2025: How Regulation, Banks, and Fintechs Turned Digital Money Into a Global Infrastructure",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954376"
+    },
+    {
+      "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
+      "title_hint": "Where things stand on climate change in 2026 | Yale Climate Connections",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954379"
+    },
+    {
+      "url": "https://www.canarymedia.com/articles/clean-energy/big-stories-2026-renewables-power-grid",
+      "title_hint": "10 big energy stories Canary Media is tracking in 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954382"
+    },
+    {
+      "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+      "title_hint": "Progress Despite Fragmentation: The Energy Transition to 2030 | BloombergNEF",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954385"
+    },
+    {
+      "url": "https://www.claimsjournal.com/news/national/2026/01/02/334858.htm",
+      "title_hint": "The 14 Global Trends That Will Shape the Climate in 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954388"
+    },
+    {
+      "url": "https://interestingengineering.com/energy/technologies-redefining-fight-against-global-warming",
+      "title_hint": "7 game-changing technologies leading the fight against global warming",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954391"
+    },
+    {
+      "url": "https://www.cfr.org/article/how-2026-could-decide-future-artificial-intelligence",
+      "title_hint": "How 2026 Could Decide the Future of Artificial Intelligence | Council on Foreign Relations",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954394"
+    },
+    {
+      "url": "https://www.techpolicy.press/expert-predictions-on-whats-at-stake-in-ai-policy-in-2026/",
+      "title_hint": "Expert Predictions on What's at Stake in AI Policy in 2026 | TechPolicy.Press",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954397"
+    },
+    {
+      "url": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-strong-start-to-2026-for-china-s-data-ai-governance-landscape",
+      "title_hint": "Notes from the Asia-Pacific region: Strong start to 2026 for China's data, AI governance landscape | IAPP",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954400"
+    },
+    {
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/the-g20-is-moving-forward-on-global-ai-governance-and-the-us-risks-being-left-out/",
+      "title_hint": "The G20 is moving forward on global AI governance - and the US risks being left out | Atlantic Council",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954404"
+    },
+    {
+      "url": "https://silvijaseres.com/ethics-in-ai-key-issues-you-need-to-know-in-2026/",
+      "title_hint": "Ethics in AI - Key Issues You Need to Know in 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954408"
+    },
+    {
+      "url": "https://bernardmarr.com/8-ai-ethics-trends-that-will-redefine-trust-and-accountability-in-2026/",
+      "title_hint": "8 AI Ethics Trends That Will Redefine Trust And Accountability In 2026",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954412"
+    },
+    {
+      "url": "https://www.aibusinessreview.org/2026/01/01/ai-ethics-2026/",
+      "title_hint": "AI Ethical Future | AI Business Review",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954415"
+    },
+    {
+      "url": "https://www.webpronews.com/ai-ethics-in-2026-fostering-inclusivity-fairness-and-accountability/",
+      "title_hint": "AI Ethics in 2026: Fostering Inclusivity, Fairness, and Accountability",
+      "snippet_hint": "",
+      "source_name": "websearch",
+      "source_type": "news",
+      "discovered_from": "websearch",
+      "discovered_at": "2026-01-15T06:11:52.954418"
+    }
+  ]
+}

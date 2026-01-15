@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "created": "2026-01-14",
+    "last_updated": "2026-01-14",
+    "total_signals": 0,
+    "tracked_signals": 0,
+    "verified_signals": 0,
+    "description": "pSRT 2.0 Phase 3 Historical Calibration을 위한 신호 이력 데이터베이스"
+  },
+
+  "signals": [],
+
+  "schema": {
+    "signal_entry": {
+      "signal_id": "SIG-YYYY-MMDD-NNN",
+      "title": "신호 제목",
+      "created_date": "YYYY-MM-DD",
+      "source": "domain.com",
+      "source_tier": 1,
+      "category": "STEEPS 카테고리",
+      "subcategory": "세부 카테고리",
+
+      "original_prediction": {
+        "summary": "원본 요약",
+        "significance": 1,
+        "timeline": "예상 시기",
+        "predicted_impact": "low|medium|high"
+      },
+
+      "pSRT_at_creation": {
+        "overall": 0,
+        "grade": "A++|A+|A|B|C|D|E|F",
+        "groundedness": 0,
+        "cross_validation": 0,
+        "calibration_factor": 1.0
+      },
+
+      "tracking": {
+        "status": "pending|tracked|verified|archived",
+        "last_checked": "YYYY-MM-DD",
+        "check_count": 0,
+        "verification_history": []
+      },
+
+      "outcome": {
+        "realization_status": "realized|partially_realized|not_realized|contradicted|unknown",
+        "realization_date": null,
+        "accuracy_score": 0,
+        "accuracy_breakdown": {
+          "timing_accuracy": 0,
+          "content_accuracy": 0,
+          "impact_accuracy": 0
+        },
+        "verification_sources": [],
+        "outcome_notes": ""
+      }
+    }
+  },
+
+  "indexes": {
+    "by_source": {},
+    "by_category": {},
+    "by_outcome": {},
+    "by_date_range": {}
+  }
+}

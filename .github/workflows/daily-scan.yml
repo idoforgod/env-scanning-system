@@ -1008,7 +1008,7 @@ jobs:
           1. 지난 7일간 수집된 모든 신호 종합 분석
           2. 메타 신호 및 패턴 식별
           3. 시나리오 시사점 도출
-          4. 주간 요약 보고서 생성 (data/weekly/)
+          4. 주간 요약 보고서 생성 (data/consolidated/weekly/)
 
           --skip-human 모드로 진행합니다." \
           --allowedTools "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,Task" \

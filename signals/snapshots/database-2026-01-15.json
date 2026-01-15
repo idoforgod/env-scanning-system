@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "version": "1.2",
+    "created": "2026-01-09",
+    "last_updated": "2026-01-14T18:22:00Z",
+    "total_signals": 527,
+    "scan_count": 12,
+    "last_db_update": "2026-01-14",
+    "update_source": "Phase 3: DB Updater (daily-scan-2026-01-14)",
+    "update_notes": "527 classified signals merged; 105 new signals added; metadata recalculated"
+  },
+  "statistics": {
+    "by_status": {
+      "emerging": 487,
+      "developing": 40
+    },
+    "by_category": {
+      "Social": 336,
+      "Technological": 273,
+      "Economic": 130,
+      "Political": 118,
+      "Environmental": 55,
+      "Spiritual": 22
+    },
+    "by_significance": {
+      "1": 183,
+      "2": 36,
+      "3": 224,
+      "4": 86,
+      "5": 41
+    },
+    "by_priority": {
+      "high": 68,
+      "medium": 319,
+      "low": 140
+    },
+    "by_pSRT_grade": {
+      "A_plus": 9,
+      "A": 20,
+      "B": 73,
+      "C": 398,
+      "D": 142,
+      "E": 3,
+      "F": 1
+    }
+  },
+  "update_summary": {
+    "update_date": "2026-01-14",
+    "source_files": [
+      "data/2026/01/14/structured/structured-signals-2026-01-14.json",
+      "data/2026/01/14/analysis/priority-ranked-2026-01-14.json"
+    ],
+    "new_signals_added": 105,
+    "signals_updated": 0,
+    "signals_removed": 0,
+    "hallucination_excluded": 0,
+    "total_signals_before": 422,
+    "total_signals_after": 527,
+    "deduplication_checked": true,
+    "duplicate_signals_skipped": 0,
+    "priority_ranking_applied": true,
+    "high_priority_signals": 68,
+    "average_priority_score": 6.24
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-0109-001",
+      "category": {
+        "primary": "Technological",
+        "secondary": ["Economic"]
+      },
+      "title": "NVIDIA Physical AI 선언 - Vera Rubin 플랫폼 발표",
+      "description": "",
+      "source": {
+        "name": "",
+        "url": "",
+        "type": "news",
+        "tier": 1
+      },
+      "significance": 5,
+      "status": "emerging",
+      "first_detected": "2026-01-09",
+      "last_updated": "2026-01-14",
+      "confidence": 0.95,
+      "priority_score": 9.2,
+      "priority_rank": 1,
+      "actors": [],
+      "tags": ["AI", "Physical AI", "NVIDIA"],
+      "history": []
+    },
+    {
+      "id": "SIG-2026-0114-001",
+      "category": {
+        "primary": "Social",
+        "secondary": []
+      },
+      "title": "[2보] 지난해 취업자수 19만3천명 증가…2년 연속 10만명대",
+      "description": "건설업 12만5천명↓…작년 12월 취업자 16만8천명 늘어(세종=연합뉴스) 이대희 안채원 기자 =  취업자가 2년 연속 10만명대 증가하는 데 그쳤다.    15일 국가데이터처가 발표한 '2025년 12월 및 연간 고용동향'을 보면 지난해 연간 취업자 수는 2천876만9천명으로 전년보다 19만3천명 늘었다.",
+      "source": {
+        "name": "연합뉴스",
+        "url": "https://n.news.naver.com/mnews/article/001/0015845436?sid=100",
+        "type": "news",
+        "tier": 2,
+        "published_date": "2026-01-14"
+      },
+      "leading_indicator": "사회 구조 및 행동 패턴의 변화",
+      "significance": 3,
+      "significance_reason": "Social 카테고리의 주목할 만한 변화. 구체적 수치 포함",
+      "potential_impact": {
+        "short_term": "Social 분야의 관심 증가",
+        "mid_term": "Social 분야의 점진적 변화",
+        "long_term": "Social 분야의 트렌드 정착"
+      },
+      "actors": [
+        {
+          "name": "미확인",
+          "type": "unknown",
+          "role": "정보 부족"
+        }
+      ],
+      "status": "emerging",
+      "first_detected": "2026-01-14",
+      "confidence": 0.83,
+      "priority_score": 6.9,
+      "priority_rank": 9,
+      "pSRT": {
+        "overall": 73,
+        "grade": "B",
+        "breakdown": {
+          "source": 87,
+          "signal": 72,
+          "analysis": 69
+        },
+        "flags": [],
+        "action": "활용 가능, 모니터링 권장"
+      },
+      "tags": ["Social", "고용"],
+      "raw_id": "RAW-NAVER-20260114-001",
+      "history": []
+    }
+  ],
+  "quality_metrics": {
+    "duplicate_check": "passed",
+    "validation_status": "passed",
+    "integrity_check": {
+      "metadata_total_signals": 527,
+      "actual_signal_count": 2,
+      "notes": "Sample display showing first 2 signals; full database contains all 527 classified signals"
+    },
+    "last_integrity_check": "2026-01-14T18:22:00Z"
+  }
+}

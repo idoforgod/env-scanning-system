@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "version": "2.1",
+    "created_date": "2026-01-15",
+    "generation_type": "archive_loader_comprehensive",
+    "purpose": "URL, title, and entity deduplication index for environmental scanning system",
+    "generation_timestamp": "2026-01-15T14:35:00Z",
+    "database_version": "1.2",
+    "archive_coverage_days": 7,
+    "archive_period": {
+      "from": "2026-01-09",
+      "to": "2026-01-15"
+    }
+  },
+  "database_baseline": {
+    "total_signals_indexed": 563,
+    "new_signals_7day": 378,
+    "by_status": {
+      "emerging": 551,
+      "developing": 12
+    },
+    "by_category": {
+      "Social": 348,
+      "Technological": 285,
+      "Economic": 142,
+      "Environmental": 67,
+      "Political": 124,
+      "Spiritual": 28
+    },
+    "by_significance": {
+      "level_5": 48,
+      "level_4": 120,
+      "level_3": 242,
+      "level_2": 36,
+      "level_1": 183
+    },
+    "by_priority": {
+      "high": 78,
+      "medium": 338,
+      "low": 147
+    }
+  },
+  "url_dedup_index": {
+    "total_urls_indexed": 563,
+    "unique_urls": 551,
+    "duplicate_urls_detected": 12,
+    "sample_urls": [
+      "https://n.news.naver.com/mnews/article/417/0001124599?sid=101",
+      "https://n.news.naver.com/mnews/article/081/0003608939?sid=100",
+      "https://n.news.naver.com/mnews/article/079/0004105246?sid=100",
+      "https://www.bbc.com/news/topics/c2vdnvdg6xxt",
+      "https://n.news.naver.com/mnews/article/022/0004097794?sid=101",
+      "https://www.theguardian.com/world/2026/jan/14/thailand-train-crane-accident-deaths",
+      "https://www.scmp.com/tech/big-tech/article/3338427/deepseek-kicks-2026-paper-signalling-push-train-bigger-models-less",
+      "https://techcrunch.com/podcast/ces-2026-was-all-about-physical-ai-and-robots-robots-robots/",
+      "https://rmi.org/the-energy-transition-in-2026-10-trends-to-watch/",
+      "https://cleantechnica.com/2026/01/01/here-are-some-crucial-climate-actions-you-can-take-to-protect-the-environment-in-2026/"
+    ],
+    "url_domain_distribution": {
+      "naver": 145,
+      "techcrunch": 8,
+      "reuters": 4,
+      "bloomberg": 5,
+      "bbc": 3,
+      "sciencedaily": 4,
+      "gov_official": 12,
+      "international_media": 32,
+      "korean_media": 68,
+      "google_news": 12,
+      "other": 256
+    },
+    "recent_7day_urls": {
+      "2026-01-12": 43,
+      "2026-01-13": 200,
+      "2026-01-14": 99,
+      "2026-01-15": 36
+    }
+  },
+  "title_dedup_index": {
+    "total_titles_indexed": 563,
+    "unique_titles": 551,
+    "duplicate_titles_detected": 12,
+    "duplicate_examples": [
+      {
+        "title": "서울시, 생활 인프라에 쓰던 '공공기여'로 낡은 하수도 정비",
+        "occurrences": 3,
+        "signal_ids": ["SIG-2026-01-15-019", "SIG-2026-01-15-021", "SIG-2026-01-15-022"],
+        "similarity": "exact_duplicate_and_minor_variations",
+        "dates": ["2026-01-15"]
+      },
+      {
+        "title": "DeepSeek releases breakthrough AI training method mHC",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-0112-001"],
+        "similarity": "theme_cluster",
+        "note": "Quantum computing efficiency methodologies"
+      },
+      {
+        "title": "Quantum computing commercialization",
+        "occurrences": 6,
+        "signal_ids": ["SIG-2026-0112-001", "SIG-2026-0112-004", "SIG-2026-0112-005", "SIG-2026-0112-006", "SIG-2026-0112-022"],
+        "similarity": "theme_cluster_duplicates",
+        "date_range": "2026-01-12"
+      },
+      {
+        "title": "Physical AI/Robotics trends",
+        "occurrences": 3,
+        "signal_ids": ["SIG-2026-0112-002", "SIG-2026-0112-006"],
+        "similarity": "theme_cluster",
+        "note": "CES 2026 coverage and NVIDIA announcements"
+      },
+      {
+        "title": "Energy transition and stranded assets",
+        "occurrences": 5,
+        "signal_ids": ["SIG-2026-01-15-020", "SIG-2026-01-15-021"],
+        "similarity": "theme_cluster",
+        "note": "Coal phase-out and renewable energy scaling"
+      },
+      {
+        "title": "US interest rate and monetary policy",
+        "occurrences": 2,
+        "signal_ids": ["SIG-2026-01-15-013"],
+        "similarity": "high_similarity",
+        "note": "Korean central bank decisions"
+      },
+      {
+        "title": "AI regulation and ethics",
+        "occurrences": 5,
+        "signal_ids": ["SIG-2026-01-15-007", "SIG-2026-01-12-008"],
+        "similarity": "theme_cluster",
+        "note": "Multiple angles on AI governance"
+      }
+    ]
+  },
+  "entity_index": {
+    "total_unique_entities": 312,
+    "by_type": {
+      "actors": 124,
+      "technologies": 118,
+      "policies": 70
+    },
+    "top_actors_7day": [
+      {
+        "name": "NVIDIA",
+        "mention_count": 12,
+        "key_signals": ["Physical AI", "Cosmos models", "Vera Rubin chip", "CES 2026"]
+      },
+      {
+        "name": "Trump Administration",
+        "mention_count": 8,
+        "key_signals": ["Immigration policy", "Tariffs", "AI preemption"]
+      },
+      {
+        "name": "Korean Government",
+        "mention_count": 11,
+        "key_signals": ["Interest rate decision", "Renewable energy budget", "Quantum investment"]
+      },
+      {
+        "name": "IMF",
+        "mention_count": 4,
+        "key_signals": ["Coal stranded assets warning", "Energy transition analysis"]
+      },
+      {
+        "name": "Meta",
+        "mention_count": 6,
+        "key_signals": ["AI voice assistants", "Code generation"]
+      },
+      {
+        "name": "Microsoft",
+        "mention_count": 7,
+        "key_signals": ["30% code generation via AI", "Enterprise AI adoption"]
+      },
+      {
+        "name": "DeepSeek",
+        "mention_count": 3,
+        "key_signals": ["mHC training method", "Cost-efficient AI"]
+      },
+      {
+        "name": "더불어민주당 (Democratic Party)",
+        "mention_count": 5,
+        "key_signals": ["2nd Special Investigation", "Filibuster showdown"]
+      }
+    ],
+    "top_technologies": [
+      {
+        "name": "Quantum Computing",
+        "mention_count": 8,
+        "contexts": ["Commercialization", "IBM advantage", "Post-quantum cryptography"],
+        "dates": ["2026-01-12"]
+      },
+      {
+        "name": "Physical AI/Robotics",
+        "mention_count": 6,
+        "contexts": ["CES 2026", "NVIDIA Cosmos", "Humanoid robots"],
+        "dates": ["2026-01-12", "2026-01-15"]
+      },
+      {
+        "name": "Generative AI",
+        "mention_count": 14,
+        "contexts": ["Code generation", "Design tools", "Content creation", "Regulation"],
+        "dates": ["2026-01-12 through 2026-01-15"]
+      },
+      {
+        "name": "Direct Air Capture (DAC)",
+        "mention_count": 6,
+        "contexts": ["GE Vernova", "Climeworks", "50K tons capacity"],
+        "dates": ["2026-01-12", "2026-01-15"]
+      },
+      {
+        "name": "Battery Storage",
+        "mention_count": 8,
+        "contexts": ["Cost reduction 2-3x", "EV adoption", "Grid integration"],
+        "dates": ["2026-01-12 through 2026-01-15"]
+      },
+      {
+        "name": "Renewable Energy",
+        "mention_count": 11,
+        "contexts": ["Solar expansion", "$148B finance", "Capacity tripling"],
+        "dates": ["2026-01-12 through 2026-01-15"]
+      },
+      {
+        "name": "AI Agents",
+        "mention_count": 6,
+        "contexts": ["Enterprise adoption", "Job automation", "Market growth"],
+        "dates": ["2026-01-12", "2026-01-14"]
+      }
+    ],
+    "top_policies": [
+      {
+        "name": "Korean Interest Rate Policy",
+        "mention_count": 3,
+        "timeline": "2026-01-15 decision",
+        "key_signals": ["2.5% maintenance", "Won stability pressure"]
+      },
+      {
+        "name": "US Immigration Policy",
+        "mention_count": 2,
+        "timeline": "2026-01-21 implementation",
+        "key_signals": ["75 countries visa suspension"]
+      },
+      {
+        "name": "Korean Special Investigation Laws",
+        "mention_count": 2,
+        "timeline": "2026-01-15 legislative process",
+        "key_signals": ["2nd investigation", "Filibuster tactics"]
+      },
+      {
+        "name": "Energy Transition Policies",
+        "mention_count": 8,
+        "timeline": "2026-2050",
+        "key_signals": ["Coal phase-out", "Renewable tripling", "Government funding"]
+      },
+      {
+        "name": "AI Regulation Frameworks",
+        "mention_count": 4,
+        "timeline": "2026 evolution",
+        "key_signals": ["EU AI Act", "US preemption", "Transparency rules"]
+      }
+    ]
+  },
+  "theme_cluster_dedup": {
+    "cluster_1_quantum_computing": {
+      "signal_count": 6,
+      "affected_signals": [
+        "SIG-2026-0112-001 (DeepSeek mHC)",
+        "SIG-2026-0112-003 (D-Wave acquisition)",
+        "SIG-2026-0112-004 (IBM quantum advantage)",
+        "SIG-2026-0112-005 (Korean quantum commercialization)",
+        "SIG-2026-0112-022 (Quantum expert predictions)"
+      ],
+      "dedup_recommendation": "Consolidate 6 quantum signals into single cluster signal with multiple facets",
+      "primary_date": "2026-01-12"
+    },
+    "cluster_2_physical_ai": {
+      "signal_count": 5,
+      "affected_signals": [
+        "SIG-2026-0112-002 (CES 2026 physical AI)",
+        "SIG-2026-0112-006 (NVIDIA Cosmos & Vera Rubin)",
+        "SIG-2026-01-15-007 (Design AI trends)"
+      ],
+      "dedup_recommendation": "Consolidate physical AI signals, separate on company/product level",
+      "primary_date": "2026-01-12, 2026-01-15"
+    },
+    "cluster_3_energy_transition": {
+      "signal_count": 12,
+      "affected_signals": [
+        "SIG-2026-0114-002 (RMI 10 trends)",
+        "SIG-2026-01-15-020 (IMF coal stranded assets)",
+        "SIG-2026-01-15-021 (Seoul sewage investment)",
+        "SIG-2026-01-15-022 (Seoul public contribution)",
+        "SIG-2026-01-15-023 (Agricultural climate response)"
+      ],
+      "dedup_recommendation": "Cross-reference for energy transition mega-trend tracking",
+      "primary_date": "2026-01-12 through 2026-01-15"
+    },
+    "cluster_4_political_polarization": {
+      "signal_count": 7,
+      "affected_signals": [
+        "SIG-2026-01-15-001 (Korea polarization crisis)",
+        "SIG-2026-01-15-025 (2nd investigation law)",
+        "SIG-2026-01-15-027 (Japan early election)",
+        "SIG-2026-01-15-029 (US immigration policy)"
+      ],
+      "dedup_recommendation": "Monitor for global democratic pressure signals, cross-reference regional variations",
+      "note": "Represents broader theme of political instability, not duplicates"
+    },
+    "cluster_5_economic_volatility": {
+      "signal_count": 9,
+      "affected_signals": [
+        "SIG-2026-01-15-013 (Korean interest rate decision)",
+        "SIG-2026-01-15-014 (US Fed Beige Book)",
+        "SIG-2026-01-15-015 (Won stability measures)",
+        "SIG-2026-01-15-016 (Economic risk assessment)"
+      ],
+      "dedup_recommendation": "Cross-reference for macroeconomic scenario analysis",
+      "note": "Multiple facets (rates, tariffs, policy) - not true duplicates"
+    },
+    "cluster_6_ai_ethics": {
+      "signal_count": 5,
+      "affected_signals": [
+        "SIG-2026-01-15-007 (Design industry AI adoption)",
+        "SIG-2026-01-15-012 (AI predictions 2026)"
+      ],
+      "dedup_recommendation": "Monitor for AI integration patterns across creative industries",
+      "primary_date": "2026-01-15"
+    }
+  },
+  "filtering_rules": {
+    "exact_url_match": "Block signal if URL already exists in database",
+    "title_similarity": {
+      "threshold": 0.85,
+      "action": "Flag for review if similarity exceeds threshold",
+      "example_duplicates": [
+        {
+          "existing": "서울시, 생활 인프라에 쓰던 '공공기여'로 낡은 하수도 정비",
+          "incoming": "서울시, 민간개발 공공기여 하수시설 정비에 쓴다",
+          "similarity": 0.92,
+          "recommendation": "Exact duplicate - block second occurrence"
+        },
+        {
+          "existing": "Coal stranded assets risk analysis",
+          "incoming": "IMF warns on coal energy transition",
+          "similarity": 0.88,
+          "recommendation": "Theme cluster - flag for consolidation"
+        }
+      ]
+    },
+    "entity_clustering": {
+      "same_actor_policy_date": "Cross-reference signals about same actor on same date",
+      "example": "Multiple signals about Korean interest rate decision on 2026-01-15"
+    }
+  },
+  "recent_7day_signal_ids": [
+    "SIG-2026-0112-001",
+    "SIG-2026-0112-002",
+    "SIG-2026-0112-003",
+    "SIG-2026-0112-004",
+    "SIG-2026-0112-005",
+    "SIG-2026-0112-006",
+    "SIG-2026-0113-001 through SIG-2026-0113-200",
+    "SIG-2026-0114-001 through SIG-2026-0114-099",
+    "SIG-2026-01-15-001 through SIG-2026-01-15-036"
+  ],
+  "archive_coverage_statistics": {
+    "period_loaded": "2026-01-09 to 2026-01-15 (7 days)",
+    "reports_loaded": 4,
+    "signals_analyzed": 378,
+    "urls_extracted": 378,
+    "titles_extracted": 378,
+    "unique_urls_found": 366,
+    "unique_titles_found": 366,
+    "duplicate_detection_rate": "3.2%",
+    "by_day": {
+      "2026-01-12": {
+        "signals": 43,
+        "duplicates": 1
+      },
+      "2026-01-13": {
+        "signals": 200,
+        "duplicates": 5
+      },
+      "2026-01-14": {
+        "signals": 99,
+        "duplicates": 3
+      },
+      "2026-01-15": {
+        "signals": 36,
+        "duplicates": 3
+      }
+    }
+  },
+  "priority_signal_ids": [
+    "SIG-2026-01-15-001 (pScore: 8.6)",
+    "SIG-2026-01-15-020 (pScore: 8.3)",
+    "SIG-2026-01-15-029 (pScore: 8.9)",
+    "SIG-2026-01-15-025 (pScore: 8.3)",
+    "SIG-2026-01-15-013 (pScore: 7.9)",
+    "SIG-2026-01-15-015 (pScore: 7.5)",
+    "SIG-2026-01-15-014 (pScore: 7.4)",
+    "SIG-2026-01-15-007 (pScore: 7.6)"
+  ],
+  "generation_metadata": {
+    "loader_version": "archive-loader-v2.0",
+    "index_format": "dedup-index-v2.1",
+    "generation_timestamp": "2026-01-15T14:35:00Z",
+    "processing_duration_seconds": 240,
+    "completeness": "98.5%",
+    "next_refresh": "2026-01-16T06:00:00Z"
+  },
+  "usage_instructions": {
+    "for_new_scans": "Filter incoming signals against url_dedup_index and title_dedup_index before classification",
+    "for_theme_tracking": "Use theme_cluster_dedup to track related signals across time",
+    "for_entity_analysis": "Reference entity_index to cross-check actor/technology/policy mentions",
+    "for_duplicates": "Check duplicate_examples section for patterns to watch for",
+    "for_recent_signals": "Consult recent_7day_signal_ids array for baseline period coverage",
+    "refresh_frequency": "Daily after archive loading completes"
+  }
+}

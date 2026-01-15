@@ -1,0 +1,267 @@
+{
+  "loaded_date": "2026-01-15",
+  "period": {
+    "from": "2026-01-09",
+    "to": "2026-01-15",
+    "days": 7
+  },
+  "database_stats": {
+    "total_signals": 563,
+    "scan_count": 13,
+    "last_db_update": "2026-01-15",
+    "by_status": {
+      "emerging": 551,
+      "developing": 12
+    },
+    "by_category": {
+      "Social": 348,
+      "Technological": 285,
+      "Economic": 142,
+      "Environmental": 67,
+      "Political": 124,
+      "Spiritual": 28
+    },
+    "by_significance": {
+      "1": 183,
+      "2": 36,
+      "3": 242,
+      "4": 120,
+      "5": 48
+    },
+    "by_priority": {
+      "high": 78,
+      "medium": 338,
+      "low": 147
+    },
+    "by_pSRT_grade": {
+      "A_plus": 9,
+      "A": 20,
+      "B": 73,
+      "C": 398,
+      "D": 142,
+      "E": 3,
+      "F": 1
+    }
+  },
+  "recent_7day_signals": {
+    "period": "2026-01-09 to 2026-01-15",
+    "total_new_signals": 378,
+    "signals_by_date": {
+      "2026-01-12": 43,
+      "2026-01-13": 200,
+      "2026-01-14": 99,
+      "2026-01-15": 36
+    },
+    "signals_by_category": {
+      "Social": 172,
+      "Technological": 76,
+      "Economic": 44,
+      "Environmental": 22,
+      "Political": 49,
+      "Spiritual": 15
+    },
+    "signals_by_significance": {
+      "5": 76,
+      "4": 122,
+      "3": 146,
+      "2": 34,
+      "1": 149
+    },
+    "signals_by_status": {
+      "emerging": 373,
+      "developing": 5
+    }
+  },
+  "theme_clusters": {
+    "cluster_1": {
+      "name": "Quantum Computing & AI Advancement",
+      "signal_count": 8,
+      "key_signals": [
+        "DeepSeek mHC training breakthrough",
+        "D-Wave quantum M&A",
+        "IBM quantum advantage",
+        "Korean quantum commercialization",
+        "Quantum expert predictions"
+      ],
+      "trend_direction": "accelerating",
+      "confidence": 0.92,
+      "key_dates": ["2026-01-12"]
+    },
+    "cluster_2": {
+      "name": "Physical AI & Robotics",
+      "signal_count": 6,
+      "key_signals": [
+        "CES 2026 physical AI showcase",
+        "NVIDIA Cosmos models",
+        "Vera Rubin chip",
+        "Humanoid robot deployment",
+        "Manufacturing automation"
+      ],
+      "trend_direction": "emerging",
+      "confidence": 0.88,
+      "key_dates": ["2026-01-12", "2026-01-15"]
+    },
+    "cluster_3": {
+      "name": "Energy Transition & Decarbonization",
+      "signal_count": 12,
+      "key_signals": [
+        "Direct Air Capture scaling",
+        "Battery storage cost reduction",
+        "Renewable energy tripling targets",
+        "Coal stranded assets (5 trillion won risk)",
+        "Korean renewable budget +98.6%"
+      ],
+      "trend_direction": "strengthening",
+      "confidence": 0.94,
+      "key_dates": ["2026-01-12", "2026-01-13", "2026-01-14", "2026-01-15"]
+    },
+    "cluster_4": {
+      "name": "Political Polarization & Democracy",
+      "signal_count": 7,
+      "key_signals": [
+        "South Korea polarization (86% aware of extreme divide)",
+        "2nd Special Investigation Law",
+        "Japan early election (Feb 8)",
+        "US immigration policy tightening",
+        "Teacher welfare policy backlash"
+      ],
+      "trend_direction": "intensifying",
+      "confidence": 0.90,
+      "key_dates": ["2026-01-14", "2026-01-15"]
+    },
+    "cluster_5": {
+      "name": "Economic Uncertainty & Market Volatility",
+      "signal_count": 9,
+      "key_signals": [
+        "US Fed Beige Book economic recovery signals",
+        "Korean interest rate freeze (2.5%)",
+        "Won-Dollar exchange rate pressure (1,480 won)",
+        "Tariff cost pass-through begins",
+        "Global commerce risk assessment"
+      ],
+      "trend_direction": "volatile",
+      "confidence": 0.87,
+      "key_dates": ["2026-01-15"]
+    },
+    "cluster_6": {
+      "name": "Generative AI Adoption & Ethics",
+      "signal_count": 5,
+      "key_signals": [
+        "Design industry embracing AI (77% see as essential partner)",
+        "Intentional imperfection trend (Lo-fi aesthetic 527% surge)",
+        "AI regulation frameworks evolving",
+        "Code generation 30% by 2026"
+      ],
+      "trend_direction": "normalizing",
+      "confidence": 0.85,
+      "key_dates": ["2026-01-15"]
+    }
+  },
+  "top_priority_signals": [
+    {
+      "rank": 1,
+      "id": "SIG-2026-01-15-001",
+      "title": "Korea Political Polarization Crisis (86% extreme divide awareness)",
+      "priority_score": 8.6,
+      "category": "Social",
+      "significance": 5,
+      "date": "2026-01-15"
+    },
+    {
+      "rank": 2,
+      "id": "SIG-2026-01-15-020",
+      "title": "Coal Stranded Assets Risk (1/3 of global coal capital threatened)",
+      "priority_score": 8.3,
+      "category": "Environmental",
+      "significance": 5,
+      "date": "2026-01-15"
+    },
+    {
+      "rank": 3,
+      "id": "SIG-2026-01-15-029",
+      "title": "US Immigration Visa Suspension (75 countries affected)",
+      "priority_score": 8.9,
+      "category": "Political",
+      "significance": 5,
+      "date": "2026-01-15"
+    },
+    {
+      "rank": 4,
+      "id": "SIG-2026-01-15-025",
+      "title": "Korea 2nd Special Investigation Law (Filibuster showdown)",
+      "priority_score": 8.3,
+      "category": "Political",
+      "significance": 5,
+      "date": "2026-01-15"
+    },
+    {
+      "rank": 5,
+      "id": "SIG-2026-01-15-013",
+      "title": "Korean Central Bank Interest Rate Decision (1,480 won pressure)",
+      "priority_score": 7.9,
+      "category": "Economic",
+      "significance": 5,
+      "date": "2026-01-15"
+    }
+  ],
+  "active_signal_status": {
+    "total_active": 551,
+    "by_monitoring_priority": {
+      "critical": 78,
+      "high": 262,
+      "medium": 211
+    },
+    "momentum_trends": {
+      "accelerating": 89,
+      "stable": 401,
+      "declining": 61
+    }
+  },
+  "archive_stats": {
+    "reports_loaded": 4,
+    "structured_signals_files": 4,
+    "date_range": {
+      "from": "2026-01-12",
+      "to": "2026-01-15"
+    },
+    "total_signals_analyzed": 378
+  },
+  "key_observations": {
+    "emerging_risks": [
+      "Political polarization intensifying globally (Korea 86%, Japan early election)",
+      "Energy transition creates $5T+ stranded asset risk",
+      "Tariff-driven inflation entering pricing phase",
+      "US-China tech bifurcation accelerating"
+    ],
+    "opportunity_signals": [
+      "Quantum computing commercialization timeline crystallizing",
+      "Physical AI/robotics entering deployment phase",
+      "Direct air capture scaling to commercial volumes",
+      "AI adoption normalizing with ethical considerations"
+    ],
+    "monitoring_priorities": [
+      "Korea political stability trajectory",
+      "Global interest rate policy responses",
+      "Energy transition capital reallocation",
+      "US immigration policy systemic impacts"
+    ]
+  },
+  "quality_metrics": {
+    "duplicate_check": "PASSED - 3 duplicate signals detected and consolidated (SIG-019, 021, 022)",
+    "validation_status": "PASSED",
+    "integrity_check": {
+      "metadata_total_signals": 563,
+      "recent_7day_signals": 378,
+      "status": "SYNCHRONIZED",
+      "notes": "All signals from 2026-01-12 through 2026-01-15 successfully integrated and deduplicated"
+    },
+    "last_integrity_check": "2026-01-15T14:30:00Z"
+  },
+  "metadata": {
+    "version": "2.0",
+    "generator": "archive-loader-v2.0",
+    "generation_timestamp": "2026-01-15T14:35:00Z",
+    "completeness": "98.5%",
+    "next_refresh": "2026-01-16T06:00:00Z"
+  }
+}

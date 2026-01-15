@@ -1,0 +1,272 @@
+{
+  "collection_date": "2026-01-15",
+  "collection_time": "08:40:30",
+  "source": "naver_url_collector_v4.2",
+  "total_urls": 32,
+  "by_category": {
+    "Social": 5,
+    "Technological": 5,
+    "Economic": 5,
+    "Environmental": 5,
+    "Political": 5,
+    "Spiritual": 8
+  },
+  "urls": [
+    {
+      "url": "https://n.news.naver.com/mnews/article/052/0002300971?sid=104",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Social",
+      "search_keyword": "세대갈등"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/656/0000163116?sid=110",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Social",
+      "search_keyword": "세대갈등"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/417/0001124599?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Social",
+      "search_keyword": "세대갈등"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/081/0003608939?sid=100",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Social",
+      "search_keyword": "세대갈등"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/079/0004105246?sid=100",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Social",
+      "search_keyword": "세대갈등"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/018/0006201028?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Technological",
+      "search_keyword": "AI"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/015/0005237408?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Technological",
+      "search_keyword": "AI"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/057/0001930208?sid=104",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Technological",
+      "search_keyword": "AI"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/421/0008715115?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Technological",
+      "search_keyword": "AI"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/014/0005463170?sid=105",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Technological",
+      "search_keyword": "AI"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/015/0005237405?sid=104",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Economic",
+      "search_keyword": "금리"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/030/0003390177?sid=105",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Economic",
+      "search_keyword": "환율"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/008/0005304881?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Economic",
+      "search_keyword": "환율"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/119/0003048450?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Economic",
+      "search_keyword": "환율"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/030/0003390179?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Environmental",
+      "search_keyword": "기후변화"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/277/0005706945?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Environmental",
+      "search_keyword": "기후변화"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/119/0003048455?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Environmental",
+      "search_keyword": "탄소중립"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/417/0001124627?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Environmental",
+      "search_keyword": "재생에너지"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/018/0006201006?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Environmental",
+      "search_keyword": "재생에너지"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/421/0008715112?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Political",
+      "search_keyword": "국회"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/009/0005621971?sid=100",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Political",
+      "search_keyword": "국회"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/003/0013711543?sid=104",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Political",
+      "search_keyword": "국회"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/001/0015847984?sid=100",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Political",
+      "search_keyword": "국회"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/001/0015847982?sid=100",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Political",
+      "search_keyword": "국회"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/014/0005463166?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "정신건강"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/662/0000086418?sid=103",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "정신건강"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/016/0002585982?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "정신건강"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/016/0002585978?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "정신건강"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/003/0013711495?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "웰빙"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/003/0013711496?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "웰빙"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/003/0013711497?sid=102",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "웰빙"
+    },
+    {
+      "url": "https://n.news.naver.com/mnews/article/031/0000997023?sid=101",
+      "title": "네이버뉴스",
+      "source": "naver",
+      "source_name": "Naver News",
+      "steeps_category": "Spiritual",
+      "search_keyword": "웰빙"
+    }
+  ]
+}

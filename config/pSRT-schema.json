@@ -1,9 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "pSRT - predicted Signal Reliability Test",
-  "description": "환경스캐닝 자체 신뢰 평가 척도 데이터 구조",
-  "version": "1.0",
+  "title": "pSRT 2.0 - predicted Signal Reliability Test",
+  "description": "환경스캐닝 자체 신뢰 평가 척도 - AlphaFold pLDDT 영감의 4-Phase 시스템",
+  "version": "2.0",
   "created": "2026-01-12",
+  "updated": "2026-01-14",
 
   "definitions": {
     "score_range": {
@@ -11,30 +12,419 @@
       "minimum": 0,
       "maximum": 100
     },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
     "grade": {
       "type": "string",
-      "enum": ["A+", "A", "B", "C", "D", "E", "F"]
+      "enum": ["A++", "A+", "A", "B", "C", "D", "E", "F"]
+    },
+    "groundedness_grade": {
+      "type": "string",
+      "enum": ["G++", "G+", "G", "G-", "P", "P-", "F"]
+    },
+    "cv_grade": {
+      "type": "string",
+      "enum": ["CV++", "CV+", "CV", "CV-", "P", "P-", "F"]
+    },
+    "calibration_grade": {
+      "type": "string",
+      "enum": ["CAL++", "CAL+", "CAL", "CAL-", "P", "P-"]
     },
     "confidence_level": {
       "type": "string",
-      "enum": ["very_high", "high", "good", "moderate", "low", "very_low", "unreliable"]
+      "enum": ["exceptional", "very_high", "high", "good", "moderate", "low", "very_low", "unreliable"]
     },
-    "flag_severity": {
+    "hallucination_type": {
       "type": "string",
-      "enum": ["critical", "high", "medium", "low", "info"]
+      "enum": ["FABRICATION", "EXAGGERATION", "MISATTRIBUTION", "TEMPORAL_DISTORTION", "CAUSATION_INVENTION", "SCOPE_EXPANSION"]
     },
-    "flag_action": {
+    "severity": {
       "type": "string",
-      "enum": ["remove", "verify", "downgrade", "verify_date", "monitor", "review"]
+      "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+    },
+    "match_type": {
+      "type": "string",
+      "enum": ["exact", "semantic", "partial", "entity_verified", "inference", "no_match"]
+    },
+    "consistency_type": {
+      "type": "string",
+      "enum": ["FULL_CONFIRMATION", "MAJORITY_CONFIRMATION", "PARTIAL_CONFIRMATION", "CONTRADICTION", "NO_CORROBORATION"]
+    },
+    "realization_status": {
+      "type": "string",
+      "enum": ["realized", "partially_realized", "not_realized", "contradicted", "unknown", "pending"]
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": ["factual_claim", "numerical_claim", "quote_claim", "entity_claim", "causal_claim", "temporal_claim", "significance_claim"]
     }
   },
 
-  "signal_pSRT_schema": {
+  "phase_1_groundedness_schema": {
     "type": "object",
+    "description": "Phase 1: Groundedness Verification 결과 스키마",
+    "properties": {
+      "signal_id": {"type": "string"},
+      "groundedness": {
+        "type": "object",
+        "properties": {
+          "score": {"$ref": "#/definitions/score_range"},
+          "grade": {"$ref": "#/definitions/groundedness_grade"},
+          "ratio": {"$ref": "#/definitions/confidence_score"},
+          "claim_analysis": {
+            "type": "object",
+            "properties": {
+              "total_claims": {"type": "integer"},
+              "grounded": {"type": "integer"},
+              "ungrounded": {"type": "integer"},
+              "breakdown": {
+                "type": "object",
+                "properties": {
+                  "exact_match": {"type": "integer"},
+                  "semantic_match": {"type": "integer"},
+                  "partial_match": {"type": "integer"},
+                  "entity_verified": {"type": "integer"},
+                  "inference": {"type": "integer"},
+                  "no_match": {"type": "integer"}
+                }
+              }
+            }
+          },
+          "claim_mappings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "claim_id": {"type": "string"},
+                "claim_text": {"type": "string"},
+                "claim_type": {"$ref": "#/definitions/claim_type"},
+                "evidence": {"type": ["string", "null"]},
+                "match_type": {"$ref": "#/definitions/match_type"},
+                "confidence": {"$ref": "#/definitions/confidence_score"},
+                "flag": {
+                  "type": "object",
+                  "properties": {
+                    "type": {"$ref": "#/definitions/hallucination_type"},
+                    "severity": {"$ref": "#/definitions/severity"},
+                    "note": {"type": "string"}
+                  }
+                }
+              }
+            }
+          },
+          "hallucination_flags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {"$ref": "#/definitions/hallucination_type"},
+                "severity": {"$ref": "#/definitions/severity"},
+                "claim_id": {"type": "string"},
+                "description": {"type": "string"},
+                "recommended_action": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "phase_2_cross_validation_schema": {
+    "type": "object",
+    "description": "Phase 2: Cross-Validation 결과 스키마",
+    "properties": {
+      "signal_id": {"type": "string"},
+      "cross_validation": {
+        "type": "object",
+        "properties": {
+          "score": {"$ref": "#/definitions/score_range"},
+          "grade": {"$ref": "#/definitions/cv_grade"},
+          "pSRT_adjustment": {"type": "string"},
+          "claims_validated": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "claim_id": {"type": "string"},
+                "claim_text": {"type": "string"},
+                "consistency": {
+                  "type": "object",
+                  "properties": {
+                    "score": {"$ref": "#/definitions/score_range"},
+                    "type": {"$ref": "#/definitions/consistency_type"},
+                    "confirming_sources": {"type": "integer"},
+                    "contradicting_sources": {"type": "integer"}
+                  }
+                },
+                "independent_sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "url": {"type": "string", "format": "uri"},
+                      "domain": {"type": "string"},
+                      "tier": {"type": "integer", "minimum": 1, "maximum": 4},
+                      "excerpt": {"type": "string"},
+                      "verdict": {"type": "string", "enum": ["CONFIRMS", "CONTRADICTS", "NEUTRAL"]}
+                    }
+                  }
+                },
+                "contradiction_flag": {
+                  "type": "object",
+                  "properties": {
+                    "type": {"type": "string"},
+                    "severity": {"$ref": "#/definitions/severity"},
+                    "original_value": {"type": "string"},
+                    "contradicting_value": {"type": "string"},
+                    "recommended_action": {"type": "string"}
+                  }
+                }
+              }
+            }
+          },
+          "source_diversity": {
+            "type": "object",
+            "properties": {
+              "score": {"$ref": "#/definitions/score_range"},
+              "unique_domains": {"type": "integer"},
+              "tier_distribution": {
+                "type": "object",
+                "properties": {
+                  "tier_1": {"type": "integer"},
+                  "tier_2": {"type": "integer"},
+                  "tier_3": {"type": "integer"},
+                  "tier_4": {"type": "integer"}
+                }
+              },
+              "language_diversity": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "phase_3_calibration_schema": {
+    "type": "object",
+    "description": "Phase 3: Historical Calibration 결과 스키마",
+    "properties": {
+      "signal_id": {"type": "string"},
+      "calibration": {
+        "type": "object",
+        "properties": {
+          "original_pSRT": {"$ref": "#/definitions/score_range"},
+          "calibrated_pSRT": {"$ref": "#/definitions/score_range"},
+          "adjustment": {"type": "string"},
+          "grade": {"$ref": "#/definitions/calibration_grade"},
+          "calibration_factor": {
+            "type": "object",
+            "properties": {
+              "overall": {"type": "number", "minimum": 0.7, "maximum": 1.3},
+              "similar_signal_factor": {"type": "number"},
+              "source_factor": {"type": "number"},
+              "topic_factor": {"type": "number"},
+              "confidence": {"$ref": "#/definitions/confidence_score"}
+            }
+          },
+          "similar_signals_used": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "signal_id": {"type": "string"},
+                "similarity": {"$ref": "#/definitions/confidence_score"},
+                "outcome": {"$ref": "#/definitions/realization_status"},
+                "accuracy": {"$ref": "#/definitions/score_range"}
+              }
+            }
+          },
+          "source_history": {
+            "type": "object",
+            "properties": {
+              "source": {"type": "string"},
+              "historical_accuracy": {"$ref": "#/definitions/score_range"},
+              "realization_rate": {"$ref": "#/definitions/confidence_score"},
+              "sample_size": {"type": "integer"}
+            }
+          },
+          "topic_history": {
+            "type": "object",
+            "properties": {
+              "category": {"type": "string"},
+              "subcategory": {"type": "string"},
+              "historical_accuracy": {"$ref": "#/definitions/score_range"},
+              "sample_size": {"type": "integer"}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "phase_4_hallucination_schema": {
+    "type": "object",
+    "description": "Phase 4: Hallucination Detection 결과 스키마",
+    "properties": {
+      "signal_id": {"type": "string"},
+      "hallucination_analysis": {
+        "type": "object",
+        "properties": {
+          "status": {"type": "string", "enum": ["clean", "flags_detected"]},
+          "total_flags": {"type": "integer"},
+          "flags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {"$ref": "#/definitions/hallucination_type"},
+                "severity": {"$ref": "#/definitions/severity"},
+                "confidence": {"$ref": "#/definitions/confidence_score"},
+                "claim": {"type": "string"},
+                "evidence": {"type": "string"},
+                "location": {"type": "string"},
+                "recommended_action": {"type": "string"}
+              }
+            }
+          },
+          "pSRT_adjustments": {
+            "type": "object",
+            "properties": {
+              "pre_adjustment": {"$ref": "#/definitions/score_range"},
+              "hallucination_penalty": {"type": "number", "maximum": 0},
+              "post_adjustment": {"$ref": "#/definitions/score_range"}
+            }
+          },
+          "action_taken": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string", "enum": ["none", "removed", "downgraded", "modified", "flagged_for_review"]},
+              "details": {"type": "string"},
+              "requires_manual_review": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "final_pSRT_schema": {
+    "type": "object",
+    "description": "pSRT 2.0 최종 점수 스키마 (4 Phase 통합)",
     "properties": {
       "signal_id": {"type": "string"},
       "title": {"type": "string"},
-      "pSRT": {
+      "final_pSRT": {
+        "type": "object",
+        "properties": {
+          "score": {"$ref": "#/definitions/score_range"},
+          "grade": {"$ref": "#/definitions/grade"},
+          "confidence_level": {"$ref": "#/definitions/confidence_level"},
+          "breakdown": {
+            "type": "object",
+            "properties": {
+              "base_pSRT": {"$ref": "#/definitions/score_range"},
+              "groundedness": {"$ref": "#/definitions/score_range"},
+              "cross_validation": {"$ref": "#/definitions/score_range"},
+              "calibration_factor": {"type": "number"},
+              "hallucination_penalty": {"type": "number"}
+            }
+          },
+          "phase_grades": {
+            "type": "object",
+            "properties": {
+              "groundedness": {"$ref": "#/definitions/groundedness_grade"},
+              "cross_validation": {"$ref": "#/definitions/cv_grade"},
+              "calibration": {"$ref": "#/definitions/calibration_grade"},
+              "hallucination_flags": {"type": "integer"}
+            }
+          },
+          "reliability_statement": {"type": "string"},
+          "recommended_action": {"type": "string"}
+        }
+      }
+    }
+  },
+
+  "hallucination_types_v2": {
+    "FABRICATION": {
+      "description": "summary에 있지만 original_content에 전혀 없는 내용",
+      "detection_criteria": [
+        "groundedness.match_type == no_match",
+        "claim_type in [factual, numerical, quote]",
+        "cross_validation.confirming_sources == 0"
+      ],
+      "default_severity": "CRITICAL",
+      "penalty": -30,
+      "action": "제거/수동검토"
+    },
+    "EXAGGERATION": {
+      "description": "원본의 내용을 과장하여 표현",
+      "detection_criteria": [
+        "groundedness.match_type == partial",
+        "magnitude_comparison > 1.5",
+        "hedging_removed == true"
+      ],
+      "default_severity": "HIGH",
+      "penalty": -15,
+      "action": "수정 필수"
+    },
+    "MISATTRIBUTION": {
+      "description": "발언/행동을 잘못된 주체에게 귀속",
+      "detection_criteria": [
+        "entity_in_summary not in original_entities",
+        "quote_attribution mismatch"
+      ],
+      "default_severity": "CRITICAL",
+      "penalty": -25,
+      "action": "제거/수동검토"
+    },
+    "TEMPORAL_DISTORTION": {
+      "description": "시간/날짜 정보를 잘못 표현",
+      "detection_criteria": [
+        "date_in_summary != date_in_original",
+        "tense_mismatch == true",
+        "'최근' used for >30 days old"
+      ],
+      "default_severity": "HIGH",
+      "penalty": -15,
+      "action": "수정 필수"
+    },
+    "CAUSATION_INVENTION": {
+      "description": "원본에 없는 인과관계를 추가",
+      "detection_criteria": [
+        "causal_words in summary",
+        "causal_relationship not in original"
+      ],
+      "default_severity": "MEDIUM",
+      "penalty": -10,
+      "action": "수정 권고"
+    },
+    "SCOPE_EXPANSION": {
+      "description": "원본의 범위를 임의로 확대",
+      "detection_criteria": [
+        "scope_in_summary > scope_in_original",
+        "'일부' → '전체' 변환"
+      ],
+      "default_severity": "MEDIUM",
+      "penalty": -10,
+      "action": "수정 권고"
+    }
+  },
+
+  "report_pSRT_schema": {
+    "type": "object",
+    "description": "보고서 레벨 pSRT 2.0 스키마",
+    "properties": {
+      "report_date": {"type": "string", "format": "date"},
+      "version": {"type": "string"},
+      "report_pSRT": {
         "type": "object",
         "properties": {
           "overall": {"$ref": "#/definitions/score_range"},
@@ -43,79 +433,17 @@
           "breakdown": {
             "type": "object",
             "properties": {
-              "source": {
-                "type": "object",
-                "properties": {
-                  "score": {"$ref": "#/definitions/score_range"},
-                  "authority": {"$ref": "#/definitions/score_range"},
-                  "verifiability": {"$ref": "#/definitions/score_range"},
-                  "historical_accuracy": {"$ref": "#/definitions/score_range"},
-                  "cross_validation": {"$ref": "#/definitions/score_range"}
-                }
-              },
-              "signal": {
-                "type": "object",
-                "properties": {
-                  "score": {"$ref": "#/definitions/score_range"},
-                  "specificity": {"$ref": "#/definitions/score_range"},
-                  "freshness": {"$ref": "#/definitions/score_range"},
-                  "independence": {"$ref": "#/definitions/score_range"},
-                  "measurability": {"$ref": "#/definitions/score_range"},
-                  "pattern_fit": {"$ref": "#/definitions/score_range"}
-                }
-              },
-              "analysis": {
-                "type": "object",
-                "properties": {
-                  "score": {"$ref": "#/definitions/score_range"},
-                  "classification_clarity": {"$ref": "#/definitions/score_range"},
-                  "impact_evidence": {"$ref": "#/definitions/score_range"},
-                  "priority_consistency": {"$ref": "#/definitions/score_range"},
-                  "comparative_validation": {"$ref": "#/definitions/score_range"}
-                }
-              }
-            }
-          },
-          "flags": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "type": {"type": "string"},
-                "severity": {"$ref": "#/definitions/flag_severity"},
-                "action": {"$ref": "#/definitions/flag_action"},
-                "description": {"type": "string"}
-              }
-            }
-          },
-          "recommended_action": {"type": "string"},
-          "reliability_note": {"type": "string"}
-        }
-      }
-    }
-  },
-
-  "report_pSRT_schema": {
-    "type": "object",
-    "properties": {
-      "report_date": {"type": "string", "format": "date"},
-      "report_pSRT": {
-        "type": "object",
-        "properties": {
-          "overall": {"$ref": "#/definitions/score_range"},
-          "grade": {"$ref": "#/definitions/grade"},
-          "breakdown": {
-            "type": "object",
-            "properties": {
-              "avg_signal_pSRT": {"$ref": "#/definitions/score_range"},
+              "avg_groundedness": {"$ref": "#/definitions/score_range"},
+              "avg_cross_validation": {"$ref": "#/definitions/score_range"},
+              "avg_calibration_factor": {"type": "number"},
               "source_diversity": {"$ref": "#/definitions/score_range"},
-              "internal_consistency": {"$ref": "#/definitions/score_range"},
-              "coverage_balance": {"$ref": "#/definitions/score_range"}
+              "internal_consistency": {"$ref": "#/definitions/score_range"}
             }
           },
           "signal_distribution": {
             "type": "object",
             "properties": {
+              "A_plus_plus_grade": {"type": "integer"},
               "A_plus_grade": {"type": "integer"},
               "A_grade": {"type": "integer"},
               "B_grade": {"type": "integer"},
@@ -129,10 +457,35 @@
             "type": "object",
             "properties": {
               "total_flags": {"type": "integer"},
-              "critical": {"type": "integer"},
-              "high": {"type": "integer"},
-              "medium": {"type": "integer"},
-              "low": {"type": "integer"}
+              "by_type": {
+                "type": "object",
+                "properties": {
+                  "FABRICATION": {"type": "integer"},
+                  "EXAGGERATION": {"type": "integer"},
+                  "MISATTRIBUTION": {"type": "integer"},
+                  "TEMPORAL_DISTORTION": {"type": "integer"},
+                  "CAUSATION_INVENTION": {"type": "integer"},
+                  "SCOPE_EXPANSION": {"type": "integer"}
+                }
+              },
+              "by_severity": {
+                "type": "object",
+                "properties": {
+                  "CRITICAL": {"type": "integer"},
+                  "HIGH": {"type": "integer"},
+                  "MEDIUM": {"type": "integer"},
+                  "LOW": {"type": "integer"}
+                }
+              }
+            }
+          },
+          "system_health": {
+            "type": "object",
+            "properties": {
+              "hallucination_rate": {"type": "string"},
+              "critical_rate": {"type": "string"},
+              "trend_vs_yesterday": {"type": "string"},
+              "trend_vs_last_week": {"type": "string"}
             }
           },
           "reliability_statement": {"type": "string"}
@@ -141,71 +494,14 @@
     }
   },
 
-  "hallucination_flag_types": {
-    "SOURCE_HALLUCINATION": {
-      "description": "존재하지 않거나 검증 불가능한 소스 인용",
-      "detection": "URL 404, 소스 검증 실패",
-      "default_severity": "critical",
-      "default_action": "remove"
-    },
-    "SIGNAL_FABRICATION_RISK": {
-      "description": "구체성과 독립성이 모두 낮아 날조 가능성",
-      "detection": "specificity < 30 AND independence < 40",
-      "default_severity": "high",
-      "default_action": "verify"
-    },
-    "OVERINTERPRETATION": {
-      "description": "근거 대비 중요도가 과대평가됨",
-      "detection": "significance >= 4 AND impact_evidence < 40",
-      "default_severity": "medium",
-      "default_action": "downgrade"
-    },
-    "TEMPORAL_CONFUSION": {
-      "description": "오래된 정보를 최신으로 잘못 표시",
-      "detection": "freshness < 30",
-      "default_severity": "medium",
-      "default_action": "verify_date"
-    },
-    "VAGUE_SIGNAL": {
-      "description": "구체적 정보 없이 모호한 신호",
-      "detection": "specificity < 30",
-      "default_severity": "medium",
-      "default_action": "verify"
-    },
-    "DUPLICATE_RISK": {
-      "description": "다른 신호의 재탕 가능성",
-      "detection": "independence < 30",
-      "default_severity": "low",
-      "default_action": "review"
-    },
-    "LOW_SOURCE_QUALITY": {
-      "description": "저품질 소스에서 고중요도 신호",
-      "detection": "source_score < 50 AND significance >= 4",
-      "default_severity": "medium",
-      "default_action": "verify"
-    },
-    "INCONSISTENT_ANALYSIS": {
-      "description": "분석 지표 간 불일치",
-      "detection": "priority_consistency < 40",
-      "default_severity": "low",
-      "default_action": "review"
-    }
-  },
-
-  "grade_thresholds": {
-    "A_plus": {"min": 90, "max": 100, "label": "Very High", "action": "즉시 활용 가능"},
+  "grade_thresholds_v2": {
+    "A_plus_plus": {"min": 95, "max": 100, "label": "Exceptional", "action": "즉시 활용, 높은 신뢰"},
+    "A_plus": {"min": 90, "max": 94, "label": "Very High", "action": "즉시 활용 가능"},
     "A": {"min": 80, "max": 89, "label": "High", "action": "활용 권장"},
     "B": {"min": 70, "max": 79, "label": "Good", "action": "활용 가능, 모니터링 권장"},
     "C": {"min": 60, "max": 69, "label": "Moderate", "action": "추가 검증 후 활용"},
     "D": {"min": 50, "max": 59, "label": "Low", "action": "교차 검증 필수"},
     "E": {"min": 40, "max": 49, "label": "Very Low", "action": "참고용으로만 사용"},
     "F": {"min": 0, "max": 39, "label": "Unreliable", "action": "제외 권고"}
-  },
-
-  "auto_action_thresholds": {
-    "exclude_from_report": 40,
-    "mark_as_reference_only": 50,
-    "require_verification": 60,
-    "auto_approve_report": 70
   }
 }

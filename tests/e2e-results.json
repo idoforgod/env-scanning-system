@@ -1,0 +1,171 @@
+{
+  "timestamp": "2026-01-14T16:35:24.571681",
+  "status": "PASS",
+  "summary": {
+    "passed": 39,
+    "failed": 0,
+    "warnings": 0
+  },
+  "results": {
+    "passed": [
+      {
+        "test": "Agent: groundedness-verifier.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: cross-validator.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: calibration-engine.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: hallucination-detector.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: confidence-evaluator.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: signal-classifier.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: impact-analyzer.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: priority-ranker.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: report-generator.md",
+        "details": ""
+      },
+      {
+        "test": "Agent: db-updater.md",
+        "details": ""
+      },
+      {
+        "test": "Metadata: groundedness-verifier.md",
+        "details": "All required fields present"
+      },
+      {
+        "test": "Metadata: cross-validator.md",
+        "details": "All required fields present"
+      },
+      {
+        "test": "Metadata: calibration-engine.md",
+        "details": "All required fields present"
+      },
+      {
+        "test": "Metadata: hallucination-detector.md",
+        "details": "All required fields present"
+      },
+      {
+        "test": "Metadata: confidence-evaluator.md",
+        "details": "All required fields present"
+      },
+      {
+        "test": "I/O Chain",
+        "details": "All inputs have producers or are initial inputs"
+      },
+      {
+        "test": "Agent I/O: signal-classifier",
+        "details": "In: 1, Out: 1"
+      },
+      {
+        "test": "Agent I/O: groundedness-verifier",
+        "details": "In: 1, Out: 1"
+      },
+      {
+        "test": "Agent I/O: cross-validator",
+        "details": "In: 2, Out: 1"
+      },
+      {
+        "test": "Agent I/O: confidence-evaluator",
+        "details": "In: 4, Out: 2"
+      },
+      {
+        "test": "Agent I/O: hallucination-detector",
+        "details": "In: 3, Out: 1"
+      },
+      {
+        "test": "Agent I/O: calibration-engine",
+        "details": "In: 2, Out: 2"
+      },
+      {
+        "test": "pSRT-config.yaml",
+        "details": "All 6 sections present"
+      },
+      {
+        "test": "pSRT-schema.json",
+        "details": "Valid JSON with 13 definitions"
+      },
+      {
+        "test": "History DB: signal-history.json",
+        "details": "Valid with metadata (v2.0)"
+      },
+      {
+        "test": "History DB: source-accuracy.json",
+        "details": "Valid with metadata (v2.0)"
+      },
+      {
+        "test": "History DB: topic-accuracy.json",
+        "details": "Valid with metadata (v2.0)"
+      },
+      {
+        "test": "database.json",
+        "details": "Valid with 527 signals"
+      },
+      {
+        "test": "Signal structure",
+        "details": "Sample signal has required fields"
+      },
+      {
+        "test": "Latest structured data",
+        "details": "2026-01-14: 7 signals"
+      },
+      {
+        "test": "pSRT weights sum",
+        "details": "Sum = 1.00 (expected 1.0)"
+      },
+      {
+        "test": "Step 5.0: signal-classifier",
+        "details": "STEEPS 분류 및 요약 생성"
+      },
+      {
+        "test": "Step 5.3: groundedness-verifier",
+        "details": "Phase 1: 근거성 검증"
+      },
+      {
+        "test": "Step 5.5: cross-validator",
+        "details": "Phase 2: 교차 검증"
+      },
+      {
+        "test": "Step 5.7: confidence-evaluator",
+        "details": "pSRT 2.0 통합 평가"
+      },
+      {
+        "test": "Step 5.9: hallucination-detector",
+        "details": "Phase 4: 할루시네이션 감지"
+      },
+      {
+        "test": "Step 6.0: impact-analyzer",
+        "details": "영향도 분석"
+      },
+      {
+        "test": "Step 7.0: priority-ranker",
+        "details": "우선순위 산정"
+      },
+      {
+        "test": "Step Post: calibration-engine",
+        "details": "Phase 3: 역사적 보정"
+      }
+    ],
+    "failed": [],
+    "warnings": []
+  }
+}

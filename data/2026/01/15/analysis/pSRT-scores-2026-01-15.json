@@ -1,0 +1,2604 @@
+{
+  "evaluation_date": "2026-01-15",
+  "evaluation_version": "pSRT-2.0-simplified",
+  "config_version": "2.0",
+  "generated_at": "2026-01-15T12:00:00Z",
+  "note": "4가지 평가 기준 (Source Quality, Content Grounding, Temporal Relevance, Novelty Score) 기반 pSRT 계산",
+  "total_signals_evaluated": 36,
+  "summary": {
+    "average_pSRT": 71.2,
+    "grade_distribution": {
+      "A_plus_plus": 0,
+      "A_plus": 0,
+      "A": 6,
+      "B": 18,
+      "C": 8,
+      "D": 3,
+      "E": 1,
+      "F": 0
+    },
+    "score_ranges": {
+      "90_100": 0,
+      "80_89": 6,
+      "70_79": 18,
+      "60_69": 8,
+      "50_59": 3,
+      "40_49": 1,
+      "below_40": 0
+    },
+    "hallucination_flags": {
+      "total": 8,
+      "critical": 0,
+      "high": 2,
+      "medium": 4,
+      "low": 2
+    },
+    "by_category": {
+      "Social": {
+        "count": 6,
+        "avg_pSRT": 68.3
+      },
+      "Technological": {
+        "count": 6,
+        "avg_pSRT": 75.0
+      },
+      "Economic": {
+        "count": 6,
+        "avg_pSRT": 72.5
+      },
+      "Environmental": {
+        "count": 6,
+        "avg_pSRT": 70.0
+      },
+      "Political": {
+        "count": 6,
+        "avg_pSRT": 71.7
+      },
+      "Spiritual": {
+        "count": 6,
+        "avg_pSRT": 69.7
+      }
+    }
+  },
+  "signals": [
+    {
+      "signal_id": "SIG-2026-01-15-001",
+      "title": "[신년기획] '분열'이 삼킨 대한민국, '분노'에 저당 잡힌 민주주의",
+      "url": "https://n.news.naver.com/mnews/article/417/0001124599?sid=101",
+      "category": "Social",
+      "pSRT": {
+        "overall": 80,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 21,
+          "content_grounding": 22,
+          "temporal_relevance": 20,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "source_name": "머니투데이",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 언론사, 한국갤럽 조사 데이터 인용으로 검증 가능성 높음"
+            }
+          },
+          "content_grounding": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 90,
+              "specific_data": [
+                "86% 극심한 양극화 인식",
+                "77% 계엄 사태 후 양극화 심화",
+                "전 세계 정치 슈퍼챗 상위 10개 중 6개가 한국"
+              ],
+              "reason": "summary가 original_content의 주요 수치와 사실관계를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "2026년 현재 한국 사회 핵심 이슈",
+              "reason": "당일 발행, 현재 진행형 사회 현상"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 70,
+              "reason": "양극화 현상 자체는 기존 트렌드이나, 계엄 사태 이후 심화 수치는 신규성 있음"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "주요 언론사 보도, 한국갤럽 조사 수치 포함으로 신뢰도 높음. 정치 양극화 심화 추세를 구체적 수치로 입증."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-002",
+      "title": "백두대간, 국가 생태자산으로... 세계기록유산 등재 추진",
+      "url": "https://n.news.naver.com/mnews/article/081/0003608939?sid=100",
+      "category": "Social",
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 19,
+          "novelty_score": 16
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "서울신문",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 90,
+              "reason": "주요 언론사, 산림청 공식 발표 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "제3차 백두대간 보호 기본계획(2026~2035)",
+                "MEE 제도 적용",
+                "남북 공동 생태조사 추진"
+              ],
+              "reason": "산림청 발표 내용을 정확히 요약"
+            }
+          },
+          "temporal_relevance": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "freshness": 95,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "10년 기본계획 발표로 중장기 정책 신호",
+              "reason": "당일 발행, 2026-2035 계획 발표"
+            }
+          },
+          "novelty_score": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "uniqueness": 65,
+              "independence": 65,
+              "reason": "세계기록유산 추진은 신규성 있으나, 보호계획 자체는 정기 업데이트"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "정부 공식 발표 기반, 10년 계획으로 장기 트렌드 신호. 남북협력 요소는 불확실성 존재."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-003",
+      "title": "한동훈 제명 논리, 윤민우 '모든전쟁' 책에서 따왔다",
+      "url": "https://n.news.naver.com/mnews/article/079/0004105246?sid=100",
+      "category": "Social",
+      "pSRT": {
+        "overall": 68,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 18,
+          "content_grounding": 19,
+          "temporal_relevance": 18,
+          "novelty_score": 13
+        },
+        "components": {
+          "source_quality": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "source_name": "노컷뉴스",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 70,
+              "reason": "주요 언론사이나, 논리 일치 주장은 해석적 요소 포함"
+            }
+          },
+          "content_grounding": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 75,
+              "specific_data": [
+                "윤민우 저서 '모든 전쟁' (2023년 출간)",
+                "인지전 5단계 논리"
+              ],
+              "reason": "저서와 제명 논리의 유사성 지적은 확인 가능하나 인과관계는 해석적"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "현재 정치 상황과 직접 연관",
+              "reason": "당일 발행, 최근 제명 결정 관련"
+            }
+          },
+          "novelty_score": {
+            "score": 13,
+            "max": 25,
+            "details": {
+              "uniqueness": 55,
+              "independence": 50,
+              "reason": "정치 갈등 자체는 지속적 이슈, 논리 출처 지적은 새로운 각도"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "INTERPRETATION_RISK",
+            "severity": "medium",
+            "description": "제명 논리와 저서 내용의 일치가 인과관계를 의미하는지는 해석적",
+            "action": "추가 검증 권장"
+          }
+        ],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "논리 유사성 지적은 확인 가능하나, 의도적 차용인지는 추가 검증 필요."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-004",
+      "title": "김영옥·박근형 등 올겨울 연극 무대 달구는 원로배우들",
+      "url": "https://n.news.naver.com/mnews/article/005/0001826291?sid=103",
+      "category": "Social",
+      "pSRT": {
+        "overall": 64,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 18,
+          "content_grounding": 18,
+          "temporal_relevance": 16,
+          "novelty_score": 12
+        },
+        "components": {
+          "source_quality": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "source_name": "국민일보",
+              "tier": "tier_2",
+              "authority": 70,
+              "verifiability": 75,
+              "reason": "주요 언론사, 문화 섹션 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 75,
+              "specific_data": [
+                "김영옥(88세), 김용림(85세), 손숙(81세) 출연",
+                "연극 '노인의 꿈', '더 드레서'"
+              ],
+              "reason": "기본 사실관계는 정확하나, 트렌드 분석은 기사 범위 초과 가능"
+            }
+          },
+          "temporal_relevance": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "문화 트렌드 신호로서 중간 수준",
+              "reason": "당일 발행이나 미래 영향력은 제한적"
+            }
+          },
+          "novelty_score": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "uniqueness": 50,
+              "independence": 45,
+              "reason": "원로 배우 연극 출연은 지속적 현상, 약한 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "문화 현상 보도로서 중간 수준 신뢰도. 고령화 사회 문화 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-005",
+      "title": "건강검진부터 여행까지... 선교사에 '쉼·회복' 선물한다",
+      "url": "https://n.news.naver.com/mnews/article/005/0001826283?sid=103",
+      "category": "Social",
+      "pSRT": {
+        "overall": 65,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 18,
+          "content_grounding": 19,
+          "temporal_relevance": 15,
+          "novelty_score": 13
+        },
+        "components": {
+          "source_quality": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "source_name": "국민일보",
+              "tier": "tier_2",
+              "authority": 70,
+              "verifiability": 80,
+              "reason": "주요 언론사, 조사 데이터 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 80,
+              "specific_data": [
+                "3,063명 재정 지원",
+                "815명 건강검진비 제공",
+                "395가정 선교관 공급",
+                "74% 돌봄 필요성 느낌"
+              ],
+              "reason": "구체적 수치와 조사 결과를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 15,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "특정 집단 복지 이슈로 전반적 영향력은 제한적",
+              "reason": "당일 발행이나 일반 사회 영향은 중간 수준"
+            }
+          },
+          "novelty_score": {
+            "score": 13,
+            "max": 25,
+            "details": {
+              "uniqueness": 55,
+              "independence": 50,
+              "reason": "선교사 멤버케어는 기존 활동 확대, 신규성 제한적"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "조사 데이터 기반으로 중간 수준 신뢰도. 종교 복지 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-006",
+      "title": "Israel-Gaza War",
+      "url": "https://www.bbc.com/news/topics/c2vdnvdg6xxt",
+      "category": "Social",
+      "pSRT": {
+        "overall": 48,
+        "grade": "E",
+        "confidence_level": "Very Low Confidence",
+        "breakdown": {
+          "source_quality": 23,
+          "content_grounding": 5,
+          "temporal_relevance": 12,
+          "novelty_score": 8
+        },
+        "components": {
+          "source_quality": {
+            "score": 23,
+            "max": 25,
+            "details": {
+              "source_name": "BBC",
+              "tier": "tier_1",
+              "authority": 95,
+              "verifiability": 90,
+              "reason": "글로벌 Tier 1 언론사"
+            }
+          },
+          "content_grounding": {
+            "score": 5,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_low",
+              "original_content_present": false,
+              "summary_accuracy": 20,
+              "specific_data": [],
+              "reason": "original_content가 토픽 페이지 설명뿐, 구체적 내용 없음"
+            }
+          },
+          "temporal_relevance": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "진행 중인 글로벌 이슈이나 구체적 신규 정보 없음",
+              "reason": "토픽 페이지로 특정 시점 정보 부재"
+            }
+          },
+          "novelty_score": {
+            "score": 8,
+            "max": 25,
+            "details": {
+              "uniqueness": 30,
+              "independence": 30,
+              "reason": "토픽 페이지로 신규성 판단 불가"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "INSUFFICIENT_CONTENT",
+            "severity": "high",
+            "description": "original_content가 토픽 페이지 설명뿐, 구체적 기사 내용 없음",
+            "action": "제외 또는 구체적 기사로 대체"
+          }
+        ],
+        "recommended_action": "참고용으로만 사용",
+        "reliability_note": "BBC는 신뢰도 높은 소스이나, 토픽 페이지로 구체적 신호 부재. 구체적 기사로 대체 필요."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-007",
+      "title": "\"AI가 완벽해질수록 우리는 '결함'을 사랑한다\"... 기술과 공존 택한 디자이너들의 역설",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097794?sid=101",
+      "category": "Technological",
+      "pSRT": {
+        "overall": 82,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 23,
+          "temporal_relevance": 21,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 언론사, 캔바 공식 리포트 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 23,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_high",
+              "original_content_present": true,
+              "summary_accuracy": 90,
+              "specific_data": [
+                "창작자 77% AI를 필수적 파트너로 인식",
+                "80% 창의적 주도권 회복 전망",
+                "DIY/콜라주 검색량 90% 증가",
+                "로파이 미학 검색 527% 급증"
+              ],
+              "reason": "캔바 2026 디자인 트렌드 리포트의 구체적 수치를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "2026년 디자인/AI 트렌드 예측으로 높은 시의성",
+              "reason": "당일 발행, 2026년 전망 포함"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "AI와 인간 창작의 역설적 공존 패러다임은 신규 트렌드 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "캔바 공식 리포트 기반, 구체적 수치 포함으로 신뢰도 높음. AI 시대 디자인 트렌드 변화의 강한 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-008",
+      "title": "정의선, 중·미·인서 '광폭 경영 행보'",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097790?sid=101",
+      "category": "Technological",
+      "pSRT": {
+        "overall": 78,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 20,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 언론사, 공개 행보 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "중국, 미국(CES 2026), 인도 3개국 순방",
+                "CATL, 엔비디아, 퀄컴 경영진 면담",
+                "인도 150만대 생산능력 확보"
+              ],
+              "reason": "순방 일정과 주요 면담 내용을 정확히 요약"
+            }
+          },
+          "temporal_relevance": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "글로벌 모빌리티/AI 산업 트렌드 신호",
+              "reason": "당일 발행, CES 2026 직후 보도"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "경영진 순방은 정기적이나, 빅테크 연쇄 미팅은 주목할 만한 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "공개 행보 보도로 신뢰도 높음. 현대차그룹의 글로벌 전략 변화 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-009",
+      "title": "한화, 테크·라이프 사업군 인적분할",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097787?sid=101",
+      "category": "Technological",
+      "pSRT": {
+        "overall": 80,
+        "gauge": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 22,
+          "temporal_relevance": 20,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 90,
+              "reason": "주요 언론사, 기업 공식 발표 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_high",
+              "original_content_present": true,
+              "summary_accuracy": 90,
+              "specific_data": [
+                "존속 76.3%, 신설 23.7% 분할 비율",
+                "7월 완료 예정",
+                "4,000억원 자사주 소각",
+                "배당금 25% 인상"
+              ],
+              "reason": "인적분할 세부 사항과 수치를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "대기업 지배구조 개편의 중요 신호",
+              "reason": "당일 발행, 2026년 7월 실행 예정"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "대규모 인적분할과 주주환원 정책은 중요한 전략 변화"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "기업 공식 발표로 신뢰도 높음. 한화그룹의 사업구조 재편과 후계구도 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-010",
+      "title": "삼성바이오 \"CDMO 역량 집중... 수주 경쟁력 강화\"",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097778?sid=101",
+      "category": "Technological",
+      "pSRT": {
+        "overall": 81,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 21,
+          "content_grounding": 22,
+          "temporal_relevance": 20,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 90,
+              "reason": "주요 언론사, JP모건 콘퍼런스 공식 발표 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_high",
+              "original_content_present": true,
+              "summary_accuracy": 90,
+              "specific_data": [
+                "수주액 6조8,190억원으로 6조원 돌파",
+                "국내 6공장 건설 검토",
+                "미국 록빌 공장 10만L 증설",
+                "매출·영업이익 연평균 30% 성장"
+              ],
+              "reason": "JP모건 콘퍼런스 발표 내용의 구체적 수치를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "글로벌 바이오 산업 트렌드의 중요 신호",
+              "reason": "당일 발행, JP모건 콘퍼런스 직후"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "6조원 수주 돌파와 글로벌 확장은 중요한 성장 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "JP모건 콘퍼런스 공식 발표로 신뢰도 높음. CDMO 글로벌 확장의 강한 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-011",
+      "title": "유통업계 '초가성비'로 밥상물가 잡는다",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097770?sid=101",
+      "category": "Technological",
+      "pSRT": {
+        "overall": 70,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 19,
+          "content_grounding": 19,
+          "temporal_relevance": 18,
+          "novelty_score": 14
+        },
+        "components": {
+          "source_quality": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 75,
+              "reason": "주요 언론사, 유통업계 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 75,
+              "specific_data": [
+                "홈플러스 '2026 AI 물가안정 프로젝트'",
+                "수산물 최대 50% 할인",
+                "롯데마트 6,800원 피자, 1,500원 핫도그"
+              ],
+              "reason": "유통업체별 할인 프로모션 내용을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "물가 대응 유통 트렌드 신호",
+              "reason": "당일 발행, 1월 15-21일 행사 안내"
+            }
+          },
+          "novelty_score": {
+            "score": 14,
+            "max": 25,
+            "details": {
+              "uniqueness": 60,
+              "independence": 55,
+              "reason": "할인 프로모션은 일상적이나, 'AI 물가안정' 명칭은 새로운 접근"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "유통업계 프로모션 보도로 중간 수준 신뢰도. 고물가 대응 전략 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-012",
+      "title": "10 Bold Predictions for A.I.'s Year Ahead - puck.news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1RSnBGWXpMZ3JqVmxqeDBEZXBMUkdaR0tzc0VMbTJDN3A1M2pBUXVnNGNobXBKQzR4Y25YVUROYVJ5RDJqX190MlF2WVNWTFJhUnktZmdRVUVib0tFSkNiYnJyTmZvWVVk?oc=5",
+      "category": "Technological",
+      "pSRT": {
+        "overall": 62,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 16,
+          "content_grounding": 10,
+          "temporal_relevance": 18,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "source_name": "puck.news",
+              "tier": "tier_3",
+              "authority": 60,
+              "verifiability": 70,
+              "reason": "전문 매체이나 Tier 1/2 대비 권위 낮음"
+            }
+          },
+          "content_grounding": {
+            "score": 10,
+            "max": 25,
+            "details": {
+              "grounding_level": "low",
+              "original_content_present": false,
+              "summary_accuracy": 40,
+              "specific_data": [],
+              "reason": "Google News 링크로 original_content 부재, 구체적 예측 내용 없음"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "2026년 AI 전망으로 높은 시의성",
+              "reason": "당일 발행, 2026년 예측"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "AI 전망 기사로 신규성 있으나 구체적 내용 확인 불가"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "INSUFFICIENT_CONTENT",
+            "severity": "medium",
+            "description": "Google News 링크로 original_content 부재, 구체적 예측 내용 없음",
+            "action": "원본 기사 확인 필요"
+          }
+        ],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "AI 전망 기사로 흥미롭지만 구체적 내용 부재. 원본 기사 확인 후 활용 권장."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-013",
+      "title": "'환율·집값'에 기준금리 동결되나...새해 첫 금통위",
+      "url": "https://n.news.naver.com/mnews/article/422/0000822789?sid=101",
+      "category": "Economic",
+      "pSRT": {
+        "overall": 84,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 22,
+          "content_grounding": 21,
+          "temporal_relevance": 23,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "source_name": "연합뉴스TV",
+              "tier": "tier_1",
+              "authority": 90,
+              "verifiability": 90,
+              "reason": "국내 최고 통신사, 한국은행 공식 발표 예정"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "1월 15일 금통위 회의",
+                "현재 기준금리 2.5%",
+                "4차례 연속 동결",
+                "원달러 환율 1,480원 육박"
+              ],
+              "reason": "금통위 일정과 경제 지표를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 23,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "당일 금통위 회의로 최고 수준 시의성",
+              "reason": "당일 발행, 당일 회의 보도"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "금리 정책은 정기 이슈이나, 고환율 상황에서의 동결 논의는 중요"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "즉시 활용, 높은 신뢰",
+        "reliability_note": "연합뉴스 보도, 당일 금통위 회의로 최고 수준 시의성. 경제 정책 핵심 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-014",
+      "title": "미연준 베이지북 \"미 경제활동 반등 조짐...관세비용 고객전가 시작\"",
+      "url": "https://n.news.naver.com/mnews/article/016/0002585935?sid=104",
+      "category": "Economic",
+      "pSRT": {
+        "overall": 82,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 22,
+          "content_grounding": 21,
+          "temporal_relevance": 21,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "source_name": "헤럴드경제",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 95,
+              "reason": "주요 경제지, 연준 공식 베이지북 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "12개 권역 중 8곳 경제활동 증가",
+                "관세 비용을 고객에게 전가 시작",
+                "AI 고용 영향은 현재 제한적"
+              ],
+              "reason": "연준 베이지북의 주요 내용을 정확히 요약"
+            }
+          },
+          "temporal_relevance": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "미국 경제 정책 전망의 중요 지표",
+              "reason": "당일 발행, 1월 베이지북 발표"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "베이지북은 정기 발표이나, 관세 비용 전가 시작은 중요 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "연준 공식 보고서 기반으로 신뢰도 높음. 미국 경제 동향과 관세 영향의 중요 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-015",
+      "title": "\"환율 잡자\"... 청와대·증권업 '서학개미 유턴' 공동작전",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097796?sid=101",
+      "category": "Economic",
+      "pSRT": {
+        "overall": 78,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 20,
+          "temporal_relevance": 20,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 80,
+              "reason": "주요 언론사, 청와대 간담회 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 80,
+              "specific_data": [
+                "김용범 정책실장 주도 간담회",
+                "레버리지 ETF 규제 완화",
+                "RIA 출시",
+                "코스피 4,723, 5,000까지 6% 남음"
+              ],
+              "reason": "청와대 정책 논의 내용과 시장 지표를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "자본시장 정책의 중요 신호",
+              "reason": "당일 발행, 현재 진행형 정책 논의"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "청와대 주도 '서학개미 유턴' 정책은 중요한 전략 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "청와대 간담회 보도로 신뢰도 높음. 자본시장 정책 변화의 중요 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-016",
+      "title": "\"올해 5대 대외요인 중 '경제리스크' 가장 위험\"",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097772?sid=101",
+      "category": "Economic",
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 19,
+          "novelty_score": 16
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 언론사, 산업연구원 보고서 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "전문가 143명 인식조사",
+                "5대 리스크 중 경제 리스크 최고",
+                "'글로벌 통상 패러다임 변화' 최대 위험"
+              ],
+              "reason": "산업연구원 보고서의 조사 방법과 결과를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "2026년 경제 리스크 전망",
+              "reason": "당일 발행, 2026년 전망 보고서"
+            }
+          },
+          "novelty_score": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "uniqueness": 65,
+              "independence": 65,
+              "reason": "연례 리스크 보고서이나, 143명 전문가 인식조사는 의미 있음"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "산업연구원 보고서 기반으로 신뢰도 높음. 2026년 경제 리스크 전망 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-017",
+      "title": "[기자의 눈] 정청래식 정치적 명분이 놓친 민생",
+      "url": "https://n.news.naver.com/mnews/article/421/0008714951?sid=110",
+      "category": "Economic",
+      "pSRT": {
+        "overall": 55,
+        "grade": "D",
+        "confidence_level": "Low Confidence",
+        "breakdown": {
+          "source_quality": 17,
+          "content_grounding": 12,
+          "temporal_relevance": 14,
+          "novelty_score": 12
+        },
+        "components": {
+          "source_quality": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "source_name": "뉴스1",
+              "tier": "tier_2",
+              "authority": 70,
+              "verifiability": 60,
+              "reason": "주요 통신사이나 기자 칼럼으로 주관적 시각"
+            }
+          },
+          "content_grounding": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "grounding_level": "low",
+              "original_content_present": false,
+              "summary_accuracy": 50,
+              "specific_data": [],
+              "reason": "칼럼으로 original_content 부재, 구체적 사실보다 논평 중심"
+            }
+          },
+          "temporal_relevance": {
+            "score": 14,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "정치 논평으로 일반 영향력 제한적",
+              "reason": "당일 발행이나 미래 영향력은 낮음"
+            }
+          },
+          "novelty_score": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "uniqueness": 50,
+              "independence": 45,
+              "reason": "기자 칼럼으로 신규성 제한적"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "OPINION_PIECE",
+            "severity": "medium",
+            "description": "기자 칼럼으로 객관적 신호보다 주관적 시각 포함",
+            "action": "참고용으로만 사용"
+          }
+        ],
+        "recommended_action": "교차 검증 필수",
+        "reliability_note": "기자 칼럼으로 주관적 시각 포함. 객관적 신호로는 제한적."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-018",
+      "title": "주가·환율 급등하자, 벌어지는 '딜링룸 전쟁'",
+      "url": "https://n.news.naver.com/mnews/article/023/0003953121?sid=101",
+      "category": "Economic",
+      "pSRT": {
+        "overall": 72,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 20,
+          "temporal_relevance": 18,
+          "novelty_score": 14
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "조선일보",
+              "tier": "tier_2",
+              "authority": 80,
+              "verifiability": 80,
+              "reason": "주요 언론사, 은행별 투자 내역 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 80,
+              "specific_data": [
+                "KB국민은행 85억원 투자",
+                "하나은행 2,095㎡ 규모",
+                "외환 거래액 304억달러→395억달러"
+              ],
+              "reason": "은행별 딜링룸 투자 규모와 거래액 증가를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "금융시장 인프라 트렌드 신호",
+              "reason": "당일 발행, 현재 진행형 투자 트렌드"
+            }
+          },
+          "novelty_score": {
+            "score": 14,
+            "max": 25,
+            "details": {
+              "uniqueness": 60,
+              "independence": 55,
+              "reason": "은행 간 경쟁은 지속적이나, 딜링룸 투자 급증은 흥미로운 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "은행 투자 현황 보도로 신뢰도 중간. 금융시장 활황 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-019",
+      "title": "민간 개발 '공공기여'로 도시안전 지킨다...하수도 정비 활용",
+      "url": "https://n.news.naver.com/mnews/article/018/0006200929?sid=101",
+      "category": "Environmental",
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 19,
+          "novelty_score": 16
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "이데일리",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 경제지, 서울시 공식 발표 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "11만 9,000톤 규모 저류시설",
+                "30년 이상 정비대상 55.5%",
+                "50년 이상 초고령 관로 30.4%"
+              ],
+              "reason": "서울시 정책과 하수관로 노후화 비율을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "도시 인프라 정책의 중요 신호",
+              "reason": "당일 발행, 새로운 정책 방향"
+            }
+          },
+          "novelty_score": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "uniqueness": 65,
+              "independence": 65,
+              "reason": "공공기여 활용처 변경은 정책적 신규성 있음"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "서울시 공식 발표로 신뢰도 높음. 도시 인프라 정책 변화의 중요 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-020",
+      "title": "석탄발전소, 5조원짜리 '휴지조각' 되나...IMF가 경고한 이유는",
+      "url": "https://n.news.naver.com/mnews/article/015/0005237358?sid=101",
+      "category": "Environmental",
+      "pSRT": {
+        "overall": 83,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 21,
+          "content_grounding": 23,
+          "temporal_relevance": 21,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "source_name": "한국경제",
+              "tier": "tier_2",
+              "authority": 80,
+              "verifiability": 90,
+              "reason": "주요 경제지, IMF 공식 보고서 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 23,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_high",
+              "original_content_present": true,
+              "summary_accuracy": 90,
+              "specific_data": [
+                "석탄 자본 1/3 좌초자산 가능성",
+                "적극적 시나리오에서 석탄 생산 81% 급감",
+                "한국 4~5조원 투입 발전소 위험",
+                "2040년까지 61기 중 40기 폐쇄 계획"
+              ],
+              "reason": "IMF 분석과 한국 상황을 구체적 수치로 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "에너지 전환 정책의 핵심 신호",
+              "reason": "당일 발행, IMF 경고와 한국 정책 연계"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "IMF의 좌초자산 경고와 한국 상황 연계는 중요한 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "IMF 공식 보고서 기반으로 신뢰도 높음. 에너지 전환과 좌초자산 위험의 강한 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-021",
+      "title": "서울시, 생활 인프라에 쓰던 '공공기여'로 낡은 하수도 정비",
+      "url": "https://n.news.naver.com/mnews/article/001/0015847859?sid=102",
+      "category": "Environmental",
+      "pSRT": {
+        "overall": 70,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 22,
+          "content_grounding": 18,
+          "temporal_relevance": 18,
+          "novelty_score": 12
+        },
+        "components": {
+          "source_quality": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "source_name": "연합뉴스",
+              "tier": "tier_1",
+              "authority": 90,
+              "verifiability": 85,
+              "reason": "국내 최고 통신사"
+            }
+          },
+          "content_grounding": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": false,
+              "summary_accuracy": 70,
+              "specific_data": [],
+              "reason": "original_content 부족하나 기본 사실관계는 정확"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "도시 인프라 정책 변화",
+              "reason": "당일 발행, 정책 발표"
+            }
+          },
+          "novelty_score": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "uniqueness": 50,
+              "independence": 50,
+              "reason": "SIG-019와 중복 내용, 신규성 제한적"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "DUPLICATE_SIGNAL",
+            "severity": "low",
+            "description": "SIG-2026-01-15-019와 동일 주제, 중복 가능성",
+            "action": "중복 확인 후 통합 고려"
+          }
+        ],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "연합뉴스 보도로 신뢰도 높으나 SIG-019와 중복. 통합 고려 필요."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-022",
+      "title": "서울시, 민간개발 공공기여 하수시설 정비에 쓴다",
+      "url": "https://n.news.naver.com/mnews/article/629/0000462647?sid=102",
+      "category": "Environmental",
+      "pSRT": {
+        "overall": 68,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 19,
+          "content_grounding": 17,
+          "temporal_relevance": 18,
+          "novelty_score": 14
+        },
+        "components": {
+          "source_quality": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "source_name": "동아사이언스",
+              "tier": "tier_3",
+              "authority": 70,
+              "verifiability": 80,
+              "reason": "전문 매체, 과학/기술 분야"
+            }
+          },
+          "content_grounding": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "grounding_level": "moderate",
+              "original_content_present": false,
+              "summary_accuracy": 70,
+              "specific_data": [],
+              "reason": "original_content 부족, 기본 사실만 확인"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "도시 인프라 정책",
+              "reason": "당일 발행"
+            }
+          },
+          "novelty_score": {
+            "score": 14,
+            "max": 25,
+            "details": {
+              "uniqueness": 50,
+              "independence": 45,
+              "reason": "SIG-019, 021과 중복 내용"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "DUPLICATE_SIGNAL",
+            "severity": "medium",
+            "description": "SIG-019, 021과 동일 주제, 중복 가능성 높음",
+            "action": "중복 확인 후 제거 고려"
+          }
+        ],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "SIG-019, 021과 중복. 3개 신호 중 가장 상세한 SIG-019 우선 사용 권장."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-023",
+      "title": "서울시, 농업인 역량 향상 위해 '새해 실용교육' 운영",
+      "url": "https://n.news.naver.com/mnews/article/421/0008714928?sid=102",
+      "category": "Environmental",
+      "pSRT": {
+        "overall": 64,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 18,
+          "content_grounding": 18,
+          "temporal_relevance": 16,
+          "novelty_score": 12
+        },
+        "components": {
+          "source_quality": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "source_name": "뉴스1",
+              "tier": "tier_2",
+              "authority": 70,
+              "verifiability": 75,
+              "reason": "주요 통신사, 서울시 공식 발표"
+            }
+          },
+          "content_grounding": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 75,
+              "specific_data": [
+                "농업인 250명 대상",
+                "1월 28일~2월 5일 6회 진행",
+                "기후변화 대응 조기경보 시스템 교육"
+              ],
+              "reason": "교육 프로그램 세부 내용을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "농업 교육 프로그램으로 전반적 영향력 제한적",
+              "reason": "당일 발행이나 미래 영향력은 중간"
+            }
+          },
+          "novelty_score": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "uniqueness": 50,
+              "independence": 45,
+              "reason": "연례 교육 프로그램으로 신규성 제한적"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "서울시 공식 교육 프로그램으로 중간 수준 신뢰도. 기후변화 대응 교육 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-024",
+      "title": "Filip Turek Appointed Government Commissioner For Climate Policy - Brno Daily",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS3d4SVNZYUFfMHhGQmJjZUtqeDJFX3liaHF6LWRka19hMzNIU3pjTkNibGotaWNwdGZhR0J0VWZzSlFyYjI0V1YtMTdMQWhKb2tXQmctYXhMdVRGUkRoY3k5SFJ3M3V3bXJ5TjlRM0NpRGYxVDROaU9qZTIwbWVDcGw5VWF3aUsyTHVWZjRmaUFxb0JmTEZlb0JiTE9XLVN1YnAtOEZGeHNzN1ZNYWFiRjBR?oc=5",
+      "category": "Environmental",
+      "pSRT": {
+        "overall": 58,
+        "grade": "D",
+        "confidence_level": "Low Confidence",
+        "breakdown": {
+          "source_quality": 15,
+          "content_grounding": 10,
+          "temporal_relevance": 16,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 15,
+            "max": 25,
+            "details": {
+              "source_name": "Brno Daily",
+              "tier": "tier_3",
+              "authority": 55,
+              "verifiability": 65,
+              "reason": "지역 언론으로 권위 제한적"
+            }
+          },
+          "content_grounding": {
+            "score": 10,
+            "max": 25,
+            "details": {
+              "grounding_level": "low",
+              "original_content_present": false,
+              "summary_accuracy": 40,
+              "specific_data": [],
+              "reason": "Google News 링크로 original_content 부재"
+            }
+          },
+          "temporal_relevance": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "해외 정책 인사로 한국 관련성 낮음",
+              "reason": "당일 발행이나 한국 영향은 제한적"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "해외 기후정책 인사 변동으로 참고 가치 있음"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "INSUFFICIENT_CONTENT",
+            "severity": "medium",
+            "description": "Google News 링크로 original_content 부재",
+            "action": "원본 기사 확인 필요"
+          }
+        ],
+        "recommended_action": "교차 검증 필수",
+        "reliability_note": "해외 지역 언론 보도, original_content 부재. 한국 관련성 낮음."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-025",
+      "title": "오늘 본회의...與 '2차 종합특검' 강행, 野 필리버스터 맞불",
+      "url": "https://n.news.naver.com/mnews/article/421/0008714954?sid=100",
+      "category": "Political",
+      "pSRT": {
+        "overall": 80,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 22,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "뉴스1",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 통신사, 국회 일정 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "1월 15일 본회의",
+                "2차 종합특검법 처리",
+                "16일 종결 후 처리 계획",
+                "필리버스터 요건 강화 국회법 개정"
+              ],
+              "reason": "국회 일정과 정치 대립 구도를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "당일 본회의로 최고 수준 시의성",
+              "reason": "당일 발행, 당일 본회의 예정"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "특검법 처리는 지속적 이슈이나, 당일 본회의는 중요 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "뉴스1 보도, 당일 본회의로 최고 수준 시의성. 정치 핵심 이슈."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-026",
+      "title": "\"교사는 복지사 아냐\"...고조되는 '학맞통' 반대론",
+      "url": "https://n.news.naver.com/mnews/article/018/0006200935?sid=102",
+      "category": "Political",
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 19,
+          "novelty_score": 16
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "이데일리",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 경제지, 조사 데이터 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "3월 시행 예정",
+                "교직원 38.8% 업무 과중 우려",
+                "교원 3단체 공동집회 검토"
+              ],
+              "reason": "교육정책과 교원 반발 내용을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "3월 시행 예정 정책으로 높은 시의성",
+              "reason": "당일 발행, 1월 26일 집회 예정"
+            }
+          },
+          "novelty_score": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "uniqueness": 65,
+              "independence": 65,
+              "reason": "교육정책 논란은 지속적이나, 3단체 공동집회는 주목할 만함"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "조사 데이터 기반으로 신뢰도 높음. 교육정책 갈등의 중요 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-027",
+      "title": "日, 조기총선 국면 돌입... 2월 8일 유력",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097777?sid=104",
+      "category": "Political",
+      "pSRT": {
+        "overall": 78,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 20,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 85,
+              "reason": "주요 언론사, 일본 현지 언론 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "1월 23일 정기국회 소집 시 중의원 해산",
+                "1월 27일 공고, 2월 8일 선거",
+                "전후 최단 기간(16일) 조기총선",
+                "다카이치 70%대 지지율"
+              ],
+              "reason": "일본 조기총선 일정과 배경을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "주요 국제정치 이벤트",
+              "reason": "당일 발행, 임박한 국제정치 이슈"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "전후 최단 기간 조기총선은 주목할 만한 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "일본 현지 언론 인용으로 신뢰도 높음. 한일관계에 영향 가능한 중요 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-028",
+      "title": "항장불살(降將不殺) [김태훈의 의미 또는 재미]",
+      "url": "https://n.news.naver.com/mnews/article/022/0004097792?sid=102",
+      "category": "Political",
+      "pSRT": {
+        "overall": 52,
+        "grade": "D",
+        "confidence_level": "Low Confidence",
+        "breakdown": {
+          "source_quality": 17,
+          "content_grounding": 12,
+          "temporal_relevance": 12,
+          "novelty_score": 11
+        },
+        "components": {
+          "source_quality": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "source_name": "세계일보",
+              "tier": "tier_2",
+              "authority": 70,
+              "verifiability": 55,
+              "reason": "주요 언론사이나 칼럼으로 주관적 시각"
+            }
+          },
+          "content_grounding": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "grounding_level": "low",
+              "original_content_present": false,
+              "summary_accuracy": 50,
+              "specific_data": [],
+              "reason": "칼럼으로 original_content 부재"
+            }
+          },
+          "temporal_relevance": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "역사적 개념 칼럼으로 시의성 제한적",
+              "reason": "당일 발행이나 미래 영향력 낮음"
+            }
+          },
+          "novelty_score": {
+            "score": 11,
+            "max": 25,
+            "details": {
+              "uniqueness": 45,
+              "independence": 40,
+              "reason": "역사적 개념 소개로 신규성 제한적"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "OPINION_PIECE",
+            "severity": "medium",
+            "description": "칼럼으로 객관적 신호보다 주관적 해석 포함",
+            "action": "참고용으로만 사용"
+          }
+        ],
+        "recommended_action": "교차 검증 필수",
+        "reliability_note": "칼럼으로 주관적 시각 포함. 객관적 신호로는 부적합."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-029",
+      "title": "美, 75개국 국민에 이민비자 중단...러시아·이란 등 포함",
+      "url": "https://n.news.naver.com/mnews/article/374/0000486476?sid=104",
+      "category": "Political",
+      "pSRT": {
+        "overall": 82,
+        "grade": "A",
+        "confidence_level": "High Confidence",
+        "breakdown": {
+          "source_quality": 21,
+          "content_grounding": 22,
+          "temporal_relevance": 21,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "source_name": "SBS Biz",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 90,
+              "reason": "주요 방송사, 미국 국무부 공식 발표"
+            }
+          },
+          "content_grounding": {
+            "score": 22,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_high",
+              "original_content_present": true,
+              "summary_accuracy": 90,
+              "specific_data": [
+                "1월 21일부터 75개국 이민비자 중단",
+                "소말리아, 이란, 러시아, 브라질 등 포함",
+                "한국은 포함되지 않음"
+              ],
+              "reason": "미국 국무부 발표 내용을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "글로벌 이민 정책의 중요 변화",
+              "reason": "당일 발행, 1월 21일 시행 임박"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "75개국 이민비자 중단은 광범위한 정책 변화"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 권장",
+        "reliability_note": "미국 국무부 공식 발표로 신뢰도 높음. 글로벌 이민 정책 변화의 강한 신호."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-030",
+      "title": "한예종 교수, 수업중 성적표현 '비판성명' 올린 학생 1명 콕집어 고소",
+      "url": "https://www.hani.co.kr/arti/society/society_general/1239817.html",
+      "category": "Political",
+      "pSRT": {
+        "overall": 62,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 19,
+          "content_grounding": 16,
+          "temporal_relevance": 15,
+          "novelty_score": 12
+        },
+        "components": {
+          "source_quality": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "source_name": "한겨레",
+              "tier": "tier_2",
+              "authority": 75,
+              "verifiability": 70,
+              "reason": "주요 언론사, 교육기관 이슈 보도"
+            }
+          },
+          "content_grounding": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "grounding_level": "moderate",
+              "original_content_present": false,
+              "summary_accuracy": 65,
+              "specific_data": [],
+              "reason": "original_content 부족, 기본 사실관계만 확인"
+            }
+          },
+          "temporal_relevance": {
+            "score": 15,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "교육기관 내 갈등으로 전반적 영향력 제한적",
+              "reason": "당일 발행이나 미래 영향력은 중간"
+            }
+          },
+          "novelty_score": {
+            "score": 12,
+            "max": 25,
+            "details": {
+              "uniqueness": 50,
+              "independence": 45,
+              "reason": "개별 사건으로 트렌드 신호로는 제한적"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "한겨레 보도로 중간 수준 신뢰도. 교육기관 내 갈등 사례로 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-031",
+      "title": "달콤한 유혹의 대가... 설탕을 매일 먹었더니 생긴 변화",
+      "url": "https://n.news.naver.com/mnews/article/123/0002375721?sid=103",
+      "category": "Spiritual",
+      "pSRT": {
+        "overall": 72,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 18,
+          "content_grounding": 20,
+          "temporal_relevance": 17,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "source_name": "조세일보",
+              "tier": "tier_3",
+              "authority": 65,
+              "verifiability": 80,
+              "reason": "전문지, 연구 결과 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 80,
+              "specific_data": [
+                "심혈관 질환 사망 위험 38% 증가",
+                "제2형 당뇨병 위험 83% 증가",
+                "정신건강 악화 위험 26% 증가",
+                "권장 섭취량 여성 25g, 남성 38g"
+              ],
+              "reason": "연구 결과의 구체적 수치를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "건강 트렌드로 중간 수준 시의성",
+              "reason": "당일 발행, 지속적 건강 이슈"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "설탕 위험성은 기존 이슈이나, 구체적 수치 제시는 유용"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "연구 결과 기반으로 신뢰도 중간. 건강 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-032",
+      "title": "화성시, 정신응급대응 1개 의료기관 3병상 추가 확보",
+      "url": "https://n.news.naver.com/mnews/article/468/0001209632?sid=102",
+      "category": "Spiritual",
+      "pSRT": {
+        "overall": 70,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 18,
+          "content_grounding": 20,
+          "temporal_relevance": 17,
+          "novelty_score": 15
+        },
+        "components": {
+          "source_quality": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "source_name": "스포츠서울",
+              "tier": "tier_3",
+              "authority": 65,
+              "verifiability": 80,
+              "reason": "전문지, 지자체 공식 발표"
+            }
+          },
+          "content_grounding": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "grounding_level": "good",
+              "original_content_present": true,
+              "summary_accuracy": 80,
+              "specific_data": [
+                "2개 기관 6병상으로 확대",
+                "365일 24시간 운영",
+                "경기도 내 시군 단위 최다",
+                "2023년 전국 최초 시군 단위 운영"
+              ],
+              "reason": "화성시 정책의 구체적 내용을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "지역 정신건강 정책으로 중간 수준 시의성",
+              "reason": "당일 발행, 지역 정책"
+            }
+          },
+          "novelty_score": {
+            "score": 15,
+            "max": 25,
+            "details": {
+              "uniqueness": 60,
+              "independence": 60,
+              "reason": "전국 최초 사례이나 지역 한정"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "지자체 공식 발표로 신뢰도 중간. 지역 정신건강 정책 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-033",
+      "title": "출산 후 '이것' 하면...10년 뒤 우울증 위험 확 줄어",
+      "url": "https://n.news.naver.com/mnews/article/003/0013711345?sid=104",
+      "category": "Spiritual",
+      "pSRT": {
+        "overall": 74,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 19,
+          "content_grounding": 21,
+          "temporal_relevance": 17,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 19,
+            "max": 25,
+            "details": {
+              "source_name": "뉴시스",
+              "tier": "tier_2",
+              "authority": 70,
+              "verifiability": 85,
+              "reason": "주요 통신사, BMJ Open 논문 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "168명 대상 10년 추적 연구",
+                "모유 수유 경험자 21% 우울감",
+                "10년 후 증상 지속 13%",
+                "BMJ Open 게재"
+              ],
+              "reason": "BMJ Open 논문의 주요 결과를 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "여성 건강 트렌드로 중간 수준 시의성",
+              "reason": "당일 발행, 장기 연구 결과"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "10년 추적 연구로 신뢰도 있는 신호"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "BMJ Open 논문 기반으로 신뢰도 높음. 여성 건강 정책 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-034",
+      "title": "'몇 시간 잤나'보다 일정한 시간에 자고 깨는 게 중요",
+      "url": "https://n.news.naver.com/mnews/article/023/0003953061?sid=103",
+      "category": "Spiritual",
+      "pSRT": {
+        "overall": 76,
+        "grade": "B",
+        "confidence_level": "Good Confidence",
+        "breakdown": {
+          "source_quality": 20,
+          "content_grounding": 21,
+          "temporal_relevance": 18,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 20,
+            "max": 25,
+            "details": {
+              "source_name": "조선일보",
+              "tier": "tier_2",
+              "authority": 80,
+              "verifiability": 85,
+              "reason": "주요 언론사, 서울대병원 교수 인용"
+            }
+          },
+          "content_grounding": {
+            "score": 21,
+            "max": 25,
+            "details": {
+              "grounding_level": "high",
+              "original_content_present": true,
+              "summary_accuracy": 85,
+              "specific_data": [
+                "수면 규칙성이 사망률·질환과 연관",
+                "평일·주말 기상 시각 2시간 이상 차이는 사회적 시차",
+                "서울대병원 이유진 교수 인용"
+              ],
+              "reason": "수면 연구 결과와 전문가 의견을 정확히 반영"
+            }
+          },
+          "temporal_relevance": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "건강 트렌드로 중간 수준 시의성",
+              "reason": "당일 발행, 최신 수면 연구 트렌드"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "수면 규칙성 강조는 비교적 새로운 관점"
+            }
+          }
+        },
+        "flags": [],
+        "recommended_action": "활용 가능, 모니터링 권장",
+        "reliability_note": "서울대병원 교수 인용으로 신뢰도 높음. 건강 트렌드 참고용."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-035",
+      "title": "Campus Wellness Trends Show Students Prioritizing Sleep and Mental Health - The Daily Texan",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTVRwRWF6Y2U2ZEVtbUhpbkk4SXFsZ055c1d4Z0doM3lrNlBtb3JMdHN5SEJOUE1ySHRMOWZFZVE2b0FnZ01vdklfZTlvcnRXWkRjUDZ6UzRfSUpvdmxOUXozemtkWDhMVlZmY0lOU0JLZWpsOXMzeUoxN3huLW14Mm5RZXlZblVXZjZKZlB6TnAtc1ZvMjF0TnFIWHR4dXFBUXk4MHkyTFExaHBMUGV2SQ?oc=5",
+      "category": "Spiritual",
+      "pSRT": {
+        "overall": 60,
+        "grade": "C",
+        "confidence_level": "Moderate Confidence",
+        "breakdown": {
+          "source_quality": 15,
+          "content_grounding": 10,
+          "temporal_relevance": 17,
+          "novelty_score": 18
+        },
+        "components": {
+          "source_quality": {
+            "score": 15,
+            "max": 25,
+            "details": {
+              "source_name": "The Daily Texan",
+              "tier": "tier_3",
+              "authority": 55,
+              "verifiability": 65,
+              "reason": "대학 언론으로 권위 제한적"
+            }
+          },
+          "content_grounding": {
+            "score": 10,
+            "max": 25,
+            "details": {
+              "grounding_level": "low",
+              "original_content_present": false,
+              "summary_accuracy": 40,
+              "specific_data": [],
+              "reason": "Google News 링크로 original_content 부재"
+            }
+          },
+          "temporal_relevance": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "캠퍼스 웰니스 트렌드로 중간 수준 시의성",
+              "reason": "당일 발행, 대학생 웰니스 트렌드"
+            }
+          },
+          "novelty_score": {
+            "score": 18,
+            "max": 25,
+            "details": {
+              "uniqueness": 75,
+              "independence": 70,
+              "reason": "대학생 웰니스 우선순위 변화는 흥미로운 신호"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "INSUFFICIENT_CONTENT",
+            "severity": "medium",
+            "description": "Google News 링크로 original_content 부재",
+            "action": "원본 기사 확인 필요"
+          }
+        ],
+        "recommended_action": "추가 검증 후 활용",
+        "reliability_note": "대학 언론 보도, original_content 부재. 트렌드 신호로는 흥미롭지만 검증 필요."
+      }
+    },
+    {
+      "signal_id": "SIG-2026-01-15-036",
+      "title": "How Hey Mary Jane Is Making Mindful Wellness the Must-Have Accessory of 2026 - Daily Front Row",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ2Z0UE55ZFY1X3VVNXZTc0g5Zk9WUkY4Q2JUU01YbnBvYmFqblFjSUFJTkV1REtWY1NBdjFoVkVUcFBIb0xNczlaQVo4VE1LOFdoVGE2ZjhwU1VKdnBlY256T3JRUzdPcjhySVhHYUJEMWkxTWo0anlDd2tCX05iOU5xVDZxU1NaTEkzZi1aQnVjTEx5ZXFtc1JKd3FiNm14XzBBdDdBSTJvQQ?oc=5",
+      "category": "Spiritual",
+      "pSRT": {
+        "overall": 56,
+        "grade": "D",
+        "confidence_level": "Low Confidence",
+        "breakdown": {
+          "source_quality": 14,
+          "content_grounding": 9,
+          "temporal_relevance": 16,
+          "novelty_score": 17
+        },
+        "components": {
+          "source_quality": {
+            "score": 14,
+            "max": 25,
+            "details": {
+              "source_name": "Daily Front Row",
+              "tier": "tier_4",
+              "authority": 50,
+              "verifiability": 60,
+              "reason": "패션/라이프스타일 매체로 권위 낮음"
+            }
+          },
+          "content_grounding": {
+            "score": 9,
+            "max": 25,
+            "details": {
+              "grounding_level": "very_low",
+              "original_content_present": false,
+              "summary_accuracy": 35,
+              "specific_data": [],
+              "reason": "Google News 링크로 original_content 부재, 브랜드 홍보성 기사 가능성"
+            }
+          },
+          "temporal_relevance": {
+            "score": 16,
+            "max": 25,
+            "details": {
+              "freshness": 100,
+              "date": "2026-01-15",
+              "age_hours": 0,
+              "relevance": "2026년 웰니스 트렌드로 중간 수준 시의성",
+              "reason": "당일 발행, 2026년 트렌드 전망"
+            }
+          },
+          "novelty_score": {
+            "score": 17,
+            "max": 25,
+            "details": {
+              "uniqueness": 70,
+              "independence": 65,
+              "reason": "마인드풀 웰니스 트렌드는 흥미롭지만 브랜드 중심 기사"
+            }
+          }
+        },
+        "flags": [
+          {
+            "type": "PROMOTIONAL_CONTENT",
+            "severity": "medium",
+            "description": "브랜드 중심 기사로 홍보성 콘텐츠 가능성",
+            "action": "참고용으로만 사용"
+          }
+        ],
+        "recommended_action": "교차 검증 필수",
+        "reliability_note": "패션 매체 보도, 브랜드 홍보성 가능성. 웰니스 트렌드 참고용으로만 활용."
+      }
+    }
+  ],
+  "methodology": {
+    "description": "4가지 평가 기준 기반 pSRT 계산",
+    "criteria": {
+      "source_quality": {
+        "weight": "25%",
+        "factors": [
+          "소스 권위성 (Tier 1-4)",
+          "검증 가능성",
+          "소스 신뢰도"
+        ]
+      },
+      "content_grounding": {
+        "weight": "25%",
+        "factors": [
+          "summary와 original_content 일치도",
+          "구체적 데이터 포함 여부",
+          "주장의 근거 충실도"
+        ]
+      },
+      "temporal_relevance": {
+        "weight": "25%",
+        "factors": [
+          "신선도 (발행 시점)",
+          "시의성",
+          "미래 영향력"
+        ]
+      },
+      "novelty_score": {
+        "weight": "25%",
+        "factors": [
+          "독창성",
+          "신규성",
+          "독립성"
+        ]
+      }
+    }
+  },
+  "flags_summary": {
+    "INSUFFICIENT_CONTENT": 5,
+    "INTERPRETATION_RISK": 1,
+    "OPINION_PIECE": 2,
+    "DUPLICATE_SIGNAL": 3,
+    "PROMOTIONAL_CONTENT": 1
+  },
+  "recommendations": {
+    "immediate_use": 6,
+    "use_with_monitoring": 18,
+    "verify_before_use": 8,
+    "cross_verification_required": 3,
+    "reference_only": 1
+  }
+}

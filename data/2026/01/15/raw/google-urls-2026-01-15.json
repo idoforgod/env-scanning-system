@@ -1,0 +1,879 @@
+{
+  "urls": [
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBGYWY2VnlxcjNsV2cwd2FybHNsRTQwRGRJRVlVeDZZZWFORXpBeVZqbEhENnBGV29vQmxkbXVtZVlVdVhGQ1lmT3YwSGpQZWNyei04QVJwY2x2WUxMX01DTlBtd3dmdXJDMVQ0WFZ0cU4?oc=5",
+      "title_hint": "Nvidia and Microsoft back AI breakthrough for gene therapies - Financial Times",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "AI breakthrough",
+      "collected_at": "2026-01-15T08:43:17.875849"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQVWZGNVZaUDdtUHRhRFVJSFhhb2pURGVaU1Myd21iTXJZeXlKMFFjSExybHhzOXFWTzhkMjZqWE1wZFZWTTdnRklwRTNkdHQ4S0tkRTI4NTdrZklMdEp5Q3ZhZEZmQUpKWkVBQnZvSVhtSjhTaVVHRTM5WFlTOHo4Mm9jM0hVaTc4ck14X19neXRuXzZUU21sVFFseTVQZlQyZFUxS0xKSWJSVGZaYUhUMnNNMkVOSGx5emRQaUxDVExDMXlFY0ttUXpQRDZuR2VzSzVPMGtudlNhTHpmYlFaLU1LY1AyZ1lOVDI4bml1V2NwM1ZRTHlyeTRTbmQ1X1NHTGVr?oc=5",
+      "title_hint": "This is the Claude update I’ve been waiting for — Cowork could reshape how we use AI in 2026 - TechRadar",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "AI breakthrough",
+      "collected_at": "2026-01-15T08:43:17.875860"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXM4Z19NNkx3VkZQa3BCR3VuRXprcmZmTWF5aUQtcU5TbVBOd01MbUZCZktmSk9ERzVwTnlXWmFrRm9lV044TTdfaU51YXpfcnRJbDNqOWtkcHpCd2FYM2RaMGFkTHBxdmczeGtJbjhwc3VjMkY2X3pjRnpRQm04d0xfVmsxQzYyb01XYVhVcw?oc=5",
+      "title_hint": "Exploring Gen's AI Breakthrough for Deepfake Detection - AI Magazine",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "AI breakthrough",
+      "collected_at": "2026-01-15T08:43:17.875863"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORTZPaWg0NHJMbkE1QmZRekJGNTFfVGtsT2JsN3FULVpBMXg5Mk5raFNRUWNXSndWQW9kYW16aVViaHBMQmJDeFQ4WUs2ME5mN01wZl9iNkstcVgydTY0eW44d3VaTTlicExPVDNXa2NYUjJ3ZkpaTXQ0LWVCMW9nOFgxMHN4Vmh6ZFo5SV82UmFqV2RB?oc=5",
+      "title_hint": "Honeywell plans to carve out quantum computing unit Quantinuum via IPO - Reuters",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "quantum computing",
+      "collected_at": "2026-01-15T08:43:20.697242"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeEptcVNQN09GMnMtc0ZmNjFIX1E1Z05ObWVsT2RidGNFWU5MVlRuRGlNaVlEQ1otb1ViQ0xVbXhQYjIxUTYtNXoyWUJTUFQza1BHVXR2NTNDZXZMcGdoRE5uREpJV0FENDhwamcxei1vdzFaazRIMjNWUEU4RGdkZTRmUDdqRjdKYjNFWU8zc3pBN01wNEdIZjgzX0h1ZFE?oc=5",
+      "title_hint": "Quantum Computing Stocks: Honeywell's Quantinuum Plans IPO - Investor's Business Daily",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "quantum computing",
+      "collected_at": "2026-01-15T08:43:20.697256"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0RLV1pER2loMXdCcXNYdXR5eC1HZmdCeHlXRDloQl85WThFSFhoQzNlNnd1NUZOT3lBNG83b0xQYmJJbEp6UTlHWE5IZEl5bDhIMFdLemFKajNyODRiZE9uYTFCU0x1aVY1U0NDZF9oZlpWRHpiTGR1NklCdlJEMGtjbThMZk9XSGU1NmNYX3RNeVVoZ2trQXNNUVFzaWFlOERSbmhWemE?oc=5",
+      "title_hint": "Honeywell-Backed Quantinuum Planning to File for IPO - Bloomberg.com",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "quantum computing",
+      "collected_at": "2026-01-15T08:43:20.697260"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWWx3RF9OU1NKSDQxVGl3ZGdiNjY2cmxXXzFwdE1DdnM3VmRBdjBOUlRFZjhHVEZBbXV5TWdjNFJRaUVOTTRKMk9zbTMyWDM5ZUQ1VnAwS1l6VVNCMGJkeC1XeUhNQW11Q0JmZjFfbnpNUWlhejk0ZWFDazduYk5tVFpFV0FxcHJNakUzbmVILTlkQ2xDVmZtQnhuRnh4akhZOVRIS09kdHl0QzFUZXFURENkbUM4dGlzSTdBd21LdW9FZDEyM1JSOFZB?oc=5",
+      "title_hint": "Robotics Startup Skild AI Valued Above $14 Billion in New Funding Round - Bloomberg.com",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "robotics",
+      "collected_at": "2026-01-15T08:43:23.856642"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSHJ2N0tOTTBzSFZtTFZBejNMNXRMbDFzeVhJNGltZEpRVnYyY2JCenFOQjBvbTVMYmQxbGtLMEZrVTRFZjJ6WFhoemtacTZCQVV1SHZ6TnpPLTVMMUpfUTMyektKNHpZd0dIa2dMRHRFdm1ZVGNvM0FzWXhuMDNGdS13?oc=5",
+      "title_hint": "Skild AI aims to be the picks and shovels of robotics with $14b valuation - Axios",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "robotics",
+      "collected_at": "2026-01-15T08:43:23.856670"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOTlUZy1HUzVSVE9QcVpBRlFOMGptYXBKNkkzam5zbFgwdTJSWHpvbWk2T1NPUHJIR1hUd0Q5dnhrSDNseVc1RktEcGZNaDFUUS1qQjhPZHV0Yk55TDgtRFZHMjhkajRrQU1nUEl5TUVlNmR3RU4wMkd3bGt5VTN4dy1SYVQwQzNMbk9jTkVB?oc=5",
+      "title_hint": "Robotics software maker Skild AI hits $14B valuation - TechCrunch",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "robotics",
+      "collected_at": "2026-01-15T08:43:23.856674"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLVNtZUdQUzRBNDFrY291YlpuMUtHeUNXMEF2YUdBV0tXTXZpak1qZlUwc3NMVzUxVjdqWF9iNXNMSTQ1b3l6cUE0WEdybUZEYlZlRnNqQkI5ZGFxa3VlZVhrc3EwUW9EU1JRdTd3SF85aC03cVctcXhuZzVoTk1zRnBGTmdobXY2VUYtQ1hWZ0ZwN1I2UjYzdnlfdnlYUUUtdDZLb3BuUFRmMms5QnhSMDNwSmt2enVnNTFSbFBudjhOTXZuY1E?oc=5",
+      "title_hint": "What's Going On With Taiwan Semiconductor Stock Wednesday? - Taiwan Semiconductor (NYSE:TSM) - Benzinga",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "semiconductor",
+      "collected_at": "2026-01-15T08:43:26.628699"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTnZadGRsb1FnYVRWVkNaZTVNbjl5ZVRQRC12U2Y0WEpRRGNrMFhqT2pSMVp5ZkhzY2dSY1YwWVl1YXl6VFBwYVVJUzgxZncyd0t1UHR0ZkJ0S3BSVXR1SzRvRlFIbmFhcnVkWTNWcnc1cXVnekJUc1FSV29Fd01keVNJR0NITTg2elZGalBXcWFEdlRqbzJCbTZ1M210RHFMQklFSi1ib1l6TTF3ODduRGU4N3p4dFFleVZlcFhMR1NZNFZPZXJRZnZiMlZPdmhUVHFyeUpCMlg2dzNLLWZn?oc=5",
+      "title_hint": "'A completely new manufacturing frontier': Space Forge fires up 1st commercial semiconductor factory in space - Space",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "semiconductor",
+      "collected_at": "2026-01-15T08:43:26.628711"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONExmSnFMaW9RSkUzU1JqeE8zZmF6NS10c3A5UVVMTWRzT0hvS2ZkbElodXJELXNpa1BrZ0RPNXN0Y281MG5KaFh2U3ZIYnlFaEx6cE5SODRYeTN0d2g3eWktVEVHSmhHR0lqY0xRdlZ5LWhuTk9GR3BzSzFQTXBXVVVn?oc=5",
+      "title_hint": "Trump Imposes Limited Tariffs on Foreign Semiconductors - The New York Times",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "semiconductor",
+      "collected_at": "2026-01-15T08:43:26.628715"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBqZTlDR3VQMU05anlkUEJRbEZTRENCNkdCYlhfODFBNjJEeU1sUjJPNzZBVGwwc25qRFFSRnJWQTROc0NNSTlhcVNCSEpjOV9TYnFyXzVKSDl1UGVOTGFj?oc=5",
+      "title_hint": "Artificial intelligence tools expand scientists’ impact but contract science’s focus - Nature",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "artificial intelligence",
+      "collected_at": "2026-01-15T08:43:29.377538"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPX0FSd0Y2el9uSGlhRVdnSHZHVTFyekxPbV9Sc1dLMkZ5OXBBSEJYaXdMZV9rUjNMS1JkaV9Za0R6czNSNUJ6c1BoeVc5VW9Zdkc4Njg1aExCRExJUC03bTkzNzZOcVF5bkhXajlHQ1hnM1Q0cGV2VHpJcTZnZ0xweWJQZGRjYWZfUnZDS2RNSE1mRjM2S2xwMzl6WU1VSkEzaWN3OGFqb0NYcVBqUkwwQUF2NkY2YWFQ?oc=5",
+      "title_hint": "This Undervalued Artificial Intelligence (AI) Semiconductor Stock Looks Like a Better Buy Than Nvidia or Broadcom in 2026 - Nasdaq",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "artificial intelligence",
+      "collected_at": "2026-01-15T08:43:29.377556"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZWFGb0hZRzNUc1hPYXMyR01lQ1lPek1aS1pTNjFCdFdsVE1ldlBxMUdOMnkxRk5iaVhPUlVvREJEMEdzb19IbTBSMjRCRFpDTUhRUXZKdG9JcURPQmdPTFlFeEdkS0pKVHF4dEJqNVE5Y19kVUhXNlp5OHhwNEpxYmFB?oc=5",
+      "title_hint": "Butler County 911 dispatchers adopt AI platform to speed-up emergency response - CBS News",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "artificial intelligence",
+      "collected_at": "2026-01-15T08:43:29.377559"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1heTVtNW1nbFVnc19wZTJUbkRnOE9pLXpnUlptd2d0ZHR4VmxXNjJLTXppWFhFSERxZVB6UVR6ZzdlYVhTZlNfem5ZOVFBaXgyRXpkQUVvZFdyWktiTFlZVHBpNHZxSktTaTZyeHN2OE3SAYQBQVVfeXFMTm9rd0NFRVJ6T0l0R0Y5QTR2dU9QNmlqSVRLWElJQmlzXy1JVC0ycFhQZ2szSWZDVDBUSjUxSk52b213MVFDYmV5Zml5YU9SQXlFVE5RTFN6U0pMaXk2d3V2RThtdWpHMWNMU2Q4S3g1QTVTMmFaSXRwTENFUkE1aGlhZmR6?oc=5",
+      "title_hint": "Machine-Learning System Monitors Patient Pain During Surgery - IEEE Spectrum",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "machine learning",
+      "collected_at": "2026-01-15T08:43:32.292159"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ITUhWZFE5VmZkWWVWUWtIZlc0dFNFWWNuTnJrZlVGTGlrVHFrdllmY3RrLXJLTkFCazhhcTRzNzZrVFh2Yl9vSmxiQXpyMzlISk5lR01mclV0WGt4QmV2Tml4MmVqYkxVbGFrcjJxM2Y?oc=5",
+      "title_hint": "Machine Learning @ CMU: From Theory to Impact - Carnegie Mellon University",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "machine learning",
+      "collected_at": "2026-01-15T08:43:32.292175"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbW5TUG9IcGJzRG1rcm5aVjctZV91c0RqYkc1YUtpeEMyek9zUDB4TGdYMVgxM2lMLTJseEdnLUNKRlZTYjZQX0pOamtoSXIxT2kybnpiNVlKZjFZTktBazZrQnJOeUV1N3N6RkcxcVYwUGI3ck0yRGhhb2RCRElrZC1Mb2dtOVYwTm55cDV6RS1IXzctTS1nbi1QRUlkV3lkbllwX3RnN3puM1FvMWFPQ0tWZlhIanY4ZmhYRC14b3RVRlY0MHdDbE5mblFyYnl1RXRFNlVia1VLWmlsVllWdHVqVTQ?oc=5",
+      "title_hint": "Accelerating Discovery: How the Materials Project Is Helping to Usher in the AI Revolution for Materials Science - Berkeley Lab News Center (.gov)",
+      "category": "Technological",
+      "source": "google-news",
+      "search_keyword": "machine learning",
+      "collected_at": "2026-01-15T08:43:32.292178"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUDhjQUVfYnF3ZG5pUGlCdmM0d1ItQ3p6QWNmLXNmWDl5ZmM3TzhkSXFJNTBCYUZIRW5yMTIzX3lZQ2g2cW1ZYS1kVURMZnNUSm5DT0dyRkU2cHZHTjU2TGZZcGstSVhBTFhpdVhBUWNtTGlEMlhfYmlfNUMzSVdqZzBYQkpWY1hCeVVCUGZlOWF5QnFONHlqY0x2czMzX3I2WnctNHMzMF9KQVVfN3EwNHhSNnA4d3VXa0o4OVJhUEVoVGF5WTJGSw?oc=5",
+      "title_hint": "World Bank sees resilient global growth in 2026 amid tariffs but fading dynamism - Reuters",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "global economy",
+      "collected_at": "2026-01-15T08:43:35.018385"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMjdneFd6N0NoTUlRVy10VldIM2ozNkgzZ1E4UDhYaEJxN3BwaXlDMmNKdXk5Y2FUTDFrSGtTUk13WVkxR1RBaFRfNTlKa3N6UmdsVWtoSDd1YnhiOW9Md3FXdWNCOXhmbHZwVm9abnB0S3BjN3JwQlpQWUdZTUkyMUFmbi1NSUptbndiZi1n?oc=5",
+      "title_hint": "Global economy holding steady despite threats, thanks to U.S. performance - The Washington Post",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "global economy",
+      "collected_at": "2026-01-15T08:43:35.018401"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV1ltVWdmQ01SWlhhajJIeG8ySlJBVkpRMFN6QzFXcHVESHFGeV92SnpVSGdrUjR2NHR5Z051YUNxWXRNZWllcjk1NTNFdDJwdUJCeTQtT29YbGx6TFlnNlJucHBRVXJxal9lVktJeGItLWlqUV9LVDN3bnBBWWFnbE8ydDZTR3BtcThZU193cENOcldSQVZSdHNkY09wS01nOW1sYjhYZzRpUnlBaHpsLXRiZmZ4aV9B?oc=5",
+      "title_hint": "How will the Trump-Powell clash shake the global economy? - Atlantic Council",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "global economy",
+      "collected_at": "2026-01-15T08:43:35.018404"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNkZQWFpCdE02Y1VUZjZhcUI0bTFJcFFYY1NOLVh1eTNOMnFfUDNOY0lGVXl3NVVuQ2pGQXpYbEpsU0p3MXRpTDlLbmtjTkM2S3h0dV9jUjZmd1Voby1DeUNpY3R1LTMxWGNOZnhnakkyUU1aZDJpSU9Wa0FjMjZzdXREV1pLNmc?oc=5",
+      "title_hint": "Inflation remained at 2.7% in December, as high prices continue to weigh on many Americans - CNN",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "inflation",
+      "collected_at": "2026-01-15T08:43:37.859795"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeUVLWVZFUzF4dHpKVUh5bUxVc09JaDVSc2RiYy1YbkZFYnBEeGR4ZHdMUVZKb2pKWTNRSWtZbHJ1bHNtYXQyNGxkSTZfdFBIYk9ZMXNSaF92aFkyMkpmRW1pT3RLQzlYRDFBRE8tbjlxYTJsaWxaTWdBdmZrNnVGbDlpazZjRmlQbF9DcU84YUdSanhzUjV2RzdFaW81eFB6cGFkM240ZFFMUGxPZzBvWjhBMDllN0FkZTJF0gHAAUFVX3lxTFBIMGZUUmMtQmxZc0p3eGJyaXk2TEdWQ2xqcDhkak1laF9VS1B6LWZ2Mzg5NEhtdjhZTGVTY1haQ21NcXViZDF2MmVVMTRPTjAxYl9rdWNfVjJCczVnU2h1dUVLVmhNemZaS3k5M2dVb0o1cUR1dE9xRnRxcl9KUTFNQWJtNG83VHNkOVdxc1BoX0F0UlEwR1VFc2lRWkJCMXVEeVNKdGotWEhialZIQ2FJa0hvRmI2YWRGb3YxcTYweQ?oc=5",
+      "title_hint": "Wholesale inflation was softer than expected, retail sales moved higher in November - CNBC",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "inflation",
+      "collected_at": "2026-01-15T08:43:37.859829"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaGc2bU11amlVWmRWTm93Q1NwMDdMQzNSS2JUdXNDSGU0QVNDanVoX0t0LTEtdGxjX1dhLWY1RHBheDRYbVBISk4tV2tnVDVqVUhWSGczUmNlRzV6VER1WFFqNVBDd1NWd3FseU8xWi1hb2NVSVA2ZUpBNTdlR2VFZGVNbjhKaVBrTWpSQ2hTc3hTWk1KclNSbXdESFZTUQ?oc=5",
+      "title_hint": "Wholesale inflation remained stubbornly higher in November - CNN",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "inflation",
+      "collected_at": "2026-01-15T08:43:37.859833"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeUxwdF9GazQ2bzQwZGR3SGtmcHQ5U04xZThoTnQzZnJFX3ZVcjBaS3dqZU5zNUV4eWtCYjgxNlY4ZG9BWEpNV29sMXpfcVczbjE2bDMxc3JhWWJxRm1DMGZ5cEh2TjNGQk1XSTlhTHhOWlVQdjVVN2EweFRYMVpyS09KZWFNZ3lu0gGOAUFVX3lxTE5jdjJUOFRjTG1Fcjg2dWhLaHlUOE9WTnp2c0VVNk1GeUFWVmpaVWthNWdCWjVHSnZSNXVEbkNoLV82ZjZJZnp6WnhRNXpvQXRWcnJjVXo4YVdZbEdnQWZFdnE5ZTU3eW5GNVVjMFlJdnZiNlltc3p5X2xMbHVaRXQwb0wxclVucEppeE1ZalE?oc=5",
+      "title_hint": "Man sentenced to 45 years in cryptocurrency home invasion - FOX 4 News Dallas-Fort Worth",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "cryptocurrency",
+      "collected_at": "2026-01-15T08:43:40.574881"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbmJGbkF3eEE5RmUwa1VMUUlOeUxOalpldVRFYl9zU1VtMFBWRDA5Ti00eFFWdXJmUjRpYW1vbUJMN0RRbTIyT0h5enBjVTd1Qk1sSzJPcHdHa1d3X1QwanBsaWlMRnJrd1BlNGlFZDcwV0dnSWIwUXREdUtrRFc1V2JfT2IxRDhLZnVaTWxfUkxRUnV0dXJIenNPTjNzVXhu?oc=5",
+      "title_hint": "Did Eric Adams Just Tank His Crypto? - New York Magazine",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "cryptocurrency",
+      "collected_at": "2026-01-15T08:43:40.574908"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82dVltR0ozZTViZDlNV2NSNTl3OEJDT1RmNzNOd1ZrRVY3eXNjWjYxd3hXbUxQSWlvbUZTMWpyNFF0SUFWaWpHeTJnWEwxMGFxb0U3YzNqY0lRNUtvdFRRVUl4czdRVzNYOFVUNnpyZ2w4cUhlWWMxOGUzNGltTjQ?oc=5",
+      "title_hint": "Russia Moves to Make Crypto ‘Everyday Finance’ as Lawmakers Prepare Retail Access Bill - Bitcoin Magazine",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "cryptocurrency",
+      "collected_at": "2026-01-15T08:43:40.574912"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUjlhM01MZE9GTURnZXBxbm5vRlBtWkNxVWdZbWVZVnZKSlNzSl91WXliN3lQcVp5M0h3bFVieWhKRjRuRmFMaW1yNDItb0dBd3ZjcUlDVDEwR0Y5OG5UczR0SUY0TG1ZRWt0MmRFazgtM0ZGOTVLSzRvbDR4YjQtalI1Ti13MDdzcGRKN2oxMmd4aFoteVE5WUxqSWZNMmFLQUJab1IxaEgycFRKdmdON0RB?oc=5",
+      "title_hint": "Trump’s Trade War Spectacularly Flops as Key Target Surges to Record High - The Daily Beast",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "trade war",
+      "collected_at": "2026-01-15T08:43:43.345267"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVUhRRDhZMDVkeUktU3B5MmpudzhWRGk5dTZXYy1NVTVmR25acFFsbUxnWTZtVk1fYi1HYksxZ0FzZmFzQmRmWlhkMDV0cXZvRFVHMmJDdGhJX2VWRXZvTE1UeU5xSlBLUGpNRlJTOHlEdFd0RC1hV0x4LTNlNjltX0lBM1ZNalZTOWl0SmVSQ3k2aGljV1p6ci1CR19wa2JwdDR2TWVCajZEVFdkVHJ4eGZiNVF1TGfSAVZBVV95cUxPbEdyYnJ2VWV6N25jMEw1cm5GeWlSc0hUNzA1czgtZVNDdlFCaHhZeE9jQjVTakFGOWxidTZhX1FlX0tITDlxLW9Tb3gyc25RanpmNUVVQQ?oc=5",
+      "title_hint": "China reports record $1.2 trillion trade surplus for 2025, defying Trump's tariffs - NBC News",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "trade war",
+      "collected_at": "2026-01-15T08:43:43.345294"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBMdkNRRVdnZnVHUjRpT3Z3clJfeVFQVTZpN0RwZ0VPRnRWVThnMlJiZnBKLXUzcEFhbks2UDB4eC1Xbl9VallYdUxRQUo5U0l5c3lDck9kNVZ1ZTN0ZG52cy0yZ1ZLOE4tUG95WEVzdXA?oc=5",
+      "title_hint": "Cambodia looks to reduce reliance on China amid US trade war - Financial Times",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "trade war",
+      "collected_at": "2026-01-15T08:43:43.345298"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSXp0S01sSkZYaXRvd0pNZjd1TGNkNG10MXNGVVIyLWN6WXF5R3RRYUhwaGR2VUpOMGdMUWhmMVg5Mk5NXzFKVk5zaTRFNUdubkNoNkJXVWN6MW5xZWZvWGFTeVpnRC1uQ1h1WmR4d0ZTWl90OFVOQ3JFNXJwdkF3akNB?oc=5",
+      "title_hint": "Will the Stock Market Crash in 2026? Warren Buffett Has Smart Advice for Investors. - Yahoo Finance",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "market crash",
+      "collected_at": "2026-01-15T08:43:46.093323"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPV0dhUUQwX2cyd3ZfYV9LVFBOM2RpNnA2bGZnczF5S0NwNkJQRkp6MEV0b0sxMXBfS3NDY2xXS0pvR09sTkZKQjBaandPbjd2LTQzQzFQMU1kWlV2c3JOdVFRRUpwbGktN2VDMElYZXVPZnQ3SVBaY1VrTEdSeUJvanI3V3F3Z3RGMWc?oc=5",
+      "title_hint": "David Rosenberg: When no one is calling for a recession or market crash, here's what usually happens - Financial Post",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "market crash",
+      "collected_at": "2026-01-15T08:43:46.093390"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxNSnpsbDlzQU1WTEhXdXFTTlBYR1FlVHdtNGxuMWVDcU93WkRyZXozRnRFZFFrMkFkOGQ2LVJNTXZsY0pzQlhGMnRmOXA4MGdSazlPMjg1Z3ptNVBlWG9rS0J2d1dmOXFzZ1hQeW1DYWNOYzVRbmEySEFQUjFCQ1RjUXk4RXNaV3VWeU1RU19faGFHTDVPdzA3OTQ0YnQtVkZ0LTBlWGI5U2E3UkE4TkVQN0daaUkyZ012T0VVMG54SmVOQm9uTjhhbWJJSkc2Z3dZSC1RSGhxRjZpZkk1RlEzZ3pzWjQ1LVFZNzdKdHluVmVuYUVNakVXN1JDRzItS2cwRnZTTWFkNTYydzNtcUllRlhGaHgwNXVnWkw0c2pncTBFbDl5OU5WRy1FcEthRllpTlNiRGdadnNQT3gxOTJYbUdTMEJRNHhoWmZHNURIby1fUmpnVWs4dV9veFBfbl9DdWNBTUFWYnlrenZLTnVNTXYxTXE3UUd6N3J2VVNwUWdLTGQzVTlPcXNVVFdlRXdmb05kRDdXMFhnSmxueXc?oc=5",
+      "title_hint": "Wellcome Trust builds £3.7bn war chest for potential market crash - The Times",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "market crash",
+      "collected_at": "2026-01-15T08:43:46.093396"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8xay1zeGFNLUZLVGtoOEZMVG9IcWlfaG9MY01vdEZmRXh0UzdhaVRVdUt0YnJjTF9KZ05Ddk42RXlaSFEyamFnaUxQNUtaekFSZnB5SEFiSQ?oc=5",
+      "title_hint": "‘Beyond GDP’ economists push for clearer metrics on wellbeing, sustainability - UN News",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "economic growth",
+      "collected_at": "2026-01-15T08:43:49.306260"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYmduSTFhdkpXRWI0eDJBSVY2b2RCWjFudW8zZDJYQmx3YW5NZXZXLTlhUXA3MlV4d1NQbnJnT1diMjdibVJ2TW1BYzB6WTJoX2VYNThCYlU5NmpqVDdEOTNNcGJKeEtXUjNkcmYzX0tLOGpfVGdGOFM2c1RMYUZfUGRGZHVTV3l2U3JXck4tRVljeW81Vk9sUzNuem1MaFNMTUU2ZHdlVVBiWXhGWWJ2VEZYYUl4ZjU2VUZBdl92TVpaQnJwVFRxN0dPOWREcHhwNzc4N3NrQQ?oc=5",
+      "title_hint": "New study says Oregon tops nation for inbound out-of-state movers. Will economic growth follow? - Oregon Capital Chronicle",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "economic growth",
+      "collected_at": "2026-01-15T08:43:49.306284"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitgNBVV95cUxOb2JLZXV3SnNpNzdXSTVsS3BYX0c0SWJ3endudTc1VE9Ha0M1M1dCTVpfR1NabURVUUNScjFaQjVyOFNtTHdYR2NVRzhUdEo3SWl4YzZFR1NndUgzdjUxU01RMUl2UW42MzROa3RhQWJpc1U2NVBBY0pDNl9sY19Va1NnR3gxZFoxWTM3UWNYVE5EVC1Pc3dlT1NjbmQ1d2x3eUE1Qk5sb2tDQlc4UElkUG1jTnZVel9kR1FHajNxYi1HUlQwM3J1UXByczlBaTRpYnFEQlNTWXJybG5fT0NDSDZWd0JoNnJhLUpQZDI2a3lCb3k1TkwwbVJ5b0dxbnBNcjZnaVRZVnQ1ZG10OFlMRUFzY3lmYm01VEUxNkxxY3lvaW9TQzhDZFRMd0pZbGlVRVlFSmxXekd6YzNpQ25GVzF6Q2xFVFFYMmp0UlpmSmVHbENVWEkzcjBHOVJhWnVnYXlwejJFSlVNb09xZ1BZTGRUWEg0UUI4SGk1RU9NNGY3SHhPcUZnZmUyaFFnMWo4dzNtSVN1TXBhYlZwazItNi1LV3V1RjZPZ1A1cWxsNm1NLUFVSUE?oc=5",
+      "title_hint": "5 Signals From the Fed’s Beige Book That Explain the Economy Right Now - Barron's",
+      "category": "Economic",
+      "source": "google-news",
+      "search_keyword": "economic growth",
+      "collected_at": "2026-01-15T08:43:49.306287"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOaFRtUmtEdVhBTmoyZ0xTVUxRZUgyaTI2QWprbmhhTjJwOTZNLTlVdllBZGplRGM5ZmRnLV9HS09rT29ZUUM5aEtKU01WNEEzQ25SMERVRGVnQS1uQm1ld3hPS09wc2ZDaEktVFRLQS1PN3hqNVJVQW1CX1JWYjJzeWdhdUJhdXhneHNVUk85OUpaZWo0T05pQWNnZw?oc=5",
+      "title_hint": "2025 was the third-hottest year ever recorded on Earth, data shows - NBC News",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "climate change",
+      "collected_at": "2026-01-15T08:43:52.094473"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NdVpVTjktNHZDakZ3TzlmZndFQS01LUoydkNGOGVpTFJGcUZnU1IwMUZXMmE3eG9lLVhRV2ZkOTJUelVGdmJMblNwcEtmV0xhbnlMZXZ5MWZwbHNjUjJkSA?oc=5",
+      "title_hint": "Climate Insiders Want to Stop Talking About ‘Climate Change’ - Heatmap News",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "climate change",
+      "collected_at": "2026-01-15T08:43:52.094500"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQc21GVEQ3VDB5U3dpX3VPRU1sNUZtcE02SjlKX3ZVVWQ4TTZYVUxlSkFtamh2a3AzRmdPazlDdnlicm5kV2JsaXlmSHFQY202bkdtaW1sMnFEbWltcWgzODJGT2xZUElndVhFZENDd2EzXzlXMVBOYXpoS0VvU3RMQmxYYnMzOWhCUjMzZGxsT3hLQVNnNzQ5QnhTZGRFRkVMdHJGbmdkNjdTZ3E3dy1sMFF5TTJ4TlBhTWtfUWpuaWlsdTZ3enB0amNCSDljdklsNE5wX1d2Q2pwQ3JuQ2dZ?oc=5",
+      "title_hint": "Climate change presses on: Devastating wildfires and intense thunderstorms exacerbate losses for insurers - munichre.com",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "climate change",
+      "collected_at": "2026-01-15T08:43:52.094504"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc0VFTUk1cUlnTG8yNGcxNmxxXzR1UUs1N0FOZnlIaGM1VjZFeG8zOGt5djlRWGVHTVRxOTNqekg5YXd2SXFtTTZTTGJvejRRVkRvLVFmeFdVRS16TjZ6cFlsQlJfd2RaaVh2R1h2dXlZR0t3bGNKSmxfWlMyNnNIRDdUT0hGazM2V3IwaXMzWmpZZlMwbVdxZUpFWXA2Zw?oc=5",
+      "title_hint": "Opinion: Despite the death of the National Renewable Energy Lab, its legacy in Golden lives on - The Colorado Sun",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "renewable energy",
+      "collected_at": "2026-01-15T08:43:55.224611"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZFhqSHhPS0V1R1R2OENoeHRtd21zRXVaOWo3LWQ1M0ZNS3RXZGlQVllwWmdYVm5yTFY3VHBhd0JKY2FISG9mM3Y1clpXSURMVGFoV3k3R3VGdmVOWnZoQWdYVXkzVW9DMnJ2N2hyal8xNWpwenhzVjlTeHpqbkR3bzlzU2JpUlk1X1NRSGN3amFZaHlxc1NrcmNoQkxPSHVfQWpzUDBXR2syTXRfX3hTSGlHUWtqcVFqZS1STWxiRQ?oc=5",
+      "title_hint": "Offshore windfarm contracts to fuel 12m homes in Great Britain after record auction - The Guardian",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "renewable energy",
+      "collected_at": "2026-01-15T08:43:55.224622"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMDVlNHFSV0d0dGNacHV3S3ZvUkRNcnVQT2RnU2daSnhBMmlqeUhxcVBmb3FQQ0VtV254aG1ZdDJtQWhKdjhHelp4RnhpQnFva2M4Y002NElhb2lHMUY1ZVdTWXNLMDViYjFCS2ZfVUw0a3BJU2hKWVZpUXNyeWQ1aV91cnNKajltZ3oxTzNhT01aZzlqb3BFcFNqbGZ5eV9lNjBTcWN2LXRiU3FMZ1V3?oc=5",
+      "title_hint": "Middle East Set For High Renewable Energy Capacity Growth By 2040 - Forbes",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "renewable energy",
+      "collected_at": "2026-01-15T08:43:55.224625"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMXRDMk8yUnhGbXdMbzh3MDZLdW9HRmVOYXpuNElReTdYSmdpMGFSNFp1T1U5VTRXVlg1S3Zmcm5xbVhjck5OSUNtblQxaFFHN0JFb3JXb3JfeUFRbEVNeXhUYnZVYWpNcHkyLWpQV2xkMzFZeDFFRXZiN1lIWFQ1d0xXX3lyR0Q5?oc=5",
+      "title_hint": "The finding comes as the U.S. reverses rules meant to lower carbon pollution and walks away from international climate treaties. - Facebook",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "carbon emission",
+      "collected_at": "2026-01-15T08:43:58.525263"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPRXNzaEpLb05feGZrejVSU0Y4WHFTMG96MDczNHYwSl81RzdhbkdVcTZqMzNqM0hIbS05bzNBeGN3T2EyRWVTLXhWMUxJMzFweWtiOHBJN1g5andUNzA4WlJ3bzI1T3R3Ny1KY0VkZ0FFQXNLOGhwdXdfeFBwNjRORUZCX3M4eWktMTBNM3IxLTN0X3hadFZWM0FYeXVhVE1jSWFULXRRcU5CQ0czdE5LVl9SWkVjZVlpUVpxcWttYS1rUEY1RjA0X0ZsNnVCN3RmU3l2bmtiWEdWQU9Rc0NaQ2g0QkY2S2s0dXRqdUt5X2F0VENkQWhTZVp5OEIxdw?oc=5",
+      "title_hint": "Printing homes, cutting carbon emissions; OSU's fast-curing concrete breakthrough - KGW",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "carbon emission",
+      "collected_at": "2026-01-15T08:43:58.525288"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUFdSeDN0M05TbDlHekNWTWFxYTVkcm5Lc0RacHVneVgyOHYtc1duUzYwRE1iVGxrYnpqQ3VKeHNnckh2d01acTh4dUc4REd6c0NJdVRXM0M4bGhpUlZ3Z1NRQjBEM3lwTF9WYW93QTJtMUw5Q0k1V0NSZDJBeFBMMldhRnh3N1FlYmY2VE5XQmRSaDg?oc=5",
+      "title_hint": "Climate change mitigation: reducing emissions - European Environment Agency (EEA)",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "carbon emission",
+      "collected_at": "2026-01-15T08:43:58.525292"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ1FYR0VUSE8wV0F1N2drS21yRktZc21qQW9KTE9TOVJIY2I5ajhCWnJsaktidmViM3QwMGF0N3RWclROb0dzSl9ySkMzWU1hMC1SX0NhdVZreVFBenE3NDJDeEVSOWpvRzJYdzIwdE1ycnRCZVUyOWJDQWFVaDFmX3prd29xMnRoMGg4Ym9OcTVhZ19HcTZld202eFRGRHJPRFVCek9ITExIcGFvX1hsNg?oc=5",
+      "title_hint": "eBay unveils first climate plan, targets net-zero by 2045 - Reuters",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "net zero",
+      "collected_at": "2026-01-15T08:44:01.698620"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNDRkdnkxd1lvdVJDTkQxX2U1TWd6eWpGR0pWYkdjWmxNYkJ2bXdqLTNFLUpHSFhZZG9UQ1RiQi1ZQ20teG8xN2dtNmxHZ2JYb3ZGT1R1WkF0TUtDbTBNQklwLS1QRjBnMW1JRDctdk14bkZGZWdZdW55LW5qNzZIYlU1T0ctWlpLTnpsN3gtNTJpX0hUdTY3Q3lOZlR1OVJKZlFadEJyRmo?oc=5",
+      "title_hint": "eBay unveils climate transition plan to reach 2045 net-zero target - ESG Dive",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "net zero",
+      "collected_at": "2026-01-15T08:44:01.698629"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWjJmcGtXa2liZ0ZHNExURGNtVVF5aVZLRkxYRF82dkVCc25aNTZpVVgyN0VHRXlNSnFmTFhTZVdfRzBnUS1jX2t0Yk5jZExfV0l2MXpoV08zWWZqLU1TalpMWmptUDBtQ0VVdllfZWFoZktFbHFiNDdleHhrU0VQZ2dDMmpzVHdhOXdUbHQzYWxUMEZiRG9wRDZHOA?oc=5",
+      "title_hint": "Radisson Hires for Net Zero Manager as it Expands Climate Efforts - Skift",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "net zero",
+      "collected_at": "2026-01-15T08:44:01.698631"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbGdIem1CamVlWV9VNF9SelZHamp6dFRKR3ZPQUdxcVVpUTVNRkZaMTlVU1FZRGl0U3cxY1k5ZWVWdHp1aFJPMzdYdUZYTHdMYlMzR2lPbmtabEJNOUlPb09hcDhUeEpyeWVFcXZXemp1VVpGbDkyVkxhSzV6RzEzUGlEZWxJVnh4S2xQR2d2T1VnQUdtV0hXOERzOUFjWVpuaFVz?oc=5",
+      "title_hint": "Ocean Temperatures Rise, Storing Heat from Global Warming - NewsForKids.net",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "global warming",
+      "collected_at": "2026-01-15T08:44:05.014019"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SWnFyUnk2X3pfREZmQUF5bmgxdFpSalJaUXBvVW13MmFCOW1BeEdXUGdpaUdscHU4c00wTDc5NlQ1cjJLTndfMV81NHVGR3VLV01sdnZ4OFcyWTNTQ1Bz?oc=5",
+      "title_hint": "Impacts of global warming on coastal flood risk to European surface transport infrastructure - Nature",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "global warming",
+      "collected_at": "2026-01-15T08:44:05.014037"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSlo0R3RXSWVuMmdZRzB5OHZhTmFBUXJueVdfOE9BMUpKWnJEc00zeS1JempXZDFjS2lRNE9fR3NLRGNpR29NMkpaQ3M4ZDluUFZEbFJ0WFVzQ2t3SW8xMk4zRmZQNzl3cEk2YUVvdk05Yzh5TUxmS2VzY0kyeDBTS1MxaTJralFkaGlGa3l6a0VNdw?oc=5",
+      "title_hint": "How seaweed-fed cows cut methane, a major cause of global warming - Reno Gazette Journal",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "global warming",
+      "collected_at": "2026-01-15T08:44:05.014040"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE50WWZlTms5Y05DMTZaUVBjYlFBSjhoSG9hcndCZ3BuMDBYUDJZeGhlZ1RJMHhseXJpSnNWYUZqUmd0U0VScGxKYmlkbldLTHZHOVRPUlhIQng2bjFqWUJLLVdlcV8wUWt4Q2xhY3Fab05nTGtq?oc=5",
+      "title_hint": "Corporate sustainability tools to use in 2026 - Trellis Group",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "sustainability",
+      "collected_at": "2026-01-15T08:44:08.169709"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQm9KQm5RQVdxbFhKbU80aDhPZUdONXQwUm5RbUI3ZkxscjA4dklfY1Jpb2RyZVRBVlkwTW13MTRIVldCTXBZM1BDQlJaMzY4SUpMODB0VzdlOFA3ZzhCYXFXblhvekdrbEppUzBmZ3FJTFNvTXdUamhQN3oyNEE4VThhOXVRUElIR1hwa05KRFhMY203QlBsNEZRV01BM19aOWFmbFdEbEU2RzFVR2R6cVdLWU9IbG8wMUI2V2RwTUhqaEpOOEFRVUdabGpnWVpEb19ZYUpvQmVOaGc?oc=5",
+      "title_hint": "Most Investors Concerned Simplified EU Sustainability Reporting Standards will Reduce Information Quality: EFRAG Study - ESG Today",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "sustainability",
+      "collected_at": "2026-01-15T08:44:08.169738"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Gd2xMTzk1c1U4VTVsSDZndkR3NnRtQ1ZMU2hjUkY4MzFXT1pLVjQ5ZHE4NFdHVXQxeDRPTVRiSHpSR200WTlKS1lhSVMzM1FZMmtFYW1SX050OGhGUEpWWndjeGU5cE5RNE1ua3ZXLXVRREdJV1MydVR4cFo?oc=5",
+      "title_hint": "Winter Games climate goals clash with environmental reality, putting sustainability claims to the test - CBC",
+      "category": "Environmental",
+      "source": "google-news",
+      "search_keyword": "sustainability",
+      "collected_at": "2026-01-15T08:44:08.169744"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBjdnRnX0pNdGRKVlhfT3VhaGZNa1p2NXMwNERYX1JZTmpSVWxnSDU0b3R1LTBxNnE3elFnb1JOeV9CSTNDZzFsQXphZHFFaGlQcXo2bURmX2h3NFA4anZsS2M3R19VWGV5c0VNakZFd0xrQ1pXdUdPNE9rWQ?oc=5",
+      "title_hint": "Trump’s Fantastical Geopolitics - Foreign Policy",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "geopolitical",
+      "collected_at": "2026-01-15T08:44:11.125600"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPT2wwSVFzdUQwS2xJWl9FU0c1N3pkUXEzREl2UnFMRG9faERLZ0RUQnJMZk1pRlo4eGg3X1g5bndmSFlZOWdzZldnNnhWYy1FMDNXb3VCWld6Qm8yb19WX2RjTEllY2xtYTY1Q0lXRnF6SEhZQkROUWp4MXFMcFA5ZWE3czdfQmRzaFNER21rNU9Na2syQ2ZJ0gGXAUFVX3lxTFBfQ2JGcWJMc3dxU0FuUW5QSlJSU2FmSU1VcWlCTkNhUFNMTlNrbHB2VktnMTJEV3hBOGZCejVlcl9aNFExNlFGYzlXakEtNF9lQ0FyYWNDVGZXWHduTlU1WHR2ZHpHRXlfVFJYWmVCSXgzWk9UWFhib1RoN0V6eVJYbEc4UUFvbDlieVAyVEx1SFMzaGJMMEk?oc=5",
+      "title_hint": "Iran at geopolitical crossroads as protests pressure regime - DW.com",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "geopolitical",
+      "collected_at": "2026-01-15T08:44:11.125616"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQTM4Y0NXQk1LUmIteDZUQkp6bXd1Qld1UFlWZVlNMWVKNndkUGVpekM2dU9rbTJXRm1QcWRBN3hsRE1CZWlGcEtfSlF5TUFzWXM5SlFVeWJLSWtMSUhHODdYV0RibmxHd0l2cmg2elgxMkVXX3BCTHpwZ2RYMUYwNDR3cU9oTEsxU2JJVGk1cGdZaDV6emxJR3BjWDZpUHVNcnVWZWRGOTM3T0ZNaEdkYU1NMk0?oc=5",
+      "title_hint": "Asia defense stocks soar amid Venezuela, Iran, geopolitical unrest - Nikkei Asia",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "geopolitical",
+      "collected_at": "2026-01-15T08:44:11.125619"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPN0dvX2xXdUJBQXVpWjBFSjhZYXhMSnJPTERNekNuZnRxbnpiWm80ZGM5WVBqOW9hamhEYTY5Rktid1FQclF3OFZ2VmQ1YXhYOGR0Nm8xNGxfU0l4Z0ZpajkzVExSM01pdjBMdElZMmgwenRBMkEwaFl4cDFRQjhQZzROTlpFNF96NE1malYwdUU3MGM?oc=5",
+      "title_hint": "In Secret Testimony, Republicans Derided Trump’s Stolen Election Claims - The New York Times",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "election",
+      "collected_at": "2026-01-15T08:44:13.889534"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaXpYY0VkcGF5NzEzQVh3OGZzUVhiWGtqVVRVLWtLbzJTVWVRMmJoMmZfWXBzMkF3bUxvMlZyRHVZNXN6UVZhWUpPNVFUdjZIWVFqbExsY2d2clhXdFlnLUxOT1hFekN0eWFOT1ROcE9xX0U4WDBBYXhqNVFMV2tvU1BZRE13VEtCV3AxQ2tmaTc1SGlqMzJj?oc=5",
+      "title_hint": "Supreme Court Sides With Conservative Congressman in Illinois Election Rules Challenge - The New York Times",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "election",
+      "collected_at": "2026-01-15T08:44:13.889559"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcC1kbTRPdERxbnVsV3IyQ2cwUkNmbGpOVWRWR1F0S3l5XzdzeC1INHI5ekNBclFWMEJkNlJEQkV1SDNjc3pnZjBOV05SSEhSWlBrc3duMFlEWEg5X2VqcUxKWDN0VlVLeHVuRHhFYkdGQUVieVFrYVVGczRxYnV4RTAyWElIQjVmRUNEeGJZVlB2TXlpd3c?oc=5",
+      "title_hint": "Candidates have legal standing to challenge election laws, the Supreme Court rules - NPR",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "election",
+      "collected_at": "2026-01-15T08:44:13.889563"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdWltZW1ueGFMNFc2b3loTnRzTHJ0XzdRR0lrUXZYazhIQXY0ajdTVnQ4RjZWZk5aXzRhS0J0d1E3TjQxUzVXLTNEY1hhSmc2eHl1bjRheWVYR2JBaHRkUzJHWEpaTG1ERExXOVVNSm1jYzc4b0xqQ2ZjUmw2U2Z1eXJLWUY1NFlobktLRXp6UEc3OEhhSFVtc3Vza1NYajYwSnJvTERrb0lzYUtKTjl3X3IxYUZQQmkzaHYya0tLMFJLSzBHOGpsLTFpYnRZZlJlWVNxcQ?oc=5",
+      "title_hint": "US International Trade and Investment: Key Shifts in 2025 and What Businesses Should Know for 2026 - Morgan Lewis",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "trade policy",
+      "collected_at": "2026-01-15T08:44:16.671067"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYWtSNmh6LTlIY3FmczVRYy1FQ3BpUGo4NHFLRGtCWk5DM2Y0bGRPekxqTGV0T0xGSVRUVUdDX3VmdTl3eFk0RTRfUkJMQXVmQUlGMnh6WFNaaUdfV0tnYm5Ga1Nzc21ULVdua1dwdGJtUklVZUdmdThhR3FSZFZHc1k1a3RvTWlYVnpTWEZHb1dGQQ?oc=5",
+      "title_hint": "US Trade Representative Jamieson Greer on the Future of Trade Policy - Hudson Institute",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "trade policy",
+      "collected_at": "2026-01-15T08:44:16.671097"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMVRsV3hGUTctbnZYRVNhMk5vdy0tQzlpbjNDR2pqYUtyWW1ldTVVMnZUNXBQTUlYRFdhQWFXdG9BTXJiM1ZCbVFveHFWSThtM1dpVkVEX25MZXhuUnMxS2F4ZWowRWNXTFdwalFrSGpfRDZCNmZ3Um1fQ3JVMzV6MzAwYjVta2FBM0Z6dGdpLVhrUmx2aWVhdUJZNA?oc=5",
+      "title_hint": "Lawmakers Warn Digital Trade Rules Will Shape U.S. AI Leadership - Broadband Breakfast",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "trade policy",
+      "collected_at": "2026-01-15T08:44:16.671101"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQa0htXzlQYjd0dWJMZU9VX21hRVVfY2xpNkM3MUZvT1ZadDNMMmE0S0RWUnp0RVRGSkJITFFTTUtIOWRCdDlEMEpYTzViNDJOamxLbzVTeDY1LURSSFJwVVpzTFlKUGN6VExSMmxGVnY3cURiSGRsdU1NeUl5OHVsbFlRQjhOVU1fMlBZWjBleFk3cFZVYklTQm1RbDVzbFVQcVFZSjdZWWsyV29naTBJUVpB0gG3AUFVX3lxTFAtbUpXcUpQQjlVWmRqR3NFN2EwWi13LXE0YUltdWQwUF9CN0UtMURFWm0zVjNtbUZuS2pCdEVvX0RmRHM4SVJTcEc5c0swN0tHd2JEUVZCOG9KTHJUWkpWY3hXRnBRZjhHSW45OFJHVUxheXRBMFl6bkJmY3ZMbXduZVpTcm1PR3pmVWpfVmJPRDBiN3lVWlJVTkNrem1KaGNuUVhPZHZEMmpya3B4enhvcW1uN3BNTQ?oc=5",
+      "title_hint": "How US sanctions crippled lives of Iranians Trump says he wants to ‘help’ - Al Jazeera",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "sanctions",
+      "collected_at": "2026-01-15T08:44:19.393156"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMjdqbzJjRHhScExSbEtIcGEwOXBweENXQVpONzJHUkhaU2htWnBEVEFVZUx2Y3Zhbl94LVdzVmRORTNGR0Voc2htMF9KZEFPanYxdHdfYjhfb0NzTnZORUtBTWljXzN4XzNSeVRhd3lvTmtfbnBsdkFOVEx2aTdXdUNRS3ViRWhPTHc?oc=5",
+      "title_hint": "UK announces ‘full and further sanctions’ amid Iran killings and arrests - The Guardian",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "sanctions",
+      "collected_at": "2026-01-15T08:44:19.393173"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirANBVV95cUxON2R6eEIwbU5DYXdzb01CWG9GWjFXSFJESkF2VVhUNnppeG9LUjdGdXJBTW45dUJqUXBobUtJVl9zNFJ2WmNtaFBQUjFyUFRkVkhuckJRRW5obGQ4bUQ2Q2NKUndLZkM5Q0xUbTVUSkxObi1iNE9obXNpYnhiS2NjWS1aNUpfdWhCOVVSQTZ0NkN1Z0ZWUmJOUzdzMTZQUEtnc0ppMTZtanI1b212S181QnFRZlZ0cWNDRDhYVy1fcmkzRHR5bW96Ml9hMEN5T011eXZlU3hiYzRMYWc1alB1MDJKeS1PRHdNb2hlM2VCUXZLVEh6UkVDVUotNlp5OExNNVhSRDNtdjF0dS1LNXo1bkpkcHdZenYzMU9pYkxRaF9QUVA4SDBZcFdtRzdfWHdlUVhoY2VDZkhxeWVxWVBoU1FvZlhmc0ptSl8zQzJ3WW54YW9GYzBZLWV2RC0zSXhiVUw4RmFKR0l3Q3BMb2xMZjk1UW1ZdXl0T2M1RlNCb0NLTTVoNHVKelpwSWtPS1VrZEx3U0NvaDRtb1BaRWd3dTVQUzJUbEVkclp6VQ?oc=5",
+      "title_hint": "Opinion | Where’s Congress on Russia Sanctions? - The Wall Street Journal",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "sanctions",
+      "collected_at": "2026-01-15T08:44:19.393177"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ2cxSjAtQVo4UE1acjhjR2xnUTE4R3NicklfYWhMN3c1N25DdC12RnpVd0pONUJDaHpxeVVCMFFDeGROWjZQOGNGaExpRzhGOWx2QnM2NUFYRERkdDNwVUZ2aWxRajduV2Q3ZFR0dWYzYWpWeTRhbmtNV3FiMDFTc0Z3dWI3NzdoMDVqaDNPcngySDVuTUJDMHB6VnN4SHRRUEE?oc=5",
+      "title_hint": "EU chief diplomat Kallas: World’s woes mean it’s time to start drinking - politico.eu",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "diplomatic",
+      "collected_at": "2026-01-15T08:44:22.134988"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUUM5ak54Q1FqazdGeVlRWmNza1ozT1NUVmpsUUVYT3ltV0FYRWgwZmlja09ueEp5aHdfeWRRbDFmVFU0SWhIY19JOUVSVS1ZNkgxLXpFQ3hsTjhCS0xQNGVVT09zVHF4VDBpSmVESGxiSU05ZHI1bExHZGJOaTBzZGJORnhvYmw4dnVzWU1YSnZsRmtBX3pLOEdGaDZhSzJCeW9xMWE5b1pfakdoeDJ2WVI5OHFyUzAzb1pMNWd4S2FMM2lyNy1GamxMaXdvOTQ5V3Vz?oc=5",
+      "title_hint": "Iran: Massacre of protesters demands global diplomatic action to signal an end to impunity - Amnesty International",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "diplomatic",
+      "collected_at": "2026-01-15T08:44:22.135003"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EeDlXVVZfcWFDM0dkRjQwd1pDV0l3OC1QdkVWQjgzeWVQNGpnU2p6dFA4eVBSOWZseTJXdzBRclVCa3Izdk8wa2hQWHYtYjZXWFViUERyT082QdIBX0FVX3lxTFBsTHhlN0xTWXFUREszUUhqb3NDa3A2TVBNbmhtT3hLa2xqRGMzM0xud2huajNJS05CSDUtSG1JXzZEN0NNcmVPNE8wSDZndXBtMU9hT3RvNV94T2xWNUNZ?oc=5",
+      "title_hint": "K-pop drum duet caps off Japan and South Korea's diplomatic meeting - BBC",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "diplomatic",
+      "collected_at": "2026-01-15T08:44:22.135006"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRlBBVG5FcU5DNkNPSDRVOHNVcEJadzBRUmN1UUFCTnVwd0VuVEdvcklPUEVkMVRkS25XSEZLOXMtUmxnTzctbmY2LWFDbkU4T2g2Yy1NWklkSkEtQ1Z2RVZqTWJMb254V2tOOHl3TF9DeUpMOEotWWpoNzVFdU1vUmNpUnNLc3dIckZpYjdZR0JYRVVsR1JCdkhOckFlU01qN0lMYzE5X0x1NWZtUmJWWGJKSm9uX2xVemg5cDJyQUs?oc=5",
+      "title_hint": "State attorneys general sue US government for conditioning funds on transgender policy - Jurist.org",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "government policy",
+      "collected_at": "2026-01-15T08:44:24.894933"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONVV2QURadWRiajFZcTZRU2JfTUp6TEEtYV9pNU5MekZLZTh5NkxMOEF6aGctc2VPbVdCYkhUb2hHTW9CMVFScWh1cm83OHZHc3ZMTmZqbjFPcmEzVzFvdnoxZnFpdVZpcVVlbE9GcEp5cGptYlRDcDZvbGFJX3lNeVhYaGl4TzhGYlJ4WDhKUllEbEJEZ0NWSnFFRWxMRU5qaWM5cmQ5dmU?oc=5",
+      "title_hint": "Bristol adopts penny rounding policy as federal government stops production - WFSB",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "government policy",
+      "collected_at": "2026-01-15T08:44:24.894958"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQalNXdy1VbGR2ZDJFbEpFSWxUZ1pqRkhmeUtwZU1QSHBXQWQ4TnZtYVZDOWlfVVBoMEhWQnNaRmd1SmYwbkNnRnhGRm1raE1rZzkwcm42ajNuaVlLODNpUWpJUzRrcWh4UjBXT0c4Sm1sM3JMMWRRaEdGZHd2UEU3bE54Y084Nm43ZXh5bU5zSFY2aDlBUXlQczJFNFlfSFNQSFFrVEdrUlJXNWxn?oc=5",
+      "title_hint": "Local Government Policy and Practice: Capacity Challenges in Local Government - Michigan State University",
+      "category": "Political",
+      "source": "google-news",
+      "search_keyword": "government policy",
+      "collected_at": "2026-01-15T08:44:24.894962"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSjlkbHptLXJhM25KSHhFcmpNN3hrcy1mblQ1d0xlc1lwMWFSb3dVa1NiMGpFSlF0TFZKU3dYRmF5eU9hUmswNUYwNDQxVlVaTnJJZVBTNlB0M3VBX3FOMHZ4X3VJV0FDVnAxM0dfalJoZnYyR1BGelByUTJwaFV6aVY3LXpFM2dTdGl6VzgtdXJ6alhLYzBjT3lIbTRVOFJRMGxoMElfWQ?oc=5",
+      "title_hint": "Arab world faces sharp decline in birth rates amid demographic shifts - middle-east-online.com",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "demographic shift",
+      "collected_at": "2026-01-15T08:44:27.634120"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNVJYSmg5ZTEtVF9ucEx3eWZxUUtmVm5TektQam1adnV4bk1nOGRaU0QxUXo1N21jZTZUUkNZdkpLY0lLZndtcF9MeFR4XzFTTGdGYVpiRDRHSEFnTzNBR2tsV0hIZVdQMjVmNU5iUFlSZGN2U0lyVklmYm9VLWxfaGlaa1R4QXpST3k0ZXhBTEY5Q0hDeTc2akhpTVIzN1libTJQc082QmNLX1pPMzVZeDhoUkFjVVRoYjdpbjZNemFsam5VdnBaMTRlY1Y5a05aU3NR?oc=5",
+      "title_hint": "New faces will represent Charleston's peninsula. Their election mirrors a bigger demographic shift. - Post and Courier",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "demographic shift",
+      "collected_at": "2026-01-15T08:44:27.634128"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRXRZbUdFZDlHbWtrcFNFeHNWUVctM3pvNU5YejRxbkVRcXUzNVQ2cVpmdGFoX1F2SmZNcnl2VENSQURzcGxScFhVdUVLLUxNMmlQNE92SFgzcnRUenQ0RTJXYUF3WlppcXNJQ1VHWmktaWZIVUNocHhsMGMzWmt4WDFtVDFMbmVoUHV3NWFOMHZSZHdnelE?oc=5",
+      "title_hint": "What to expect in US healthcare in 2026 and beyond - McKinsey & Company",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "demographic shift",
+      "collected_at": "2026-01-15T08:44:27.634130"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSGNDR3ZwamIwREVPRzBzbGRGTjZ1TlI1VnAxM2Zmai0wTVpEMkloUDA1dXBwbEp0NnE0YXhzS3VQZk90M2l3bnNaZ0JkQ0JKNXBTMFpCdGZob3Bkd05YLVJoNWNiYmtHX25LNlJxRExLWDRCOUpETjBfcWlTZmNYNGYwVWZzRlVPNl9uRUttdmozeWc3aFczRTRmMWNKZjUydmt0cXlYLXl1X0xMSndJOXFaT2J3dw?oc=5",
+      "title_hint": "Trump administration sends letter wiping out addiction, mental health grants - NPR",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "mental health",
+      "collected_at": "2026-01-15T08:44:30.569042"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYWJTYV9zUDJRajRJWVg0Vmd6blVFZkxxWldUVjN3ejJjZGk4bDlqeVpaa1JWaWFBSlg2bzN3QnZhSmFIaXVIOEdIZEg5TGlWaFg2ckJYTktSVG4ySEtxbWtNUk4tWHZLT21TQW5fdFBzV1gxWTRfYnk0b3hSNkxvY2RxNW9MaG5JQWVTYV91Yw?oc=5",
+      "title_hint": "‘People will die’: Trump administration cancels up to $1.9bn for substance use and mental health - The Guardian",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "mental health",
+      "collected_at": "2026-01-15T08:44:30.569069"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaExaRDBQWDFkWEZtenVFbjAzX3RRQWh2V2FBdHV2LTRZQ21RRElRTVdvTDF1dHhIMTVrRGJQTFB0eGstUGZLdUpVamFRU2Z3ZVhFVGFaM2hVMU1VVThLcGkzZVpLaE40V1E3Ny1FMkhuTTI2WjJGM0FVVWhfejItQTBSN0g4YWNyY1NQeVVpdWF1ZWFRclNlNlh4S2dVTVhEOHl1SUNyVVhjNlRPRzlCSEJ4Uk9ObTBsdEhOSlBuUDE0VTZmSFBpLWR5QndwNHVKYUpZQldWVUNubTg?oc=5",
+      "title_hint": "Maine lawmakers consider bill to expand support for court-ordered mental health programs - WGME",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "mental health",
+      "collected_at": "2026-01-15T08:44:30.569072"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zVk1nQXpPaUJQeGlRTnV4WURwZ3VSY0J5N0lyUHRTVllKWUFWVExxTi0zclpKUW5YYnpMY1U0RWl2RDl6Z3BPVXlxRUZNNGZ0VkctQ3d5aHRsM19TQ3llcVA5XzBBR21iQ1VYLU1TMWRVV3c?oc=5",
+      "title_hint": "The risks of AI in schools outweigh the benefits, report says - NPR",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "education",
+      "collected_at": "2026-01-15T08:44:33.794524"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLUFiQzhMMWhpeC1VRVc2aUZ5UUFFN2pNQ3JqMHgtR0U0N2wyQUZzTXhfY09lMWMwUVpfdUNPNm00NFBLNEMtZXdIRDNiTnJEQlQ0ZjFHNy1TbkpJWHozWDdNSU5EaHpSbU14V09MVTc1YWpkOUpLem9keldIeDRWUU55aXBoZmN0MWczVTNyUVpreFViOHNKeE9OaGVmdlo3d1J4MTFn?oc=5",
+      "title_hint": "A new direction for students in an AI world: Prosper, prepare, protect - Brookings",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "education",
+      "collected_at": "2026-01-15T08:44:33.794531"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPME11SUFQR0t5aEgwb293RlZiWjg0ZE5jV0dwbWlELVF2OEY5NzBabVVtNHBENDdIcEdkc3Vob2J2d2lSQ0VacFJZaTJod1BaSmJ1WmExNmpPYXNIUDNvR1I0OVQtcXlsSmtad2hPZURhN2NSTUVIM2l4blJ3T29EeFhWNmx1cTd5bUhiZUNQTnpPd3ppdjJKLXhSbHl5R1poSzUxMDJtcXRvNGxJYllNZVJkQVcyb1N3?oc=5",
+      "title_hint": "Fed Regulation of AI Is Virtually Nonexistent. Is This a Problem for Schools? - Education Week",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "education",
+      "collected_at": "2026-01-15T08:44:33.794533"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGQ093RDFZdUxPSGoxbHNZdHJvUF9aSjN6dUNnRmNWUGpwaUswemNqVWpFMjB4OEF6Q1huWkZvVzBWSlQ1RUg4OFREYTZQNng4d21BQndYRi1OenJUQmx3Rkt1Mm9HNWhxTExtZXRJSjJWdGFH?oc=5",
+      "title_hint": "Ageing and health - World Health Organization (WHO)",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "aging society",
+      "collected_at": "2026-01-15T08:44:36.925738"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZlNqVUtBMkhTYklBUDcxbGdpZmVlai1FZzh4Tm5iYUNqc1FKc05EemRhVWJpSWJqQjAxSm5mYTlNTy1JcWxYN0hVSm1WMEhGRTJQQ09pMHJsWFVFTGVDSXlWNTdOMllxTzczSTZBcWw1YkNtdjFUbHo3VTVNR0hEZExMdGdaZldOLVg3VGk0d0s2N2EtWnQ0Uk5KQTJDSjlDYU90dmx2cTZIT2VTMGo2c2FIdDJLc3drUXZRUm15ZzBnN2x2WGVZXzdDOW9nY2p4TmhtcVY1a9IB3AFBVV95cUxQakFObjJEWlZJNkVrRHk5VjNwbElPVFhXY21CWUp4SW5lSmJ2U2xvN20xeE5uZUdRaUJWRng5NnNPWjJCbm1JQU1QMXJ3dDY5bUE3TkpyZ1JhdlBhTUI5aVEwTGJGUklTeHlkYlRLOTNScTMwSWJJOG9RU0FwT3lNcGs4NVhNdTREUVBkeWpreEJHMTNBUEgzUVFXMEdsMklROVNmTW5aR0lfNXdZY1ZPUlI3LVNSNXVmekQ4MlNlU3BFeVFLWWtXMmtwVlFQMXJTLVhZZmZzNHJOS185?oc=5",
+      "title_hint": "Travel agency CEO turns Korea's aging society into opportunity with tailored experiences - The Korea Times",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "aging society",
+      "collected_at": "2026-01-15T08:44:36.925751"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONjFRV0x0LXpFYzJjTDNRalpKZk5manIwZk9ZYk5uT3NBMWJpZ21uNUFSMFJUWjZDZHB6TGxqNEUtbTFfRi1XQmFmVU05RGFhWnFkTHlyZjFfUGVlZjVCQTBqQ0RLQ3d3eFBobHA5OHUwS1ZKUi1pRmFCQVVla0hvQUtaN0ZIdlRkX0VnT0l4YVN0X1EzREE?oc=5",
+      "title_hint": "China turns to smart tech to care for a rapidly ageing population - AnewZ",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "aging society",
+      "collected_at": "2026-01-15T08:44:36.925754"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DVkZmeWwtQlh2MTlYOEd3aE1oSkt1WEVLeUwtRjJwZlVGZF83U1hwaXVZMFdIZ1F2cmgtZEdlRmp0TmM2bXF6VU5lTmJMc2YtSmZLVFp3aTF2bXBo?oc=5",
+      "title_hint": "A meta-analysis published in Nature challenges the link between economic inequality and mental health - EurekAlert!",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "social inequality",
+      "collected_at": "2026-01-15T08:44:39.671593"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBLaGtmOGpRV1lqMVE5RUVuRlN1Y1BlRGdabnlqREVIRnVpNDdZUDZkRXVXX0ZXVy1BTlFlUFNzSXRZUW9fQ0ltbEJvdlF4Sl9ZeGU0akxqWGZ3VE1IZll3?oc=5",
+      "title_hint": "Multidisciplinary analyses and ancient DNA reveal social inequality and mobility in the Central Plains during the Eastern Zhou period in China - Nature",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "social inequality",
+      "collected_at": "2026-01-15T08:44:39.671606"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mQUhxRzUxb1FGT0gwenZoTlV1ekxHVjhlNzM2YVVVZkhkOFItTS1fdk9VN0czc0YzQUQ4OTlDYnh2bERFekU0ZGk4akxONFdYenc2VnBWMG03dWxacnQ3eGplNlI0SW13QVY4?oc=5",
+      "title_hint": "New Hampshire Humanities Collaborative - University of New Hampshire",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "social inequality",
+      "collected_at": "2026-01-15T08:44:39.671609"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNdXdhQkcyZEp4OEVrdF96M05GU2hUSnNfb2kxUk1uMnZocDZYbVVDdjBlNWlrVk1CajB6dUJwRDg2M2FzRzRtenpnbUUtck9VVnRZTFZkc2VGWG42LUpBSW1HWDEzOGlHS2luUXd2LW96M3VMWlZiNjlkeU5Edk1hWnQ0aHZkcF9VNkIyUHhUeVVDem1LbkZMYzdFekJZMzhWMEVGZHNGaUpzT0w1SnhwRVgwYW9jdFRBMjNRemxQRW9MdTBzYXJTYmRGWFlPMHFxRUFzY2oycDZTckdoT2xwZW82X1I3VG5sbEtCMVRXYTJxT0xiMzRLQkNra9IBjwJBVV95cUxNQXgtTXFSckh5aEhNUDNiTjNabnU4cDY2b0VxVk84Y2dZLUI0OVJvZ0hmSFVIQlBvamQ1VWZjbkloM21SXzhBNDZYOUpFMU4xTDVLazcxcUI1WGo3SEpxUVR5ZGxNUlNOQWg4QW9tU1pQNm1IOG9PUmUwUW5aWEJOS0F6VGtqb0taMnlFOFhnb1NjOTRtNkZxRGd5aW5vTHBxYV82cUxUQmd3RjZSa1JMZDlFYkY0LVVUbFZRR1htSHhKTlRIZzF2dm13c25FOHU4Nkg1ZTNhX29jYVZhSmJpQ2Y2bHU1REZmWVY3X3Vxb2lQTWJYZWc5Tmp5ZVNYQVBSOFp0NDRhUks5dWhQTHRv?oc=5",
+      "title_hint": "The long shadow of the one-child policy: China pays for its biggest social experiment with a demographic crisis - EL PAÍS English",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "population crisis",
+      "collected_at": "2026-01-15T08:44:42.783964"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeFBTdTBXaHhwc2MwZVowYmxZTUVQejlrcW5fcFI1MWRDaGdMOW1HV3dPeVFwaFo3UlVudjRHUnRsU3AzMndrX1VwdGVuMl9NRS0wSElfRnhKdUEwVTZDei1HNERMcV9JdXJTYUZyR3h1SWRzUFRWTGZ5WWMta2NIOGNCNVhDY1lPLTNQcW9kZVZ0SjlNUVNjZDNn?oc=5",
+      "title_hint": "COMMENTARY: The Population and Climate Crisis - Daily Kos",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "population crisis",
+      "collected_at": "2026-01-15T08:44:42.783973"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPenNlYjczSjJiTjJSM2d4Qk45OUI1bFJUYVIyNzlROUoxVkVsNm1pOExpOFYybHBsRE8ydXdaT3doZ0JoT1J5TVF3TEJiYnVRdThzTXNEeFZCUW9IRHBCRFpKQ2JPT1dLXzRhN3BfNC1CdXFOcC14TGxIV3JBZktVTXBST0FnVkxkS055TTF5OVM5SjE3WF9DYlU4ZEJSVmRqNzlGY0dXM3U4cWlZdHoyNnlGRzYtbnhwNkxsVkxOMWZUUmdmNXc?oc=5",
+      "title_hint": "France's population decline presents a political challenge - Le Monde.fr",
+      "category": "Social",
+      "source": "google-news",
+      "search_keyword": "population crisis",
+      "collected_at": "2026-01-15T08:44:42.783975"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SUVBhdEF0ZFhjV1BlcDU4T2JlSWtpUkI5czVwNEdLZXhudzVUaWs1MEtSUzJrb3oya2V0NjFBWllnR19uaUMtbW1SVE1XcWk3ODBDb00xR2pwWnNPVWRIY0RBQTRSS0xjWUVCaUdBVHQ?oc=5",
+      "title_hint": "Targeted mindfulness and self-compassion improve long-term stress reduction in distance learning students: a randomized trial - Frontiers",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "mindfulness",
+      "collected_at": "2026-01-15T08:44:45.652796"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8xclFzN203UEpvREdwTXdBeTdxOXhjQ0hVN2ZMWE5DcnNZU3VCcDh3Q2VndVQwTFU3ZGJpX1YwTWs0Qkl3QndqU2VCaTNEZUlVNzJZYnVOUkM3RVA1dmlfMjM0d2hreGVja0VqZ3ZyMTc4azVFblNFaDA4WGM?oc=5",
+      "title_hint": "Mindfulness Won’t Pick One Up from Marin Hospital - pacificsun.com",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "mindfulness",
+      "collected_at": "2026-01-15T08:44:45.652803"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVjhPNkt3LV9ubWE4UTc2T3RJMDJwdDdXRDY4SUwxLV84R01QVDZiNWFSNzRzaDF2U1F6eUx3RFJoN1U2SmhhLWo0VFFBbFFsbTNOSnNKRFJWZGN3SWZqbXV3Y3YwbXpkZEZscGJabDNmajhZdHhXQXNDZmpaNlR5MXRKZEZibW5Gc0NqelloQUFYYkpqQlREQjFMVmV1bGZySE9PbnFsMjl3NUwyUXpkRlVBYl8zVEVUdXfSAc4BQVVfeXFMTWZIeW9EOXpqM2dkcE5MeVZQMUFGSHVGY3FQYU5nTUxUZ3NZb2dweGVDeWRmc2tNZ0Rfenk2cGl3ZTJkb1RiRTdQTDdlclhidS04cTUxZ1luby01ejUwMXFSVG1tU1BwSXdHOEdoWDRtTkJQTTB3UHR2OXo4M0JEeDhBNkJ2RzdBalJ6cmZ1SXdOdW1XVnVoT1k2YXhzRFhjZmFjREV0aV9OY0I0ZzFuV2VtZEpwYzNvODBpLVRtYXRlbDZQZ0lGd014cmQtNmc?oc=5",
+      "title_hint": "Monday Mindfulness: music and meditation go hand in hand on Upper Michigan Today - Upper Michigan's Source",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "mindfulness",
+      "collected_at": "2026-01-15T08:44:45.652805"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTFMwSTNOZ3pzRnR1UG9KekdrTklKRW00d0g0TVBNXzdEdmVMSkxzVWYtbTNBaEpuN3NTSk5FckkxSTVFWmdLTmlvaVNuVHRROVpsQTFuZ21janFyZEgxN3luQS1naDNNOE1FY1NQbnJMM2hFUjlXZ3hQR0o5aE5xWnNrXzc?oc=5",
+      "title_hint": "Tired of the wellness industrial complex? Six rules to ditch – and what to do instead - The Guardian",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "wellness",
+      "collected_at": "2026-01-15T08:44:48.407933"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWW4wcTNyU0ljaFp0SU5nLUhwbm9rWVF4UGcxVkEwMjlCT0xMQnZBek54dFpVSy11NVc3YlBFWlBYNVBBX1RQZWd6eUxrYzgwdmgxcUotbDBUSmxfZmJ5cDg5MUhVemJYWlRBQmMxaXpMUWlzbVdEZFZxQkRXUzNzMkNhaG9jRGZxTDJFaWl0RHdTTnZOZEVDSEgtNA?oc=5",
+      "title_hint": "Europe's new steamy, semi-nude wellness trend - BBC",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "wellness",
+      "collected_at": "2026-01-15T08:44:48.407958"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxPZmFTZkpCQ09LNk9OQkVUMDZRVFQ2NEUtUUdZTjVXZzhBdDNFQVNlTy00allrdjduN2U5QU4tRVJaSWtYYjI4UWIyeDV1Y2lIbFk4RU8zaDhBSmJiTnJ6YVZ0OWtkZlEtNVQwS1FEWGhGLVpnVnpLQmR1bTVrS0hEbWRuNURnb2JPdF9GWXEyQmVoMDFuY2Ywd3AtS0JTU2I2T1ByWmVwbnBiYjFJaXVOQnEwVDlIamV5MkJzU2NacGw3VHhiNHhkQncwQlNXcmIxRUk1bHFSNW03WWdqQ0lMNEh0U09sX0hvd093aFhoSjBfeEtZRmVWdmc4Q1ZXT0p5RE9uelh6bWhpaGFRRW9EaWpTR2pBZzE3dzBrdFZLanVRODFXTTJFbTF3SElxbzRaNWtocTZSa0tTZjRMUVp6Sl9mU0l4VmtPeEdFZjZ5a3VOaDVNQ3ZlZUJqdklRNzBIcklwSVFvdHU1WmdpY2VsSXFxc1ZBd240VGpZSXdNNThMLXdqNFpzM2tqY2FIbTZaZFVF?oc=5",
+      "title_hint": "I was the queen of wellness. Now, I just want a drink - The Times",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "wellness",
+      "collected_at": "2026-01-15T08:44:48.407962"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ05EN0lXdVJWalF4ZlFKbF9PMG8xWmNteS13MDBWeHpiX0sxVWxjYkh5UmVQRzg3ZzlORVpzOXdpT2FaODV1MkFsemRYenRpaldrelFWaWxmRUJ5WG9WSnFacXhObkk3SnRnZVFheEFOc3V3SmJzRG1DZnh2T2tVcjN6X2h6Y1VTeDhYVDFmRWtxclhQaVRESGxTWm92alJDRUo1SnBPT0drMFVyMjZCeFczcERpV2FQb2c?oc=5",
+      "title_hint": "Meditation, vitamin therapy can transform lives, says wellness bus founder - WGCU",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "meditation",
+      "collected_at": "2026-01-15T08:44:51.150367"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsZi01eW5tU2h3bWRvc0RpWGM1cFdtZGk0Q3ZOMk5yUWo0ZDZncERwRG5KRXdhamhLaXRpUzZWTnYwNU5WR3NvZzNld051NnFaakF2b0lMZlJYUXJBOHBXbVE3eElsWFpaSXc?oc=5",
+      "title_hint": "Why We Need Meditation in the AI Era - Time Magazine",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "meditation",
+      "collected_at": "2026-01-15T08:44:51.150388"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBSNGp2azcwNDdMNU91Z0hRY1RXckY3NFc2M0FNLWQ3ODBGOGxIMVliaHAxQl82b3B6ODQ5V3ZJT3lRa2NGQkVUV2pKS1k2em5UZUhORVNEblh4NW54NGplVXlfdTFDTklmZHd6bVJ3TTZEeDN1V2xOcGo4M29CQQ?oc=5",
+      "title_hint": "Guided Tonglen Meditation with Judy Lief - Lion’s Roar",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "meditation",
+      "collected_at": "2026-01-15T08:44:51.150390"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNWFvLWZZQlRkWnBJTWVkMzhuMkgzVGxjZXlodHRjWnYtNWV5ZUlrRXJjLVRYNHZ1RUVZRU83QU9tX096WTVzSHJGZEhHbGtfbEVSLXZ1TThkYVpDdjNYaUN4SXdjQzByWWwzRU1pQ0NfeWJtcGRKVzh0cUNfZzl4MUtLRkJIZ0lTV3lB?oc=5",
+      "title_hint": "SBU and Ethical AI Innovation - St. Bonaventure University",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "ethical AI",
+      "collected_at": "2026-01-15T08:44:54.509114"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QaUVvNzVnazFDdV9aenN1NDJSdlNoRnNTcVRNcjd2aHFtNHJUNlo3VXFReUxQcW1Wdy1CUUlLNU5QLS1ieHhWbC1NVDMzRklhTnc5RENEamtuUWo1ek1YNDFyeHdQVVZHa0l0Nk52d2JqOG5VenJFcVdpcU9ZUGs?oc=5",
+      "title_hint": "HLS Beyond Presents: Ethical AI for Lawyers - Harvard Law School",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "ethical AI",
+      "collected_at": "2026-01-15T08:44:54.509138"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90S0V1VmI0Z1laTUxlZGtQcWJnMEF1OTIxaWlveGFwSnhZeFlrckRWX1JoOTJFZlA1N3NPdl90bks2N3BiQXlNWi1OcFBmakhPTDF2ZTNRLXBQcEFfd0ZkUmMyaDQ0M0lpUFYtbjJzMERlQkxVRG1ITDZ0LWQ?oc=5",
+      "title_hint": "Ethical questions arise as AI use grows - The Martha's Vineyard Times",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "ethical AI",
+      "collected_at": "2026-01-15T08:44:54.509141"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9pYTZOWmhhNEFlNi1JMzRyMHRvekhIS096bENUNDFmRTVLUDh4YTB0bXE5dEpDemlsQW0zeVQ4OW1adE4wcWtDOTIzYjg5dnpRSDBqclNpZnhjNHhMam5UN3J1UFNXTHFmVUdrajNZNmo?oc=5",
+      "title_hint": "Is Life a Game? - The New Yorker",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "meaning of life",
+      "collected_at": "2026-01-15T08:44:57.457097"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYmtlN0Y4QzF0TDR4UkZpY1h3VUJXQ2FZV2tneTNXRFg5ZjBSNVhkakpDaURXTmRyUl9IalJFQU54VHpmOVB1OUdnU2k4Nlc4bXJhMDdBc2NrRHJ0T05jX0owTUdNU05fR29wNmtYRkpsN3BDWGZxdW00cTRKYkpQc0U5ejNpNGJGVUhocm1rcU02dGNfZFhjUnN5N1A1MnRRdGFkZGVsWmdReDlUWkl6aVNiemluTWVTeF8wUDZoOE1QRW9KaHNMSlVJUEhocElpWDhURThSQXczZWZ3amhr?oc=5",
+      "title_hint": "TUES PT 2: Bobby Discovered The Meaning Of Life + How Bobby Survived Before - The Bobby Bones Show",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "meaning of life",
+      "collected_at": "2026-01-15T08:44:57.457121"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMEtZLTlZVWpCT1NoTXVielNWc3FOUU1pYWpwVHpPZ3lhWmh0djRjYkVtcjY3SW4zUXB4bkFmYVRNMHMzX0o5Q295Qlhmb256azg5eURHczRyYTlqaGhZbHVSUUlHeTFXd0VTWWRNaEJJNHRrLWtOUUlUdDlLYy1oaUZzLVdXV01CMEZjRTVrSERZc2lIUEZLbUdCMm9pUURZa2VZS3ZmU1FneE5RaHpIMDBn?oc=5",
+      "title_hint": "Pope baptizes 20 children: Now they have the meaning of life - Vatican News",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "meaning of life",
+      "collected_at": "2026-01-15T08:44:57.457125"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQcDNxNjR3MDBxZHB3clVxcElPNXg5UkxVdzlKb2U5Qzh6OWViTzNBM0c2RmlIamhweUJZQ2FaMHNOaVRjWWdsSzdQanRCcXBIZ3lHQXJSMVR2VG16VDlmc2Z4UTlPUGM0MlgxaHNjeEUyOXNuSGU4TkdnRnU?oc=5",
+      "title_hint": "A spiritual resource for warfighters - wng.org",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "spiritual wellbeing",
+      "collected_at": "2026-01-15T08:45:00.306947"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE12RHNWNGgtZmlhYVBrSjBaRi1od01henNDUHNFVDl3cEZVd21RM1FfNXJFU0FKZ0RwYlRxWkhoQXN0Wmp0T2ZMUTh1VUFaM1ZRQ1NPT1JGSjlKdHhmaGkzdEVIT29IdFlKZnlYOXJxek1OTTNVMERoRkExSnA?oc=5",
+      "title_hint": "Spiritual Health - Fred Hutchinson Cancer Center",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "spiritual wellbeing",
+      "collected_at": "2026-01-15T08:45:00.306974"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa0RYNG02dGQxTS1aQW5xRk1uc2NvOXNpRmJKY1M1bV8zUE5sVjV4LWNzNWg0QkNEQTR6cTBhNnVJYXhBWnZSRXNRNk4tR2FlRGNGOVRlMGRDa0t4ZV8tcGhMWmVEYVY2YWE3R3FaU1E0MUVTWXRuUE5ZS3lGT1dqb1FaNkRBNnFDSDFpM09LQU1rNkFKOElpalR4ODNkeGwwWUpyYzR6QQ?oc=5",
+      "title_hint": "Beyond the physical: Spiritual health and the aging journey - Mayo Clinic Press",
+      "category": "Spiritual",
+      "source": "google-news",
+      "search_keyword": "spiritual wellbeing",
+      "collected_at": "2026-01-15T08:45:00.306977"
+    }
+  ],
+  "stats": {
+    "Technological": 18,
+    "Economic": 18,
+    "Environmental": 18,
+    "Political": 18,
+    "Social": 18,
+    "Spiritual": 18
+  },
+  "total": 108,
+  "collected_at": "2026-01-15T08:45:02.311593",
+  "source": "google-news-crawler-v4"
+}

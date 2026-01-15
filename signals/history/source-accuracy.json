@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "created": "2026-01-14",
+    "last_updated": "2026-01-14",
+    "total_sources": 0,
+    "description": "pSRT 2.0 Phase 3 - 소스별 역사적 정확도 데이터베이스"
+  },
+
+  "sources": {},
+
+  "schema": {
+    "source_entry": {
+      "domain": "example.com",
+      "tier": 2,
+      "total_signals": 0,
+      "verified_signals": 0,
+      "accuracy_metrics": {
+        "overall_accuracy": 0,
+        "timing_accuracy": 0,
+        "content_accuracy": 0,
+        "impact_accuracy": 0
+      },
+      "realization_rate": 0,
+      "false_positive_rate": 0,
+      "trend": {
+        "last_30d": 0,
+        "last_90d": 0,
+        "all_time": 0
+      },
+      "calibration_factor": 1.0,
+      "last_updated": "YYYY-MM-DD"
+    }
+  },
+
+  "tier_defaults": {
+    "tier_1": {
+      "description": "학술/정부/공식 소스",
+      "default_calibration_factor": 1.1,
+      "examples": ["nature.com", "science.org", "gov.kr", "whitehouse.gov"]
+    },
+    "tier_2": {
+      "description": "주요 언론/분석 기관",
+      "default_calibration_factor": 1.05,
+      "examples": ["reuters.com", "bloomberg.com", "ft.com", "economist.com"]
+    },
+    "tier_3": {
+      "description": "전문 매체/지역 언론",
+      "default_calibration_factor": 1.0,
+      "examples": ["techcrunch.com", "theverge.com", "wired.com"]
+    },
+    "tier_4": {
+      "description": "블로그/트렌드 사이트",
+      "default_calibration_factor": 0.9,
+      "examples": ["medium.com", "substack.com"]
+    }
+  }
+}

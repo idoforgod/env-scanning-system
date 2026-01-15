@@ -9,7 +9,7 @@
     "date_format": "YYYY-MM-DD",
     "hierarchy": {
       "data": "data/{year}/{month}/{day}/{type}/",
-      "weekly": "data/weekly/{year}/W{week}/",
+      "weekly": "data/consolidated/weekly/{year}-W{week}/",
       "signals": "signals/",
       "config": "config/",
       "src": "src/scripts/",

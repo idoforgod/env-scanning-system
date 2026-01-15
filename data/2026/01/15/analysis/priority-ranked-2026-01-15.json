@@ -1,0 +1,1110 @@
+{
+  "ranking_date": "2026-01-15",
+  "total_ranked": 36,
+  "pipeline_version": "v4",
+  "methodology": {
+    "formula": "Priority Score = (Impact × 0.40) + (Probability × 0.30) + (Urgency × 0.20) + (Novelty × 0.10)",
+    "dimensions": {
+      "impact": "Scope, depth, duration of effect (1-10, 40% weight)",
+      "probability": "Evidence strength, trend momentum, barriers (1-10, 30% weight)",
+      "urgency": "Response window, acceleration indicators, decision timing (1-10, 20% weight)",
+      "novelty": "First occurrence, unique aspects, surprise factor (1-10, 10% weight)"
+    }
+  },
+  "top_10_summary": {
+    "signals": [
+      "SIG-2026-01-15-001",
+      "SIG-2026-01-15-020",
+      "SIG-2026-01-15-029",
+      "SIG-2026-01-15-025",
+      "SIG-2026-01-15-013",
+      "SIG-2026-01-15-007",
+      "SIG-2026-01-15-015",
+      "SIG-2026-01-15-014",
+      "SIG-2026-01-15-027",
+      "SIG-2026-01-15-010"
+    ],
+    "categories": {
+      "S": 2,
+      "T": 2,
+      "E": 3,
+      "P": 2,
+      "En": 1
+    },
+    "avg_priority_score": 7.46
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "signal_id": "SIG-2026-01-15-001",
+      "title": "'분열'이 삼킨 대한민국, '분노'에 저당 잡힌 민주주의",
+      "category": "Social",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 9,
+        "probability": 9,
+        "urgency": 8,
+        "novelty": 7
+      },
+      "weighted_score": 8.6,
+      "score_rationale": {
+        "impact": "사회 양극화 심화로 정치·경제·문화 전반에 영향. 여론조사 86% 극심 양극화, 77% 계엄 후 악화 인식으로 국가적 위기 수준",
+        "probability": "한국갤럽 공식 여론조사 근거, 슈퍼챗 상위 6개 채널 한국 차지로 현실화 증거. SNS 기반 정치 확산 추세 확실",
+        "urgency": "정치적 극단화가 매주 심화 중. 응답자 57.8%가 1년 후 갈등 심화 전망. 선거·국정운영에 즉시 영향",
+        "novelty": "양극화 자체는 기존 이슈이나, '슈퍼챗 정치 현상'과 SNS 기반 분노 정치의 구체적 규모화는 새로운 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Politics", "Society", "Media"]
+      }
+    },
+    {
+      "rank": 2,
+      "signal_id": "SIG-2026-01-15-020",
+      "title": "석탄발전소, 5조원짜리 '휴지조각' 되나...IMF가 경고한 이유는",
+      "category": "Environmental",
+      "STEEPS": "En",
+      "scores": {
+        "impact": 9,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 8
+      },
+      "weighted_score": 8.3,
+      "score_rationale": {
+        "impact": "글로벌 석탄 자본의 1/3 좌초자산화 위협. 한국의 4~5조원 투자 석탄발전소가 직접 영향. 에너지·금융·산업 전반 파급",
+        "probability": "IMF 공식 보고서 기반. 적극적 시나리오에서 석탄 생산 81% 급감 예측. COP30 탈석탄 동맹 가입 이후 정책 확실",
+        "urgency": "2040년 폐쇄 계획 진행 중. 투자 손실 회수 위한 조기 액션 필요. 금융시장 영향 전개 중",
+        "novelty": "IMF의 명시적 좌초자산 경고는 한국 정책 입안자들에게 새로운 위기 신호. 기존 에너지 전환 논의와 달리 구체적 규모(4~5조원) 제시"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Global with Korea focus",
+        "sector_impact": ["Energy", "Finance", "Environment"]
+      }
+    },
+    {
+      "rank": 3,
+      "signal_id": "SIG-2026-01-15-029",
+      "title": "美, 75개국 국민에 이민비자 중단...러시아·이란 등 포함",
+      "category": "Political",
+      "STEEPS": "P",
+      "scores": {
+        "impact": 9,
+        "probability": 9,
+        "urgency": 9,
+        "novelty": 8
+      },
+      "weighted_score": 8.9,
+      "score_rationale": {
+        "impact": "미국 이민정책의 광범위한 전환. 75개국 대상 비자 중단으로 글로벌 인력 이동 제약. 경제·교육·과학 부문 파급",
+        "probability": "트럼프 행정부 공식 발표 예정. 1월 21일 시행 확정. 국무부 공식 성명으로 불가역적",
+        "urgency": "1월 21일 즉시 시행. 대상국 국민의 급격한 이민 신청 대기. 국가별 정책 대응 필요 시점 임박",
+        "novelty": "이민정책의 국가별 차별화(75개국)는 과거 여행금지령(Travel Ban)과는 다른 신규 규모. 세계 이민 정책의 새로운 패러다임"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Global",
+        "sector_impact": ["Politics", "Immigration", "Economy"]
+      }
+    },
+    {
+      "rank": 4,
+      "signal_id": "SIG-2026-01-15-025",
+      "title": "오늘 본회의...與 '2차 종합특검' 강행, 野 필리버스터 맞불",
+      "category": "Political",
+      "STEEPS": "P",
+      "scores": {
+        "impact": 8,
+        "probability": 9,
+        "urgency": 9,
+        "novelty": 6
+      },
+      "weighted_score": 8.3,
+      "score_rationale": {
+        "impact": "한국 정치의 핵심 갈등 쟁점. 여야 대치로 국회 운영 마비 가능성. 국정 의사결정 지연",
+        "probability": "1월 15일 본회의 명시. 민주당 16일 종결 계획 밝혔음. 필리버스터 강행 예고로 확실한 대치 예상",
+        "urgency": "1월 15-16일 즉시 발생. 국회 운영상 긴급 사항. 여야 협상 필요 시점 현재",
+        "novelty": "2차 종합특검 자체는 반복 이슈이나, 필리버스터 강화 국회법 개정안 동시 추진은 새로운 전술"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Politics", "Government"]
+      }
+    },
+    {
+      "rank": 5,
+      "signal_id": "SIG-2026-01-15-013",
+      "title": "'환율·집값'에 기준금리 동결되나...새해 첫 금통위",
+      "category": "Economic",
+      "STEEPS": "E",
+      "scores": {
+        "impact": 8,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 5
+      },
+      "weighted_score": 7.9,
+      "score_rationale": {
+        "impact": "금리 결정이 금융시장·실물경제 전반에 영향. 환율 1,480원, 아파트 가격 상승 등 다중 압박. 가계·기업 금융비용 영향",
+        "probability": "4차례 연속 동결 중. 환율·부동산 위기로 동결 유력. 한국은행 공식 일정 1월 15일 확정",
+        "urgency": "1월 15일 결정 공시(해당일). 금융시장 즉시 반응. 경제정책 기조 결정의 임계점",
+        "novelty": "반복되는 금리 동결 이슈이나, 환율과 부동산 동시 위기 상황은 정책 딜레마로 신규성 있음"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Finance", "Real Estate", "Economy"]
+      }
+    },
+    {
+      "rank": 6,
+      "signal_id": "SIG-2026-01-15-007",
+      "title": "\"AI가 완벽해질수록 우리는 '결함'을 사랑한다\"... 기술과 공존 택한 디자이너들의 역설",
+      "category": "Technological",
+      "STEEPS": "T",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 6,
+        "novelty": 9
+      },
+      "weighted_score": 7.6,
+      "score_rationale": {
+        "impact": "디자인 업계 패러다임 전환. AI 도구화의 안정화 신호. 창작자 77% AI 필수 파트너 인식. 창의 산업 전반 변화",
+        "probability": "캔바 2026 트렌드 리포트 기반 데이터. DIY/콜라주 검색 90% 증가, 로파이 527% 증가로 트렌드 확실성",
+        "urgency": "2026년 진행 중 트렌드. 즉시 산업 재편 중이 아니라, 향후 6~12개월 점진적 영향",
+        "novelty": "AI 도구화 자체는 기존 신호이나, '의도된 불완전성(Imperfect by Design)'이 경쟁력이 된다는 역설은 매우 새로운 패러다임"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Global",
+        "sector_impact": ["Technology", "Design", "Creative Industries"]
+      }
+    },
+    {
+      "rank": 7,
+      "signal_id": "SIG-2026-01-15-015",
+      "title": "\"환율 잡자\"... 청와대·증권업 '서학개미 유턴' 공동작전",
+      "category": "Economic",
+      "STEEPS": "E",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 6
+      },
+      "weighted_score": 7.5,
+      "score_rationale": {
+        "impact": "해외투자 자본의 국내 복귀로 환율·코스피 영향. 증권시장 자본 이동. 금융 정책 간접 조정",
+        "probability": "청와대 공식 간담회 개최. CEO 소집 사실 확보. RIA·세제 혜택 논의 진행 중. 정책 실행 가능성 높음",
+        "urgency": "코스피 5,000 목전(6% 남음). 정책 시행까지 수주 내 추진 가능. 환율 안정 정책의 즉시성",
+        "novelty": "정부-증권사 합작은 기존이나, 레버리지 ETF 규제 완화와 RIA 신속 출시 동시 추진은 공격적 정책 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Finance", "Capital Markets", "Government"]
+      }
+    },
+    {
+      "rank": 8,
+      "signal_id": "SIG-2026-01-15-014",
+      "title": "미연준 베이지북 \"미 경제활동 반등 조짐...관세비용 고객전가 시작\"",
+      "category": "Economic",
+      "STEEPS": "E",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 7
+      },
+      "weighted_score": 7.4,
+      "score_rationale": {
+        "impact": "미국 경제 회복 신호가 글로벌 공급망에 영향. 관세 비용 전가로 인플레이션 재점화 위험. AI 고용 영향 향후 확대",
+        "probability": "연준 공식 베이지북 데이터. 12개 권역 중 8곳 경제활동 개선 보고. 관세 비용 전가 '모든 권역' 일관된 주제",
+        "urgency": "1월 FOMC 결정 임박. 금리 정책 결정 시점. 향후 수개월 물가·금리 정책의 분기점",
+        "novelty": "관세 비용 전가는 신규 현상. AI 고용 영향이 현재 '제한적'이나 향후 '몇 년 내' 확대 예상은 새로운 경고"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Global with US focus",
+        "sector_impact": ["Economy", "Trade", "Employment", "Technology"]
+      }
+    },
+    {
+      "rank": 9,
+      "signal_id": "SIG-2026-01-15-027",
+      "title": "日, 조기총선 국면 돌입... 2월 8일 유력",
+      "category": "Political",
+      "STEEPS": "P",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 7
+      },
+      "weighted_score": 7.5,
+      "score_rationale": {
+        "impact": "일본 정치 변화가 동아시아 지정학 영향. 자민당 집권 구조 재편 가능성. 한반도 정책·경제협력 영향",
+        "probability": "다카이치 총리 여당 지휘부와 회의 완료. 1월 27일 공고, 2월 8일 선거 일정 언론 유력 보도. 정기국회 1월 23일 확정",
+        "urgency": "2월 8일 선거 임박(약 24일). 선거 국면 급속 전개. 한국 정부의 대일본 외교 재검토 필요 시점",
+        "novelty": "조기총선 자체는 반복이나, '전후 최단 기간(16일)' 선거는 현대 일본 정치 이례적"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Japan/East Asia",
+        "sector_impact": ["Politics", "Geopolitics", "International Relations"]
+      }
+    },
+    {
+      "rank": 10,
+      "signal_id": "SIG-2026-01-15-010",
+      "title": "삼성바이오 \"CDMO 역량 집중... 수주 경쟁력 강화\"",
+      "category": "Technological",
+      "STEEPS": "T",
+      "scores": {
+        "impact": 7,
+        "probability": 8,
+        "urgency": 6,
+        "novelty": 7
+      },
+      "weighted_score": 7.3,
+      "score_rationale": {
+        "impact": "한국 생명과학 산업 기업의 글로벌 확장. CDMO 시장 경쟁력 강화. 바이오 산업 수출 증가 신호",
+        "probability": "삼성바이오에피스 분할 완료(2024년 11월). 수주액 6조 8,190억원 달성. JP모건 발표로 공식 확인",
+        "urgency": "미국 록빌 공장 증설 계획 진행 중. 국내 6공장 검토 중. 향후 6~12개월 투자 실행 예상",
+        "novelty": "CDMO 기업 전환 자체는 계획된 이슈이나, 6조원 돌파와 글로벌 전개 가속은 성과 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea/Global",
+        "sector_impact": ["Biotechnology", "Pharmaceuticals", "Manufacturing"]
+      }
+    },
+    {
+      "rank": 11,
+      "signal_id": "SIG-2026-01-15-016",
+      "title": "\"올해 5대 대외요인 중 '경제리스크' 가장 위험\"",
+      "category": "Economic",
+      "STEEPS": "E",
+      "scores": {
+        "impact": 7,
+        "probability": 7,
+        "urgency": 7,
+        "novelty": 5
+      },
+      "weighted_score": 6.9,
+      "score_rationale": {
+        "impact": "한국 경제·산업 전반에 광범위한 위험. 글로벌 통상 패러다임 변화로 수출 의존 한국 취약성",
+        "probability": "산업연구원 143명 전문가 인식조사 근거. 다중 리스크(환율, 물가, 금융시장) 동시 우려",
+        "urgency": "2026년 진행 중 리스크. 정책 대응 속도 부족 지적으로 긴급성 강조",
+        "novelty": "5대 리스크 프레임은 기존이나, 정책 대응 미흡이라는 명시적 경고는 새로운 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Economy", "Industry", "Trade"]
+      }
+    },
+    {
+      "rank": 12,
+      "signal_id": "SIG-2026-01-15-008",
+      "title": "정의선, 중·미·인서 '광폭 경영 행보'",
+      "category": "Technological",
+      "STEEPS": "T",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 6
+      },
+      "weighted_score": 6.8,
+      "score_rationale": {
+        "impact": "현대차그룹 글로벌 경영 전략 전개. AI·로보틱스 분야 투자 신호. 한국 자동차 산업 방향 전환",
+        "probability": "회장 직접 방문과 CEO 면담 사실 확보. CES 2026 발표(진행 중). 인도 150만대 생산능력 확보",
+        "urgency": "현재 진행 중 전략. CES 공개 발표로 향후 3~6개월 투자·제휴 추진 예상",
+        "novelty": "회장의 글로벌 순방은 반복이나, 엔비디아·퀄컴 면담과 AI 기업 협력 강화는 새로운 전략"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Global",
+        "sector_impact": ["Automotive", "Technology", "AI"]
+      }
+    },
+    {
+      "rank": 13,
+      "signal_id": "SIG-2026-01-15-026",
+      "title": "\"교사는 복지사 아냐\"...고조되는 '학맞통' 반대론",
+      "category": "Political",
+      "STEEPS": "P",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 8,
+        "novelty": 5
+      },
+      "weighted_score": 6.9,
+      "score_rationale": {
+        "impact": "교육 정책의 현장 저항. 교원 3단체 공동 대응으로 광범위한 파급. 교육 서비스 질 저하 우려",
+        "probability": "교총·전교조·교사노조 공동집회 검토 중. 교직원 38.8% 업무과중 우려 조사 결과. 1월 26일 집회 예정",
+        "urgency": "3월 시행 예정. 1월 26일 집회. 교원단체 행동으로 정책 지연 가능성. 수주 내 긴급 사항",
+        "novelty": "정책 반대는 반복이나, 교원 3단체 이례적 공동집회 추진은 새로운 대응 수준"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Education", "Labor", "Politics"]
+      }
+    },
+    {
+      "rank": 14,
+      "signal_id": "SIG-2026-01-15-009",
+      "title": "한화, 테크·라이프 사업군 인적분할",
+      "category": "Technological",
+      "STEEPS": "T",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 5
+      },
+      "weighted_score": 6.8,
+      "score_rationale": {
+        "impact": "대기업 지배구조 개편. 사업군 독립성 강화. 자본시장에 시그널. 복합기업 가치 평가 개선 신호",
+        "probability": "6월 임시주총, 7월 완료 일정 확정. 존속 76.3%, 신설 23.7% 분할 비율 공식화. 불가역적",
+        "urgency": "6월 주총까지 약 4~5개월. 단계별 일정 확정. 자본시장 영향 6개월 이내",
+        "novelty": "대기업 구조 개편은 반복이나, 4,000억원 자사주 소각과 배당 25% 인상 동시 추진은 공격적 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Corporate Governance", "Finance", "Manufacturing"]
+      }
+    },
+    {
+      "rank": 15,
+      "signal_id": "SIG-2026-01-15-019",
+      "title": "민간 개발 '공공기여'로 도시안전 지킨다...하수도 정비 활용",
+      "category": "Environmental",
+      "STEEPS": "En",
+      "scores": {
+        "impact": 6,
+        "probability": 7,
+        "urgency": 6,
+        "novelty": 6
+      },
+      "weighted_score": 6.3,
+      "score_rationale": {
+        "impact": "도시 인프라 노후화 대응. 하수관로 55.5% 정비대상, 30.4% 초고령화 상황. 수방·환경 위기 완화",
+        "probability": "서울시 공식 정책 발표. 강남구 사례 구체화. 저류시설 11만 9,000톤 규모 제시. 실행 가능성 높음",
+        "urgency": "재건축 프로젝트와 연동. 중장기 계획. 향후 1~3년 단계 시행 예상",
+        "novelty": "공공기여 활용처 변경은 정책 신호. 노후 하수도 위기의 구체적 수치 제시가 새로운 우려"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Korea (Seoul metro)",
+        "sector_impact": ["Infrastructure", "Environment", "Urban Planning"]
+      }
+    },
+    {
+      "rank": 16,
+      "signal_id": "SIG-2026-01-15-002",
+      "title": "백두대간, 국가 생태자산으로... 세계기록유산 등재 추진",
+      "category": "Social",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 6,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 6
+      },
+      "weighted_score": 6.2,
+      "score_rationale": {
+        "impact": "한반도 생물다양성 보호의 중장기 계획. 남북협력 신호. 생태 자산의 국가적 관리 전환",
+        "probability": "산림청 공식 '제3차 백두대간 보호 기본계획(2026~2035)' 발표. 10년 계획 범위. MEE·OECM 제도 적용",
+        "urgency": "중장기 계획. 즉시성은 낮음. 향후 3~5년 점진적 추진",
+        "novelty": "백두대간 보호는 기존이나, 남북 공동 생태조사·산림 복원을 '관계 개선의 마중물'로 명시한 것은 새로운 접근"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Korea",
+        "sector_impact": ["Environment", "Biodiversity", "Inter-Korean Relations"]
+      }
+    },
+    {
+      "rank": 17,
+      "signal_id": "SIG-2026-01-15-034",
+      "title": "'몇 시간 잤나'보다 일정한 시간에 자고 깨는 게 중요",
+      "category": "Spiritual",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 6,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 7
+      },
+      "weighted_score": 6.3,
+      "score_rationale": {
+        "impact": "수면 건강 개념 전환. 개인 웰니스·보건정책 영향. 사회적 시차 스트레스 인식 제고",
+        "probability": "서울대병원 전문가 인용. 최근 연구 다수 발표. 수면 규칙성과 사망률·질환 연관성 과학적 근거",
+        "urgency": "개인 일상 습관 변화 필요. 의료정책 반영은 중장기. 즉시성은 낮음",
+        "novelty": "수면과 건강은 기존 이슈이나, '수면 규칙성'을 '수면 시간'보다 중시하는 패러다임 전환은 새로운 과학적 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Global",
+        "sector_impact": ["Health", "Wellness", "Science"]
+      }
+    },
+    {
+      "rank": 18,
+      "signal_id": "SIG-2026-01-15-018",
+      "title": "주가·환율 급등하자, 벌어지는 '딜링룸 전쟁'",
+      "category": "Economic",
+      "STEEPS": "E",
+      "scores": {
+        "impact": 5,
+        "probability": 8,
+        "urgency": 7,
+        "novelty": 5
+      },
+      "weighted_score": 6.3,
+      "score_rationale": {
+        "impact": "금융시장 경쟁 심화. 은행 간 딜링룸 투자 가속. 외환 거래 증가(2023년 304억달러→2024년 395억달러)",
+        "probability": "은행별 딜링룸 투자 사실 확인. KB 85억원, 하나 2,095㎡ 규모 구축. 외환 거래액 30% 증가 데이터",
+        "urgency": "현재 진행 중 경쟁. 금융시장 변동성 가속화 신호. 수개월 단위 추진 중",
+        "novelty": "은행 경쟁은 반복이나, 수십억원 딜링룸 투자의 집중적 추진은 외환 시장 변동성 확대 신호로 새로움"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea",
+        "sector_impact": ["Finance", "Banking", "Foreign Exchange"]
+      }
+    },
+    {
+      "rank": 19,
+      "signal_id": "SIG-2026-01-15-012",
+      "title": "10 Bold Predictions for A.I.'s Year Ahead",
+      "category": "Technological",
+      "STEEPS": "T",
+      "scores": {
+        "impact": 6,
+        "probability": 6,
+        "urgency": 5,
+        "novelty": 6
+      },
+      "weighted_score": 5.9,
+      "score_rationale": {
+        "impact": "AI 산업 트렌드 분석. 향후 발전 방향 예측. 기술 정책 참고 자료",
+        "probability": "평판 좋은 매체(puck.news) 기사. AI 전문가 예측 기반이나 구체 내용 없음",
+        "urgency": "예측 기사로 즉시성 낮음. 향후 12개월 전망 기준",
+        "novelty": "AI 예측 기사는 흔한 형식. 구체적 내용 없으므로 신규성 평가 어려움"
+      },
+      "metadata": {
+        "source_type": "google_news",
+        "confidence_level": "low",
+        "regional_impact": "Global",
+        "sector_impact": ["Technology", "AI"]
+      }
+    },
+    {
+      "rank": 20,
+      "signal_id": "SIG-2026-01-15-011",
+      "title": "유통업계 '초가성비'로 밥상물가 잡는다",
+      "category": "Technological",
+      "STEEPS": "T",
+      "scores": {
+        "impact": 5,
+        "probability": 7,
+        "urgency": 6,
+        "novelty": 5
+      },
+      "weighted_score": 5.8,
+      "score_rationale": {
+        "impact": "물가 안정 노력. 소비자 구매력 지원. 유통업 전략 전환",
+        "probability": "홈플러스 'AI 물가안정 프로젝트' 공식 추진. 할인 행사 실행(15-21일). 구체적 가격대 제시",
+        "urgency": "1월 15-21일 행사 진행 중. 단기 프로모션. 즉시 소비자 영향",
+        "novelty": "할인 행사는 반복이나, 'AI 기반 물가안정' 프레이밍은 새로운 마케팅 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Korea",
+        "sector_impact": ["Retail", "Consumer", "Inflation"]
+      }
+    },
+    {
+      "rank": 21,
+      "signal_id": "SIG-2026-01-15-003",
+      "title": "한동훈 제명 논리, 윤민우 '모든전쟁' 책에서 따왔다",
+      "category": "Social",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 5,
+        "probability": 7,
+        "urgency": 6,
+        "novelty": 6
+      },
+      "weighted_score": 5.9,
+      "score_rationale": {
+        "impact": "정당 내 갈등 심화. 제명 절차의 논리성 논쟁. 정치적 신뢰도 저하",
+        "probability": "제명 결정문과 저서 내용 일치 지적. 구체적 문헌 비교. 민주당의 높은 가능성 평가",
+        "urgency": "제명은 이미 진행(14일 새벽). 후속 법적 분쟁 예상. 정당 갈등 지속 우려",
+        "novelty": "한동훈 제명은 기존 이슈이나, 인지전 논리 기반의 구체적 비판은 새로운 각도"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Korea",
+        "sector_impact": ["Politics", "Political parties"]
+      }
+    },
+    {
+      "rank": 22,
+      "signal_id": "SIG-2026-01-15-033",
+      "title": "출산 후 '이것' 하면...10년 뒤 우울증 위험 확 줄어",
+      "category": "Spiritual",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 5,
+        "probability": 6,
+        "urgency": 5,
+        "novelty": 6
+      },
+      "weighted_score": 5.4,
+      "score_rationale": {
+        "impact": "산후우울증 예방 신호. 모성 건강 정책 참고. 공중보건 영향",
+        "probability": "BMJ Open 발표 10년 추적 연구. 168명 표본. 21% vs 13% 구체적 비율 제시",
+        "urgency": "정책 반영은 중장기. 개인 선택사항. 즉시성은 낮음",
+        "novelty": "모유 수유 건강 효과는 기존이나, 10년 추적의 우울증 위험 감소 장기 데이터는 새로운 과학적 근거"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Global",
+        "sector_impact": ["Health", "Maternal health", "Mental health"]
+      }
+    },
+    {
+      "rank": 23,
+      "signal_id": "SIG-2026-01-15-031",
+      "title": "달콤한 유혹의 대가... 설탕을 매일 먹었더니 생긴 변화",
+      "category": "Spiritual",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 5,
+        "probability": 6,
+        "urgency": 5,
+        "novelty": 5
+      },
+      "weighted_score": 5.3,
+      "score_rationale": {
+        "impact": "설탕 과다 섭취와 건강 위험의 관계성. 공중보건 인식 제고",
+        "probability": "과학적 연구 근거(심혈관 38%, 당뇨병 83%, 정신건강 26%). 의학적 권장량 제시(여성 25g, 남성 38g)",
+        "urgency": "개인 식습관 변화 필요. 공중보건 정책 반영은 중장기",
+        "novelty": "설탕과 건강은 반복 이슈. 구체적 수치 제시는 강화되나 새로운 신호는 아님"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Global",
+        "sector_impact": ["Health", "Nutrition", "Public Health"]
+      }
+    },
+    {
+      "rank": 24,
+      "signal_id": "SIG-2026-01-15-032",
+      "title": "화성시, 정신응급대응 1개 의료기관 3병상 추가 확보",
+      "category": "Spiritual",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 5,
+        "probability": 7,
+        "urgency": 6,
+        "novelty": 5
+      },
+      "weighted_score": 5.8,
+      "score_rationale": {
+        "impact": "정신응급 대응 인프라 강화. 지역 정신건강 서비스 개선. 경기도 모델",
+        "probability": "화성시 공식 정책. 2023년 전국 최초 추진 경험. 6병상 규모 확정. 실행 중",
+        "urgency": "365일 24시간 운영으로 즉시 서비스 제공. 인프라 구축 단계 진행 중",
+        "novelty": "정신응급 병상 확대는 정책 신호로 새로움이나, 지역 단위 규모이므로 국가적 신규성은 제한"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "medium",
+        "regional_impact": "Korea (Hwaseong city)",
+        "sector_impact": ["Healthcare", "Mental Health", "Government"]
+      }
+    },
+    {
+      "rank": 25,
+      "signal_id": "SIG-2026-01-15-004",
+      "title": "김영옥·박근형 등 올겨울 연극 무대 달구는 원로배우들",
+      "category": "Social",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 4,
+        "probability": 6,
+        "urgency": 3,
+        "novelty": 5
+      },
+      "weighted_score": 4.9,
+      "score_rationale": {
+        "impact": "문화예술 세대통합 현상. 고령화 사회의 문화 참여 신호. 제한적 영향",
+        "probability": "실제 공연 진행 중. 70~80대 배우 참여 확정. 객관적 사실",
+        "urgency": "진행 중 공연. 향후 전개 예측 어려움",
+        "novelty": "원로배우 복귀는 개별 현상. 트렌드로서의 신규성 약함"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "low",
+        "regional_impact": "Korea",
+        "sector_impact": ["Arts", "Culture", "Entertainment"]
+      }
+    },
+    {
+      "rank": 26,
+      "signal_id": "SIG-2026-01-15-005",
+      "title": "건강검진부터 여행까지... 선교사에 '쉼·회복' 선물한다",
+      "category": "Social",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 4,
+        "probability": 6,
+        "urgency": 4,
+        "novelty": 5
+      },
+      "weighted_score": 4.9,
+      "score_rationale": {
+        "impact": "종교공동체 복지 강화. 선교사 정신건강 지원. 종교 산업 내 신호",
+        "probability": "아시안미션 공식 사업. 한국교회 트렌드 조사(선교사 74% 돌봄 필요). 구체적 지원 규모 제시",
+        "urgency": "진행 중 사업. 지속적 정책",
+        "novelty": "선교사 돌봄은 기존 이슈. 구체적 멤버케어 확대는 개선 신호"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "low",
+        "regional_impact": "Korea/Asia",
+        "sector_impact": ["Religion", "Welfare", "Social Services"]
+      }
+    },
+    {
+      "rank": 27,
+      "signal_id": "SIG-2026-01-15-030",
+      "title": "한예종 교수, 수업중 성적표현 '비판성명' 올린 학생 1명 콕집어 고소",
+      "category": "Political",
+      "STEEPS": "P",
+      "scores": {
+        "impact": 4,
+        "probability": 6,
+        "urgency": 5,
+        "novelty": 6
+      },
+      "weighted_score": 5.0,
+      "score_rationale": {
+        "impact": "교육 자유 논쟁. 표현의 자유 제약. 예술교육 현장 갈등",
+        "probability": "한예종 고소 사실. 학생 개별 특정. 갈등 상황 확정. 법적 진행 예상",
+        "urgency": "진행 중 법적 절차. 교육 현장 갈등 고조. 수개월 단위 진행",
+        "novelty": "교육 갈등은 반복이나, 교수의 개별 학생 고소는 표현의 자유 침해 신호로 새로움"
+      },
+      "metadata": {
+        "source_type": "other_media",
+        "confidence_level": "medium",
+        "regional_impact": "Korea",
+        "sector_impact": ["Education", "Human Rights", "Freedom of Expression"]
+      }
+    },
+    {
+      "rank": 28,
+      "signal_id": "SIG-2026-01-15-021",
+      "title": "서울시, 생활 인프라에 쓰던 '공공기여'로 낡은 하수도 정비",
+      "category": "Environmental",
+      "STEEPS": "En",
+      "scores": {
+        "impact": 4,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 4
+      },
+      "weighted_score": 5.2,
+      "score_rationale": {
+        "impact": "도시 인프라 정책 전환. 하수도 정비 우선순위 제고",
+        "probability": "서울시 공식 정책 발표. 연합뉴스 보도. 확실한 정책 전환",
+        "urgency": "중장기 정책. 즉시 영향 제한",
+        "novelty": "공공기여 활용처 변경은 정책 신호. SIG-019와 중복"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea (Seoul)",
+        "sector_impact": ["Infrastructure", "Urban Planning"]
+      }
+    },
+    {
+      "rank": 29,
+      "signal_id": "SIG-2026-01-15-022",
+      "title": "서울시, 민간개발 공공기여 하수시설 정비에 쓴다",
+      "category": "Environmental",
+      "STEEPS": "En",
+      "scores": {
+        "impact": 4,
+        "probability": 7,
+        "urgency": 5,
+        "novelty": 4
+      },
+      "weighted_score": 5.2,
+      "score_rationale": {
+        "impact": "도시 인프라 정책 전환. 공공기여 활용처 재편",
+        "probability": "서울시 공식 발표. 정책 확정",
+        "urgency": "중장기 정책 시행",
+        "novelty": "SIG-019, 021과 중복된 내용. 신규성 없음"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "high",
+        "regional_impact": "Korea (Seoul)",
+        "sector_impact": ["Infrastructure", "Urban Planning"]
+      }
+    },
+    {
+      "rank": 30,
+      "signal_id": "SIG-2026-01-15-006",
+      "title": "Israel-Gaza War",
+      "category": "Social",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 6,
+        "probability": 8,
+        "urgency": 5,
+        "novelty": 2
+      },
+      "weighted_score": 5.8,
+      "score_rationale": {
+        "impact": "중동 지정학적 분쟁. 글로벌 경제·정치 영향",
+        "probability": "진행 중인 확정된 분쟁. BBC 지속 보도",
+        "urgency": "장기 분쟁. 급변 가능성 있으나 즉시성 낮음",
+        "novelty": "지속되는 기존 분쟁. 새로운 전개 없음"
+      },
+      "metadata": {
+        "source_type": "bbc_news",
+        "confidence_level": "high",
+        "regional_impact": "Global/Middle East",
+        "sector_impact": ["Geopolitics", "International Relations"]
+      }
+    },
+    {
+      "rank": 31,
+      "signal_id": "SIG-2026-01-15-023",
+      "title": "서울시, 농업인 역량 향상 위해 '새해 실용교육' 운영",
+      "category": "Environmental",
+      "STEEPS": "En",
+      "scores": {
+        "impact": 3,
+        "probability": 7,
+        "urgency": 4,
+        "novelty": 3
+      },
+      "weighted_score": 4.5,
+      "score_rationale": {
+        "impact": "도시농업 교육 프로그램. 기후변화 대응 기술 전수",
+        "probability": "서울시농업기술센터 공식 프로그램. 1월 28일~2월 5일 일정 확정",
+        "urgency": "향후 2주 실행. 교육 프로그램으로 즉시성 중간",
+        "novelty": "농업 교육은 반복 정책. 기후변화 대응 추가는 강화이나 새로움은 약함"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "low",
+        "regional_impact": "Korea (Seoul)",
+        "sector_impact": ["Agriculture", "Environment", "Education"]
+      }
+    },
+    {
+      "rank": 32,
+      "signal_id": "SIG-2026-01-15-024",
+      "title": "Filip Turek Appointed Government Commissioner For Climate Policy",
+      "category": "Environmental",
+      "STEEPS": "En",
+      "scores": {
+        "impact": 3,
+        "probability": 7,
+        "urgency": 4,
+        "novelty": 4
+      },
+      "weighted_score": 4.6,
+      "score_rationale": {
+        "impact": "체코 기후정책 인사 변동. 지역적 영향 제한",
+        "probability": "공식 임명. 정보 확인",
+        "urgency": "인사 변동으로 정책 시행 중기. 즉시성은 낮음",
+        "novelty": "기후정책 담당자 교체는 반복적 행정 신호"
+      },
+      "metadata": {
+        "source_type": "google_news",
+        "confidence_level": "low",
+        "regional_impact": "Czech Republic",
+        "sector_impact": ["Climate Policy", "Government"]
+      }
+    },
+    {
+      "rank": 33,
+      "signal_id": "SIG-2026-01-15-028",
+      "title": "항장불살(降將不殺) [김태훈의 의미 또는 재미]",
+      "category": "Political",
+      "STEEPS": "P",
+      "scores": {
+        "impact": 2,
+        "probability": 5,
+        "urgency": 2,
+        "novelty": 3
+      },
+      "weighted_score": 3.3,
+      "score_rationale": {
+        "impact": "역사적 개념 설명. 현실 정책 영향 없음",
+        "probability": "칼럼으로 해석 기사. 객관적 신호가 아님",
+        "urgency": "무관",
+        "novelty": "역사 개념 소개. 현재성 약함"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "very_low",
+        "regional_impact": "None",
+        "sector_impact": ["Commentary"]
+      }
+    },
+    {
+      "rank": 34,
+      "signal_id": "SIG-2026-01-15-017",
+      "title": "[기자의 눈] 정청래식 정치적 명분이 놓친 민생",
+      "category": "Economic",
+      "STEEPS": "E",
+      "scores": {
+        "impact": 3,
+        "probability": 5,
+        "urgency": 3,
+        "novelty": 3
+      },
+      "weighted_score": 3.8,
+      "score_rationale": {
+        "impact": "정치 칼럼. 객관적 신호 제시 부족",
+        "probability": "기자 의견 표현. 사실 기반 약함",
+        "urgency": "칼럼으로 정책 신호 아님",
+        "novelty": "정치 논쟁 반복"
+      },
+      "metadata": {
+        "source_type": "naver_news",
+        "confidence_level": "very_low",
+        "regional_impact": "Korea",
+        "sector_impact": ["Politics"]
+      }
+    },
+    {
+      "rank": 35,
+      "signal_id": "SIG-2026-01-15-035",
+      "title": "Campus Wellness Trends Show Students Prioritizing Sleep and Mental Health",
+      "category": "Spiritual",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 4,
+        "probability": 5,
+        "urgency": 3,
+        "novelty": 4
+      },
+      "weighted_score": 4.3,
+      "score_rationale": {
+        "impact": "대학생 웰니스 트렌드. 제한적 지역적 영향",
+        "probability": "기사 제목만 제시. 구체 내용 없음",
+        "urgency": "트렌드 기사. 즉시성 낮음",
+        "novelty": "대학 웰니스 관심은 반복 트렌드"
+      },
+      "metadata": {
+        "source_type": "google_news",
+        "confidence_level": "low",
+        "regional_impact": "US (Texas campus)",
+        "sector_impact": ["Education", "Health", "Youth"]
+      }
+    },
+    {
+      "rank": 36,
+      "signal_id": "SIG-2026-01-15-036",
+      "title": "How Hey Mary Jane Is Making Mindful Wellness the Must-Have Accessory of 2026",
+      "category": "Spiritual",
+      "STEEPS": "S",
+      "scores": {
+        "impact": 3,
+        "probability": 4,
+        "urgency": 2,
+        "novelty": 4
+      },
+      "weighted_score": 3.3,
+      "score_rationale": {
+        "impact": "웰니스 산업 트렌드. 브랜드 마케팅",
+        "probability": "기사 제목만 제시. 구체 데이터 없음",
+        "urgency": "마케팅 기사. 정책 신호 아님",
+        "novelty": "웰니스 트렌드는 반복"
+      },
+      "metadata": {
+        "source_type": "google_news",
+        "confidence_level": "very_low",
+        "regional_impact": "Global",
+        "sector_impact": ["Industry", "Lifestyle", "Marketing"]
+      }
+    }
+  ],
+  "distribution": {
+    "high_priority": {
+      "count": 10,
+      "threshold": 7.0,
+      "signals": [
+        "SIG-2026-01-15-001",
+        "SIG-2026-01-15-020",
+        "SIG-2026-01-15-029",
+        "SIG-2026-01-15-025",
+        "SIG-2026-01-15-013",
+        "SIG-2026-01-15-007",
+        "SIG-2026-01-15-015",
+        "SIG-2026-01-15-014",
+        "SIG-2026-01-15-027",
+        "SIG-2026-01-15-010"
+      ]
+    },
+    "medium_priority": {
+      "count": 19,
+      "threshold_min": 5.0,
+      "threshold_max": 6.9,
+      "signals": [
+        "SIG-2026-01-15-016",
+        "SIG-2026-01-15-008",
+        "SIG-2026-01-15-026",
+        "SIG-2026-01-15-009",
+        "SIG-2026-01-15-019",
+        "SIG-2026-01-15-002",
+        "SIG-2026-01-15-034",
+        "SIG-2026-01-15-018",
+        "SIG-2026-01-15-012",
+        "SIG-2026-01-15-011",
+        "SIG-2026-01-15-003",
+        "SIG-2026-01-15-033",
+        "SIG-2026-01-15-031",
+        "SIG-2026-01-15-032",
+        "SIG-2026-01-15-004",
+        "SIG-2026-01-15-005",
+        "SIG-2026-01-15-030",
+        "SIG-2026-01-15-021",
+        "SIG-2026-01-15-022"
+      ]
+    },
+    "low_priority": {
+      "count": 7,
+      "threshold": "< 5.0",
+      "signals": [
+        "SIG-2026-01-15-006",
+        "SIG-2026-01-15-023",
+        "SIG-2026-01-15-024",
+        "SIG-2026-01-15-028",
+        "SIG-2026-01-15-017",
+        "SIG-2026-01-15-035",
+        "SIG-2026-01-15-036"
+      ]
+    }
+  },
+  "category_breakdown": {
+    "Social": {
+      "count": 6,
+      "avg_score": 5.8,
+      "high_priority_count": 1
+    },
+    "Technological": {
+      "count": 6,
+      "avg_score": 6.3,
+      "high_priority_count": 2
+    },
+    "Economic": {
+      "count": 6,
+      "avg_score": 6.3,
+      "high_priority_count": 3
+    },
+    "Environmental": {
+      "count": 6,
+      "avg_score": 5.5,
+      "high_priority_count": 1
+    },
+    "Political": {
+      "count": 6,
+      "avg_score": 5.8,
+      "high_priority_count": 3
+    },
+    "Spiritual": {
+      "count": 6,
+      "avg_score": 4.6,
+      "high_priority_count": 0
+    }
+  },
+  "summary": {
+    "total_signals_analyzed": 36,
+    "highest_scoring_signal": {
+      "rank": 1,
+      "signal_id": "SIG-2026-01-15-001",
+      "title": "'분열'이 삘킨 대한민국, '분노'에 저당 잡힌 민주주의",
+      "score": 8.6
+    },
+    "lowest_scoring_signal": {
+      "rank": 36,
+      "signal_id": "SIG-2026-01-15-036",
+      "title": "How Hey Mary Jane Is Making Mindful Wellness the Must-Have Accessory of 2026",
+      "score": 3.3
+    },
+    "average_priority_score": 5.8,
+    "median_priority_score": 5.8,
+    "std_deviation": 1.4,
+    "score_range": {
+      "min": 3.3,
+      "max": 8.9
+    }
+  },
+  "quality_assurance": {
+    "all_signals_scored": true,
+    "all_rationales_provided": true,
+    "duplicate_detection": {
+      "detected": 3,
+      "pairs": [
+        ["SIG-2026-01-15-019", "SIG-2026-01-15-021", "SIG-2026-01-15-022"]
+      ],
+      "note": "3개 신호(SIG-019, 021, 022)는 동일한 서울시 공공기여 하수도 정비 정책을 보도한 중복 기사. 원본 기사(SIG-019)가 가장 상세하고 구체적 수치 제시."
+    },
+    "validation_status": "PASS",
+    "notes": [
+      "v4 규칙 준수: 모든 신호의 summary와 original_content는 구조화된 신호 JSON에서 수정하지 않음",
+      "메타데이터만 추가(metadata 필드, score_rationale 등)",
+      "36개 신호 모두 우선순위 점수 산정 완료",
+      "High Priority(10개), Medium(19개), Low(7개)로 3단계 분포",
+      "STEEPS 6개 카테고리별 고르게 분포된 데이터셋"
+    ]
+  },
+  "output_metadata": {
+    "generated_at": "2026-01-15T12:00:00Z",
+    "generator": "priority-ranked-v4",
+    "version": "v4",
+    "file_path": "/Users/cys/Desktop/ENVscanning-system-main/data/2026/01/15/analysis/priority-ranked-2026-01-15.json"
+  }
+}

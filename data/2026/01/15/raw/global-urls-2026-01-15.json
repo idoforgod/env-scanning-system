@@ -1,0 +1,629 @@
+{
+  "source": "global-news",
+  "date": "2026-01-15",
+  "collected_at": "2026-01-15T08:51:33.418479",
+  "total_urls": 66,
+  "by_region": {
+    "korea": 16,
+    "usa": 10,
+    "uk": 10,
+    "china": 10,
+    "japan": 10,
+    "middle_east": 10
+  },
+  "urls": [
+    {
+      "url": "https://www.hani.co.kr/arti/society/society_general/1239817.html",
+      "title_hint": "한예종 교수, 수업중 성적표현 ‘비판성명’ 올린 학생 1명 콕집어 고소",
+      "newspaper": "한겨레",
+      "category": "Political",
+      "language": "ko",
+      "published_date": "2026-01-15",
+      "region": "korea"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/society/society_general/1239816.html",
+      "title_hint": "내란, 이제 정말 시작되는 심판의 시간",
+      "newspaper": "한겨레",
+      "category": "Political",
+      "language": "ko",
+      "published_date": "2026-01-15",
+      "region": "korea"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/opinion/column/1239815.html",
+      "title_hint": "없는 자에게도 가닿는 헌법재판을 꿈꾸며 [세상읽기]",
+      "newspaper": "한겨레",
+      "category": "Political",
+      "language": "ko",
+      "published_date": "2026-01-15",
+      "region": "korea"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/economy/finance/1239814.html",
+      "title_hint": "[단독] ‘탈팡’ 확산 현실로…쿠팡 카드 매출액 매일 56억원씩 증발",
+      "newspaper": "한겨레",
+      "category": "Political",
+      "language": "ko",
+      "published_date": "2026-01-15",
+      "region": "korea"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/specialsection/esc_section/1239813.html",
+      "title_hint": "새해 겨울, 러닝을 결심한 이들을 위한 안내서",
+      "newspaper": "한겨레",
+      "category": "Political",
+      "language": "ko",
+      "published_date": "2026-01-15",
+      "region": "korea"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601142349001",
+      "title_hint": "속보서울 시내버스 15일 첫차부터 운행 재개···노사협상 극적 타결",
+      "region": "korea",
+      "newspaper": "경향신문",
+      "category": "Political",
+      "language": "ko",
+      "collected_at": "2026-01-15T06:06:47.803618"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601150008001",
+      "title_hint": "서울시내버스 임금 2.9%인상 타결···15일 첫 차부터 버스운행 시작",
+      "region": "korea",
+      "newspaper": "경향신문",
+      "category": "Political",
+      "language": "ko",
+      "collected_at": "2026-01-15T06:06:47.803628"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141658001",
+      "title_hint": "“사실상 사형 폐지국”이라면서 윤석열에 사형 구형한 특검, 왜?",
+      "region": "korea",
+      "newspaper": "경향신문",
+      "category": "Political",
+      "language": "ko",
+      "collected_at": "2026-01-15T06:06:47.803629"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141557001",
+      "title_hint": "시장실 출입 때 시민·공무원들 '휴대전화 강제 수거'하는 통영시···\"오만한 발상\"",
+      "region": "korea",
+      "newspaper": "경향신문",
+      "category": "Political",
+      "language": "ko",
+      "collected_at": "2026-01-15T06:06:47.803631"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141558001",
+      "title_hint": "“법무부 파견 검사들·민정수석이 주도했다”···사퇴한 검찰개혁추진단 자문위원 6명",
+      "region": "korea",
+      "newspaper": "경향신문",
+      "category": "Political",
+      "language": "ko",
+      "collected_at": "2026-01-15T06:06:47.803632"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/americas/venezuela-diplomat-us-visit-washington.html",
+      "title_hint": "Venezuela Envoy to Visit U.S. for First Official Trip in Years",
+      "newspaper": "The New York Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 12:51:21 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/europe/greenland-climate.html",
+      "title_hint": "Why Greenland Matters for a Warming World",
+      "newspaper": "The New York Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 15:16:10 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/canada/carney-trip-china-relations-trump.html",
+      "title_hint": "Mark Carney Heads to Beijing to Discuss Canada-China Relations as U.S. Outlook Darkens",
+      "newspaper": "The New York Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 15:35:54 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/middleeast/iran-protests-soltani-execution-trump.html",
+      "title_hint": "Iran Plans to Execute Erfan Soltani as Trump Threatens ‘Strong Action’",
+      "newspaper": "The New York Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 18:43:40 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/14/world/americas/greenland-fear-trump-us-takeover.html",
+      "title_hint": "‘We’re Not Stupid’: What Greenlanders Would Say to Trump",
+      "newspaper": "The New York Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 14:30:56 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.washingtonpost.com/national-security/2026/01/14/trump-greenland-jd-vance/",
+      "title_hint": "Vance-hosted Greenland meeting ends with ‘fundamental disagreement’",
+      "newspaper": "The Washington Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 20:11:14 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.washingtonpost.com/world/2026/01/13/venezeula-americans-released-maduro/",
+      "title_hint": "Venezuela releases multiple detained U.S. citizens, State Department says",
+      "newspaper": "The Washington Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 20:08:20 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.washingtonpost.com/investigations/2026/01/14/iran-protests-videos-government-crackdown/",
+      "title_hint": "Amid Iran’s blackout, videos show lethal violence across the country",
+      "newspaper": "The Washington Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 19:25:03 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.washingtonpost.com/world/2026/01/14/israel-iran-russia-secret-messages/",
+      "title_hint": "With tensions high, Israel and Iran secretly reassured each other via Russia",
+      "newspaper": "The Washington Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 19:08:30 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.washingtonpost.com/world/interactive/2026/iran-photos-protests-blackout-crackdown/",
+      "title_hint": "Photos emerge from Iran’s protests, veiled by government blackout",
+      "newspaper": "The Washington Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 18:07:35 +0000",
+      "region": "usa"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jan/13/trump-administration-ends-tps-somalia",
+      "title_hint": "Trump administration ends temporary protected status for Somalis in US",
+      "newspaper": "The Guardian",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Tue, 13 Jan 2026 22:59:07 GMT",
+      "region": "uk"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/jan/13/developing-countries-poorer-world-bank-report",
+      "title_hint": "Quarter of developing countries poorer than in 2019, World Bank finds",
+      "newspaper": "The Guardian",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Tue, 13 Jan 2026 14:30:04 GMT",
+      "region": "uk"
+    },
+    {
+      "url": "https://www.theguardian.com/books/2026/jan/12/chimamanda-ngozi-adichie-accuses-lagos-hospital-negligence-son-death",
+      "title_hint": "Author Chimamanda Ngozi Adichie accuses Lagos hospital of negligence after son’s death",
+      "newspaper": "The Guardian",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Mon, 12 Jan 2026 14:26:57 GMT",
+      "region": "uk"
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2026/jan/09/the-gambia-female-genital-mutilation-fgm-supreme-court-case-overturn-ban",
+      "title_hint": "Attempt to overturn the Gambia’s ban on FGM heard by supreme court",
+      "newspaper": "The Guardian",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Fri, 09 Jan 2026 06:00:29 GMT",
+      "region": "uk"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/jan/08/questions-targeting-impact-us-airstrikes-in-nigeria",
+      "title_hint": "Two weeks on, questions linger over targeting and impact of US airstrikes in Nigeria",
+      "newspaper": "The Guardian",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Thu, 08 Jan 2026 05:00:03 GMT",
+      "region": "uk"
+    },
+    {
+      "url": "https://www.bbc.com/news/topics/c2vdnvdg6xxt",
+      "title_hint": "Israel-Gaza War",
+      "region": "uk",
+      "newspaper": "BBC News",
+      "category": "Social",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:06.925531"
+    },
+    {
+      "url": "https://www.bbc.com/news/war-in-ukraine",
+      "title_hint": "War in Ukraine",
+      "region": "uk",
+      "newspaper": "BBC News",
+      "category": "Social",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:06.925541"
+    },
+    {
+      "url": "https://www.bbc.com/news/us-canada",
+      "title_hint": "US & Canada",
+      "region": "uk",
+      "newspaper": "BBC News",
+      "category": "Social",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:06.925543"
+    },
+    {
+      "url": "https://www.bbc.com/news/uk",
+      "title_hint": "UK",
+      "region": "uk",
+      "newspaper": "BBC News",
+      "category": "Social",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:06.925544"
+    },
+    {
+      "url": "https://www.bbc.com/news/politics",
+      "title_hint": "UK Politics",
+      "region": "uk",
+      "newspaper": "BBC News",
+      "category": "Social",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:06.925546"
+    },
+    {
+      "url": "https://www.scmp.com/news/china/military/article/3339933/trumps-golden-fleet-shipbuilding-push-give-us-military-and-strategic-advantage?utm_source=rss_feed",
+      "title_hint": "Trump’s ‘Golden Fleet’ shipbuilding push to give US military and strategic advantage",
+      "newspaper": "South China Morning Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 20:05:43 +0000",
+      "region": "china"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3339932/ford-suspends-worker-who-heckled-trump-and-got-flipped-us-president?utm_source=rss_feed",
+      "title_hint": "Ford suspends worker who heckled Trump and got flipped off by US president",
+      "newspaper": "South China Morning Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 19:33:33 +0000",
+      "region": "china"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/europe/article/3339931/france-charges-maths-professor-accused-china-spying-case?utm_source=rss_feed",
+      "title_hint": "France charges maths professor accused in China spying case",
+      "newspaper": "South China Morning Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 18:57:44 +0000",
+      "region": "china"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3339930/fbi-raids-home-us-journalist-who-reported-trump-firings?utm_source=rss_feed",
+      "title_hint": "FBI raids home of US journalist who reported on Trump firings",
+      "newspaper": "South China Morning Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 18:27:57 +0000",
+      "region": "china"
+    },
+    {
+      "url": "https://www.scmp.com/news/world/middle-east/article/3339929/trump-envoy-says-gaza-entering-second-phase-ceasefire-plan-including-disarming-hamas?utm_source=rss_feed",
+      "title_hint": "Trump envoy says Gaza entering second phase of ceasefire plan, including disarming Hamas",
+      "newspaper": "South China Morning Post",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 17:15:48 +0000",
+      "region": "china"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352618.shtml",
+      "title_hint": "",
+      "region": "china",
+      "newspaper": "Global Times",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:10.846419"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352617.shtml",
+      "title_hint": "",
+      "region": "china",
+      "newspaper": "Global Times",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:10.846429"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352616.shtml",
+      "title_hint": "",
+      "region": "china",
+      "newspaper": "Global Times",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:10.846431"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352615.shtml",
+      "title_hint": "",
+      "region": "china",
+      "newspaper": "Global Times",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:10.846432"
+    },
+    {
+      "url": "https://www.globaltimes.cn/page/202601/1352614.shtml",
+      "title_hint": "",
+      "region": "china",
+      "newspaper": "Global Times",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:10.846434"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/culture/2026/01/14/books/akutagawa-prize-2026/",
+      "title_hint": "Time and history win big at most prestigious Japanese book awards",
+      "newspaper": "The Japan Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 22:30:00 +0900",
+      "region": "japan"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/business/2026/01/14/climate-leadership-firms/",
+      "title_hint": "Japanese companies ahead on climate leadership, data shows",
+      "newspaper": "The Japan Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 21:38:00 +0900",
+      "region": "japan"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/business/2026/01/14/yen-speculators-warning/",
+      "title_hint": "Japan warns speculators after yen sets fresh 18-month low",
+      "newspaper": "The Japan Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 20:14:00 +0900",
+      "region": "japan"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/news/2026/01/14/japan/politics/takaichi-ldp-snap-election-japan/",
+      "title_hint": "Takaichi to roll the dice on risky, but potentially rewarding, snap election",
+      "newspaper": "The Japan Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 19:20:00 +0900",
+      "region": "japan"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/news/2026/01/14/japan/prince-hisahito-poetry-ceremony-debut/",
+      "title_hint": "Prince Hisahito makes debut at imperial New Year's poetry ceremony",
+      "newspaper": "The Japan Times",
+      "category": "Political",
+      "language": "en",
+      "published_date": "Wed, 14 Jan 2026 18:33:00 +0900",
+      "region": "japan"
+    },
+    {
+      "url": "https://asia.nikkei.com/spotlight/environment/marubeni-s-indonesia-forests-took-little-damage-during-deadly-floods",
+      "title_hint": "Marubeni's Indonesia forests took little damage during deadly floods",
+      "newspaper": "Nikkei Asia",
+      "category": "Economic",
+      "language": "en",
+      "published_date": "2026-01-15",
+      "region": "japan"
+    },
+    {
+      "url": "https://asia.nikkei.com/business/startups/fintech-startup-alpaca-becomes-first-japanese-founded-unicorn-in-us",
+      "title_hint": "Fintech startup Alpaca becomes first Japanese-founded unicorn in US",
+      "newspaper": "Nikkei Asia",
+      "category": "Economic",
+      "language": "en",
+      "published_date": "2026-01-15",
+      "region": "japan"
+    },
+    {
+      "url": "https://asia.nikkei.com/opinion/prediction-markets-are-warping-future-expectations",
+      "title_hint": "Prediction markets are warping future expectations",
+      "newspaper": "Nikkei Asia",
+      "category": "Economic",
+      "language": "en",
+      "published_date": "2026-01-15",
+      "region": "japan"
+    },
+    {
+      "url": "https://asia.nikkei.com/politics/behind-takaichi-s-decision-to-call-a-snap-japan-election",
+      "title_hint": "Behind Takaichi's decision to call a snap Japan election",
+      "newspaper": "Nikkei Asia",
+      "category": "Economic",
+      "language": "en",
+      "published_date": "2026-01-15",
+      "region": "japan"
+    },
+    {
+      "url": "https://asia.nikkei.com/editor-s-picks/china-up-close/analysis-china-s-tough-stance-backfires-boosting-japan-pm-s-popularity",
+      "title_hint": "Analysis: China's tough stance backfires, boosting Japan PM's popularity",
+      "newspaper": "Nikkei Asia",
+      "category": "Economic",
+      "language": "en",
+      "published_date": "2026-01-15",
+      "region": "japan"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/",
+      "title_hint": "News",
+      "region": "middle_east",
+      "newspaper": "Al Jazeera",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:17.023897"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/young-ugandans-hope-for-stability-opportunities-on-eve-of-election",
+      "title_hint": "‘We are stuck’: Young Ugandans want stability, opportunities on eve of vote",
+      "region": "middle_east",
+      "newspaper": "Al Jazeera",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:17.023906"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/is-starlink-helping-iranians-break-internet-blackout-and-how-does-it-work",
+      "title_hint": "Is Starlink helping Iranians break internet blackout, and how does it work?",
+      "region": "middle_east",
+      "newspaper": "Al Jazeera",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:17.023909"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/mapping-who-controls-what-in-yemen-in-2026",
+      "title_hint": "Mapping who controls what in Yemen in 2026",
+      "region": "middle_east",
+      "newspaper": "Al Jazeera",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:17.023910"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/1/14/trump-envoy-announces-launch-of-second-phase-of-gaza-plan",
+      "title_hint": "Trump envoy announces launch of ‘phase two’ of plan to end Gaza war",
+      "region": "middle_east",
+      "newspaper": "Al Jazeera",
+      "category": "Political",
+      "language": "en",
+      "collected_at": "2026-01-15T06:07:17.023912"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/c5y32g7l8lxo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "الولايات المتحدة وبريطانيا تخفضان عدد الأفراد في قاعدة قطر الجوية، وإيران تهدد بقصف القواعد الأمريكية في المنطقة إذا تعرضت لهجوم",
+      "newspaper": "BBC Arabic",
+      "category": "Political",
+      "language": "ar",
+      "region": "middle_east",
+      "published_date": "Wed, 14 Jan 2026 18:10:08 GMT",
+      "collected_at": "2026-01-15T06:08:11.518224",
+      "note": "Fallback for Arab News"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/cn9zyw55yejo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "الولايات المتحدة تعلن بدء المرحلة الثانية من خطة السلام في غزة",
+      "newspaper": "BBC Arabic",
+      "category": "Political",
+      "language": "ar",
+      "region": "middle_east",
+      "published_date": "Wed, 14 Jan 2026 21:02:44 GMT",
+      "collected_at": "2026-01-15T06:08:11.518244",
+      "note": "Fallback for Arab News"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/c74vwyp8z4wo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "ترامب يصر على أن الولايات المتحدة بحاجة إلى غرينلاند لـ \"أغراض أمنية\"",
+      "newspaper": "BBC Arabic",
+      "category": "Political",
+      "language": "ar",
+      "region": "middle_east",
+      "published_date": "Wed, 14 Jan 2026 16:02:08 GMT",
+      "collected_at": "2026-01-15T06:08:11.518255",
+      "note": "Fallback for Arab News"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/c4gr8rxy87xo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "\"الخروج من البيت للضرورة القصوى فقط\": ماذا يحدث في حمص؟ سكان يروون لبي بي سي ومصادر حكومية ترُد",
+      "newspaper": "BBC Arabic",
+      "category": "Political",
+      "language": "ar",
+      "region": "middle_east",
+      "published_date": "Wed, 14 Jan 2026 12:31:31 GMT",
+      "collected_at": "2026-01-15T06:08:11.518263",
+      "note": "Fallback for Arab News"
+    },
+    {
+      "url": "https://www.bbc.com/arabic/articles/czjgk17n31wo?at_medium=RSS&at_campaign=rss",
+      "title_hint": "السنغال تتأهل إلى نهائي كأس الأمم الأفريقية على حساب مصر، ومواجهة مرتقبة بين المغرب ونيجيريا",
+      "newspaper": "BBC Arabic",
+      "category": "Political",
+      "language": "ar",
+      "region": "middle_east",
+      "published_date": "Wed, 14 Jan 2026 19:10:53 GMT",
+      "collected_at": "2026-01-15T06:08:11.518270",
+      "note": "Fallback for Arab News"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601150740001",
+      "title_hint": "오세훈 \"한동훈 제명은 곧 공멸\"",
+      "newspaper": "경향신문",
+      "category": "Political",
+      "language": "ko",
+      "region": "korea",
+      "collected_at": "2026-01-15T08:51:33.418456"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601142306001",
+      "title_hint": "태국 고속철도서 크레인이 열차 덮쳐...32명 사망",
+      "newspaper": "경향신문",
+      "category": "Social",
+      "language": "ko",
+      "region": "korea",
+      "collected_at": "2026-01-15T08:51:33.418462"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601150758001",
+      "title_hint": "중국 세관, 엔비디아 H200 통관금지 지시",
+      "newspaper": "경향신문",
+      "category": "Technological",
+      "language": "ko",
+      "region": "korea",
+      "collected_at": "2026-01-15T08:51:33.418463"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141525011",
+      "title_hint": "전교 1등 유지하려 시험지 빼돌려...안동 사립고 학부모·교사 실형",
+      "newspaper": "경향신문",
+      "category": "Social",
+      "language": "ko",
+      "region": "korea",
+      "collected_at": "2026-01-15T08:51:33.418464"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601141704001",
+      "title_hint": "프리랜서 등 비임금노동자 870만명 육박",
+      "newspaper": "경향신문",
+      "category": "Economic",
+      "language": "ko",
+      "region": "korea",
+      "collected_at": "2026-01-15T08:51:33.418465"
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202601150725001",
+      "title_hint": "미 재무, 원화 약세에 구두개입",
+      "newspaper": "경향신문",
+      "category": "Economic",
+      "language": "ko",
+      "region": "korea",
+      "collected_at": "2026-01-15T08:51:33.418466"
+    }
+  ],
+  "fallback_applied": {
+    "timestamp": "2026-01-15T06:08:25.161145",
+    "sources_replaced": {
+      "Reuters": "BBC Arabic (partial)",
+      "Arab News": "BBC Arabic"
+    },
+    "urls_added": 5
+  },
+  "updated_at": "2026-01-15T08:51:33.418481"
+}

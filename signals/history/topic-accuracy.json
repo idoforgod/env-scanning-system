@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "created": "2026-01-14",
+    "last_updated": "2026-01-14",
+    "description": "pSRT 2.0 Phase 3 - 주제별 역사적 정확도 데이터베이스"
+  },
+
+  "categories": {
+    "Social": {
+      "subcategories": {},
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0
+    },
+    "Technological": {
+      "subcategories": {
+        "AI_ML": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Semiconductor": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Quantum": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Biotech": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Energy_Tech": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        }
+      },
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0
+    },
+    "Economic": {
+      "subcategories": {
+        "Market_Trends": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Trade_Policy": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Currency": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        }
+      },
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0
+    },
+    "Environmental": {
+      "subcategories": {
+        "Climate": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Resources": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        }
+      },
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0
+    },
+    "Political": {
+      "subcategories": {
+        "Geopolitics": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        },
+        "Regulation": {
+          "total_signals": 0,
+          "verified": 0,
+          "accuracy": 0,
+          "calibration_factor": 1.0
+        }
+      },
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0
+    },
+    "Spiritual": {
+      "subcategories": {},
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0
+    }
+  },
+
+  "schema": {
+    "category_entry": {
+      "total_signals": 0,
+      "verified": 0,
+      "accuracy": 0,
+      "calibration_factor": 1.0,
+      "trend": {
+        "last_30d": 0,
+        "last_90d": 0,
+        "all_time": 0
+      }
+    }
+  }
+}

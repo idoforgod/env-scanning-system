@@ -1,0 +1,536 @@
+{
+  "metadata": {
+    "date": "2026-01-15",
+    "total_signals": 27,
+    "processor": "signal-classifier-v4",
+    "classification_summary": {
+      "Social": 5,
+      "Technological": 5,
+      "Economic": 5,
+      "Environmental": 5,
+      "Political": 4,
+      "Spiritual": 3
+    },
+    "validation": {
+      "input_count": 27,
+      "output_count": 27,
+      "missing_count": 0,
+      "status": "PASS"
+    }
+  },
+  "signals": [
+    {
+      "id": "SIG-2026-01-15-001",
+      "url": "https://www.ilo.org/publications/flagship-reports/employment-and-social-trends-2026",
+      "title": "Employment and Social Trends 2026",
+      "category": "Social",
+      "summary": "글로벌 실업률 4.9% 안정적이나 구직 불가능자 포함 시 4억 800만 명의 일자리 격차 존재. 3억 명 극빈곤 노동, 21억 명 비공식 고용 상태. 청년 실업 12.4%.",
+      "original_content": "Global unemployment is projected to remain at 4.9%, suggesting resilience. However, this stability should not be mistaken for a return to healthy labour market conditions. The broader jobs gap—encompassing people seeking but unable to find paid work—is projected to reach 408 million in 2026. Nearly 300 million workers remain in extreme working poverty. 2.1 billion workers are in informal employment without basic protections. Real wage growth has not fully recovered from recent inflation. Low-income countries face rapid labor force expansion with 3.1% employment growth, but weak productivity means new jobs are often low-quality. Women comprise only 40% of global employment. Youth unemployment stands at 12.4%, with 260 million youth not in employment, education, or training. Approximately 465 million jobs depend on foreign demand.",
+      "source": "ILO",
+      "pSRT_score": {
+        "source": 30,
+        "recency": 25,
+        "traceability": 25,
+        "cross_reference": 20,
+        "total": 100
+      },
+      "significance": 5,
+      "keywords": ["글로벌 노동시장", "비공식 고용", "청년 실업", "일자리 격차", "극빈곤 노동"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-002",
+      "url": "https://www.imd.org/ibyimd/talent/workplace-trends-for-2026/",
+      "title": "Workplace Trends for 2026: The New Labor Market Reality",
+      "category": "Social",
+      "summary": "2026년 직장 5대 트렌드: 유연근무 증가, DEI 재부상, Agentic AI의 일자리 대체 시작, AI 교육 부족(25%만 정규 교육), 숙련인력 이동 제한 증가.",
+      "original_content": "Five major trends reshaping work: 1) Flexibility - Organizations face a paradox with workers seeking flexible arrangements while regulations make alternative employment more expensive. 82% of senior executives acknowledge the shift toward transient job arrangements. 2) Inclusion - Despite 2025 backlash against DEI, inclusion resurges as companies recognize the business case. Companies with robust diversity practices are 2.7x more likely to succeed. 3) Agentic AI - 2026 marks the transition from productivity enhancement to actual job displacement. White-collar junior and mid-level roles face greatest risk. 4) AI Training Crisis - Workers save two hours daily using AI but only 25% receive formal training. 5) Talent Mobility - Major economies are restricting skilled migration precisely when demographic decline increases international talent dependency.",
+      "source": "IMD",
+      "pSRT_score": {
+        "source": 28,
+        "recency": 25,
+        "traceability": 23,
+        "cross_reference": 18,
+        "total": 94
+      },
+      "significance": 5,
+      "keywords": ["유연근무", "AI 일자리 대체", "DEI", "인재 이동", "AI 교육 격차"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-003",
+      "url": "https://www.vistage.com/research-center/business-financials/economic-trends/20251006-social-and-workforce-trends-for-2026-and-beyond/",
+      "title": "Social and Workforce Trends for 2026 and Beyond",
+      "category": "Social",
+      "summary": "미국 고용 정체 상태, 8월 채용 7만 5천 명에 그침. 직장 몰입도 32%로 미미하게 상승. 미국인 절반이 인플레이션으로 구매력 상실. 2030년까지 65세 이상 인구 20% 도달.",
+      "original_content": "The employment landscape is cooling into a no-hire, no-fire stalemate. Job additions slowed to only 75,000 in August with unemployment rising to 4.3%. U.S. workplace engagement rose slightly to 32% this year, only a point higher than the 10-year low in 2024. Nearly half of American workers are losing purchasing power. Only 57% of U.S. workers saw their pay outrun inflation as of June 2025. By 2030, one in five Americans will be age 65+. Frugal consumers now practice selective spending: 83% of Americans say saving money is a bigger priority now than in past years. U.S. home prices rose 1.2% year-over-year in July 2025, with median prices around $443,019, while rents climbed 49% from 2017-2024.",
+      "source": "Vistage",
+      "pSRT_score": {
+        "source": 26,
+        "recency": 22,
+        "traceability": 24,
+        "cross_reference": 17,
+        "total": 89
+      },
+      "significance": 4,
+      "keywords": ["고용 정체", "직장 몰입도", "구매력 상실", "고령화", "주거비 상승"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-004",
+      "url": "https://blogs.worldbank.org/en/developmenttalk/what-do-demographic-changes-mean-for-labor-supply-",
+      "title": "What Do Demographic Changes Mean for Labor Supply?",
+      "category": "Social",
+      "summary": "3대 인구 변화 트렌드: 인구 증가 둔화(사하라 이남 아프리카 주도), 인구 고령화(일본 65세 이상 30%), 생산가능인구 양극화(선진국 감소, 아프리카/아시아 증가).",
+      "original_content": "Three major demographic shifts are reshaping labor markets: 1) Slowing Population Growth - Sub-Saharan Africa will drive over half of global population increase through 2050, while Europe and Northern America face population decline in the late 2030s. 2) Aging Populations - Japan has close to 30% of its population aged 65 years or older. 3) Diverging Working-Age Populations - While developed economies experience declining working-age cohorts, most of Africa and Asia show expanding workforces though this advantage will decline by 2040. In declining workforce regions, labor costs rise, skill shortages emerge, and automation intensifies. A demographic dividend opportunity exists where the available labor force is larger than the dependent population.",
+      "source": "World Bank",
+      "pSRT_score": {
+        "source": 30,
+        "recency": 23,
+        "traceability": 25,
+        "cross_reference": 20,
+        "total": 98
+      },
+      "significance": 5,
+      "keywords": ["인구 고령화", "생산가능인구", "인구통계학적 배당", "노동력 감소", "자동화 가속"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-005",
+      "url": "https://ilostat.ilo.org/blog/how-population-trends-shape-our-workforce/",
+      "title": "How Population Trends Shape Our Workforce",
+      "category": "Social",
+      "summary": "개발도상국 청년 인구 폭증(61%가 25세 미만). 저소득 국가 청년 1/4이 NEET. 이주 노동자 1억 6900만 명 중 2/3가 고소득 국가 근무. 여성 육아 시 노동참여율 38%p 감소.",
+      "original_content": "Developing nations face a youth bulge with 61% under age 25. More than a quarter of youth aged 15-24 are NEET in low-income countries. Asia-Pacific saw non-agricultural employment rise 25.7 percentage points between 1991-2022, while working poverty decreased 48.8 points. Over two-thirds of 169 million migrant workers globally work in high-income countries, filling critical labor gaps. Motherhood significantly reduces women's workforce participation—gaps reach 38 percentage points for couples with young children versus 23 points without.",
+      "source": "ILOSTAT",
+      "pSRT_score": {
+        "source": 29,
+        "recency": 24,
+        "traceability": 25,
+        "cross_reference": 19,
+        "total": 97
+      },
+      "significance": 4,
+      "keywords": ["청년 인구", "NEET", "이주 노동자", "여성 노동참여", "인구 구조"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-006",
+      "url": "https://etedge-insights.com/featured-insights/why-2026-will-be-the-breakthrough-year-for-ai-quantum-convergence/",
+      "title": "Why 2026 Will Be the Breakthrough Year for AI-Quantum Convergence",
+      "category": "Technological",
+      "summary": "2026년 양자-AI 융합 원년. 이론적 돌파에서 실용적 비즈니스 응용으로 전환. 현재 암호화 위협, harvest-now decrypt-later 공격 진행 중. 분자 시뮬레이션, 신약 개발 등 응용 예상.",
+      "original_content": "2026 marks the transition from theoretical quantum breakthroughs to operational, business-relevant applications. Dr. Adnan Masood (UST Chief AI Architect) emphasizes that 2026 will shift from fragile NISQ demonstrations to repeatable, error-mitigated execution. Sharda Tickoo (Trend Micro) warns that quantum capabilities threaten current encryption standards. Adversaries are conducting harvest-now, decrypt-later campaigns, stockpiling encrypted data today. Varun Babbar (Qlik VP) argues that trusted data foundations are non-negotiable as poor-quality data amplifies quantum system errors exponentially. Practical applications expected include molecular simulation, drug discovery, materials science, financial risk modeling, and supply-chain optimization.",
+      "source": "ETedge Insights",
+      "pSRT_score": {
+        "source": 24,
+        "recency": 25,
+        "traceability": 22,
+        "cross_reference": 16,
+        "total": 87
+      },
+      "significance": 5,
+      "keywords": ["양자-AI 융합", "암호화 위협", "NISQ", "신약 개발", "harvest-now decrypt-later"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-007",
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "TQI's Expert Predictions on Quantum Technology in 2026",
+      "category": "Technological",
+      "summary": "2026년 양자 기술 전망: 양자화학 개념증명, 100큐비트 돌파, 양자내결함성 진전, 탈양자암호 전환 시급, M&A 증가, 조기 도입자 경쟁우위 확보 예상.",
+      "original_content": "Xanadu expects compelling proof-of-concept demonstrations in quantum chemistry and materials science with improved error rates. Qilimanjaro projects multimodal quantum-classical computing architectures becoming central to data centers. University of Chicago anticipates substantial advances in fault-tolerant computation demonstrations. Multiple experts emphasize urgent migration to post-quantum cryptography as harvest-now decrypt-later threats intensify. Orange Business predicts processors crossing the 100-qubit threshold. SAS expects increased M&A activity, expanded government spending, and early adopters gaining competitive advantage as quantum transitions from experimentation to infrastructure integration.",
+      "source": "The Quantum Insider",
+      "pSRT_score": {
+        "source": 25,
+        "recency": 23,
+        "traceability": 22,
+        "cross_reference": 17,
+        "total": 87
+      },
+      "significance": 5,
+      "keywords": ["양자컴퓨팅", "100큐비트", "탈양자암호", "양자내결함성", "M&A"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-008",
+      "url": "https://www.startus-insights.com/innovators-guide/future-of-quantum-computing/",
+      "title": "Future of Quantum Computing 2026-2030",
+      "category": "Technological",
+      "summary": "양자컴퓨팅 10대 돌파구: 양자오류정정(QEC 시장 2033년 38억 달러), 초전도 큐비트, 이온트랩(정확도 99.9993%), 광양자, 중성원자, 양자-AI 융합(1500억 달러), 양자네트워킹, 탈양자암호(2035년 124억 달러).",
+      "original_content": "10 Major Breakthroughs: 1) Quantum Error Correction - 120 peer-reviewed papers published in 2025 vs 36 in 2024. QEC market projected to reach $3.8 billion by 2033. 2) Superconducting Qubits - IBM's Nighthawk processor shows improved fidelity. 3) Trapped-Ion Systems - Oxford Ionics achieved 99.9993% SPAM accuracy. 4) Photonic Quantum Computing - Optical systems demonstrate 1000x speed increases on selected tasks. 5) Neutral-Atom Systems - Caltech achieved 99.98% accuracy controlling 6,100 caesium atoms. 6) Topological Qubits - Early prototypes aim to reduce error-correction overhead. 7) Quantum-AI Convergence - Quantum machine learning projected to contribute $150 billion. 8) Quantum Networking - Multi-node entanglement distribution over fiber links. 9) Post-Quantum Cryptography - PQC market projected to reach $12.4 billion by 2035. 10) Hybrid Quantum-Classical Platforms - Market growth estimated at 28% CAGR.",
+      "source": "StartUs Insights",
+      "pSRT_score": {
+        "source": 23,
+        "recency": 24,
+        "traceability": 24,
+        "cross_reference": 18,
+        "total": 89
+      },
+      "significance": 5,
+      "keywords": ["양자오류정정", "초전도 큐비트", "이온트랩", "광양자", "양자-AI", "탈양자암호"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-009",
+      "url": "https://thequantuminsider.com/2026/01/02/researchers-map-how-quantum-computing-could-accelerate-single-cell-biology/",
+      "title": "Researchers Map How Quantum Computing Could Accelerate Single-Cell Biology",
+      "category": "Technological",
+      "summary": "IBM과 Quantum for Healthcare Life Sciences 컨소시엄이 단일세포 생물학에 양자컴퓨팅 적용 로드맵 발표. 공간 분석, 세포 분화 모델링, 약물 반응 예측 등 응용 가능.",
+      "original_content": "Researchers from IBM and the Quantum for Healthcare Life Sciences Consortium published a roadmap in Nature Reviews Molecular Cell Biology. Single-cell and spatial omics datasets are vast and complex, involving millions of cells and thousands of measured features. Classical computers struggle with high-dimensional dynamics. Quantum's potential applications include spatial analysis, temporal modeling of cell differentiation, drug response prediction, and higher-order pattern detection. Hybrid quantum-classical approaches could deliver practical benefits sooner. Most proposed quantum algorithms haven't yet demonstrated clear advantages on real biological datasets.",
+      "source": "The Quantum Insider",
+      "pSRT_score": {
+        "source": 26,
+        "recency": 25,
+        "traceability": 24,
+        "cross_reference": 18,
+        "total": 93
+      },
+      "significance": 4,
+      "keywords": ["양자컴퓨팅", "단일세포 생물학", "약물 반응 예측", "IBM", "헬스케어"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-010",
+      "url": "https://betanews.com/2025/12/16/practical-quantum-encryption-risk-and-government-regulation-quantum-computing-predictions-for-2026/",
+      "title": "Practical Quantum, Encryption Risk and Government Regulation - Quantum Computing Predictions for 2026",
+      "category": "Technological",
+      "summary": "2026년 실용 양자컴퓨터 등장 예상. Q-Day(현재 암호화 무력화 시점) 2026년 도래 가능성. 미국 정부 2027년까지 국가안보 시스템 양자내성 암호화 전환 의무화.",
+      "original_content": "The first practical quantum computer capable of solving real-world problems expected to emerge in 2026. Multiple experts predict Q-Day—when quantum computers can crack current encryption—may arrive in 2026. Organizations will move quantum-safe cryptography from pilot programs into early production. Companies will evaluate vendors' ability to migrate to post-quantum cryptography standards. Federal initiatives will drive quantum-resistant upgrades, with the U.S. government setting a 2027 deadline for National Security System devices. Significant spending increases on quantum security expected.",
+      "source": "BetaNews",
+      "pSRT_score": {
+        "source": 22,
+        "recency": 20,
+        "traceability": 21,
+        "cross_reference": 16,
+        "total": 79
+      },
+      "significance": 5,
+      "keywords": ["Q-Day", "양자컴퓨터", "암호화 위협", "양자내성 암호", "국가안보"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-011",
+      "url": "https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26",
+      "title": "Global Crypto Policy Review Outlook 2025/26",
+      "category": "Economic",
+      "summary": "70% 이상 국가가 스테이블코인 규제 프레임워크 추진. 미국 GENIUS Act 연방 스테이블코인 기준 확립. EU MiCA 시행에 국가별 감독 편차 발생. 80% 관할구역에서 금융기관이 디지털 자산 진출 발표.",
+      "original_content": "Over 70% of jurisdictions reviewed advanced stablecoin regulatory frameworks. The U.S. passed the landmark GENIUS Act establishing federal stablecoin standards. The EU's MiCA implementation saw national authorities adopt varied approaches. Approximately 80% of reviewed jurisdictions witnessed financial institutions announcing digital asset initiatives. The Financial Stability Board and FATF highlighted persistent gaps in regulatory consistency. U.S. coordinated executive and legislative action delivered major progress. MiCA implementation revealed supervisory inconsistencies. Multiple Asia-Pacific jurisdictions advanced stablecoin and institutional frameworks. Virtual asset service providers have significantly lower rates of illicit activity than the overall ecosystem.",
+      "source": "TRM Labs",
+      "pSRT_score": {
+        "source": 27,
+        "recency": 24,
+        "traceability": 23,
+        "cross_reference": 19,
+        "total": 93
+      },
+      "significance": 5,
+      "keywords": ["스테이블코인 규제", "GENIUS Act", "MiCA", "디지털 자산", "금융기관"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-012",
+      "url": "https://sumsub.com/blog/global-crypto-regulations/",
+      "title": "Crypto Regulation in 2026: What Changed and What's Ahead",
+      "category": "Economic",
+      "summary": "FATF 여행 규칙 채택 117개 국가 중 85개국으로 증가. 글로벌 암호화폐 시장 2025년 4조 달러 도달. 전통 헤지펀드 절반 이상이 가상자산 노출. 2026년 트렌드: 스테이블코인 조화, DeFi 규제, CBDC 확산.",
+      "original_content": "The Financial Action Task Force reports that 85 of 117 jurisdictions have adopted or are implementing Travel Rule legislation for virtual assets, up from 65 in 2024. The global crypto market reached $4 trillion in 2025. Over half of traditional hedge funds now have some form of exposure to virtual assets. Emerging 2026 trends include stablecoin harmonization with full-reserve backing requirements, regulated DeFi with on-chain identity attestation, advancing CBDC pilots, OECD's CARF exchanges expected in 2027, and intensified reserve audits for exchanges. U.S. GENIUS Act mandates stablecoin 1:1 backing. Singapore's Project Guardian testing institutional DeFi.",
+      "source": "Sumsub",
+      "pSRT_score": {
+        "source": 24,
+        "recency": 25,
+        "traceability": 23,
+        "cross_reference": 18,
+        "total": 90
+      },
+      "significance": 5,
+      "keywords": ["FATF 여행 규칙", "암호화폐 시장", "헤지펀드", "DeFi 규제", "CBDC"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-013",
+      "url": "https://www.svb.com/industry-insights/fintech/2026-crypto-outlook/",
+      "title": "Future of Crypto: 5 Crypto Predictions for 2026",
+      "category": "Economic",
+      "summary": "2026년 암호화폐 5대 예측: 기관 자본 수직 증가(VC 투자 44% 증가), M&A 59% 급증(코인베이스 Deribit 29억 달러 인수), 스테이블코인 인터넷 달러화, 실물자산 토큰화 주류화(360억 달러), AI-암호화폐 융합.",
+      "original_content": "1) Institutional Capital Goes Vertical - VC investment rebounded 44% in 2025, with median check sizes increasing 1.5x to $5 million. 2) M&A Posts Another Banner Year - Over 140 VC-backed crypto companies were acquired, a 59% year-over-year increase. Coinbase bought Deribit for $2.9 billion. 3) Stablecoins Become the Internet's Dollar - Regulatory clarity from the GENIUS Act accelerates adoption as stablecoins become the backbone of digital money. 4) Real World Asset Tokenization Goes Mainstream - On-chain representations of cash, treasuries, and money market instruments exceeded $36 billion in 2025. 5) AI and Crypto Redefine Digital Commerce - For every VC dollar invested into crypto in 2025, 40 cents went to a company also building AI products.",
+      "source": "SVB",
+      "pSRT_score": {
+        "source": 27,
+        "recency": 25,
+        "traceability": 24,
+        "cross_reference": 19,
+        "total": 95
+      },
+      "significance": 5,
+      "keywords": ["기관 투자", "암호화폐 M&A", "스테이블코인", "실물자산 토큰화", "AI-암호화폐"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-014",
+      "url": "https://www.globallegalinsights.com/practice-areas/blockchain-cryptocurrency-laws-and-regulations/",
+      "title": "Blockchain and Cryptocurrency Laws and Regulations 2026",
+      "category": "Economic",
+      "summary": "트럼프 행정부 디지털 자산 'Hard Fork' 시행. GENIUS Act(2025년 7월) 스테이블코인 100% 준비금 의무화, 2600억 달러 시장 규제. EU MiCA 완전 시행. 싱가포르, 홍콩, UAE 포괄 규제 확대.",
+      "original_content": "The Trump administration implemented America's Hard Fork on digital assets, replacing enforcement-focused oversight with legislative frameworks. GENIUS Act (July 2025) established the first comprehensive federal cryptocurrency framework, mandating 100% reserve backing for stablecoins and creating dual federal-state licensing pathways for a $260 billion market. CLARITY Act defines jurisdictional boundaries between the SEC and CFTC. MiCA achieved full implementation in EU. Singapore extended comprehensive oversight; Hong Kong launched A-S-P-I-Re framework; the UAE established unified national standards. Key compliance areas include real-world asset tokenization, institutional custody standards, DeFi security protocols, and staking regulation clarification.",
+      "source": "Global Legal Insights",
+      "pSRT_score": {
+        "source": 26,
+        "recency": 24,
+        "traceability": 24,
+        "cross_reference": 19,
+        "total": 93
+      },
+      "significance": 5,
+      "keywords": ["GENIUS Act", "스테이블코인 규제", "MiCA", "디지털 자산 규제", "SEC-CFTC"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-015",
+      "url": "https://www.fintechweekly.com/magazine/articles/stablecoins-2025-regulation-banks-fintech-digital-money-infrastructure",
+      "title": "Stablecoins in 2025: How Regulation, Banks, and Fintechs Turned Digital Money Into a Global Infrastructure",
+      "category": "Economic",
+      "summary": "GENIUS Act로 스테이블코인 자본요구 및 투명성 기준 확립. 유럽 은행 9개가 유로 스테이블코인 프로젝트 발표. JPMorgan, BoA, Citi, Wells Fargo 협력 디지털 토큰 개시. 월 거래량 7000억 달러 돌파.",
+      "original_content": "Congress passed the GENIUS Act establishing capital requirements for issuers, prescribed transparency standards, and oversight. MiCAR created continent-wide standards, with nine European banks announcing a euro-denominated stablecoin project. Major banks—JPMorgan Chase, Bank of America, Citigroup, and Wells Fargo—initiated a cooperative fully collateralized digital token project. Transaction volumes surged to over $700 billion monthly. Visa launched cross-border payment programs using stablecoins, cutting processing times from days to minutes. Banks began treating stablecoins as treasury management tools rather than experimental assets.",
+      "source": "Fintech Weekly",
+      "pSRT_score": {
+        "source": 25,
+        "recency": 23,
+        "traceability": 23,
+        "cross_reference": 18,
+        "total": 89
+      },
+      "significance": 5,
+      "keywords": ["스테이블코인", "GENIUS Act", "은행 디지털 토큰", "Visa", "월 7000억 달러"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-016",
+      "url": "https://yaleclimateconnections.org/2026/01/where-things-stand-on-climate-change-in-2026/",
+      "title": "Where Things Stand on Climate Change in 2026",
+      "category": "Environmental",
+      "summary": "2025년 냉각 라니냐 중에도 역대 2위 최고 기온 기록. 최근 12년이 가장 더운 시기. 미국 배출량 2% 증가로 후퇴. 중국 청정기술 리더로 부상, 배출량 정점 도달, 전기차 판매 절반 이상.",
+      "original_content": "2025 was the second-hottest year on record during a cooling La Nina event. The past 12 years have been the warmest on record. Ocean temperatures rose significantly, absorbing energy equivalent to nearly 10 Hiroshima bombs per second throughout 2025. The United States moved backward on climate action, with emissions increasing about 2% in 2025. China emerged as a clean technology leader with emissions plateauing and more than half its new vehicle sales being electric (compared to under 10% in the U.S.). China built over 300 gigawatts of renewable capacity in 2025 and exported over $200 billion in clean energy technologies globally.",
+      "source": "Yale Climate Connections",
+      "pSRT_score": {
+        "source": 29,
+        "recency": 25,
+        "traceability": 25,
+        "cross_reference": 20,
+        "total": 99
+      },
+      "significance": 5,
+      "keywords": ["기후 변화", "해양 온도 상승", "미국 배출 증가", "중국 청정기술", "전기차"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-017",
+      "url": "https://www.canarymedia.com/articles/clean-energy/big-stories-2026-renewables-power-grid",
+      "title": "10 Big Energy Stories Canary Media is Tracking in 2026",
+      "category": "Environmental",
+      "summary": "2026년 에너지 10대 스토리: 청정에너지 가속, 가상발전소 부상, 원전 재가동(Palisades, Three Mile Island), 메인 1200MW 육상풍력, 전기건물 경제성 확보, Fervo 지열발전소 가동(10월).",
+      "original_content": "1) Clean energy deployment continues accelerating despite political setbacks. 2) Virtual Power Plants rise as data center demands force utilities to embrace distributed energy networks. 3) Palisades and Three Mile Island plants target 2026-2027 restarts while advanced reactor startups aim for criticality. 4) Maine launches 1,200 megawatts of onshore wind development. 5) All-electric new construction increasingly makes economic sense. 6) Fervo Energy's Cape Station facility in Utah launches in October 2026 demonstrating enhanced geothermal at scale. 7) Ohio faces tug-of-war over clean energy with May referendum. 8) Battery systems enabling faster data center deployment. 9) Midwest utilities pushing back coal plant closures. 10) Northeast states explore importing Canadian offshore wind power.",
+      "source": "Canary Media",
+      "pSRT_score": {
+        "source": 26,
+        "recency": 25,
+        "traceability": 24,
+        "cross_reference": 18,
+        "total": 93
+      },
+      "significance": 4,
+      "keywords": ["청정에너지", "가상발전소", "원전 재가동", "육상풍력", "지열발전", "배터리"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-018",
+      "url": "https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/",
+      "title": "Progress Despite Fragmentation: The Energy Transition to 2030",
+      "category": "Environmental",
+      "summary": "2025년 태양광·풍력 설치 800GW 기록 돌파. 향후 5년간 4.5TW 설치 예상(67% 증가). 배터리 비용 117달러/kWh로 급락. EV 판매 글로벌 25%, 2030년 40% 전망. 석유 수요 2032년 정점 예측.",
+      "original_content": "The US prioritizes AI dominance and oil/gas production over climate goals. China balances clean energy leadership with energy security. Europe maintains climate leadership while seeking competitiveness. Global solar and wind installations exceeded 800 gigawatts in 2025—a record. Over the next five years, approximately 4.5 terawatts of new installations are expected, a 67% increase. Battery storage equipment costs plummeted to $117/kWh, less than one-third of 2022 prices. EV sales represent over 25% of global car sales, projected to reach 40% by 2030. China leads with over 50% EV market share. Chinese automakers now command 18% of global EV sales outside China. BNEF projects global oil demand will peak around 2032.",
+      "source": "BloombergNEF",
+      "pSRT_score": {
+        "source": 30,
+        "recency": 25,
+        "traceability": 25,
+        "cross_reference": 20,
+        "total": 100
+      },
+      "significance": 5,
+      "keywords": ["태양광", "풍력", "배터리 비용", "EV 판매", "석유 수요 정점"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-019",
+      "url": "https://www.claimsjournal.com/news/national/2026/01/02/334858.htm",
+      "title": "The 14 Global Trends That Will Shape the Climate in 2026",
+      "category": "Environmental",
+      "summary": "2026년 기후 14대 트렌드: 중국 5개년 계획 승인, 화석연료 단계적 폐지 COP31 외교, 개도국 중국산 청정기술로 돌파구, 데이터센터 에너지 수요, 60개 이상 원전 건설, 글로벌 EV 16% 증가 예상.",
+      "original_content": "1) China's five-year plan approval in March. 2) COP31 diplomacy toward fossil fuel phase-out. 3) Developing nations achieving breakthroughs through affordable Chinese clean tech. 4) Data center energy demand driving climate tech investment. 5) Over 60 nuclear reactors under construction globally. 6) AI bubble risk from DeepSeek moment or grid limitations. 7) Arctic geopolitics rising around Greenland and Northern Sea Route. 8) Global EV sales expected to rise 16% but U.S. adoption stagnating. 9) BlackRock pension decision on $42 billion mandate. 10) Growing demand for climate risk modeling. 11) U.S. renewable challenges with solar declining and wind subsidies eliminated. 12) EPA Endangerment Finding rescission expected. 13) FEMA reform or abolition recommendations. 14) California's 20 years of climate leadership under attack.",
+      "source": "Claims Journal",
+      "pSRT_score": {
+        "source": 24,
+        "recency": 25,
+        "traceability": 23,
+        "cross_reference": 17,
+        "total": 89
+      },
+      "significance": 4,
+      "keywords": ["중국 5개년 계획", "COP31", "데이터센터", "원전 건설", "글로벌 EV", "북극 지정학"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-020",
+      "url": "https://interestingengineering.com/energy/technologies-redefining-fight-against-global-warming",
+      "title": "7 Game-Changing Technologies Leading the Fight Against Global Warming",
+      "category": "Environmental",
+      "summary": "지구온난화 대응 7대 게임체인저: 직접공기포집(톤당 70달러, 시장 2026년 2610억 달러), 페로브스카이트 태양전지(효율 25.4%, 비용 30-40% 감소), 수력 발전기, 공중풍력터빈, 해양쓰레기 청소, 수직농업, 강화지열.",
+      "original_content": "1) Direct Air Capture - Researchers at University of Houston developed a process capturing CO2 at roughly $70 per ton. Market projected to reach $260.96 billion by 2026 with 130+ facilities planned. 2) Perovskite Solar Cells - Manchester researchers achieved 25.4% efficiency with manufacturing costs 30-40% lower than traditional panels. 3) Passive Atmospheric Water Generator - MIT engineers invented a device harvesting water from desert air without electricity using hydrogel-desiccant technology. 4) Airborne Wind Turbines - China's S1500 prototype produces up to 30 times more energy than earlier systems. 5) Ocean Cleanup System 03 aims to reduce floating ocean plastic by 90% by 2040. 6) Vertical Farming achieves yields 390 times higher per square foot using 90% less water. 7) Enhanced Geothermal Systems could supply 15% of global electricity by 2050.",
+      "source": "Interesting Engineering",
+      "pSRT_score": {
+        "source": 23,
+        "recency": 24,
+        "traceability": 23,
+        "cross_reference": 17,
+        "total": 87
+      },
+      "significance": 4,
+      "keywords": ["직접공기포집", "페로브스카이트 태양전지", "공중풍력터빈", "수직농업", "강화지열"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-021",
+      "url": "https://www.cfr.org/article/how-2026-could-decide-future-artificial-intelligence",
+      "title": "How 2026 Could Decide the Future of Artificial Intelligence",
+      "category": "Political",
+      "summary": "2026년 AI 규제 원년: EU AI Act 8월 완전 시행(벌금 최대 3500만 유로 또는 매출 7%), 콜로라도 AI법 6월 시행, 캘리포니아 AI 투명성법 8월 시행. AI 에이전트 법적 지위 결정 필요. 미중 칩 통제 압박.",
+      "original_content": "The EU's AI Act takes full effect in August with penalties up to 35 million euros or 7% of global turnover. Colorado's comprehensive AI Act comes online in June. California's AI Transparency Act mandates content labeling by August. Policymakers must decide whether AI agents should be treated as legal actors bearing duties or legal persons holding rights. Drafting technology policy is hard; implementing it is devilishly difficult. U.S.-China chip controls face pressure as China pursues domestic AI capability. China actively shapes global AI governance frameworks while democracies deliberate. Over 80% of U.S. workers use unapproved AI systems. Adversaries deploy autonomous agents with minimal human oversight.",
+      "source": "Council on Foreign Relations",
+      "pSRT_score": {
+        "source": 29,
+        "recency": 25,
+        "traceability": 25,
+        "cross_reference": 19,
+        "total": 98
+      },
+      "significance": 5,
+      "keywords": ["EU AI Act", "콜로라도 AI법", "AI 에이전트", "미중 칩 통제", "AI 거버넌스"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-022",
+      "url": "https://www.techpolicy.press/expert-predictions-on-whats-at-stake-in-ai-policy-in-2026/",
+      "title": "Expert Predictions on What's at Stake in AI Policy in 2026",
+      "category": "Political",
+      "summary": "2026년 AI 정책 전망: 생성형 AI 빅테크 집중 지속, 주권 대 연방 규제 논쟁 격화, 아동 안전 소송 영향 증대, 주정부 AI 보호 조치 지속, 권력 집중 심화, 데이터센터 전기·물 사용 선거 쟁점화.",
+      "original_content": "Multiple policy experts predict: Generative AI will remain concentrated among Big Tech, Anthropic, OpenAI, and xAI. The battle over states' rights on AI will remain the highest profile fight. Child safety lawsuits will have greater industry impact than new legislation. Models will advance in reasoning, autonomy, and multimodal capabilities. States will continue advancing AI protections despite Trump's executive order. Power concentration among foundation model developers will intensify. 2026 will emphasize enforcement over new declarations. AI bubble represents the largest speculative financial bubble in history. Data centers will become electoral issues over electricity costs and water use. Congress may pass long-overdue privacy fixes including COPPA, FERPA, and warrant requirements.",
+      "source": "Tech Policy Press",
+      "pSRT_score": {
+        "source": 26,
+        "recency": 25,
+        "traceability": 23,
+        "cross_reference": 18,
+        "total": 92
+      },
+      "significance": 4,
+      "keywords": ["AI 정책", "빅테크 집중", "주권 vs 연방", "아동 안전", "데이터센터"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-023",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/the-g20-is-moving-forward-on-global-ai-governance-and-the-us-risks-being-left-out/",
+      "title": "The G20 Is Moving Forward on Global AI Governance - And the US Risks Being Left Out",
+      "category": "Political",
+      "summary": "G20 남아공 정상회담(2025년 11월) AI를 공공재로 규정, 집단 거버넌스 강조. 미국 불참으로 다자 기술 거버넌스 후퇴. 브라질, 인도, 남아공이 규범 형성. 인도 AI 영향 서밋(2026년 2월) 재참여 기회.",
+      "original_content": "The G20 South Africa Summit (November 2025) marked a significant shift, positioning AI as a public good requiring collective governance rather than pure geopolitical competition. The declaration emphasized human-centered approach, global equity focus, democratic resilience, and alignment with UNESCO's ethical AI framework. The United States declined to participate, signaling retreat from multilateral tech governance. This creates space for Brazil, India, and South Africa to shape emerging norms. Technological dominance without normative influence becomes brittle. Governance frameworks established now will embed themselves in standards and markets for decades. The India AI Impact Summit (February 2026) and U.S. G20 presidency offer opportunities for re-engagement.",
+      "source": "Atlantic Council",
+      "pSRT_score": {
+        "source": 28,
+        "recency": 22,
+        "traceability": 24,
+        "cross_reference": 19,
+        "total": 93
+      },
+      "significance": 4,
+      "keywords": ["G20", "AI 거버넌스", "미국 불참", "다자주의", "UNESCO"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-024",
+      "url": "https://bernardmarr.com/8-ai-ethics-trends-that-will-redefine-trust-and-accountability-in-2026/",
+      "title": "8 AI Ethics Trends That Will Redefine Trust And Accountability In 2026",
+      "category": "Spiritual",
+      "summary": "2026년 AI 윤리 8대 트렌드: 저작권 문제, 자율 에이전트 법적 경계, 일자리 영향(초급 행정직 채용 급감), 책임 소재, 글로벌 기준 분열, 딥페이크, 조직 정책, AI 블랙박스 문제 해결 압박.",
+      "original_content": "1) The Copyright Question - Courts addressing whether AI trained on copyrighted content should compensate creators. 2) Agentic Guardrails in Law - Legislators establishing boundaries for autonomous AI agents. 3) The Impact on Jobs - Entry-level administrative hiring has dropped significantly due to AI adoption. 4) Responsibility and Accountability - Unclear who bears liability when AI errs. 5) Global Standards - Fragmented national regulations create enforcement gaps. 6) Synthetic Content and Deepfakes - AI-generated misinformation threatens democratic institutions. 7) Organizational Policies and Governance - Companies must establish codes of conduct for employee AI use. 8) Solving AI's Black Box Problem - Pressure mounting for explainable AI adoption and organizational audits.",
+      "source": "Bernard Marr",
+      "pSRT_score": {
+        "source": 25,
+        "recency": 25,
+        "traceability": 22,
+        "cross_reference": 17,
+        "total": 89
+      },
+      "significance": 4,
+      "keywords": ["AI 윤리", "저작권", "자율 에이전트", "일자리", "딥페이크", "설명 가능 AI"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-025",
+      "url": "https://silvijaseres.com/ethics-in-ai-key-issues-you-need-to-know-in-2026/",
+      "title": "Ethics in AI - Key Issues You Need to Know in 2026",
+      "category": "Spiritual",
+      "summary": "2026년 AI 윤리 핵심 이슈: 편향성(채용, 안면인식 차별), 프라이버시(감시, 동의), 책임 소재, 투명성(블랙박스), 자율성(의료, 자율무기), 불평등(AI 개발 접근 격차), 조작(딥페이크, 광고), 규제.",
+      "original_content": "Key AI ethics concerns for 2026: 1) Bias - AI systems learn from data and can perpetuate discrimination in hiring, facial recognition, and other applications. 2) Privacy - Data collection raises concerns about surveillance and consent. 3) Accountability - Responsibility unclear when AI systems cause harm. 4) Transparency - Deep learning models often function as black boxes; explainable AI is essential. 5) Autonomy - Determining appropriate human control levels in healthcare and autonomous weapons. 6) Inequality - Unequal access to AI development widens the digital divide. 7) Manipulation - Deepfakes, targeted advertising, and emotional exploitation demand protections. 8) Regulation - Regional laws emerging for data protection, algorithmic transparency, and AI auditing.",
+      "source": "Silvija Seres",
+      "pSRT_score": {
+        "source": 23,
+        "recency": 25,
+        "traceability": 22,
+        "cross_reference": 16,
+        "total": 86
+      },
+      "significance": 4,
+      "keywords": ["AI 윤리", "편향성", "프라이버시", "투명성", "자율무기", "디지털 격차"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-026",
+      "url": "https://www.aibusinessreview.org/2026/01/01/ai-ethics-2026/",
+      "title": "AI Ethical Future",
+      "category": "Spiritual",
+      "summary": "AI 윤리 미래: Yann LeCun 자율학습 시스템 옹호, Fei-Fei Li 인간 가치 이해 필수 강조, Sam Altman 안전 기준과 국제 협력 촉구, Shannon Vallor 심리적 영향 경고. 5대 권고: 투명 책임, 편향 완화, 인간 감독, 국제 협력, 디지털 리터러시.",
+      "original_content": "Yann LeCun's Autonomous Vision - Meta's AI chief advocates for self-learning systems through observation rather than labeled data. Fei-Fei Li's Moral Imperative - AI development requires thorough comprehension of human values; without ethical design, efficiency gains risk deepening inequality. Sam Altman's Governance Call - 2026 is pivotal for safety standards; international cooperation essential. Shannon Vallor's Social Warning - Society underestimates AI's psychological effects on behavior and perception. Five recommendations: Transparent accountability frameworks, bias mitigation through diverse datasets, human oversight with fail-safes, international collaborative standards, and widespread digital literacy education.",
+      "source": "AI Business Review",
+      "pSRT_score": {
+        "source": 22,
+        "recency": 25,
+        "traceability": 21,
+        "cross_reference": 16,
+        "total": 84
+      },
+      "significance": 4,
+      "keywords": ["AI 윤리", "자율학습", "인간 가치", "안전 기준", "디지털 리터러시"],
+      "detected_at": "2026-01-15"
+    },
+    {
+      "id": "SIG-2026-01-15-027",
+      "url": "https://www.webpronews.com/ai-ethics-in-2026-fostering-inclusivity-fairness-and-accountability/",
+      "title": "AI Ethics in 2026: Fostering Inclusivity, Fairness, and Accountability",
+      "category": "Spiritual",
+      "summary": "포용성 중심 AI 윤리: 다양한 인간 경험 반영 필수. 공정성과 투명성, 프라이버시 핵심. 구현 과제는 추상적 개념 정량화, 데이터 부족, 가치 충돌. UNESCO 윤리영향평가 프레임워크 제공. 실시간 가치 정렬 모니터링 도구 등장.",
+      "original_content": "Organizations like the Center for Inclusive Values in AI emphasize that systems must reflect diverse human experiences. Fairness is a cornerstone alongside transparency and privacy, with need for balanced datasets representing underrepresented groups. Implementation challenges include quantifying abstract concepts, data scarcity, conflicting values, and cultural differences. Emerging accountability tools integrated into AI lifecycles include real-world audits and real-time value alignment monitoring. UNESCO's Ethical Impact Assessment framework provides unified standards. Embedding values transforms ethics from aspirational to operational, ensuring AI enhances society.",
+      "source": "WebProNews",
+      "pSRT_score": {
+        "source": 21,
+        "recency": 25,
+        "traceability": 21,
+        "cross_reference": 15,
+        "total": 82
+      },
+      "significance": 3,
+      "keywords": ["포용성", "AI 윤리", "공정성", "UNESCO", "가치 정렬"],
+      "detected_at": "2026-01-15"
+    }
+  ]
+}

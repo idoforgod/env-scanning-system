@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "version": "1.2",
+    "created": "2026-01-09",
+    "last_updated": "2026-01-15T14:30:00Z",
+    "total_signals": 563,
+    "scan_count": 13,
+    "last_db_update": "2026-01-15",
+    "update_source": "Phase 3: DB Updater (structured-signals-2026-01-15 + priority-ranked-2026-01-15)",
+    "update_notes": "36 new signals added from 2026-01-15 scan; priority scores applied; metadata recalculated"
+  },
+  "statistics": {
+    "by_status": {
+      "emerging": 551,
+      "developing": 12
+    },
+    "by_category": {
+      "Social": 348,
+      "Technological": 285,
+      "Economic": 142,
+      "Environmental": 67,
+      "Political": 124,
+      "Spiritual": 28
+    },
+    "by_significance": {
+      "1": 183,
+      "2": 36,
+      "3": 242,
+      "4": 120,
+      "5": 48
+    },
+    "by_priority": {
+      "high": 78,
+      "medium": 338,
+      "low": 147
+    },
+    "by_pSRT_grade": {
+      "A_plus": 9,
+      "A": 20,
+      "B": 73,
+      "C": 398,
+      "D": 142,
+      "E": 3,
+      "F": 1
+    }
+  },
+  "update_summary": {
+    "update_date": "2026-01-15",
+    "source_files": [
+      "data/2026/01/15/structured/structured-signals-2026-01-15.json",
+      "data/2026/01/15/analysis/priority-ranked-2026-01-15.json"
+    ],
+    "new_signals_added": 36,
+    "signals_updated": 0,
+    "signals_removed": 0,
+    "hallucination_excluded": 0,
+    "total_signals_before": 527,
+    "total_signals_after": 563,
+    "deduplication_checked": true,
+    "duplicate_signals_skipped": 0,
+    "priority_ranking_applied": true,
+    "high_priority_signals": 78,
+    "average_priority_score": 6.35
+  },
+  "note": "This is the backup snapshot created before processing structured-signals-2026-01-15.json on 2026-01-15"
+}
