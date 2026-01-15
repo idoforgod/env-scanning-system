@@ -161,7 +161,7 @@ class DedupProcessor:
         """텍스트 시그니처 (해시) 생성"""
         tokens = self.tokenize(text)
         normalized = " ".join(sorted(set(tokens)))
-        return hashlib.md5(normalized.encode("utf-8")).hexdigest()
+        return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
     def compute_similarity(self, text1: str, text2: str) -> float:
         """두 텍스트 간 코사인 유사도 계산 (TF 기반)"""

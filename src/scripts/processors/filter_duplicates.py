@@ -41,7 +41,7 @@ def calculate_entity_overlap(entities1, entities2):
 
 def check_duplicate(raw_signal, existing_signals, dedup_index, archive_actors):
     """신호가 중복인지 판정"""
-    raw_id = raw_signal["id"]
+    raw_signal["id"]
     raw_url = raw_signal.get("source_url", "")
     raw_title = raw_signal.get("title", "")
     raw_keywords = raw_signal.get("keywords", [])

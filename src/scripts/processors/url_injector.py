@@ -19,7 +19,7 @@ from pathlib import Path
 class URLInjector:
     """보고서의 플레이스홀더를 실제 URL로 치환"""
 
-    def __init__(self, base_path: str = None):
+    def __init__(self, base_path: str | None = None):
         self.base_path = Path(base_path) if base_path else Path.cwd()
         self.url_map = {}
         self.stats = {"placeholders_found": 0, "replaced_with_url": 0, "replaced_without_url": 0, "not_found": 0}
@@ -197,7 +197,7 @@ class URLInjector:
             pub_date = match.group(2)
 
             # 소스명으로 URL 매핑 찾기
-            for signal_id, info in self.url_map.items():
+            for _signal_id, info in self.url_map.items():
                 if info.get("source_name", "") == source_name:
                     url = info.get("url")
                     if url and url.startswith("http"):

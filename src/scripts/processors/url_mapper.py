@@ -19,7 +19,7 @@ from pathlib import Path
 class URLMapper:
     """신호 ID와 URL 간의 매핑을 관리"""
 
-    def __init__(self, base_path: str = None):
+    def __init__(self, base_path: str | None = None):
         self.base_path = Path(base_path) if base_path else Path.cwd()
         self.url_map = {}
         self.stats = {"total_signals": 0, "with_url": 0, "without_url": 0, "invalid_url": 0}
@@ -28,7 +28,7 @@ class URLMapper:
         """structured-signals에서 URL 매핑 추출"""
 
         # 날짜 형식 파싱 (2026-01-14 → 2026/01/14)
-        date_path = date.replace("-", "/")
+        date.replace("-", "/")
         year, month, day = date.split("-")
 
         structured_path = self.base_path / f"data/{year}/{month}/{day}/structured/structured-signals-{date}.json"
@@ -114,7 +114,7 @@ class URLMapper:
 
         return raw_urls
 
-    def save_mapping(self, date: str, output_path: str = None) -> str:
+    def save_mapping(self, date: str, output_path: str | None = None) -> str:
         """URL 매핑 테이블을 JSON 파일로 저장"""
 
         year, month, day = date.split("-")

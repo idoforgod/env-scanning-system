@@ -15,7 +15,8 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
+from typing import ClassVar, timedelta
 from urllib.parse import quote, urljoin
 
 import requests
@@ -31,7 +32,7 @@ class NaverNewsCrawler:
     BASE_URL = "https://news.naver.com"
 
     # 네이버 뉴스 섹션 ID
-    SECTIONS = {
+    SECTIONS: ClassVar[dict] = {
         "politics": {"sid": 100, "name": "정치", "steeps": "Political"},
         "economy": {"sid": 101, "name": "경제", "steeps": "Economic"},
         "society": {"sid": 102, "name": "사회", "steeps": "Social"},
@@ -41,7 +42,7 @@ class NaverNewsCrawler:
     }
 
     # STEEPS 매핑용 키워드
-    STEEPS_KEYWORDS = {
+    STEEPS_KEYWORDS: ClassVar[dict] = {
         "Technological": [
             "AI",
             "인공지능",
@@ -363,7 +364,7 @@ class NaverNewsCrawler:
         """전체 섹션 스캔"""
         results = {}
 
-        for section in self.SECTIONS.keys():
+        for section in self.SECTIONS:
             results[section] = self.fetch_section_articles(section, max_per_section)
 
         return results
@@ -372,7 +373,7 @@ class NaverNewsCrawler:
         """최근 N시간 기사만 필터링"""
         return [a for a in articles if a.get("is_recent", True)]
 
-    def to_raw_signal_format(self, articles: list[dict], scan_date: str = None) -> dict:
+    def to_raw_signal_format(self, articles: list[dict], scan_date: str | None = None) -> dict:
         """환경스캐닝 raw signal 형식으로 변환"""
         if scan_date is None:
             scan_date = datetime.now().strftime("%Y-%m-%d")

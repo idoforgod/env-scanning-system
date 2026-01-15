@@ -115,10 +115,7 @@ class ScanResultMerger:
             old_id = item.get("raw_id", "")
 
             # 소스 접두어 유지
-            if "NAVER" in old_id:
-                prefix = f"RAW-NAVER-{date_compact}"
-            else:
-                prefix = f"RAW-{date_compact}"
+            prefix = f"RAW-NAVER-{date_compact}" if "NAVER" in old_id else f"RAW-{date_compact}"
 
             item["raw_id"] = f"{prefix}-{idx:03d}"
 
@@ -136,7 +133,7 @@ class ScanResultMerger:
         # 0인 카테고리 제거
         return {k: v for k, v in stats.items() if v > 0}
 
-    def merge(self, date: str, output_file: str = None) -> dict:
+    def merge(self, date: str, output_file: str | None = None) -> dict:
         """스캔 결과 병합 실행"""
         print(f"\n{'=' * 60}")
         print(f"스캔 결과 병합 - {date}")

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-pSRT 2.0 E2E Workflow Validator
+pSRT 2.0 E2E Workflow Validator.
+
 환경스캐닝 시스템의 워크플로우와 에이전트 연결을 검증합니다.
 """
 
@@ -16,21 +17,24 @@ PROJECT_ROOT = Path(__file__).parent.parent
 results = {"passed": [], "failed": [], "warnings": []}
 
 
-def log_pass(test_name: str, details: str = ""):
+def log_pass(test_name: str, details: str = "") -> None:
+    """Log a passed test result."""
     results["passed"].append({"test": test_name, "details": details})
     print(f"✅ PASS: {test_name}")
     if details:
         print(f"   └─ {details}")
 
 
-def log_fail(test_name: str, details: str = ""):
+def log_fail(test_name: str, details: str = "") -> None:
+    """Log a failed test result."""
     results["failed"].append({"test": test_name, "details": details})
     print(f"❌ FAIL: {test_name}")
     if details:
         print(f"   └─ {details}")
 
 
-def log_warn(test_name: str, details: str = ""):
+def log_warn(test_name: str, details: str = "") -> None:
+    """Log a warning."""
     results["warnings"].append({"test": test_name, "details": details})
     print(f"⚠️  WARN: {test_name}")
     if details:
@@ -42,8 +46,8 @@ def log_warn(test_name: str, details: str = ""):
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_agent_files_exist():
-    """PSRT 2.0 관련 에이전트 파일 존재 확인"""
+def test_agent_files_exist() -> None:
+    """PSRT 2.0 관련 에이전트 파일 존재 확인."""
     print("\n" + "=" * 60)
     print("Test 1: Agent Files Existence")
     print("=" * 60)
@@ -78,8 +82,8 @@ def test_agent_files_exist():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_agent_metadata():
-    """에이전트 파일의 YAML frontmatter 파싱 검증"""
+def test_agent_metadata() -> None:
+    """에이전트 파일의 YAML frontmatter 파싱 검증."""
     print("\n" + "=" * 60)
     print("Test 2: Agent Metadata Parsing")
     print("=" * 60)
@@ -126,8 +130,8 @@ def test_agent_metadata():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_workflow_io_connections():
-    """에이전트 간 입출력 파일 연결 검증"""
+def test_workflow_io_connections() -> None:
+    """에이전트 간 입출력 파일 연결 검증."""
     print("\n" + "=" * 60)
     print("Test 3: Workflow I/O Connections")
     print("=" * 60)
@@ -176,7 +180,7 @@ def test_workflow_io_connections():
     all_outputs = set()
     all_inputs = set()
 
-    for agent, io in pSRT_workflow.items():
+    for _agent, io in pSRT_workflow.items():
         for output in io["outputs"]:
             all_outputs.add(output)
         for input_file in io["inputs"]:
@@ -185,13 +189,11 @@ def test_workflow_io_connections():
     # 입력 파일이 다른 에이전트의 출력인지 확인
     orphan_inputs = []
     for input_file in all_inputs:
-        if input_file not in all_outputs:
-            # 초기 입력 또는 외부 파일인지 확인
-            if not any(
-                x in input_file
-                for x in ["filtered-signals", "signal-history.json", "source-accuracy", "topic-accuracy"]
-            ):
-                orphan_inputs.append(input_file)
+        # 초기 입력 또는 외부 파일인지 확인
+        if input_file not in all_outputs and not any(
+            x in input_file for x in ["filtered-signals", "signal-history.json", "source-accuracy", "topic-accuracy"]
+        ):
+            orphan_inputs.append(input_file)
 
     if orphan_inputs:
         log_warn("I/O Chain", f"Inputs without producer: {orphan_inputs}")
@@ -208,8 +210,8 @@ def test_workflow_io_connections():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_config_files():
-    """PSRT 2.0 설정 파일 검증"""
+def test_config_files() -> None:
+    """PSRT 2.0 설정 파일 검증."""
     print("\n" + "=" * 60)
     print("Test 4: Configuration Files")
     print("=" * 60)
@@ -259,8 +261,8 @@ def test_config_files():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_history_database():
-    """역사적 데이터베이스 구조 검증"""
+def test_history_database() -> None:
+    """역사적 데이터베이스 구조 검증."""
     print("\n" + "=" * 60)
     print("Test 5: History Database Structure")
     print("=" * 60)
@@ -292,8 +294,8 @@ def test_history_database():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_actual_data():
-    """실제 데이터 파일 검증"""
+def test_actual_data() -> None:
+    """실제 데이터 파일 검증."""
     print("\n" + "=" * 60)
     print("Test 6: Actual Data Validation")
     print("=" * 60)
@@ -343,8 +345,8 @@ def test_actual_data():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_psrt_weights():
-    """PSRT 2.0 가중치 합계 검증"""
+def test_psrt_weights() -> None:
+    """PSRT 2.0 가중치 합계 검증."""
     print("\n" + "=" * 60)
     print("Test 7: pSRT 2.0 Weight Validation")
     print("=" * 60)
@@ -413,8 +415,8 @@ def test_psrt_weights():
 # ═══════════════════════════════════════════════════════════════
 
 
-def test_workflow_order():
-    """에이전트 실행 순서 검증"""
+def test_workflow_order() -> None:
+    """에이전트 실행 순서 검증."""
     print("\n" + "=" * 60)
     print("Test 8: Workflow Order Validation")
     print("=" * 60)
@@ -451,7 +453,8 @@ def test_workflow_order():
 # ═══════════════════════════════════════════════════════════════
 
 
-def main():
+def main() -> int:
+    """Run all E2E workflow validation tests."""
     print("\n" + "=" * 60)
     print("   pSRT 2.0 E2E Workflow Validation")
     print("   " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -492,7 +495,7 @@ def main():
     output_path = PROJECT_ROOT / "tests" / "e2e-results.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(output_path, "w") as f:
+    with output_path.open("w") as f:
         json.dump(
             {
                 "timestamp": datetime.now().isoformat(),

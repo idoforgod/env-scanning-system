@@ -4,7 +4,7 @@
 2026-01-11
 
 가중 우선순위 점수:
-(영향도 × 40%) + (발생가능성 × 30%) + (긴급도 × 20%) + (신규성 × 10%)
+(영향도 x 40%) + (발생가능성 x 30%) + (긴급도 x 20%) + (신규성 x 10%)
 
 100점 만점 기준:
 - A등급 (80+): 즉시 대응 필요
@@ -64,13 +64,13 @@ class PriorityRanker:
 
         rationale = (
             f"기본값(중요도 {significance}/5): {base_score:.1f} | "
-            f"다중도메인(×{secondary_cats}): +{domain_bonus:.1f} | "
-            f"카테고리({category}): ×{weight}"
+            f"다중도메인(x{secondary_cats}): +{domain_bonus:.1f} | "
+            f"카테고리({category}): x{weight}"
         )
 
         return impact_score, rationale
 
-    def calculate_probability_score(self, signal: dict, impact_assessment: dict = None) -> tuple[float, str]:
+    def calculate_probability_score(self, signal: dict, impact_assessment: dict | None = None) -> tuple[float, str]:
         """
         발생가능성(Probability/Likelihood) 점수 계산 - 30%
 
@@ -105,13 +105,13 @@ class PriorityRanker:
 
         rationale = (
             f"상태({status}): {status_score:.1f} | "
-            f"중요도 부스트(×{significance}): +{significance_bonus:.1f} | "
+            f"중요도 부스트(x{significance}): +{significance_bonus:.1f} | "
             f"영향분석 기반: +{likelihood_boost:.1f}"
         )
 
         return probability_score, rationale
 
-    def calculate_urgency_score(self, signal: dict, impact_assessment: dict = None) -> tuple[float, str]:
+    def calculate_urgency_score(self, signal: dict, impact_assessment: dict | None = None) -> tuple[float, str]:
         """
         긴급도(Urgency) 점수 계산 - 20%
 
@@ -148,7 +148,7 @@ class PriorityRanker:
 
         rationale = (
             f"상태({status}): {urgency_base:.1f} | "
-            f"중요도(×{significance}): +{significance_weight:.1f} | "
+            f"중요도(x{significance}): +{significance_weight:.1f} | "
             f"타이밍: +{timeframe_boost:.1f}"
         )
 
@@ -471,7 +471,7 @@ class PriorityRanker:
         print("=" * 70)
 
         # 신호 순위 산정
-        ranked_signals, classified_data = self.rank_signals()
+        ranked_signals, _classified_data = self.rank_signals()
 
         # 요약 생성
         summary = self.generate_summary(ranked_signals)
@@ -481,7 +481,7 @@ class PriorityRanker:
             "ranking_date": summary["ranking_date"],
             "total_ranked": summary["total_ranked"],
             "methodology": {
-                "formula": "(영향도 × 0.40) + (발생가능성 × 0.30) + (긴급도 × 0.20) + (신규성 × 0.10)",
+                "formula": "(영향도 x 0.40) + (발생가능성 x 0.30) + (긴급도 x 0.20) + (신규성 x 0.10)",
                 "scale": "100점 만점",
                 "grades": {
                     "A": {"range": "80-100", "action": "즉시 대응"},

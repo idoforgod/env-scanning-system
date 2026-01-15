@@ -114,10 +114,7 @@ class PSRTCalculator:
 
         # 2. Verifiability Score (검증 가능성)
         url = source.get("url", "")
-        if url and url.startswith("http"):
-            verifiability = 70  # partial_verification
-        else:
-            verifiability = 10  # no_verification
+        verifiability = 70 if url and url.startswith("http") else 10
 
         # 3. Historical Accuracy (역사적 정확성) - 기본값 사용
         historical = 60
@@ -465,7 +462,7 @@ class PSRTCalculator:
     ) -> list[dict]:
         """할루시네이션 플래그 탐지"""
         flags = []
-        hall_config = self.config.get("hallucination_detection", {}).get("rules", {})
+        self.config.get("hallucination_detection", {}).get("rules", {})
 
         specificity = signal_result["breakdown"]["specificity"]
         independence = signal_result["breakdown"]["independence"]

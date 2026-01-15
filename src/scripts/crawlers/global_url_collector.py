@@ -35,6 +35,7 @@ import json
 import random
 import time
 from datetime import datetime
+from typing import ClassVar
 from urllib.parse import urljoin, urlparse
 
 try:
@@ -49,7 +50,7 @@ class GlobalURLCollector:
     """글로벌 뉴스 URL 수집기 - URL만 추출"""
 
     # 6개국 주요 신문 설정
-    NEWSPAPERS = {
+    NEWSPAPERS: ClassVar[dict] = {
         "korea": {
             "한겨레": {
                 "url": "https://www.hani.co.kr",
@@ -155,7 +156,7 @@ class GlobalURLCollector:
         },
     }
 
-    USER_AGENTS = [
+    USER_AGENTS: ClassVar[list] = [
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",

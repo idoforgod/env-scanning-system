@@ -50,7 +50,7 @@ def calc_impact(signal, impact_assessment):
     weight = category_weight.get(category, 1.0)
 
     impact_score = min((base_score + domain_bonus) * weight, 10.0)
-    rationale = f"기본값({significance}/5): {base_score:.1f} | 다중도메인({secondary_cats}): +{domain_bonus:.1f} | 카테고리({category}): ×{weight}"
+    rationale = f"기본값({significance}/5): {base_score:.1f} | 다중도메인({secondary_cats}): +{domain_bonus:.1f} | 카테고리({category}): x{weight}"
 
     return impact_score, rationale
 
@@ -70,7 +70,7 @@ def calc_probability(signal, impact_assessment):
             likelihood_boost = avg_likelihood * 3.5
 
     probability_score = min(status_score + significance_bonus + likelihood_boost, 10.0)
-    rationale = f"상태({status}): {status_score:.1f} | 중요도(×{significance}): +{significance_bonus:.1f} | 영향분석: +{likelihood_boost:.1f}"
+    rationale = f"상태({status}): {status_score:.1f} | 중요도(x{significance}): +{significance_bonus:.1f} | 영향분석: +{likelihood_boost:.1f}"
 
     return probability_score, rationale
 
@@ -92,7 +92,7 @@ def calc_urgency(signal, impact_assessment):
             timeframe_boost = max(timeframe_boost, boost)
 
     urgency_score = min(urgency_base + significance_weight + timeframe_boost, 10.0)
-    rationale = f"상태({status}): {urgency_base:.1f} | 중요도(×{significance}): +{significance_weight:.1f} | 타이밍: +{timeframe_boost:.1f}"
+    rationale = f"상태({status}): {urgency_base:.1f} | 중요도(x{significance}): +{significance_weight:.1f} | 타이밍: +{timeframe_boost:.1f}"
 
     return urgency_score, rationale
 
@@ -315,7 +315,7 @@ output = {
     "ranking_date": "2026-01-11",
     "total_ranked": total,
     "methodology": {
-        "formula": "(영향도 × 0.40) + (발생가능성 × 0.30) + (긴급도 × 0.20) + (신규성 × 0.10)",
+        "formula": "(영향도 x 0.40) + (발생가능성 x 0.30) + (긴급도 x 0.20) + (신규성 x 0.10)",
         "scale": "100점 만점",
         "grades": {
             "A": {"range": "80-100", "action": "즉시 대응"},

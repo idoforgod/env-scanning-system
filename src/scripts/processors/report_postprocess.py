@@ -28,7 +28,7 @@ from url_mapper import URLMapper
 class ReportPostProcessor:
     """보고서 후처리 통합 클래스"""
 
-    def __init__(self, base_path: str = None):
+    def __init__(self, base_path: str | None = None):
         self.base_path = Path(base_path) if base_path else Path.cwd()
         self.mapper = URLMapper(base_path)
         self.injector = URLInjector(base_path)
@@ -168,7 +168,7 @@ def main():
         print(f"{'=' * 60}\n")
 
         # 결과 저장
-        year, month, day = date.split("-")
+        _year, _month, _day = date.split("-")
         log_path = base_path / f"logs/report-postprocess-{date}.json"
         log_path.parent.mkdir(parents=True, exist_ok=True)
         with open(log_path, "w", encoding="utf-8") as f:

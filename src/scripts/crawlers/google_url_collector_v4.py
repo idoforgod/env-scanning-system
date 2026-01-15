@@ -8,6 +8,7 @@ import json
 import random
 import time
 from datetime import datetime
+from typing import ClassVar
 
 import feedparser
 import requests
@@ -16,7 +17,7 @@ import requests
 class GoogleNewsURLCollector:
     """Collects URLs from Google News RSS feeds"""
 
-    STEEPS_KEYWORDS = {
+    STEEPS_KEYWORDS: ClassVar[dict] = {
         "Technological": [
             "artificial intelligence 2026",
             "AI breakthrough",
@@ -67,7 +68,7 @@ class GoogleNewsURLCollector:
         ],
     }
 
-    USER_AGENTS = [
+    USER_AGENTS: ClassVar[list] = [
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",

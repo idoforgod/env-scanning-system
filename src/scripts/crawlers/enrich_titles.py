@@ -32,10 +32,7 @@ def fetch_title(url: str, session: requests.Session) -> tuple[str, str]:
 
         # 언론사 추출
         press_elem = soup.select_one("a.media_end_head_top_logo img, em.media_end_linked_more_point")
-        if press_elem:
-            source_name = press_elem.get("alt") or press_elem.text.strip()
-        else:
-            source_name = "Unknown"
+        source_name = press_elem.get("alt") or press_elem.text.strip() if press_elem else "Unknown"
 
         return title, source_name
 

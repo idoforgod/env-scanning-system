@@ -23,6 +23,7 @@ import json
 import random
 import time
 from datetime import datetime
+from typing import ClassVar
 from urllib.parse import urljoin, urlparse
 
 try:
@@ -37,7 +38,7 @@ class GlobalNewsCrawler:
     """글로벌 뉴스 크롤러 - 6개국 주요 신문"""
 
     # 국가별 신문 설정
-    NEWSPAPERS = {
+    NEWSPAPERS: ClassVar[dict] = {
         "korea": {
             "조선일보": {
                 "url": "https://www.chosun.com",
@@ -271,7 +272,7 @@ class GlobalNewsCrawler:
     }
 
     # User-Agent 로테이션
-    USER_AGENTS = [
+    USER_AGENTS: ClassVar[list] = [
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -574,10 +575,7 @@ def main():
     # 출력
     today = datetime.now().strftime("%Y-%m-%d")
 
-    if args.raw_format:
-        result = crawler.to_raw_format(articles, today)
-    else:
-        result = {"total": len(articles), "items": articles}
+    result = crawler.to_raw_format(articles, today) if args.raw_format else {"total": len(articles), "items": articles}
 
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:

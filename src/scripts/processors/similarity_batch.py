@@ -339,7 +339,7 @@ class SimilarityBatch:
     def _cluster_signals(self, pairs: list[dict], all_ids: list[str]) -> list[dict]:
         """Union-Find 기반 클러스터링"""
         parent = {id_: id_ for id_ in all_ids}
-        rank = {id_: 0 for id_ in all_ids}
+        rank = dict.fromkeys(all_ids, 0)
 
         def find(x):
             if parent[x] != x:
@@ -368,7 +368,7 @@ class SimilarityBatch:
 
         # 클러스터 메타데이터
         result = []
-        for root, members in clusters_dict.items():
+        for _root, members in clusters_dict.items():
             if len(members) > 1:
                 # 클러스터 내 평균 유사도 계산
                 cluster_pairs = [p for p in pairs if p["signal_id_1"] in members and p["signal_id_2"] in members]
@@ -437,7 +437,7 @@ class SimilarityBatch:
                             },
                             "similarity": sim_result.overall_similarity,
                             "connection_type": f"{primary1}-{primary2}",
-                            "shared_actors": sig_result.actor_overlap > 0
+                            "shared_actors": sim_result.actor_overlap > 0
                             if hasattr(sim_result, "actor_overlap")
                             else False,
                         }
@@ -465,10 +465,7 @@ class SimilarityBatch:
         for sig in signals:
             sig_id = sig.get("id", sig.get("signal_id", ""))
             cat = sig.get("category", {})
-            if isinstance(cat, str):
-                primary_cat = cat
-            else:
-                primary_cat = cat.get("primary", "Unknown")
+            primary_cat = cat if isinstance(cat, str) else cat.get("primary", "Unknown")
 
             nodes.append(
                 {

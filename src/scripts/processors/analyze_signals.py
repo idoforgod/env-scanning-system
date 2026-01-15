@@ -59,7 +59,7 @@ for signal in scanned_signals:
             title_duplicates.append((signal["id"], signal["title"], ex_id, ex_sig["title"], sim))
 
 print(f"제목 유사도 (>=85%): {len(title_duplicates)}")
-for raw_id, raw_title, ex_id, ex_title, sim in title_duplicates[:5]:
+for raw_id, raw_title, _ex_id, ex_title, sim in title_duplicates[:5]:
     print(f"  - {raw_id} ({sim:.2%})")
     print(f"    신: {raw_title[:60]}")
     print(f"    기: {ex_title[:60]}")
@@ -69,10 +69,10 @@ print()
 # 내용/키워드 기반 중복 검사
 content_duplicates = []
 for signal in scanned_signals:
-    raw_keywords = set(k.lower() for k in signal.get("keywords", []))
+    raw_keywords = {k.lower() for k in signal.get("keywords", [])}
 
     for ex_id, ex_sig in existing_signals.items():
-        ex_keywords = set(k.lower() for k in ex_sig.get("keywords", []))
+        ex_keywords = {k.lower() for k in ex_sig.get("keywords", [])}
 
         if raw_keywords and ex_keywords:
             overlap = len(raw_keywords & ex_keywords)
@@ -95,7 +95,7 @@ for raw_id, title, ex_id, entity_ov, content_sim in content_duplicates[:3]:
 print()
 
 # 신규 신호 식별
-duplicates_set = set(url_duplicates) | set(d[0] for d in title_duplicates) | set(d[0] for d in content_duplicates)
+duplicates_set = set(url_duplicates) | {d[0] for d in title_duplicates} | {d[0] for d in content_duplicates}
 new_signals = [
     s for s in scanned_signals if s["id"] not in [d[0] for d in url_duplicates + title_duplicates + content_duplicates]
 ]
