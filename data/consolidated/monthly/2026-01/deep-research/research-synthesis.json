@@ -1,0 +1,266 @@
+{
+  "synthesis_id": "SYNTH-2026-01",
+  "generated_at": "2026-01-15T16:15:00+09:00",
+  "version": "2.0",
+  "analysis_period": "2026-01 (W02-W03)",
+  "total_signals_analyzed": 443,
+  "issues_researched": 3,
+
+  "executive_summary": {
+    "headline": "AI-양자-노동 삼중 충격이 2026년 글로벌 환경을 재편",
+    "key_finding": "AI 에이전트 규제, 양자보안 위협, 노동시장 이중충격이 상호 연결되어 복합 위기 양상을 형성",
+    "urgency_level": "high",
+    "cross_cutting_theme": "기술 가속화와 사회 적응 속도의 격차 확대"
+  },
+
+  "issues": [
+    {
+      "id": "ISSUE-2026-01-001",
+      "title": "AI 에이전트 규제 및 일자리 영향",
+      "signal_count": 65,
+      "issue_score": 0.92,
+      "primary_category": "Technological",
+      "secondary_categories": ["Political", "Social", "Economic"],
+      "key_findings": [
+        "AI 에이전트 시장 $78.4억(2025) → $526.2억(2030), CAGR 46.3%",
+        "EU AI Act 2026년 8월 고위험 AI 전면 시행, 미국은 연방-주 규제 분열",
+        "순 일자리 +1,200만 예측이나 22-25세 고AI노출 직종 채용 13% 감소",
+        "GENIUS Act는 스테이블코인 규제법 (AI 규제 아님으로 정정)"
+      ],
+      "causal_factors": {
+        "root_causes": [
+          "LLM 성능 급진전",
+          "클라우드 인프라 비용 하락",
+          "기업 비용 절감 압력"
+        ],
+        "drivers": ["생산성 향상 수요", "AI 투자 집중", "오픈소스 확산"],
+        "inhibitors": ["규제 불확실성", "AI 환각 문제", "숙련 인력 부족"]
+      },
+      "key_uncertainties": [
+        {
+          "variable": "EU AI Act 시행 강도",
+          "current_state": "시행 준비 중",
+          "range": "완화 ~ 강화"
+        },
+        {
+          "variable": "미국 연방 AI 법안",
+          "current_state": "GENIUS Act 논의 중",
+          "range": "통과 / 무산 / 주 단위 유지"
+        },
+        {
+          "variable": "AI 실업 속도",
+          "current_state": "가속화 중",
+          "range": "점진적 ~ 급격"
+        }
+      ],
+      "tipping_points": [
+        {
+          "event": "EU AI Act GPAI 규정 시행",
+          "expected_timing": "2026년 2월",
+          "impact": "글로벌 기업 대응 방향 결정"
+        }
+      ],
+      "monitoring_indicators": [
+        "EU AI Act 위반 첫 제재 사례",
+        "미국 AI 입법 진행 상황",
+        "분기별 AI 관련 해고/채용 통계"
+      ],
+      "research_file": "issue-1-ai-regulation-employment.md"
+    },
+    {
+      "id": "ISSUE-2026-01-002",
+      "title": "양자컴퓨팅 보안 위협 (Q-Day)",
+      "signal_count": 15,
+      "issue_score": 0.85,
+      "primary_category": "Technological",
+      "secondary_categories": ["Political", "Economic"],
+      "key_findings": [
+        "Q-Day 예상 시점: 2030년 +/- 2년 (전문가 합의), Metaculus 2034년",
+        "RSA-2048 해독 필요 큐빗 95% 감소 (2,000만 → 100만 미만) - Google 연구",
+        "NIST PQC 표준 3개 확정 (ML-KEM, ML-DSA, SLH-DSA), HQC 백업 표준화 중",
+        "HNDL 공격 현재 진행 중 - 과거 사례 존재 (2016-2020년)",
+        "한국 양자예산 50%+ 증가, 2026년 50큐빗 목표"
+      ],
+      "causal_factors": {
+        "root_causes": [
+          "양자컴퓨팅 기술 급속 발전",
+          "현대 암호체계의 수학적 한계",
+          "국가 간 기술 경쟁 심화"
+        ],
+        "drivers": ["R&D 투자 확대", "국가 안보 우려", "클라우드 양자 서비스"],
+        "inhibitors": ["오류 정정 기술 한계", "극저온 유지 비용", "숙련 인력 부족"]
+      },
+      "key_uncertainties": [
+        {
+          "variable": "Q-Day 시점",
+          "current_state": "2030-2035 예상",
+          "range": "2028 ~ 2040"
+        },
+        {
+          "variable": "NIST PQC 표준 안정성",
+          "current_state": "검증 중",
+          "range": "안전 ~ 취약점 발견"
+        }
+      ],
+      "tipping_points": [
+        {
+          "event": "RSA-2048 해독 성공 발표",
+          "expected_timing": "불확실",
+          "impact": "시장 패닉, 긴급 전환 압력"
+        }
+      ],
+      "monitoring_indicators": [
+        "주요 기업/연구소 큐비트 수 발표",
+        "PQC 알고리즘 취약점 보고",
+        "국가별 암호체계 전환 진행률"
+      ],
+      "research_file": "issue-2-quantum-security.md"
+    },
+    {
+      "id": "ISSUE-2026-01-003",
+      "title": "노동시장 이중충격",
+      "signal_count": 40,
+      "issue_score": 0.88,
+      "primary_category": "Social",
+      "secondary_categories": ["Economic", "Technological", "Political"],
+      "key_findings": [
+        "2026년은 'AI가 생산성 도구에서 노동 대체 도구로 전환되는 원년'",
+        "2025년 AI 직접 해고 55,000건, 20-30세 기술노출 직종 실업률 3%p 상승",
+        "한국 초고령사회 진입 (세계 최속 7년), 출산율 0.72 (인류 역사상 최저)",
+        "ILO: 글로벌 청년 실업률 12.4%, NEET 청년 2억 6,000만 명",
+        "피드백 루프: 청년실업 → 출산감소 → 고령화 가속 (PNAS 정량화)",
+        "세대 갈등 약한 신호 rising 상태 (빈도 4회, 10회 시 strong)"
+      ],
+      "causal_factors": {
+        "root_causes": [
+          "AI의 복잡 업무 수행 능력 향상",
+          "출산율 급락 (한국 0.72)",
+          "베이비붐 세대 은퇴"
+        ],
+        "drivers": ["AI 기술 발전", "고령화 속도 가속", "디지털 전환"],
+        "inhibitors": ["노동조합 저항", "해고 보호법", "재취업 지원"]
+      },
+      "key_uncertainties": [
+        {
+          "variable": "AI 일자리 대체 속도",
+          "current_state": "가속화 중",
+          "range": "점진적 ~ 급격"
+        },
+        {
+          "variable": "재교육 효과",
+          "current_state": "제한적",
+          "range": "성공적 전환 ~ 구조적 실업"
+        },
+        {
+          "variable": "세대 갈등 수준",
+          "current_state": "심화 중",
+          "range": "완화 ~ 극심화"
+        }
+      ],
+      "tipping_points": [
+        {
+          "event": "대규모 AI 정리해고 발표",
+          "expected_timing": "2026년 내",
+          "impact": "사회적 충격, 규제 압력 급증"
+        }
+      ],
+      "monitoring_indicators": [
+        "분기별 실업률 변화",
+        "AI 관련 해고/채용 발표",
+        "세대 갈등 관련 여론조사"
+      ],
+      "research_file": "issue-3-labor-market-dual-shock.md"
+    }
+  ],
+
+  "cross_issue_analysis": {
+    "interconnections": [
+      {
+        "from": "ISSUE-2026-01-001",
+        "to": "ISSUE-2026-01-003",
+        "relationship": "AI 자동화가 노동시장 충격의 주요 원인",
+        "strength": "strong"
+      },
+      {
+        "from": "ISSUE-2026-01-002",
+        "to": "ISSUE-2026-01-001",
+        "relationship": "AI 시스템의 암호화 의존성이 양자 위협에 노출",
+        "strength": "moderate"
+      }
+    ],
+    "common_themes": [
+      "기술 발전 속도와 사회 적응 속도의 격차",
+      "국제 규제 조화의 어려움",
+      "불확실성 하의 의사결정 필요성"
+    ],
+    "systemic_risks": [
+      {
+        "risk": "AI-노동-사회 연쇄 충격",
+        "description": "AI 대규모 해고 → 사회 불안 → 규제 강화 → 혁신 둔화 → 경쟁력 저하",
+        "likelihood": "medium-high"
+      },
+      {
+        "risk": "양자-AI 보안 복합 위기",
+        "description": "양자 컴퓨터로 AI 시스템 침해 → 대규모 서비스 중단",
+        "likelihood": "low-medium"
+      }
+    ]
+  },
+
+  "weak_signals_identified": [
+    {
+      "signal": "세대 갈등 심화",
+      "status": "rising",
+      "frequency": 4,
+      "next_milestone": "10회 도달 시 strong 전환",
+      "source_issue": "ISSUE-2026-01-003"
+    },
+    {
+      "signal": "양자후 암호화 마이그레이션",
+      "status": "emerging",
+      "frequency": 3,
+      "next_milestone": "5회 도달 시 rising 전환",
+      "source_issue": "ISSUE-2026-01-002"
+    }
+  ],
+
+  "strategic_handoff": {
+    "purpose": "본 환경스캐닝 심층 리서치 결과를 전략적 분석 시스템에 전달",
+    "recommended_next_steps": [
+      {
+        "step": "시나리오 플래닝",
+        "description": "식별된 불확실성 변수를 축으로 미래 시나리오 개발",
+        "priority_variables": ["AI 일자리 대체 속도", "Q-Day 시점", "세대 갈등 수준"]
+      },
+      {
+        "step": "시스템 다이내믹스 분석",
+        "description": "이슈 간 인과관계와 피드백 루프 정량적 모델링",
+        "focus_areas": ["AI-노동-사회 연쇄 효과"]
+      },
+      {
+        "step": "전략 옵션 개발",
+        "description": "각 시나리오에 대한 대응 전략 수립",
+        "key_decisions": ["AI 투자 전략", "인력 재교육 프로그램", "보안 전환 로드맵"]
+      }
+    ],
+    "data_available": {
+      "structured_signals": "data/consolidated/monthly/2026-01/month-summary.json",
+      "trend_evolution": "data/consolidated/quarterly/2026-Q1/trend-evolution.json",
+      "deep_research": "data/consolidated/monthly/2026-01/deep-research/"
+    }
+  },
+
+  "methodology_notes": {
+    "research_framework": "4단계 심층 리서치 (이슈 추출 → 다차원 리서치 → 인과 분석 → 통합)",
+    "sources_consulted": [
+      "학술 데이터베이스 (ILO, OECD, WEF 보고서)",
+      "정책 문서 (EU AI Act, NIST PQC, 각국 정책)",
+      "산업 분석 (시장 보고서, 기업 발표)"
+    ],
+    "limitations": [
+      "2026년 1월 중순까지의 데이터만 포함",
+      "일부 신호는 아직 약한 상태로 추적 필요",
+      "지역별 상세 분석은 추가 리서치 필요"
+    ]
+  }
+}

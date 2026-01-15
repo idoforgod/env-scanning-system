@@ -136,6 +136,39 @@
       {"trend": "AI 에이전트 규제", "velocity": "medium"}
     ]
   },
+  "deep_research": {
+    "completed_at": "2026-01-15T15:35:00+09:00",
+    "issues_researched": 3,
+    "methodology": "4단계 심층 리서치 (이슈 추출 → 다차원 리서치 → 인과 분석 → 통합)",
+    "issues": [
+      {
+        "id": "ISSUE-2026-01-001",
+        "title": "AI 에이전트 규제 및 일자리 영향",
+        "score": 0.92,
+        "signal_count": 65,
+        "key_finding": "EU AI Act 2026년 2월 시행으로 글로벌 규제 표준화 진행",
+        "file": "deep-research/issue-1-ai-regulation-employment.md"
+      },
+      {
+        "id": "ISSUE-2026-01-002",
+        "title": "양자컴퓨팅 보안 위협 (Q-Day)",
+        "score": 0.85,
+        "signal_count": 15,
+        "key_finding": "72% 조직이 PQC 마이그레이션 미착수, HNDL 공격 위험",
+        "file": "deep-research/issue-2-quantum-security.md"
+      },
+      {
+        "id": "ISSUE-2026-01-003",
+        "title": "노동시장 이중충격",
+        "score": 0.88,
+        "signal_count": 40,
+        "key_finding": "AI 자동화와 인구 고령화가 동시 충격, 세대 갈등 심화",
+        "file": "deep-research/issue-3-labor-market-dual-shock.md"
+      }
+    ],
+    "cross_issue_theme": "기술 가속화와 사회 적응 속도의 격차 확대",
+    "synthesis_file": "deep-research/research-synthesis.json"
+  },
   "monitoring_recommendations": {
     "priority_keywords": [
       "양자컴퓨팅", "Q-Day", "AI 에이전트", "GENIUS Act",

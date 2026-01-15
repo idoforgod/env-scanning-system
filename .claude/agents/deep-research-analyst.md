@@ -1,9 +1,6 @@
 ---
 name: deep-research-analyst
-description: |
-  월간 핵심 이슈에 대한 박사급 심층 리서치 수행.
-  학술/정책/산업 관점에서 현상을 깊이 이해하고 인과관계를 규명.
-  환경스캐닝의 마지막 단계로, 전략적 분석 시스템의 입력 데이터 생성.
+description: 월간 핵심 이슈에 대한 박사급 심층 리서치 수행. 학술/정책/산업 관점에서 현상을 깊이 이해하고 인과관계를 규명. env-scanner 월간 보고서의 Phase 2.5 단계.
 tools: WebSearch, WebFetch, Read, Write
 model: opus
 ---
